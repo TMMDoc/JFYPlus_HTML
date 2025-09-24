@@ -1,0 +1,438 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../img/praxis-icon.png">
+  <title>Filtro Libreria pezzi</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">Benvenuto in JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../installation/index.html">Introduzione</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../installation/hardwarerequirement.html">Requisiti hardware</a></li>
+    <li><button class="tree blank"></button><a href="../installation/importformats.html">Formati CAD supportati</a></li>
+    <li><button class="tree blank"></button><a href="../installation/prerequisites.html">Prerequisiti</a></li>
+    <li><button class="tree blank"></button><a href="../installation/workflow.html">Workflow</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../configuration/index.html">Configurazione</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../configuration/setupmachine.html">Aggiungi/Rimuovi macchina</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/setuptooling.html">Setup attrezzaggio</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/configureusers.html">Configura utenti</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../configuration/addmaterial/index.html">Materiale</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/addnew.html">Aggiungi nuovo</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/exportimport.html">Esporta/Importa materiale</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/replacematerial.html">Sostituisci materiale</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../configuration/mapbendpages.html">Mappa materiale</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../partpreparation/index.html">Libreria pezzi</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../partpreparation/partlibrarytour.html">Libreria pezzi</a></li>
+    <li><button class="tree blank"></button><a href="../partpreparation/partstatus.html">Stato di attrezzaggio</a></li>
+    <li><button class="tree blank"></button><a href="../partpreparation/partimportmethod.html">Metodi di importazione dei pezzi</a></li>
+    <li><button class="tree blank"></button><a href="../partpreparation/partassignmaterial.html">Assegna materiale pezzo</a></li>
+    <li><button class="tree blank"></button><a href="../partpreparation/partvalidation.html">Convalida dei pezzi</a></li>
+    <li><button class="tree blank"></button><a href="../partpreparation/edittooling.html">Modifica attrezzaggio</a></li>
+    <li><button class="tree blank"></button><a href="../partpreparation/toolingcheck.html">Controllo attrezzaggio</a></li>
+    <li><button class="tree blank"></button><a href="../partpreparation/rename.html">Rinomina</a></li>
+    <li><button class="tree blank"></button><a href="../partpreparation/rollingdirection.html">Direzione di laminazione</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../jobpreparation/index.html">Workflow job</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../jobpreparation/jobcreation.html">Crea job</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/jobview.html">Visualizzazione job</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/edit.html">Modifica</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/jobautoplan.html">Piano automatico</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/jobinteractplan.html">Nesting interattivo</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/jobpriority.html">Priorità</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/jobstatus.html">Stato</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../jobpreparation/layoutcommands/index.html">Gestione del nesting</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/nestview.html">Visualizza layout</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/nccodesend.html">Invio programma NC</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/delete.html">Cancella</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/addparts.html">Aggiungi pezzi</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/adaptcompact.html">Adatta/Compatta</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/exportoutputs.html">Esporta output</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/markcomplete.html">Contrassegna come completo</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/reportsender.html">Trasmettitore report</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../jobpreparation/remnantmanagement/index.html">Gestione residui</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../jobpreparation/remnantmanagement/autoremnant.html">Gestione residui automatici</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/remnantmanagement/manualremnant.html">Gestione lamiere residue manuali</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/importexport.html">Importare / esportare</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/resetpartjob.html">Reset job pezzo</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/outdate.html">Non aggiornato</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">Filtri</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="filtertour.html">Panoramica filtri</a></li>
+    <li><button class="tree blank"></button><a href="savedfilters.html">Filtri salvati</a></li>
+    <li><button class="tree blank"></button><a class="active" href="partlibraryfilter.html">Filtro Libreria pezzi</a></li>
+    <li><button class="tree blank"></button><a href="jobpagefilter.html">Filtro pagina JOB</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../factory/index.html">Fabbrica</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../factory/routes.html">Percorsi</a></li>
+    <li><button class="tree blank"></button><a href="../factory/sheets.html">Lamiere</a></li>
+    <li><button class="tree blank"></button><a href="../factory/customers.html">Clienti</a></li>
+    <li><button class="tree blank"></button><a href="../factory/edit.html">Modifica</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../settings/index.html">Impostazioni</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../settings/environment.html">Ambiente</a></li>
+    <li><button class="tree blank"></button><a href="../settings/import.html">Importa</a></li>
+    <li><button class="tree blank"></button><a href="../settings/bend.html">Piega</a></li>
+    <li><button class="tree blank"></button><a href="../settings/cut.html">Taglio</a></li>
+    <li><button class="tree blank"></button><a href="../settings/notification.html">Notifiche</a></li>
+    <li><button class="tree blank"></button><a href="../settings/watch.html">Guarda</a></li>
+    <li><button class="tree blank"></button><a href="../settings/job.html">Job</a></li>
+    <li><button class="tree blank"></button><a href="../settings/reports.html">Report</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../impressum.html">Informazioni redazionali</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Filtri</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="partlibraryfilter.html">Filtro Libreria pezzi</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Filtro Libreria pezzi</h1>
+<div class="sect1">
+<h2 id="_filtraggio_dei_pezzi_in_base_allo_stato_di_attrezzaggio">Filtraggio dei pezzi in base allo stato di attrezzaggio<a id="h000066"></a></h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/tooling-status.png" alt="Tooling status:">
+</div>
+</div>
+<div class="paragraph">
+<p>Selezionare il campo Stato di attrezzaggio per filtrare i pezzi in base al loro stato di attrezzaggio. Il
+menu a discesa visualizza gli stati come caselle di controllo e macchine colorate; <strong>bianco</strong> vuol dire</p>
+</div>
+<div id="h000067" class="paragraph">
+<p><strong>OK</strong>, <strong>arancione</strong> significa <strong>errore</strong>, mentre <strong>giallo</strong> indica uno stato di <strong>avvertenza</strong>. Il pulsante <strong>Applica tutti
+(&amp;)</strong> è abilitato in questo caso per applicare la condizione del filtro a tutte le
+macchine selezionate.</p>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Filtra</th>
+<th class="tableblock halign-left valign-top">Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/tooling-ok.png" alt="Tooling OK"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Visualizza i pezzi che presentano almeno un errore di attrezzaggio.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/tooling-trulaser.png" alt="Tooling TruLaser"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Visualizza i pezzi che <strong>non possono essere tagliati</strong> con la macchina <strong>TruLaser 3030</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/cut-infeasible.png" alt="Cut Infeasible"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Taglio non fattibile: questi pezzi non possono essere tagliati su nessuna macchina da taglio (attenzione "&amp;"
+selezione qui).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/bending-error.png" alt="Bending Error"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Errori di piegatura: i pezzi non possono essere prodotti in quanto non esistono utensili di piegatura validi.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/panel-bend-only.png" alt="PanelBend"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SOLO piegatura a rotazione: questi pezzi possono essere lavorati solo perché c&#8217;è un utensile
+di piegatura a rotazione valido. Non possono essere eseguiti su nessuna delle presse piegatrici.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_filtraggio_dei_pezzi_in_base_al_supporto_di_piegatura">Filtraggio dei pezzi in base al supporto di piegatura<a id="h000068"></a></h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/bend-mount.png" alt="Bend Mount:">
+</div>
+</div>
+<div class="paragraph">
+<p>Selezionare il campo <strong>Supporto di piegatura</strong> per cercare pezzi in base al supporto di piegatura.</p>
+</div>
+<div id="h000069" class="ulist">
+<ul>
+<li>
+<p>Il menu a discesa, per questo campo, visualizza l&#8217;elenco di utensili di piegatura. Selezionare un utensile per
+trovare l&#8217;elenco dei pezzi che utilizzano l&#8217;utensile in questione.</p>
+</li>
+</ul>
+</div>
+<div id="h000070" class="ulist">
+<ul>
+<li>
+<p>L&#8217;elenco degli strumenti nel menu a discesa può essere ristretto digitando il nome dello strumento,
+il tipo di utensile (punzone, collo d&#8217;oca, raggio, ecc.) e la descrizione dell&#8217;utensile.</p>
+</li>
+</ul>
+</div>
+<div id="h000071" class="ulist">
+<ul>
+<li>
+<p>Selezionare più utensili e applicare il modificatore <strong>TUTTI (&amp;)</strong> per un elenco di tutti i pezzi che utilizzano entrambi gli
+utensili.</p>
+</li>
+</ul>
+</div>
+<div id="h000072" class="ulist">
+<ul>
+<li>
+<p>Selezionare un pezzo e fare doppio clic per aprire i dettagli del pezzo per evidenziare gli altri utensili
+utilizzati nel pezzo per TUTTE le presse piegatrici. La descrizione dell&#8217;utensile viene aggiornata con
+i dettagli del supporto.</p>
+</li>
+</ul>
+</div>
+<div id="h000073" class="ulist">
+<ul>
+<li>
+<p>Fare doppio clic sulla macchina per evidenziare gli utensili di piegatura utilizzati nel
+pezzo selezionato per la macchina selezionata.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/bend-mount2.png" alt="BendMounts">
+</div>
+</div>
+<div class="paragraph">
+<p>Posizionando il mouse sul pulsante del filtro Supporto di piegatura viene visualizzato il tooltip con le
+icone degli utensili selezionati. Una parentesi quadra intorno al numero degli utensili significa "TUTTI",
+mentre una piccola parentesi indica "UNO QUALSIASI".</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/bend-tools.png" alt="BendTools">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_filtraggio_dei_pezzi_in_base_allutensile_usato">Filtraggio dei pezzi in base all&#8217;utensile usato<a id="h000074"></a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>È identico al filtraggio in base ai supporti usati tranne per i seguenti aspetti:</p>
+</div>
+<div id="h000075" class="ulist">
+<ul>
+<li>
+<p>Le icone degli utensili sono in dimensioni proporzionali (non esattamente in proporzione).</p>
+</li>
+</ul>
+</div>
+<div id="h000076" class="ulist">
+<ul>
+<li>
+<p>Quando l&#8217;anteprima dell&#8217;attrezzaggio è aperta, spostando il mouse sugli utensili evidenziati
+si evidenzia l&#8217;attrezzaggio corrispondente nel riquadro dell&#8217;anteprima.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/used-tools-filter.png" alt="Used Tools">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_filtraggio_dei_pezzi_in_base_allo_stato">Filtraggio dei pezzi in base allo stato<a id="h000077"></a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I pezzi della libreria possono ora essere filtrati in base allo <strong>Stato</strong>. Le opzioni mostrano TUTTI
+gli stati applicabili e quindi cambiano a seconda dell&#8217;elenco delle parti dei pezzi della libreria
+e il loro stato attuale. Scegliere <strong>Materiale mancante</strong> per elencare i pezzi con stato del materiale
+non risolto.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/state-filter.png" alt="State Filter">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_filtraggio_dei_pezzi_in_base_ai_codici_di_errore">Filtraggio dei pezzi in base ai codici di errore<a id="h000078"></a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In combinazione con <strong>Stato</strong> e <strong>Macchine</strong>, ora è possibile utilizzare*Codici di
+errore* dell&#8217;attrezzaggio specifici nella ricerca in base allo <strong>Stato di attrezzaggio</strong>.</p>
+</div>
+<div class="paragraph">
+<p>L&#8217;immagine seguente mostra lo scenario di ricerca: errore di attrezzaggio "Sovraccarico" per la macchina
+5170 6A.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/filter-errors.png" alt="Filter Error">
+</div>
+</div>
+<div class="paragraph">
+<p>La lista errori mostra gli errori applicabili per la selezione della macchina
+e dello stato. Si aggiorna alla modifica della selezione della macchina e dello stato per rendere
+la ricerca più precisa. Quindi, se si seleziona lo stato di avvertenza per una macchina punzonatrice,
+solo le avvertenze di punzonatura disponibili vengono visualizzati nella lista errori.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_filtro_stato_disattivato">Filtro Stato disattivato<a id="h000079"></a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Spesso gli utensili dei pezzi vengono disattivati a causa delle eccessive dimensioni della geometria o dell&#8217;eccessivo spessore.
+L&#8217;attrezzaggio viene anch&#8217;esso disattivato se specificamente negato da un percorso CAD.
+JFY Plus visualizza il motivo della disattivazione nel tooltip dell&#8217;attrezzaggio. Inoltre, tali pezzi
+possono essere ricercati utilizzando la nuova casella <strong>Stato disattivato</strong> nel menu di ricerca <strong>Stato
+di attrezzaggio</strong>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/suppressedstate.png" alt="Suppressed state">
+</div>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_filtraggio_dei_pezzi_in_base_allo_stato_di_attrezzaggio">Filtraggio dei pezzi in base allo stato di attrezzaggio</a>
+  </li>
+  <li level="1">
+   <a href="#_filtraggio_dei_pezzi_in_base_al_supporto_di_piegatura">Filtraggio dei pezzi in base al supporto di piegatura</a>
+  </li>
+  <li level="1">
+   <a href="#_filtraggio_dei_pezzi_in_base_allutensile_usato">Filtraggio dei pezzi in base all&#8217;utensile usato</a>
+  </li>
+  <li level="1">
+   <a href="#_filtraggio_dei_pezzi_in_base_allo_stato">Filtraggio dei pezzi in base allo stato</a>
+  </li>
+  <li level="1">
+   <a href="#_filtraggio_dei_pezzi_in_base_ai_codici_di_errore">Filtraggio dei pezzi in base ai codici di errore</a>
+  </li>
+  <li level="1">
+   <a href="#_filtro_stato_disattivato">Filtro Stato disattivato</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="savedfilters.html">Filtri salvati</a></span>
+ <span class="next"><a href="jobpagefilter.html">Filtro pagina JOB</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2025 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

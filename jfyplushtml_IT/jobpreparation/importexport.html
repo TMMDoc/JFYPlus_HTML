@@ -1,0 +1,514 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../img/praxis-icon.png">
+  <title>Importare / esportare</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">Benvenuto in JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../installation/index.html">Introduzione</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../installation/hardwarerequirement.html">Requisiti hardware</a></li>
+    <li><button class="tree blank"></button><a href="../installation/importformats.html">Formati CAD supportati</a></li>
+    <li><button class="tree blank"></button><a href="../installation/prerequisites.html">Prerequisiti</a></li>
+    <li><button class="tree blank"></button><a href="../installation/workflow.html">Workflow</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../configuration/index.html">Configurazione</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../configuration/setupmachine.html">Aggiungi/Rimuovi macchina</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/setuptooling.html">Setup attrezzaggio</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/configureusers.html">Configura utenti</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../configuration/addmaterial/index.html">Materiale</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/addnew.html">Aggiungi nuovo</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/exportimport.html">Esporta/Importa materiale</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/replacematerial.html">Sostituisci materiale</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../configuration/mapbendpages.html">Mappa materiale</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../partpreparation/index.html">Libreria pezzi</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../partpreparation/partlibrarytour.html">Libreria pezzi</a></li>
+    <li><button class="tree blank"></button><a href="../partpreparation/partstatus.html">Stato di attrezzaggio</a></li>
+    <li><button class="tree blank"></button><a href="../partpreparation/partimportmethod.html">Metodi di importazione dei pezzi</a></li>
+    <li><button class="tree blank"></button><a href="../partpreparation/partassignmaterial.html">Assegna materiale pezzo</a></li>
+    <li><button class="tree blank"></button><a href="../partpreparation/partvalidation.html">Convalida dei pezzi</a></li>
+    <li><button class="tree blank"></button><a href="../partpreparation/edittooling.html">Modifica attrezzaggio</a></li>
+    <li><button class="tree blank"></button><a href="../partpreparation/toolingcheck.html">Controllo attrezzaggio</a></li>
+    <li><button class="tree blank"></button><a href="../partpreparation/rename.html">Rinomina</a></li>
+    <li><button class="tree blank"></button><a href="../partpreparation/rollingdirection.html">Direzione di laminazione</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">Workflow job</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="jobcreation.html">Crea job</a></li>
+    <li><button class="tree blank"></button><a href="jobview.html">Visualizzazione job</a></li>
+    <li><button class="tree blank"></button><a href="edit.html">Modifica</a></li>
+    <li><button class="tree blank"></button><a href="jobautoplan.html">Piano automatico</a></li>
+    <li><button class="tree blank"></button><a href="jobinteractplan.html">Nesting interattivo</a></li>
+    <li><button class="tree blank"></button><a href="jobpriority.html">Priorità</a></li>
+    <li><button class="tree blank"></button><a href="jobstatus.html">Stato</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="layoutcommands/index.html">Gestione del nesting</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="layoutcommands/nestview.html">Visualizza layout</a></li>
+      <li><button class="tree blank"></button><a href="layoutcommands/nccodesend.html">Invio programma NC</a></li>
+      <li><button class="tree blank"></button><a href="layoutcommands/delete.html">Cancella</a></li>
+      <li><button class="tree blank"></button><a href="layoutcommands/addparts.html">Aggiungi pezzi</a></li>
+      <li><button class="tree blank"></button><a href="layoutcommands/adaptcompact.html">Adatta/Compatta</a></li>
+      <li><button class="tree blank"></button><a href="layoutcommands/exportoutputs.html">Esporta output</a></li>
+      <li><button class="tree blank"></button><a href="layoutcommands/markcomplete.html">Contrassegna come completo</a></li>
+      <li><button class="tree blank"></button><a href="layoutcommands/reportsender.html">Trasmettitore report</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="remnantmanagement/index.html">Gestione residui</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="remnantmanagement/autoremnant.html">Gestione residui automatici</a></li>
+      <li><button class="tree blank"></button><a href="remnantmanagement/manualremnant.html">Gestione lamiere residue manuali</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a class="active" href="importexport.html">Importare / esportare</a></li>
+    <li><button class="tree blank"></button><a href="resetpartjob.html">Reset job pezzo</a></li>
+    <li><button class="tree blank"></button><a href="outdate.html">Non aggiornato</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../filters/index.html">Filtri</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../filters/filtertour.html">Panoramica filtri</a></li>
+    <li><button class="tree blank"></button><a href="../filters/savedfilters.html">Filtri salvati</a></li>
+    <li><button class="tree blank"></button><a href="../filters/partlibraryfilter.html">Filtro Libreria pezzi</a></li>
+    <li><button class="tree blank"></button><a href="../filters/jobpagefilter.html">Filtro pagina JOB</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../factory/index.html">Fabbrica</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../factory/routes.html">Percorsi</a></li>
+    <li><button class="tree blank"></button><a href="../factory/sheets.html">Lamiere</a></li>
+    <li><button class="tree blank"></button><a href="../factory/customers.html">Clienti</a></li>
+    <li><button class="tree blank"></button><a href="../factory/edit.html">Modifica</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../settings/index.html">Impostazioni</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../settings/environment.html">Ambiente</a></li>
+    <li><button class="tree blank"></button><a href="../settings/import.html">Importa</a></li>
+    <li><button class="tree blank"></button><a href="../settings/bend.html">Piega</a></li>
+    <li><button class="tree blank"></button><a href="../settings/cut.html">Taglio</a></li>
+    <li><button class="tree blank"></button><a href="../settings/notification.html">Notifiche</a></li>
+    <li><button class="tree blank"></button><a href="../settings/watch.html">Guarda</a></li>
+    <li><button class="tree blank"></button><a href="../settings/job.html">Job</a></li>
+    <li><button class="tree blank"></button><a href="../settings/reports.html">Report</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../impressum.html">Informazioni redazionali</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Workflow job</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="importexport.html">Importare / esportare</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Importare / esportare</h1>
+<div class="sect1">
+<h2 id="_importazione_da_csv_o_xlsx">Importazione da csv o xlsx<a id="h000246"></a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>È inoltre possibile importare job in formati di testo comuni</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Fare clic su <strong>File &#8594; Apri &#8594; Importa job</strong>, viene visualizzata la finestra di dialogo Apri cartella. Selezionare <code>C:\Program Files\Metamation\Praxis\Samples\Jobs\C0\C0.csv</code>. Fare clic su OK. [Il formato csv della cartella Samples\Jobs è già mappato come predefinito.]</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/jobcreatecsv.png" alt="csv field">
+</div>
+</div>
+<div id="h000247" class="ulist">
+<ul>
+<li>
+<p>Se tutti i pezzi esistono nella posizione csv o nelle directory delle cartelle di ricerca, viene visualizzata la finestra Nuovo job, che elenca tutti i pezzi corrispondenti ai campi csv.</p>
+</li>
+</ul>
+</div>
+<div id="h000248" class="ulist">
+<ul>
+<li>
+<p>I pezzi mancanti vengono ignorati e non vengono visualizzati nella finestra Nuovo job.</p>
+</li>
+</ul>
+</div>
+<div id="h000249" class="ulist">
+<ul>
+<li>
+<p>Inizialmente lo stato del pezzo è Nascente.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/jobcreatecsv01.png" alt="Job create from CSV">
+</div>
+</div>
+<div id="h000250" class="ulist">
+<ul>
+<li>
+<p>Fare clic su OK. Ora i pezzi vengono importati nella libreria pezzi. Convalida CAD, attrezzaggio per istanza utensili di piegatura e da taglio eseguito, può essere monitorato nella schermata Pmonitor.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/jobcreatecsv02.png" alt="Job created using csv">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_creare_un_pezzo_vuoto_per_i_file_cad_mancanti">Creare un pezzo vuoto per i file CAD mancanti<a id="h000251"></a></h3>
+<div id="h000252" class="ulist">
+<ul>
+<li>
+<p>Fabbrica &#8594; Impostazioni &#8594; Job, nelle impostazioni di importazione del foglio di calcolo. Aggiungere il segno di spunta su <strong>Crea un pezzo vuoto per i file CAD mancanti</strong></p>
+</li>
+<li>
+<p>Se manca un pezzo, nella finestra Nuovo job, evidenziata in giallo.</p>
+</li>
+</ul>
+</div>
+<div id="h000254" class="ulist">
+<ul>
+<li>
+<p>In Job, il pezzo mancante avrà campi mappati csv ma lo stato del pezzo è Nascente, ovvero viene creato uno spazio vuoto.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/jobblank.png" alt="Job created using csv wtih Blank Parts">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_non_mostrare_la_finestra_di_dialogo_nuovo_job">Non mostrare la finestra di dialogo Nuovo job<a id="h000255"></a></h3>
+<div id="h000256" class="ulist">
+<ul>
+<li>
+<p>Fabbrica &#8594; Impostazioni &#8594; Job &#8594; Segno di spunta: non mostrare la finestra di dialogo Nuovo Job se il foglio di calcolo non presenta errori</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Se il foglio di calcolo non presenta pezzi mancanti, data mancante o errori, viene creato un nuovo job senza il prompt Nuovo job</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div id="h000257" class="ulist">
+<ul>
+<li>
+<p>Fabbrica &#8594; Impostazioni &#8594; Job &#8594; No spunta: non mostrare la finestra di dialogo Nuovo job se il foglio di calcolo non presenta errori</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Anche se il foglio di calcolo non presenta alcun errore, prompt Nuovo job per conferma da parte dell&#8217;utente.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_preferisci_la_colonna_materiale_grezzo_rispetto_a_materialespessore">Preferisci la colonna Materiale grezzo rispetto a Materiale+Spessore<a id="h000258"></a></h3>
+<div id="h000259" class="ulist">
+<ul>
+<li>
+<p>Fabbrica &#8594; Impostazioni &#8594; Job &#8594; Segno di spunta: preferire la colonna Materiale grezzo rispetto a Materiale+Spessore</p>
+<div class="ulist">
+<ul>
+<li>
+<p>La colonna del materiale del foglio di calcolo deve essere Materiale grezzo, ovvero Acciaio-20</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/csvmaterial.png" alt="CSV Raw Material &amp; Material+Thickness">
+</div>
+</div>
+<div id="h000260" class="ulist">
+<ul>
+<li>
+<p>Fabbrica &#8594; Impostazione &#8594; Job &#8594; No spunta: preferire la colonna Materiale grezzo rispetto a Materiale+Spessore</p>
+<div class="ulist">
+<ul>
+<li>
+<p>La colonna del materiale del foglio di calcolo deve essere Materiale e Spessore, cioè Acciaio e 2.00</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_passaggio_3_cartella_watch_utilizzando_csv_o_xlsx">Passaggio 3: cartella Watch utilizzando csv o xlsx<a id="h000261"></a></h2>
+<div class="sectionbody">
+<div id="h000262" class="ulist">
+<ul>
+<li>
+<p>Fabbrica &#8594; Impostazioni &#8594; Watch.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Segno di spunta: abilitare "Cartella live" e anche le sottocartelle Watch</p>
+</li>
+<li>
+<p>Specificare il percorso cartella Watch UNC o il percorso cartella Unità mappata.</p>
+</li>
+<li>
+<p>Impostazioni di importazione foglio di calcolo: segno di spunta su <strong>Importa foglio di calcolo da "Cartella live"</strong></p>
+</li>
+<li>
+<p>Dall&#8217;opzione importazione foglio di calcolo, selezionare <strong>Importa job</strong></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Copiare solo <code>C:\Program Files\ Metamation\Praxis\Samples\Jobs\C0\ C0.csv</code> e incollare nella cartella Watch.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/watchfolderconfigure.png" alt="Job created watchfolder">
+</div>
+</div>
+<div id="h000264" class="ulist">
+<ul>
+<li>
+<p>Nessun job viene creato a causa della mancanza del file CAD</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_non_configurato_directory_di_ricerca_cad_e_ricerca_cad_ricorrente">Non configurato: directory di ricerca CAD e ricerca CAD ricorrente<a id="h000265"></a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Fabbrica &#8594; Impostazioni &#8594; Job &#8594; Impostazioni di importazione del foglio di calcolo.</p>
+</li>
+<li>
+<p>Non impostare alcuna directory di ricerca CAD e utilizzare la ricerca CAD ricorrente.</p>
+</li>
+<li>
+<p>Segno di spunta: creare un pezzo vuoto per i file CAD mancanti.</p>
+</li>
+</ul>
+</div>
+<div id="h000266" class="ulist">
+<ul>
+<li>
+<p>Ora il job è stato creato. Ma lo stato di tutti i pezzi è "Spazio vuoto nascente", cioè il CAD file manca.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/watchfoldernolookupfolder.png" alt="Job created watchfolder">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/watchfoldernolookupfoldernascent.png" alt="Job created watchfolder">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configurato_directory_di_ricerca_cad_e_ricerca_cad_ricorsiva">Configurato: directory di ricerca CAD e ricerca CAD ricorsiva<a id="h000267"></a></h3>
+<div id="h000268" class="ulist">
+<ul>
+<li>
+<p>Fabbrica &#8594; Impostazioni &#8594; Job &#8594; Impostazioni di importazione del foglio di calcolo.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Fare clic su <strong>Modifica&#8230;&#8203;</strong> Nella directory di ricerca CAD e salvare la posizione <code>C:\Program Files\Metamation\Praxis\Samples</code>.</p>
+</li>
+<li>
+<p>Segno di spunta: utilizzare la ricerca CAD ricorrente.</p>
+</li>
+<li>
+<p>Segno di spunta: creare un pezzo vuoto per i file CAD mancanti.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div id="h000269" class="ulist">
+<ul>
+<li>
+<p>IL JOB viene creato con tutti i pezzi importanti, convalida CAD e attrezzaggio fatto per tutte le macchine.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/watchfoldercsvimportsettings.png" alt="Job created watchfolder">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_esporta_job">Esporta job<a id="h000270"></a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>L&#8217;opzione di esportazione consente di selezionare informazioni diverse dalle opzioni disponibili ed esportarle in un file basato su csv.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/exp1.png" alt="exp1"></span></p>
+</div>
+<div class="paragraph">
+<p>Per utilizzare l&#8217;esportazione del job, fare prima clic sull&#8217;icona del job e quindi selezionare l&#8217;opzione di esportazione sulla destra dello schermo.
+Viene visualizzata una finestra di dialogo in cui è possibile fare clic sulla casella di controllo pertinente per selezionare i campi delle informazioni che si desidera esportare. È inoltre possibile utilizzare l&#8217;opzione "Raggruppa per" per raggruppare i file in base a uno qualsiasi dei campi abilitati.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/exp2.png" alt="exp2"></span></p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_importazione_da_csv_o_xlsx">Importazione da csv o xlsx</a>
+  </li>
+  <li level="2">
+   <a href="#_creare_un_pezzo_vuoto_per_i_file_cad_mancanti">Creare un pezzo vuoto per i file CAD mancanti</a>
+  </li>
+  <li level="2">
+   <a href="#_non_mostrare_la_finestra_di_dialogo_nuovo_job">Non mostrare la finestra di dialogo Nuovo job</a>
+  </li>
+  <li level="2">
+   <a href="#_preferisci_la_colonna_materiale_grezzo_rispetto_a_materialespessore">Preferisci la colonna Materiale grezzo rispetto a Materiale+Spessore</a>
+  </li>
+  <li level="1">
+   <a href="#_passaggio_3_cartella_watch_utilizzando_csv_o_xlsx">Passaggio 3: cartella Watch utilizzando csv o xlsx</a>
+  </li>
+  <li level="2">
+   <a href="#_non_configurato_directory_di_ricerca_cad_e_ricerca_cad_ricorrente">Non configurato: directory di ricerca CAD e ricerca CAD ricorrente</a>
+  </li>
+  <li level="2">
+   <a href="#_configurato_directory_di_ricerca_cad_e_ricerca_cad_ricorsiva">Configurato: directory di ricerca CAD e ricerca CAD ricorsiva</a>
+  </li>
+  <li level="1">
+   <a href="#_esporta_job">Esporta job</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="remnantmanagement/manualremnant.html">Gestione lamiere residue manuali</a></span>
+ <span class="next"><a href="resetpartjob.html">Reset job pezzo</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2025 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

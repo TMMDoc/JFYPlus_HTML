@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../img/praxis-icon.png">
+  <title>Convalida dei pezzi</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">Benvenuto in JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../installation/index.html">Introduzione</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../installation/hardwarerequirement.html">Requisiti hardware</a></li>
+    <li><button class="tree blank"></button><a href="../installation/importformats.html">Formati CAD supportati</a></li>
+    <li><button class="tree blank"></button><a href="../installation/prerequisites.html">Prerequisiti</a></li>
+    <li><button class="tree blank"></button><a href="../installation/workflow.html">Workflow</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../configuration/index.html">Configurazione</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../configuration/setupmachine.html">Aggiungi/Rimuovi macchina</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/setuptooling.html">Setup attrezzaggio</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/configureusers.html">Configura utenti</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../configuration/addmaterial/index.html">Materiale</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/addnew.html">Aggiungi nuovo</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/exportimport.html">Esporta/Importa materiale</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/replacematerial.html">Sostituisci materiale</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../configuration/mapbendpages.html">Mappa materiale</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">Libreria pezzi</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="partlibrarytour.html">Libreria pezzi</a></li>
+    <li><button class="tree blank"></button><a href="partstatus.html">Stato di attrezzaggio</a></li>
+    <li><button class="tree blank"></button><a href="partimportmethod.html">Metodi di importazione dei pezzi</a></li>
+    <li><button class="tree blank"></button><a href="partassignmaterial.html">Assegna materiale pezzo</a></li>
+    <li><button class="tree blank"></button><a class="active" href="partvalidation.html">Convalida dei pezzi</a></li>
+    <li><button class="tree blank"></button><a href="edittooling.html">Modifica attrezzaggio</a></li>
+    <li><button class="tree blank"></button><a href="toolingcheck.html">Controllo attrezzaggio</a></li>
+    <li><button class="tree blank"></button><a href="rename.html">Rinomina</a></li>
+    <li><button class="tree blank"></button><a href="rollingdirection.html">Direzione di laminazione</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../jobpreparation/index.html">Workflow job</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../jobpreparation/jobcreation.html">Crea job</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/jobview.html">Visualizzazione job</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/edit.html">Modifica</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/jobautoplan.html">Piano automatico</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/jobinteractplan.html">Nesting interattivo</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/jobpriority.html">Priorità</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/jobstatus.html">Stato</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../jobpreparation/layoutcommands/index.html">Gestione del nesting</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/nestview.html">Visualizza layout</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/nccodesend.html">Invio programma NC</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/delete.html">Cancella</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/addparts.html">Aggiungi pezzi</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/adaptcompact.html">Adatta/Compatta</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/exportoutputs.html">Esporta output</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/markcomplete.html">Contrassegna come completo</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/reportsender.html">Trasmettitore report</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../jobpreparation/remnantmanagement/index.html">Gestione residui</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../jobpreparation/remnantmanagement/autoremnant.html">Gestione residui automatici</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/remnantmanagement/manualremnant.html">Gestione lamiere residue manuali</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/importexport.html">Importare / esportare</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/resetpartjob.html">Reset job pezzo</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/outdate.html">Non aggiornato</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../filters/index.html">Filtri</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../filters/filtertour.html">Panoramica filtri</a></li>
+    <li><button class="tree blank"></button><a href="../filters/savedfilters.html">Filtri salvati</a></li>
+    <li><button class="tree blank"></button><a href="../filters/partlibraryfilter.html">Filtro Libreria pezzi</a></li>
+    <li><button class="tree blank"></button><a href="../filters/jobpagefilter.html">Filtro pagina JOB</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../factory/index.html">Fabbrica</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../factory/routes.html">Percorsi</a></li>
+    <li><button class="tree blank"></button><a href="../factory/sheets.html">Lamiere</a></li>
+    <li><button class="tree blank"></button><a href="../factory/customers.html">Clienti</a></li>
+    <li><button class="tree blank"></button><a href="../factory/edit.html">Modifica</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../settings/index.html">Impostazioni</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../settings/environment.html">Ambiente</a></li>
+    <li><button class="tree blank"></button><a href="../settings/import.html">Importa</a></li>
+    <li><button class="tree blank"></button><a href="../settings/bend.html">Piega</a></li>
+    <li><button class="tree blank"></button><a href="../settings/cut.html">Taglio</a></li>
+    <li><button class="tree blank"></button><a href="../settings/notification.html">Notifiche</a></li>
+    <li><button class="tree blank"></button><a href="../settings/watch.html">Guarda</a></li>
+    <li><button class="tree blank"></button><a href="../settings/job.html">Job</a></li>
+    <li><button class="tree blank"></button><a href="../settings/reports.html">Report</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../impressum.html">Informazioni redazionali</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Libreria pezzi</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="partvalidation.html">Convalida dei pezzi</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Convalida dei pezzi</h1>
+<div class="sect1">
+<h2 id="_errore_cad">Errore CAD<a id="h000306"></a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_non_fattibile_piega_e_taglio">Non fattibile (piega e taglio)<a id="h000307"></a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>JFY Plus assegna lo stato Piega non fattibile al pezzo se non è stata trovata una soluzione di piegatura
+durante l&#8217;attrezzaggio automatico.</p>
+</li>
+<li>
+<p>Se la soluzione di piegatura [<strong>08.07</strong>] ha un&#8217;avvertenza che viene ignorata,
+si passa automaticamente alla soluzione di taglio.</p>
+</li>
+<li>
+<p>Il pezzo viene messo nello stato Taglio non fattibile se non è stata trovata una soluzione di taglio fattibile.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/feasible.png" alt="Bend and Cut Infeasible Error"></span>
+=== Errore materiale<a id="h000308"></a>
+- Materiale mancante: spessore inizialmente letto da modello e materiale assegnato
+che viene confrontato con il materiale grezzo JFY Plus. Se non esiste, si tratta di
+un errore Materiale mancante.
+- _
+Material not assigned: il modello non ha un campo mappato rispetto al materiale, quindi
+è assegnato con Materiale non assegnato.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/materialerror.png" alt="Material Error Types"></span>
+=== Errore geometria<a id="h000309"></a>
+- Open contours detected:
+CAD ha un&#8217;entità aperta.
+- Multiple outer contours detected
+ : CAD ha più loop chiusi.
+<span class="image"><img src="img/caderror.png" alt="CAD Error Types"></span>
+- Nascente: caricamento di un pezzo dal foglio di calcolo csv o xlsx, i file CAD mancanti sono
+creati come errore Pezzo nascente.
+- Geometry missing
+ : CAD non ha geometria valida o disponibile.
+<span class="image"><img src="img/caderror01.png" alt="CAD Error Types"></span>
+== Errore CAM<a id="h000310"></a>
+=== Errore attrezzaggio di piegatura<a id="h000311"></a></p>
+</div>
+<div class="paragraph">
+<p>Di seguito sono riportati gli errori attrezzaggio di piegatura.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Collisions detected
+e Gripper error.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/bendcamerror01.png" alt="Bend Tooling Error Types"></span>
+- Utensile Overload error
+e foro vicini alla linea di piega.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/bendcamerror02.png" alt="Bend Tooling Error Types"></span>
+- Needs review
+ e lunghezza corta del punzone/matrice.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/bendcamerror03.png" alt="Bend Tooling Error Types"></span>
+- Tool missing
+, Poor backguage
+, pezzo troppo grande per la macchina.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/bendcamerror04.png" alt="Bend Tooling Error Types"></span>
+=== Errore attrezzaggio di taglio<a id="h000312"></a></p>
+</div>
+<div class="paragraph">
+<p>Di seguito sono riportati gli errori attrezzaggio di piegatura.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Condizione di taglio mancante non mappata rispetto al materiale grezzo.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/cutcamerror01.png" alt="Cut Tooling Error Types"></span>
+- Errore sfridi da punzonatura: per l&#8217;attrezzaggio di punzonatura, il loop interno è attrezzato senza punti di giunzione.
+- Untooled or partially tooled contours
+ : segmenti con attrezzaggio di punzonatura mancanti.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/cutcamerror02.png" alt="Cut Tooling Error Types"></span></p>
+</div>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_errore_cad">Errore CAD</a>
+  </li>
+  <li level="2">
+   <a href="#_non_fattibile_piega_e_taglio">Non fattibile (piega e taglio)</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="partassignmaterial.html">Assegna materiale pezzo</a></span>
+ <span class="next"><a href="edittooling.html">Modifica attrezzaggio</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2025 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

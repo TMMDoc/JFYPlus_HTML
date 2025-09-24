@@ -1,0 +1,348 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../img/praxis-icon.png">
+  <title>Importa</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">Benvenuto in JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../installation/index.html">Introduzione</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../installation/hardwarerequirement.html">Requisiti hardware</a></li>
+    <li><button class="tree blank"></button><a href="../installation/importformats.html">Formati CAD supportati</a></li>
+    <li><button class="tree blank"></button><a href="../installation/prerequisites.html">Prerequisiti</a></li>
+    <li><button class="tree blank"></button><a href="../installation/workflow.html">Workflow</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../configuration/index.html">Configurazione</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../configuration/setupmachine.html">Aggiungi/Rimuovi macchina</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/setuptooling.html">Setup attrezzaggio</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/configureusers.html">Configura utenti</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../configuration/addmaterial/index.html">Materiale</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/addnew.html">Aggiungi nuovo</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/exportimport.html">Esporta/Importa materiale</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/replacematerial.html">Sostituisci materiale</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../configuration/mapbendpages.html">Mappa materiale</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../partpreparation/index.html">Libreria pezzi</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../partpreparation/partlibrarytour.html">Libreria pezzi</a></li>
+    <li><button class="tree blank"></button><a href="../partpreparation/partstatus.html">Stato di attrezzaggio</a></li>
+    <li><button class="tree blank"></button><a href="../partpreparation/partimportmethod.html">Metodi di importazione dei pezzi</a></li>
+    <li><button class="tree blank"></button><a href="../partpreparation/partassignmaterial.html">Assegna materiale pezzo</a></li>
+    <li><button class="tree blank"></button><a href="../partpreparation/partvalidation.html">Convalida dei pezzi</a></li>
+    <li><button class="tree blank"></button><a href="../partpreparation/edittooling.html">Modifica attrezzaggio</a></li>
+    <li><button class="tree blank"></button><a href="../partpreparation/toolingcheck.html">Controllo attrezzaggio</a></li>
+    <li><button class="tree blank"></button><a href="../partpreparation/rename.html">Rinomina</a></li>
+    <li><button class="tree blank"></button><a href="../partpreparation/rollingdirection.html">Direzione di laminazione</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../jobpreparation/index.html">Workflow job</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../jobpreparation/jobcreation.html">Crea job</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/jobview.html">Visualizzazione job</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/edit.html">Modifica</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/jobautoplan.html">Piano automatico</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/jobinteractplan.html">Nesting interattivo</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/jobpriority.html">Priorità</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/jobstatus.html">Stato</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../jobpreparation/layoutcommands/index.html">Gestione del nesting</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/nestview.html">Visualizza layout</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/nccodesend.html">Invio programma NC</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/delete.html">Cancella</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/addparts.html">Aggiungi pezzi</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/adaptcompact.html">Adatta/Compatta</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/exportoutputs.html">Esporta output</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/markcomplete.html">Contrassegna come completo</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/reportsender.html">Trasmettitore report</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../jobpreparation/remnantmanagement/index.html">Gestione residui</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../jobpreparation/remnantmanagement/autoremnant.html">Gestione residui automatici</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/remnantmanagement/manualremnant.html">Gestione lamiere residue manuali</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/importexport.html">Importare / esportare</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/resetpartjob.html">Reset job pezzo</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/outdate.html">Non aggiornato</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../filters/index.html">Filtri</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../filters/filtertour.html">Panoramica filtri</a></li>
+    <li><button class="tree blank"></button><a href="../filters/savedfilters.html">Filtri salvati</a></li>
+    <li><button class="tree blank"></button><a href="../filters/partlibraryfilter.html">Filtro Libreria pezzi</a></li>
+    <li><button class="tree blank"></button><a href="../filters/jobpagefilter.html">Filtro pagina JOB</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../factory/index.html">Fabbrica</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../factory/routes.html">Percorsi</a></li>
+    <li><button class="tree blank"></button><a href="../factory/sheets.html">Lamiere</a></li>
+    <li><button class="tree blank"></button><a href="../factory/customers.html">Clienti</a></li>
+    <li><button class="tree blank"></button><a href="../factory/edit.html">Modifica</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">Impostazioni</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="environment.html">Ambiente</a></li>
+    <li><button class="tree blank"></button><a class="active" href="import.html">Importa</a></li>
+    <li><button class="tree blank"></button><a href="bend.html">Piega</a></li>
+    <li><button class="tree blank"></button><a href="cut.html">Taglio</a></li>
+    <li><button class="tree blank"></button><a href="notification.html">Notifiche</a></li>
+    <li><button class="tree blank"></button><a href="watch.html">Guarda</a></li>
+    <li><button class="tree blank"></button><a href="job.html">Job</a></li>
+    <li><button class="tree blank"></button><a href="reports.html">Report</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../impressum.html">Informazioni redazionali</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Impostazioni</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="import.html">Importa</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Importa</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/import.png" alt="Import settings" width="814">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_output_settings">Output settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Save flat pattern</strong> - Abilitare questa opzione per il salvataggio del pattern piatto di un pezzo importato.</p>
+</div>
+<div class="paragraph">
+<p><strong>Format for flat pattern</strong> - Vedere le impostazioni JFY Core.
+<strong>Flat pattern destination</strong> - Questa è la posizione in cui viene salvato il pattern piatto.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_import_settings">Import settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Units for DXF files</strong> - Vedere le impostazioni JFY Core.
+<strong>Material lookup keys</strong> - È possibile assegnare più voci di ricerca utilizzando una virgola separatrice tra di esse. Quando un pezzo viene importato, Praxis utilizza questi tasti per cercare i valori dei materiali. I valori cercati vengono quindi utilizzati per risolvere il materiale grezzo. I valori originali sono memorizzati nelle Proprietà varie del pezzo.</p>
+</div>
+<div class="paragraph">
+<p><strong>Revision lookup keys</strong> - Quando un pezzo viene importato, il valore di revisione dal file del pezzo grezzo (il file del pezzo importato) viene confrontato con il valore di revisione esistente nel magazzino. L&#8217;importazione viene annullata se la revisione è la stessa. La mappatura dei campi personalizzati è ora supportata anche per i file DXF. Per i file DXF, i dati dei campi personalizzati vengono estratti dal livello di testo nel disegno o da un allegato PPI.</p>
+</div>
+<div class="paragraph">
+<p><strong>Part name keys</strong> - Questa opzione funziona in modo simile ai tasti di ricerca del materiale e della revisione. Impostare una o più tasti Nome del pezzo per utilizzare il nome del pezzo PPI invece del nome del file come nome del pezzo.</p>
+</div>
+<div class="paragraph">
+<p><strong>Thickness lookup keys</strong> - È possibile assegnare più voci di ricerca utilizzando una virgola separatrice tra di esse. Quando un pezzo viene importato, Praxis utilizza questi tasti per cercare i valori di spessore. I valori cercati vengono quindi utilizzati per risolvere lo spessore. I valori originali sono memorizzati nelle Proprietà varie del pezzo.</p>
+</div>
+<div class="paragraph">
+<p><strong>Thickness comparison fudge</strong> - Questo viene utilizzato per cercare il materiale grezzo quando un pezzo viene importato. Praxis cerca di risolvere il materiale grezzo dopo aver analizzato il nome del materiale e lo spessore. Per ulteriori informazioni, fare riferimento all&#8217;argomento <a href="#Thickness fudge">[Thickness fudge]</a> qui di seguito.</p>
+</div>
+<div class="paragraph">
+<p><strong>Identify shapes after a flat is imported</strong> - Quando un pezzo viene importato, le forme interne del pezzo possono essere riconosciute e identificate automaticamente.</p>
+</div>
+<div class="paragraph">
+<p><strong>Shape identification fudge</strong> - Il valore dell&#8217;ultimo rilievo per l&#8217;identificazione della forma può essere impostato su:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Livello globale</strong> - Questo valore viene utilizzato come predefinito per tutte le forme.</p>
+</li>
+<li>
+<p><strong>Livello forma individuale</strong> - Il valore predefinito può essere sovrascritto impostando il valore dell&#8217;ultimo rilievo al livello forma individuale. Selezionando la forma nella finestra di dialogo Libreria forme viene visualizzato il valore dell&#8217;ultimo rilievo. Per impostazione predefinita, questo valore è impostato su 0 e per tali forme viene utilizzato il valore globale predefinito.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Rotate flat horizontally</strong> - Generalmente i tavoli delle macchine da taglio sono rettangolari e più larghi. Per migliorare la fattibilità dell&#8217;attrezzaggio, ruotare il pezzo lungo la larghezza del pezzo dopo l&#8217;importazione della parte.</p>
+</div>
+<div class="paragraph">
+<p><strong>Part rotation threshold</strong> - Impostarlo come numero minimo per consentire la rotazione. Qualsiasi pezzo più piccolo del valore impostato non viene ruotato.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_misc_settings">Misc. settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Enable pre-import external tools</strong> - Abilitare l&#8217;opzione di importazione degli strumenti di altro produttore pre-importanti per abilitare Creo Reader. Praxis carica le istanze di famiglia pre-estratte del pezzo lasciato cadere. Facciamo notare che l&#8217;estrazione dell&#8217;istanza viene eseguita durante il caricamento del pezzo (come operazione di pre-importazione), quindi il software Creo deve essere installato sul computer da cui viene caricato il pezzo.</p>
+</div>
+<div class="paragraph">
+<p><strong>Ignore drawing colors in Flat thumbnails for clarity</strong> - Abilitare questa opzione per generare miniature più nitide in scala di grigi. I colori dei layer e le entità di testo vengono ignorati per motivi di chiarezza dell&#8217;immagine.</p>
+</div>
+<div class="paragraph">
+<p><strong>Use only one Engine for all import tasks</strong> - Se abilitato, viene utilizzato un solo core Engine per attività importanti.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ultimo_rilievo_spessore">Ultimo rilievo spessore<a id="h000380"></a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Thickness comparison fudge</strong> sceglie il valore di spessore della lamiera più vicino quando uno spessore desiderato non è disponibile tra le giacenze, confrontando il valore di spessore delle lamiere nelle giacenze.</p>
+</div>
+<div class="paragraph">
+<p>Ad esempio, supponiamo quanto segue:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Abbiamo un pezzo con spessore della lamiera di 1,6 mm in acciaio.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/importsheet.png" alt="ImportSheet" width="310">
+</div>
+</div>
+</li>
+<li>
+<p>Il valore <strong>Thickness comparison fudge</strong> è 0,1 mm.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/thickcomfudge.png" alt="Thickness comparison fudge" width="821">
+</div>
+</div>
+</li>
+<li>
+<p>Tra le giacenze ci sono lamiere con spessore 1,5 mm, 1,55 mm e 1,7 mm.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/sheetthickness.png" alt="Sheet inventory" width="621">
+</div>
+</div>
+<div class="paragraph">
+<p>JFY Plus sceglie una lamiera con il valore di spessore più vicino dopo aver confrontato il valore <strong>Thickness comparison fudge</strong> (0,1 mm) con l&#8217;elemento importato (misura 1,6 mm).  In questo caso, verrà selezionato il valore 1,55 mm.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/fudgeimport.png" alt="Import part" width="347">
+</div>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_output_settings">Output settings</a>
+  </li>
+  <li level="1">
+   <a href="#_import_settings">Import settings</a>
+  </li>
+  <li level="1">
+   <a href="#_misc_settings">Misc. settings</a>
+  </li>
+  <li level="1">
+   <a href="#_ultimo_rilievo_spessore">Ultimo rilievo spessore</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="environment.html">Ambiente</a></span>
+ <span class="next"><a href="bend.html">Piega</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2025 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,118 @@
+Version=58
+APPNAME=JFY Plus
+BENDAPP=JFY Bend
+BRAND=JFY
+CUTAPP=JFY Cut
+FLAVOR=JFY
+JFY=
+LANGUAGE=EN
+TECHNOAPP=JFY Core
+Folders=11
+Pages=68
+UIXlate=False, DebugUIXlate=False, Language=EN
+
+contents.txt • 255624.025617
+Features.adoc • Caratteristiche
+Impressum.adoc • Informazioni redazionali
+Index.adoc • Benvenuto in {APPNAME}
+Index.JFY.adoc • Benvenuto in {APPNAME}
+manifest.txt • 254924.034912
+Configuration\CADMapFields.adoc • Mappa campi da CAD (chiavi di ricerca)
+Configuration\configureUsers.adoc • Configura utenti
+Configuration\contents.txt • 255624.025617
+Configuration\Index.adoc • Configurazione
+Configuration\MapBendPages.adoc • Mappa materiale
+Configuration\MapCAMPages.adoc • Mappa pagine CAM
+Configuration\SetupMachine.adoc • Aggiungi/Rimuovi macchina
+Configuration\SetupTooling.adoc • Setup attrezzaggio
+Factory\contents.txt • 255624.025617
+Factory\Customers.adoc • Clienti
+Factory\edit.adoc • Modifica
+Factory\Index.adoc • Fabbrica
+Factory\routes.adoc • Percorsi
+Factory\sheets.adoc • Lamiere
+Filters\contents.txt • 255624.025617
+Filters\FilterTour.adoc • Panoramica filtri
+Filters\Index.adoc • Filtri
+Filters\JOBPageFilter.adoc • Filtro pagina JOB
+Filters\PartLibraryFilter.adoc • Filtro Libreria pezzi
+Filters\SavedFilters.adoc • Filtri salvati
+Installation\changelic.adoc • Modifica licenza
+Installation\ClientInstallation.adoc • Installazione client
+Installation\contents.txt • 255624.025617
+Installation\HardwareRequirement.adoc • Requisiti hardware
+Installation\importformats.adoc • Formati CAD supportati
+Installation\index.adoc • Introduzione
+Installation\Prerequisites.adoc • Prerequisiti
+Installation\ServerInstallation.adoc • Installazione server
+Installation\Workflow.adoc • Workflow
+JOBPreparation\contents.txt • 255624.025617
+JOBPreparation\Edit.adoc • Modifica
+JOBPreparation\importexport.adoc • Importare / esportare
+JOBPreparation\Index.adoc • Workflow job
+JOBPreparation\JOBAutoPlan.adoc • Piano automatico
+JOBPreparation\JOBCreation.adoc • Crea job
+JOBPreparation\JOBInteractPlan.adoc • Nesting interattivo
+JOBPreparation\JOBPriority.adoc • Priorità
+JOBPreparation\JOBStatus.adoc • Stato
+JOBPreparation\JOBView.adoc • Visualizzazione job
+JOBPreparation\OutDate.adoc • Non aggiornato
+JOBPreparation\ResetPartJob.adoc • Reset job pezzo
+PartPreparation\contents.txt • 255624.025617
+PartPreparation\EditTooling.adoc • Modifica attrezzaggio
+PartPreparation\Index.adoc • Libreria pezzi
+PartPreparation\PartAssignMaterial.adoc • Assegna materiale pezzo
+PartPreparation\PartImportMethod.adoc • Metodi di importazione dei pezzi
+PartPreparation\PartLibraryTour.adoc • Libreria pezzi
+PartPreparation\PartStatus.adoc • Stato di attrezzaggio
+PartPreparation\PartTour.adoc • Libreria pezzi
+PartPreparation\PartValidation.adoc • Convalida dei pezzi
+PartPreparation\Rename.adoc • Rinomina
+PartPreparation\RollingDirection.adoc • Direzione di laminazione
+PartPreparation\ToolingCheck.adoc • Controllo attrezzaggio
+Settings\Bend.adoc • Piega
+Settings\contents.txt • 255624.025617
+Settings\Cut.adoc • Taglio
+Settings\Environment.adoc • Ambiente
+Settings\Import.adoc • Importa
+Settings\Index.adoc • Impostazioni
+Settings\Job.adoc • Job
+Settings\Notification.adoc • Notifiche
+Settings\Reports.adoc • Report
+Settings\Watch.adoc • Guarda
+UIXlate\EN.txt
+Configuration\AddMaterial\AddNew.adoc • Aggiungi nuovo
+Configuration\AddMaterial\contents.txt • 255624.025617
+Configuration\AddMaterial\ExportImport.adoc • Esporta/Importa materiale
+Configuration\AddMaterial\Index.adoc • Materiale
+Configuration\AddMaterial\ReplaceMaterial.adoc • Sostituisci materiale
+JOBPreparation\LayoutCommands\AdaptCompact.adoc • Adatta/Compatta
+JOBPreparation\LayoutCommands\AddParts.adoc • Aggiungi pezzi
+JOBPreparation\LayoutCommands\contents.txt • 255624.025617
+JOBPreparation\LayoutCommands\Delete.adoc • Cancella
+JOBPreparation\LayoutCommands\ExportOutputs.adoc • Esporta output
+JOBPreparation\LayoutCommands\Index.adoc • Gestione del nesting
+JOBPreparation\LayoutCommands\MarkComplete.adoc • Contrassegna come completo
+JOBPreparation\LayoutCommands\NCCodeSend.adoc • Invio programma NC
+JOBPreparation\LayoutCommands\NestView.adoc • Visualizza layout
+JOBPreparation\LayoutCommands\ReportSender.adoc • Trasmettitore report
+JOBPreparation\RemnantManagement\AutoRemnant.adoc • Gestione residui automatici
+JOBPreparation\RemnantManagement\contents.txt • 255624.025617
+JOBPreparation\RemnantManagement\Index.adoc • Gestione residui
+JOBPreparation\RemnantManagement\ManualRemnant.adoc • Gestione lamiere residue manuali
+Settings\.attic\Environment.adoc • Ambiente
+Settings\.attic\Notifications.adoc • Notifiche
+Settings\.attic\JOBOutputSettings\Index.adoc • Impostazioni output del JOB
+Settings\.attic\JOBOutputSettings\Outputs.adoc • Output
+Settings\.attic\JOBOutputSettings\Reports.adoc • Report
+Settings\.attic\JOBSettings\AutoRefreshLayouts.adoc • Aggiorna automaticamente i layout
+Settings\.attic\JOBSettings\AutoRelease.adoc • Rilascio automatico
+Settings\.attic\JOBSettings\Index.adoc • Impostazioni JOB
+Settings\.attic\JOBSettings\MixParts.adoc • Mescola pezzi da job multipli
+Settings\.attic\JOBSettings\Twinline.adoc • TwinLine
+Settings\.attic\PartSettings\Index.adoc • Impostazioni del pezzo
+Settings\.attic\PartSettings\PartOutputSettings.adoc • Impostazioni output del pezzo
+Settings\.attic\PartSettings\RetainLegacyFXBend.adoc • Mantieni piega FX legacy
+Settings\.attic\PartSettings\Revision.adoc • Revisione
+Settings\.attic\PartSettings\RotateHorizontal.adoc • Ruota orizzontalmente
+Settings\.attic\PartSettings\ThicknessFudge.adoc • Ultimo rilievo spessore

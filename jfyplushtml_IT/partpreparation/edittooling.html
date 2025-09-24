@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../img/praxis-icon.png">
+  <title>Modifica attrezzaggio</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">Benvenuto in JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../installation/index.html">Introduzione</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../installation/hardwarerequirement.html">Requisiti hardware</a></li>
+    <li><button class="tree blank"></button><a href="../installation/importformats.html">Formati CAD supportati</a></li>
+    <li><button class="tree blank"></button><a href="../installation/prerequisites.html">Prerequisiti</a></li>
+    <li><button class="tree blank"></button><a href="../installation/workflow.html">Workflow</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../configuration/index.html">Configurazione</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../configuration/setupmachine.html">Aggiungi/Rimuovi macchina</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/setuptooling.html">Setup attrezzaggio</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/configureusers.html">Configura utenti</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../configuration/addmaterial/index.html">Materiale</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/addnew.html">Aggiungi nuovo</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/exportimport.html">Esporta/Importa materiale</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/replacematerial.html">Sostituisci materiale</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../configuration/mapbendpages.html">Mappa materiale</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">Libreria pezzi</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="partlibrarytour.html">Libreria pezzi</a></li>
+    <li><button class="tree blank"></button><a href="partstatus.html">Stato di attrezzaggio</a></li>
+    <li><button class="tree blank"></button><a href="partimportmethod.html">Metodi di importazione dei pezzi</a></li>
+    <li><button class="tree blank"></button><a href="partassignmaterial.html">Assegna materiale pezzo</a></li>
+    <li><button class="tree blank"></button><a href="partvalidation.html">Convalida dei pezzi</a></li>
+    <li><button class="tree blank"></button><a class="active" href="edittooling.html">Modifica attrezzaggio</a></li>
+    <li><button class="tree blank"></button><a href="toolingcheck.html">Controllo attrezzaggio</a></li>
+    <li><button class="tree blank"></button><a href="rename.html">Rinomina</a></li>
+    <li><button class="tree blank"></button><a href="rollingdirection.html">Direzione di laminazione</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../jobpreparation/index.html">Workflow job</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../jobpreparation/jobcreation.html">Crea job</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/jobview.html">Visualizzazione job</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/edit.html">Modifica</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/jobautoplan.html">Piano automatico</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/jobinteractplan.html">Nesting interattivo</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/jobpriority.html">Priorità</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/jobstatus.html">Stato</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../jobpreparation/layoutcommands/index.html">Gestione del nesting</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/nestview.html">Visualizza layout</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/nccodesend.html">Invio programma NC</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/delete.html">Cancella</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/addparts.html">Aggiungi pezzi</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/adaptcompact.html">Adatta/Compatta</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/exportoutputs.html">Esporta output</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/markcomplete.html">Contrassegna come completo</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/reportsender.html">Trasmettitore report</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../jobpreparation/remnantmanagement/index.html">Gestione residui</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../jobpreparation/remnantmanagement/autoremnant.html">Gestione residui automatici</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/remnantmanagement/manualremnant.html">Gestione lamiere residue manuali</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/importexport.html">Importare / esportare</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/resetpartjob.html">Reset job pezzo</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/outdate.html">Non aggiornato</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../filters/index.html">Filtri</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../filters/filtertour.html">Panoramica filtri</a></li>
+    <li><button class="tree blank"></button><a href="../filters/savedfilters.html">Filtri salvati</a></li>
+    <li><button class="tree blank"></button><a href="../filters/partlibraryfilter.html">Filtro Libreria pezzi</a></li>
+    <li><button class="tree blank"></button><a href="../filters/jobpagefilter.html">Filtro pagina JOB</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../factory/index.html">Fabbrica</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../factory/routes.html">Percorsi</a></li>
+    <li><button class="tree blank"></button><a href="../factory/sheets.html">Lamiere</a></li>
+    <li><button class="tree blank"></button><a href="../factory/customers.html">Clienti</a></li>
+    <li><button class="tree blank"></button><a href="../factory/edit.html">Modifica</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../settings/index.html">Impostazioni</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../settings/environment.html">Ambiente</a></li>
+    <li><button class="tree blank"></button><a href="../settings/import.html">Importa</a></li>
+    <li><button class="tree blank"></button><a href="../settings/bend.html">Piega</a></li>
+    <li><button class="tree blank"></button><a href="../settings/cut.html">Taglio</a></li>
+    <li><button class="tree blank"></button><a href="../settings/notification.html">Notifiche</a></li>
+    <li><button class="tree blank"></button><a href="../settings/watch.html">Guarda</a></li>
+    <li><button class="tree blank"></button><a href="../settings/job.html">Job</a></li>
+    <li><button class="tree blank"></button><a href="../settings/reports.html">Report</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../impressum.html">Informazioni redazionali</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Libreria pezzi</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="edittooling.html">Modifica attrezzaggio</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Modifica attrezzaggio</h1>
+<div class="sect1">
+<h2 id="_come_modificare_lattrezzaggio">Come modificare l&#8217;attrezzaggio<a id="h000271"></a></h2>
+<div class="sectionbody">
+<div id="h000272" class="ulist">
+<ul>
+<li>
+<p>Fare clic con il tasto destro del mouse su qualsiasi pezzo che mostri il comando e il nome del pezzo
+nell&#8217;intestazione. Fare clic su Attrezzaggi per passare alle prime istanze attrezzate. Oppure fare clic con il tasto destro
+sull&#8217;istanza attrezzata, vengono mostrate le informazioni sulla macchina nell&#8217;intestazione.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Vedi: usato per il controllo delle istanze attrezzate.</p>
+</li>
+<li>
+<p>Modifica: controllare e aggiornare le istanze attrezzate per facilitare il processo di produzione.</p>
+<div class="paragraph">
+<p><span class="image"><img src="img/edittooling.png" alt="Tooling Sample"></span>
+== Convalida dell&#8217;attrezzaggio dopo la sua modifica<a id="h000273"></a></p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Le istanze attrezzate modificate si aprono nell&#8217;applicazione Flux o MetaCAM. Effettuare il
+controllo e la modifica manuali dell&#8217;attrezzaggio durante il salvataggio delle modifiche; la finestra di dialogo che segnala modifiche non salvate
+appare per la conferma delle modifiche.</p>
+</li>
+<li>
+<p>Fare clic su Yes. Ora <strong><em>Convalida dell&#8217;attrezzaggio</em></strong> fatta di nuovo.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Se tutto è OK, viene visualizzato Salva modifiche nelle opzioni JFY Plus.</p>
+</li>
+<li>
+<p>Il pezzo presenta un errore di attrezzaggio, le rispettive informazioni di errore verranno mostrate insieme
+all&#8217;opzione: <strong>Ignora questo errore e salva le modifiche</strong>.</p>
+</li>
+<li>
+<p>Correggi l&#8217;errore: <strong>continuare a modificare, non chiudere la finestra</strong> ed eseguire l&#8217;eliminazione
+dell&#8217;errore.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Salta le modifiche e mantieni il vecchio risultato: <strong>ignorare le modifiche
+applicate e chiudere la modifica</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="img/edittoolingupdate.png" alt="Tooling Sample"></span>
+== Identifica i pezzi delle istanze attrezzate modificate nella libreria pezzi<a id="h000276"></a></p>
+</div>
+</li>
+<li>
+<p>Il colore delle istanze attrezzate controllate è il verde.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>L&#8217;autore delle istanze attrezzate viene aggiornato con il rispettivo utente che ha effettuato le recenti modifiche.</p>
+</li>
+<li>
+<p>Modificato da utente è impostato su Sì.</p>
+</li>
+<li>
+<p>Anche l&#8217;autore del pezzo è passato all&#8217;istanza attrezzata modificata di recente.</p>
+<div class="paragraph">
+<p><span class="image"><img src="img/editoolingpartdetail.png" alt="Tooling Sample"></span>
+== Identifica i pezzi delle istanze attrezzate attualmente in fase di modifica nella libreria pezzi<a id="h000278"></a></p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Il riquadro del pezzo mostra un&#8217;icona utente nella parte superiore che mostra che la parte in questione viene verificata per la
+modifica.</p>
+</li>
+<li>
+<p>Posizionando il cursore sul pezzo viene mostrato l&#8217;utente che ha effettuato la verifica, quando, quale
+macchina, ecc.</p>
+</li>
+<li>
+<p>Facendo clic con il tasto destro del mouse sulla stessa istanza attrezzata della macchina non <strong>verrà visualizzata l&#8217;opzione di modifica</strong>.
+<span class="image"><img src="img/edittoolingcheckout.png" alt="Tooling Sample"></span></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_come_modificare_lattrezzaggio">Come modificare l&#8217;attrezzaggio</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="partvalidation.html">Convalida dei pezzi</a></span>
+ <span class="next"><a href="toolingcheck.html">Controllo attrezzaggio</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2025 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>
