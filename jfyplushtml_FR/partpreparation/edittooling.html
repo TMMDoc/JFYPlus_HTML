@@ -37,7 +37,7 @@
    <button class="tree closed"></button>
    <a href="../configuration/index.html">Configuration</a>
    <ul class="hide">
-    <li><button class="tree blank"></button><a href="../configuration/setupmachine.html">Ajouter / Supprimer une machine</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/setupmachine.html">Ajouter / Supprimer une machine</a></li>
     <li><button class="tree blank"></button><a href="../configuration/setuptooling.html">Configurer le montage</a></li>
     <li><button class="tree blank"></button><a href="../configuration/configureusers.html">Configurer les utilisateurs</a></li>
     <li>
@@ -86,7 +86,7 @@
       <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/nccodesend.html">Programme CN envoyé</a></li>
       <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/delete.html">Supprimer</a></li>
       <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/addparts.html">Ajouter des pièces</a></li>
-      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/adaptcompact.html">Adapter / Compacter</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/adaptcompact.html">Adapter / Compacter</a></li>
       <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/exportoutputs.html">Exporter les sorties</a></li>
       <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/markcomplete.html">Marquer comme terminé</a></li>
       <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/reportsender.html">Expéditeur du rapport</a></li>
@@ -100,7 +100,7 @@
       <li><button class="tree blank"></button><a href="../jobpreparation/remnantmanagement/manualremnant.html">Gestion manuelle des tôles restantes</a></li>
      </ul>
     </li>
-    <li><button class="tree blank"></button><a href="../jobpreparation/importexport.html">Importer / Exporter</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/importexport.html">Importer / Exporter</a></li>
     <li><button class="tree blank"></button><a href="../jobpreparation/resetpartjob.html">Tâche Réinitialiser la pièce</a></li>
     <li><button class="tree blank"></button><a href="../jobpreparation/outdate.html">Obsolète</a></li>
    </ul>
@@ -165,27 +165,35 @@
                     <article id="article">
                         <h1>Modifier le montage</h1>
 <div class="sect1">
-<h2 id="_comment_modifier_le_montage">Comment modifier le montage<a id="h000271"></a></h2>
+<h2 id="_comment_modifier_le_montage">Comment modifier le montage</h2>
 <div class="sectionbody">
-<div id="h000272" class="ulist">
+<div class="ulist">
 <ul>
 <li>
 <p>Faites un clic droit sur n&#8217;importe quelle pièce qui contient l&#8217;instruction de pièce et le nom de la pièce dans son en-tête. Cliquez sur Montages pour basculer sur les premières instances montées. Ou faites un clic droit sur l&#8217;instance montée, cela affiche les informations de la machine au niveau de l&#8217;en-tête.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Afficher : permet de vérifier les instances montées que vous pouvez utiliser.</p>
+<p>Afficher : permet de vérifier les instances montées que vous pouvez utiliser.</p>
 </li>
 <li>
-<p>Modifier : permet de vérifier et mettre à jour les instances montées pour faciliter le process de fabrication.</p>
+<p>Modifier : permet de vérifier et mettre à jour les instances montées pour faciliter le process de fabrication.</p>
 <div class="paragraph">
-<p><span class="image"><img src="img/edittooling.png" alt="Tooling Sample"></span>
-== Validation du montage après modification<a id="h000273"></a></p>
+<p><span class="image"><img src="img/edittooling.png" alt="Tooling Sample"></span></p>
 </div>
 </li>
 </ul>
 </div>
 </li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_validation_du_montage_après_modification">Validation du montage après modification</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
 <li>
 <p>Les instances montées modifiées s&#8217;ouvrent dans l&#8217;application Flux ou MetaCAM. Vérifiez et modifiez le montage manuellement. Lors de l&#8217;enregistrement des modifications, la fenêtre de dialogue Modifications non enregistrées apparaît pour confirmer les modifications.</p>
 </li>
@@ -194,13 +202,13 @@
 <div class="ulist">
 <ul>
 <li>
-<p>Si tout est en ordre, « Enregistrer les modifications apportées aux options JFY Plus » s&#8217;affiche.</p>
+<p>Si tout est en ordre, « Enregistrer les modifications apportées aux options JFY Plus » s&#8217;affiche.</p>
 </li>
 <li>
-<p>Si la pièce montre une erreur de montage, les informations d&#8217;erreur respectives seront affichées avec l&#8217;option : <strong>Ignorer cette erreur et enregistrer les modifications</strong>.</p>
+<p>Si la pièce montre une erreur de montage, les informations d&#8217;erreur respectives seront affichées avec l&#8217;option : <strong>Ignorer cette erreur et enregistrer les modifications</strong>.</p>
 </li>
 <li>
-<p>Corrigez l&#8217;erreur : <strong>continuez l&#8217;édition, ne fermez pas la fenêtre</strong> et corrigez l&#8217;erreur.</p>
+<p>Corrigez l&#8217;erreur : <strong>continuez l&#8217;édition, ne fermez pas la fenêtre</strong> et corrigez l&#8217;erreur.</p>
 </li>
 </ul>
 </div>
@@ -208,10 +216,18 @@
 <li>
 <p>Ignorez les modifications et conservez l&#8217;ancien résultat - <strong>Ignorer les modifications appliquées et fermer la modification</strong>.</p>
 <div class="paragraph">
-<p><span class="image"><img src="img/edittoolingupdate.png" alt="Tooling Sample"></span>
-== Identifier les pièces avec instances de montage modifiées dans la bibliothèque de pièces<a id="h000276"></a></p>
+<p><span class="image"><img src="img/edittoolingupdate.png" alt="Tooling Sample"></span></p>
 </div>
 </li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_identifier_les_pièces_avec_instances_de_montage_modifiées_dans_la_bibliothèque_de_pièces">Identifier les pièces avec instances de montage modifiées dans la bibliothèque de pièces</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
 <li>
 <p>Les instances montées vérifiées s&#8217;affichent en vert.</p>
 <div class="ulist">
@@ -225,13 +241,21 @@
 <li>
 <p>L&#8217;auteur de la pièce est également remplacé par l&#8217;instance montée récemment modifiée.</p>
 <div class="paragraph">
-<p><span class="image"><img src="img/editoolingpartdetail.png" alt="Tooling Sample"></span>
-== Identifier les pièces avec instances de montage en cours de modification dans la bibliothèque de pièces<a id="h000278"></a></p>
+<p><span class="image"><img src="img/editoolingpartdetail.png" alt="Tooling Sample"></span></p>
 </div>
 </li>
 </ul>
 </div>
 </li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_identifier_les_pièces_avec_instances_de_montage_en_cours_de_modification_dans_la_bibliothèque_de_pièces">Identifier les pièces avec instances de montage en cours de modification dans la bibliothèque de pièces</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
 <li>
 <p>La case de la pièce affiche une icône utilisateur en haut de l&#8217;écran qui indique que la pièce est en cours de révision pour modification.</p>
 </li>
@@ -240,6 +264,7 @@
 </li>
 <li>
 <p>Un clic droit sur la même instance montée de la machine n&#8217;affiche pas l&#8217;option <strong>Modifier</strong>.
+[Only site admin will have cancel check out option]<br>
 <span class="image"><img src="img/edittoolingcheckout.png" alt="Tooling Sample"></span></p>
 </li>
 </ul>
@@ -255,6 +280,15 @@
  <ul>
   <li level="1">
    <a href="#_comment_modifier_le_montage">Comment modifier le montage</a>
+  </li>
+  <li level="1">
+   <a href="#_validation_du_montage_après_modification">Validation du montage après modification</a>
+  </li>
+  <li level="1">
+   <a href="#_identifier_les_pièces_avec_instances_de_montage_modifiées_dans_la_bibliothèque_de_pièces">Identifier les pièces avec instances de montage modifiées dans la bibliothèque de pièces</a>
+  </li>
+  <li level="1">
+   <a href="#_identifier_les_pièces_avec_instances_de_montage_en_cours_de_modification_dans_la_bibliothèque_de_pièces">Identifier les pièces avec instances de montage en cours de modification dans la bibliothèque de pièces</a>
   </li>
  </ul>
 </aside>

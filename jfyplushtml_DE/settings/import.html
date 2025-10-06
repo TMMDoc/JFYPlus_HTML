@@ -180,8 +180,10 @@
 <p><strong>Save flat pattern</strong> - Aktivieren Sie diese Option, damit das Flachmuster eines importierten Teils gespeichert wird.</p>
 </div>
 <div class="paragraph">
-<p><strong>Format for flat pattern</strong> – Siehe JFY Core-Einstellungen.
-<strong>Flat pattern destination</strong> - Das ist der Ort, an dem das Flachmuster gespeichert wird.</p>
+<p><strong>Format for flat pattern</strong> - This option is used to choose either DXF or GEO file formats.</p>
+</div>
+<div class="paragraph">
+<p><strong>Flat pattern destination</strong> - Das ist der Ort, an dem das Flachmuster gespeichert wird.</p>
 </div>
 </div>
 </div>
@@ -189,8 +191,10 @@
 <h2 id="_import_settings">Import settings</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>Units for DXF files</strong> – Siehe JFY Core-Einstellungen.
-<strong>Material lookup keys</strong> - Sie können mehrere Sucheingaben zuweisen, indem Sie ein Komma als Trennzeichen verwenden. Wenn ein Teil importiert wird, verwendet Praxis diese Schlüsselwörter zur Suche nach Materialwerten. Die gesuchten Werte werden dann zum Lösen des Rohmaterials verwendet. Die Originalwerte werden in den sonstigen Eigenschaften des Teils gespeichert.</p>
+<p><strong>Units for DXF files</strong> - This is the unit of measurement a DXF file will be imported with, the user can choose between mm or inch.</p>
+</div>
+<div class="paragraph">
+<p><strong>Material lookup keys</strong> - Sie können mehrere Sucheingaben zuweisen, indem Sie ein Komma als Trennzeichen verwenden. Wenn ein Teil importiert wird, verwendet Praxis diese Schlüsselwörter zur Suche nach Materialwerten. Die gesuchten Werte werden dann zum Lösen des Rohmaterials verwendet. Die Originalwerte werden in den sonstigen Eigenschaften des Teils gespeichert.</p>
 </div>
 <div class="paragraph">
 <p><strong>Revision lookup keys</strong> - Beim Importieren eines Teils wird der Überarbeitungswert aus der Rohteildatei (der zu importierenden Teiledatei) mit dem im Repository vorhandenen Überarbeitungswert verglichen. Wenn die Überarbeitung identisch ist, wird der Import abgebrochen. Die benutzerdefinierte Feldzuordnung wird nun auch für die DXF-Dateien unterstützt. Für die DXF-Dateien werden die benutzerdefinierten Felddaten aus der Textebene in der Zeichnung oder einer PPI-Anlage extrahiert.</p>
@@ -243,7 +247,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="_fudge_wert_für_die_dicke">Fudge-Wert für die Dicke<a id="h000380"></a></h2>
+<h2 id="_fudge_wert_für_die_dicke">Fudge-Wert für die Dicke</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Wenn eine bestimmte Blechdicke nicht im Bestand verfügbar ist, wählt <strong>Thickness comparison fudge</strong> den nächstgelegenen Blechdickenwert aus, indem der Wert für die Dicke der Bleche im Bestand vergleicht.</p>
@@ -254,7 +258,7 @@
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Wir haben ein Teil mit einer Blechdicke von 1,6 mm und dem Material Stahl.</p>
+<p>Wir haben ein Teil mit einer Blechdicke von 1,6 mm und dem Material Stahl.</p>
 <div class="imageblock">
 <div class="content">
 <img src="img/importsheet.png" alt="ImportSheet" width="310">
@@ -262,7 +266,7 @@
 </div>
 </li>
 <li>
-<p>Der <strong>Thickness comparison fudge</strong>-Wert beträgt 0,1 mm.</p>
+<p>Der <strong>Thickness comparison fudge</strong>-Wert beträgt 0,1 mm.</p>
 <div class="imageblock">
 <div class="content">
 <img src="img/thickcomfudge.png" alt="Thickness comparison fudge" width="821">
@@ -270,22 +274,22 @@
 </div>
 </li>
 <li>
-<p>Im Bestand gibt es Stahlbleche mit einer Dicke von 1,5 mm, 1,55 mm und 1,7 mm.</p>
+<p>Im Bestand gibt es Stahlbleche mit einer Dicke von 1,5 mm, 1,55 mm und 1,7 mm.</p>
 <div class="imageblock">
 <div class="content">
 <img src="img/sheetthickness.png" alt="Sheet inventory" width="621">
 </div>
 </div>
 <div class="paragraph">
-<p>JFY Plus wählt ein Blech mit dem nächstgelegenen Dickenwert aus, nachdem der <strong>Thickness comparison fudge</strong>-Wert (0,1 mm) mit dem importierten Artikel (von 1,6 mm) verglichen wurde. In diesem Fall werden 1,55 mm ausgewählt.</p>
-</div>
-</li>
-</ol>
+<p>JFY Plus wählt ein Blech mit dem nächstgelegenen Dickenwert aus, nachdem der <strong>Thickness comparison fudge</strong>-Wert (0,1 mm) mit dem importierten Artikel (von 1,6 mm) verglichen wurde. In diesem Fall werden 1,55 mm ausgewählt.</p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="img/fudgeimport.png" alt="Import part" width="347">
 </div>
+</div>
+</li>
+</ol>
 </div>
 </div>
 </div>

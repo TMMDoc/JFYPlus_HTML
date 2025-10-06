@@ -169,9 +169,9 @@
                     <article id="article">
                         <h1>自动残留物管理</h1>
 <div class="sect1">
-<h2 id="_启用残留物">启用残留物<a id="h000226"></a></h2>
+<h2 id="_启用残留物">启用残留物</h2>
 <div class="sectionbody">
-<div id="h000227" class="ulist">
+<div class="ulist">
 <ul>
 <li>
 <p>Praxis支持在排样期间从布局自动创建剩余板材。此功能仅适用于Flux切割机。</p>
@@ -192,7 +192,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="_配置自动残留物">配置自动残留物<a id="h000229"></a></h2>
+<h2 id="_配置自动残留物">配置自动残留物</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
@@ -201,20 +201,24 @@
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>选择ui:SH.UpdateSheetInventory[<strong>Update sheet inventory on nest
-(un)release</strong>] 和 <strong>Automate remnant inventory management</strong> image::autoremnant.png[Auto Remnant]
-== 自动残留物<a id="h000230"></a></p>
+<p>选择*Update sheet inventory on nest(un)release*
+和 <strong>Automate remnant inventory management</strong> image::autoremnant.png[Auto Remnant]</p>
 </li>
 </ol>
 </div>
 </li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_自动残留物">自动残留物</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
 <li>
 <p>在满足最小板材值X&amp;Y的同时，排样留下没有零件的空间，然后创建剩余板材。</p>
 </li>
-</ul>
-</div>
-<div id="h000232" class="ulist">
-<ul>
 <li>
 <p>在套料排样中，创建的剩余板材以绿色轮廓显示，带灰色背景，如下所示。</p>
 </li>
@@ -225,7 +229,7 @@
 <img src="img/remnantsheetjobview.png" alt="Remnant Sheet JOB view">
 </div>
 </div>
-<div id="h000233" class="ulist">
+<div class="ulist">
 <ul>
 <li>
 <p>双击排样和排样详情页面，将显示剩余板材信息以及剩余板材大小、数量和面积。</p>
@@ -237,15 +241,11 @@
 <img src="img/remnantsheetnestview.png" alt="Remnant Sheet Nest View">
 </div>
 </div>
-<div id="h000234" class="ulist">
+<div class="ulist">
 <ul>
 <li>
 <p>右键单击在Flux中打开的排样和编辑，显示零件之间的切片线和骨架切片线，以及残留蚀刻标记[材料，厚度和残留物大小]</p>
 </li>
-</ul>
-</div>
-<div id="h000235" class="ulist">
-<ul>
 <li>
 <p>残留蚀刻标记用于操作员在不测量的情况下拾取板材，或在未来的排样中使用时易于拾取。</p>
 </li>
@@ -261,14 +261,18 @@
 <li>
 <p>*Mark Complete*时的剩余板材，绿色勾选标记表示排样已完成。部分阴影的正方形图标显示创建并更新到板材库存的剩余板材。</p>
 </li>
+<li>
+<p>板材数据库使用剩余板材大小和数量进行更新，后者与板材尺寸的*一起识别。[剩余板材有绿色边框]</p>
+</li>
 </ul>
 </div>
-<div id="h000236" class="ulist">
+<div class="imageblock">
+<div class="content">
+<img src="img/remnantsheetcreated.png" alt="Remnant Sheet Created">
+</div>
+</div>
+<div class="ulist">
 <ul>
-<li>
-<p>板材数据库使用剩余板材大小和数量进行更新，后者与板材尺寸的*一起识别。[剩余板材有绿色边框]
-image::remnantsheetcreated.png[Remnant Sheet Created]</p>
-</li>
 <li>
 <p>套料的自动计划或交互式计划将认为剩余板材在排样计划中具有高优先级，后者首先用于处理无剩余板材的车间。</p>
 </li>
@@ -293,6 +297,9 @@ image::remnantsheetcreated.png[Remnant Sheet Created]</p>
   </li>
   <li level="1">
    <a href="#_配置自动残留物">配置自动残留物</a>
+  </li>
+  <li level="1">
+   <a href="#_自动残留物">自动残留物</a>
   </li>
  </ul>
 </aside>

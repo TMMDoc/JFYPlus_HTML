@@ -1,4 +1,4 @@
-Version=56
+Version=58
 APPNAME=JFY Plus
 BENDAPP=JFY Bend
 BRAND=JFY
@@ -11,27 +11,27 @@ Folders=11
 Pages=68
 UIXlate=False, DebugUIXlate=False, Language=EN
 
-contents.txt • 254914.094936
+contents.txt • 255624.025618
 Features.adoc • Fonctions
 Impressum.adoc • Impressum
 Index.adoc • Bienvenue dans {APPNAME}
 Index.JFY.adoc • Bienvenue dans {APPNAME}
-manifest.txt • 254914.094936
+manifest.txt • 252106.042143
 Configuration\CADMapFields.adoc • Mapper les champs à partir de la CAO (clés de recherche)
 Configuration\configureUsers.adoc • Configurer les utilisateurs
-Configuration\contents.txt • 254914.094935
+Configuration\contents.txt • 255624.025618
 Configuration\Index.adoc • Configuration
 Configuration\MapBendPages.adoc • Mapper la matière
 Configuration\MapCAMPages.adoc • Mapper les pages FAO
-Configuration\SetupMachine.adoc • Ajouter / Supprimer une machine
+Configuration\SetupMachine.adoc • Ajouter / Supprimer une machine
 Configuration\SetupTooling.adoc • Configurer le montage
-Factory\contents.txt • 254914.094935
+Factory\contents.txt • 255624.025618
 Factory\Customers.adoc • Clients
 Factory\edit.adoc • Modifier
 Factory\Index.adoc • Usine
 Factory\routes.adoc • Trajectoires
 Factory\sheets.adoc • Tôles
-Filters\contents.txt • 254914.094935
+Filters\contents.txt • 255624.025618
 Filters\FilterTour.adoc • Tour des filtres
 Filters\Index.adoc • Filtres
 Filters\JOBPageFilter.adoc • Filtre page de tâche
@@ -39,16 +39,16 @@ Filters\PartLibraryFilter.adoc • Filtre de bibliothèque de pièces
 Filters\SavedFilters.adoc • Filtres enregistrés
 Installation\changelic.adoc • Modifier la licence
 Installation\ClientInstallation.adoc • Installation du client
-Installation\contents.txt • 254914.094935
+Installation\contents.txt • 255624.025618
 Installation\HardwareRequirement.adoc • Condition requise pour le matériel
 Installation\importformats.adoc • Formats pris en charge par la CAO
 Installation\index.adoc • Introduction
 Installation\Prerequisites.adoc • Conditions requises
 Installation\ServerInstallation.adoc • Installation du serveur
 Installation\Workflow.adoc • Flux de travail
-JOBPreparation\contents.txt • 254914.094935
+JOBPreparation\contents.txt • 255624.025618
 JOBPreparation\Edit.adoc • Modifier
-JOBPreparation\importexport.adoc • Importer / Exporter
+JOBPreparation\importexport.adoc • Importer / Exporter
 JOBPreparation\Index.adoc • Flux de travail de la tâche
 JOBPreparation\JOBAutoPlan.adoc • Plan auto
 JOBPreparation\JOBCreation.adoc • Créer une tâche
@@ -58,7 +58,7 @@ JOBPreparation\JOBStatus.adoc • Etat
 JOBPreparation\JOBView.adoc • Affichage des tâches
 JOBPreparation\OutDate.adoc • Obsolète
 JOBPreparation\ResetPartJob.adoc • Tâche Réinitialiser la pièce
-PartPreparation\contents.txt • 254914.094935
+PartPreparation\contents.txt • 255624.025618
 PartPreparation\EditTooling.adoc • Modifier le montage
 PartPreparation\Index.adoc • Bibliothèque de pièces
 PartPreparation\PartAssignMaterial.adoc • Attribuer une matière à la pièce
@@ -71,7 +71,7 @@ PartPreparation\Rename.adoc • Renommer
 PartPreparation\RollingDirection.adoc • Sens de laminage
 PartPreparation\ToolingCheck.adoc • Vérification du montage
 Settings\Bend.adoc • Pliage
-Settings\contents.txt • 254914.094936
+Settings\contents.txt • 255624.025618
 Settings\Cut.adoc • Coupe
 Settings\Environment.adoc • Environnement
 Settings\Import.adoc • Importer
@@ -82,13 +82,13 @@ Settings\Reports.adoc • Rapports
 Settings\Watch.adoc • Surveillance
 UIXlate\EN.txt
 Configuration\AddMaterial\AddNew.adoc • Ajouter nouveau
-Configuration\AddMaterial\contents.txt • 254914.094935
+Configuration\AddMaterial\contents.txt • 255624.025618
 Configuration\AddMaterial\ExportImport.adoc • Exporter/importer une matière
 Configuration\AddMaterial\Index.adoc • Matière
 Configuration\AddMaterial\ReplaceMaterial.adoc • Remplacer la matière
-JOBPreparation\LayoutCommands\AdaptCompact.adoc • Adapter / Compacter
+JOBPreparation\LayoutCommands\AdaptCompact.adoc • Adapter / Compacter
 JOBPreparation\LayoutCommands\AddParts.adoc • Ajouter des pièces
-JOBPreparation\LayoutCommands\contents.txt • 254914.094935
+JOBPreparation\LayoutCommands\contents.txt • 255624.025618
 JOBPreparation\LayoutCommands\Delete.adoc • Supprimer
 JOBPreparation\LayoutCommands\ExportOutputs.adoc • Exporter les sorties
 JOBPreparation\LayoutCommands\Index.adoc • Gestion des imbrications
@@ -97,25 +97,6 @@ JOBPreparation\LayoutCommands\NCCodeSend.adoc • Programme CN envoyé
 JOBPreparation\LayoutCommands\NestView.adoc • Affichage de layout
 JOBPreparation\LayoutCommands\ReportSender.adoc • Expéditeur du rapport
 JOBPreparation\RemnantManagement\AutoRemnant.adoc • Gestion automatique des restes
-JOBPreparation\RemnantManagement\contents.txt • 254914.094935
+JOBPreparation\RemnantManagement\contents.txt • 255624.025618
 JOBPreparation\RemnantManagement\Index.adoc • Gestion des restes
 JOBPreparation\RemnantManagement\ManualRemnant.adoc • Gestion manuelle des tôles restantes
-Settings\.attic\Environment.adoc • Environnement
-Settings\.attic\Notifications.adoc • Notifications
-Settings\.attic\JOBOutputSettings\contents.txt • 254914.094935
-Settings\.attic\JOBOutputSettings\Index.adoc • Réglages de la sortie de tâche
-Settings\.attic\JOBOutputSettings\Outputs.adoc • Sorties
-Settings\.attic\JOBOutputSettings\Reports.adoc • Rapports
-Settings\.attic\JOBSettings\AutoRefreshLayouts.adoc • Actualisation automatique des layouts
-Settings\.attic\JOBSettings\AutoRelease.adoc • Libération automatique
-Settings\.attic\JOBSettings\contents.txt • 254914.094936
-Settings\.attic\JOBSettings\Index.adoc • Réglages de tâche
-Settings\.attic\JOBSettings\MixParts.adoc • Mélanger des pièces de plusieurs tâches
-Settings\.attic\JOBSettings\Twinline.adoc • TwinLine
-Settings\.attic\PartSettings\contents.txt • 254914.094936
-Settings\.attic\PartSettings\Index.adoc • Réglages de pièce
-Settings\.attic\PartSettings\PartOutputSettings.adoc • Réglages de la sortie de pièce
-Settings\.attic\PartSettings\RetainLegacyFXBend.adoc • Conserver le pliage FX existant
-Settings\.attic\PartSettings\Revision.adoc • Révision
-Settings\.attic\PartSettings\RotateHorizontal.adoc • Pivoter horizontalement
-Settings\.attic\PartSettings\ThicknessFudge.adoc • Embellissement de l'épaisseur

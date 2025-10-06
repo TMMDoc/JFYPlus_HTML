@@ -180,8 +180,10 @@
 <p><strong>Save flat pattern</strong> -为要保存的导入零件的平面图案启用此选项。</p>
 </div>
 <div class="paragraph">
-<p><strong>Format for flat pattern</strong> -请参阅JFY Core设置。
-<strong>Flat pattern destination</strong> -这是保存平面图案的位置。</p>
+<p><strong>Format for flat pattern</strong> - This option is used to choose either DXF or GEO file formats.</p>
+</div>
+<div class="paragraph">
+<p><strong>Flat pattern destination</strong> -这是保存平面图案的位置。</p>
 </div>
 </div>
 </div>
@@ -189,8 +191,10 @@
 <h2 id="_import_settings">Import settings</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>Units for DXF files</strong> -请参阅JFY Core设置。
-<strong>Material lookup keys</strong> -可以使用逗号分隔符分配多个查找条目。导入零件时，Praxis使用这些关键词来搜索材料值。然后使用搜索值来解析材料。原始值存储在零件“杂项属性”中。</p>
+<p><strong>Units for DXF files</strong> - This is the unit of measurement a DXF file will be imported with, the user can choose between mm or inch.</p>
+</div>
+<div class="paragraph">
+<p><strong>Material lookup keys</strong> -可以使用逗号分隔符分配多个查找条目。导入零件时，Praxis使用这些关键词来搜索材料值。然后使用搜索值来解析材料。原始值存储在零件“杂项属性”中。</p>
 </div>
 <div class="paragraph">
 <p><strong>Revision lookup keys</strong> -导入零件时，将原始零件文件（正在导入的零件文件）的修订值与存储库中的现有修订值进行比较。如果修订值相同，则放弃导入。DXF文件现在也支持自定义字段映射。对于DXF文件，自定义字段数据从图形或PPI附件中的文本图层中提取。</p>
@@ -268,16 +272,21 @@
 </li>
 <li>
 <p>库存的钢板厚度为1.5毫米、1.55毫米和1.7毫米。</p>
-<div class="paragraph">
-<p>image::SheetThickness.png[Sheet inventory,621] JFY Plus将*Thickness comparison fudge*值（0.1毫米）与导入物品（1.6毫米）进行比较后，选择厚度值最接近的板材。 在这种情况下，将选择1.55 mm。</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/sheetthickness.png" alt="Sheet inventory" width="621">
 </div>
-</li>
-</ol>
+</div>
+<div class="paragraph">
+<p>JFY Plus将*Thickness comparison fudge*值（0.1毫米）与导入物品（1.6毫米）进行比较后，选择厚度值最接近的板材。 在这种情况下，将选择1.55 mm。</p>
 </div>
 <div class="imageblock">
 <div class="content">
 <img src="img/fudgeimport.png" alt="Import part" width="347">
 </div>
+</div>
+</li>
+</ol>
 </div>
 </div>
 </div>

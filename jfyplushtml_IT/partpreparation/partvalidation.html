@@ -165,10 +165,10 @@
                     <article id="article">
                         <h1>Convalida dei pezzi</h1>
 <div class="sect1">
-<h2 id="_errore_cad">Errore CAD<a id="h000306"></a></h2>
+<h2 id="_errore_cad">Errore CAD</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_non_fattibile_piega_e_taglio">Non fattibile (piega e taglio)<a id="h000307"></a></h3>
+<h3 id="_non_fattibile_piega_e_taglio">Non fattibile (piega e taglio)</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -185,31 +185,68 @@ si passa automaticamente alla soluzione di taglio.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/feasible.png" alt="Bend and Cut Infeasible Error"></span>
-=== Errore materiale<a id="h000308"></a>
-- Materiale mancante: spessore inizialmente letto da modello e materiale assegnato
+<p><span class="image"><img src="img/feasible.png" alt="Bend and Cut Infeasible Error"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_errore_materiale">Errore materiale</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Materiale mancante: spessore inizialmente letto da modello e materiale assegnato
 che viene confrontato con il materiale grezzo JFY Plus. Se non esiste, si tratta di
-un errore Materiale mancante.
-- _
-Material not assigned: il modello non ha un campo mappato rispetto al materiale, quindi
+un errore Materiale mancante.</p>
+</li>
+<li>
+<p>Material not assigned: il modello non ha un campo mappato rispetto al materiale, quindi
 è assegnato con Materiale non assegnato.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/materialerror.png" alt="Material Error Types"></span>
-=== Errore geometria<a id="h000309"></a>
-- Open contours detected:
-CAD ha un&#8217;entità aperta.
-- Multiple outer contours detected
- : CAD ha più loop chiusi.
-<span class="image"><img src="img/caderror.png" alt="CAD Error Types"></span>
-- Nascente: caricamento di un pezzo dal foglio di calcolo csv o xlsx, i file CAD mancanti sono
-creati come errore Pezzo nascente.
-- Geometry missing
- : CAD non ha geometria valida o disponibile.
-<span class="image"><img src="img/caderror01.png" alt="CAD Error Types"></span>
-== Errore CAM<a id="h000310"></a>
-=== Errore attrezzaggio di piegatura<a id="h000311"></a></p>
+<p><span class="image"><img src="img/materialerror.png" alt="Material Error Types"></span></p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_errore_geometria">Errore geometria</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Open contours detected:
+CAD ha un&#8217;entità aperta.</p>
+</li>
+<li>
+<p>Multiple outer contours detected
+: CAD ha più loop chiusi.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/caderror.png" alt="CAD Error Types"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Nascente: caricamento di un pezzo dal foglio di calcolo csv o xlsx, i file CAD mancanti sono
+creati come errore Pezzo nascente.</p>
+</li>
+<li>
+<p>Geometry missing
+: CAD non ha geometria valida o disponibile.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/caderror01.png" alt="CAD Error Types"></span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_errore_cam">Errore CAM</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_errore_attrezzaggio_di_piegatura">Errore attrezzaggio di piegatura</h3>
 <div class="paragraph">
 <p>Di seguito sono riportati gli errori attrezzaggio di piegatura.</p>
 </div>
@@ -222,25 +259,45 @@ e Gripper error.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/bendcamerror01.png" alt="Bend Tooling Error Types"></span>
-- Utensile Overload error
+<p><span class="image"><img src="img/bendcamerror01.png" alt="Bend Tooling Error Types"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Utensile Overload error
 e foro vicini alla linea di piega.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/bendcamerror02.png" alt="Bend Tooling Error Types"></span>
-- Needs review
- e lunghezza corta del punzone/matrice.</p>
+<p><span class="image"><img src="img/bendcamerror02.png" alt="Bend Tooling Error Types"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Needs review
+e lunghezza corta del punzone/matrice.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/bendcamerror03.png" alt="Bend Tooling Error Types"></span>
-- Tool missing
+<p><span class="image"><img src="img/bendcamerror03.png" alt="Bend Tooling Error Types"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Tool missing
 , Poor backguage
 , pezzo troppo grande per la macchina.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/bendcamerror04.png" alt="Bend Tooling Error Types"></span>
-=== Errore attrezzaggio di taglio<a id="h000312"></a></p>
+<p><span class="image"><img src="img/bendcamerror04.png" alt="Bend Tooling Error Types"></span></p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_errore_attrezzaggio_di_taglio">Errore attrezzaggio di taglio</h3>
 <div class="paragraph">
 <p>Di seguito sono riportati gli errori attrezzaggio di piegatura.</p>
 </div>
@@ -252,10 +309,18 @@ e foro vicini alla linea di piega.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/cutcamerror01.png" alt="Cut Tooling Error Types"></span>
-- Errore sfridi da punzonatura: per l&#8217;attrezzaggio di punzonatura, il loop interno è attrezzato senza punti di giunzione.
-- Untooled or partially tooled contours
- : segmenti con attrezzaggio di punzonatura mancanti.</p>
+<p><span class="image"><img src="img/cutcamerror01.png" alt="Cut Tooling Error Types"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Errore sfridi da punzonatura: per l&#8217;attrezzaggio di punzonatura, il loop interno è attrezzato senza punti di giunzione.</p>
+</li>
+<li>
+<p>Untooled or partially tooled contours
+: segmenti con attrezzaggio di punzonatura mancanti.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="img/cutcamerror02.png" alt="Cut Tooling Error Types"></span></p>
@@ -275,6 +340,21 @@ e foro vicini alla linea di piega.</p>
   </li>
   <li level="2">
    <a href="#_non_fattibile_piega_e_taglio">Non fattibile (piega e taglio)</a>
+  </li>
+  <li level="2">
+   <a href="#_errore_materiale">Errore materiale</a>
+  </li>
+  <li level="2">
+   <a href="#_errore_geometria">Errore geometria</a>
+  </li>
+  <li level="1">
+   <a href="#_errore_cam">Errore CAM</a>
+  </li>
+  <li level="2">
+   <a href="#_errore_attrezzaggio_di_piegatura">Errore attrezzaggio di piegatura</a>
+  </li>
+  <li level="2">
+   <a href="#_errore_attrezzaggio_di_taglio">Errore attrezzaggio di taglio</a>
   </li>
  </ul>
 </aside>

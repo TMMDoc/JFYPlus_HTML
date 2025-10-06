@@ -165,10 +165,10 @@
                     <article id="article">
                         <h1>Validación de piezas</h1>
 <div class="sect1">
-<h2 id="_error_de_cad">Error de CAD<a id="h000306"></a></h2>
+<h2 id="_error_de_cad">Error de CAD</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_inviable_plegar_y_cortar">Inviable (plegar y cortar)<a id="h000307"></a></h3>
+<h3 id="_inviable_plegar_y_cortar">Inviable (plegar y cortar)</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -183,27 +183,63 @@
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/feasible.png" alt="Bend and Cut Infeasible Error"></span>
-=== Error de material<a id="h000308"></a>
-- Material faltante: inicialmente se lee el espesor del modelo y se asigna el material, que se compara con la JFY Plus materia prima. Si no existe, se asigna un error de material faltante.
-- _Material not assigned
-: Si el modelo no tiene un campo de mapa para el material, se le asigna "Material no asignado".</p>
+<p><span class="image"><img src="img/feasible.png" alt="Bend and Cut Infeasible Error"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_error_de_material">Error de material</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Material faltante: inicialmente se lee el espesor del modelo y se asigna el material, que se compara con la JFY Plus materia prima. Si no existe, se asigna un error de material faltante.</p>
+</li>
+<li>
+<p>Material not assigned : Si el modelo no tiene un campo de mapa para el material, se le asigna "Material no asignado".</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/materialerror.png" alt="Material Error Types"></span>
-=== Error de geometría<a id="h000309"></a>
-- Open contours detected:
-CAD tiene entidad abierta.
-- Multiple outer contours detected:
- CAD tiene múltiples bucles cerrados.
-<span class="image"><img src="img/caderror.png" alt="CAD Error Types"></span>
-- Incipiente: al cargar una pieza desde una hoja de cálculo csv o xlsx, los archivos CAD que faltan se crean como error de pieza Incipiente.
-- Geometry missing
- : CAD no tiene una geometría válida o no está disponible.
-<span class="image"><img src="img/caderror01.png" alt="CAD Error Types"></span>
-== Error CAM<a id="h000310"></a>
-=== Error de utillaje de plegado<a id="h000311"></a></p>
+<p><span class="image"><img src="img/materialerror.png" alt="Material Error Types"></span></p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_error_de_geometría">Error de geometría</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Open contours detected:
+CAD tiene entidad abierta.</p>
+</li>
+<li>
+<p>Multiple outer contours detected:
+CAD tiene múltiples bucles cerrados.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/caderror.png" alt="CAD Error Types"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Incipiente: al cargar una pieza desde una hoja de cálculo csv o xlsx, los archivos CAD que faltan se crean como error de pieza Incipiente.</p>
+</li>
+<li>
+<p>Geometry missing : CAD no tiene una geometría válida o no está disponible.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/caderror01.png" alt="CAD Error Types"></span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_error_cam">Error CAM</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_error_de_utillaje_de_plegado">Error de utillaje de plegado</h3>
 <div class="paragraph">
 <p>A continuación se indican los errores de los útiles de plegado.</p>
 </div>
@@ -216,24 +252,44 @@ y Gripper error.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/bendcamerror01.png" alt="Bend Tooling Error Types"></span>
-- Útil Overload error y agujero cerca de la línea de plegado.</p>
+<p><span class="image"><img src="img/bendcamerror01.png" alt="Bend Tooling Error Types"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Útil Overload error y agujero cerca de la línea de plegado.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/bendcamerror02.png" alt="Bend Tooling Error Types"></span>
-- Needs review
- y el punzón/matriz tienen un recorrido corto.</p>
+<p><span class="image"><img src="img/bendcamerror02.png" alt="Bend Tooling Error Types"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Needs review
+y el punzón/matriz tienen un recorrido corto.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/bendcamerror03.png" alt="Bend Tooling Error Types"></span>
-- Tool missing
+<p><span class="image"><img src="img/bendcamerror03.png" alt="Bend Tooling Error Types"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Tool missing
 , Poor backguage
 , Pieza demasiado grande para la máquina.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/bendcamerror04.png" alt="Bend Tooling Error Types"></span>
-=== Error de utillaje de corte<a id="h000312"></a></p>
+<p><span class="image"><img src="img/bendcamerror04.png" alt="Bend Tooling Error Types"></span></p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_error_de_utillaje_de_corte">Error de utillaje de corte</h3>
 <div class="paragraph">
 <p>A continuación se indican los errores de los útiles de corte.</p>
 </div>
@@ -245,10 +301,17 @@ y Gripper error.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/cutcamerror01.png" alt="Cut Tooling Error Types"></span>
-- Error de pepita: para los útiles de punzonado, el bucle interno se mecaniza sin uniones.
-- Untooled or partially tooled contours
- : Faltan segmentos punzonados.</p>
+<p><span class="image"><img src="img/cutcamerror01.png" alt="Cut Tooling Error Types"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Error de pepita: para los útiles de punzonado, el bucle interno se mecaniza sin uniones.</p>
+</li>
+<li>
+<p>Untooled or partially tooled contours : Faltan segmentos punzonados.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="img/cutcamerror02.png" alt="Cut Tooling Error Types"></span></p>
@@ -268,6 +331,21 @@ y Gripper error.</p>
   </li>
   <li level="2">
    <a href="#_inviable_plegar_y_cortar">Inviable (plegar y cortar)</a>
+  </li>
+  <li level="2">
+   <a href="#_error_de_material">Error de material</a>
+  </li>
+  <li level="2">
+   <a href="#_error_de_geometría">Error de geometría</a>
+  </li>
+  <li level="1">
+   <a href="#_error_cam">Error CAM</a>
+  </li>
+  <li level="2">
+   <a href="#_error_de_utillaje_de_plegado">Error de utillaje de plegado</a>
+  </li>
+  <li level="2">
+   <a href="#_error_de_utillaje_de_corte">Error de utillaje de corte</a>
   </li>
  </ul>
 </aside>

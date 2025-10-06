@@ -165,10 +165,10 @@
                     <article id="article">
                         <h1>零件验证</h1>
 <div class="sect1">
-<h2 id="_cad错误">CAD错误<a id="h000306"></a></h2>
+<h2 id="_cad错误">CAD错误</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_不可行折弯和切割">不可行（折弯和切割）<a id="h000307"></a></h3>
+<h3 id="_不可行折弯和切割">不可行（折弯和切割）</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -183,23 +183,55 @@
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/feasible.png" alt="Bend and Cut Infeasible Error"></span>
-=== 材料错误<a id="h000308"></a>
-- 缺少材料：最初从分配的模型和材料读取的厚度，根据 JFY Plus 材料进行检查。如果不存在，则触发分配的材料缺失错误。
-- _Material not assigned：模型没有针对材料的映射字段，则分配有未分配的材料。</p>
+<p><span class="image"><img src="img/feasible.png" alt="Bend and Cut Infeasible Error"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_材料错误">材料错误</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>缺少材料：最初从分配的模型和材料读取的厚度，根据 JFY Plus 材料进行检查。如果不存在，则触发分配的材料缺失错误。</p>
+</li>
+<li>
+<p>Material not assigned：模型没有针对材料的映射字段，则分配有未分配的材料。</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/materialerror.png" alt="Material Error Types"></span>
-=== 几何形状错误<a id="h000309"></a>
-- Open contours detected：CAD具有开放实体。
-- Multiple outer contours detected： CAD有多个闭环。
-<span class="image"><img src="img/caderror.png" alt="CAD Error Types"></span>
-- 新生：从电子表格csv或xlsx加载零件，缺少的CAD文件创建为新生零件错误。
-- Geometry missing：CAD没有有效的几何形状或不可用。
-<span class="image"><img src="img/caderror01.png" alt="CAD Error Types"></span>
-== CAM错误<a id="h000310"></a>
-=== 折弯加工错误<a id="h000311"></a></p>
+<p><span class="image"><img src="img/materialerror.png" alt="Material Error Types"></span></p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_几何形状错误">几何形状错误</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Open contours detected：CAD具有开放实体。</p>
+</li>
+<li>
+<p>Multiple outer contours detected： CAD有多个闭环。
+<span class="image"><img src="img/caderror.png" alt="CAD Error Types"></span></p>
+</li>
+<li>
+<p>新生：从电子表格csv或xlsx加载零件，缺少的CAD文件创建为新生零件错误。</p>
+</li>
+<li>
+<p>Geometry missing：CAD没有有效的几何形状或不可用。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/caderror01.png" alt="CAD Error Types"></span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cam错误">CAM错误</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_折弯加工错误">折弯加工错误</h3>
 <div class="paragraph">
 <p>以下是折弯加工错误。</p>
 </div>
@@ -212,21 +244,41 @@
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/bendcamerror01.png" alt="Bend Tooling Error Types"></span>
-- 模具 Overload error和孔在折弯线附近。</p>
+<p><span class="image"><img src="img/bendcamerror01.png" alt="Bend Tooling Error Types"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>模具 Overload error和孔在折弯线附近。</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/bendcamerror02.png" alt="Bend Tooling Error Types"></span>
-- Needs review 和下模/上模跨度短。</p>
+<p><span class="image"><img src="img/bendcamerror02.png" alt="Bend Tooling Error Types"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Needs review 和下模/上模跨度短。</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/bendcamerror03.png" alt="Bend Tooling Error Types"></span>
-- Tool missing、Poor backguage、零件对于机床来说太大了。</p>
+<p><span class="image"><img src="img/bendcamerror03.png" alt="Bend Tooling Error Types"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Tool missing、Poor backguage、零件对于机床来说太大了。</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/bendcamerror04.png" alt="Bend Tooling Error Types"></span>
-=== 切割加工错误<a id="h000312"></a></p>
+<p><span class="image"><img src="img/bendcamerror04.png" alt="Bend Tooling Error Types"></span></p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_切割加工错误">切割加工错误</h3>
 <div class="paragraph">
 <p>以下是切割加工错误。</p>
 </div>
@@ -238,9 +290,17 @@
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/cutcamerror01.png" alt="Cut Tooling Error Types"></span>
-- 冲切废屑错误：对于冲裁加工，内圈加工时没有任何接头。
-- Untooled or partially tooled contours：缺少冲裁模具段。</p>
+<p><span class="image"><img src="img/cutcamerror01.png" alt="Cut Tooling Error Types"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>冲切废屑错误：对于冲裁加工，内圈加工时没有任何接头。</p>
+</li>
+<li>
+<p>Untooled or partially tooled contours：缺少冲裁模具段。</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="img/cutcamerror02.png" alt="Cut Tooling Error Types"></span></p>
@@ -260,6 +320,21 @@
   </li>
   <li level="2">
    <a href="#_不可行折弯和切割">不可行（折弯和切割）</a>
+  </li>
+  <li level="2">
+   <a href="#_材料错误">材料错误</a>
+  </li>
+  <li level="2">
+   <a href="#_几何形状错误">几何形状错误</a>
+  </li>
+  <li level="1">
+   <a href="#_cam错误">CAM错误</a>
+  </li>
+  <li level="2">
+   <a href="#_折弯加工错误">折弯加工错误</a>
+  </li>
+  <li level="2">
+   <a href="#_切割加工错误">切割加工错误</a>
   </li>
  </ul>
 </aside>

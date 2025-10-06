@@ -188,20 +188,40 @@
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/reimport.png" alt="Tooling Sample"></span>
-== Re-tool
-* 右键单击任何零件，然后单击 <strong>Re-tool&#8230;&#8203;</strong>
-- 所有机床被选中，所有机床按激光、冲裁、面板和折弯机分组。
-- 单击确定&#8594;自动加工或手动编辑*选定的*加工实例与输出位置文件[折弯和切割输出]一起删除。
-- 保留现有输出：</p>
+<p><span class="image"><img src="img/reimport.png" alt="Tooling Sample"></span></p>
 </div>
-<div id="h000314" class="ulist">
+</div>
+</div>
+<div class="sect1">
+<h2 id="_re_tool">Re-tool</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>右键单击任何零件，然后单击 <strong>Re-tool&#8230;&#8203;</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>所有机床被选中，所有机床按激光、冲裁、面板和折弯机分组。</p>
+</li>
+<li>
+<p>单击确定&#8594;自动加工或手动编辑*选定的*加工实例与输出位置文件[折弯和切割输出]一起删除。</p>
+</li>
+<li>
+<p>保留现有输出：</p>
+<div class="ulist">
 <ul>
 <li>
 <p>选断：针对_折弯和切割输出_所选机床加工实例的所有选定零件首先被移除。根据再加工结果，输出文件被导出。</p>
 </li>
 <li>
 <p>选中：而不是删除零件的所有输出。在批次中，前几个设置零件集合，_折弯和切割输出_被移除并重新加工这些零件。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
 </li>
 </ul>
 </div>
@@ -216,16 +236,26 @@
 </td>
 <td class="content">
 <div class="title">重新加工的使用</div>
-====<a id="h000316"></a>
-- 更改一台或两台机床的CAM设置，然后我们可以选择这些机床和重新加工。
-- 假设LTT或冲裁模具丢失或折弯模具丢失，然后更新机床。仅对这些机床的这些零件进行重新加工。
-====<a id="h000317"></a>
-== 忽略错误<a id="h000318"></a>
+<div class="ulist">
+<ul>
+<li>
+<p>更改一台或两台机床的CAM设置，然后我们可以选择这些机床和重新加工。</p>
+</li>
+<li>
+<p>假设LTT或冲裁模具丢失或折弯模具丢失，然后更新机床。仅对这些机床的这些零件进行重新加工。</p>
+</li>
+</ul>
+</div>
 </td>
 </tr>
 </table>
 </div>
-<div id="h000319" class="ulist">
+</div>
+</div>
+<div class="sect1">
+<h2 id="_忽略错误">忽略错误</h2>
+<div class="sectionbody">
+<div class="ulist">
 <ul>
 <li>
 <p>假设一个加工实例有警告，可以通过单击Ignore Errors用自动加工的结果进行覆盖
@@ -242,18 +272,22 @@
 </td>
 <td class="content">
 <div class="title">重要提示</div>
-====<a id="h000320"></a>
+<div class="paragraph">
+<p><strong>在忽略任何可能导致错误的零件时请谨慎对待，这可能导致机床损坏或事故。</strong></p>
+</div>
 </td>
 </tr>
 </table>
 </div>
-<div id="h000321" class="paragraph">
-<p><strong>在忽略任何可能导致错误的零件时请谨慎对待，这可能导致机床损坏或事故。</strong>
-====<a id="h000322"></a>
-<span class="image"><img src="img/ignoreerrors.png" alt="Tooling Sample"></span>
-== 检查加工<a id="h000323"></a></p>
+<div class="paragraph">
+<p><span class="image"><img src="img/ignoreerrors.png" alt="Tooling Sample"></span></p>
 </div>
-<div id="h000324" class="ulist">
+</div>
+</div>
+<div class="sect1">
+<h2 id="_检查加工">检查加工</h2>
+<div class="sectionbody">
+<div class="ulist">
 <ul>
 <li>
 <p>假设折弯模具丢失或任何CAM设置发生变化，则无需重新加工这些折弯加工实例。</p>
@@ -274,10 +308,14 @@
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/checktooling.png" alt="Tooling Sample"></span>
-== 隐藏/取消隐藏加工<a id="h000325"></a></p>
+<p><span class="image"><img src="img/checktooling.png" alt="Tooling Sample"></span></p>
 </div>
-<div id="h000326" class="ulist">
+</div>
+</div>
+<div class="sect1">
+<h2 id="_隐藏取消隐藏加工">隐藏/取消隐藏加工</h2>
+<div class="sectionbody">
+<div class="ulist">
 <ul>
 <li>
 <p>假设特定机床停机或特定零件无法在那台机床上加工，可使用选项 <strong>Suppress Tooling</strong> 避免针对此机床准备此零件排样。</p>
@@ -311,6 +349,18 @@
  <ul>
   <li level="1">
    <a href="#_re_import">Re-import</a>
+  </li>
+  <li level="1">
+   <a href="#_re_tool">Re-tool</a>
+  </li>
+  <li level="1">
+   <a href="#_忽略错误">忽略错误</a>
+  </li>
+  <li level="1">
+   <a href="#_检查加工">检查加工</a>
+  </li>
+  <li level="1">
+   <a href="#_隐藏取消隐藏加工">隐藏/取消隐藏加工</a>
   </li>
  </ul>
 </aside>

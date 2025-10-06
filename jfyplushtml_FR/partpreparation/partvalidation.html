@@ -37,7 +37,7 @@
    <button class="tree closed"></button>
    <a href="../configuration/index.html">Configuration</a>
    <ul class="hide">
-    <li><button class="tree blank"></button><a href="../configuration/setupmachine.html">Ajouter / Supprimer une machine</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/setupmachine.html">Ajouter / Supprimer une machine</a></li>
     <li><button class="tree blank"></button><a href="../configuration/setuptooling.html">Configurer le montage</a></li>
     <li><button class="tree blank"></button><a href="../configuration/configureusers.html">Configurer les utilisateurs</a></li>
     <li>
@@ -86,7 +86,7 @@
       <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/nccodesend.html">Programme CN envoyé</a></li>
       <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/delete.html">Supprimer</a></li>
       <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/addparts.html">Ajouter des pièces</a></li>
-      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/adaptcompact.html">Adapter / Compacter</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/adaptcompact.html">Adapter / Compacter</a></li>
       <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/exportoutputs.html">Exporter les sorties</a></li>
       <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/markcomplete.html">Marquer comme terminé</a></li>
       <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/reportsender.html">Expéditeur du rapport</a></li>
@@ -100,7 +100,7 @@
       <li><button class="tree blank"></button><a href="../jobpreparation/remnantmanagement/manualremnant.html">Gestion manuelle des tôles restantes</a></li>
      </ul>
     </li>
-    <li><button class="tree blank"></button><a href="../jobpreparation/importexport.html">Importer / Exporter</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/importexport.html">Importer / Exporter</a></li>
     <li><button class="tree blank"></button><a href="../jobpreparation/resetpartjob.html">Tâche Réinitialiser la pièce</a></li>
     <li><button class="tree blank"></button><a href="../jobpreparation/outdate.html">Obsolète</a></li>
    </ul>
@@ -165,10 +165,10 @@
                     <article id="article">
                         <h1>Validation de la pièce</h1>
 <div class="sect1">
-<h2 id="_erreur_cao">Erreur CAO<a id="h000306"></a></h2>
+<h2 id="_erreur_cao">Erreur CAO</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_infaisable_plier_et_couper">Infaisable (plier et couper)<a id="h000307"></a></h3>
+<h3 id="_infaisable_plier_et_couper">Infaisable (plier et couper)</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -183,23 +183,55 @@
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/feasible.png" alt="Bend and Cut Infeasible Error"></span>
-=== Erreur Matière<a id="h000308"></a>
-- Matière manquante : épaisseur lue initialement à partir du modèle et matière attribuée, vérifiée par rapport à la matière première JFY Plus. Si elle n&#8217;existe pas, alors une erreur Matière manquante lui est assignée.
-- _Material not assigned : le modèle ne comporte pas de champ mappé par rapport à la matière, l&#8217;erreur Matière non attribuée lui est alors assignée.</p>
+<p><span class="image"><img src="img/feasible.png" alt="Bend and Cut Infeasible Error"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_erreur_matière">Erreur Matière</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Matière manquante : épaisseur lue initialement à partir du modèle et matière attribuée, vérifiée par rapport à la matière première JFY Plus. Si elle n&#8217;existe pas, alors une erreur Matière manquante lui est assignée.</p>
+</li>
+<li>
+<p>_Material not assigned : le modèle ne comporte pas de champ mappé par rapport à la matière, l&#8217;erreur Matière non attribuée lui est alors assignée.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/materialerror.png" alt="Material Error Types"></span>
-=== Erreur Géométrie<a id="h000309"></a>
-- Open contours detected : la CAO comprend une entité ouverte.
-- Multiple outer contours detected : la CAO comprend plusieurs boucles fermées.
-<span class="image"><img src="img/caderror.png" alt="CAD Error Types"></span>
-- Naissante : lors du chargement de la pièce à partir de la feuille de calcul csv ou xlsx, les fichiers CAO manquants sont créés en tant qu&#8217;Erreur Pièce naissante.
-- Geometry missing : la CAO n&#8217;a pas de géométrie valide ou n&#8217;est pas disponible.
-<span class="image"><img src="img/caderror01.png" alt="CAD Error Types"></span>
-== Erreur FAO<a id="h000310"></a>
-=== Erreur Montage de pliage<a id="h000311"></a></p>
+<p><span class="image"><img src="img/materialerror.png" alt="Material Error Types"></span></p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_erreur_géométrie">Erreur Géométrie</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Open contours detected : la CAO comprend une entité ouverte.</p>
+</li>
+<li>
+<p>Multiple outer contours detected : la CAO comprend plusieurs boucles fermées.
+<span class="image"><img src="img/caderror.png" alt="CAD Error Types"></span></p>
+</li>
+<li>
+<p>Naissante : lors du chargement de la pièce à partir de la feuille de calcul csv ou xlsx, les fichiers CAO manquants sont créés en tant qu&#8217;Erreur Pièce naissante.</p>
+</li>
+<li>
+<p>Geometry missing : la CAO n&#8217;a pas de géométrie valide ou n&#8217;est pas disponible.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/caderror01.png" alt="CAD Error Types"></span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_erreur_fao">Erreur FAO</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_erreur_montage_de_pliage">Erreur Montage de pliage</h3>
 <div class="paragraph">
 <p>Voici les erreurs de montage de pliage.</p>
 </div>
@@ -223,9 +255,11 @@
 - Tool missing, Poor backguage, Pièce trop grande pour la machine.</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/bendcamerror04.png" alt="Bend Tooling Error Types"></span>
-=== Erreur Montage de coupe<a id="h000312"></a></p>
+<p><span class="image"><img src="img/bendcamerror04.png" alt="Bend Tooling Error Types"></span></p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_erreur_montage_de_coupe">Erreur Montage de coupe</h3>
 <div class="paragraph">
 <p>Voici les erreurs de montage de coupe.</p>
 </div>
@@ -237,9 +271,17 @@
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/cutcamerror01.png" alt="Cut Tooling Error Types"></span>
-- Erreur de débouchures de poinçonnage : pour le montage de poinçon, la boucle intérieure est montée sans joints.
-- Untooled or partially tooled contours : segments montés de poinçon manquants.</p>
+<p><span class="image"><img src="img/cutcamerror01.png" alt="Cut Tooling Error Types"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Erreur de débouchures de poinçonnage : pour le montage de poinçon, la boucle intérieure est montée sans joints.</p>
+</li>
+<li>
+<p>Untooled or partially tooled contours : segments montés de poinçon manquants.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="img/cutcamerror02.png" alt="Cut Tooling Error Types"></span></p>
@@ -259,6 +301,21 @@
   </li>
   <li level="2">
    <a href="#_infaisable_plier_et_couper">Infaisable (plier et couper)</a>
+  </li>
+  <li level="2">
+   <a href="#_erreur_matière">Erreur Matière</a>
+  </li>
+  <li level="2">
+   <a href="#_erreur_géométrie">Erreur Géométrie</a>
+  </li>
+  <li level="1">
+   <a href="#_erreur_fao">Erreur FAO</a>
+  </li>
+  <li level="2">
+   <a href="#_erreur_montage_de_pliage">Erreur Montage de pliage</a>
+  </li>
+  <li level="2">
+   <a href="#_erreur_montage_de_coupe">Erreur Montage de coupe</a>
   </li>
  </ul>
 </aside>

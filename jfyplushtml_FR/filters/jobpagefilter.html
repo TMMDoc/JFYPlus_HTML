@@ -37,7 +37,7 @@
    <button class="tree closed"></button>
    <a href="../configuration/index.html">Configuration</a>
    <ul class="hide">
-    <li><button class="tree blank"></button><a href="../configuration/setupmachine.html">Ajouter / Supprimer une machine</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/setupmachine.html">Ajouter / Supprimer une machine</a></li>
     <li><button class="tree blank"></button><a href="../configuration/setuptooling.html">Configurer le montage</a></li>
     <li><button class="tree blank"></button><a href="../configuration/configureusers.html">Configurer les utilisateurs</a></li>
     <li>
@@ -86,7 +86,7 @@
       <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/nccodesend.html">Programme CN envoyé</a></li>
       <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/delete.html">Supprimer</a></li>
       <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/addparts.html">Ajouter des pièces</a></li>
-      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/adaptcompact.html">Adapter / Compacter</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/adaptcompact.html">Adapter / Compacter</a></li>
       <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/exportoutputs.html">Exporter les sorties</a></li>
       <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/markcomplete.html">Marquer comme terminé</a></li>
       <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/reportsender.html">Expéditeur du rapport</a></li>
@@ -100,7 +100,7 @@
       <li><button class="tree blank"></button><a href="../jobpreparation/remnantmanagement/manualremnant.html">Gestion manuelle des tôles restantes</a></li>
      </ul>
     </li>
-    <li><button class="tree blank"></button><a href="../jobpreparation/importexport.html">Importer / Exporter</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/importexport.html">Importer / Exporter</a></li>
     <li><button class="tree blank"></button><a href="../jobpreparation/resetpartjob.html">Tâche Réinitialiser la pièce</a></li>
     <li><button class="tree blank"></button><a href="../jobpreparation/outdate.html">Obsolète</a></li>
    </ul>
@@ -167,25 +167,17 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Le filtre de page de tâche facilite la localisation des tâches, des pièces actives et des imbrications sur la base des critères suivants :</p>
+<p>Le filtre de page de tâche facilite la localisation des tâches, des pièces actives et des imbrications sur la base des critères suivants :</p>
 </div>
-<div id="h000051" class="ulist">
+<div class="ulist">
 <ul>
 <li>
 <p>Les critères d&#8217;ordre tels que la <strong>priorité, la date d&#8217;échéance, le client, la pièce commandée</strong> et
 <strong>la quantité</strong>, etc.</p>
 </li>
-</ul>
-</div>
-<div id="h000053" class="ulist">
-<ul>
 <li>
 <p>Etat de planification/ordonnancement comme les <strong>machines</strong> planifiées, les tôles <strong>à traiter</strong>, les tôles <strong>terminées</strong>, <strong>les pièces imbriquées, les répartitions de l&#8217;imbrication</strong>, etc.</p>
 </li>
-</ul>
-</div>
-<div id="h000054" class="ulist">
-<ul>
 <li>
 <p>Les attributs d&#8217;imbrication comme <strong>l&#8217;efficacité dé l&#8217;imbrication, la matière première, les pièces uniques</strong> et <strong>totales, les identifiants de tâches</strong> et les comptes.</p>
 </li>
@@ -199,10 +191,10 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="_filtres_déchantillons">Filtres d&#8217;échantillons<a id="h000055"></a></h2>
+<h2 id="_filtres_déchantillons">Filtres d&#8217;échantillons</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_nom_de_pièce_layout">Nom de pièce / layout<a id="h000056"></a></h3>
+<h3 id="_nom_de_pièce_layout">Nom de pièce / layout</h3>
 <div class="paragraph">
 <p>Le champ <strong>Nom de pièce</strong> apparaît dans les tâches et la page Imbrications. Saisir le texte de recherche, répertorie toutes les tôles/tâches contenant les pièces qui correspondent au terme de recherche.</p>
 </div>
@@ -215,14 +207,16 @@
 <p>La sélection des éléments dans la suggestion réduit la recherche aux pièces sélectionnées.</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/part-name-filter2.png" alt="Part Name 2"></span>
-Ce comportement s&#8217;étend également à la page de tâche. La page de tâche peut être recherchée en utilisant le nom de pièce et le nom de layout. Comme le champ Nom de pièce, une liste de suggestions est également affichée pour les layouts.</p>
+<p><span class="image"><img src="img/part-name-filter2.png" alt="Part Name 2"></span></p>
+</div>
+<div class="paragraph">
+<p>Ce comportement s&#8217;étend également à la page de tâche. La page de tâche peut être recherchée en utilisant le nom de pièce et le nom de layout. Comme le champ Nom de pièce, une liste de suggestions est également affichée pour les layouts.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_priorité_et_date_déchéance">Priorité et date d&#8217;échéance<a id="h000057"></a></h3>
+<h3 id="_priorité_et_date_déchéance">Priorité et date d&#8217;échéance</h3>
 <div class="paragraph">
-<p>Les priorités et les dates d&#8217;échéance sont attribuées à une pièce dans une tâche. Le champ Priorité, comme « Nom de pièce », permet aux utilisateurs de trouver des imbrications/tâches avec des pièces de priorité supérieure.
+<p>Les priorités et les dates d&#8217;échéance sont attribuées à une pièce dans une tâche. Le champ Priorité, comme « Nom de pièce », permet aux utilisateurs de trouver des imbrications/tâches avec des pièces de priorité supérieure.
 Il est possible de localiser les pièces de priorité supérieure en les mettant en surbrillance, pour cela, passez la souris sur le menu de suggestion. De même, les pièces avec une date d&#8217;échéance spécifiée peuvent être recherchées et localisées sur une imbrication à l&#8217;aide de la fonction de mise en surbrillance.</p>
 </div>
 <div class="imageblock">
@@ -231,19 +225,15 @@ Il est possible de localiser les pièces de priorité supérieure en les mettant
 </div>
 </div>
 <div class="paragraph">
-<p>Outre les filtres de date d&#8217;échéance prédéfinis tels que <em>Aujourd&#8217;hui, Hier, Demain,</em> etc., vous pouvez également saisir des valeurs/plages de dates personnalisées au format <strong>aammjj</strong> dans la zone de texte de recherche. Les expressions de date acceptables sont :</p>
+<p>Outre les filtres de date d&#8217;échéance prédéfinis tels que <em>Aujourd&#8217;hui, Hier, Demain,</em> etc., vous pouvez également saisir des valeurs/plages de dates personnalisées au format <strong>aammjj</strong> dans la zone de texte de recherche. Les expressions de date acceptables sont :</p>
 </div>
-<div id="h000058" class="ulist">
+<div class="ulist">
 <ul>
 <li>
-<p>Expressions avec des opérateurs d'(in)égalité (<strong>&lt;, &lt;=, &gt;, &gt;=, =</strong>) suivis de la valeur de date. Par exemple: &gt;=<strong>220121</strong> recherche tous les articles qui sont dus le ou après le 21 janvier 2022.</p>
+<p>Expressions avec des opérateurs d'(in)égalité (<strong>&lt;, &lt;=, &gt;, &gt;=, =</strong>) suivis de la valeur de date. Par exemple: &gt;=<strong>220121</strong> recherche tous les articles qui sont dus le ou après le 21 janvier 2022.</p>
 </li>
-</ul>
-</div>
-<div id="h000059" class="ulist">
-<ul>
 <li>
-<p>Expressions de plage de dates comme celle de l&#8217;image ci-dessous. Recherche de toutes les imbrications dues le ou après le 28 janvier 2022 et avant le 30 janvier 2022.</p>
+<p>Expressions de plage de dates comme celle de l&#8217;image ci-dessous. Recherche de toutes les imbrications dues le ou après le 28 janvier 2022 et avant le 30 janvier 2022.</p>
 </li>
 </ul>
 </div>
@@ -254,26 +244,18 @@ Il est possible de localiser les pièces de priorité supérieure en les mettant
 </div>
 </div>
 <div class="sect2">
-<h3 id="_outils_utilisés">Outils utilisés<a id="h000060"></a></h3>
+<h3 id="_outils_utilisés">Outils utilisés</h3>
 <div class="paragraph">
-<p>Comme la bibliothèque de pièces, les imbrications peuvent également être recherchées par outils de poinçonnage utilisés. Pour la recherche par outils utilisés :</p>
+<p>Comme la bibliothèque de pièces, les imbrications peuvent également être recherchées par outils de poinçonnage utilisés. Pour la recherche par outils utilisés :</p>
 </div>
-<div id="h000061" class="ulist">
+<div class="ulist">
 <ul>
 <li>
 <p>Sélectionnez le champ Outils utilisés dans les colonnes de filtre disponibles. JFY Plus présente la liste de tous les outils utilisés disponibles.</p>
 </li>
-</ul>
-</div>
-<div id="h000062" class="ulist">
-<ul>
 <li>
 <p>Il s&#8217;agit généralement d&#8217;une longue liste, utilisez un terme de recherche comme le nom d&#8217;outil, la forme, la taille, etc. pour réduire cette liste à l&#8217;outil que vous recherchez.</p>
 </li>
-</ul>
-</div>
-<div id="h000063" class="ulist">
-<ul>
 <li>
 <p>Sélectionnez un ou plusieurs éléments dans la liste pour filtrer les pièces pour lesquelles ces outils sont utilisés. Passer à la vue détaillée, met en évidence les outils utilisés et passer à la vue de la simulation revient à l&#8217;aperçu de l&#8217;outillage.</p>
 </li>
@@ -284,11 +266,9 @@ Il est possible de localiser les pièces de priorité supérieure en les mettant
 <img src="img/used-tools-job.png" alt="Used Tools">
 </div>
 </div>
-<div id="h000064" class="paragraph">
-<p><strong>Mis à part :</strong> Souvent, la liste de filtres cache le contenu de la recherche derrière elle. Utilisez l&#8217;ordre</p>
-</div>
-<div id="h000065" class="paragraph">
-<p><strong>Basculer l&#8217;opacité</strong> pour basculer la transparence. La transparence peut également être basculée à l&#8217;aide d&#8217;un <strong>clic droit de la souris</strong> n&#8217;importe où sur la liste des filtres.</p>
+<div class="paragraph">
+<p><strong>Mis à part :</strong> Souvent, la liste de filtres cache le contenu de la recherche derrière elle. Utilisez l&#8217;ordre
+<strong>Basculer l&#8217;opacité</strong> pour basculer la transparence. La transparence peut également être basculée à l&#8217;aide d&#8217;un <strong>clic droit de la souris</strong> n&#8217;importe où sur la liste des filtres.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -309,7 +289,7 @@ Il est possible de localiser les pièces de priorité supérieure en les mettant
    <a href="#_filtres_déchantillons">Filtres d&#8217;échantillons</a>
   </li>
   <li level="2">
-   <a href="#_nom_de_pièce_layout">Nom de pièce / layout</a>
+   <a href="#_nom_de_pièce_layout">Nom de pièce / layout</a>
   </li>
   <li level="2">
    <a href="#_priorité_et_date_déchéance">Priorité et date d&#8217;échéance</a>

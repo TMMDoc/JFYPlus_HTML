@@ -165,10 +165,10 @@
                     <article id="article">
                         <h1>Alkatratész validálása</h1>
 <div class="sect1">
-<h2 id="_cad_hiba">CAD hiba<a id="h000306"></a></h2>
+<h2 id="_cad_hiba">CAD hiba</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_nem_kivitelezhető_hajlítás_és_vágás">Nem kivitelezhető (hajlítás és vágás)<a id="h000307"></a></h3>
+<h3 id="_nem_kivitelezhető_hajlítás_és_vágás">Nem kivitelezhető (hajlítás és vágás)</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -183,27 +183,59 @@
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/feasible.png" alt="Bend and Cut Infeasible Error"></span>
-=== Anyaghiba<a id="h000308"></a>
-- Hiányzó anyag: A modellből eredetileg beolvasott vastagság és hozzárendelt anyag, amelyet összehasonlítunk a JFY Plus nyersanyagával. Ha nem létezik, akkor anyaghiány-hiba kerül hozzárendelésre.
-- _Material not assigned
+<p><span class="image"><img src="img/feasible.png" alt="Bend and Cut Infeasible Error"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_anyaghiba">Anyaghiba</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Hiányzó anyag: A modellből eredetileg beolvasott vastagság és hozzárendelt anyag, amelyet összehasonlítunk a JFY Plus nyersanyagával. Ha nem létezik, akkor anyaghiány-hiba kerül hozzárendelésre.</p>
+</li>
+<li>
+<p>Material not assigned
 : Ha a modell nem rendelkezik anyaghoz tartozó hozzárendelési mezővel, akkor a „Nincs hozzárendelt anyag” érték kerül hozzárendelésre.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/materialerror.png" alt="Material Error Types"></span>
-=== Geometria hiba<a id="h000309"></a>
-- Open contours detected
-: A CAD nyitott entitással rendelkezik.
-- Multiple outer contours detected
- : A CAD több zárt hurkot tartalmaz.
-<span class="image"><img src="img/caderror.png" alt="CAD Error Types"></span>
-- Kezdeti: A táblázatból (csv vagy xlsx) betöltött alkatrészek hiányzó CAD fájljait kezdeti alkatrész hibaként hozza létre a rendszer.
-- Geometry missing
- : A CAD-nek nincs érvényes geometriája vagy nem érhető el.
-<span class="image"><img src="img/caderror01.png" alt="CAD Error Types"></span>
-== CAM hiba<a id="h000310"></a>
-=== Hajlítószerszám-hiba<a id="h000311"></a></p>
+<p><span class="image"><img src="img/materialerror.png" alt="Material Error Types"></span></p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_geometria_hiba">Geometria hiba</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Open contours detected
+: A CAD nyitott entitással rendelkezik.</p>
+</li>
+<li>
+<p>Multiple outer contours detected
+ : A CAD több zárt hurkot tartalmaz.
+<span class="image"><img src="img/caderror.png" alt="CAD Error Types"></span></p>
+</li>
+<li>
+<p>Kezdeti: A táblázatból (csv vagy xlsx) betöltött alkatrészek hiányzó CAD fájljait kezdeti alkatrész hibaként hozza létre a rendszer.</p>
+</li>
+<li>
+<p>Geometry missing
+: A CAD-nek nincs érvényes geometriája vagy nem érhető el.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/caderror01.png" alt="CAD Error Types"></span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cam_hiba">CAM hiba</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_hajlítószerszám_hiba">Hajlítószerszám-hiba</h3>
 <div class="paragraph">
 <p>Az alábbiakban a hajlítószerszámok hibáit ismertetjük.</p>
 </div>
@@ -227,14 +259,14 @@
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="img/bendcamerror03.png" alt="Bend Tooling Error Types"></span>
-- Tool missing
-, Poor backguage
-, Alkatrész túl nagy ehhez a géphez.</p>
+- Tool missing, Poor backguage, Alkatrész túl nagy ehhez a géphez.</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/bendcamerror04.png" alt="Bend Tooling Error Types"></span>
-=== Vágószerszám-hiba<a id="h000312"></a></p>
+<p><span class="image"><img src="img/bendcamerror04.png" alt="Bend Tooling Error Types"></span></p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_vágószerszám_hiba">Vágószerszám-hiba</h3>
 <div class="paragraph">
 <p>Az alábbiakban a vágószerszámok hibáit ismertetjük.</p>
 </div>
@@ -246,10 +278,17 @@
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/cutcamerror01.png" alt="Cut Tooling Error Types"></span>
-- Lyukasztási hulladék hiba: A stancolószerszámoknál a belső hurok illesztések nélkül van megmunkálva.
-- Untooled or partially tooled contours
- : Hiányzó stancolószerszámmal megmunkált szegmensek.</p>
+<p><span class="image"><img src="img/cutcamerror01.png" alt="Cut Tooling Error Types"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Lyukasztási hulladék hiba: A stancolószerszámoknál a belső hurok illesztések nélkül van megmunkálva.</p>
+</li>
+<li>
+<p>Untooled or partially tooled contours : Hiányzó stancolószerszámmal megmunkált szegmensek.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="img/cutcamerror02.png" alt="Cut Tooling Error Types"></span></p>
@@ -269,6 +308,21 @@
   </li>
   <li level="2">
    <a href="#_nem_kivitelezhető_hajlítás_és_vágás">Nem kivitelezhető (hajlítás és vágás)</a>
+  </li>
+  <li level="2">
+   <a href="#_anyaghiba">Anyaghiba</a>
+  </li>
+  <li level="2">
+   <a href="#_geometria_hiba">Geometria hiba</a>
+  </li>
+  <li level="1">
+   <a href="#_cam_hiba">CAM hiba</a>
+  </li>
+  <li level="2">
+   <a href="#_hajlítószerszám_hiba">Hajlítószerszám-hiba</a>
+  </li>
+  <li level="2">
+   <a href="#_vágószerszám_hiba">Vágószerszám-hiba</a>
   </li>
  </ul>
 </aside>

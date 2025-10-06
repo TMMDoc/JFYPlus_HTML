@@ -180,8 +180,10 @@
 <p><strong>Save flat pattern</strong> - Habilite esta opción para guardar el patrón plano de una pieza importada.</p>
 </div>
 <div class="paragraph">
-<p><strong>Format for flat pattern</strong> - Ver JFY Core ajustes.
-<strong>Flat pattern destination</strong> - Esta es la ubicación donde se guardará el patrón plano.</p>
+<p><strong>Format for flat pattern</strong> - This option is used to choose either DXF or GEO file formats.</p>
+</div>
+<div class="paragraph">
+<p><strong>Flat pattern destination</strong> - Esta es la ubicación donde se guardará el patrón plano.</p>
 </div>
 </div>
 </div>
@@ -189,8 +191,10 @@
 <h2 id="_import_settings">Import settings</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>Units for DXF files</strong> - Ver JFY Core ajustes.
-<strong>Material lookup keys</strong> - Se pueden asignar varias entradas de búsqueda utilizando un separador de comas entre ellas. Cuando se importa una pieza, Praxis utiliza estas teclas para buscar valores materiales. Los valores buscados se utilizan para resolver la materia prima. Los valores originales se almacenan en la parte Propiedades misceláneas.</p>
+<p><strong>Units for DXF files</strong> - This is the unit of measurement a DXF file will be imported with, the user can choose between mm or inch.</p>
+</div>
+<div class="paragraph">
+<p><strong>Material lookup keys</strong> - Se pueden asignar varias entradas de búsqueda utilizando un separador de comas entre ellas. Cuando se importa una pieza, Praxis utiliza estas teclas para buscar valores materiales. Los valores buscados se utilizan para resolver la materia prima. Los valores originales se almacenan en la parte Propiedades misceláneas.</p>
 </div>
 <div class="paragraph">
 <p><strong>Revision lookup keys</strong> - Cuando se importa una pieza, el valor de revisión del archivo de pieza sin procesar (el archivo de pieza que se importa) se compara con el valor de revisión existente en el repositorio. La importación se abandona si la revisión es la misma. La asignación de campos personalizados ahora también es compatible con los archivos DXF. Para los archivos DXF, los datos de campo personalizados se extraen de la capa de texto del dibujo o de un archivo adjunto PPI.</p>
@@ -243,7 +247,7 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="_estimación_de_espesor">Estimación de espesor<a id="h000380"></a></h2>
+<h2 id="_estimación_de_espesor">Estimación de espesor</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>El <strong>Thickness comparison fudge</strong> elige el valor de espesor de chapa más cercano cuando un espesor de chapa deseado no está disponible en el inventario comparando el valor de espesor de las chapas en el inventario.Por ejemplo, supongamos lo siguiente:</p>
@@ -273,16 +277,15 @@
 <img src="img/sheetthickness.png" alt="Sheet inventory" width="621">
 </div>
 </div>
-<div class="paragraph">
-<p>JFY Plus elige una chapa con el valor de espesor más cercano después de comparar el valor <strong>Thickness comparison fudge</strong> (0,1 mm) con el artículo importado (que mide 1,6 mm). En este caso, la selección será de 1,55 mm.</p>
-</div>
 </li>
 </ol>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="img/fudgeimport.png" alt="Import part" width="347">
+<div class="paragraph">
+<p>JFY Plus elige una chapa con el valor de espesor más cercano después de comparar el valor <strong>Thickness comparison fudge</strong> (0,1 mm) con el artículo importado (que mide 1,6 mm). En este caso, la selección será de 1,55 mm.</p>
 </div>
+<div class="paragraph">
+<p>+
+image::FudgeImport.png[Import part,347]</p>
 </div>
 </div>
 </div>

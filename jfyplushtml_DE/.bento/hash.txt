@@ -16,7 +16,7 @@ Features.adoc • Features
 Impressum.adoc • Impressum
 Index.adoc • Willkommen bei {APPNAME}
 Index.JFY.adoc • Willkommen bei {APPNAME}
-manifest.txt • 255724.035740
+manifest.txt • 250003.020048
 Configuration\CADMapFields.adoc • Felder aus CAD zuordnen (Schlüsselwörter)
 Configuration\configureUsers.adoc • Benutzer konfigurieren
 Configuration\contents.txt • 255624.025617
@@ -100,22 +100,3 @@ JOBPreparation\RemnantManagement\AutoRemnant.adoc • Automatische Resteverwaltu
 JOBPreparation\RemnantManagement\contents.txt • 255624.025617
 JOBPreparation\RemnantManagement\Index.adoc • Resteverwaltung
 JOBPreparation\RemnantManagement\ManualRemnant.adoc • Manuelle Resttafelverwaltung
-Settings\.attic\Environment.adoc • Umgebung
-Settings\.attic\Notifications.adoc • Benachrichtigungen
-Settings\.attic\JOBOutputSettings\contents.txt • 255624.025617
-Settings\.attic\JOBOutputSettings\Index.adoc • Jobausgabeeinstellungen
-Settings\.attic\JOBOutputSettings\Outputs.adoc • Ausgaben
-Settings\.attic\JOBOutputSettings\Reports.adoc • Berichte
-Settings\.attic\JOBSettings\AutoRefreshLayouts.adoc • Layouts automatisch aktualisieren
-Settings\.attic\JOBSettings\AutoRelease.adoc • Automatische Freigabe
-Settings\.attic\JOBSettings\contents.txt • 255624.025617
-Settings\.attic\JOBSettings\Index.adoc • Job-Einstellungen
-Settings\.attic\JOBSettings\MixParts.adoc • Teile aus mehreren Jobs mischen
-Settings\.attic\JOBSettings\Twinline.adoc • TwinLine
-Settings\.attic\PartSettings\contents.txt • 255624.025617
-Settings\.attic\PartSettings\Index.adoc • Teileeinstellungen
-Settings\.attic\PartSettings\PartOutputSettings.adoc • Teileausgabeeinstellungen
-Settings\.attic\PartSettings\RetainLegacyFXBend.adoc • Früheres FX-Biegen beibehalten
-Settings\.attic\PartSettings\Revision.adoc • Überarbeitung
-Settings\.attic\PartSettings\RotateHorizontal.adoc • Horizontal drehen
-Settings\.attic\PartSettings\ThicknessFudge.adoc • Fudge-Wert für die Dicke

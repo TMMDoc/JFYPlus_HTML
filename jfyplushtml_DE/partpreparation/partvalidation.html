@@ -165,10 +165,10 @@
                     <article id="article">
                         <h1>Teilevalidierung</h1>
 <div class="sect1">
-<h2 id="_cad_fehler">CAD-Fehler<a id="h000306"></a></h2>
+<h2 id="_cad_fehler">CAD-Fehler</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_nicht_machbar_biegen_und_schneiden">Nicht machbar (Biegen und Schneiden)<a id="h000307"></a></h3>
+<h3 id="_nicht_machbar_biegen_und_schneiden">Nicht machbar (Biegen und Schneiden)</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -179,27 +179,61 @@
 </li>
 <li>
 <p>Das Teil wird in den Zustand „Schneiden nicht machbar“ versetzt, wenn kein ausführbares Schneidprogramm gefunden wird.</p>
+<div class="paragraph">
+<p><span class="image"><img src="img/feasible.png" alt="Bend and Cut Infeasible Error"></span></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_materialfehler">Materialfehler</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Material fehlt: Anfangs werden die aus dem Modell gelesene Dicke und das zugewiesene Material mit dem JFY Plus-Rohmaterial abgeglichen. Ist das gesuchte Material nicht vorhanden, wird die Fehlermeldung „Material fehlt“ zugewiesen.</p>
+</li>
+<li>
+<p>Material not assigned: Wenn Modell kein Feld hat, dem ein Material zugeordnet ist, wird ihm die Meldung „Material nicht zugewiesen“ zugeordnet.</p>
+<div class="paragraph">
+<p><span class="image"><img src="img/materialerror.png" alt="Material Error Types"></span></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_geometriefehler">Geometriefehler</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Open contours detected: CAD hat eine offene Entität.</p>
+</li>
+<li>
+<p>Multiple outer contours detected: CAD hat mehrere geschlossene Schleifen.</p>
+<div class="paragraph">
+<p><span class="image"><img src="img/caderror.png" alt="CAD Error Types"></span></p>
+</div>
+</li>
+<li>
+<p>Entstehend: Beim Laden eines Teil aus einer csv- oder xlsx-Tabelle wird für fehlende CAD-Dateien der Fehler „Entstehendes Teil“ erstellt.</p>
+</li>
+<li>
+<p>Geometry missing: CAD hat keine gültige Geometrie oder ist nicht verfügbar.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/feasible.png" alt="Bend and Cut Infeasible Error"></span>
-=== Materialfehler<a id="h000308"></a>
-- Material fehlt: Anfangs werden die aus dem Modell gelesene Dicke und das zugewiesene Material mit dem JFY Plus-Rohmaterial abgeglichen. Ist das gesuchte Material nicht vorhanden, wird die Fehlermeldung „Material fehlt“ zugewiesen.
-- _Material not assigned: Wenn Modell kein Feld hat, dem ein Material zugeordnet ist, wird ihm die Meldung „Material nicht zugewiesen“ zugeordnet.</p>
+<p><span class="image"><img src="img/caderror01.png" alt="CAD Error Types"></span></p>
 </div>
-<div class="paragraph">
-<p><span class="image"><img src="img/materialerror.png" alt="Material Error Types"></span>
-=== Geometriefehler<a id="h000309"></a>
-- Open contours detected: CAD hat eine offene Entität.
-- Multiple outer contours detected: CAD hat mehrere geschlossene Schleifen.
-<span class="image"><img src="img/caderror.png" alt="CAD Error Types"></span>
-- Entstehend: Beim Laden eines Teil aus einer csv- oder xlsx-Tabelle wird für fehlende CAD-Dateien der Fehler „Entstehendes Teil“ erstellt.
-- Geometry missing: CAD hat keine gültige Geometrie oder ist nicht verfügbar.
-<span class="image"><img src="img/caderror01.png" alt="CAD Error Types"></span>
-== CAM-Fehler<a id="h000310"></a>
-=== Rüstfehler für Biegevorgänge<a id="h000311"></a></p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cam_fehler">CAM-Fehler</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_rüstfehler_für_biegevorgänge">Rüstfehler für Biegevorgänge</h3>
 <div class="paragraph">
 <p>Im Folgenden sind die Rüstfehler für Biegevorgänge aufgeführt.</p>
 </div>
@@ -211,21 +245,41 @@
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/bendcamerror01.png" alt="Bend Tooling Error Types"></span>
-- Werkzeug Overload error und Durchbruch in der Nähe der Biegelinie.</p>
+<p><span class="image"><img src="img/bendcamerror01.png" alt="Bend Tooling Error Types"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Werkzeug Overload error und Durchbruch in der Nähe der Biegelinie.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/bendcamerror02.png" alt="Bend Tooling Error Types"></span>
-- Needs review und Matrizen-Stempel-Abstand kurz.</p>
+<p><span class="image"><img src="img/bendcamerror02.png" alt="Bend Tooling Error Types"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Needs review und Matrizen-Stempel-Abstand kurz.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/bendcamerror03.png" alt="Bend Tooling Error Types"></span>
-- Tool missing, Poor backguage, Teil zu groß für Maschine.</p>
+<p><span class="image"><img src="img/bendcamerror03.png" alt="Bend Tooling Error Types"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Tool missing, Poor backguage, Teil zu groß für Maschine.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/bendcamerror04.png" alt="Bend Tooling Error Types"></span>
-=== Rüstfehler für Schneidvorgänge<a id="h000312"></a></p>
+<p><span class="image"><img src="img/bendcamerror04.png" alt="Bend Tooling Error Types"></span></p>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_rüstfehler_für_schneidvorgänge">Rüstfehler für Schneidvorgänge</h3>
 <div class="paragraph">
 <p>Im Folgenden sind die Rüstfehler für Schneidvorgänge aufgeführt.</p>
 </div>
@@ -237,9 +291,17 @@
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/cutcamerror01.png" alt="Cut Tooling Error Types"></span>
-- Stanzbutzenfehler: Beim Rüsten für einen Stanzvorgang ist der innere Kurvenzug ohne Verbindungen gerüstet.
-- Untooled or partially tooled contours: Einige Segmente wurden beim Rüsten für den Stanzvorgang übersehen.</p>
+<p><span class="image"><img src="img/cutcamerror01.png" alt="Cut Tooling Error Types"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Stanzbutzenfehler: Beim Rüsten für einen Stanzvorgang ist der innere Kurvenzug ohne Verbindungen gerüstet.</p>
+</li>
+<li>
+<p>Untooled or partially tooled contours: Einige Segmente wurden beim Rüsten für den Stanzvorgang übersehen.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="img/cutcamerror02.png" alt="Cut Tooling Error Types"></span></p>
@@ -259,6 +321,21 @@
   </li>
   <li level="2">
    <a href="#_nicht_machbar_biegen_und_schneiden">Nicht machbar (Biegen und Schneiden)</a>
+  </li>
+  <li level="2">
+   <a href="#_materialfehler">Materialfehler</a>
+  </li>
+  <li level="2">
+   <a href="#_geometriefehler">Geometriefehler</a>
+  </li>
+  <li level="1">
+   <a href="#_cam_fehler">CAM-Fehler</a>
+  </li>
+  <li level="2">
+   <a href="#_rüstfehler_für_biegevorgänge">Rüstfehler für Biegevorgänge</a>
+  </li>
+  <li level="2">
+   <a href="#_rüstfehler_für_schneidvorgänge">Rüstfehler für Schneidvorgänge</a>
   </li>
  </ul>
 </aside>

@@ -1,4 +1,4 @@
-Version=56
+Version=58
 APPNAME=JFY Plus
 BENDAPP=JFY Bend
 BRAND=JFY
@@ -11,27 +11,27 @@ Folders=11
 Pages=68
 UIXlate=False, DebugUIXlate=False, Language=EN
 
-contents.txt • 254914.094936
+contents.txt • 255624.025618
 Features.adoc • Features
 Impressum.adoc • Impressum
 Index.adoc • Welcome to {APPNAME}
 Index.JFY.adoc • Welcome to {APPNAME}
-manifest.txt • 254914.094936
+manifest.txt • 252206.042215
 Configuration\CADMapFields.adoc • Map Fields from CAD (lookup keys)
 Configuration\configureUsers.adoc • Configure Users
-Configuration\contents.txt • 254914.094935
+Configuration\contents.txt • 255624.025617
 Configuration\Index.adoc • Configuration
 Configuration\MapBendPages.adoc • Map Material
 Configuration\MapCAMPages.adoc • Map CAM Pages
 Configuration\SetupMachine.adoc • Add/Remove Machine
 Configuration\SetupTooling.adoc • Setup Tooling
-Factory\contents.txt • 254914.094935
+Factory\contents.txt • 255624.025617
 Factory\Customers.adoc • Customers
 Factory\edit.adoc • Edit
 Factory\Index.adoc • Factory
 Factory\routes.adoc • Routes
 Factory\sheets.adoc • Sheets
-Filters\contents.txt • 254914.094935
+Filters\contents.txt • 255624.025617
 Filters\FilterTour.adoc • Filter Tour
 Filters\Index.adoc • Filters
 Filters\JOBPageFilter.adoc • JOB Page Filter
@@ -39,14 +39,14 @@ Filters\PartLibraryFilter.adoc • Part Library Filter
 Filters\SavedFilters.adoc • Saved Filters
 Installation\changelic.adoc • Change license
 Installation\ClientInstallation.adoc • Client Installation
-Installation\contents.txt • 254914.094935
+Installation\contents.txt • 255624.025617
 Installation\HardwareRequirement.adoc • Hardware Requirement
 Installation\importformats.adoc • CAD Supported Formats
 Installation\index.adoc • Introduction
 Installation\Prerequisites.adoc • Prerequisites
 Installation\ServerInstallation.adoc • Server Installation
 Installation\Workflow.adoc • Workflow
-JOBPreparation\contents.txt • 254914.094935
+JOBPreparation\contents.txt • 255624.025617
 JOBPreparation\Edit.adoc • Edit
 JOBPreparation\importexport.adoc • Import / Export
 JOBPreparation\Index.adoc • Job Workflow
@@ -58,7 +58,7 @@ JOBPreparation\JOBStatus.adoc • Status
 JOBPreparation\JOBView.adoc • Job View
 JOBPreparation\OutDate.adoc • Out-of-Date
 JOBPreparation\ResetPartJob.adoc • Reset Part-Job
-PartPreparation\contents.txt • 254914.094935
+PartPreparation\contents.txt • 255624.025617
 PartPreparation\EditTooling.adoc • Edit Tooling
 PartPreparation\Index.adoc • Part Library
 PartPreparation\PartAssignMaterial.adoc • Part Assign Material
@@ -71,7 +71,7 @@ PartPreparation\Rename.adoc • Rename
 PartPreparation\RollingDirection.adoc • Rolling Direction
 PartPreparation\ToolingCheck.adoc • Tooling Check
 Settings\Bend.adoc • Bend
-Settings\contents.txt • 254914.094936
+Settings\contents.txt • 255624.025617
 Settings\Cut.adoc • Cut
 Settings\Environment.adoc • Environment
 Settings\Import.adoc • Import
@@ -82,13 +82,13 @@ Settings\Reports.adoc • Reports
 Settings\Watch.adoc • Watch
 UIXlate\EN.txt
 Configuration\AddMaterial\AddNew.adoc • Add New
-Configuration\AddMaterial\contents.txt • 254914.094935
+Configuration\AddMaterial\contents.txt • 255624.025617
 Configuration\AddMaterial\ExportImport.adoc • Export/Import Material
 Configuration\AddMaterial\Index.adoc • Material
 Configuration\AddMaterial\ReplaceMaterial.adoc • Replace Material
 JOBPreparation\LayoutCommands\AdaptCompact.adoc • Adapt Compact
 JOBPreparation\LayoutCommands\AddParts.adoc • Add Parts
-JOBPreparation\LayoutCommands\contents.txt • 254914.094935
+JOBPreparation\LayoutCommands\contents.txt • 255624.025617
 JOBPreparation\LayoutCommands\Delete.adoc • Delete
 JOBPreparation\LayoutCommands\ExportOutputs.adoc • Export Outputs
 JOBPreparation\LayoutCommands\Index.adoc • Nest Management
@@ -97,22 +97,22 @@ JOBPreparation\LayoutCommands\NCCodeSend.adoc • NC Code Send
 JOBPreparation\LayoutCommands\NestView.adoc • Layout View
 JOBPreparation\LayoutCommands\ReportSender.adoc • Report Sender
 JOBPreparation\RemnantManagement\AutoRemnant.adoc • Auto Remnant Management
-JOBPreparation\RemnantManagement\contents.txt • 254914.094935
+JOBPreparation\RemnantManagement\contents.txt • 255624.025617
 JOBPreparation\RemnantManagement\Index.adoc • Remnant Management
 JOBPreparation\RemnantManagement\ManualRemnant.adoc • Manual Remnant Sheet Management
 Settings\.attic\Environment.adoc • Environment
 Settings\.attic\Notifications.adoc • Notifications
-Settings\.attic\JOBOutputSettings\contents.txt • 254914.094935
+Settings\.attic\JOBOutputSettings\contents.txt • 255624.025617
 Settings\.attic\JOBOutputSettings\Index.adoc • JOB Output Settings
 Settings\.attic\JOBOutputSettings\Outputs.adoc • Outputs
 Settings\.attic\JOBOutputSettings\Reports.adoc • Reports
 Settings\.attic\JOBSettings\AutoRefreshLayouts.adoc • Auto Refresh Layouts
 Settings\.attic\JOBSettings\AutoRelease.adoc • Auto Release
-Settings\.attic\JOBSettings\contents.txt • 254914.094936
+Settings\.attic\JOBSettings\contents.txt • 255624.025617
 Settings\.attic\JOBSettings\Index.adoc • JOB Settings
 Settings\.attic\JOBSettings\MixParts.adoc • Mix Parts from Multiple Jobs
 Settings\.attic\JOBSettings\Twinline.adoc • Twinline
-Settings\.attic\PartSettings\contents.txt • 254914.094936
+Settings\.attic\PartSettings\contents.txt • 255624.025617
 Settings\.attic\PartSettings\Index.adoc • Part Settings
 Settings\.attic\PartSettings\PartOutputSettings.adoc • Part Output Settings
 Settings\.attic\PartSettings\RetainLegacyFXBend.adoc • Retain legacy FX Bend

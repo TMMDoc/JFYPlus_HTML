@@ -37,7 +37,7 @@
    <button class="tree closed"></button>
    <a href="../configuration/index.html">Configuration</a>
    <ul class="hide">
-    <li><button class="tree blank"></button><a href="../configuration/setupmachine.html">Ajouter / Supprimer une machine</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/setupmachine.html">Ajouter / Supprimer une machine</a></li>
     <li><button class="tree blank"></button><a href="../configuration/setuptooling.html">Configurer le montage</a></li>
     <li><button class="tree blank"></button><a href="../configuration/configureusers.html">Configurer les utilisateurs</a></li>
     <li>
@@ -86,7 +86,7 @@
       <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/nccodesend.html">Programme CN envoyé</a></li>
       <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/delete.html">Supprimer</a></li>
       <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/addparts.html">Ajouter des pièces</a></li>
-      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/adaptcompact.html">Adapter / Compacter</a></li>
+      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/adaptcompact.html">Adapter / Compacter</a></li>
       <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/exportoutputs.html">Exporter les sorties</a></li>
       <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/markcomplete.html">Marquer comme terminé</a></li>
       <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/reportsender.html">Expéditeur du rapport</a></li>
@@ -100,7 +100,7 @@
       <li><button class="tree blank"></button><a href="../jobpreparation/remnantmanagement/manualremnant.html">Gestion manuelle des tôles restantes</a></li>
      </ul>
     </li>
-    <li><button class="tree blank"></button><a href="../jobpreparation/importexport.html">Importer / Exporter</a></li>
+    <li><button class="tree blank"></button><a href="../jobpreparation/importexport.html">Importer / Exporter</a></li>
     <li><button class="tree blank"></button><a href="../jobpreparation/resetpartjob.html">Tâche Réinitialiser la pièce</a></li>
     <li><button class="tree blank"></button><a href="../jobpreparation/outdate.html">Obsolète</a></li>
    </ul>
@@ -188,20 +188,40 @@
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/reimport.png" alt="Tooling Sample"></span>
-== Re-tool
-* Effectuez un clic droit sur n&#8217;importe quelle pièce et cliquez sur <strong>Re-tool&#8230;&#8203;</strong>
-- Les machines sont triées par groupe Laser, Poinçon, Panneau et Presse plieuse. Toutes les machines sont cochées.
-- Cliquez sur OK &#8594; Les instances de montage, automatiques ou modifiées manuellement, <strong>sélectionnées</strong> sont retirées ainsi que le fichier d&#8217;emplacement de sortie [sorties Pliage et Coupe].
-- Conservez les sorties existantes :</p>
+<p><span class="image"><img src="img/reimport.png" alt="Tooling Sample"></span></p>
 </div>
-<div id="h000314" class="ulist">
+</div>
+</div>
+<div class="sect1">
+<h2 id="_re_tool">Re-tool</h2>
+<div class="sectionbody">
+<div class="ulist">
 <ul>
 <li>
-<p>Décoché : Toutes les pièces sélectionnées en fonction instances de montage de la machine sélectionnées pour les <em>sorties de pliage et de coupe</em> ont été retirées en premier. En fonction du résultat du nouveau montage de pièce, des fichiers de sortie sont exportés.</p>
+<p>Effectuez un clic droit sur n&#8217;importe quelle pièce et cliquez sur <strong>Re-tool&#8230;&#8203;</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Les machines sont triées par groupe Laser, Poinçon, Panneau et Presse plieuse. Toutes les machines sont cochées.</p>
 </li>
 <li>
-<p>Coché : Au lieu de supprimer toutes les sorties de la pièce. Dans le lot, les premières pièces configurées de la collection, les <em>sorties de pliage et de coupe</em> ont été supprimées et ces pièces ont été remontées.</p>
+<p>Cliquez sur OK &#8594; Les instances de montage, automatiques ou modifiées manuellement, <strong>sélectionnées</strong> sont retirées ainsi que le fichier d&#8217;emplacement de sortie [sorties Pliage et Coupe].</p>
+</li>
+<li>
+<p>Conservez les sorties existantes :</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Décoché : Toutes les pièces sélectionnées en fonction instances de montage de la machine sélectionnées pour les <em>sorties de pliage et de coupe</em> ont été retirées en premier. En fonction du résultat du nouveau montage de pièce, des fichiers de sortie sont exportés.</p>
+</li>
+<li>
+<p>Coché : Au lieu de supprimer toutes les sorties de la pièce. Dans le lot, les premières pièces configurées de la collection, les <em>sorties de pliage et de coupe</em> ont été supprimées et ces pièces ont été remontées.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
 </li>
 </ul>
 </div>
@@ -216,20 +236,29 @@
 </td>
 <td class="content">
 <div class="title">Utilisation de Re-monter</div>
-====<a id="h000316"></a>
-- Modifiez les réglages FAO d&#8217;une ou deux machines, vous pouvez ensuite sélectionner ces machines et remonter.
-- En cas de changement du TTL ou d&#8217;outil de poinçonnage perdu ou d&#8217;outil de pliage perdu, mettez à jour les machines. Re-montez uniquement ces pièces sur ces machines.
-====<a id="h000317"></a>
-== Ignorer les erreurs<a id="h000318"></a>
+<div class="ulist">
+<ul>
+<li>
+<p>Modifiez les réglages FAO d&#8217;une ou deux machines, vous pouvez ensuite sélectionner ces machines et remonter.</p>
+</li>
+<li>
+<p>En cas de changement du TTL ou d&#8217;outil de poinçonnage perdu ou d&#8217;outil de pliage perdu, mettez à jour les machines. Re-montez uniquement ces pièces sur ces machines.</p>
+</li>
+</ul>
+</div>
 </td>
 </tr>
 </table>
 </div>
-<div id="h000319" class="ulist">
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ignorer_les_erreurs">Ignorer les erreurs</h2>
+<div class="sectionbody">
+<div class="ulist">
 <ul>
 <li>
-<p>Supposons qu&#8217;une instance montée présente un avertissement qui peut être ignoré par rapport au résultat auto-monté en cliquant sur Ignore Errors
-.</p>
+<p>Supposons qu&#8217;une instance montée présente un avertissement qui peut être ignoré par rapport au résultat auto-monté en cliquant sur Ignore Errors.</p>
 <div class="ulist">
 <ul>
 <li>
@@ -248,18 +277,22 @@
 </td>
 <td class="content">
 <div class="title">Remarque importante</div>
-====<a id="h000320"></a>
+<div class="paragraph">
+<p><strong>Veuillez faire preuve de prudence lorsque vous ignorez une Erreur Pièce, car cela peut endommager la machine ou entraîner des accidents.</strong></p>
+</div>
 </td>
 </tr>
 </table>
 </div>
-<div id="h000321" class="paragraph">
-<p><strong>Veuillez faire preuve de prudence lorsque vous ignorez une Erreur Pièce, car cela peut endommager la machine ou entraîner des accidents.</strong>
-====<a id="h000322"></a>
-<span class="image"><img src="img/ignoreerrors.png" alt="Tooling Sample"></span>
-== Vérifier le montage<a id="h000323"></a></p>
+<div class="paragraph">
+<p><span class="image"><img src="img/ignoreerrors.png" alt="Tooling Sample"></span></p>
 </div>
-<div id="h000324" class="ulist">
+</div>
+</div>
+<div class="sect1">
+<h2 id="_vérifier_le_montage">Vérifier le montage</h2>
+<div class="sectionbody">
+<div class="ulist">
 <ul>
 <li>
 <p>Supposons qu&#8217;un outil de pliage soit perdu ou que les paramètres FAO soient modifiés, ces instances montées de pliage n&#8217;ont pas besoin d&#8217;être re-montées.</p>
@@ -280,10 +313,14 @@
 </ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="img/checktooling.png" alt="Tooling Sample"></span>
-== Supprimer/Annuler la suppression du montage<a id="h000325"></a></p>
+<p><span class="image"><img src="img/checktooling.png" alt="Tooling Sample"></span></p>
 </div>
-<div id="h000326" class="ulist">
+</div>
+</div>
+<div class="sect1">
+<h2 id="_supprimerannuler_la_suppression_du_montage">Supprimer/Annuler la suppression du montage</h2>
+<div class="sectionbody">
+<div class="ulist">
 <ul>
 <li>
 <p>Supposons qu&#8217;une machine particulière soit en panne ou qu&#8217;une pièce particulière ne soit pas à traiter par cette machine, l&#8217;option <strong>Suppress Tooling</strong> est utilisée pour éviter que l&#8217;imbrication ne soit préparée pour cette pièce pour cette machine.</p>
@@ -317,6 +354,18 @@
  <ul>
   <li level="1">
    <a href="#_re_import">Re-import</a>
+  </li>
+  <li level="1">
+   <a href="#_re_tool">Re-tool</a>
+  </li>
+  <li level="1">
+   <a href="#_ignorer_les_erreurs">Ignorer les erreurs</a>
+  </li>
+  <li level="1">
+   <a href="#_vérifier_le_montage">Vérifier le montage</a>
+  </li>
+  <li level="1">
+   <a href="#_supprimerannuler_la_suppression_du_montage">Supprimer/Annuler la suppression du montage</a>
   </li>
  </ul>
 </aside>
