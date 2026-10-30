@@ -1,0 +1,427 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Notifications</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Bienvenue dans JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Installation</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Exigences matérielles</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Formats de fichiers pris en charge</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Prérequis</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Changer de licence</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Configuration</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Ajouter/Supprimer une machine</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Configurer l'outillage</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Configurer les utilisateurs</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Langue</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Matière</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Ajouter une nouvelle matière et une tôle</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Exporter/Importer une matière</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Remplacer une matière</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Cartographier la matière</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">L'interface utilisateur</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Flux de travail</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../library/index.html">Bibliothèque</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/open/index.html">Ouvrir</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/open/partimport.html">Importer des pièces</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/orderimport.html">Importer des ordres</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/jobimport.html">Importer des tâches</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/assembliesimport.html">Importer des modules</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/libraryview/index.html">Vue de la bibliothèque</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/libraryview/partview.html">Pièces</a></li>
+      <li><button class="tree blank"></button><a href="../../library/libraryview/assemblyview.html">Module</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/partstate/index.html">État de la pièce</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/partstate/partvalidation.html">Validation des pièces</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partpanel.html">Panneau de la pièce</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partfilters.html">Filtres de pièce</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/toolingstatus/index.html">État de l'outillage</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../library/toolingstatus/toolingvalidation/index.html">Validation de l'outillage</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/bendtooling.html">Validation de l'outillage de pliage</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/cuttooling.html">Validation de l'outillage de coupe</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/foldtooling.html">Validation de l'outillage de pliage</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingpanel.html">Panneau d'outillage</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../library/savingfilters.html">Enregistrement des filtres</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Ordres</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Vue des ordres</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Tâches</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Créer une tâche</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Vue des tâches</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Panneau des tâches</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Planification automatique</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Imbrication interactive</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Réempaquetage</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Gestion des imbrications</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Vue de configuration</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Panneau de configuration</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Envoi de rapports</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Gestion des chutes</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Gestion automatique des chutes</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Gestion manuelle des chutes</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Imbrication Twinline</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Obsolète</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Filtres de tâches</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Usine</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="../routes.html">Itinéraires</a></li>
+    <li><button class="tree blank"></button><a href="../sheets.html">Tôles</a></li>
+    <li><button class="tree blank"></button><a href="../users.html">Utilisateurs</a></li>
+    <li><button class="tree blank"></button><a href="../edit.html">Modifier</a></li>
+    <li><button class="tree blank"></button><a href="../customers.html">Clients</a></li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Réglages</a>
+     <ul>
+      <li><button class="tree blank"></button><a href="environment.html">Environnement</a></li>
+      <li><button class="tree blank"></button><a href="import.html">Importation</a></li>
+      <li><button class="tree blank"></button><a href="bend.html">Pliage</a></li>
+      <li><button class="tree blank"></button><a href="cut.html">Coupe</a></li>
+      <li><button class="tree blank"></button><a class="active" href="notification.html">Notifications</a></li>
+      <li><button class="tree blank"></button><a href="watch.html">Surveillance</a></li>
+      <li><button class="tree blank"></button><a href="job.html">Tâche</a></li>
+      <li><button class="tree blank"></button><a href="reports.html">Rapports</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Informations sur l'entreprise</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Usine</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Réglages</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="notification.html">Notifications</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Notifications</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Les notifications informent les utilisateurs des erreurs CAO et d&#8217;outillage survenant au sein du
+système. Elles garantissent que les problèmes sont communiqués rapidement afin que les mesures
+appropriées puissent être prises.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_notification_par_e_mail">Notification par e-mail</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>La fonctionnalité de notification par e-mail permet aux utilisateurs de configurer et de recevoir des
+alertes automatiques par e-mail pour les erreurs CAO et d&#8217;outillage. Une fois configuré, le système
+envoie automatiquement des e-mails aux destinataires spécifiés chaque fois qu&#8217;un événement pertinent
+se produit, garantissant que les problèmes sont traités rapidement.</p>
+</div>
+<div class="paragraph">
+<p>Pour configurer les notifications par e-mail, accédez à :
+<strong>factory</strong> &gt; <strong>settings</strong> &gt;
+<strong>Notifications</strong></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/notification.png" alt="Notification settings" width="814">
+</div>
+</div>
+<div class="paragraph">
+<p>La page <strong>Notifications</strong> se compose des sections suivantes :</p>
+</div>
+<div class="sect2">
+<h3 id="_réglages_de_notification">Réglages de notification</h3>
+<div class="paragraph">
+<p>La section <strong>Notification settings</strong> contrôle la manière dont
+les alertes par e-mail sont générées et remises aux destinataires.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Enable email notifications</strong> - Permet au
+système d&#8217;envoyer des notifications en fonction des conditions configurées.</p>
+</li>
+<li>
+<p><strong>Notification recipients</strong> - Spécifie la ou les adresses
+e-mail des destinataires. Plusieurs destinataires peuvent être ajoutés en les séparant
+par une virgule (<code>,</code>) ou un espace.</p>
+</li>
+<li>
+<p><strong>Send messages in batch</strong> - Combine plusieurs
+notifications dans un seul e-mail. Les messages générés dans un intervalle de temps
+défini sont regroupés, ce qui permet de réduire le volume d&#8217;e-mails et d&#8217;éviter
+l&#8217;encombrement.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/batch.png" alt="Batch" width="608">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Attach tooling simulation preview where applicable</strong> -
+Joint un aperçu de simulation d&#8217;outillage à l&#8217;e-mail de notification lorsqu&#8217;il est
+disponible. Ceci est utile pour examiner les problèmes liés à l&#8217;outillage directement depuis
+l&#8217;e-mail.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/warning.png" alt="Warning" width="395">
+</div>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+L&#8217;inclusion de l&#8217;aperçu de simulation peut augmenter considérablement
+la taille de l&#8217;e-mail.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mail_settings">Mail settings</h3>
+<div class="paragraph">
+<p>La section <strong>Mail settings</strong> définit la configuration du serveur
+de courrier sortant que le système utilise pour remettre les notifications par e-mail.
+Ces réglages doivent être configurés correctement pour que les notifications soient envoyées
+avec succès.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>SMTP server</strong> - Spécifie l&#8217;adresse du serveur SMTP utilisé pour
+envoyer les e-mails sortants (par exemple <code>smtp.gmail.com</code>). Cette information est
+généralement disponible dans la section compte ou réglages du client de messagerie de
+l&#8217;utilisateur.</p>
+</li>
+<li>
+<p><strong>SMTP port</strong> - Définit le numéro de port utilisé par le serveur
+de courrier pour envoyer des e-mails sur Internet. Les valeurs courantes incluent <code>465</code> (SSL)
+et <code>587</code> (TLS).</p>
+</li>
+<li>
+<p><strong>Transport protocol</strong> - Spécifie le protocole utilisé pour
+envoyer de manière sécurisée les e-mails de l&#8217;application vers le serveur de courrier (par exemple,
+SSL ou TLS).</p>
+</li>
+<li>
+<p><strong>Server needs authentication</strong> - Active
+l&#8217;authentification pour le serveur SMTP. Lorsqu&#8217;elle est activée, le nom d&#8217;utilisateur et le mot de passe
+sont validés par le serveur avant l&#8217;envoi des e-mails.</p>
+</li>
+<li>
+<p><strong>User-name</strong> - Spécifie le compte e-mail utilisé pour
+s&#8217;authentifier auprès du serveur SMTP et envoyer des notifications.</p>
+</li>
+<li>
+<p><strong>Password</strong> - Spécifie le mot de passe associé au compte e-mail
+utilisé pour l&#8217;authentification.</p>
+</li>
+<li>
+<p><strong>Adresse de l&#8217;expéditeur</strong> - Spécifie l&#8217;adresse e-mail de l&#8217;expéditeur qui est affichée aux
+destinataires lors de la réception des notifications.</p>
+</li>
+<li>
+<p><strong>Test&#8230;&#8203;</strong> - Envoie un e-mail de test pour vérifier la configuration
+du serveur de courrier.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Cliquez sur <strong>Test&#8230;&#8203;</strong> pour valider la configuration. Un message de
+confirmation s&#8217;affiche si le test réussit ; sinon, un message d&#8217;erreur est
+affiché indiquant la cause de l&#8217;échec.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Les notifications par e-mail ne sont pas déclenchées en mode interactif (par exemple, lors de
+la modification ou de l&#8217;enregistrement manuel d&#8217;une pièce).</p>
+</li>
+<li>
+<p>La remise des e-mails est gérée en arrière-plan et peut être retardée.</p>
+</li>
+<li>
+<p>Les notifications peuvent ne pas être remises si le système ou le moteur est arrêté avant que
+le traitement ne soit terminé.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_notification_par_e_mail">Notification par e-mail</a>
+  </li>
+  <li level="2">
+   <a href="#_réglages_de_notification">Réglages de notification</a>
+  </li>
+  <li level="2">
+   <a href="#_mail_settings">Mail settings</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="cut.html">Coupe</a></span>
+ <span class="next"><a href="watch.html">Surveillance</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

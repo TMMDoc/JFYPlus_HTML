@@ -1,0 +1,444 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../img/praxis-icon.png">
+  <title>Uudelleenpakkaus</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">Tervetuloa JFY Plus-ohjelmaan</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../installation/index.html">Asennus</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../installation/hardwarerequirement.html">Laitteistovaatimukset</a></li>
+    <li><button class="tree blank"></button><a href="../installation/importformats.html">Tuetut tiedostomuodot</a></li>
+    <li><button class="tree blank"></button><a href="../installation/prerequisites.html">Esivaatimukset</a></li>
+    <li><button class="tree blank"></button><a href="../installation/changelic.html">Lisenssin vaihtaminen</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../configuration/index.html">Määritykset</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../configuration/setupmachine.html">Lisää/poista kone</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/setuptooling.html">Työstöasetukset</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/configureusers.html">Määritä käyttäjät</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/language.html">Kieli</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../configuration/addmaterial/index.html">Työaine</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/addnew.html">Lisää uusi työaine ja levy</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/exportimport.html">Vie/tuo työaine</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/replacematerial.html">Korvaa työaine</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../configuration/mapbendpages.html">Yhdistä työaine</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../userinterface.html">Käyttöliittymä</a></li>
+  <li><button class="tree blank"></button><a href="../workflow.html">Työnkulku</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../library/index.html">Kirjasto</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/open/index.html">Avaaminen</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/open/partimport.html">Osien tuonti</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/orderimport.html">Työtehtävien tuonti</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/jobimport.html">Töiden tuonti</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/assembliesimport.html">Rakenneryhmien tuonti</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/libraryview/index.html">Kirjastonäkymä</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/libraryview/partview.html">Osat</a></li>
+      <li><button class="tree blank"></button><a href="../library/libraryview/assemblyview.html">Rakenneryhmä</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/partstate/index.html">Osan tila</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/partstate/partvalidation.html">Osan validointi</a></li>
+      <li><button class="tree blank"></button><a href="../library/partstate/partpanel.html">Osapaneeli</a></li>
+      <li><button class="tree blank"></button><a href="../library/partstate/partfilters.html">Osasuodattimet</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/toolingstatus/index.html">Työstön tila</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../library/toolingstatus/toolingvalidation/index.html">Työstön validointi</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/bendtooling.html">Taivutustyöstöjen validointi</a></li>
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/cuttooling.html">Leikkaustyöstöjen validointi</a></li>
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/foldtooling.html">Taittotyöstöjen validointi</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingpanel.html">Työstöpaneeli</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../library/savingfilters.html">Suodattimien tallentaminen</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../orders/index.html">Työtehtävät</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../orders/ordersview.html">Työtehtävänäkymä</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">Työt</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="jobcreation.html">Luo työ</a></li>
+    <li><button class="tree blank"></button><a href="jobview.html">Työnäkymä</a></li>
+    <li><button class="tree blank"></button><a href="jobpanel.html">Työpaneeli</a></li>
+    <li><button class="tree blank"></button><a href="jobautoplan.html">Automaattinen suunnittelu</a></li>
+    <li><button class="tree blank"></button><a href="jobinteractplan.html">Interaktiivinen nestaus</a></li>
+    <li><button class="tree blank"></button><a class="active" href="repacking.html">Uudelleenpakkaus</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="layoutcommands/index.html">Nestauksen hallinta</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="layoutcommands/nestview.html">Sijoittelunäkymä</a></li>
+      <li><button class="tree blank"></button><a href="layoutcommands/layoutpanel.html">Sijoittelupaneeli</a></li>
+      <li><button class="tree blank"></button><a href="layoutcommands/reportsender.html">Raporttien lähettäminen</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="remnantmanagement/index.html">Jäännöslevyjen hallinta</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="remnantmanagement/autoremnant.html">Automaattinen jäännöslevyjen hallinta</a></li>
+      <li><button class="tree blank"></button><a href="remnantmanagement/manualremnant.html">Manuaalinen jäännöslevyjen hallinta</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="twinlinenesting.html">TwinLine-nestaus</a></li>
+    <li><button class="tree blank"></button><a href="outdate.html">Vanhentunut</a></li>
+    <li><button class="tree blank"></button><a href="jobfilters.html">Työn suodattimet</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../factory/index.html">Tehdas</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../factory/routes.html">Reitit</a></li>
+    <li><button class="tree blank"></button><a href="../factory/sheets.html">Levyt</a></li>
+    <li><button class="tree blank"></button><a href="../factory/users.html">Käyttäjät</a></li>
+    <li><button class="tree blank"></button><a href="../factory/edit.html">Muokkaa</a></li>
+    <li><button class="tree blank"></button><a href="../factory/customers.html">Asiakkaat</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../factory/settings/index.html">Asetukset</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../factory/settings/environment.html">Ympäristö</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/import.html">Tuonti</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/bend.html">Taivutus</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/cut.html">Leikkaus</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/notification.html">Ilmoitukset</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/watch.html">Valvontatoiminto</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/job.html">Työ</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/reports.html">Raportit</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../impressum.html">Yritystiedot</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Työt</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="repacking.html">Uudelleenpakkaus</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Uudelleenpakkaus</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>JFY Plus ei sisällä erillistä uudelleenpakkausmoduulia. Sen sijaan
+uudelleenpakkaus hoidetaan työtason vaihtoehdoilla, jotka tarjoavat joustavuutta
+siihen, miten osat yhdistetään.</p>
+</div>
+<div class="paragraph">
+<p>Uudelleenpakkaus voidaan tehdä kolmella tavalla.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Uudelleenpakkaus toiminnolla
+<strong>Mix parts from multiple Jobs</strong>.</p>
+</li>
+<li>
+<p>Manuaalinen uudelleenpakkaus käyttämällä <strong>Add Parts</strong>
+-interaktiivista ohjattua toimintoa.</p>
+</li>
+<li>
+<p>Manuaalinen uudelleenpakkaus käyttämällä JFY Core.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_uudelleenpakkaus_toiminnolla_mix_parts_from_multiple_jobs">Uudelleenpakkaus toiminnolla mix parts from multiple Jobs</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Ottaaksesi tämän vaihtoehdon käyttöön siirry kohtaan
+<strong>factory</strong> &#8594; <strong>settings</strong> &#8594;
+<strong>Job</strong> &#8594; <strong>Nest settings</strong> &#8594;
+<strong>Mix parts from multiple Jobs</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/mixparts.png" alt="Mix Parts" width="735">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Kun tämä vaihtoehto on käytössä, eri töiden osat voidaan ryhmitellä yhteen
+automaattisen nestauksen tai interaktiivisen nestauksen aikana, mikä johtaa
+yhdistettyyn pakkaukseen tai nestaukseen.</p>
+</li>
+<li>
+<p>Esimerkiksi:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Työ-1:ssä on 1 osa, Työ-2:ssa on 1 osa.</p>
+</li>
+<li>
+<p>Kun <strong>Mix parts from multiple Jobs</strong>
+on käytössä, JFY Plus voi pakata nämä 2 osaa uudelleen yhteen optimoituun
+nestaukseen.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/mixnest1.png" alt="Mix Nest1" width="415"></span> <span class="image"><img src="img/mixnest2.png" alt="Mix Nest2" width="400"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Ilman tätä vaihtoehtoa kunkin työn osat pysyvät erillisinä nestauksen/
+pakkauksen aikana eri sijoittelunimillä.</p>
+</li>
+<li>
+<p>Uudelleenpakkaus voidaan myös suorittaa manuaalisesti ottamatta tätä
+vaihtoehtoa käyttöön.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_manuaalinen_uudelleenpakkaus_osien_lisäyksen_ohjatulla_toiminnolla">Manuaalinen uudelleenpakkaus osien lisäyksen ohjatulla toiminnolla</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Valitse sijoittelunäkymästä osat, jotka haluat pakata uudelleen.</p>
+</li>
+<li>
+<p>Napsauta osaa hiiren oikealla painikkeella ja valitse
+<strong>Add Parts&#8230;&#8203;</strong> sijoittelupaneelista.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/addparts.png" alt="Add Parts" width="740">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Suorita uudelleenpakkaus loppuun noudattamalla ohjatun toiminnon kehotteita.</p>
+</li>
+<li>
+<p>Valitse <strong>Show other job parts</strong> ja lisää ne
+nykyiseen työhön.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/manualrepacking2.png" alt="Manual Repacking2" width="1846">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Tarkista muutokset ja vahvista uudelleenpakkaus.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/manualrepacking1.png" alt="Manual Repacking1" width="1846">
+</div>
+</div>
+<div class="paragraph">
+<p>Lisätietoja on kohdassa <a href="./layoutcommands/layoutpanel.html#add-parts">Lisää osia</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_manuaalinen_uudelleenpakkaus_käyttämällä_jfy_core">Manuaalinen uudelleenpakkaus käyttämällä JFY Core</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Avaa JFY Core napsauttamalla <span class="image"><img src="img/editicon.png" alt="Edit" width="18"></span>.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/fluxlayout.png" alt="Flux Layout" width="741">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Napsauta JFY Core-käyttöliittymässä Add.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/fluxadd.png" alt="Add" width="544">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Näkyviin tulee uusi ikkuna, jossa voit valita uudelleenpakattavat osat.
+Napsauta <strong>Show&#8230;&#8203;</strong> ja valitse sitten
+<strong>Other job parts</strong>. Valinnan tehtyäsi napsauta
+<strong>Pick</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/pick.png" alt="Pick" width="838">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Näkyviin tulee uusi ikkuna, jossa voit määrittää, mihin osa on pakattava
+uudelleen.</p>
+</li>
+<li>
+<p>Napsauta <strong>Save changes to JFY Plus</strong>, ja
+uudelleenpakattu sijoittelu on käytettävissä JFY Plus-sovelluksessa.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_uudelleenpakkaus_toiminnolla_mix_parts_from_multiple_jobs">Uudelleenpakkaus toiminnolla mix parts from multiple Jobs</a>
+  </li>
+  <li level="1">
+   <a href="#_manuaalinen_uudelleenpakkaus_osien_lisäyksen_ohjatulla_toiminnolla">Manuaalinen uudelleenpakkaus osien lisäyksen ohjatulla toiminnolla</a>
+  </li>
+  <li level="1">
+   <a href="#_manuaalinen_uudelleenpakkaus_käyttämällä_jfy_core">Manuaalinen uudelleenpakkaus käyttämällä JFY Core</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="jobinteractplan.html">Interaktiivinen nestaus</a></span>
+ <span class="next"><a href="layoutcommands/index.html">Nestauksen hallinta</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

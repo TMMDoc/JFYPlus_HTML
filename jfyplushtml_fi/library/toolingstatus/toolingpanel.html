@@ -1,0 +1,711 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Työstöpaneeli</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Tervetuloa JFY Plus-ohjelmaan</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Asennus</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Laitteistovaatimukset</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Tuetut tiedostomuodot</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Esivaatimukset</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Lisenssin vaihtaminen</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Määritykset</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Lisää/poista kone</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Työstöasetukset</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Määritä käyttäjät</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Kieli</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Työaine</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Lisää uusi työaine ja levy</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Vie/tuo työaine</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Korvaa työaine</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Yhdistä työaine</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">Käyttöliittymä</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Työnkulku</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Kirjasto</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../open/index.html">Avaaminen</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../open/partimport.html">Osien tuonti</a></li>
+      <li><button class="tree blank"></button><a href="../open/orderimport.html">Työtehtävien tuonti</a></li>
+      <li><button class="tree blank"></button><a href="../open/jobimport.html">Töiden tuonti</a></li>
+      <li><button class="tree blank"></button><a href="../open/assembliesimport.html">Rakenneryhmien tuonti</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../libraryview/index.html">Kirjastonäkymä</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../libraryview/partview.html">Osat</a></li>
+      <li><button class="tree blank"></button><a href="../libraryview/assemblyview.html">Rakenneryhmä</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../partstate/index.html">Osan tila</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../partstate/partvalidation.html">Osan validointi</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partpanel.html">Osapaneeli</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partfilters.html">Osasuodattimet</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Työstön tila</a>
+     <ul>
+      <li>
+       <button class="tree closed"></button>
+       <a href="toolingvalidation/index.html">Työstön validointi</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="toolingvalidation/bendtooling.html">Taivutustyöstöjen validointi</a></li>
+        <li><button class="tree blank"></button><a href="toolingvalidation/cuttooling.html">Leikkaustyöstöjen validointi</a></li>
+        <li><button class="tree blank"></button><a href="toolingvalidation/foldtooling.html">Taittotyöstöjen validointi</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a class="active" href="toolingpanel.html">Työstöpaneeli</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../savingfilters.html">Suodattimien tallentaminen</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Työtehtävät</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Työtehtävänäkymä</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Työt</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Luo työ</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Työnäkymä</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Työpaneeli</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Automaattinen suunnittelu</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Interaktiivinen nestaus</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Uudelleenpakkaus</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Nestauksen hallinta</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Sijoittelunäkymä</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Sijoittelupaneeli</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Raporttien lähettäminen</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Jäännöslevyjen hallinta</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Automaattinen jäännöslevyjen hallinta</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Manuaalinen jäännöslevyjen hallinta</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">TwinLine-nestaus</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Vanhentunut</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Työn suodattimet</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../factory/index.html">Tehdas</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">Reitit</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/sheets.html">Levyt</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">Käyttäjät</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/edit.html">Muokkaa</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">Asiakkaat</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">Asetukset</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">Ympäristö</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">Tuonti</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">Taivutus</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">Leikkaus</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">Ilmoitukset</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">Valvontatoiminto</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">Työ</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">Raportit</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Yritystiedot</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Kirjasto</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Työstön tila</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="toolingpanel.html">Työstöpaneeli</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Työstöpaneeli</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>T\u00e4ss\u00e4 osiossa selitet\u00e4\u00e4n ty\u00f6st\u00f6ihin liittyv\u00e4t toiminnot, kuten
+<strong>Export outputs</strong>,
+<strong>Check Tooling</strong>, <strong>Suppress Tooling</strong>,
+<strong>Set as Base-Flat&#8230;&#8203;</strong>, <strong>Copy Tooling</strong> ja
+muut vaihtoehdot, joita k\u00e4ytet\u00e4\u00e4n ty\u00f6st\u00f6instanssien hallintaan.</p>
+</div>
+<table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="img/toolingpanel.png" alt="Tooling panel" width="150">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/document.png" alt="Read-only" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Open in read-only mode for viewing</strong><br>
+Avaa valitun ty\u00f6st\u00f6n vain luku -tilassa.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/editicon.png" alt="Edit" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Check-out the document for editing</strong><br>
+Ottaa valitun ty\u00f6st\u00f6n muokkauksen k\u00e4ytt\u00f6\u00f6n.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Export Outputs</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vie valitun ty\u00f6st\u00f6n tulosteen m\u00e4\u00e4ritettyyn kohteeseen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Check Tooling</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Validoi olemassa olevan ty\u00f6st\u00f6n tekem\u00e4tt\u00e4 muutoksia ja p\u00e4ivitt\u00e4\u00e4 sen tilan,
+jos validointi ep\u00e4onnistuu.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Copy Tooling&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kopioi st\u00e4mpin, sekvenssin ja takavasteen asetuksen valitusta
+viitety\u00f6st\u00f6st\u00e4 ja soveltaa sen muihin ratkaisuihin, jos se on mahdollista.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Set as Base-Flat&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merkitsee valitun taivutus- tai taittoty\u00f6st\u00f6n viitteelliseksi levityskooksi
+leikkausratkaisujen luontia varten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Re-tool&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ty\u00f6st\u00e4\u00e4 valitun ty\u00f6st\u00f6n uudelleen osalle vaikuttamatta muihin ty\u00f6st\u00f6ihin.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Suppress Tooling</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vaimentaa valitun ty\u00f6st\u00f6n, jolloin se j\u00e4tet\u00e4\u00e4n pois jatkok\u00e4sittelyst\u00e4 ja
+tulosteiden luonnista.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Prev</strong> / <strong>Next</strong> / <strong>Part</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Siirtyy edelliseen tai seuraavaan ty\u00f6st\u00f6\u00f6n tai takaisin p\u00e4\u00e4osaan.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Sort and filter</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">N\u00e4ytt\u00e4\u00e4 muut ty\u00f6st\u00f6t, joilla on samankaltaisia ominaisuuksia kuin valitulla
+ty\u00f6st\u00f6ll\u00e4, nopeaa viittausta varten.</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_export_outputs">Export Outputs</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>T\u00e4m\u00e4 vaihtoehto vie osan tulosteen kohteeseen, joka on m\u00e4\u00e4ritetty kohdassa
+<strong>Factory Settings</strong>. (Katso
+<a href="../../factory/settings/bend.html">Taivutusasetukset</a> ja
+<a href="../../factory/settings/cut.html">Leikkausasetukset</a>)</p>
+</div>
+<div class="paragraph">
+<p>Vain valittuun ty\u00f6st\u00f6operaatioon liittyv\u00e4t ty\u00f6st\u00f6t vied\u00e4\u00e4n, ei koko osaa.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Viedyt tiedostot riippuvat operaatiotyypist\u00e4. Taivutus- ja
+taitto-operaatioille luodaan NC-tiedostot ja raportit. Leikkaus- ja
+l\u00e4vistysoperaatioille vied\u00e4\u00e4n vain osatiedostot.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_check_tooling">Check Tooling</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Jos CAM-asetuksissa on muutos tai taivutusty\u00f6kalu on kadonnut, sinun ei
+tarvitse ty\u00f6st\u00e4\u00e4 osaa uudelleen.</p>
+</li>
+<li>
+<p>K\u00e4yt\u00e4 sen sijaan Check Tooling -toimintoa validoidaksesi olemassa olevan
+ty\u00f6st\u00f6n tekem\u00e4tt\u00e4 muutoksia.</p>
+</li>
+<li>
+<p>Jos validointi ep\u00e4onnistuu, kyseisen instanssin ty\u00f6st\u00f6jen tila p\u00e4ivitet\u00e4\u00e4n
+ja niihin liittyv\u00e4t tulostetiedostot poistetaan.</p>
+</li>
+<li>
+<p>Check Tooling havaitsee my\u00f6s osat, joissa virheet on aiemmin manuaalisesti
+ohitettu k\u00e4ytt\u00e4m\u00e4ll\u00e4 <strong>Ignore Errors</strong>, ja p\u00e4ivitt\u00e4\u00e4
+niiden tilan virheeksi tarvittaessa.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_copy_tooling">Copy tooling</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Copy tooling -toiminnon avulla voit nopeasti soveltaa taivutusty\u00f6st\u00f6\u00e4 yhdest\u00e4
+ratkaisusta muihin, mik\u00e4 s\u00e4\u00e4st\u00e4\u00e4 aikaa ja vaivaa.</p>
+</div>
+<div class="paragraph">
+<p>T\u00e4m\u00e4 kopioi st\u00e4mpin, sekvenssin ja takavasteen asetuksen valitusta
+viitety\u00f6st\u00f6st\u00e4 (ratkaisusta) ja yritt\u00e4\u00e4 soveltaa samoja asetuksia kaikkiin
+muihin ratkaisuihin.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Jos kopioitu asetus on mahdollinen kohdekoneelle, se tallennetaan ja
+otetaan k\u00e4ytt\u00f6\u00f6n.</p>
+</li>
+<li>
+<p>Jos asetus ei ole mahdollinen, kyseisen koneen alkuper\u00e4inen ty\u00f6st\u00f6 pysyy
+muuttumattomana.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Sinulla voi esimerkiksi olla eri ty\u00f6st\u00f6t eri koneille:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/check3.png" alt="Before tooling" width="724">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/check4.png" alt="Copy tooling" width="664">
+</div>
+</div>
+<div class="paragraph">
+<p>Samat st\u00e4mpin, sekvenssin ja takavasteen asetukset otetaan k\u00e4ytt\u00f6\u00f6n aina kun
+mahdollista. Jos kopioitua asetusta ei voi k\u00e4ytt\u00e4\u00e4, alkuper\u00e4inen ty\u00f6st\u00f6 pysyy
+muuttumattomana.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/copytooling3.png" alt="After tooling" width="700">
+</div>
+</div>
+<div class="paragraph">
+<p>Copy tooling -toiminnon soveltamisen j\u00e4lkeen Gooseneck-asetus on onnistuneesti
+otettu k\u00e4ytt\u00f6\u00f6n kaikilla muilla koneilla, joilla se on mahdollinen.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_set_as_base_flat">Set as Base-Flat&#8230;&#8203;</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Set as Base-Flat&#8230;&#8203;</strong> -ominaisuus m\u00e4\u00e4ritt\u00e4\u00e4, mit\u00e4 taivutus-
+tai taittoty\u00f6st\u00f6\u00e4 k\u00e4ytet\u00e4\u00e4n viitteellisen\u00e4 levityskokona leikkausratkaisujen
+luontia varten. Kun ty\u00f6st\u00f6 merkit\u00e4\u00e4n Base-Flatiksi, JFY Plus p\u00e4ivitt\u00e4\u00e4 osan
+levityskoon kyseisen koneen perusteella ja luo leikkausratkaisut uudelleen
+vastaavasti. Base-Flat-ty\u00f6st\u00f6t n\u00e4ytet\u00e4\u00e4n sinisell\u00e4 reunuksella
+k\u00e4ytt\u00f6liittym\u00e4ss\u00e4.</p>
+</div>
+<div class="paragraph">
+<p>Eri taivutuskoneet voivat tuottaa pieni\u00e4 vaihteluita saman osan levityskoossa.
+Kun asetat ty\u00f6st\u00f6n Base-Flatiksi, JFY Plus k\u00e4ytt\u00e4\u00e4 kyseisen koneen
+levityskokoa p\u00e4\u00e4viitteen\u00e4 ja laskee leikkausratkaisut automaattisesti uudelleen.</p>
+</div>
+<div class="paragraph">
+<p>T\u00e4ss\u00e4 n\u00e4emme saman osan eri levityskoot eri koneilla:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/baseflat1.png" alt="Base flat1" width="800">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/baseflat2.png" alt="Base flat2" width="663">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_automaattinen_base_flat_valinta">Automaattinen base flat -valinta</h3>
+<div class="paragraph">
+<p>Kun tehdasasetus
+<strong>Apply flat correction during bending</strong> on otettu
+k\u00e4ytt\u00f6\u00f6n:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/autobase.png" alt="Auto Base" width="806">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>JFY Plus asettaa automaattisesti taivutusty\u00f6st\u00f6n (joka sis\u00e4lt\u00e4\u00e4 maksimin
+taivutuspituustaulukon) Base-Flatiksi osan tuonnin aikana.</p>
+</li>
+<li>
+<p>Jos valittu taivutusty\u00f6st\u00f6 kohtaa virheen tai ei ole mahdollinen, JFY Plus
+vaihtaa \u00e4lykk\u00e4\u00e4sti ja asettaa toisen kelvollisen taivutusty\u00f6st\u00f6n Base-Flatiksi.
+T\u00e4m\u00e4 varmistaa, ett\u00e4 levityskoon viite ja leikkausratkaisut pysyv\u00e4t aina
+johdonmukaisina ja kelvollisina ilman manuaalista puuttumista.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_parannettu_base_flat_hallinta">Parannettu base flat -hallinta</h3>
+<div class="paragraph">
+<p>JFY Plus tarjoaa Base-Flat-vaihtoehdot <strong>Save to Praxis</strong>
+-valintaikkunassa tallennettaessa taivutus- tai taittoty\u00f6st\u00f6jen muokkauksia.
+N\u00e4m\u00e4 vaihtoehdot n\u00e4kyv\u00e4t vain OK-tilassa oleville ty\u00f6st\u00f6ille ja varmistavat,
+ett\u00e4 levityskoko ja leikkausratkaisut pysyv\u00e4t tarkkoina.</p>
+</div>
+<div class="sect3">
+<h4 id="_set_as_base_flat_and_calculate_cutting_solution">Set as Base-Flat and calculate cutting solution</h4>
+<div class="paragraph">
+<p>T\u00e4t\u00e4 vaihtoehtoa k\u00e4ytet\u00e4\u00e4n merkitsem\u00e4\u00e4n ty\u00f6st\u00f6 Base-Flatiksi ensimm\u00e4ist\u00e4
+kertaa ja luomaan vastaava leikkausratkaisu automaattisesti.</p>
+</div>
+<div class="paragraph">
+<p>N\u00e4kyy, kun:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Ty\u00f6st\u00f6\u00e4 ei ole t\u00e4ll\u00e4 hetkell\u00e4 merkitty Base-Flatiksi.</p>
+</li>
+<li>
+<p>K\u00e4ytt\u00e4j\u00e4 on tarkistanut ty\u00f6st\u00f6n ulos muokkausta varten ja tallentaa
+muutokset.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/setbase.png" alt="Set Base" width="432">
+</div>
+</div>
+<div class="paragraph">
+<p>K\u00e4ytt\u00e4\u00e4ksesi t\u00e4t\u00e4 vaihtoehtoa tarkista taivutus- tai taittoty\u00f6st\u00f6 ulos ja tee
+tarvittavat muutokset, kuten muutokset taivutusparametreihin tai
+levityskokoon. Tallenna muutokset painamalla <span class="keyseq"><kbd>Ctrl</kbd>+<kbd>S</kbd></span>. Valitse
+<strong>Save to Praxis</strong> -valintaikkunassa
+<strong>Set as Base-Flat and calculate cutting solution</strong> ja
+napsauta <strong>OK</strong>. JFY Plus asettaa ty\u00f6st\u00f6n Base-Flatiksi ja luo
+leikkausratkaisun p\u00e4ivitetyn levityskoon avulla.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_update_the_base_flat_and_re_calculate_cutting_solution">Update the base-flat and re-calculate cutting solution</h4>
+<div class="paragraph">
+<p>T\u00e4t\u00e4 vaihtoehtoa k\u00e4ytet\u00e4\u00e4n, kun ty\u00f6st\u00f6 on jo merkitty Base-Flatiksi ja sit\u00e4
+on muokattu, mik\u00e4 edellytt\u00e4\u00e4 levityskoon ja leikkausratkaisujen luomista
+uudelleen.</p>
+</div>
+<div class="paragraph">
+<p>N\u00e4kyy, kun:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Ty\u00f6st\u00f6 on jo merkitty Base-Flatiksi.</p>
+</li>
+<li>
+<p>K\u00e4ytt\u00e4j\u00e4 on tarkistanut sen ulos, muokannut sit\u00e4 ja tallentaa muutokset.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/updatebase.png" alt="Update Base" width="432">
+</div>
+</div>
+<div class="paragraph">
+<p>Kun muokkaat olemassa olevaa Base-Flat-ty\u00f6st\u00f6\u00e4, p\u00e4ivit\u00e4 taivutusparametrit tai
+levityskoon geometria tarpeen mukaan. Valitse <strong>Save to Praxis</strong>
+-valintaikkunassa
+<strong>Update the base-flat and re-calculate cutting solution</strong>.
+JFY Plus p\u00e4ivitt\u00e4\u00e4 sitten Base-Flat-ty\u00f6st\u00f6n ja luo kaikki siihen liittyv\u00e4t
+leikkausratkaisut uudelleen viimeisimpien muutosten mukaan.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Vain yksi taivutusty\u00f6st\u00f6 voidaan asettaa Base-Flatiksi kerrallaan.</p>
+</div>
+<div class="paragraph">
+<p>Kun Base-Flat muutetaan, olemassa olevat leikkausratkaisut k\u00e4sitell\u00e4\u00e4n
+automaattisesti uudelleen.</p>
+</div>
+<div class="paragraph">
+<p>T\u00e4m\u00e4 ominaisuus on k\u00e4ytett\u00e4viss\u00e4 sek\u00e4 taivutus- ett\u00e4 taittoty\u00f6st\u00f6ille
+JFY Plus-sovelluksessa.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_re_tool">Re-tool</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>T\u00e4m\u00e4 vaihtoehto ty\u00f6st\u00e4\u00e4 valitun ty\u00f6st\u00f6n uudelleen osalle.</p>
+</div>
+<div class="paragraph">
+<p>Napsauta haluttua ty\u00f6st\u00f6\u00e4 hiiren kakkospainikkeella Tooling-paneelissa ja
+napsauta <strong>Re-tool&#8230;&#8203;</strong></p>
+</div>
+<div class="paragraph">
+<p>Vahvistusvalintaikkuna tulee n\u00e4kyviin ennen jatkamista.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/toolingconfirm.png" alt="ToolingConfirm" width="431">
+</div>
+</div>
+<div class="paragraph">
+<p>Napsauta <strong>Yes</strong> jatkaaksesi uudelleenty\u00f6st\u00f6\u00e4, tai <strong>No</strong>
+peruuttaaksesi toiminnon.</p>
+</div>
+<div class="paragraph">
+<p>Vain valittu ty\u00f6st\u00f6 ty\u00f6stet\u00e4\u00e4n uudelleen. Muut osaan liittyv\u00e4t ty\u00f6st\u00f6t eiv\u00e4t
+muutu. Valittuun ty\u00f6st\u00f6\u00f6n liittyv\u00e4t olemassa olevat tulosteet poistetaan ja
+luodaan uudelleen uudelleenty\u00f6st\u00f6prosessin aikana.</p>
+</div>
+<div class="paragraph">
+<p>K\u00e4yt\u00e4 t\u00e4t\u00e4 vaihtoehtoa, kun ty\u00f6st\u00f6tiedot ovat vanhentuneita, virheellisi\u00e4 tai
+kun kone- tai ty\u00f6st\u00f6m\u00e4\u00e4rityksiin tehd\u00e4\u00e4n muutoksia.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ignore_errors">Ignore errors</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Jos ty\u00f6stetty instanssi n\u00e4ytt\u00e4\u00e4 varoituksen ja haluat silti jatkaa sen
+kanssa, voit ohittaa varoituksen napsauttamalla
+<strong>Ignore errors</strong>.</p>
+</li>
+<li>
+<p>T\u00e4m\u00e4 sallii j\u00e4rjestelm\u00e4n viedä tulostetiedostot kyseiselle instanssille,
+vaikka ty\u00f6st\u00f6iss\u00e4 olisi ongelmia.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+K\u00e4yt\u00e4 <strong>Ignore Errors</strong> -toimintoa vain, kun olet varma, ett\u00e4
+varoituksen voi ohittaa turvallisesti. Todellisten virheiden ohittaminen voi
+johtaa koneen vaurioitumiseen tai turvallisuusriskeihin.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tyu00f6stu00f6jen_vaimentaminenvaimennuksen_poisto">Ty\u00f6st\u00f6jen vaimentaminen/vaimennuksen poisto</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Kun kone on ep\u00e4aktiivinen tai et halua tietyn osan k\u00e4siteltävän tietyll\u00e4
+koneella, k\u00e4yt\u00e4 <strong>Suppress Tooling</strong> j\u00e4tt\u00e4\u00e4ksesi kyseisen
+osan pois nestauksesta kyseisell\u00e4 koneella.</p>
+</li>
+<li>
+<p>Vaimentamisen j\u00e4lkeen hiiren vieminen ty\u00f6stetyn instanssin p\u00e4\u00e4lle n\u00e4ytt\u00e4\u00e4
+viestin, kuten: \u201cTooling suppressed by &lt;User name&gt; on &lt;Date Time&gt;\u201d.</p>
+</li>
+<li>
+<p>Ty\u00f6st\u00f6n vaimentaminen poistaa kyseisen koneen ja osan tulostetiedoston.</p>
+</li>
+<li>
+<p>K\u00e4yt\u00e4 <strong>Unsuppress tooling</strong> palauttaaksesi osan
+ty\u00f6st\u00f6jen tilan kyseisell\u00e4 koneella.</p>
+</li>
+<li>
+<p>Kun vaimennus poistetaan, kyseinen tulostetiedosto luodaan uudelleen.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_export_outputs">Export Outputs</a>
+  </li>
+  <li level="1">
+   <a href="#_check_tooling">Check Tooling</a>
+  </li>
+  <li level="1">
+   <a href="#_copy_tooling">Copy tooling</a>
+  </li>
+  <li level="1">
+   <a href="#_set_as_base_flat">Set as Base-Flat&#8230;&#8203;</a>
+  </li>
+  <li level="2">
+   <a href="#_automaattinen_base_flat_valinta">Automaattinen base flat -valinta</a>
+  </li>
+  <li level="2">
+   <a href="#_parannettu_base_flat_hallinta">Parannettu base flat -hallinta</a>
+  </li>
+  <li level="1">
+   <a href="#_re_tool">Re-tool</a>
+  </li>
+  <li level="1">
+   <a href="#_ignore_errors">Ignore errors</a>
+  </li>
+  <li level="1">
+   <a href="#_tyu00f6stu00f6jen_vaimentaminenvaimennuksen_poisto">Ty\u00f6st\u00f6jen vaimentaminen/vaimennuksen poisto</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="toolingvalidation/foldtooling.html">Taittotyöstöjen validointi</a></span>
+ <span class="next"><a href="../savingfilters.html">Suodattimien tallentaminen</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

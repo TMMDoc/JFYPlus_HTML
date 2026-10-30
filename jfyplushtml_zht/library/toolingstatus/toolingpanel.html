@@ -1,0 +1,680 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Tooling 面板</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">歡迎使用 JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">安裝</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">硬體需求</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">支援的檔案格式</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">先決條件</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">變更授權</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">組態</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">新增/移除機床</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">設定 tooling</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">設定使用者</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">語言</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">材料</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">新增材料和板材</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">匯出/匯入材料</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">取代材料</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">對應材料</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">使用者介面</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">工作流程</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">庫</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../open/index.html">開啟</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../open/partimport.html">匯入零件</a></li>
+      <li><button class="tree blank"></button><a href="../open/orderimport.html">匯入訂單</a></li>
+      <li><button class="tree blank"></button><a href="../open/jobimport.html">匯入 job</a></li>
+      <li><button class="tree blank"></button><a href="../open/assembliesimport.html">匯入組件</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../libraryview/index.html">庫檢視</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../libraryview/partview.html">零件</a></li>
+      <li><button class="tree blank"></button><a href="../libraryview/assemblyview.html">組件</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../partstate/index.html">零件狀態</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../partstate/partvalidation.html">零件驗證</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partpanel.html">零件面板</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partfilters.html">零件篩選器</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">tooling 狀態</a>
+     <ul>
+      <li>
+       <button class="tree closed"></button>
+       <a href="toolingvalidation/index.html">tooling 驗證</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="toolingvalidation/bendtooling.html">折彎 tooling 驗證</a></li>
+        <li><button class="tree blank"></button><a href="toolingvalidation/cuttooling.html">切割 tooling 驗證</a></li>
+        <li><button class="tree blank"></button><a href="toolingvalidation/foldtooling.html">折疊 tooling 驗證</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a class="active" href="toolingpanel.html">Tooling 面板</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../savingfilters.html">儲存篩選器</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">訂單</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">訂單檢視</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Jobs</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">建立 job</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Job 檢視</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Job 面板</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">自動規劃</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">互動式 nesting</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">重新排料</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Nest 管理</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Layout 檢視</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Layout 面板</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">報告傳送器</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">餘料管理</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">自動餘料管理</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">手動餘料管理</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Twinline nesting</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">過期</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Job 篩選器</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../factory/index.html">工廠</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">路線</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/sheets.html">板材</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">使用者</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/edit.html">編輯</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">客戶</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">設定</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">環境</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">匯入</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">折彎</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">切割</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">通知</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">監視</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">Job</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">報告</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">公司資訊</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">庫</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">tooling 狀態</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="toolingpanel.html">Tooling 面板</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Tooling 面板</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>本節說明與 tooling 相關的動作，例如
+<strong>Export outputs</strong>、
+<strong>Check Tooling</strong>、<strong>Suppress Tooling</strong>、
+<strong>Set as Base-Flat&#8230;&#8203;</strong>、<strong>Copy Tooling</strong>，
+以及其他用於管理 tooling 實例的選項。</p>
+</div>
+<table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="img/toolingpanel.png" alt="Tooling panel" width="150">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/document.png" alt="Read-only" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Open in read-only mode for viewing</strong><br>
+以唯讀模式開啟所選的 tooling。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/editicon.png" alt="Edit" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Check-out the document for editing</strong><br>
+啟用所選 tooling 的編輯。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Export Outputs</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">將所選的 tooling 輸出匯出到所設定的目的地。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Check Tooling</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">驗證現有的 tooling 而不做任何變更，並在驗證失敗時更新其狀態。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Copy Tooling&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">從所選的參考 tooling 複製沖頭、順序和背規設定，並在可行的情況下將其套用到其他解決方案。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Set as Base-Flat&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">將所選的折彎或折疊 tooling 標記為產生切割解決方案的參考展開尺寸。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Re-tool&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">重新處理零件所選的 tooling，而不影響其他 tooling。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Suppress Tooling</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">隱藏所選的 tooling，使其排除在後續處理和輸出產生之外。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Prev</strong> / <strong>Next</strong> / <strong>Part</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">導覽至上一個或下一個 tooling，或返回上層零件。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>排序和篩選</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">顯示與所選 tooling 具有類似特性的其他 tooling，以供快速參考。</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_export_outputs">Export Outputs</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>此選項會將零件輸出匯出到 <strong>Factory Settings</strong> 中所設定的目的地。(請參閱
+<a href="../../factory/settings/bend.html">折彎設定</a> 和
+<a href="../../factory/settings/cut.html">切割設定</a>)</p>
+</div>
+<div class="paragraph">
+<p>只會匯出與所選 tooling 操作相關聯的 tooling，而不是整個零件。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+匯出的檔案取決於操作類型。對於 Bend 和
+Fold 操作，會產生 NC 檔案和報告。對於 Cut 和 Punch
+操作，則只會匯出零件檔案。
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_check_tooling">Check Tooling</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>如果 CAM 設定有變更或折彎刀具遺失，您不需要重新 tooling 零件。</p>
+</li>
+<li>
+<p>相反地，請使用 Check Tooling 來驗證現有的 tooling，而不做任何變更。</p>
+</li>
+<li>
+<p>如果驗證失敗，該實例的 tooling 狀態會更新，且相關的輸出檔案會移除。</p>
+</li>
+<li>
+<p>Check Tooling 也會偵測先前使用 <strong>Ignore Errors</strong>
+手動覆寫錯誤的零件，並在需要時將其狀態更新為錯誤。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_copy_tooling">Copy tooling</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>複製 tooling 可讓您快速將折彎 tooling 從一個解決方案套用到其他解決方案，
+節省時間和精力。</p>
+</div>
+<div class="paragraph">
+<p>這會從所選的參考 tooling (解決方案) 複製沖頭、順序和背規設定，並嘗試將相同的
+設定套用到所有其他解決方案。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>如果複製的設定對目標機床可行，就會加以儲存和使用。</p>
+</li>
+<li>
+<p>如果設定不可行，該機床的原始 tooling 會保持不變。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>例如，您可能針對不同的機床有不同的 tooling：</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/check3.png" alt="Before tooling" width="724">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/check4.png" alt="Copy tooling" width="664">
+</div>
+</div>
+<div class="paragraph">
+<p>系統會盡可能套用相同的沖頭、順序和背規設定。如果無法使用複製的設定，
+原始的 tooling 會保持不變。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/copytooling3.png" alt="After tooling" width="700">
+</div>
+</div>
+<div class="paragraph">
+<p>套用複製 tooling 後，Gooseneck 設定已成功套用到所有可行的其他機床。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_set_as_base_flat">Set as Base-Flat&#8230;&#8203;</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Set as Base-Flat&#8230;&#8203;</strong> 功能會定義使用哪個折彎或折疊
+tooling 作為產生切割解決方案的參考展開尺寸。當 tooling 標記為 Base-Flat 時，
+JFY Plus 會根據該機床更新零件的展開尺寸，並據此重新產生切割解決方案。
+Base-Flat tooling 在 UI 中會以藍色邊框顯示。</p>
+</div>
+<div class="paragraph">
+<p>不同的折彎機床對於相同的零件可能會產生略有不同的展開尺寸。當您將 tooling
+設定為 Base-Flat 時，JFY Plus 會使用該機床的展開尺寸作為主要參考，並自動
+重新計算切割解決方案。</p>
+</div>
+<div class="paragraph">
+<p>這裡，我們可以看到相同零件在各種機床上有不同的展開尺寸：</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/baseflat1.png" alt="Base flat1" width="800">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/baseflat2.png" alt="Base flat2" width="663">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_自動_base_flat_選擇">自動 base flat 選擇</h3>
+<div class="paragraph">
+<p>當啟用工廠設定
+<strong>Apply flat correction during bending</strong> 時：</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/autobase.png" alt="Auto Base" width="806">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>JFY Plus 會在零件匯入期間，自動將折彎 tooling (包含最大折彎長度表格)
+設定為 Base-Flat。</p>
+</li>
+<li>
+<p>如果所選的折彎 tooling 遇到錯誤或不可行，JFY Plus 會智慧地切換並將另一個
+有效的折彎 tooling 設定為 Base-Flat。這可確保展開尺寸參考和切割解決方案始終
+保持一致且有效，無需手動介入。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_增強的_base_flat_管理">增強的 base flat 管理</h3>
+<div class="paragraph">
+<p>JFY Plus 在儲存折彎或折疊 tooling 編輯時，會在 <strong>Save to Praxis</strong>
+對話方塊中提供 Base-Flat 選項。這些選項僅會針對處於 OK 狀態的 tooling 出現，並
+確保展開尺寸和切割解決方案保持準確。</p>
+</div>
+<div class="sect3">
+<h4 id="_set_as_base_flat_and_calculate_cutting_solution">Set as Base-Flat and calculate cutting solution</h4>
+<div class="paragraph">
+<p>此選項用於首次將 tooling 標記為 Base-Flat，並自動產生對應的切割解決方案。</p>
+</div>
+<div class="paragraph">
+<p>出現時機：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>tooling 目前未標記為 Base-Flat。</p>
+</li>
+<li>
+<p>使用者已簽出 tooling 進行編輯，並正在儲存變更。</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/setbase.png" alt="Set Base" width="432">
+</div>
+</div>
+<div class="paragraph">
+<p>若要使用此選項，請簽出折彎或折疊 tooling 並進行所需的修改，例如變更折彎
+參數或展開尺寸。按 <span class="keyseq"><kbd>Ctrl</kbd>+<kbd>S</kbd></span> 儲存變更。在 <strong>Save to Praxis</strong>
+對話方塊中，選擇
+<strong>Set as Base-Flat and calculate cutting solution</strong> 並
+按一下
+<strong>OK</strong>。JFY Plus 會將 tooling 設定為 Base-Flat，並使用更新後的展開尺寸產生
+切割解決方案。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_update_the_base_flat_and_re_calculate_cutting_solution">Update the base-flat and re-calculate cutting solution</h4>
+<div class="paragraph">
+<p>當 tooling 已標記為 Base-Flat 且已經過編輯，需要重新產生展開尺寸和切割解決方案時，
+就會使用此選項。</p>
+</div>
+<div class="paragraph">
+<p>出現時機：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>tooling 已標記為 Base-Flat。</p>
+</li>
+<li>
+<p>使用者已簽出、編輯它，並正在儲存變更。</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/updatebase.png" alt="Update Base" width="432">
+</div>
+</div>
+<div class="paragraph">
+<p>編輯現有的 Base-Flat tooling 時，請視需要更新折彎參數或展開尺寸幾何形狀。在
+<strong>Save to Praxis</strong> 對話方塊中，選擇
+<strong>Update the base-flat and re-calculate cutting solution</strong>。
+接著，JFY Plus 會更新 Base-Flat tooling，並重新產生所有相關的
+切割解決方案，以反映最新的變更。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>一次只能將一個折彎 tooling 設定為 Base-Flat。</p>
+</div>
+<div class="paragraph">
+<p>當變更 Base-Flat 時，現有的切割解決方案會自動重新處理。</p>
+</div>
+<div class="paragraph">
+<p>此功能在 JFY Plus 中適用於折彎和折疊 tooling。</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_re_tool">Re-tool</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>此選項會重新處理零件所選的 tooling。</p>
+</div>
+<div class="paragraph">
+<p>在 tooling 面板中所需的 tooling 上按一下滑鼠右鍵，然後按一下
+<strong>Re-tool&#8230;&#8203;</strong></p>
+</div>
+<div class="paragraph">
+<p>繼續之前會顯示確認對話方塊。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/toolingconfirm.png" alt="ToolingConfirm" width="431">
+</div>
+</div>
+<div class="paragraph">
+<p>按一下 <strong>Yes</strong> 以繼續重新 tooling，或按一下 <strong>No</strong> 以
+取消操作。</p>
+</div>
+<div class="paragraph">
+<p>只會重新 tooling 所選的 tooling。與零件相關聯的其他 tooling 不會受到
+影響。與所選 tooling 相關的現有輸出會在重新 tooling 過程中移除並重新產生。</p>
+</div>
+<div class="paragraph">
+<p>當 tooling 資料過時、不正確，或對機床或 tooling 組態進行變更時，請使用
+此選項。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ignore_errors">Ignore errors</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>如果 tooling 實例顯示警告，而您仍想要繼續使用它，可以按一下
+<strong>Ignore errors</strong> 覆寫警告。</p>
+</li>
+<li>
+<p>這會允許系統為該實例匯出輸出檔案，即使有 tooling 問題也一樣。</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+只有在您確定可以安全忽略警告時，才使用 <strong>Ignore Errors</strong>。覆寫實際
+的錯誤可能會導致機床損壞或安全風險。
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_隱藏取消隱藏_tooling">隱藏/取消隱藏 tooling</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>當機床處於非作用中狀態，或您不想讓特定零件由
+特定機床處理時，請使用 <strong>Suppress Tooling</strong> 將
+該零件排除在該機床的 nesting 之外。</p>
+</li>
+<li>
+<p>隱藏後，將滑鼠停留在 tooling 實例上會顯示類似「Tooling suppressed by &lt;User name&gt; on &lt;Date Time&gt;」的訊息。</p>
+</li>
+<li>
+<p>隱藏 tooling 會移除該機床和零件的輸出檔案。</p>
+</li>
+<li>
+<p>使用 <strong>Unsuppress tooling</strong> 可還原該機床上零件的
+tooling 狀態。</p>
+</li>
+<li>
+<p>取消隱藏後，會再次產生相應的輸出檔案。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_export_outputs">Export Outputs</a>
+  </li>
+  <li level="1">
+   <a href="#_check_tooling">Check Tooling</a>
+  </li>
+  <li level="1">
+   <a href="#_copy_tooling">Copy tooling</a>
+  </li>
+  <li level="1">
+   <a href="#_set_as_base_flat">Set as Base-Flat&#8230;&#8203;</a>
+  </li>
+  <li level="2">
+   <a href="#_自動_base_flat_選擇">自動 base flat 選擇</a>
+  </li>
+  <li level="2">
+   <a href="#_增強的_base_flat_管理">增強的 base flat 管理</a>
+  </li>
+  <li level="1">
+   <a href="#_re_tool">Re-tool</a>
+  </li>
+  <li level="1">
+   <a href="#_ignore_errors">Ignore errors</a>
+  </li>
+  <li level="1">
+   <a href="#_隱藏取消隱藏_tooling">隱藏/取消隱藏 tooling</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="toolingvalidation/foldtooling.html">折疊 tooling 驗證</a></span>
+ <span class="next"><a href="../savingfilters.html">儲存篩選器</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

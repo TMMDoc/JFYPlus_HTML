@@ -1,0 +1,721 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Pannello attrezzaggio</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Benvenuti in JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Installazione</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Requisiti hardware</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Formati di file supportati</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Prerequisiti</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Cambio licenza</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Configurazione</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Aggiungi/Rimuovi macchina</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Configura attrezzaggio</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Configura utenti</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Lingua</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Materiale</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Aggiungi nuovo materiale e lamiera</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Esporta/Importa materiale</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Sostituisci materiale</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Mappa materiale</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">L'interfaccia utente</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Flusso di lavoro</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Libreria</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../open/index.html">Apri</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../open/partimport.html">Importa componenti</a></li>
+      <li><button class="tree blank"></button><a href="../open/orderimport.html">Importa ordini</a></li>
+      <li><button class="tree blank"></button><a href="../open/jobimport.html">Importa lavori</a></li>
+      <li><button class="tree blank"></button><a href="../open/assembliesimport.html">Importa assiemi</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../libraryview/index.html">Vista Libreria</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../libraryview/partview.html">Componenti</a></li>
+      <li><button class="tree blank"></button><a href="../libraryview/assemblyview.html">Assieme</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../partstate/index.html">Stato componente</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../partstate/partvalidation.html">Validazione componente</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partpanel.html">Pannello componente</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partfilters.html">Filtri componente</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Stato attrezzaggio</a>
+     <ul>
+      <li>
+       <button class="tree closed"></button>
+       <a href="toolingvalidation/index.html">Validazione attrezzaggio</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="toolingvalidation/bendtooling.html">Validazione attrezzaggio di piegatura</a></li>
+        <li><button class="tree blank"></button><a href="toolingvalidation/cuttooling.html">Validazione attrezzaggio di taglio</a></li>
+        <li><button class="tree blank"></button><a href="toolingvalidation/foldtooling.html">Validazione attrezzaggio di pannellatura</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a class="active" href="toolingpanel.html">Pannello attrezzaggio</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../savingfilters.html">Salvataggio dei filtri</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Ordini</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Vista ordini</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Lavori</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Crea lavoro</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Vista lavoro</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Pannello lavoro</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Pianificazione automatica</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Nesting interattivo</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Riorganizzazione</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Gestione nest</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Vista layout</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Pannello layout</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Invio report</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Gestione avanzi</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Avanzo automatico</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Avanzo manuale</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Nesting a doppia linea</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Scaduto</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Filtri lavoro</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../factory/index.html">Fabbrica</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">Percorsi</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/sheets.html">Lamiere</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">Utenti</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/edit.html">Modifica</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">Clienti</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">Impostazioni</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">Ambiente</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">Importazione</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">Piegatura</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">Taglio</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">Notifiche</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">Monitoraggio</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">Lavoro</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">Report</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Informazioni aziendali</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Libreria</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Stato attrezzaggio</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="toolingpanel.html">Pannello attrezzaggio</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Pannello attrezzaggio</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Questa sezione illustra le azioni relative all&#8217;attrezzaggio come
+<strong>Export outputs</strong>,
+<strong>Check Tooling</strong>, <strong>Suppress Tooling</strong>,
+<strong>Set as Base-Flat&#8230;&#8203;</strong>, <strong>Copy Tooling</strong>
+e altre opzioni utilizzate per gestire le istanze di attrezzaggio.</p>
+</div>
+<table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="img/toolingpanel.png" alt="Tooling panel" width="150">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/document.png" alt="Read-only" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Open in read-only mode for viewing</strong><br>
+Apre l&#8217;attrezzaggio selezionato in modalità di sola lettura.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/editicon.png" alt="Edit" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Check-out the document for editing</strong><br>
+Abilita la modifica dell&#8217;attrezzaggio selezionato.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Export Outputs</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Esporta l&#8217;output dell&#8217;attrezzaggio selezionato nella destinazione configurata.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Check Tooling</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Convalida l&#8217;attrezzaggio esistente senza apportare modifiche e ne aggiorna
+lo stato se la validazione ha esito negativo.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Copy Tooling&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Copia la configurazione di punzone, sequenza e battuta posteriore dall&#8217;attrezzaggio
+di riferimento selezionato e la applica ad altre soluzioni ovunque sia fattibile.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Set as Base-Flat&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Contrassegna l&#8217;attrezzaggio di piegatura o pannellatura selezionato come
+dimensione piatta di riferimento per la generazione delle soluzioni di taglio.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Re-tool&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rielabora l&#8217;attrezzaggio selezionato per il componente senza influire sugli altri
+attrezzaggi.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Suppress Tooling</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sopprime l&#8217;attrezzaggio selezionato in modo che venga escluso da un&#8217;ulteriore
+elaborazione e generazione di output.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Prev</strong> / <strong>Next</strong> / <strong>Part</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Naviga all&#8217;attrezzaggio precedente o successivo, oppure torna al componente principale.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Sort and filter</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Visualizza altri attrezzaggi che condividono caratteristiche simili con
+l&#8217;attrezzaggio selezionato per un rapido riferimento.</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_export_outputs">Export Outputs</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Questa opzione esporta l&#8217;output del componente nella destinazione configurata in
+<strong>Factory Settings</strong>. (Vedere
+<a href="../../factory/settings/bend.html">Impostazioni di piegatura</a> e
+<a href="../../factory/settings/cut.html">Impostazioni di taglio</a>)</p>
+</div>
+<div class="paragraph">
+<p>Vengono esportati solo gli attrezzaggi associati all&#8217;operazione di attrezzaggio
+selezionata, non l&#8217;intero componente.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+I file esportati dipendono dal tipo di operazione. Per le operazioni di
+Bend e Fold, vengono generati file NC e report. Per le operazioni di Cut e
+Punch, vengono esportati solo i file del componente.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_check_tooling">Check Tooling</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Se c&#8217;è una modifica nelle impostazioni CAM o un utensile di piegatura viene
+perso, non è necessario riattrezzare il componente.</p>
+</li>
+<li>
+<p>Utilizzare invece Check Tooling per convalidare l&#8217;attrezzaggio esistente senza
+apportare modifiche.</p>
+</li>
+<li>
+<p>Se la validazione ha esito negativo, lo stato di attrezzaggio di quell&#8217;istanza
+viene aggiornato e i file di output correlati vengono rimossi.</p>
+</li>
+<li>
+<p>Check Tooling rileva anche i componenti in cui gli errori sono stati
+precedentemente ignorati manualmente utilizzando <strong>Ignore Errors</strong>,
+e ne aggiorna lo stato a errore se necessario.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_copy_tooling">Copy tooling</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>La copia dell&#8217;attrezzaggio consente di applicare rapidamente l&#8217;attrezzaggio di
+piegatura da una soluzione ad altre, risparmiando tempo e fatica.</p>
+</div>
+<div class="paragraph">
+<p>Questa operazione copia la configurazione di punzone, sequenza e battuta
+posteriore da un attrezzaggio (soluzione) di riferimento selezionato e prova ad
+applicare le stesse impostazioni a tutte le altre soluzioni.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Se la configurazione copiata è fattibile per una macchina di destinazione,
+viene salvata e utilizzata.</p>
+</li>
+<li>
+<p>Se la configurazione non è fattibile, l&#8217;attrezzaggio originale per quella
+macchina rimane invariato.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Ad esempio, è possibile avere attrezzaggi diversi per macchine diverse:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/check3.png" alt="Before tooling" width="724">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/check4.png" alt="Copy tooling" width="664">
+</div>
+</div>
+<div class="paragraph">
+<p>Le stesse impostazioni di punzone, sequenza e battuta posteriore vengono
+applicate ovunque sia possibile. Se la configurazione copiata non può essere
+utilizzata, l&#8217;attrezzaggio originale rimane invariato.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/copytooling3.png" alt="After tooling" width="700">
+</div>
+</div>
+<div class="paragraph">
+<p>Dopo aver applicato la copia dell&#8217;attrezzaggio, la configurazione Gooseneck è
+stata applicata correttamente a tutte le altre macchine in cui è fattibile.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_set_as_base_flat">Set as Base-Flat&#8230;&#8203;</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>La funzione <strong>Set as Base-Flat&#8230;&#8203;</strong> definisce quale attrezzaggio
+di piegatura o pannellatura viene utilizzato come dimensione piatta di
+riferimento per la generazione delle soluzioni di taglio. Quando un attrezzaggio
+viene contrassegnato come Base-Flat, JFY Plus aggiorna la dimensione piatta del
+componente in base a quella macchina e rigenera le soluzioni di taglio di
+conseguenza. Gli attrezzaggi Base-Flat vengono mostrati con un bordo blu
+nell&#8217;interfaccia utente.</p>
+</div>
+<div class="paragraph">
+<p>Macchine di piegatura diverse possono produrre lievi variazioni nella dimensione
+piatta per lo stesso componente. Quando si imposta un attrezzaggio come
+Base-Flat, JFY Plus utilizza la dimensione piatta di quella macchina come
+riferimento principale e ricalcola automaticamente le soluzioni di taglio.</p>
+</div>
+<div class="paragraph">
+<p>Qui possiamo vedere dimensioni piatte diverse per lo stesso componente su varie
+macchine:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/baseflat1.png" alt="Base flat1" width="800">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/baseflat2.png" alt="Base flat2" width="663">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_selezione_automatica_della_base_flat">Selezione automatica della base flat</h3>
+<div class="paragraph">
+<p>Quando l&#8217;impostazione di fabbrica
+<strong>Apply flat correction during bending</strong> è abilitata:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/autobase.png" alt="Auto Base" width="806">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>JFY Plus imposta automaticamente l&#8217;attrezzaggio di piegatura (che contiene la
+tabella della lunghezza massima di piega) come Base-Flat durante l&#8217;importazione
+del componente.</p>
+</li>
+<li>
+<p>Se l&#8217;attrezzaggio di piegatura selezionato incontra un errore o non è
+fattibile, JFY Plus passa in modo intelligente e imposta un altro attrezzaggio
+di piegatura valido come Base-Flat. Ciò garantisce che il riferimento della
+dimensione piatta e le soluzioni di taglio rimangano sempre coerenti e validi
+senza intervento manuale.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_gestione_avanzata_della_base_flat">Gestione avanzata della base flat</h3>
+<div class="paragraph">
+<p>JFY Plus fornisce le opzioni Base-Flat nella finestra di dialogo
+<strong>Save to Praxis</strong> quando si salvano le modifiche
+all&#8217;attrezzaggio di piegatura o pannellatura. Queste opzioni appaiono solo per
+gli attrezzaggi nello stato OK e garantiscono che la dimensione piatta e le
+soluzioni di taglio rimangano accurate.</p>
+</div>
+<div class="sect3">
+<h4 id="_set_as_base_flat_and_calculate_cutting_solution">Set as Base-Flat and calculate cutting solution</h4>
+<div class="paragraph">
+<p>Questa opzione viene utilizzata per contrassegnare un attrezzaggio come
+Base-Flat per la prima volta e generare automaticamente la corrispondente
+soluzione di taglio.</p>
+</div>
+<div class="paragraph">
+<p>Appare quando:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>L&#8217;attrezzaggio non è attualmente contrassegnato come Base-Flat.</p>
+</li>
+<li>
+<p>L&#8217;utente ha effettuato il check-out dell&#8217;attrezzaggio per la modifica e sta salvando le modifiche.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/setbase.png" alt="Set Base" width="432">
+</div>
+</div>
+<div class="paragraph">
+<p>Per utilizzare questa opzione, effettuare il check-out dell&#8217;attrezzaggio di
+piegatura o pannellatura e apportare le modifiche richieste, come le modifiche
+ai parametri di piega o alla dimensione piatta. Premere <span class="keyseq"><kbd>Ctrl</kbd>+<kbd>S</kbd></span> per salvare
+le modifiche. Nella finestra di dialogo <strong>Save to Praxis</strong>,
+scegliere <strong>Set as Base-Flat and calculate cutting solution</strong> e
+fare clic su <strong>OK</strong>. JFY Plus imposterà l&#8217;attrezzaggio come Base-Flat e
+genererà la soluzione di taglio utilizzando la dimensione piatta aggiornata.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_update_the_base_flat_and_re_calculate_cutting_solution">Update the base-flat and re-calculate cutting solution</h4>
+<div class="paragraph">
+<p>Questa opzione viene utilizzata quando l&#8217;attrezzaggio è già contrassegnato come
+Base-Flat ed è stato modificato, richiedendo la rigenerazione della dimensione
+piatta e delle soluzioni di taglio.</p>
+</div>
+<div class="paragraph">
+<p>Appare quando:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>L&#8217;attrezzaggio è già contrassegnato come Base-Flat.</p>
+</li>
+<li>
+<p>L&#8217;utente ne ha effettuato il check-out, lo ha modificato e sta salvando le modifiche.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/updatebase.png" alt="Update Base" width="432">
+</div>
+</div>
+<div class="paragraph">
+<p>Durante la modifica dell&#8217;attrezzaggio Base-Flat esistente, aggiornare i
+parametri di piega o la geometria della dimensione piatta secondo necessità.
+Nella finestra di dialogo <strong>Save to Praxis</strong>, scegliere
+<strong>Update the base-flat and re-calculate cutting solution</strong>.
+JFY Plus aggiornerà quindi l&#8217;attrezzaggio Base-Flat e rigenererà tutte le
+soluzioni di taglio correlate per riflettere le ultime modifiche.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>È possibile impostare come Base-Flat un solo attrezzaggio di piegatura alla volta.</p>
+</div>
+<div class="paragraph">
+<p>Quando la Base-Flat viene modificata, le soluzioni di taglio esistenti vengono
+rielaborate automaticamente.</p>
+</div>
+<div class="paragraph">
+<p>Questa funzione è disponibile sia per gli attrezzaggi di piegatura che di
+pannellatura all&#8217;interno di JFY Plus.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_re_tool">Re-tool</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Questa opzione rielabora l&#8217;attrezzaggio selezionato per il componente.</p>
+</div>
+<div class="paragraph">
+<p>Fare clic con il pulsante destro del mouse sull&#8217;attrezzaggio richiesto nel Pannello attrezzaggio e fare clic su
+<strong>Re-tool&#8230;&#8203;</strong></p>
+</div>
+<div class="paragraph">
+<p>Viene visualizzata una finestra di dialogo di conferma prima di procedere.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/toolingconfirm.png" alt="ToolingConfirm" width="431">
+</div>
+</div>
+<div class="paragraph">
+<p>Fare clic su <strong>Yes</strong> per continuare con il riattrezzaggio, oppure <strong>No</strong> per
+annullare l&#8217;operazione.</p>
+</div>
+<div class="paragraph">
+<p>Viene riattrezzato solo l&#8217;attrezzaggio selezionato. Gli altri attrezzaggi
+associati al componente non vengono interessati. Gli output esistenti relativi
+all&#8217;attrezzaggio selezionato vengono rimossi e rigenerati durante il processo di
+riattrezzaggio.</p>
+</div>
+<div class="paragraph">
+<p>Utilizzare questa opzione quando i dati di attrezzaggio sono obsoleti, non
+corretti o quando vengono apportate modifiche alle configurazioni della macchina
+o dell&#8217;attrezzaggio.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ignore_errors">Ignore errors</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Se un&#8217;istanza attrezzata mostra un&#8217;avvertenza e si desidera comunque
+procedere, è possibile ignorare l&#8217;avvertenza facendo clic su
+<strong>Ignore errors</strong>.</p>
+</li>
+<li>
+<p>Ciò consentirà al sistema di esportare i file di output per quell&#8217;istanza,
+anche se erano presenti problemi di attrezzaggio.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Utilizzare <strong>Ignore Errors</strong> solo quando si è certi che l&#8217;avvertenza
+possa essere ignorata in sicurezza. Ignorare errori effettivi può causare danni
+alla macchina o rischi per la sicurezza.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_suppressunsuppress_tooling">Suppress/Unsuppress tooling</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Quando una macchina è inattiva o non si desidera che un componente specifico
+venga elaborato da una particolare macchina, utilizzare
+<strong>Suppress Tooling</strong> per escludere quel componente dal
+nesting su quella macchina.</p>
+</li>
+<li>
+<p>Dopo la soppressione, passando il mouse sull&#8217;istanza attrezzata viene mostrato
+un messaggio come: “Tooling suppressed by &lt;User name&gt; on &lt;Date Time&gt;”.</p>
+</li>
+<li>
+<p>La soppressione dell&#8217;attrezzaggio rimuove il file di output per quella macchina e quel componente.</p>
+</li>
+<li>
+<p>Utilizzare <strong>Unsuppress tooling</strong> per ripristinare lo
+stato di attrezzaggio per il componente su quella macchina.</p>
+</li>
+<li>
+<p>Quando la soppressione viene annullata, il rispettivo file di output viene generato di nuovo.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_export_outputs">Export Outputs</a>
+  </li>
+  <li level="1">
+   <a href="#_check_tooling">Check Tooling</a>
+  </li>
+  <li level="1">
+   <a href="#_copy_tooling">Copy tooling</a>
+  </li>
+  <li level="1">
+   <a href="#_set_as_base_flat">Set as Base-Flat&#8230;&#8203;</a>
+  </li>
+  <li level="2">
+   <a href="#_selezione_automatica_della_base_flat">Selezione automatica della base flat</a>
+  </li>
+  <li level="2">
+   <a href="#_gestione_avanzata_della_base_flat">Gestione avanzata della base flat</a>
+  </li>
+  <li level="1">
+   <a href="#_re_tool">Re-tool</a>
+  </li>
+  <li level="1">
+   <a href="#_ignore_errors">Ignore errors</a>
+  </li>
+  <li level="1">
+   <a href="#_suppressunsuppress_tooling">Suppress/Unsuppress tooling</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="toolingvalidation/foldtooling.html">Validazione attrezzaggio di pannellatura</a></span>
+ <span class="next"><a href="../savingfilters.html">Salvataggio dei filtri</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

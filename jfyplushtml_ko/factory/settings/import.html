@@ -1,0 +1,389 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>가져오기</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">JFY Plus에 오신 것을 환영합니다</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">설치</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">하드웨어 요구 사항</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">지원되는 파일 형식</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">사전 요구 사항</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">라이선스 변경</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">구성</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">머신 추가/제거</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">툴링 설정</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">사용자 구성</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">언어</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">재료</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">새 재료 및 시트 추가</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">재료 내보내기/가져오기</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">재료 교체</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">재료 매핑</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">사용자 인터페이스</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">워크플로</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../library/index.html">라이브러리</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/open/index.html">열기</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/open/partimport.html">부품 가져오기</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/orderimport.html">오더 가져오기</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/jobimport.html">작업 가져오기</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/assembliesimport.html">어셈블리 가져오기</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/libraryview/index.html">라이브러리 보기</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/libraryview/partview.html">부품</a></li>
+      <li><button class="tree blank"></button><a href="../../library/libraryview/assemblyview.html">어셈블리</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/partstate/index.html">부품 상태</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/partstate/partvalidation.html">부품 검증</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partpanel.html">부품 패널</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partfilters.html">부품 필터</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/toolingstatus/index.html">툴링 상태</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../library/toolingstatus/toolingvalidation/index.html">툴링 검증</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/bendtooling.html">밴딩 툴링 검증</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/cuttooling.html">절단 툴링 검증</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/foldtooling.html">폴딩 툴링 검증</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingpanel.html">툴링 패널</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../library/savingfilters.html">필터 저장</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">오더</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">오더 보기</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">작업</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">작업 생성</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">작업 보기</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">작업 패널</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">자동 계획</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">대화형 네스팅</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">재패킹</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">네스트 관리</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">레이아웃 보기</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">레이아웃 패널</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">리포트 전송기</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">잔재 관리</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">자동 잔재 관리</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">수동 잔재 관리</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Twinline 네스팅</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">오래된 항목</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">작업 필터</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">팩토리</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="../routes.html">루트</a></li>
+    <li><button class="tree blank"></button><a href="../sheets.html">시트</a></li>
+    <li><button class="tree blank"></button><a href="../users.html">사용자</a></li>
+    <li><button class="tree blank"></button><a href="../edit.html">편집</a></li>
+    <li><button class="tree blank"></button><a href="../customers.html">고객</a></li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">설정</a>
+     <ul>
+      <li><button class="tree blank"></button><a href="environment.html">환경</a></li>
+      <li><button class="tree blank"></button><a class="active" href="import.html">가져오기</a></li>
+      <li><button class="tree blank"></button><a href="bend.html">밴딩</a></li>
+      <li><button class="tree blank"></button><a href="cut.html">절단</a></li>
+      <li><button class="tree blank"></button><a href="notification.html">알림</a></li>
+      <li><button class="tree blank"></button><a href="watch.html">감시</a></li>
+      <li><button class="tree blank"></button><a href="job.html">작업</a></li>
+      <li><button class="tree blank"></button><a href="reports.html">리포트</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">회사 정보</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">팩토리</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">설정</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="import.html">가져오기</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>가져오기</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/import.png" alt="Import settings" width="814">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_output_settings">Output settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Save flat pattern</strong> - 가져온 부품의 flat pattern 을 저장하려면 이 옵션을 활성화합니다.</p>
+</div>
+<div class="paragraph">
+<p><strong>Format for flat pattern</strong> - 이 옵션은 DXF 또는 GEO 파일 형식 중 하나를 선택하는 데 사용됩니다.</p>
+</div>
+<div class="paragraph">
+<p><strong>Flat pattern destination</strong> - flat pattern 이 저장될 위치입니다.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_import_settings">Import settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Units for DXF files</strong> - DXF 파일을 가져올 측정 단위이며, 사용자는 mm 또는 inch 중에서 선택할 수 있습니다.</p>
+</div>
+<div class="paragraph">
+<p><strong>Material lookup keys</strong> - 여러 조회 항목을 쉼표 구분자로 구분하여 할당할 수 있습니다. 부품을 가져올 때 JFY Plus 은(는) 이러한 키를 사용하여 재료 값을 검색합니다. 검색된 값은 원자재를 확인하는 데 사용됩니다. 원래 값은 부품 Misc Properties 에 저장됩니다.</p>
+</div>
+<div class="paragraph">
+<p><strong>Revision lookup keys</strong> - 부품을 가져올 때 원본 부품 파일(가져오는 부품 파일)의 개정 값이 리포지토리의 기존 개정 값과 비교됩니다. 개정이 동일하면 가져오기가 중단됩니다. 이제 DXF 파일에 대해서도 사용자 지정 필드 매핑이 지원됩니다. DXF 파일의 경우 사용자 지정 필드 데이터가 도면의 텍스트 레이어 또는 PPI 첨부에서 추출됩니다.</p>
+</div>
+<div class="paragraph">
+<p><strong>Use geometry comparison on same CAD revision</strong> - 동일한 CAD 개정으로 부품을 가져올 때 지오메트리를 비교하고 차이가 감지되면 사용자에게 가져오기를 교체하거나 건너뛰도록 요청합니다. 자세한 내용은 <a href="../../library/open/partimport.html#import-configuration">가져오기 구성</a> 를 참조하십시오.</p>
+</div>
+<div class="paragraph">
+<p><strong>Part name keys</strong> - 이 옵션은 재료 및 Revision lookup keys 와 유사하게 작동합니다. 파일 이름 대신 PPI Part name 을 부품 이름으로 사용하려면 하나 이상의 Part name keys 를 설정합니다.</p>
+</div>
+<div class="paragraph">
+<p><strong>Thickness lookup keys</strong> - 여러 조회 항목을 쉼표 구분자로 구분하여 할당할 수 있습니다. 부품을 가져올 때 JFY Plus 은(는) 이러한 키를 사용하여 두께 값을 검색합니다. 검색된 값은 두께를 확인하는 데 사용됩니다. 원래 값은 부품 Misc Properties 에 저장됩니다.</p>
+</div>
+<div class="paragraph">
+<p><strong>Thickness comparison fudge</strong> - 부품을 가져올 때 원자재를 조회하는 데 사용됩니다. JFY Plus 은(는) 재료 이름과 두께가 구문 분석된 후 원자재를 확인하려고 시도합니다. 자세한 내용은 아래의 <a href="#Thickness fudge">[Thickness fudge]</a> 항목을 참조하십시오.</p>
+</div>
+<div class="paragraph">
+<p><strong>Identify shapes after a flat is imported</strong> - 부품을 가져올 때 부품 내의 내부 형상을 자동으로 인식하고 식별할 수 있습니다.</p>
+</div>
+<div class="paragraph">
+<p><strong>Shape identification fudge</strong> - shape identification fudge 값은 다음에서 설정할 수 있습니다:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Global level</strong> - 이 값은 모든 형상에 대한 기본값으로 사용됩니다.</p>
+</li>
+<li>
+<p><strong>Individual Shape Level</strong> - 개별 형상 수준에서 fudge 값을 설정하여 기본값을 재정의할 수 있습니다. Shape Library 대화 상자에서 형상을 선택하면 fudge 값이 표시됩니다. 기본적으로 이 값은 0 으로 설정되며, 이러한 형상에는 기본 전역 값이 사용됩니다.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Rotate flat horizontally</strong> - 일반적으로 절단 머신 테이블은 직사각형이고 더 넓습니다. 툴링 실현 가능성을 높이려면 부품을 가져온 후 부품 너비를 따라 부품을 회전합니다.</p>
+</div>
+<div class="paragraph">
+<p><strong>Part rotation threshold</strong> - 회전을 허용할 최소 숫자로 설정합니다. 설정된 값보다 작은 부품은 회전되지 않습니다.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_misc_settings">Misc settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Enable pre-import external tools</strong> - Creo Reader 를 활성화하려면 pre-import external tools 가져오기 옵션을 활성화합니다. JFY Plus 은(는) 드롭된 부품의 사전 추출된 패밀리 인스턴스를 업로드합니다. 인스턴스 추출은 부품 업로드 중(사전 가져오기 작업으로)에 수행되므로 부품을 업로드하는 컴퓨터에 Creo 소프트웨어가 설치되어 있어야 합니다.</p>
+</div>
+<div class="paragraph">
+<p><strong>Ignore drawing colors in Flat thumbnails for clarity</strong> - 그레이스케일의 더 선명한 썸네일을 생성하려면 이 옵션을 활성화합니다. 이미지 선명도를 위해 레이어 색상과 텍스트 엔터티가 무시됩니다.</p>
+</div>
+<div class="paragraph">
+<p><strong>Use only one Engine for all import tasks</strong> - 활성화하면 가져오기 작업에 하나의 엔진 코어만 사용됩니다.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_두께_보정">두께 보정</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Thickness comparison fudge</strong> 는 원하는 시트 두께가 인벤토리에서 사용할 수 없을 때 인벤토리에 있는 시트의 두께 값을 비교하여 가장 가까운 시트 두께 값을 선택합니다.</p>
+</div>
+<div class="paragraph">
+<p>예를 들어, 다음과 같이 가정해 보겠습니다:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>시트 두께가 1.6 mm 이고 재료가 steel 인 부품이 있습니다.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/importsheet.png" alt="ImportSheet" width="310">
+</div>
+</div>
+</li>
+<li>
+<p><strong>Thickness comparison fudge</strong> 값은 0.1 mm 입니다.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/thickcomfudge.png" alt="Thickness comparison fudge" width="821">
+</div>
+</div>
+</li>
+<li>
+<p>인벤토리에는 두께 1.5 mm, 1.55 mm 및 1.7 mm 의 steel 시트가 있습니다.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/sheetthickness.png" alt="Sheet inventory" width="621">
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>JFY Plus 은(는) <strong>Thickness comparison fudge</strong> 값(0.1 mm)을 가져온 항목(1.6 mm 측정)과 비교한 후 가장 가까운 두께 값의 시트를 선택합니다. 이 경우 1.55 mm 가 선택됩니다.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/fudgeimport.png" alt="Import part" width="347">
+</div>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_output_settings">Output settings</a>
+  </li>
+  <li level="1">
+   <a href="#_import_settings">Import settings</a>
+  </li>
+  <li level="1">
+   <a href="#_misc_settings">Misc settings</a>
+  </li>
+  <li level="1">
+   <a href="#_두께_보정">두께 보정</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="environment.html">환경</a></span>
+ <span class="next"><a href="bend.html">밴딩</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

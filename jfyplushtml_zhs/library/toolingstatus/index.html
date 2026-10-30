@@ -1,0 +1,335 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>tooling 状态</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">欢迎使用 JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">安装</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">硬件要求</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">支持的文件格式</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">先决条件</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">更改许可证</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">配置</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">添加/移除机床</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">设置 tooling</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">配置用户</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">语言</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">材料</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">添加新材料和板材</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">导出/导入材料</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">替换材料</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">映射材料</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">用户界面</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">工作流</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">库</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../open/index.html">打开</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../open/partimport.html">导入零件</a></li>
+      <li><button class="tree blank"></button><a href="../open/orderimport.html">导入订单</a></li>
+      <li><button class="tree blank"></button><a href="../open/jobimport.html">导入 job</a></li>
+      <li><button class="tree blank"></button><a href="../open/assembliesimport.html">导入装配体</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../libraryview/index.html">库视图</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../libraryview/partview.html">零件</a></li>
+      <li><button class="tree blank"></button><a href="../libraryview/assemblyview.html">装配体</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../partstate/index.html">零件状态</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../partstate/partvalidation.html">零件验证</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partpanel.html">零件面板</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partfilters.html">零件筛选器</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree open"></button>
+     <a class="active" href="index.html">tooling 状态</a>
+     <ul>
+      <li>
+       <button class="tree closed"></button>
+       <a href="toolingvalidation/index.html">tooling 验证</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="toolingvalidation/bendtooling.html">折弯 tooling 验证</a></li>
+        <li><button class="tree blank"></button><a href="toolingvalidation/cuttooling.html">切割 tooling 验证</a></li>
+        <li><button class="tree blank"></button><a href="toolingvalidation/foldtooling.html">折叠 tooling 验证</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="toolingpanel.html">tooling 面板</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../savingfilters.html">保存筛选器</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">订单</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">订单视图</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Jobs</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">创建job</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Job 视图</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Job 面板</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">自动规划</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">交互式 nesting</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">重新排料</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Nest 管理</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Layout 视图</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Layout 面板</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">报告发送器</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">余料管理</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">自动余料管理</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">手动余料管理</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Twinline nesting</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">过期</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Job 筛选器</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../factory/index.html">工厂</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">路线</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/sheets.html">板材</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">用户</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/edit.html">编辑</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">客户</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">设置</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">环境</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">导入</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">折弯</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">切割</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">通知</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">监视</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">Job</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">报告</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">企业信息</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">库</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">tooling 状态</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>tooling 状态</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>在 JFY Plus 中，每个零件磁贴都直观地指示该零件在所有可用机床上的 tooling
+状态。这有助于用户快速查看零件针对哪些机床进行了 tooling，以及 tooling 是否
+就绪、需要审查或缺失。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>tooling 状态使用图标和颜色指示器直接显示在零件磁贴上。</p>
+</li>
+<li>
+<p>每个图标代表一种机床技术（例如 Bend、Laser）。</p>
+</li>
+<li>
+<p>图标的颜色指示该机床当前的 tooling 状态。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>下表说明了每个图标和颜色的含义，帮助用户准确解读 tooling 状态。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/tooling.png" alt="Tooling status" width="256"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tooling_错误">tooling 错误</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>在 tooling 或制造准备阶段会发生 CAM（计算机辅助制造）错误。这些错误由刀具
+碰撞、tooling 缺失或无效切割条件等问题引起。</p>
+</div>
+<div class="paragraph">
+<p>以下图像显示了 tooling 期间可能显示在零件磁贴上的 tooling 错误状态示例。以下
+各节介绍了每种 tooling 错误及其原因。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/collision.png" alt="Collision" width="240"></span></p>
+</div>
+<div class="sect2">
+<h3 id="_折弯_tooling_错误">折弯 tooling 错误</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Collisions detected</strong> 和
+<strong>Gripper error</strong> ：折弯设置在模拟期间导致刀具或夹爪碰撞。</p>
+</li>
+<li>
+<p><strong>Tool Overload</strong> 和
+<strong>Narrow flange or hole too close</strong> ：
+折弯刀具过载，或孔位于离折弯线太近的位置，这可能会损坏零件或刀具。</p>
+</li>
+<li>
+<p><strong>Needs review</strong> 和
+<strong>Short Punch/Die span</strong> ：tooling 设置需要手动检查，或
+所选的模具/冲头跨距小于零件所需的跨距。</p>
+</li>
+<li>
+<p><strong>Tool Missing</strong>、<strong>Poor backguage</strong>
+或 <strong>Part too big for this machine</strong> ：所需的折弯刀具
+不可用、后挡料未正确配置，或零件对于所选机床来说太大。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_切割_tooling_错误">切割 tooling 错误</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Missing cutting condition</strong> ：未为原材料映射切割
+条件，因此无法执行切割。</p>
+</li>
+<li>
+<p><strong>Untooled or partially tooled contours</strong> ：在 tooling
+过程中，某些形状或边缘被遗漏或仅部分覆盖，使零件的切割不完整。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_tooling_错误">tooling 错误</a>
+  </li>
+  <li level="2">
+   <a href="#_折弯_tooling_错误">折弯 tooling 错误</a>
+  </li>
+  <li level="2">
+   <a href="#_切割_tooling_错误">切割 tooling 错误</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="../partstate/partfilters.html">零件筛选器</a></span>
+ <span class="next"><a href="toolingvalidation/index.html">tooling 验证</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

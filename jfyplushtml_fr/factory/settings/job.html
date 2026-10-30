@@ -1,0 +1,435 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Tâche</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Bienvenue dans JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Installation</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Exigences matérielles</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Formats de fichiers pris en charge</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Prérequis</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Changer de licence</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Configuration</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Ajouter/Supprimer une machine</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Configurer l'outillage</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Configurer les utilisateurs</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Langue</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Matière</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Ajouter une nouvelle matière et une tôle</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Exporter/Importer une matière</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Remplacer une matière</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Cartographier la matière</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">L'interface utilisateur</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Flux de travail</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../library/index.html">Bibliothèque</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/open/index.html">Ouvrir</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/open/partimport.html">Importer des pièces</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/orderimport.html">Importer des ordres</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/jobimport.html">Importer des tâches</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/assembliesimport.html">Importer des modules</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/libraryview/index.html">Vue de la bibliothèque</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/libraryview/partview.html">Pièces</a></li>
+      <li><button class="tree blank"></button><a href="../../library/libraryview/assemblyview.html">Module</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/partstate/index.html">État de la pièce</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/partstate/partvalidation.html">Validation des pièces</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partpanel.html">Panneau de la pièce</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partfilters.html">Filtres de pièce</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/toolingstatus/index.html">État de l'outillage</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../library/toolingstatus/toolingvalidation/index.html">Validation de l'outillage</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/bendtooling.html">Validation de l'outillage de pliage</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/cuttooling.html">Validation de l'outillage de coupe</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/foldtooling.html">Validation de l'outillage de pliage</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingpanel.html">Panneau d'outillage</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../library/savingfilters.html">Enregistrement des filtres</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Ordres</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Vue des ordres</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Tâches</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Créer une tâche</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Vue des tâches</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Panneau des tâches</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Planification automatique</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Imbrication interactive</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Réempaquetage</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Gestion des imbrications</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Vue de configuration</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Panneau de configuration</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Envoi de rapports</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Gestion des chutes</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Gestion automatique des chutes</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Gestion manuelle des chutes</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Imbrication Twinline</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Obsolète</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Filtres de tâches</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Usine</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="../routes.html">Itinéraires</a></li>
+    <li><button class="tree blank"></button><a href="../sheets.html">Tôles</a></li>
+    <li><button class="tree blank"></button><a href="../users.html">Utilisateurs</a></li>
+    <li><button class="tree blank"></button><a href="../edit.html">Modifier</a></li>
+    <li><button class="tree blank"></button><a href="../customers.html">Clients</a></li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Réglages</a>
+     <ul>
+      <li><button class="tree blank"></button><a href="environment.html">Environnement</a></li>
+      <li><button class="tree blank"></button><a href="import.html">Importation</a></li>
+      <li><button class="tree blank"></button><a href="bend.html">Pliage</a></li>
+      <li><button class="tree blank"></button><a href="cut.html">Coupe</a></li>
+      <li><button class="tree blank"></button><a href="notification.html">Notifications</a></li>
+      <li><button class="tree blank"></button><a href="watch.html">Surveillance</a></li>
+      <li><button class="tree blank"></button><a class="active" href="job.html">Tâche</a></li>
+      <li><button class="tree blank"></button><a href="reports.html">Rapports</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Informations sur l'entreprise</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Usine</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Réglages</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="job.html">Tâche</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Tâche</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/job.png" alt="Job settings" width="814">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_output_settings">Output settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Save layout NC and reports</strong> - Activez cette option pour que le NC
+de configuration et les rapports soient enregistrés.</p>
+</div>
+<div class="paragraph">
+<p><strong>Save layout file</strong> - Activez cette option pour que le fichier de
+configuration soit enregistré.</p>
+</div>
+<div class="paragraph">
+<p><strong>Output simulation preview in reports</strong> - Activez
+cette option pour générer l&#8217;aperçu de simulation d&#8217;outillage en plus des autres
+sorties. Il s&#8217;agit d&#8217;une courte animation GIF pour l&#8217;outillage laser/poinçon.</p>
+</div>
+<div class="paragraph">
+<p><strong>Do not delete program outputs on layout/job completion</strong> - L&#8217;activation de cette option ignorera l&#8217;opération de suppression des
+sorties de programme lorsqu&#8217;une tâche/configuration est marquée comme terminée.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nest_settings">Nest settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Mix parts from multiple Jobs</strong> - Prend en charge
+l&#8217;imbrication en mode mixte. Les pièces de plusieurs tâches doivent être imbriquées ensemble pour une meilleure
+efficacité de placement.</p>
+</div>
+<div class="paragraph">
+<p><strong>Do not auto-release layouts</strong> - Ceci empêchera les
+configurations d&#8217;être disponibles pour la production jusqu&#8217;à ce que toutes les configurations soient dans un
+état libéré.</p>
+</div>
+<div class="paragraph">
+<p><strong>Re-nesting packing cut-off</strong> - Cette valeur est
+utilisée pour décider si une configuration imbriquée est maintenue dans la file d&#8217;attente d&#8217;approbation et est
+réimbriquée à nouveau lorsque de nouvelles pièces sont planifiées ou lorsqu&#8217;elles sont libérées pour la production
+et que les sorties associées sont exportées vers le dossier de sortie.</p>
+</div>
+<div class="paragraph">
+<p><strong>Interactive sheet-name prefix</strong> - Cette
+section est utilisée pour prendre en charge l&#8217;imbrication interactive où l&#8217;utilisateur a plus de contrôle
+sur les pièces imbriquées et le résultat de l&#8217;imbrication. Utilisez un schéma de nommage, différent
+de l&#8217;imbrication automatique, pour les configurations imbriquées de manière interactive.</p>
+</div>
+<div class="paragraph">
+<p><strong>Update sheet inventory on nest (un)release</strong> - Si
+cette option est activée, l&#8217;inventaire de tôles sera mis à jour lors de l&#8217;envoi d&#8217;une imbrication à
+une machine. De même, le rappel de l&#8217;imbrication depuis la machine renverra la tôle à
+l&#8217;inventaire.</p>
+</div>
+<div class="paragraph">
+<p><strong>Automate remnant inventory management</strong> - Lorsque ce commutateur
+est sélectionné, le logiciel automatise la gestion de l&#8217;inventaire des chutes. S&#8217;il n&#8217;est pas
+sélectionné, la gestion des chutes devient interactive.</p>
+</div>
+<div class="paragraph">
+<p><strong>Auto-refresh Out-of-date layouts</strong> - Lorsqu&#8217;elle est
+cochée, le logiciel actualise toutes les ui:EGTag.SelectOutOfDate[Out-of-date
+Layouts] liées à une pièce après le calcul de ses solutions de coupe.</p>
+</div>
+<div class="paragraph">
+<p><strong>Automate twin-line nesting</strong> - Cochez cette option pour activer
+l&#8217;automatisation twin-line.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pull_workflow_settings">Pull workflow settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Use 'Pull workflow'</strong> - Cette option est utile pour les
+utilisateurs qui ont besoin d&#8217;un système de planification et d&#8217;imbrication hautement autonome. Lorsqu&#8217;elle est activée,
+JFY Plus planifie l&#8217;imbrication à la demande.</p>
+</div>
+<div class="paragraph">
+<p><strong>Nests per station</strong> - Cette valeur définit le nombre de
+configurations par station qui doivent être créées.</p>
+</div>
+<div class="paragraph">
+<p><strong>Maximum sheets per nest</strong> - Cette valeur est utilisée pour
+contrôler le nombre maximal de tôles par rapport à l&#8217;imbrication unique. Ainsi, par exemple, s&#8217;il
+y a un ordre avec une grande pièce (qui remplit toute la tôle), nécessaire en
+grandes quantités (disons 500), JFY Plus ne crée plus une seule imbrication avec 500
+copies en mode pull. Au lieu de cela, il crée 10 copies par imbrication où 10 est le
+maximum.</p>
+</div>
+<div class="paragraph">
+<p><strong>Bend programs per station</strong> - Cette valeur définit le
+nombre de programmes de pliage par station qui doivent être créés.</p>
+</div>
+<div class="paragraph">
+<p><strong>Mark the task completed, when the program outputs are removed</strong> -
+Activez cette option pour qu&#8217;une configuration soit marquée comme terminée lorsque
+les sorties sont supprimées de la destination de sortie cible.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_spreadsheet_import_settings">Spreadsheet import settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>CAD lookup directories</strong> - JFY Plus tentera de
+charger l&#8217;entrée de pièce mentionnée dans le CSV importé depuis la bibliothèque de pièces.
+Cependant, si la pièce n&#8217;est pas disponible dans la bibliothèque de pièces, il tentera alors de
+récupérer les pièces depuis les répertoires de recherche selon l&#8217;ordre des répertoires défini
+dans cette boîte de dialogue.</p>
+</div>
+<div class="paragraph">
+<p><strong>Use recursive CAD search</strong> - Activez cette option pour que
+la recherche soit répétée pour les résultats successifs.</p>
+</div>
+<div class="paragraph">
+<p><strong>Create a blank part for the missing CAD files</strong> - Si
+les pièces n&#8217;existent pas dans la bibliothèque JFY Plus ou les répertoires de recherche, JFY Plus
+créera une pièce vierge pour ces pièces indisponibles.</p>
+</div>
+<div class="paragraph">
+<p><strong>Do not show New Job dialog if the spreadsheet has no error</strong> -
+Si les entrées CSV sont correctes, c&#8217;est-à-dire aucune incohérence de données
+de la base de données ou tous les champs sont répertoriés correctement, JFY Plus n&#8217;affichera pas la fenêtre
+de vue d&#8217;ensemble de la tâche et traitera la tâche dès que le CSV est importé ou
+déposé.</p>
+</div>
+<div class="paragraph">
+<p><strong>Prefer Raw-Material column over Material + Thickness</strong> -
+ Types de feuilles de calcul pris en charge :</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Modèle 1 : PartName, Quantity, DueDate, Priority, RawMaterial</p>
+</li>
+<li>
+<p>Modèle 2 : PartName, Quantity, DueDate, Priority, Material, Thickness</p>
+</li>
+<li>
+<p>Modèle 3 : PartName, Quantity, DueDate, Priority, Material, Thickness,
+RawMaterial</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Si cette option n&#8217;est pas cochée, le Modèle 1 sera considéré comme le type de feuille de calcul
+par défaut. Nous prenons également en charge le Modèle 3 au cas où le format CSV serait de type
+Modèle 3.</p>
+</div>
+<div class="paragraph">
+<p>Si cette option est cochée et que le CSV est de type Modèle 2, alors JFY Plus
+résoudra la matière brute à partir des champs Material et Thickness du CSV.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_spreadsheet_output_settings">Spreadsheet output settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Export Job/Layout completion report (.csv)</strong> -
+Cochez cette option pour activer l&#8217;exportation CSV lorsqu&#8217;une configuration ou une tâche est terminée. Les
+rapports terminés sont enregistrés à la destination des rapports spécifiée dans les réglages Factory
+&#8594; Settings &#8594; Reports.</p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_output_settings">Output settings</a>
+  </li>
+  <li level="1">
+   <a href="#_nest_settings">Nest settings</a>
+  </li>
+  <li level="1">
+   <a href="#_pull_workflow_settings">Pull workflow settings</a>
+  </li>
+  <li level="1">
+   <a href="#_spreadsheet_import_settings">Spreadsheet import settings</a>
+  </li>
+  <li level="1">
+   <a href="#_spreadsheet_output_settings">Spreadsheet output settings</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="watch.html">Surveillance</a></span>
+ <span class="next"><a href="reports.html">Rapports</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

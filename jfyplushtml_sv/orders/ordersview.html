@@ -1,0 +1,419 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../img/praxis-icon.png">
+  <title>Ordervy</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">Välkommen till JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../installation/index.html">Installation</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../installation/hardwarerequirement.html">Hårdvarukrav</a></li>
+    <li><button class="tree blank"></button><a href="../installation/importformats.html">Filformat som stöds</a></li>
+    <li><button class="tree blank"></button><a href="../installation/prerequisites.html">Förutsättningar</a></li>
+    <li><button class="tree blank"></button><a href="../installation/changelic.html">Ändra licens</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../configuration/index.html">Konfiguration</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../configuration/setupmachine.html">Lägg till/ta bort maskin</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/setuptooling.html">Konfigurera tooling</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/configureusers.html">Konfigurera användare</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/language.html">Språk</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../configuration/addmaterial/index.html">Material</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/addnew.html">Lägg till nytt material och plåt</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/exportimport.html">Exportera/importera material</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/replacematerial.html">Ersätt material</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../configuration/mapbendpages.html">Mappa material</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../userinterface.html">Användargränssnittet</a></li>
+  <li><button class="tree blank"></button><a href="../workflow.html">Workflow</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../library/index.html">Bibliotek</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/open/index.html">Öppna</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/open/partimport.html">Importera detaljer</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/orderimport.html">Importera order</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/jobimport.html">Importera job</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/assembliesimport.html">Importera sammanställningar</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/libraryview/index.html">Biblioteksvy</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/libraryview/partview.html">Detaljer</a></li>
+      <li><button class="tree blank"></button><a href="../library/libraryview/assemblyview.html">Sammanställning</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/partstate/index.html">Detaljstatus</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/partstate/partvalidation.html">Detaljvalidering</a></li>
+      <li><button class="tree blank"></button><a href="../library/partstate/partpanel.html">Detaljpanel</a></li>
+      <li><button class="tree blank"></button><a href="../library/partstate/partfilters.html">Detaljfilter</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/toolingstatus/index.html">Tooling-status</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../library/toolingstatus/toolingvalidation/index.html">Tooling-validering</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/bendtooling.html">Validering av bocknings-tooling</a></li>
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/cuttooling.html">Validering av skärnings-tooling</a></li>
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/foldtooling.html">Validering av viknings-tooling</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingpanel.html">Tooling-panel</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../library/savingfilters.html">Spara filter</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">Order</a>
+   <ul>
+    <li><button class="tree blank"></button><a class="active" href="ordersview.html">Ordervy</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../jobs/index.html">Job</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../jobs/jobcreation.html">Skapa job</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobview.html">Job-vy</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobpanel.html">Job-panel</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobautoplan.html">Autoplanering</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobinteractplan.html">Interaktiv nesting</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/repacking.html">Ompackning</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../jobs/layoutcommands/index.html">Nesthantering</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../jobs/layoutcommands/nestview.html">Layout-vy</a></li>
+      <li><button class="tree blank"></button><a href="../jobs/layoutcommands/layoutpanel.html">Layout-panel</a></li>
+      <li><button class="tree blank"></button><a href="../jobs/layoutcommands/reportsender.html">Rapportavsändare</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../jobs/remnantmanagement/index.html">Hantering av restbitar</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../jobs/remnantmanagement/autoremnant.html">Hantering av automatiska restbitar</a></li>
+      <li><button class="tree blank"></button><a href="../jobs/remnantmanagement/manualremnant.html">Hantering av manuella restbitar</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../jobs/twinlinenesting.html">Twinline nesting</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/outdate.html">Föråldrad</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobfilters.html">Job-filter</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../factory/index.html">Fabrik</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../factory/routes.html">Rutter</a></li>
+    <li><button class="tree blank"></button><a href="../factory/sheets.html">Plåtar</a></li>
+    <li><button class="tree blank"></button><a href="../factory/users.html">Användare</a></li>
+    <li><button class="tree blank"></button><a href="../factory/edit.html">Redigera</a></li>
+    <li><button class="tree blank"></button><a href="../factory/customers.html">Kunder</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../factory/settings/index.html">Inställningar</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../factory/settings/environment.html">Miljö</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/import.html">Import</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/bend.html">Bockning</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/cut.html">Skärning</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/notification.html">Aviseringar</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/watch.html">Bevaka</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/job.html">Job</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/reports.html">Rapporter</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../impressum.html">Företagsinformation</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Order</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="ordersview.html">Ordervy</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Ordervy</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Alternativen på höger sida av sidan Orders representerar olika vyer av order
+baserat på deras bearbetningssteg. När du väljer en vy uppdateras de visade
+orderna, så att du kan fokusera på specifika steg i arbetsflödet.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ready">Ready</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>När du väljer vyn <strong>Ready</strong> visas order som är förberedda
+men ännu inte konverterade till job.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/ready.png" alt="Ready" width="999">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Visar order som är redo att skapa job av.</p>
+</li>
+<li>
+<p>Användbart för att identifiera order som väntar på bearbetning.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_active">Active</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>När du väljer vyn <strong>Active</strong> visas order som har
+konverterats till job och som för närvarande bearbetas.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Representerar order som redan flyttats till jobbsteget.</p>
+</li>
+<li>
+<p>Hjälper till att spåra order som är under genomförande.</p>
+</li>
+<li>
+<p>Användbart för att övervaka pågående produktion.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_done">Done</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>När du väljer vyn <strong>Done</strong> visas order som har
+slutfört bearbetningen.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Visar order vars tillhörande job är slutförda.</p>
+</li>
+<li>
+<p>Anger att arbetsflödet är klart.</p>
+</li>
+<li>
+<p>Användbart för granskning och dokumentation.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_all">All</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>När du väljer vyn <strong>All</strong> visas alla order oavsett
+steg.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/all.png" alt="All" width="999">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Ger en fullständig översikt över alla order.</p>
+</li>
+<li>
+<p>Användbart för sökning och hantering över alla steg.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_orderstatusfält">Orderstatusfält</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Statusfältet som visas under varje orderpanel anger om ordern är
+kopplad till ett job. Det finns två typer:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Inget fält - ordern är inte tilldelad något job.</p>
+</li>
+<li>
+<p>Med fält - ordern är en del av ett job, och fältet visar respektive
+jobbstatus enligt listan nedan.</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Orderstatus</th>
+<th class="tableblock halign-left valign-top">Beskrivning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/notready.png" alt="Not Ready" width="100"></span> (Light Grey)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Not ready</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/readyui.png" alt="Ready" width="100"></span> (White)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ready</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/cuttingqueue.png" alt="Bend planned" width="100"></span> (Light Yellow)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bend Planned</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/sheetmissing.png" alt="Sheet Missing" width="100"></span> (Dark Grey)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sheet missing</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/bendingqueue.png" alt="Bending Queue" width="100"></span> (Dark Yellow)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bending queue</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/bendplanned.png" alt="Bend Planned" width="100"></span> (Yellow)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cutting Queue</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/completed.png" alt="Completed" width="100"></span> (Dark Green)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Done(Completed)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_ready">Ready</a>
+  </li>
+  <li level="1">
+   <a href="#_active">Active</a>
+  </li>
+  <li level="1">
+   <a href="#_done">Done</a>
+  </li>
+  <li level="1">
+   <a href="#_all">All</a>
+  </li>
+  <li level="1">
+   <a href="#_orderstatusfält">Orderstatusfält</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="index.html">Order</a></span>
+ <span class="next"><a href="../jobs/index.html">Job</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

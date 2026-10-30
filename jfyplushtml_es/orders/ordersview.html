@@ -1,0 +1,419 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../img/praxis-icon.png">
+  <title>Vista de pedidos</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">Bienvenido a JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../installation/index.html">Instalación</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../installation/hardwarerequirement.html">Requisitos de hardware</a></li>
+    <li><button class="tree blank"></button><a href="../installation/importformats.html">Formatos de archivo compatibles</a></li>
+    <li><button class="tree blank"></button><a href="../installation/prerequisites.html">Requisitos previos</a></li>
+    <li><button class="tree blank"></button><a href="../installation/changelic.html">Cambiar licencia</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../configuration/index.html">Configuración</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../configuration/setupmachine.html">Añadir/eliminar máquina</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/setuptooling.html">Configurar utillaje</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/configureusers.html">Configurar usuarios</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/language.html">Idioma</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../configuration/addmaterial/index.html">Material</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/addnew.html">Añadir nuevo material y chapa</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/exportimport.html">Exportar/importar material</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/replacematerial.html">Reemplazar material</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../configuration/mapbendpages.html">Asignar material</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../userinterface.html">La interfaz de usuario</a></li>
+  <li><button class="tree blank"></button><a href="../workflow.html">Flujo de trabajo</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../library/index.html">Biblioteca</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/open/index.html">Abrir</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/open/partimport.html">Importar piezas</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/orderimport.html">Importar pedidos</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/jobimport.html">Importar tareas</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/assembliesimport.html">Importar montajes</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/libraryview/index.html">Vista de biblioteca</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/libraryview/partview.html">Piezas</a></li>
+      <li><button class="tree blank"></button><a href="../library/libraryview/assemblyview.html">Montaje</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/partstate/index.html">Estado de pieza</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/partstate/partvalidation.html">Validación de piezas</a></li>
+      <li><button class="tree blank"></button><a href="../library/partstate/partpanel.html">Panel de piezas</a></li>
+      <li><button class="tree blank"></button><a href="../library/partstate/partfilters.html">Filtros de piezas</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/toolingstatus/index.html">Estado de utillaje</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../library/toolingstatus/toolingvalidation/index.html">Validación de utillaje</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/bendtooling.html">Validación del utillaje de plegado</a></li>
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/cuttooling.html">Validación del utillaje de corte</a></li>
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/foldtooling.html">Validación del utillaje de plegado con paneladora</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingpanel.html">Panel de utillaje</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../library/savingfilters.html">Guardar filtros</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">Pedidos</a>
+   <ul>
+    <li><button class="tree blank"></button><a class="active" href="ordersview.html">Vista de pedidos</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../jobs/index.html">Tareas</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../jobs/jobcreation.html">Crear tarea</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobview.html">Vista de tareas</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobpanel.html">Panel de tareas</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobautoplan.html">Planificación automática</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobinteractplan.html">Anidamiento interactivo</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/repacking.html">Reempaquetado</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../jobs/layoutcommands/index.html">Gestión de anidamientos</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../jobs/layoutcommands/nestview.html">Vista de diseño</a></li>
+      <li><button class="tree blank"></button><a href="../jobs/layoutcommands/layoutpanel.html">Panel de diseño</a></li>
+      <li><button class="tree blank"></button><a href="../jobs/layoutcommands/reportsender.html">Envío de informes</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../jobs/remnantmanagement/index.html">Gestión de restos</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../jobs/remnantmanagement/autoremnant.html">Gestión automática de restos</a></li>
+      <li><button class="tree blank"></button><a href="../jobs/remnantmanagement/manualremnant.html">Gestión manual de restos</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../jobs/twinlinenesting.html">Anidamiento TwinLine</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/outdate.html">Obsoleto</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobfilters.html">Filtros de tareas</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../factory/index.html">Fábrica</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../factory/routes.html">Rutas</a></li>
+    <li><button class="tree blank"></button><a href="../factory/sheets.html">Chapas</a></li>
+    <li><button class="tree blank"></button><a href="../factory/users.html">Usuarios</a></li>
+    <li><button class="tree blank"></button><a href="../factory/edit.html">Editar</a></li>
+    <li><button class="tree blank"></button><a href="../factory/customers.html">Clientes</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../factory/settings/index.html">Ajustes</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../factory/settings/environment.html">Entorno</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/import.html">Import</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/bend.html">Plegado</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/cut.html">Corte</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/notification.html">Notificaciones</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/watch.html">Visualización</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/job.html">Job</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/reports.html">Informes</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../impressum.html">Información corporativa</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Pedidos</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="ordersview.html">Vista de pedidos</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Vista de pedidos</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Las opciones del lado derecho de la página Orders representan diferentes vistas de
+los pedidos según su etapa de procesamiento. Al seleccionar una vista se actualizan los pedidos
+mostrados, lo que le permite centrarse en etapas específicas del flujo de trabajo.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ready">Ready</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Al seleccionar la vista <strong>Ready</strong> se muestran los pedidos que están preparados
+pero aún no se han convertido en tareas.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/ready.png" alt="Ready" width="999">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Muestra los pedidos que están listos para la creación de tareas.</p>
+</li>
+<li>
+<p>Útil para identificar los pedidos pendientes de procesamiento.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_active">Active</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Al seleccionar la vista <strong>Active</strong> se muestran los pedidos que se han
+convertido en tareas y se están procesando actualmente.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Representa los pedidos que ya se han trasladado a la etapa Job.</p>
+</li>
+<li>
+<p>Ayuda a realizar el seguimiento de los pedidos que están en ejecución.</p>
+</li>
+<li>
+<p>Útil para supervisar la producción en curso.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_done">Done</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Al seleccionar la vista <strong>Done</strong> se muestran los pedidos que han
+completado su procesamiento.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Muestra los pedidos cuyas tareas asociadas están finalizadas.</p>
+</li>
+<li>
+<p>Indica que el flujo de trabajo está completo.</p>
+</li>
+<li>
+<p>Útil para la revisión y el mantenimiento de registros.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_all">All</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Al seleccionar la vista <strong>All</strong> se muestran todos los pedidos independientemente de
+su etapa.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/all.png" alt="All" width="999">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Proporciona una visión general completa de todos los pedidos.</p>
+</li>
+<li>
+<p>Útil para buscar y administrar en todas las etapas.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_barra_de_estado_del_pedido">Barra de estado del pedido</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>La barra de estado que se muestra debajo de cada mosaico de pedido indica si el pedido está
+vinculado a una tarea. Hay dos tipos:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Sin barra: el pedido no está asignado a ninguna tarea.</p>
+</li>
+<li>
+<p>Con barra: el pedido forma parte de una tarea, y la barra muestra el estado
+correspondiente de la tarea, según se indica a continuación.</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Estado del pedido</th>
+<th class="tableblock halign-left valign-top">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/notready.png" alt="Not Ready" width="100"></span> (Light Grey)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Not ready</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/readyui.png" alt="Ready" width="100"></span> (White)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ready</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/cuttingqueue.png" alt="Bend planned" width="100"></span> (Light Yellow)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bend Planned</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/sheetmissing.png" alt="Sheet Missing" width="100"></span> (Dark Grey)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sheet missing</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/bendingqueue.png" alt="Bending Queue" width="100"></span> (Dark Yellow)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bending queue</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/bendplanned.png" alt="Bend Planned" width="100"></span> (Yellow)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cutting Queue</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/completed.png" alt="Completed" width="100"></span> (Dark Green)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Done(Completed)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_ready">Ready</a>
+  </li>
+  <li level="1">
+   <a href="#_active">Active</a>
+  </li>
+  <li level="1">
+   <a href="#_done">Done</a>
+  </li>
+  <li level="1">
+   <a href="#_all">All</a>
+  </li>
+  <li level="1">
+   <a href="#_barra_de_estado_del_pedido">Barra de estado del pedido</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="index.html">Pedidos</a></span>
+ <span class="next"><a href="../jobs/index.html">Tareas</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

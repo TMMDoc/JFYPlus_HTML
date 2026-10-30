@@ -1,0 +1,384 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>部品フィルター</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">JFY Plus へようこそ</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">インストール</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">ハードウェア要件</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">サポートされているファイル形式</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">前提条件</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">ライセンスの変更</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">構成</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">マシンの追加/削除</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">ツーリングのセットアップ</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">ユーザーの構成</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">言語</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">材料</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">新しい材料とシートの追加</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">材料のエクスポート/インポート</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">材料の置換</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">材料のマッピング</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">ユーザーインターフェイス</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">ワークフロー</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">ライブラリ</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../open/index.html">開く</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../open/partimport.html">部品のインポート</a></li>
+      <li><button class="tree blank"></button><a href="../open/orderimport.html">オーダーのインポート</a></li>
+      <li><button class="tree blank"></button><a href="../open/jobimport.html">ジョブのインポート</a></li>
+      <li><button class="tree blank"></button><a href="../open/assembliesimport.html">アセンブリのインポート</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../libraryview/index.html">ライブラリビュー</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../libraryview/partview.html">部品</a></li>
+      <li><button class="tree blank"></button><a href="../libraryview/assemblyview.html">アセンブリ</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">部品ステータス</a>
+     <ul>
+      <li><button class="tree blank"></button><a href="partvalidation.html">部品の検証</a></li>
+      <li><button class="tree blank"></button><a href="partpanel.html">部品パネル</a></li>
+      <li><button class="tree blank"></button><a class="active" href="partfilters.html">部品フィルター</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../toolingstatus/index.html">ツーリングステータス</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../toolingstatus/toolingvalidation/index.html">ツーリングの検証</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/bendtooling.html">曲げツーリングの検証</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/cuttooling.html">切断ツーリングの検証</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/foldtooling.html">折り曲げツーリングの検証</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../toolingstatus/toolingpanel.html">ツーリングパネル</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../savingfilters.html">フィルターの保存</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">オーダー</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">オーダービュー</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">ジョブ</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">ジョブの作成</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">ジョブビュー</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">ジョブパネル</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">自動計画</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">インタラクティブネスティング</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">再パッキング</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">ネスト管理</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">レイアウトビュー</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">レイアウトパネル</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">レポート送信</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">残材管理</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">自動残材管理</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">手動残材管理</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">TwinLineネスティング</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">古くなった</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">ジョブフィルター</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../factory/index.html">ファクトリー</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">ルート</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/sheets.html">シート</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">ユーザー</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/edit.html">編集</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">顧客</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">設定</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">環境</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">インポート</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">曲げ加工</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">切断</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">通知</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">監視</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">ジョブ</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">レポート</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">会社情報</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">ライブラリ</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">部品ステータス</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="partfilters.html">部品フィルター</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>部品フィルター</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>部品ライブラリフィルターを使用すると、特定の条件を適用して、ライブラリ内の部品をすばやく検索して見つけられます。基準を満たす部品のみに結果を絞り込むことで、これらのフィルターは関連する部品を効率的に管理してアクセスしやすくします。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/partlibrary.png" alt="Part Library" width="170">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_state">State</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><strong>State</strong> フィルターを使用して、部品を現在の状態に基づいて検索します。</p>
+</li>
+<li>
+<p>ドロップダウンには、利用可能なライブラリ部品に応じて、適用可能なすべての状態が表示されます。</p>
+</li>
+<li>
+<p>状態のリストは、選択した部品とそのステータスに応じて動的に変化します。</p>
+</li>
+<li>
+<p>たとえば、<strong>Material Missing</strong> を選択して、未解決の材料状態の部品を表示します。</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/state.png" alt="State" width="990">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_status">Status</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Status</strong> フィルターを使用して、部品をツーリングステータスに基づいて検索します。</p>
+</li>
+<li>
+<p>ドロップダウンには、ツーリング状態が色付きのボックスとして表示され、利用可能なすべてのマシンとその適用可能なエラーが表示されます。</p>
+</li>
+<li>
+<p>色付きのボックスは次の状態を表します。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>白: ツーリング OK</p>
+</li>
+<li>
+<p>オレンジ: ツーリングにエラーがある</p>
+</li>
+<li>
+<p>黄: ツーリングに警告がある</p>
+</li>
+<li>
+<p>グレー: ツーリングが抑制されている</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>部品に narrow flange または tooling not assigned エラーがある場合、これらを選択するとそれぞれの部品が表示されます。</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/status2.png" alt="Status" width="1233">
+</div>
+</div>
+</li>
+<li>
+<p>選択したマシンでツーリングが抑制されている部品は、グレーのボックスをクリックすることで表示されます。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bend_mounts">Bend mounts</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Bend mounts</strong> フィルターを使用して、使用される曲げ工具に基づいて部品を検索します。</p>
+</li>
+<li>
+<p>ドロップダウンには利用可能なすべての曲げ工具が表示され、工具名、タイプ（punch、gooseneck、radius など）、または説明でフィルターできます。</p>
+</li>
+<li>
+<p>複数の工具を選択して <strong>Match all</strong> をクリックし、選択した両方の工具を使用する工具を並べ替えます。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_used_tools">Used tools</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Used tools</strong> でのフィルタリングは、<strong>Bend mounts</strong> でのフィルタリングと同様に機能します。</p>
+</li>
+<li>
+<p>工具アイコンは比例サイズ（正確ではなく相対的）で表示されます。</p>
+</li>
+<li>
+<p>ツーリングプレビューが開いているとき、フィルターリスト内の工具にマウスを合わせると、プレビューペインでその工具が強調表示されます。</p>
+</li>
+<li>
+<p>複数の工具を選択し、<strong>Match all</strong> を使用して適用できます。</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/usedtool.png" alt="Used Tool" width="912">
+</div>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_state">State</a>
+  </li>
+  <li level="1">
+   <a href="#_status">Status</a>
+  </li>
+  <li level="1">
+   <a href="#_bend_mounts">Bend mounts</a>
+  </li>
+  <li level="1">
+   <a href="#_used_tools">Used tools</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="partpanel.html">部品パネル</a></span>
+ <span class="next"><a href="../toolingstatus/index.html">ツーリングステータス</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

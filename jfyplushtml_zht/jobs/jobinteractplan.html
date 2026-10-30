@@ -1,0 +1,377 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../img/praxis-icon.png">
+  <title>互動式 nesting</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">歡迎使用 JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../installation/index.html">安裝</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../installation/hardwarerequirement.html">硬體需求</a></li>
+    <li><button class="tree blank"></button><a href="../installation/importformats.html">支援的檔案格式</a></li>
+    <li><button class="tree blank"></button><a href="../installation/prerequisites.html">先決條件</a></li>
+    <li><button class="tree blank"></button><a href="../installation/changelic.html">變更授權</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../configuration/index.html">組態</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../configuration/setupmachine.html">新增/移除機床</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/setuptooling.html">設定 tooling</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/configureusers.html">設定使用者</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/language.html">語言</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../configuration/addmaterial/index.html">材料</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/addnew.html">新增材料和板材</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/exportimport.html">匯出/匯入材料</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/replacematerial.html">取代材料</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../configuration/mapbendpages.html">對應材料</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../userinterface.html">使用者介面</a></li>
+  <li><button class="tree blank"></button><a href="../workflow.html">工作流程</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../library/index.html">庫</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/open/index.html">開啟</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/open/partimport.html">匯入零件</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/orderimport.html">匯入訂單</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/jobimport.html">匯入 job</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/assembliesimport.html">匯入組件</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/libraryview/index.html">庫檢視</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/libraryview/partview.html">零件</a></li>
+      <li><button class="tree blank"></button><a href="../library/libraryview/assemblyview.html">組件</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/partstate/index.html">零件狀態</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/partstate/partvalidation.html">零件驗證</a></li>
+      <li><button class="tree blank"></button><a href="../library/partstate/partpanel.html">零件面板</a></li>
+      <li><button class="tree blank"></button><a href="../library/partstate/partfilters.html">零件篩選器</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/toolingstatus/index.html">tooling 狀態</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../library/toolingstatus/toolingvalidation/index.html">tooling 驗證</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/bendtooling.html">折彎 tooling 驗證</a></li>
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/cuttooling.html">切割 tooling 驗證</a></li>
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/foldtooling.html">折疊 tooling 驗證</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingpanel.html">Tooling 面板</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../library/savingfilters.html">儲存篩選器</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../orders/index.html">訂單</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../orders/ordersview.html">訂單檢視</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">Jobs</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="jobcreation.html">建立 job</a></li>
+    <li><button class="tree blank"></button><a href="jobview.html">Job 檢視</a></li>
+    <li><button class="tree blank"></button><a href="jobpanel.html">Job 面板</a></li>
+    <li><button class="tree blank"></button><a href="jobautoplan.html">自動規劃</a></li>
+    <li><button class="tree blank"></button><a class="active" href="jobinteractplan.html">互動式 nesting</a></li>
+    <li><button class="tree blank"></button><a href="repacking.html">重新排料</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="layoutcommands/index.html">Nest 管理</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="layoutcommands/nestview.html">Layout 檢視</a></li>
+      <li><button class="tree blank"></button><a href="layoutcommands/layoutpanel.html">Layout 面板</a></li>
+      <li><button class="tree blank"></button><a href="layoutcommands/reportsender.html">報告傳送器</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="remnantmanagement/index.html">餘料管理</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="remnantmanagement/autoremnant.html">自動餘料管理</a></li>
+      <li><button class="tree blank"></button><a href="remnantmanagement/manualremnant.html">手動餘料管理</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="twinlinenesting.html">Twinline nesting</a></li>
+    <li><button class="tree blank"></button><a href="outdate.html">過期</a></li>
+    <li><button class="tree blank"></button><a href="jobfilters.html">Job 篩選器</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../factory/index.html">工廠</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../factory/routes.html">路線</a></li>
+    <li><button class="tree blank"></button><a href="../factory/sheets.html">板材</a></li>
+    <li><button class="tree blank"></button><a href="../factory/users.html">使用者</a></li>
+    <li><button class="tree blank"></button><a href="../factory/edit.html">編輯</a></li>
+    <li><button class="tree blank"></button><a href="../factory/customers.html">客戶</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../factory/settings/index.html">設定</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../factory/settings/environment.html">環境</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/import.html">匯入</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/bend.html">折彎</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/cut.html">切割</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/notification.html">通知</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/watch.html">監視</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/job.html">Job</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/reports.html">報告</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../impressum.html">公司資訊</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Jobs</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="jobinteractplan.html">互動式 nesting</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>互動式 nesting</h1>
+<div class="paragraph">
+<p>互動式 nesting 可用於為單一零件、job 中的幾個零件、單一 job
+或多個 job 建立 nest 規劃。它允許您選取機床和材料、設定板材參數，
+並以互動方式檢視 nesting 結果。</p>
+</div>
+<div class="paragraph">
+<p>在零件或 job 上按右鍵並選取
+<strong>Plan Part&#8230;&#8203;/Plan Job&#8230;&#8203;</strong> &#8594;
+<strong>Run Interactive Nesting&#8230;&#8203;</strong> 選項。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/interactive1.png" alt="Interactive nesting" width="1142">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Interactive Nesting</strong> 視窗開啟。</p>
+</li>
+<li>
+<p>預設情況下，互動式 nesting 視窗會切換到
+<strong>Select Machine &amp; Material</strong> 頁面。</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/interactive2.png" alt="Interactive nesting window" width="1908">
+</div>
+</div>
+</li>
+<li>
+<p>機床會以色條顯示可用的生產負載：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>綠色條：已排程小時</p>
+</li>
+<li>
+<p>灰色條：可用小時（以 8 小時班計）</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>在每台機床下，選取的零件會連同其原材料當組（零件/總數量）。</p>
+</li>
+<li>
+<p>如果零件對某機床沒有有效的 tooling 解決方案，則該零件和材料
+將在該機床的處理中被忽略。</p>
+</li>
+<li>
+<p>如果某材料已選取給一台機床，則它將不可用於其他
+機床。</p>
+</li>
+<li>
+<p>設定好機床 nest 規劃後，選取偏好的板材並覆寫
+板材參數，例如 <strong>Priority</strong>、
+<strong>Quantity</strong>、<strong>Margins</strong> 等。</p>
+</li>
+<li>
+<p>您可以篩選板材以顯示 <strong>All Sheets</strong>、
+<strong>Standard Sheets</strong> 或
+<strong>Remnant Sheets</strong>。點選 <strong>Next</strong>。</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+在此階段無法增加數量。您可以保持與板材庫存數量相同，或將
+其減少並檢查 nesting 結果。
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Update Qty</strong> 出現在互動式 nesting 規劃視窗中。</p>
+</li>
+<li>
+<p>預設情況下，<strong>Pick All (F5)</strong> 包含所有零件以進行
+nesting，或您可以手動挑選優先零件並調整零件數量。
+點選 <strong>Next</strong>。</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/interactive3.png" alt="Update part quantity" width="1908">
+</div>
+</div>
+</li>
+<li>
+<p>Nesting 開始，且 nesting 到板材上的零件會以藍色狀態更新。</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/interactive4.png" alt="Review interactive nesting" width="1911">
+</div>
+</div>
+</li>
+<li>
+<p>機床的生產負載會根據 nest 結果更新。</p>
+</li>
+<li>
+<p>Nesting 後的 layout 會按比例繪製，並顯示在 Nest
+Results 分頁中。</p>
+</li>
+<li>
+<p>如果部分零件仍未 nesting，則會出現
+<strong>Some parts remain unnested</strong> 訊息——這些零件保留
+在原始 job 中。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>未 nesting 的原因可能是沒有可用來 nesting 的板材</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>互動式 Nest 結果的前綴為：<strong>factory</strong> &#8594;
+<strong>settings</strong> &#8594; <strong>Job</strong>&#8594;
+<strong>Nest settings</strong>、
+<strong>Interactive sheet-name prefix</strong>。</p>
+</li>
+<li>
+<p>互動式 nest layout 以字母 <strong>L</strong> 作為前綴。</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/interactive6.png" alt="Factory settings" width="754">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/interactive5.png" alt="Interactive nest layout" width="857">
+</div>
+</div>
+</li>
+</ul>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc"></aside>
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="jobautoplan.html">自動規劃</a></span>
+ <span class="next"><a href="repacking.html">重新排料</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

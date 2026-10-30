@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Validace dílu</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Vítejte v JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Instalace</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Hardwarové požadavky</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Podporované formáty souborů</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Předpoklady</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Změna licence</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Konfigurace</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Přidat/odebrat stroj</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Nastavení nastrojení</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Konfigurace uživatelů</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Jazyk</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Materiál</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Přidat nový materiál a plech</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Export/Import materiálu</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Nahradit materiál</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Mapování materiálu</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">Uživatelské rozhraní</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Pracovní postup</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Knihovna</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../open/index.html">Otevřít</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../open/partimport.html">Import dílů</a></li>
+      <li><button class="tree blank"></button><a href="../open/orderimport.html">Import zakázek</a></li>
+      <li><button class="tree blank"></button><a href="../open/jobimport.html">Import úloh</a></li>
+      <li><button class="tree blank"></button><a href="../open/assembliesimport.html">Import konstrukčních skupin</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../libraryview/index.html">Zobrazení knihovny</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../libraryview/partview.html">Díly</a></li>
+      <li><button class="tree blank"></button><a href="../libraryview/assemblyview.html">Konstrukční skupina</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Stav dílu</a>
+     <ul>
+      <li><button class="tree blank"></button><a class="active" href="partvalidation.html">Validace dílu</a></li>
+      <li><button class="tree blank"></button><a href="partpanel.html">Panel dílu</a></li>
+      <li><button class="tree blank"></button><a href="partfilters.html">Filtry dílů</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../toolingstatus/index.html">Stav nastrojení</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../toolingstatus/toolingvalidation/index.html">Validace nastrojení</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/bendtooling.html">Validace nastrojení ohybu</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/cuttooling.html">Validace nastrojení řezání</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/foldtooling.html">Validace nastrojení ohnutí</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../toolingstatus/toolingpanel.html">Panel nastrojení</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../savingfilters.html">Ukládání filtrů</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Zakázky</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Zobrazení zakázek</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Úlohy</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Vytvořit úlohu</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Zobrazení úlohy</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Panel úlohy</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Automatické plánování</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Interaktivní rozmístění</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Znovu rozvinutí</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Správa layoutů</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Zobrazení layoutu</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Panel layoutu</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Odesílání zpráv</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Správa zbytků</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Automatická správa zbytků</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Ruční správa zbytků</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Rozmístění Twinline</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Zastaralé</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Filtry úloh</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../factory/index.html">Závod</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">Trasy</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/sheets.html">Plechy</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">Uživatelé</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/edit.html">Editovat</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">Zákazníci</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">Nastavení</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">Prostředí</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">Import</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">Ohýbání</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">Řezání</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">Oznámení</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">Sledování</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">Úloha</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">Zprávy</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Informace o společnosti</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Knihovna</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Stav dílu</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="partvalidation.html">Validace dílu</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Validace dílu</h1>
+<div class="paragraph">
+<p>Validace dílu kontroluje importovaný 2D výkres CAD z hlediska strukturálních a
+geometrických problémů, které mohou ovlivnit operace jako laserové řezání,
+ohýbání a rozmísťování dílů. Během validace systém ověřuje, zda výkres obsahuje
+platné kontury, správně definované linie ohybu a konzistentní geometrii
+potřebnou pro vytvoření dílu.</p>
+</div>
+<div class="paragraph">
+<p>Pokud jsou zjištěny problémy, validace dílu je nahlásí, aby mohly být opraveny
+před dalším pokračováním v pracovním postupu.</p>
+</div>
+<div class="paragraph">
+<p>Podrobné informace o přípravě a opravě 2D výkresů CAD naleznete v tématu
+<strong>2-D Cleanup</strong> v dokumentaci JFY Core.</p>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc"></aside>
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="index.html">Stav dílu</a></span>
+ <span class="next"><a href="partpanel.html">Panel dílu</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

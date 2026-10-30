@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Προσθήκη νέου υλικού και μεταλλικής πλάκας</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Καλώς ορίσατε στο JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Εγκατάσταση</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Απαιτήσεις υλικού</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Υποστηριζόμενες μορφές αρχείων</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Προϋποθέσεις</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Αλλαγή άδειας χρήσης</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Διαμόρφωση</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="../setupmachine.html">Προσθήκη/Αφαίρεση μηχανής</a></li>
+    <li><button class="tree blank"></button><a href="../setuptooling.html">Διαμόρφωση εξοπλισμού</a></li>
+    <li><button class="tree blank"></button><a href="../configureusers.html">Διαμόρφωση χρηστών</a></li>
+    <li><button class="tree blank"></button><a href="../language.html">Γλώσσα</a></li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Υλικό</a>
+     <ul>
+      <li><button class="tree blank"></button><a class="active" href="addnew.html">Προσθήκη νέου υλικού και μεταλλικής πλάκας</a></li>
+      <li><button class="tree blank"></button><a href="exportimport.html">Εξαγωγή/Εισαγωγή υλικού</a></li>
+      <li><button class="tree blank"></button><a href="replacematerial.html">Αντικατάσταση υλικού</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../mapbendpages.html">Χαρτογράφηση υλικού</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">Η διεπαφή χρήστη</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Ροή εργασίας</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../library/index.html">Βιβλιοθήκη</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/open/index.html">Άνοιγμα</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/open/partimport.html">Εισαγωγή εξαρτημάτων</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/orderimport.html">Εισαγωγή παραγγελιών</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/jobimport.html">Εισαγωγή εργασιών</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/assembliesimport.html">Εισαγωγή συγκροτημάτων</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/libraryview/index.html">Προβολή βιβλιοθήκης</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/libraryview/partview.html">Εξαρτήματα</a></li>
+      <li><button class="tree blank"></button><a href="../../library/libraryview/assemblyview.html">Συγκρότημα</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/partstate/index.html">Κατάσταση εξαρτήματος</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/partstate/partvalidation.html">Επικύρωση εξαρτήματος</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partpanel.html">Πίνακας εξαρτήματος</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partfilters.html">Φίλτρα εξαρτημάτων</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/toolingstatus/index.html">Κατάσταση εξοπλισμού</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../library/toolingstatus/toolingvalidation/index.html">Επικύρωση εξοπλισμού</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/bendtooling.html">Επικύρωση εξοπλισμού κάμψης</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/cuttooling.html">Επικύρωση εξοπλισμού κοπής</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/foldtooling.html">Επικύρωση εξοπλισμού δίπλωσης</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingpanel.html">Πίνακας εξοπλισμού</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../library/savingfilters.html">Αποθήκευση φίλτρων</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Παραγγελίες</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Προβολή παραγγελιών</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Εργασίες</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Δημιουργία εργασίας</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Προβολή εργασιών</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Πίνακας εργασιών</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Αυτόματος σχεδιασμός</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Διαδραστική κατανομή</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Επανασυσκευασία</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Διαχείριση κατανομών</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Προβολή διάταξης</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Πίνακας διάταξης</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Αποστολή αναφορών</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Διαχείριση υπολειμμάτων</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Αυτόματη διαχείριση υπολειμμάτων</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Χειροκίνητη διαχείριση υπολειμμάτων</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Κατανομή διπλής γραμμής</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Παρωχημένο</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Φίλτρα εργασιών</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../factory/index.html">Εργοστάσιο</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">Διαδρομές</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/sheets.html">Μεταλλικές πλάκες</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">Χρήστες</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/edit.html">Επεξεργασία</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">Πελάτες</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">Ρυθμίσεις</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">Περιβάλλον</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">Εισαγωγή</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">Κάμψη</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">Κοπή</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">Ειδοποιήσεις</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">Επιτήρηση</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">Εργασία</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">Αναφορές</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Πληροφορίες εταιρείας</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Διαμόρφωση</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Υλικό</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="addnew.html">Προσθήκη νέου υλικού και μεταλλικής πλάκας</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Προσθήκη νέου υλικού και μεταλλικής πλάκας</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Η διαχείριση μεταλλικών πλακών είναι προσβάσιμη κάνοντας κλικ στο εικονίδιο <strong>Factory</strong>
+και επιλέγοντας <strong>sheets</strong>. Αυτό παρέχει μια επισκόπηση των
+υλικών που έχουν ρυθμιστεί. Επιλέγοντας οποιοδήποτε υλικό που παρατίθεται στα αριστερά, εμφανίζονται
+οι διαθέσιμες μεταλλικές πλάκες, τα πάχη, τα μεγέθη και οι ποσότητες.</p>
+</div>
+<div class="paragraph">
+<p>Για να προσθέσετε ένα νέο υλικό, κάντε κλικ στο <strong>Add new</strong> &#8594;
+<strong>New Material&#8230;&#8203;</strong> από τη σελίδα <strong>sheets</strong> στο
+<strong>factory</strong>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/addmaterial.png" alt="AddMaterial" width="999">
+</div>
+</div>
+<div class="paragraph">
+<p>Εισαγάγετε τις παραμέτρους <strong>Material</strong>, <strong>Raw Material</strong>,
+<strong>Thickness</strong> και τις παραμέτρους Υλικού. Κάντε κλικ στο <strong>OK</strong>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/newmaterial.png" alt="NewMaterial" width="412">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_προβολή_υλικού">Προβολή υλικού</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Η επιλογή <strong>View&#8230;&#8203;</strong> στο <strong>factory</strong> &#8594;
+<strong>Sheets</strong> διαθέτει τις ακόλουθες επιλογές:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Expand All</strong>: Αναπτύσσει όλες τις κατηγορίες υλικών.</p>
+</li>
+<li>
+<p><strong>Collapse All</strong>: Συμπτύσσει όλες τις κατηγορίες υλικών.</p>
+</li>
+<li>
+<p><strong>Show All Materials</strong>: Παραθέτει όλες τις πρώτες ύλες
+ανεξάρτητα από το απόθεμα μεταλλικών πλακών.</p>
+</li>
+<li>
+<p><strong>Show Inventory Materials</strong>: Παραθέτει μόνο τις πρώτες
+ύλες που έχουν απόθεμα μεταλλικών πλακών.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Το πάχος Πρώτης Ύλης που εμφανίζεται με έντονη γραφή αντιπροσωπεύει τη διαθεσιμότητα μεταλλικών πλακών.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_προσθήκη_μεταλλικής_πλάκας">Προσθήκη μεταλλικής πλάκας</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Για να προσθέσετε μια νέα μεταλλική πλάκα, κάντε κλικ στο <strong>Add new</strong> &#8594;
+<strong>New Sheet</strong> από τη σελίδα Sheets στο <strong>factory</strong>.
+Τροποποιήστε τις παραμέτρους της μεταλλικής πλάκας.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/newsheet.png" alt="NewSheet" width="999">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/newsheet1.png" alt="NewSheet1" width="999">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Search Sheets (Ctrl + F)&#8230;&#8203;</strong>: Φιλτράρει τις μεταλλικές πλάκες με βάση
+το μέγεθος, την κόκκωση, τα σχόλια, τον αριθμό θερμότητας, το υπόλειμμα και την εξάχνωση.</p>
+</li>
+<li>
+<p><strong>Ρυθμιστικό (+ / –)</strong>: Ρυθμίζει το επίπεδο ζουμ της προεπισκόπησης μεταλλικής πλάκας.</p>
+</li>
+<li>
+<p><strong>Filter by</strong>: Ελέγχει την προεπισκόπηση μεταλλικής πλάκας με βάση την επιλεγμένη
+επιλογή (<strong>Width</strong>, <strong>Height</strong>,
+<strong>Area</strong>, <strong>Quantity</strong>,
+<strong>Grain</strong>, ή <strong>Type</strong>).</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Η επεξεργασία ή η διαγραφή ενός υλικού ή μιας μεταλλικής πλάκας μπορεί να γίνει μόνο πριν αντιστοιχιστεί ένα εξάρτημα σε αυτό το υλικό ή τοποθετηθεί μια διάταξη σε αυτή τη μεταλλική πλάκα.</p>
+</div>
+<div class="paragraph">
+<p>Η αλλαγή του ονόματος του υλικού δεν είναι δυνατή σε αυτό το στάδιο. Επομένως, πρέπει να δημιουργηθεί ένα νέο υλικό.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_προβολή_υλικού">Προβολή υλικού</a>
+  </li>
+  <li level="1">
+   <a href="#_προσθήκη_μεταλλικής_πλάκας">Προσθήκη μεταλλικής πλάκας</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="index.html">Υλικό</a></span>
+ <span class="next"><a href="exportimport.html">Εξαγωγή/Εισαγωγή υλικού</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

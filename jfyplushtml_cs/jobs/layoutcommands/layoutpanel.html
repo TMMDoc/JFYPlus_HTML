@@ -1,0 +1,674 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Panel layoutu</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Vítejte v JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Instalace</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Hardwarové požadavky</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Podporované formáty souborů</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Předpoklady</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Změna licence</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Konfigurace</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Přidat/odebrat stroj</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Nastavení nastrojení</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Konfigurace uživatelů</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Jazyk</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Materiál</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Přidat nový materiál a plech</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Export/Import materiálu</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Nahradit materiál</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Mapování materiálu</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">Uživatelské rozhraní</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Pracovní postup</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../library/index.html">Knihovna</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/open/index.html">Otevřít</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/open/partimport.html">Import dílů</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/orderimport.html">Import zakázek</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/jobimport.html">Import úloh</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/assembliesimport.html">Import konstrukčních skupin</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/libraryview/index.html">Zobrazení knihovny</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/libraryview/partview.html">Díly</a></li>
+      <li><button class="tree blank"></button><a href="../../library/libraryview/assemblyview.html">Konstrukční skupina</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/partstate/index.html">Stav dílu</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/partstate/partvalidation.html">Validace dílu</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partpanel.html">Panel dílu</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partfilters.html">Filtry dílů</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/toolingstatus/index.html">Stav nastrojení</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../library/toolingstatus/toolingvalidation/index.html">Validace nastrojení</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/bendtooling.html">Validace nastrojení ohybu</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/cuttooling.html">Validace nastrojení řezání</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/foldtooling.html">Validace nastrojení ohnutí</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingpanel.html">Panel nastrojení</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../library/savingfilters.html">Ukládání filtrů</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Zakázky</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Zobrazení zakázek</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Úlohy</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="../jobcreation.html">Vytvořit úlohu</a></li>
+    <li><button class="tree blank"></button><a href="../jobview.html">Zobrazení úlohy</a></li>
+    <li><button class="tree blank"></button><a href="../jobpanel.html">Panel úlohy</a></li>
+    <li><button class="tree blank"></button><a href="../jobautoplan.html">Automatické plánování</a></li>
+    <li><button class="tree blank"></button><a href="../jobinteractplan.html">Interaktivní rozmístění</a></li>
+    <li><button class="tree blank"></button><a href="../repacking.html">Znovu rozvinutí</a></li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Správa layoutů</a>
+     <ul>
+      <li><button class="tree blank"></button><a href="nestview.html">Zobrazení layoutu</a></li>
+      <li><button class="tree blank"></button><a class="active" href="layoutpanel.html">Panel layoutu</a></li>
+      <li><button class="tree blank"></button><a href="reportsender.html">Odesílání zpráv</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../remnantmanagement/index.html">Správa zbytků</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../remnantmanagement/autoremnant.html">Automatická správa zbytků</a></li>
+      <li><button class="tree blank"></button><a href="../remnantmanagement/manualremnant.html">Ruční správa zbytků</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../twinlinenesting.html">Rozmístění Twinline</a></li>
+    <li><button class="tree blank"></button><a href="../outdate.html">Zastaralé</a></li>
+    <li><button class="tree blank"></button><a href="../jobfilters.html">Filtry úloh</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../factory/index.html">Závod</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">Trasy</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/sheets.html">Plechy</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">Uživatelé</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/edit.html">Editovat</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">Zákazníci</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">Nastavení</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">Prostředí</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">Import</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">Ohýbání</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">Řezání</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">Oznámení</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">Sledování</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">Úloha</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">Zprávy</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Informace o společnosti</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Úlohy</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Správa layoutů</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="layoutpanel.html">Panel layoutu</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Panel layoutu</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Tato část vysvětluje akce související s layoutem, jako je
+<strong>Send to machine</strong>,
+<strong>Recall from machine</strong>,
+<strong>Export outputs</strong>,
+<strong>Mark complete</strong>, <strong>Add parts&#8230;&#8203;</strong>,
+<strong>Adapt/Compact&#8230;&#8203;</strong>,
+<strong>Split layout</strong> a další možnosti používané ke správě
+instancí layoutů.</p>
+</div>
+<table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="img/layout.png" alt="Layout panel" width="181">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/document.png" alt="Read-only" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Open in read-only mode for viewing</strong><br>
+Otevře vybraný layout v režimu pouze pro čtení.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/editicon.png" alt="Edit" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Check-out the document for editing</strong><br>
+Umožní úpravu vybraného layoutu.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/trash.png" alt="Delete" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Delete</strong><br>
+Odstraní vybraný layout.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/openreport.png" alt="Report" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>View Report</strong><br>
+Otevře standardní report layoutu a report specifický pro štítky pro
+vybraný layout.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Send to Machine&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Odešle vybraný layout na stroj a exportuje výstupní soubory
+(fxlyt, NC, report, csv) do výstupního umístění úlohy.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Add Parts&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Přidá další díly do špatně zabaleného layoutu pomocí průvodce přebalením layoutu.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Adapt/Compact&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Znovu rozmístí vybraný layout, aby se díly zhutnily a uvolnila se využitelná plocha.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Change LTT&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Změní plech přiřazený k vybranému layoutu.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Split Layouts&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rozdělí vybraný layout na dva nebo více samostatných layoutů.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Rename&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Přejmenuje vybraný layout.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Job</strong> / <strong>Prev</strong> / <strong>Next</strong> / <strong>Parts</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Naviguje nahoru k nadřazené úloze, k předchozímu nebo dalšímu layoutu v rámci
+vybrané úlohy, nebo dolů k dílům obsaženým v layoutu.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Sort and filter</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Použijte tyto filtry k zobrazení dalších layoutů, které sdílejí stejný atribut jako
+vybraný layout: <strong>Same Machine</strong>, <strong>Same Material</strong>,
+<strong>Same LTT</strong>, <strong>Same Priority</strong>,
+<strong>Same State</strong>, <strong>Same Sheet</strong>, <strong>Same Part</strong>, <strong>Same Remnant State</strong>, or <strong>Same Rolling Direction</strong>.</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="send-to-machine">Send to machine</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Když je rozmístění připraveno (zaplněno nebo naléhavě potřeba), můžete ho odeslat na
+stroj.</p>
+</li>
+<li>
+<p>Klikněte pravým tlačítkem na rozmístění a vyberte <strong>Send to machine&#8230;&#8203;</strong>.</p>
+</li>
+<li>
+<p>Automaticky se vytvoří složka pojmenovaná podle rozmístění.</p>
+</li>
+<li>
+<p>Výstupní soubory (fxlyt, NC, report, csv) se exportují do výstupního
+umístění úlohy.</p>
+</li>
+<li>
+<p>Rozmístění odeslaná na stroj jsou zobrazena s modrou značkou zaškrtnutí.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Po uvolnění se tato rozmístění již nezkoušejí přebalit.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_recall_from_machine">Recall from machine</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Pokud výstup vyžaduje validaci nebo aktualizaci (například přidání dalších dílů):</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Klikněte pravým tlačítkem na exportovaný layout.</p>
+</li>
+<li>
+<p>Vyberte <strong>Recall from machine&#8230;&#8203;</strong>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Výstupní soubory a složka (fxlyt, NC, report, csv) jsou odstraněny.</p>
+</li>
+<li>
+<p>Rozmístění se opět stane upravitelným.</p>
+</li>
+<li>
+<p>Můžete provést změny a odeslat ho na stroj znovu.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_export_outputs">Export outputs</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Klikněte pravým tlačítkem na jakýkoli layout (rozmístění), který byl odeslán na stroj, a klikněte na
+<strong>Export outputs</strong>.</p>
+</li>
+<li>
+<p>Možnost Export Outputs exportuje soubory NC, Report a Layout do
+příslušných výstupních složek stroje.</p>
+</li>
+<li>
+<p>Tato možnost znovu vygeneruje soubor NC s aktuálním nastavením jednotek pro
+layout.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Export Outputs není dostupný pro layouty, které jsou dokončené, a
+layouty, které čekají ve frontě na přebalení.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="mark-complete">Označit jako dokončené</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Jakmile je rozmístění zpracováno na stroji, klikněte pravým tlačítkem na rozmístění a
+vyberte <strong>Mark complete&#8230;&#8203;</strong>.</p>
+</li>
+<li>
+<p>Můžete vybrat více rozmístění a označit je jako dokončená současně.</p>
+</li>
+<li>
+<p>Když je rozmístění označeno jako dokončené:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Je zašedivené, přesunuté na konec seznamu a zobrazené se zelenou značkou
+zaškrtnutí.</p>
+</li>
+<li>
+<p>Layout je odstraněn ze seznamu aktivních layoutů.</p>
+</li>
+<li>
+<p>Stavy dílů a úloh jsou aktualizovány a zpracovaná množství se přesunou do
+dokončeného stavu.</p>
+</li>
+<li>
+<p>Výstupní soubory pro daný layout jsou odstraněny z výstupního umístění
+stroje, aby se zabránilo duplicitnímu použití.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="add-parts">Add parts&#8230;&#8203;</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/addpart1.png" alt="Add parts" width="997">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Použijte tuto možnost k přidání dalších dílů do relativně špatně zabaleného layoutu. Podobně
+jako Interactive Nesting je toto možnost řízená průvodcem a lze ji použít
+na jednom nebo více layoutech současně.</p>
+</li>
+<li>
+<p>JFY Plus při použití této možnosti nasadí průvodce přebalením layoutu do hlavní pracovní oblasti.
+Podržte klávesu <kbd>Ctrl</kbd> a vyberte jeden nebo více
+dílů, které mají být zabaleny do layoutu/layoutů, a stiskněte <strong>Next</strong>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/addpart2.png" alt="Part selection" width="2200">
+</div>
+</div>
+</li>
+<li>
+<p>Vybrané díly se zobrazí v dalším kroku s upravitelným
+sloupcem množství. V případě potřeby aktualizujte množství dílů v poli
+<strong>Update Qty</strong>. Kliknutím na <strong>Next</strong> přejdete na rozmístění. Nezapomeňte, že
+množství lze pouze zvyšovat, nikoli snižovat.</p>
+</li>
+<li>
+<p>Všechny layouty jsou rozmístěny samostatně a výsledky rozmístění se zobrazí
+s nově zabalenými díly, které jsou na ně umístěny. Výběr layoutu zobrazí všechny
+stávající díly layoutu. Výsledek je automaticky zahozen, pokud během přebalení není
+umístěn žádný nový díl. Layout s více kopiemi může po přebalení vyústit v
+různé vzory.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="adapt-compact">Adapt/Compact&#8230;&#8203;</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Tento příkaz založený na průvodci lze použít k adaptaci layoutu z jednoho
+stroje na jiný, když je původní stroj mimo provoz nebo když je třeba
+vyvážit pracovní zatížení strojů.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/adapt1.png" alt="Adapt compact" width="737">
+</div>
+</div>
+</li>
+<li>
+<p>Lze jej použít, když je plánovaný plech vyprodán a layout
+je třeba znovu naplánovat na jiný dostupný plech.</p>
+</li>
+<li>
+<p>Můžete sloučit layouty zabalené na menších plechách na větší plechy, abyste materiál
+využili efektivněji.</p>
+</li>
+<li>
+<p>Můžete rozdělit layouty zabalené na větších plechách na menší plechy, pokud nejsou
+dostupné zásoby velkých plechů.</p>
+</li>
+<li>
+<p>Můžete zvýšit efektivitu zabalení více layoutů (i z
+různých strojů) jejich sloučením dohromady.</p>
+</li>
+<li>
+<p>Chcete-li jej použít, vyberte jeden nebo více layoutů a klikněte na
+<strong>Adapt/Compact&#8230;&#8203;</strong>, čímž otevřete průvodce v pracovní oblasti.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/adapt2.png" alt="Layouts window" width="1902">
+</div>
+</div>
+</li>
+<li>
+<p>Levý panel zobrazuje všechny vybrané layouty a panel Parts zobrazuje díly
+layoutu.</p>
+</li>
+<li>
+<p>Vyberte cílový stroj a materiál plechu, poté klikněte na
+<strong>next</strong> pro provedení opětovného rozmístění.</p>
+</li>
+<li>
+<p>Výsledky nového rozmístění se zobrazí v panelu výsledků.</p>
+</li>
+<li>
+<p>Kliknutím na <strong>next</strong> uložíte adaptovaný nebo zhutněný layout.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/adapt5.png" alt="Layouts window" width="1902">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rozdělení_layoutu">Rozdělení layoutu</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Možnost <strong>Split layouts&#8230;&#8203;</strong> vám umožňuje rozdělit
+stávající layout na více layoutů úpravou množství,
+aniž byste museli znovu provádět nástrojení nebo rozmístění.</p>
+</div>
+<div class="paragraph">
+<p>Tato funkce je obzvláště užitečná v
+následujících scénářích:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Když potřebujete okamžitě vyrobit část celkového množství a
+naplánovat zbývající množství na pozdější výrobu.</p>
+</li>
+<li>
+<p>Když je třeba rozdělit výrobní požadavky mezi více směn nebo
+dnů pro optimalizaci pracovního postupu a využití zdrojů.</p>
+</li>
+<li>
+<p>Když je konkrétní stroj dočasně nedostupný nebo obsazený a potřebujete
+upravit layout, aby vyhovoval aktuálním výrobním omezením.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Chcete-li rozdělit layout, proveďte následující kroky:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>V zobrazení Layouts vyberte požadovaný layout.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/splitlayout.png" alt="Split layout" width="264">
+</div>
+</div>
+</li>
+<li>
+<p>Klikněte na <strong>Split layouts&#8230;&#8203;</strong>.</p>
+</li>
+<li>
+<p>Zadejte požadovanou hodnotu do <strong>New Copies</strong>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/newcopies.png" alt="New copies" width="389">
+</div>
+</div>
+</li>
+<li>
+<p>Klikněte na <strong>OK</strong>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/twolayout.png" alt="Two layouts" width="547">
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Vybraný layout je nyní rozdělen na dva layouty s upravenými množstvími.</p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#send-to-machine">Send to machine</a>
+  </li>
+  <li level="1">
+   <a href="#_recall_from_machine">Recall from machine</a>
+  </li>
+  <li level="1">
+   <a href="#_export_outputs">Export outputs</a>
+  </li>
+  <li level="1">
+   <a href="#mark-complete">Označit jako dokončené</a>
+  </li>
+  <li level="1">
+   <a href="#add-parts">Add parts&#8230;&#8203;</a>
+  </li>
+  <li level="1">
+   <a href="#adapt-compact">Adapt/Compact&#8230;&#8203;</a>
+  </li>
+  <li level="1">
+   <a href="#_rozdělení_layoutu">Rozdělení layoutu</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="nestview.html">Zobrazení layoutu</a></span>
+ <span class="next"><a href="reportsender.html">Odesílání zpráv</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,412 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../img/praxis-icon.png">
+  <title>Requisiti hardware</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">Benvenuti in JFY Plus</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">Installazione</a>
+   <ul>
+    <li><button class="tree blank"></button><a class="active" href="hardwarerequirement.html">Requisiti hardware</a></li>
+    <li><button class="tree blank"></button><a href="importformats.html">Formati di file supportati</a></li>
+    <li><button class="tree blank"></button><a href="prerequisites.html">Prerequisiti</a></li>
+    <li><button class="tree blank"></button><a href="changelic.html">Cambio licenza</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../configuration/index.html">Configurazione</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../configuration/setupmachine.html">Aggiungi/Rimuovi macchina</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/setuptooling.html">Configura attrezzaggio</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/configureusers.html">Configura utenti</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/language.html">Lingua</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../configuration/addmaterial/index.html">Materiale</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/addnew.html">Aggiungi nuovo materiale e lamiera</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/exportimport.html">Esporta/Importa materiale</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/replacematerial.html">Sostituisci materiale</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../configuration/mapbendpages.html">Mappa materiale</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../userinterface.html">L'interfaccia utente</a></li>
+  <li><button class="tree blank"></button><a href="../workflow.html">Flusso di lavoro</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../library/index.html">Libreria</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/open/index.html">Apri</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/open/partimport.html">Importa componenti</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/orderimport.html">Importa ordini</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/jobimport.html">Importa lavori</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/assembliesimport.html">Importa assiemi</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/libraryview/index.html">Vista Libreria</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/libraryview/partview.html">Componenti</a></li>
+      <li><button class="tree blank"></button><a href="../library/libraryview/assemblyview.html">Assieme</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/partstate/index.html">Stato componente</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/partstate/partvalidation.html">Validazione componente</a></li>
+      <li><button class="tree blank"></button><a href="../library/partstate/partpanel.html">Pannello componente</a></li>
+      <li><button class="tree blank"></button><a href="../library/partstate/partfilters.html">Filtri componente</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/toolingstatus/index.html">Stato attrezzaggio</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../library/toolingstatus/toolingvalidation/index.html">Validazione attrezzaggio</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/bendtooling.html">Validazione attrezzaggio di piegatura</a></li>
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/cuttooling.html">Validazione attrezzaggio di taglio</a></li>
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/foldtooling.html">Validazione attrezzaggio di pannellatura</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingpanel.html">Pannello attrezzaggio</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../library/savingfilters.html">Salvataggio dei filtri</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../orders/index.html">Ordini</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../orders/ordersview.html">Vista ordini</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../jobs/index.html">Lavori</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../jobs/jobcreation.html">Crea lavoro</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobview.html">Vista lavoro</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobpanel.html">Pannello lavoro</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobautoplan.html">Pianificazione automatica</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobinteractplan.html">Nesting interattivo</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/repacking.html">Riorganizzazione</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../jobs/layoutcommands/index.html">Gestione nest</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../jobs/layoutcommands/nestview.html">Vista layout</a></li>
+      <li><button class="tree blank"></button><a href="../jobs/layoutcommands/layoutpanel.html">Pannello layout</a></li>
+      <li><button class="tree blank"></button><a href="../jobs/layoutcommands/reportsender.html">Invio report</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../jobs/remnantmanagement/index.html">Gestione avanzi</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../jobs/remnantmanagement/autoremnant.html">Avanzo automatico</a></li>
+      <li><button class="tree blank"></button><a href="../jobs/remnantmanagement/manualremnant.html">Avanzo manuale</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../jobs/twinlinenesting.html">Nesting a doppia linea</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/outdate.html">Scaduto</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobfilters.html">Filtri lavoro</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../factory/index.html">Fabbrica</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../factory/routes.html">Percorsi</a></li>
+    <li><button class="tree blank"></button><a href="../factory/sheets.html">Lamiere</a></li>
+    <li><button class="tree blank"></button><a href="../factory/users.html">Utenti</a></li>
+    <li><button class="tree blank"></button><a href="../factory/edit.html">Modifica</a></li>
+    <li><button class="tree blank"></button><a href="../factory/customers.html">Clienti</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../factory/settings/index.html">Impostazioni</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../factory/settings/environment.html">Ambiente</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/import.html">Importazione</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/bend.html">Piegatura</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/cut.html">Taglio</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/notification.html">Notifiche</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/watch.html">Monitoraggio</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/job.html">Lavoro</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/reports.html">Report</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../impressum.html">Informazioni aziendali</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Installazione</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="hardwarerequirement.html">Requisiti hardware</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Requisiti hardware</h1>
+<div class="sect1">
+<h2 id="_requisiti_del_server">Requisiti del server</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Componente</th>
+<th class="tableblock halign-left valign-top">Standard</th>
+<th class="tableblock halign-left valign-top">Prestazioni elevate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CPU</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 CPU, 2.5-3GHz in 4 cores</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 CPUs, 2.5-3GHz in 8 cores o più</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Memoria(RAM)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16GB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&gt;=32GB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HardDisk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">500GB-1TB SSD o più</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&gt;=1TB SSD</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scheda grafica video</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2GB with OpenGL 3.2 built in or dedicated</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2GB with OpenGL 3.2 built in or dedicated</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sistema operativo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Windows Server 2012 o successivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Windows Server 2012 o successivo</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SQL Server</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SQL 2017 o successivo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SQL 2017 o successivo</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Account utente Windows</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">È necessario un account utente standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">È necessario un account utente standard</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+È necessario un account utente standard affinché il Server JFY Plus venga eseguito come
+servizio in Gestione attività e Monitor sia in esecuzione. Deve essere impostato in
+modalità di accesso automatico.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_requisiti_del_client">Requisiti del client</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Componente</th>
+<th class="tableblock halign-left valign-top">PC di programmazione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CPU</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1 CPU, 2.5-3GHz in 4 cores</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Memoria(RAM)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16GB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HardDisk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">500GB SCGI/SSD</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scheda grafica video</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2GB with OpenGL 3.2 built in or dedicated</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sistema operativo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Windows 10</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_requisiti_delle_porte">Requisiti delle porte</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_server_jfy_plus_7371">Server JFY Plus : 7371</h3>
+<div class="paragraph">
+<p>Il server attende le richieste dei client su questa porta TCP. Le connessioni in ingresso
+devono essere consentite su questa porta nel computer Server.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_server_delle_licenze_fluttuanti_5776">Server delle licenze fluttuanti : 5776</h3>
+<div class="paragraph">
+<p>Il server delle licenze fluttuanti attende le richieste di licenza su questa porta. Le connessioni in
+ingresso devono essere consentite su questa porta nel computer del server delle licenze fluttuanti
+(Server JFY Plus).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_connessione_delle_licenze_al_cloud_7567">Connessione delle licenze al Cloud : 7567</h3>
+<div class="paragraph">
+<p>Questa porta è utilizzata da JFY Core (software di piegatura) e dal server delle licenze fluttuanti per
+inviare le richieste di licenza a Metamation Cloud. Pertanto, la connessione in uscita deve essere
+consentita su questa porta per le attivazioni e i rinnovi delle licenze.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_requisiti_di_installazione_e_supporto">Requisiti di installazione e supporto</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Sono richiesti privilegi amministrativi per installare l&#8217;applicazione JFY Plus.</p>
+</li>
+<li>
+<p>Strumenti di diagnostica remota tramite VPN del contraente o una connessione sicura.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_requisiti_del_server">Requisiti del server</a>
+  </li>
+  <li level="1">
+   <a href="#_requisiti_del_client">Requisiti del client</a>
+  </li>
+  <li level="1">
+   <a href="#_requisiti_delle_porte">Requisiti delle porte</a>
+  </li>
+  <li level="2">
+   <a href="#_server_jfy_plus_7371">Server JFY Plus : 7371</a>
+  </li>
+  <li level="2">
+   <a href="#_server_delle_licenze_fluttuanti_5776">Server delle licenze fluttuanti : 5776</a>
+  </li>
+  <li level="2">
+   <a href="#_connessione_delle_licenze_al_cloud_7567">Connessione delle licenze al Cloud : 7567</a>
+  </li>
+  <li level="2">
+   <a href="#_requisiti_di_installazione_e_supporto">Requisiti di installazione e supporto</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="index.html">Installazione</a></span>
+ <span class="next"><a href="importformats.html">Formati di file supportati</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,444 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="res/bento.css">
+  <link rel="stylesheet" href="res/site.css">
+  <link rel="stylesheet" href="res/tree.css">
+  <link rel="stylesheet" href="res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="img/praxis-icon.png">
+  <title>Flux de travail</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="index.html">Bienvenue dans JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="installation/index.html">Installation</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="installation/hardwarerequirement.html">Exigences matérielles</a></li>
+    <li><button class="tree blank"></button><a href="installation/importformats.html">Formats de fichiers pris en charge</a></li>
+    <li><button class="tree blank"></button><a href="installation/prerequisites.html">Prérequis</a></li>
+    <li><button class="tree blank"></button><a href="installation/changelic.html">Changer de licence</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="configuration/index.html">Configuration</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="configuration/setupmachine.html">Ajouter/Supprimer une machine</a></li>
+    <li><button class="tree blank"></button><a href="configuration/setuptooling.html">Configurer l'outillage</a></li>
+    <li><button class="tree blank"></button><a href="configuration/configureusers.html">Configurer les utilisateurs</a></li>
+    <li><button class="tree blank"></button><a href="configuration/language.html">Langue</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="configuration/addmaterial/index.html">Matière</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="configuration/addmaterial/addnew.html">Ajouter une nouvelle matière et une tôle</a></li>
+      <li><button class="tree blank"></button><a href="configuration/addmaterial/exportimport.html">Exporter/Importer une matière</a></li>
+      <li><button class="tree blank"></button><a href="configuration/addmaterial/replacematerial.html">Remplacer une matière</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="configuration/mapbendpages.html">Cartographier la matière</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="userinterface.html">L'interface utilisateur</a></li>
+  <li><button class="tree blank"></button><a class="active" href="workflow.html">Flux de travail</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="library/index.html">Bibliothèque</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="library/open/index.html">Ouvrir</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="library/open/partimport.html">Importer des pièces</a></li>
+      <li><button class="tree blank"></button><a href="library/open/orderimport.html">Importer des ordres</a></li>
+      <li><button class="tree blank"></button><a href="library/open/jobimport.html">Importer des tâches</a></li>
+      <li><button class="tree blank"></button><a href="library/open/assembliesimport.html">Importer des modules</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="library/libraryview/index.html">Vue de la bibliothèque</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="library/libraryview/partview.html">Pièces</a></li>
+      <li><button class="tree blank"></button><a href="library/libraryview/assemblyview.html">Module</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="library/partstate/index.html">État de la pièce</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="library/partstate/partvalidation.html">Validation des pièces</a></li>
+      <li><button class="tree blank"></button><a href="library/partstate/partpanel.html">Panneau de la pièce</a></li>
+      <li><button class="tree blank"></button><a href="library/partstate/partfilters.html">Filtres de pièce</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="library/toolingstatus/index.html">État de l'outillage</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="library/toolingstatus/toolingvalidation/index.html">Validation de l'outillage</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="library/toolingstatus/toolingvalidation/bendtooling.html">Validation de l'outillage de pliage</a></li>
+        <li><button class="tree blank"></button><a href="library/toolingstatus/toolingvalidation/cuttooling.html">Validation de l'outillage de coupe</a></li>
+        <li><button class="tree blank"></button><a href="library/toolingstatus/toolingvalidation/foldtooling.html">Validation de l'outillage de pliage</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="library/toolingstatus/toolingpanel.html">Panneau d'outillage</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="library/savingfilters.html">Enregistrement des filtres</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="orders/index.html">Ordres</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="orders/ordersview.html">Vue des ordres</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="jobs/index.html">Tâches</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="jobs/jobcreation.html">Créer une tâche</a></li>
+    <li><button class="tree blank"></button><a href="jobs/jobview.html">Vue des tâches</a></li>
+    <li><button class="tree blank"></button><a href="jobs/jobpanel.html">Panneau des tâches</a></li>
+    <li><button class="tree blank"></button><a href="jobs/jobautoplan.html">Planification automatique</a></li>
+    <li><button class="tree blank"></button><a href="jobs/jobinteractplan.html">Imbrication interactive</a></li>
+    <li><button class="tree blank"></button><a href="jobs/repacking.html">Réempaquetage</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="jobs/layoutcommands/index.html">Gestion des imbrications</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="jobs/layoutcommands/nestview.html">Vue de configuration</a></li>
+      <li><button class="tree blank"></button><a href="jobs/layoutcommands/layoutpanel.html">Panneau de configuration</a></li>
+      <li><button class="tree blank"></button><a href="jobs/layoutcommands/reportsender.html">Envoi de rapports</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="jobs/remnantmanagement/index.html">Gestion des chutes</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="jobs/remnantmanagement/autoremnant.html">Gestion automatique des chutes</a></li>
+      <li><button class="tree blank"></button><a href="jobs/remnantmanagement/manualremnant.html">Gestion manuelle des chutes</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="jobs/twinlinenesting.html">Imbrication Twinline</a></li>
+    <li><button class="tree blank"></button><a href="jobs/outdate.html">Obsolète</a></li>
+    <li><button class="tree blank"></button><a href="jobs/jobfilters.html">Filtres de tâches</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="factory/index.html">Usine</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="factory/routes.html">Itinéraires</a></li>
+    <li><button class="tree blank"></button><a href="factory/sheets.html">Tôles</a></li>
+    <li><button class="tree blank"></button><a href="factory/users.html">Utilisateurs</a></li>
+    <li><button class="tree blank"></button><a href="factory/edit.html">Modifier</a></li>
+    <li><button class="tree blank"></button><a href="factory/customers.html">Clients</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="factory/settings/index.html">Réglages</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="factory/settings/environment.html">Environnement</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/import.html">Importation</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/bend.html">Pliage</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/cut.html">Coupe</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/notification.html">Notifications</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/watch.html">Surveillance</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/job.html">Tâche</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/reports.html">Rapports</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="impressum.html">Informations sur l'entreprise</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="workflow.html">Flux de travail</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Flux de travail</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>JFY Plus est un système d&#8217;exécution de la fabrication qui gère et optimise les
+procédés de fabrication de tôle. Un flux de travail dans JFY Plus se compose
+d&#8217;une série d&#8217;étapes que vous suivez pour accomplir une tâche ou un procédé
+spécifique. Vous pouvez personnaliser le flux de travail pour l&#8217;adapter à
+différents procédés de fabrication et le conformer à vos besoins spécifiques. Le
+flux de travail dans JFY Plus comprend généralement les
+étapes suivantes :</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_1_configurer_le_système">1. Configurer le système</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Configurez JFY Plus pour l&#8217;adapter à votre environnement de fabrication. Cette
+étape fondamentale comprend la définition des machines avec leurs capacités et
+leurs paramètres, l&#8217;ajout des matières disponibles et des plages d&#8217;épaisseur, la
+configuration des bibliothèques d&#8217;outillage avec les poinçons et les matrices, la
+création de feuilles de configuration pour différentes configurations de
+machine, et la gestion des comptes utilisateurs avec les autorisations
+appropriées. Un système correctement configuré garantit un traitement précis et
+prévient les erreurs dans les étapes ultérieures. Cette
+configuration est généralement effectuée une seule fois lors du déploiement
+initial, avec des mises à jour périodiques à mesure que votre usine évolue.</p>
+</div>
+<div class="paragraph">
+<p>Pour plus d&#8217;informations, voir <a href="configuration/setupmachine.html">Ajouter/supprimer
+une machine</a>, <a href="configuration/addmaterial/index.html">Matériau</a>,
+<a href="factory/sheets.html">Tôles</a>, <a href="configuration/setuptooling.html">Configurer
+l&#8217;outillage</a>, et <a href="configuration/configureusers.html">Configurer les utilisateurs</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/setup.png" alt="Setup" width="817">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2_ajouter_des_pièces_à_la_bibliothèque">2. Ajouter des pièces à la bibliothèque</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Importez des pièces CAO 2D ou 3D dans la bibliothèque de pièces en utilisant des
+formats pris en charge tels que les fichiers DXF, DWG ou STEP. Lors de
+l&#8217;importation, JFY Plus analyse automatiquement la géométrie de la
+pièce, valide la fabricabilité, attribue la technologie de tôle requise
+(laser, poinçonnage ou combinaison) et génère des vignettes d&#8217;aperçu. Les
+pièces importées apparaissent sous forme de tuiles dans la vue de la bibliothèque,
+où des icônes colorées indiquent l&#8217;état de la pièce, le type de technologie, les
+exigences de matière et tout problème détecté. Ce système visuel permet une
+évaluation rapide de l&#8217;état de préparation des pièces en un coup d&#8217;œil.</p>
+</div>
+<div class="paragraph">
+<p>Pour plus d&#8217;informations, voir <a href="library/index.html">Bibliothèque</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/importparts.png" alt="Import" width="476">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_vérifier_les_pièces_et_loutillage">3. Vérifier les pièces et l&#8217;outillage</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Examinez chaque pièce importée pour détecter d&#8217;éventuels problèmes de production.
+Vérifiez que la géométrie de la pièce est valide et fabricable, que les
+attributions d&#8217;outillage sont correctes et disponibles, que les sélections de
+matière et d&#8217;épaisseur correspondent au stock, et que les séquences de pliage
+sont correctement définies pour les pièces formées. Si des problèmes sont
+détectés, ouvrez la pièce dans JFY Core pour modifier la géométrie, réattribuer
+ou optimiser l&#8217;outillage, ajuster les paramètres de traitement ou corriger les
+spécifications de matière. La résolution des problèmes à ce stade prévient les
+retards de production et réduit les rebuts pendant la fabrication.</p>
+</div>
+<div class="paragraph">
+<p>et <a href="library/toolingstatus/index.html">État de l&#8217;outillage</a>.
+Pour plus d&#8217;informations, voir <a href="library/partstate/index.html">État de la pièce</a>
+et <a href="library/toolingstatus/index.html">État de l&#8217;outillage</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/toolingcheck.png" alt="Tooling" width="1078">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_organiser_les_pièces_en_tâches">4. Organiser les pièces en tâches</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Regroupez les pièces validées en tâches en fonction des exigences de production.
+Une tâche représente une unité de production logique pouvant inclure des pièces
+d&#8217;un seul ordre client, des pièces partageant des matières et une épaisseur
+communes, des pièces ayant des échéances de livraison similaires, ou une
+combinaison basée sur votre stratégie de production. Les tâches fournissent un
+conteneur pour la planification, permettent le traitement par lots de pièces
+associées, favorisent une utilisation efficace de la matière grâce à
+l&#8217;imbrication, et simplifient le suivi et les rapports. Les tâches peuvent être
+créées manuellement en sélectionnant des pièces, ou
+automatiquement selon des règles et des filtres prédéfinis.</p>
+</div>
+<div class="paragraph">
+<p>Pour plus d&#8217;informations, voir <a href="jobs/index.html">Tâches</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/jobs.png" alt="Jobs" width="578">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_5_planifier_les_tâches_sur_les_machines_de_production">5. Planifier les tâches sur les machines de production</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Une fois qu&#8217;une tâche est créée, attribuez-la à une machine de production
+appropriée. Tenez compte des capacités de la machine, notamment les technologies
+prises en charge (laser, poinçonnage, tourelle), la capacité de matière et
+d&#8217;épaisseur, l&#8217;outillage disponible et la charge de travail actuelle. Si
+plusieurs machines appropriées existent, sélectionnez en fonction de la priorité
+de production, de la disponibilité de la machine, des exigences de configuration
+ou de l&#8217;optimisation des coûts. L&#8217;attribution peut être
+manuelle pour plus de flexibilité ou automatique selon des règles préconfigurées
+et des algorithmes de planification des machines.</p>
+</div>
+<div class="paragraph">
+<p>Pour plus d&#8217;informations, voir <a href="jobs/jobautoplan.html">Planifier la tâche</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/machineselect.png" alt="MachineSelect" width="695">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_6_libérer_le_nc_pour_les_tâches">6. Libérer le NC pour les tâches</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>À ce stade, les configurations de coupe sont générées. Vous pouvez encore
+modifier les configurations et ajouter des technologies de coupe à la
+configuration à l&#8217;aide de JFY Core. Ensuite, exportez la sortie NC
+et transférez-la vers le contrôleur de la machine ou un emplacement réseau
+désigné. La tâche est ensuite verrouillée pour empêcher toute modification
+ultérieure, et son statut est mis à jour sur « Libéré » pour le suivi de la production.</p>
+</div>
+<div class="paragraph">
+<p>Pour plus d&#8217;informations, voir <a href="jobs/layoutcommands/layoutpanel.html#send-to-machine">Envoyer/rappeler le NC</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/production.png" alt="Production" width="444">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_7_terminer_la_production_et_finaliser_les_tâches">7. Terminer la production et finaliser les tâches</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Exécutez la tâche libérée sur la machine attribuée. Pendant la production,
+l&#8217;opérateur de la machine suit le programme NC, vérifie la qualité des pièces
+pendant la coupe, gère le chargement et le déchargement de la matière, et traite
+toute alarme ou tout problème de la machine. Une fois la production terminée,
+marquez les pièces individuelles ou la tâche entière
+comme terminées dans JFY Plus. Cette étape finale met à jour les enregistrements
+de stock, enregistre le temps de production réel et l&#8217;utilisation de la matière,
+archive les données de la tâche pour les rapports et l&#8217;analyse, et achève le
+cycle du flux de travail.</p>
+</div>
+<div class="paragraph">
+<p>Pour plus d&#8217;informations, voir <a href="jobs/layoutcommands/layoutpanel.html#mark-complete">Mark
+complete</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/complete.png" alt="Complete" width="435">
+</div>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_1_configurer_le_système">1. Configurer le système</a>
+  </li>
+  <li level="1">
+   <a href="#_2_ajouter_des_pièces_à_la_bibliothèque">2. Ajouter des pièces à la bibliothèque</a>
+  </li>
+  <li level="1">
+   <a href="#_3_vérifier_les_pièces_et_loutillage">3. Vérifier les pièces et l&#8217;outillage</a>
+  </li>
+  <li level="1">
+   <a href="#_4_organiser_les_pièces_en_tâches">4. Organiser les pièces en tâches</a>
+  </li>
+  <li level="1">
+   <a href="#_5_planifier_les_tâches_sur_les_machines_de_production">5. Planifier les tâches sur les machines de production</a>
+  </li>
+  <li level="1">
+   <a href="#_6_libérer_le_nc_pour_les_tâches">6. Libérer le NC pour les tâches</a>
+  </li>
+  <li level="1">
+   <a href="#_7_terminer_la_production_et_finaliser_les_tâches">7. Terminer la production et finaliser les tâches</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="userinterface.html">L'interface utilisateur</a></span>
+ <span class="next"><a href="library/index.html">Bibliothèque</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="res/index.js"></script>
+    <script src="res/files.js"></script>
+    <script src="res/site.js"></script>
+
+    
+</body>
+</html>

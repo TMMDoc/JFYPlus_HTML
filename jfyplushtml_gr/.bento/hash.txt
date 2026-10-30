@@ -1,0 +1,154 @@
+Version=58
+APPNAME=JFY Plus
+BENDAPP=JFY Bend
+BRAND=JFY
+CUTAPP=JFY Cut
+FLAVOR=JFY
+FOLDDAPP=Flux Fold
+JFY=
+LANGUAGE=EN
+TECNOAPP=JFY Core
+TECNOAPP1=MetaCAM
+Folders=16
+Pages=73
+UIXlate=False, DebugUIXlate=False, Language=EN
+
+contents.txt • 265803.125808
+Impressum.adoc • Πληροφορίες εταιρείας
+impressum.JFY.adoc • Πληροφορίες εταιρείας
+Index.adoc • Καλώς ορίσατε στο {APPNAME}
+Index.JFY.adoc • Καλώς ορίσατε στο {APPNAME}
+manifest.txt • 265228.055202
+UserInterface.adoc • Η διεπαφή χρήστη
+Workflow.adoc • Ροή εργασίας
+cadextensions\contents.txt • 265821.065841
+cadextensions\Index.adoc • Επεκτάσεις CAD
+configuration\CADMapFields.adoc • Χαρτογράφηση πεδίων από CAD (κλειδιά αναζήτησης)
+configuration\configureUsers.adoc • Διαμόρφωση χρηστών
+configuration\contents.txt • 265821.065841
+configuration\Index.adoc • Διαμόρφωση
+configuration\Language.adoc • Γλώσσα
+configuration\MapBendPages.adoc • Χαρτογράφηση υλικού
+configuration\MapCAMPages.adoc • Χαρτογράφηση σελίδων CAM
+configuration\SetupMachine.adoc • Προσθήκη/Αφαίρεση μηχανής
+configuration\SetupTooling.adoc • Διαμόρφωση εξοπλισμού
+factory\contents.txt • 265821.065841
+factory\Customers.adoc • Πελάτες
+factory\edit.adoc • Επεξεργασία
+factory\Index.adoc • Εργοστάσιο
+factory\routes.adoc • Διαδρομές
+factory\sheets.adoc • Μεταλλικές πλάκες
+factory\Users.adoc • Χρήστες
+installation\changelic.adoc • Αλλαγή άδειας χρήσης
+installation\ClientInstallation.adoc • Εγκατάσταση πελάτη
+installation\contents.txt • 265821.065841
+installation\HardwareRequirement.adoc • Απαιτήσεις υλικού
+installation\importformats.adoc • Υποστηριζόμενες μορφές αρχείων
+installation\index.adoc • Εγκατάσταση
+installation\Prerequisites.adoc • Προϋποθέσεις
+installation\ServerInstallation.adoc • Εγκατάσταση διακομιστή
+jobs\contents.txt • 265821.065842
+jobs\Index.adoc • Εργασίες
+jobs\JOBAutoPlan.adoc • Αυτόματος σχεδιασμός
+jobs\JOBCreation.adoc • Δημιουργία εργασίας
+jobs\JobFilters.adoc • Φίλτρα εργασιών
+jobs\JOBInteractPlan.adoc • Διαδραστική κατανομή
+jobs\JobPanel.adoc • Πίνακας εργασιών
+jobs\JOBView.adoc • Προβολή εργασιών
+jobs\OutDate.adoc • Παρωχημένο
+jobs\Repacking.adoc • Επανασυσκευασία
+jobs\TwinlineNesting.adoc • Κατανομή διπλής γραμμής
+library\contents.txt • 265821.065843
+library\Index.adoc • Βιβλιοθήκη
+library\SavingFilters.adoc • Αποθήκευση φίλτρων
+orders\Contents.txt
+orders\Index.adoc • Παραγγελίες
+orders\OrdersView.adoc • Προβολή παραγγελιών
+UIXlate\BR.txt
+UIXlate\CHS.txt
+UIXlate\CHT.txt
+UIXlate\CS.txt
+UIXlate\DA.txt
+UIXlate\DE.txt
+UIXlate\EN.txt
+UIXlate\ES.txt
+UIXlate\FI.txt
+UIXlate\FR.txt
+UIXlate\GR.txt
+UIXlate\HU.txt
+UIXlate\ID.txt
+UIXlate\IT.txt
+UIXlate\JP.txt
+UIXlate\KO.txt
+UIXlate\NL.txt
+UIXlate\PL.txt
+UIXlate\Prefixes.txt
+UIXlate\RO.txt
+UIXlate\RU.txt
+UIXlate\SK.txt
+UIXlate\SV.txt
+UIXlate\TH.txt
+UIXlate\TR.txt
+_jfybuild\build_docbook.log
+_jfybuild\build_docx.log
+_jfybuild\build_jfy.rb
+_jfybuild\build_pdf.log
+_jfybuild\JFY_Plus_Reference_Manual.docx
+_jfybuild\JFY_Plus_Reference_Manual.pdf
+_jfybuild\master.adoc • JFY Plus Reference Manual
+_jfybuild\master.xml
+cadextensions\solidworksaddin\contents.txt • 265821.065841
+cadextensions\solidworksaddin\FactorySettings.adoc • Ρυθμίσεις εργοστασίου
+cadextensions\solidworksaddin\Index.adoc • Πρόσθετο SolidWorks
+cadextensions\solidworksaddin\InstallationSteps.adoc • Εγκατάσταση
+cadextensions\solidworksaddin\MiscEnhancements.adoc • Διάφορες βελτιώσεις
+cadextensions\solidworksaddin\PartFeasibility.adoc • Έλεγχος κατασκευασιμότητας
+cadextensions\solidworksaddin\SaveAssembly.adoc • Αποθήκευση συγκροτήματος
+cadextensions\solidworksaddin\SaveToPraxis.adoc • Αποθήκευση εξαρτημάτων
+configuration\addmaterial\AddNew.adoc • Προσθήκη νέου υλικού και μεταλλικής πλάκας
+configuration\addmaterial\contents.txt • 265821.065841
+configuration\addmaterial\ExportImport.adoc • Εξαγωγή/Εισαγωγή υλικού
+configuration\addmaterial\Index.adoc • Υλικό
+configuration\addmaterial\ReplaceMaterial.adoc • Αντικατάσταση υλικού
+factory\settings\Bend.adoc • Κάμψη
+factory\settings\contents.txt • 265821.065841
+factory\settings\Cut.adoc • Κοπή
+factory\settings\Environment.adoc • Περιβάλλον
+factory\settings\Import.adoc • Εισαγωγή
+factory\settings\Index.adoc • Ρυθμίσεις
+factory\settings\Job.adoc • Εργασία
+factory\settings\Notification.adoc • Ειδοποιήσεις
+factory\settings\Reports.adoc • Αναφορές
+factory\settings\Watch.adoc • Επιτήρηση
+jobs\layoutcommands\contents.txt • 265821.065842
+jobs\layoutcommands\Index.adoc • Διαχείριση κατανομών
+jobs\layoutcommands\LayoutPanel.adoc • Πίνακας διάταξης
+jobs\layoutcommands\NestView.adoc • Προβολή διάταξης
+jobs\layoutcommands\ReportSender.adoc • Αποστολή αναφορών
+jobs\remnantmanagement\AutoRemnant.adoc • Αυτόματη διαχείριση υπολειμμάτων
+jobs\remnantmanagement\contents.txt • 265821.065842
+jobs\remnantmanagement\Index.adoc • Διαχείριση υπολειμμάτων
+jobs\remnantmanagement\ManualRemnant.adoc • Χειροκίνητη διαχείριση υπολειμμάτων
+library\libraryview\AssemblyView.adoc • Συγκρότημα
+library\libraryview\Contents.txt
+library\libraryview\Index.adoc • Προβολή βιβλιοθήκης
+library\libraryview\PartView.adoc • Εξαρτήματα
+library\open\AssembliesImport.adoc • Εισαγωγή συγκροτημάτων
+library\open\Contents.txt
+library\open\Index.adoc • Άνοιγμα
+library\open\JobImport.adoc • Εισαγωγή εργασιών
+library\open\OrderImport.adoc • Εισαγωγή παραγγελιών
+library\open\PartImport.adoc • Εισαγωγή εξαρτημάτων
+library\partstate\contents.txt • 265821.065842
+library\partstate\Index.adoc • Κατάσταση εξαρτήματος
+library\partstate\PartFilters.adoc • Φίλτρα εξαρτημάτων
+library\partstate\PartPanel.adoc • Πίνακας εξαρτήματος
+library\partstate\PartValidation.adoc • Επικύρωση εξαρτήματος
+library\toolingstatus\contents.txt • 265821.065842
+library\toolingstatus\Index.adoc • Κατάσταση εξοπλισμού
+library\toolingstatus\ToolingPanel.adoc • Πίνακας εξοπλισμού
+library\toolingstatus\toolingvalidation\BendTooling.adoc • Επικύρωση εξοπλισμού κάμψης
+library\toolingstatus\toolingvalidation\contents.txt • 265821.065842
+library\toolingstatus\toolingvalidation\CutTooling.adoc • Επικύρωση εξοπλισμού κοπής
+library\toolingstatus\toolingvalidation\FoldTooling.adoc • Επικύρωση εξοπλισμού δίπλωσης
+library\toolingstatus\toolingvalidation\Index.adoc • Επικύρωση εξοπλισμού

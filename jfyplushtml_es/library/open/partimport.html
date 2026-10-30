@@ -1,0 +1,468 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Importar piezas</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Bienvenido a JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Instalación</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Requisitos de hardware</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Formatos de archivo compatibles</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Requisitos previos</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Cambiar licencia</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Configuración</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Añadir/eliminar máquina</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Configurar utillaje</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Configurar usuarios</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Idioma</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Material</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Añadir nuevo material y chapa</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Exportar/importar material</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Reemplazar material</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Asignar material</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">La interfaz de usuario</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Flujo de trabajo</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Biblioteca</a>
+   <ul>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Abrir</a>
+     <ul>
+      <li><button class="tree blank"></button><a class="active" href="partimport.html">Importar piezas</a></li>
+      <li><button class="tree blank"></button><a href="orderimport.html">Importar pedidos</a></li>
+      <li><button class="tree blank"></button><a href="jobimport.html">Importar tareas</a></li>
+      <li><button class="tree blank"></button><a href="assembliesimport.html">Importar montajes</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../libraryview/index.html">Vista de biblioteca</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../libraryview/partview.html">Piezas</a></li>
+      <li><button class="tree blank"></button><a href="../libraryview/assemblyview.html">Montaje</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../partstate/index.html">Estado de pieza</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../partstate/partvalidation.html">Validación de piezas</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partpanel.html">Panel de piezas</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partfilters.html">Filtros de piezas</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../toolingstatus/index.html">Estado de utillaje</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../toolingstatus/toolingvalidation/index.html">Validación de utillaje</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/bendtooling.html">Validación del utillaje de plegado</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/cuttooling.html">Validación del utillaje de corte</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/foldtooling.html">Validación del utillaje de plegado con paneladora</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../toolingstatus/toolingpanel.html">Panel de utillaje</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../savingfilters.html">Guardar filtros</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Pedidos</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Vista de pedidos</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Tareas</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Crear tarea</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Vista de tareas</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Panel de tareas</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Planificación automática</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Anidamiento interactivo</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Reempaquetado</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Gestión de anidamientos</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Vista de diseño</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Panel de diseño</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Envío de informes</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Gestión de restos</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Gestión automática de restos</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Gestión manual de restos</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Anidamiento TwinLine</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Obsoleto</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Filtros de tareas</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../factory/index.html">Fábrica</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">Rutas</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/sheets.html">Chapas</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">Usuarios</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/edit.html">Editar</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">Clientes</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">Ajustes</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">Entorno</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">Import</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">Plegado</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">Corte</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">Notificaciones</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">Visualización</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">Job</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">Informes</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Información corporativa</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Biblioteca</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Abrir</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="partimport.html">Importar piezas</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Importar piezas</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Antes de importar piezas, asegúrese de que los formatos de archivo sean
+compatibles con JFY Plus. Consulte
+<a href="../../installation/importformats.html">formatos de archivo compatibles</a> para obtener más
+detalles.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Si el material y el espesor no se asignan a la pieza tras la importación,
+asigne el material mediante el panel de piezas.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_métodos_de_importación">Métodos de importación</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Existen tres métodos para importar piezas en la biblioteca de piezas:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Importar mediante archivo</p>
+</li>
+<li>
+<p>Arrastrar y soltar</p>
+</li>
+<li>
+<p>Carpeta de visualización</p>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="_importar_mediante_archivo">Importar mediante archivo</h3>
+<div class="paragraph">
+<p>Un archivo de pieza 2D o 3D se puede importar en la biblioteca de piezas
+mediante la opción <strong>Import parts&#8230;&#8203;</strong>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Haga clic en los iconos <strong>open</strong> de la barra de comandos y
+seleccione la opción <strong>Import parts&#8230;&#8203;</strong>.</p>
+</li>
+<li>
+<p>Aparece el cuadro de diálogo <strong>Open</strong>: seleccione cualquier archivo CAD (2D o
+3D).</p>
+</li>
+<li>
+<p>Se muestra una vista previa del archivo CAD seleccionado.</p>
+</li>
+<li>
+<p>Seleccione la pieza requerida y haga clic en <strong>Open</strong>.</p>
+</li>
+<li>
+<p>El sistema aplica el utillaje automáticamente a la pieza para todas las
+máquinas disponibles con el estado de utillaje actualizado.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_arrastrar_y_soltar">Arrastrar y soltar</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Arrastre y suelte un archivo de pieza directamente en la biblioteca de piezas
+de JFY Plus.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_carpeta_de_visualización">Carpeta de visualización</h3>
+<div class="paragraph">
+<p>Los ajustes de visualización le permiten supervisar una carpeta en busca de
+archivos nuevos e importarlos automáticamente en la biblioteca de piezas.</p>
+</div>
+<div class="paragraph">
+<p>Para configurarlos, consulte la página
+<a href="../../factory/settings/watch.html">Ajustes de visualización</a>.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Utilice una ruta UNC (Universal Naming Convention) <code>\\192.168.1.11\&lt;Folder path&gt;</code>
+o una unidad asignada <code>M:\&lt;Folder Path&gt;</code>.</p>
+</li>
+<li>
+<p>El PC que ejecuta el Engine debe tener acceso de lectura/escritura a esta
+carpeta.</p>
+</li>
+<li>
+<p>No utilice una ruta local como <code>C:\&lt;Folder Path&gt;</code>, ya que el servicio de
+visualización busca los archivos en el PC del Engine, no en el PC local.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/watch.png" alt="Watch settings" width="744">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="import-configuration">Configuración de importación</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_use_geometry_comparison_on_same_cad_revision">Use geometry comparison on same CAD revision</h3>
+<div class="paragraph">
+<p>Al importar una pieza con la misma revisión CAD, JFY Plus puede comparar la
+geometría del archivo CAD con la pieza existente.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Para habilitarlo, configure las <strong>Revision lookup keys</strong> (por
+ejemplo, REV) en <strong>factory</strong> → <strong>settings</strong>
+→<strong>Import</strong>. A continuación, habilite la opción
+<strong>Use geometry comparison on same CAD revision</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/rev.png" alt="Revision" width="755"></span></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+La comparación de geometría en la misma revisión CAD solo funciona cuando
+se han configurado las <strong>Revision lookup keys</strong>.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Ahora, importe una pieza en la biblioteca de piezas con una revisión
+específica (por ejemplo, Revisión 1).</p>
+</li>
+<li>
+<p>La misma pieza se vuelve a importar con el mismo valor de revisión.</p>
+</li>
+<li>
+<p>JFY Plus compara la geometría del archivo CAD recién importado con la pieza
+existente.</p>
+</li>
+<li>
+<p>Si se detecta una diferencia de geometría, JFY Plus muestra un mensaje
+preguntando si desea:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Replace</strong> la pieza existente con la nueva geometría, manteniendo el
+mismo valor de revisión.</p>
+</li>
+<li>
+<p><strong>Skip</strong> la importación, conservando la pieza existente y su geometría.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Esto permite a los usuarios actualizar la geometría de la pieza sin cambiar el
+valor de revisión, manteniendo al mismo tiempo el control sobre si se reemplazan
+las piezas existentes.</p>
+</div>
+<div class="paragraph">
+<p>Las piezas importadas se añaden automáticamente a la biblioteca para su uso
+posterior. Para obtener más información, consulte
+<a href="../../library/index.html">Biblioteca</a>.</p>
+</div>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_métodos_de_importación">Métodos de importación</a>
+  </li>
+  <li level="2">
+   <a href="#_importar_mediante_archivo">Importar mediante archivo</a>
+  </li>
+  <li level="2">
+   <a href="#_arrastrar_y_soltar">Arrastrar y soltar</a>
+  </li>
+  <li level="2">
+   <a href="#_carpeta_de_visualización">Carpeta de visualización</a>
+  </li>
+  <li level="1">
+   <a href="#import-configuration">Configuración de importación</a>
+  </li>
+  <li level="2">
+   <a href="#_use_geometry_comparison_on_same_cad_revision">Use geometry comparison on same CAD revision</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="index.html">Abrir</a></span>
+ <span class="next"><a href="orderimport.html">Importar pedidos</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

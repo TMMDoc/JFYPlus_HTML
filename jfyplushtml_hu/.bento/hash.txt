@@ -1,0 +1,154 @@
+Version=58
+APPNAME=JFY Plus
+BENDAPP=JFY Bend
+BRAND=JFY
+CUTAPP=JFY Cut
+FLAVOR=JFY
+FOLDDAPP=Flux Fold
+JFY=
+LANGUAGE=EN
+TECNOAPP=JFY Core
+TECNOAPP1=MetaCAM
+Folders=16
+Pages=73
+UIXlate=False, DebugUIXlate=False, Language=EN
+
+contents.txt • 265803.125808
+Impressum.adoc • Céginformáció
+impressum.JFY.adoc • Céginformáció
+Index.adoc • Üdvözli a {APPNAME}
+Index.JFY.adoc • Üdvözli a {APPNAME}
+manifest.txt • 260928.070901
+UserInterface.adoc • A felhasználói felület
+Workflow.adoc • Munkafolyamat
+cadextensions\contents.txt • 265821.065841
+cadextensions\Index.adoc • CAD-bővítmények
+configuration\CADMapFields.adoc • Mezők leképezése CAD-ből (keresési kulcsok)
+configuration\configureUsers.adoc • Felhasználók konfigurálása
+configuration\contents.txt • 265821.065841
+configuration\Index.adoc • Konfiguráció
+configuration\Language.adoc • Nyelv
+configuration\MapBendPages.adoc • Anyag leképezése
+configuration\MapCAMPages.adoc • CAM-oldalak leképezése
+configuration\SetupMachine.adoc • Gép hozzáadása/eltávolítása
+configuration\SetupTooling.adoc • Felszerszámozás konfigurálása
+factory\contents.txt • 265821.065841
+factory\Customers.adoc • Ügyfelek
+factory\edit.adoc • Szerkesztés
+factory\Index.adoc • Gyár
+factory\routes.adoc • Útvonalak
+factory\sheets.adoc • Lemeztáblák
+factory\Users.adoc • Felhasználók
+installation\changelic.adoc • Licenc módosítása
+installation\ClientInstallation.adoc • Klienstelepítés
+installation\contents.txt • 265821.065841
+installation\HardwareRequirement.adoc • Hardverkövetelmények
+installation\importformats.adoc • Támogatott fájlformátumok
+installation\index.adoc • Telepítés
+installation\Prerequisites.adoc • Előfeltételek
+installation\ServerInstallation.adoc • Kiszolgálótelepítés
+jobs\contents.txt • 265821.065842
+jobs\Index.adoc • Feladatok
+jobs\JOBAutoPlan.adoc • Automatikus tervezés
+jobs\JOBCreation.adoc • Feladat létrehozása
+jobs\JobFilters.adoc • Feladatszűrők
+jobs\JOBInteractPlan.adoc • Interaktív táblásítás
+jobs\JobPanel.adoc • Feladat panel
+jobs\JOBView.adoc • Feladatok nézet
+jobs\OutDate.adoc • Elavult
+jobs\Repacking.adoc • Újracsomagolás
+jobs\TwinlineNesting.adoc • Twin-line táblásítás
+library\contents.txt • 265821.065843
+library\Index.adoc • Könyvtár
+library\SavingFilters.adoc • Szűrők mentése
+orders\Contents.txt
+orders\Index.adoc • Megrendelések
+orders\OrdersView.adoc • Megrendelések nézet
+UIXlate\BR.txt
+UIXlate\CHS.txt
+UIXlate\CHT.txt
+UIXlate\CS.txt
+UIXlate\DA.txt
+UIXlate\DE.txt
+UIXlate\EN.txt
+UIXlate\ES.txt
+UIXlate\FI.txt
+UIXlate\FR.txt
+UIXlate\GR.txt
+UIXlate\HU.txt
+UIXlate\ID.txt
+UIXlate\IT.txt
+UIXlate\JP.txt
+UIXlate\KO.txt
+UIXlate\NL.txt
+UIXlate\PL.txt
+UIXlate\Prefixes.txt
+UIXlate\RO.txt
+UIXlate\RU.txt
+UIXlate\SK.txt
+UIXlate\SV.txt
+UIXlate\TH.txt
+UIXlate\TR.txt
+_jfybuild\build_docbook.log
+_jfybuild\build_docx.log
+_jfybuild\build_jfy.rb
+_jfybuild\build_pdf.log
+_jfybuild\JFY_Plus_Reference_Manual.docx
+_jfybuild\JFY_Plus_Reference_Manual.pdf
+_jfybuild\master.adoc • JFY Plus Reference Manual
+_jfybuild\master.xml
+cadextensions\solidworksaddin\contents.txt • 265821.065841
+cadextensions\solidworksaddin\FactorySettings.adoc • Gyári beállítások
+cadextensions\solidworksaddin\Index.adoc • SolidWorks-bővítmény
+cadextensions\solidworksaddin\InstallationSteps.adoc • Telepítés
+cadextensions\solidworksaddin\MiscEnhancements.adoc • Egyéb fejlesztések
+cadextensions\solidworksaddin\PartFeasibility.adoc • Gyárthatóság ellenőrzése
+cadextensions\solidworksaddin\SaveAssembly.adoc • Részegység mentése
+cadextensions\solidworksaddin\SaveToPraxis.adoc • Alkatrészek mentése
+configuration\addmaterial\AddNew.adoc • Új anyag és lemeztábla hozzáadása
+configuration\addmaterial\contents.txt • 265821.065841
+configuration\addmaterial\ExportImport.adoc • Anyag exportálása/importálása
+configuration\addmaterial\Index.adoc • Anyag
+configuration\addmaterial\ReplaceMaterial.adoc • Anyag cseréje
+factory\settings\Bend.adoc • Hajlítás
+factory\settings\contents.txt • 265821.065841
+factory\settings\Cut.adoc • Vágás
+factory\settings\Environment.adoc • Környezet
+factory\settings\Import.adoc • Importálás
+factory\settings\Index.adoc • Beállítások
+factory\settings\Job.adoc • Feladat
+factory\settings\Notification.adoc • Értesítések
+factory\settings\Reports.adoc • Jelentések
+factory\settings\Watch.adoc • Megtekintés
+jobs\layoutcommands\contents.txt • 265821.065842
+jobs\layoutcommands\Index.adoc • Táblaterv-kezelés
+jobs\layoutcommands\LayoutPanel.adoc • Elrendezés panel
+jobs\layoutcommands\NestView.adoc • Elrendezés nézet
+jobs\layoutcommands\ReportSender.adoc • Jelentésküldő
+jobs\remnantmanagement\AutoRemnant.adoc • Automatikus maradékkezelés
+jobs\remnantmanagement\contents.txt • 265821.065842
+jobs\remnantmanagement\Index.adoc • Maradékkezelés
+jobs\remnantmanagement\ManualRemnant.adoc • Kézi maradékkezelés
+library\libraryview\AssemblyView.adoc • Részegység
+library\libraryview\Contents.txt
+library\libraryview\Index.adoc • Könyvtár nézet
+library\libraryview\PartView.adoc • Alkatrészek
+library\open\AssembliesImport.adoc • Részegységek importálása
+library\open\Contents.txt
+library\open\Index.adoc • Megnyitás
+library\open\JobImport.adoc • Feladatok importálása
+library\open\OrderImport.adoc • Megrendelések importálása
+library\open\PartImport.adoc • Alkatrészek importálása
+library\partstate\contents.txt • 265821.065842
+library\partstate\Index.adoc • Alkatrész állapota
+library\partstate\PartFilters.adoc • Alkatrészszűrők
+library\partstate\PartPanel.adoc • Alkatrész panel
+library\partstate\PartValidation.adoc • Alkatrész ellenőrzése
+library\toolingstatus\contents.txt • 265821.065842
+library\toolingstatus\Index.adoc • Felszerszámozás állapota
+library\toolingstatus\ToolingPanel.adoc • Felszerszámozási panel
+library\toolingstatus\toolingvalidation\BendTooling.adoc • Hajlítási felszerszámozás ellenőrzése
+library\toolingstatus\toolingvalidation\contents.txt • 265821.065842
+library\toolingstatus\toolingvalidation\CutTooling.adoc • Vágási felszerszámozás ellenőrzése
+library\toolingstatus\toolingvalidation\FoldTooling.adoc • Falcolási felszerszámozás ellenőrzése
+library\toolingstatus\toolingvalidation\Index.adoc • Felszerszámozás ellenőrzése

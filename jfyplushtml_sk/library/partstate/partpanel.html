@@ -1,0 +1,598 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Panel dielu</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Vitajte v JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Inštalácia</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Hardvérové požiadavky</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Podporované formáty súborov</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Predpoklady</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Zmena licencie</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Konfigurácia</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Pridanie/odstránenie stroja</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Nastavenie tooling</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Konfigurácia používateľov</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Jazyk</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Materiál</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Pridanie nového materiálu a tabule</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Export/import materiálu</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Nahradenie materiálu</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Mapovanie materiálu</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">PoužívateĻské rozhranie</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Workflow</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Knižnica</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../open/index.html">Otvorenie</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../open/partimport.html">Import dielov</a></li>
+      <li><button class="tree blank"></button><a href="../open/orderimport.html">Import objednávok</a></li>
+      <li><button class="tree blank"></button><a href="../open/jobimport.html">Import úloh job</a></li>
+      <li><button class="tree blank"></button><a href="../open/assembliesimport.html">Import zostáv</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../libraryview/index.html">Zobrazenie knižnice</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../libraryview/partview.html">Diely</a></li>
+      <li><button class="tree blank"></button><a href="../libraryview/assemblyview.html">Zostava</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Stav dielu</a>
+     <ul>
+      <li><button class="tree blank"></button><a href="partvalidation.html">Validácia dielu</a></li>
+      <li><button class="tree blank"></button><a class="active" href="partpanel.html">Panel dielu</a></li>
+      <li><button class="tree blank"></button><a href="partfilters.html">Filtre dielov</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../toolingstatus/index.html">Stav tooling</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../toolingstatus/toolingvalidation/index.html">Validácia tooling</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/bendtooling.html">Validácia tooling ohýbania</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/cuttooling.html">Validácia tooling rezania</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/foldtooling.html">Validácia tooling skladania</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../toolingstatus/toolingpanel.html">Panel tooling</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../savingfilters.html">Ukladanie filtrov</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Objednávky</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Zobrazenie objednávok</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Úlohy job</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Vytvorenie úlohy job</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Zobrazenie úloh job</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Panel úlohy job</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Automatické plánovanie</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Interaktívny nesting</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Prebaľovanie</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Správa nestov</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Zobrazenie rozloženia</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Panel rozloženia</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Odosielanie reportov</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Správa zvyškov</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Automatické zvyšky</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Manuálne zvyšky</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Nesting Twinline</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Neaktuálne</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Filtre úloh job</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../factory/index.html">Továreň</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">Trasy</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/sheets.html">Tabule</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">Používatelia</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/edit.html">Úprava</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">Zákazníci</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">Nastavenia</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">Nastavenia prostredia</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">Nastavenia importu</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">Nastavenia ohýbania</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">Nastavenia rezania</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">Oznámenia</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">Nastavenia sledovania</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">Nastavenia úloh job</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">Nastavenia reportov</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Firemné informácie</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Knižnica</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Stav dielu</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="partpanel.html">Panel dielu</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Panel dielu</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Táto časť vysvetľuje akcie súvisiace s dielom, ako sú
+<strong>Re-import</strong>, <strong>Re-tool</strong>,
+<strong>Rename</strong>, <strong>Export outputs</strong> atď.,
+ktoré sa používajú na správu inštancií dielov.</p>
+</div>
+<table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="img/partpanel.png" alt="Part panel" width="150">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/document.png" alt="Read-only" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Open in read-only mode for viewing</strong><br>
+Otvorí vybraný diel v režime len na čítanie.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/editicon.png" alt="Edit" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Check-out the document for editing</strong><br>
+Umožňuje úpravu vybraného dielu.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/trash.png" alt="Delete" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Delete</strong><br>
+Odstráni vybraný diel.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>New&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Vybraný diel možno konvertovať na novú objednávku, job alebo zostavu.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Export Outputs</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exportuje výstup dielu do nakonfigurovaného cieľa.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Re-import&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Umožňuje opätovne importovať vybraný diel.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Re-tool&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Umožňuje opätovne spracovať vybraný diel.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Rename&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Slúži na zmenu názvu vybraného dielu.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Assign Material&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Určuje materiál priradený k vybranému dielu.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Assign Customer&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Určuje zákazníka priradeného k vybranému dielu.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Rolling direction</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definuje orientáciu, podľa ktorej je materiál valcovaný. Dostupné možnosti sú <strong>None</strong>, <strong>Horizontal</strong> a <strong>Vertical</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Prev</strong> / <strong>Next</strong> / <strong>Toolings</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Prejde na predchádzajúci alebo nasledujúci diel alebo tooling.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Sort and filter</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pomocou týchto filtrov zobrazíte iné diely, ktoré zdieľajú rovnaký atribút ako vybraný diel: <strong>Same Material</strong>, <strong>Same Customer</strong>, <strong>Same Bend count</strong> alebo <strong>Same State</strong>.</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_re_import">Re-import</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Kliknite pravým tlačidlom myši na ktorýkoľvek diel a kliknite na <strong>Re-import&#8230;&#8203;</strong>.</p>
+</li>
+<li>
+<p>Všetky inštancie tooling vybraného dielu na všetkých strojoch sa vymažú vrátane
+automaticky aj manuálne tooolovaných inštancií.</p>
+</li>
+<li>
+<p>Existujúce výstupné súbory (CAD, Bend a Cut) sa odstránia.</p>
+</li>
+<li>
+<p>Diely sa opätovne importujú a pre všetky stroje sa aplikuje nová CAD validácia
+a toolovanie.</p>
+</li>
+<li>
+<p>Na základe aktualizovaného výsledku tooling sa vytvoria nové výstupné súbory.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_re_tool">Re-tool</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Kliknite pravým tlačidlom myši na ktorýkoľvek diel a kliknite na <strong>Re-tool&#8230;&#8203;</strong>.</p>
+</li>
+<li>
+<p>Všetky stroje sú štandardne začiarknuté a zoskupené ako Laser, Punch, Panel
+a Press brake.</p>
+</li>
+<li>
+<p>Kliknutím na <strong>OK</strong> pokračujte. Týmto sa odstránia automaticky aj manuálne
+toolované inštancie pre vybrané stroje a odstránia sa súvisiace výstupné súbory.</p>
+</li>
+<li>
+<p>Keď je začiarknuté políčko <strong>Retain existing outputs</strong>,
+opätovne sa toolujú iba diely, ktorých výstupy boli odstránené skôr, ostatné
+výstupy zostávajú nedotknuté. Ak nie je začiarknuté, všetky výstupné súbory pre
+vybrané stroje sa odstránia a počas opätovného toolovania sa znovu vygenerujú.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Ak sa pre niektorý stroj zmenili nastavenia CAM, vyberte daný stroj a diely
+opätovne tooolujte (Re-tool).</p>
+</li>
+<li>
+<p>Ak sa nástroj (LTT, razník alebo ohyb) zmenil alebo chýba, aktualizujte stroj a
+opätovne tooolujte iba dotknuté diely.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rename">Rename</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Táto časť vysvetľuje, ako premenovať jeden alebo viacero dielov v JFY Plus.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Kliknite pravým tlačidlom myši na diel a kliknite na <strong>Rename&#8230;&#8203;</strong>.</p>
+</li>
+<li>
+<p>Zobrazí sa potvrdzovací dialóg premenovania s aktuálnym názvom dielu.</p>
+</li>
+<li>
+<p>Zadajte nový názov a kliknite na ikonu zaškrtnutia <strong>✓</strong> na potvrdenie, alebo
+kliknite na ikonu krížika <strong>✗</strong> na zrušenie operácie premenovania.</p>
+</li>
+<li>
+<p>Na premenovanie viacerých dielov vyberte všetky požadované diely, potom kliknite
+pravým tlačidlom myši na ktorýkoľvek z nich a kliknite na <strong>Rename&#8230;&#8203;</strong>.</p>
+</li>
+<li>
+<p>Zobrazí sa potvrdzovací dialóg s celkovým počtom vybraných dielov.</p>
+</li>
+<li>
+<p>Pre každý diel zadajte nový názov a postupne po jednom potvrďte kliknutím na
+ikonu zaškrtnutia <strong>✓</strong>.</p>
+</li>
+<li>
+<p>Ak bol niektorý diel vybraný omylom, kliknite na ikonu krížika <strong>✗</strong> na zrušenie.
+Prípadne môžete kliknuť pravým tlačidlom myši na diel a kliknite na
+<strong>Cancel Rename</strong> na preskočenie premenovania.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_export_outputs">Export outputs</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Táto možnosť exportuje výstup dielu do cieľa nakonfigurovaného v
+<strong>Factory Settings</strong>. (Pozri
+<a href="../../factory/settings/bend.html">Bend Settings</a> a
+<a href="../../factory/settings/cut.html">Cut Settings</a>)</p>
+</div>
+<div class="paragraph">
+<p>Umiestnenie výstupu je definované samostatne pre Bend, Fold a Cut v ich
+príslušných nastaveniach výstupu. Exportujú sa všetky tooling súvisiace s
+operáciami ohýbania, skladania a rezania pre celý diel.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Exportované súbory závisia od typu operácie. Pre operácie Bend a Fold sa
+generujú NC súbory a reporty. Pre operácie Cut a Punch sa exportujú iba súbory
+dielu.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_priradenie_materiálu_k_dielu">Priradenie materiálu k dielu</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Diely so stavom <strong>Material not assigned</strong> je potrebné
+aktualizovať pred ďalším spracovaním. Nasledujúce kroky vysvetľujú, ako priradiť
+materiál.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Kliknite pravým tlačidlom myši na diel, ktorý zobrazuje stav
+<strong>Material not assigned</strong>, a vyberte
+<strong>Assign Material&#8230;&#8203;</strong>.</p>
+</li>
+<li>
+<p>Otvorí sa okno <strong>Assign Material</strong>.</p>
+</li>
+<li>
+<p>Dialóg má štyri časti:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Suggestions</strong> - Automaticky navrhuje surovinu
+na základe hrúbky importovaného dielu.</p>
+</li>
+<li>
+<p><strong>All Materials</strong> - Zobrazuje všetky typy materiálov
+definované v JFY Plus.</p>
+</li>
+<li>
+<p><strong>All Raw-Materials</strong> - Zobrazuje všetky suroviny
+dostupné v systéme.</p>
+</li>
+<li>
+<p><strong>Used Raw-Materials</strong> - Zobrazuje naposledy použité
+suroviny pre rýchly prístup.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Na rýchle vyhľadanie materiálov môžete použiť pole <strong>Search</strong> v hornej
+časti. Napríklad zadajte „steel“ na zobrazenie všetkých zodpovedajúcich materiálov
+vo všetkých troch častiach.</p>
+</li>
+<li>
+<p>Z vyfiltrovaného zoznamu vyberte požadovaný materiál (napr. Steel-25) zo zoznamu
+surovín.</p>
+</li>
+<li>
+<p>Vybraný materiál sa priradí k dielu.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rolling_direction">Rolling direction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Rolling direction</strong> označuje orientáciu valcovania v diele,
+ktorá môže ovplyvniť spôsob rezania a spracovania dielu. Táto možnosť vám
+umožňuje určiť <strong>Rolling direction</strong> pre diel v knižnici dielov.
+Na základe vybraného smeru sa diel umiestni v správnej orientácii na rezanie na
+dostupných strojoch.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Kliknite pravým tlačidlom myši na ktorúkoľvek dlaždicu dielu v knižnici dielov
+alebo v okne jobu.</p>
+</li>
+<li>
+<p>Vyberte preferovaný smer valcovania:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>None</strong></p>
+</li>
+<li>
+<p><strong>Horizontal</strong></p>
+</li>
+<li>
+<p><strong>Vertical</strong></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Diel sa automaticky opätovne tooluje pre všetky dostupné stroje na rezanie na
+základe vybraného smeru valcovania.</p>
+</li>
+<li>
+<p>Dlaždica dielu zobrazí vybraný smer valcovania, ako je znázornené nižšie:</p>
+<div class="paragraph">
+<p><span class="image"><img src="img/none.png" alt="None" width="270"></span> <span class="image"><img src="img/horizontal.png" alt="Horizontal" width="270"></span>
+<span class="image"><img src="img/vertical.png" alt="Vertical" width="270"></span></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_re_import">Re-import</a>
+  </li>
+  <li level="1">
+   <a href="#_re_tool">Re-tool</a>
+  </li>
+  <li level="1">
+   <a href="#_rename">Rename</a>
+  </li>
+  <li level="1">
+   <a href="#_export_outputs">Export outputs</a>
+  </li>
+  <li level="1">
+   <a href="#_priradenie_materiálu_k_dielu">Priradenie materiálu k dielu</a>
+  </li>
+  <li level="1">
+   <a href="#_rolling_direction">Rolling direction</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="partvalidation.html">Validácia dielu</a></span>
+ <span class="next"><a href="partfilters.html">Filtre dielov</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

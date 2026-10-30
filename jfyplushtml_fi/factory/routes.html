@@ -1,0 +1,374 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../img/praxis-icon.png">
+  <title>Reitit</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">Tervetuloa JFY Plus-ohjelmaan</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../installation/index.html">Asennus</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../installation/hardwarerequirement.html">Laitteistovaatimukset</a></li>
+    <li><button class="tree blank"></button><a href="../installation/importformats.html">Tuetut tiedostomuodot</a></li>
+    <li><button class="tree blank"></button><a href="../installation/prerequisites.html">Esivaatimukset</a></li>
+    <li><button class="tree blank"></button><a href="../installation/changelic.html">Lisenssin vaihtaminen</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../configuration/index.html">Määritykset</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../configuration/setupmachine.html">Lisää/poista kone</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/setuptooling.html">Työstöasetukset</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/configureusers.html">Määritä käyttäjät</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/language.html">Kieli</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../configuration/addmaterial/index.html">Työaine</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/addnew.html">Lisää uusi työaine ja levy</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/exportimport.html">Vie/tuo työaine</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/replacematerial.html">Korvaa työaine</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../configuration/mapbendpages.html">Yhdistä työaine</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../userinterface.html">Käyttöliittymä</a></li>
+  <li><button class="tree blank"></button><a href="../workflow.html">Työnkulku</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../library/index.html">Kirjasto</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/open/index.html">Avaaminen</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/open/partimport.html">Osien tuonti</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/orderimport.html">Työtehtävien tuonti</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/jobimport.html">Töiden tuonti</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/assembliesimport.html">Rakenneryhmien tuonti</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/libraryview/index.html">Kirjastonäkymä</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/libraryview/partview.html">Osat</a></li>
+      <li><button class="tree blank"></button><a href="../library/libraryview/assemblyview.html">Rakenneryhmä</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/partstate/index.html">Osan tila</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/partstate/partvalidation.html">Osan validointi</a></li>
+      <li><button class="tree blank"></button><a href="../library/partstate/partpanel.html">Osapaneeli</a></li>
+      <li><button class="tree blank"></button><a href="../library/partstate/partfilters.html">Osasuodattimet</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/toolingstatus/index.html">Työstön tila</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../library/toolingstatus/toolingvalidation/index.html">Työstön validointi</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/bendtooling.html">Taivutustyöstöjen validointi</a></li>
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/cuttooling.html">Leikkaustyöstöjen validointi</a></li>
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/foldtooling.html">Taittotyöstöjen validointi</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingpanel.html">Työstöpaneeli</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../library/savingfilters.html">Suodattimien tallentaminen</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../orders/index.html">Työtehtävät</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../orders/ordersview.html">Työtehtävänäkymä</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../jobs/index.html">Työt</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../jobs/jobcreation.html">Luo työ</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobview.html">Työnäkymä</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobpanel.html">Työpaneeli</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobautoplan.html">Automaattinen suunnittelu</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobinteractplan.html">Interaktiivinen nestaus</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/repacking.html">Uudelleenpakkaus</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../jobs/layoutcommands/index.html">Nestauksen hallinta</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../jobs/layoutcommands/nestview.html">Sijoittelunäkymä</a></li>
+      <li><button class="tree blank"></button><a href="../jobs/layoutcommands/layoutpanel.html">Sijoittelupaneeli</a></li>
+      <li><button class="tree blank"></button><a href="../jobs/layoutcommands/reportsender.html">Raporttien lähettäminen</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../jobs/remnantmanagement/index.html">Jäännöslevyjen hallinta</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../jobs/remnantmanagement/autoremnant.html">Automaattinen jäännöslevyjen hallinta</a></li>
+      <li><button class="tree blank"></button><a href="../jobs/remnantmanagement/manualremnant.html">Manuaalinen jäännöslevyjen hallinta</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../jobs/twinlinenesting.html">TwinLine-nestaus</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/outdate.html">Vanhentunut</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobfilters.html">Työn suodattimet</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">Tehdas</a>
+   <ul>
+    <li><button class="tree blank"></button><a class="active" href="routes.html">Reitit</a></li>
+    <li><button class="tree blank"></button><a href="sheets.html">Levyt</a></li>
+    <li><button class="tree blank"></button><a href="users.html">Käyttäjät</a></li>
+    <li><button class="tree blank"></button><a href="edit.html">Muokkaa</a></li>
+    <li><button class="tree blank"></button><a href="customers.html">Asiakkaat</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="settings/index.html">Asetukset</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="settings/environment.html">Ympäristö</a></li>
+      <li><button class="tree blank"></button><a href="settings/import.html">Tuonti</a></li>
+      <li><button class="tree blank"></button><a href="settings/bend.html">Taivutus</a></li>
+      <li><button class="tree blank"></button><a href="settings/cut.html">Leikkaus</a></li>
+      <li><button class="tree blank"></button><a href="settings/notification.html">Ilmoitukset</a></li>
+      <li><button class="tree blank"></button><a href="settings/watch.html">Valvontatoiminto</a></li>
+      <li><button class="tree blank"></button><a href="settings/job.html">Työ</a></li>
+      <li><button class="tree blank"></button><a href="settings/reports.html">Raportit</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../impressum.html">Yritystiedot</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Tehdas</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="routes.html">Reitit</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Reitit</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Lisenssistäsi riippuen JFY Plus sisältää oletusjoukon CAM-koneita ja
+reititysmäärityksiä. Voit mukauttaa nämä määritykset vastaamaan
+yrityskohtaisia valmistustyönkulkujasi.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/station.png" alt="Station" width="882">
+</div>
+</div>
+<div class="paragraph">
+<p>Reitit-sivulla koneet esitetään käsittelyasemina, joista kukin
+tunnistetaan kuvan ja nimen perusteella.</p>
+</div>
+<div class="paragraph">
+<p>Reitit yhdistävät asemat ja näyttävät mahdolliset työnkulkupolut, joita osa voi
+noudattaa alusta loppuun. Voit tarkastella aseman ominaisuuksia viemällä
+hiiren aseman päälle.</p>
+</div>
+<div class="paragraph">
+<p>Asemaa napsauttamalla avautuu paneeli, jossa on yksityiskohtaiset tiedot
+kyseisestä asemasta, mukaan lukien sen nimi, tyyppi ja käytettävyystila.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Muokataksesi aseman käytettävyyttä napsauta asemaa ja
+kytke <strong>Enabled</strong> -valintaruutu paneelissa.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_reittimääritysten_vientituonti">Reittimääritysten vienti/tuonti</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Export/Import</strong> -toiminnon avulla käyttäjät voivat tallentaa nykyiset
+reititysmäärityksensä ja soveltaa niitä muihin projekteihin tai instansseihin.</p>
+</div>
+<div class="sect2">
+<h3 id="_cad_reittien_vienti">CAD-reittien vienti</h3>
+<div class="paragraph">
+<p>Napsauta <strong>Export CAD routes&#8230;&#8203;</strong> tallentaaksesi kaikki nykyiset reitin ehtosäännöt CSV-tiedostoon.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/exportroutes.png" alt="ExportRoutes">
+</div>
+</div>
+<div class="paragraph">
+<p>CSV-tiedosto luettelee materiaalit ja niiden reititysehdot.
+Sarakkeet edustavat koneiden nimiä ja ehtoja (esim. Material, SpecialTool, HasBend, MaxBendLength).
+Arvo 1 osoittaa reitityksen koneelle; tyhjä solu tarkoittaa, ettei reititystä ole.</p>
+</div>
+<div class="paragraph">
+<p>Voit muokata tätä CSV-tiedostoa ja tuoda sen uudelleen järjestelmään.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cad_reittien_tuonti">CAD-reittien tuonti</h3>
+<div class="paragraph">
+<p>Käytä <strong>Import CAD routes&#8230;&#8203;</strong> -toimintoa muokatun CSV-tiedoston soveltamiseen.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Suorita ennen tuontia <strong>Reset CAD routes</strong> tyhjentääksesi olemassa olevat määritykset.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Järjestelmä lukee tiedoston ja päivittää reitin ehdot. Säännöt voivat sisältää
+ehtoja, kuten HasBend ja MaxBendLength.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/hasbend.png" alt="HasBend">
+</div>
+</div>
+<div class="paragraph">
+<p>Jos <code>HasBend = 1</code>, sääntö koskee osia, joissa on taivutuksia.<br>
+Jos <code>MaxBendLength =1</code>, sääntö rajoittaa lisäksi osan pisimmän taivutuksen pituuden perusteella.</p>
+</div>
+<div class="paragraph">
+<div class="title">Esimerkki 1</div>
+<p>Osalla 00.13 on pisin taivutus 500 mm. Se vastaa ensimmäistä sääntöä, joten TBC-5030-V2 jätetään pois.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/supressed.png" alt="Suppressed" width="580">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cad_reittien_palauttaminen">CAD-reittien palauttaminen</h3>
+<div class="paragraph">
+<p>Käytä <strong>Reset CAD routes</strong> -toimintoa tyhjentääksesi kaikki olemassa olevat määritykset ennen uuden CSV-tiedoston tuontia.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Jos tuot tiedoston nollaamatta, vanhat säännöt voivat olla ristiriidassa uusien kanssa.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_reittimääritysten_vientituonti">Reittimääritysten vienti/tuonti</a>
+  </li>
+  <li level="2">
+   <a href="#_cad_reittien_vienti">CAD-reittien vienti</a>
+  </li>
+  <li level="2">
+   <a href="#_cad_reittien_tuonti">CAD-reittien tuonti</a>
+  </li>
+  <li level="2">
+   <a href="#_cad_reittien_palauttaminen">CAD-reittien palauttaminen</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="index.html">Tehdas</a></span>
+ <span class="next"><a href="sheets.html">Levyt</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

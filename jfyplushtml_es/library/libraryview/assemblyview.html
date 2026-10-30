@@ -1,0 +1,585 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Montaje</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Bienvenido a JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Instalación</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Requisitos de hardware</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Formatos de archivo compatibles</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Requisitos previos</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Cambiar licencia</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Configuración</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Añadir/eliminar máquina</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Configurar utillaje</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Configurar usuarios</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Idioma</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Material</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Añadir nuevo material y chapa</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Exportar/importar material</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Reemplazar material</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Asignar material</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">La interfaz de usuario</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Flujo de trabajo</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Biblioteca</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../open/index.html">Abrir</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../open/partimport.html">Importar piezas</a></li>
+      <li><button class="tree blank"></button><a href="../open/orderimport.html">Importar pedidos</a></li>
+      <li><button class="tree blank"></button><a href="../open/jobimport.html">Importar tareas</a></li>
+      <li><button class="tree blank"></button><a href="../open/assembliesimport.html">Importar montajes</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Vista de biblioteca</a>
+     <ul>
+      <li><button class="tree blank"></button><a href="partview.html">Piezas</a></li>
+      <li><button class="tree blank"></button><a class="active" href="assemblyview.html">Montaje</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../partstate/index.html">Estado de pieza</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../partstate/partvalidation.html">Validación de piezas</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partpanel.html">Panel de piezas</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partfilters.html">Filtros de piezas</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../toolingstatus/index.html">Estado de utillaje</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../toolingstatus/toolingvalidation/index.html">Validación de utillaje</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/bendtooling.html">Validación del utillaje de plegado</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/cuttooling.html">Validación del utillaje de corte</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/foldtooling.html">Validación del utillaje de plegado con paneladora</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../toolingstatus/toolingpanel.html">Panel de utillaje</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../savingfilters.html">Guardar filtros</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Pedidos</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Vista de pedidos</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Tareas</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Crear tarea</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Vista de tareas</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Panel de tareas</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Planificación automática</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Anidamiento interactivo</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Reempaquetado</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Gestión de anidamientos</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Vista de diseño</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Panel de diseño</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Envío de informes</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Gestión de restos</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Gestión automática de restos</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Gestión manual de restos</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Anidamiento TwinLine</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Obsoleto</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Filtros de tareas</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../factory/index.html">Fábrica</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">Rutas</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/sheets.html">Chapas</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">Usuarios</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/edit.html">Editar</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">Clientes</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">Ajustes</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">Entorno</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">Import</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">Plegado</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">Corte</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">Notificaciones</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">Visualización</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">Job</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">Informes</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Información corporativa</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Biblioteca</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Vista de biblioteca</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="assemblyview.html">Montaje</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Montaje</h1>
+<div class="sect1">
+<h2 id="_crear_nestings_estáticos_a_partir_de_un_montaje">Crear nestings estáticos a partir de un montaje</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Se pueden generar nestings estáticos para un montaje mediante el asistente de
+nesting interactivo. Estos nestings son diseños fijos asociados únicamente al
+montaje seleccionado.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Cambie a la vista <strong>assys</strong>.</p>
+</li>
+<li>
+<p>Haga clic con el botón derecho en el montaje requerido y seleccione
+<strong>Create Nests&#8230;&#8203;</strong>.</p>
+</li>
+<li>
+<p>Se abre el asistente de nesting interactivo.</p>
+</li>
+<li>
+<p>De forma predeterminada, el asistente de nesting interactivo cambia a la
+página <strong>Select Machine &amp; Material</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/assemblyinteractive.png" alt="Machine and material" width="950">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Las máquinas se muestran con barras de color que indican la carga de producción
+disponible:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Barra verde: horas programadas</p>
+</li>
+<li>
+<p>Barra gris: horas disponibles (de un turno de 8 horas)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Bajo cada máquina, las piezas seleccionadas se agrupan con su materia prima
+(Piezas/Cantidad total).</p>
+</li>
+<li>
+<p>Si una pieza no tiene una solución de utillaje válida para una máquina, esa
+pieza y ese material se ignoran para el procesamiento en esa máquina.</p>
+</li>
+<li>
+<p>Si se selecciona una materia prima para una máquina, no estará disponible para
+otras máquinas.</p>
+</li>
+<li>
+<p>Una vez definido el plan de nesting de la máquina, seleccione la chapa preferida
+y anule los parámetros de chapa como <strong>Priority</strong>,
+<strong>Quantity</strong>, <strong>Margins</strong>, etc.</p>
+</li>
+<li>
+<p>Puede filtrar las chapas para mostrar <strong>All Sheets</strong>,
+<strong>Standard Sheets</strong> o
+<strong>Remnant Sheets</strong>. Haga clic en <strong>next</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+No es posible aumentar las cantidades en esta fase. Puede mantener la misma
+cantidad que el inventario de chapas o reducirla y comprobar los resultados del
+nesting.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Update Qty</strong> aparece en la ventana del plan de nesting
+interactivo.</p>
+</li>
+<li>
+<p>De forma predeterminada, <strong>Pick All (F5)</strong> incluye todas las
+piezas para el nesting, o puede seleccionar manualmente las piezas prioritarias y
+ajustar sus cantidades. Haga clic en <strong>next</strong>.</p>
+</li>
+<li>
+<p>El nesting comienza y las piezas anidadas en la chapa se actualizan con el
+estado de color azul.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/assemblyresult.png" alt="Nesting result">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>La carga de producción de la máquina se actualiza en función del resultado del
+nesting.</p>
+</li>
+<li>
+<p>Si algunas piezas permanecen sin anidar, aparece el mensaje
+<strong>Some parts remain unnested</strong>: estas piezas permanecen en la
+tarea original.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Una pieza puede permanecer sin anidar si no hay ninguna chapa adecuada
+disponible.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Los nestings estáticos se pueden editar para incluir piezas sin anidar:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Seleccione el diseño donde desea insertar las piezas sin anidar y desprotéjalo
+para editarlo.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/assemblylayout.png" alt="Selected layout">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Se abre JFY Core. Haga clic en <strong>Pick</strong> o
+<strong>Pick All</strong> para seleccionar las piezas sin anidar del
+montaje principal.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/addnest.png" alt="Add unnested parts" width="864">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Coloque la pieza en el diseño según sea necesario.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/unnest.png" alt="Unnested part placement" width="715">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Los nestings generados se nombran automáticamente según el montaje principal
+para facilitar su identificación.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Los nestings estáticos no pueden contener piezas de otros montajes. Permitir
+nestings de montajes mixtos impediría liberar un montaje sin liberar los demás,
+por lo que la mezcla está deshabilitada por diseño.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_componentes_que_no_son_de_chapa_metálica">Componentes que no son de chapa metálica</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Cuando se importa un montaje, las piezas de chapa metálica se extraen y se
+añaden a los montajes en la biblioteca de piezas.</p>
+</li>
+<li>
+<p>Los componentes que no son de chapa metálica se separan y se añaden a los
+<strong>Components</strong>.</p>
+</li>
+<li>
+<p>El montaje se añade a la biblioteca de montajes y su BOM
+(lista de materiales) contiene tanto piezas como componentes.</p>
+</li>
+<li>
+<p>Si una pieza ya se ha importado como pieza de chapa metálica, el sistema
+actualiza la entrada existente y elimina los duplicados de la biblioteca de
+piezas.</p>
+</li>
+<li>
+<p>Al seleccionar un montaje se muestran tanto las piezas como los componentes,
+con las cantidades de componentes mostradas bajo la imagen del componente
+(recuento de componentes del montaje seleccionado y recuento total de
+componentes).</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/components.png" alt="Assembly components" width="999">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>La información emergente de los componentes muestra el nombre, el material y el
+tamaño. Los componentes se excluyen durante la producción: no se anidan y no se
+generan chapas para los componentes.</p>
+</li>
+<li>
+<p>Los montajes y componentes de ejemplo están disponibles en:
+que se pueden utilizar para probar la importación de componentes y los flujos de
+trabajo de montaje.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_crear_una_tarea_a_partir_de_un_montaje">Crear una tarea a partir de un montaje</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Haga clic con el botón derecho en el montaje, haga clic en <strong>New&#8230;&#8203;</strong> y
+luego en <strong>Job</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/newassemblyjob.png" alt="Create new job" width="760">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>En el cuadro de diálogo New Job, establezca el recuento del montaje, haga clic
+en <strong>OK</strong> y luego actualice los detalles de la tarea (como la fecha de
+vencimiento y la prioridad) según sea necesario.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/riegelwindow.png" alt="New job dialog" width="369">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>El sistema crea una tarea a partir del montaje y copia los nestings estáticos
+como nestings de tarea, actualizando los recuentos de chapas. Los nestings
+copiados llevan como prefijo el ID de la tarea.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/assemblycreated.png" alt="Assembly job created" width="999">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Los nestings de tarea se pueden editar o eliminar sin afectar a los nestings
+estáticos originales.</p>
+</li>
+<li>
+<p>Los nestings de tarea se pueden reempaquetar mediante
+<strong>Adapt/Compact&#8230;&#8203;</strong> o <strong>Add parts&#8230;&#8203;</strong>.</p>
+</li>
+<li>
+<p>Para conocer los pasos detallados, consulte
+<a href="../../jobs/layoutcommands/layoutpanel.html#adapt-compact">Adaptar/compactar</a> y
+<a href="../../jobs/layoutcommands/layoutpanel.html#add-parts">Añadir piezas</a>.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Si una pieza no aparece en un nesting, compruebe el cuadro de diálogo de edición
+del nesting: puede insertar manualmente las piezas sin anidar.</p>
+</div>
+<div class="paragraph">
+<p>Utilice búsquedas y filtros guardados para encontrar rápidamente piezas en varios
+montajes.</p>
+</div>
+<div class="paragraph">
+<p>Utilice nombres de montaje y nesting claros y descriptivos para evitar confusiones
+al copiar nestings en las tareas.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_crear_nestings_estáticos_a_partir_de_un_montaje">Crear nestings estáticos a partir de un montaje</a>
+  </li>
+  <li level="1">
+   <a href="#_componentes_que_no_son_de_chapa_metálica">Componentes que no son de chapa metálica</a>
+  </li>
+  <li level="1">
+   <a href="#_crear_una_tarea_a_partir_de_un_montaje">Crear una tarea a partir de un montaje</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="partview.html">Piezas</a></span>
+ <span class="next"><a href="../partstate/index.html">Estado de pieza</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

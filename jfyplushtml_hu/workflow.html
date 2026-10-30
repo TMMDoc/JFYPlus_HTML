@@ -1,0 +1,441 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="res/bento.css">
+  <link rel="stylesheet" href="res/site.css">
+  <link rel="stylesheet" href="res/tree.css">
+  <link rel="stylesheet" href="res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="img/praxis-icon.png">
+  <title>Munkafolyamat</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="index.html">Üdvözli a JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="installation/index.html">Telepítés</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="installation/hardwarerequirement.html">Hardverkövetelmények</a></li>
+    <li><button class="tree blank"></button><a href="installation/importformats.html">Támogatott fájlformátumok</a></li>
+    <li><button class="tree blank"></button><a href="installation/prerequisites.html">Előfeltételek</a></li>
+    <li><button class="tree blank"></button><a href="installation/changelic.html">Licenc módosítása</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="configuration/index.html">Konfiguráció</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="configuration/setupmachine.html">Gép hozzáadása/eltávolítása</a></li>
+    <li><button class="tree blank"></button><a href="configuration/setuptooling.html">Felszerszámozás konfigurálása</a></li>
+    <li><button class="tree blank"></button><a href="configuration/configureusers.html">Felhasználók konfigurálása</a></li>
+    <li><button class="tree blank"></button><a href="configuration/language.html">Nyelv</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="configuration/addmaterial/index.html">Anyag</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="configuration/addmaterial/addnew.html">Új anyag és lemeztábla hozzáadása</a></li>
+      <li><button class="tree blank"></button><a href="configuration/addmaterial/exportimport.html">Anyag exportálása/importálása</a></li>
+      <li><button class="tree blank"></button><a href="configuration/addmaterial/replacematerial.html">Anyag cseréje</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="configuration/mapbendpages.html">Anyag leképezése</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="userinterface.html">A felhasználói felület</a></li>
+  <li><button class="tree blank"></button><a class="active" href="workflow.html">Munkafolyamat</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="library/index.html">Könyvtár</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="library/open/index.html">Megnyitás</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="library/open/partimport.html">Alkatrészek importálása</a></li>
+      <li><button class="tree blank"></button><a href="library/open/orderimport.html">Megrendelések importálása</a></li>
+      <li><button class="tree blank"></button><a href="library/open/jobimport.html">Feladatok importálása</a></li>
+      <li><button class="tree blank"></button><a href="library/open/assembliesimport.html">Részegységek importálása</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="library/libraryview/index.html">Könyvtár nézet</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="library/libraryview/partview.html">Alkatrészek</a></li>
+      <li><button class="tree blank"></button><a href="library/libraryview/assemblyview.html">Részegység</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="library/partstate/index.html">Alkatrész állapota</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="library/partstate/partvalidation.html">Alkatrész ellenőrzése</a></li>
+      <li><button class="tree blank"></button><a href="library/partstate/partpanel.html">Alkatrész panel</a></li>
+      <li><button class="tree blank"></button><a href="library/partstate/partfilters.html">Alkatrészszűrők</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="library/toolingstatus/index.html">Felszerszámozás állapota</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="library/toolingstatus/toolingvalidation/index.html">Felszerszámozás ellenőrzése</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="library/toolingstatus/toolingvalidation/bendtooling.html">Hajlítási felszerszámozás ellenőrzése</a></li>
+        <li><button class="tree blank"></button><a href="library/toolingstatus/toolingvalidation/cuttooling.html">Vágási felszerszámozás ellenőrzése</a></li>
+        <li><button class="tree blank"></button><a href="library/toolingstatus/toolingvalidation/foldtooling.html">Falcolási felszerszámozás ellenőrzése</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="library/toolingstatus/toolingpanel.html">Felszerszámozási panel</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="library/savingfilters.html">Szűrők mentése</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="orders/index.html">Megrendelések</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="orders/ordersview.html">Megrendelések nézet</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="jobs/index.html">Feladatok</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="jobs/jobcreation.html">Feladat létrehozása</a></li>
+    <li><button class="tree blank"></button><a href="jobs/jobview.html">Feladatok nézet</a></li>
+    <li><button class="tree blank"></button><a href="jobs/jobpanel.html">Feladat panel</a></li>
+    <li><button class="tree blank"></button><a href="jobs/jobautoplan.html">Automatikus tervezés</a></li>
+    <li><button class="tree blank"></button><a href="jobs/jobinteractplan.html">Interaktív táblásítás</a></li>
+    <li><button class="tree blank"></button><a href="jobs/repacking.html">Újracsomagolás</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="jobs/layoutcommands/index.html">Táblaterv-kezelés</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="jobs/layoutcommands/nestview.html">Elrendezés nézet</a></li>
+      <li><button class="tree blank"></button><a href="jobs/layoutcommands/layoutpanel.html">Elrendezés panel</a></li>
+      <li><button class="tree blank"></button><a href="jobs/layoutcommands/reportsender.html">Jelentésküldő</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="jobs/remnantmanagement/index.html">Maradékkezelés</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="jobs/remnantmanagement/autoremnant.html">Automatikus maradékkezelés</a></li>
+      <li><button class="tree blank"></button><a href="jobs/remnantmanagement/manualremnant.html">Kézi maradékkezelés</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="jobs/twinlinenesting.html">Twin-line táblásítás</a></li>
+    <li><button class="tree blank"></button><a href="jobs/outdate.html">Elavult</a></li>
+    <li><button class="tree blank"></button><a href="jobs/jobfilters.html">Feladatszűrők</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="factory/index.html">Gyár</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="factory/routes.html">Útvonalak</a></li>
+    <li><button class="tree blank"></button><a href="factory/sheets.html">Lemeztáblák</a></li>
+    <li><button class="tree blank"></button><a href="factory/users.html">Felhasználók</a></li>
+    <li><button class="tree blank"></button><a href="factory/edit.html">Szerkesztés</a></li>
+    <li><button class="tree blank"></button><a href="factory/customers.html">Ügyfelek</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="factory/settings/index.html">Beállítások</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="factory/settings/environment.html">Környezet</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/import.html">Importálás</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/bend.html">Hajlítás</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/cut.html">Vágás</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/notification.html">Értesítések</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/watch.html">Megtekintés</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/job.html">Feladat</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/reports.html">Jelentések</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="impressum.html">Céginformáció</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="workflow.html">Munkafolyamat</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Munkafolyamat</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>A JFY Plus egy gyártásvégrehajtási rendszer, amely a fémlemez-gyártási
+folyamatokat kezeli és optimalizálja. A JFY Plus rendszerben a munkafolyamat
+lépések sorozatából áll, amelyeket egy adott feladat vagy folyamat elvégzéséhez
+követ. A munkafolyamatot testreszabhatja a különböző gyártási folyamatokhoz és
+az ön saját igényeihez igazíthatja. A JFY Plus rendszerben a munkafolyamat
+tipikusan a következő lépéseket tartalmazza:</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_1_a_rendszer_konfigurálása">1. A rendszer konfigurálása</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Konfigurálja a JFY Plus rendszert a gyártási környezetéhez. Ez az alapvető
+lépés magában foglalja a gépek definiálását azok képességeivel és paramétereivel,
+az elérhető anyagok és vastagságtartományok hozzáadását, a felszerszámozási
+könyvtárak konfigurálását lyukasztókkal és matricákkal, a különböző
+gépkonfigurációkhoz tartozó beállítási lapok létrehozását, valamint a
+felhasználói fiókok kezelését a megfelelő jogosultságokkal. A megfelelően
+konfigurált rendszer pontos feldolgozást biztosít és megelőzi a hibákat a későbbi
+szakaszokban. Ez a beállítás tipikusan egyszer történik a kezdeti telepítés
+során, időszakos frissítésekkel, ahogy a gyára fejlődik.</p>
+</div>
+<div class="paragraph">
+<p>További információért lásd: <a href="configuration/setupmachine.html">Gép
+hozzáadása/eltávolítása</a>, <a href="configuration/addmaterial/index.html">Anyag</a>,
+<a href="factory/sheets.html">Lemeztáblák</a>, <a href="configuration/setuptooling.html">Felszerszámozás
+beállítása</a>, és <a href="configuration/configureusers.html">Felhasználók konfigurálása</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/setup.png" alt="Beállítás" width="817">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2_alkatrészek_hozzáadása_a_könyvtárhoz">2. Alkatrészek hozzáadása a könyvtárhoz</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Importáljon 2D vagy 3D CAD alkatrészeket az alkatrészkönyvtárba a támogatott
+formátumok, például DXF, DWG vagy STEP fájlok használatával. Az importálás során
+a JFY Plus automatikusan elemzi az alkatrész geometriáját, ellenőrzi a
+gyárthatóságot, hozzárendeli a szükséges fémlemez-technológiát (lézer,
+lyukasztás vagy kombináció), és előnézeti miniűröket generál. Az importált
+alkatrészek csempékként jelennek meg a könyvtár nézetben, ahol a színkódolt
+ikonok jelzik az alkatrész állapotát, a technológia típusát, az
+anyagkövetelményeket és az esetleg észlelt problémákat. Ez a vizuális rendszer
+lehetővé teszi az alkatrészek készenléti állapotának gyors felmérését egyetlen
+pillantással.</p>
+</div>
+<div class="paragraph">
+<p>További információért lásd: <a href="library/index.html">Könyvtár</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/importparts.png" alt="Importálás" width="476">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_alkatrészek_és_felszerszámozás_ellenőrzése">3. Alkatrészek és felszerszámozás ellenőrzése</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Tekintse át minden importált alkatrészt az esetleges gyártási problémák
+szempontjából. Ellenőrizze, hogy az alkatrész geometriája érvényes és gyártható-e,
+a felszerszámozási hozzárendelések helyesek és elérhetők-e, az anyag- és
+vastagságválasztások megfelelnek-e a készletnek, és a hajlítási sorrendek
+megfelelően vannak-e definiálva a formázott alkatrészekhez. Ha problémákat észlel,
+nyissa meg az alkatrészt a JFY Core programban a geometria módosításához, a
+felszerszámozás újra hozzárendeléséhez vagy optimalizálásához, a feldolgozási
+paraméterek módosításához vagy az anyagspecifikációk javításához. A problémák
+ebben a szakaszban történő megoldása megelőzi a gyártási késedelmeket és csökkenti
+a selejtet a gyártás során.</p>
+</div>
+<div class="paragraph">
+<p>További információért lásd: <a href="library/partstate/index.html">Alkatrész állapota</a>
+és <a href="library/toolingstatus/index.html">Felszerszámozás állapota</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/toolingcheck.png" alt="Felszerszámozás" width="1078">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_alkatrészek_feladatokba_rendezése">4. Alkatrészek feladatokba rendezése</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Csoportosítsa az érvényesített alkatrészeket feladatokba a gyártási
+követelmények alapján. Egy feladat olyan logikai gyártási egységet képvisel, amely
+tartalmazhat egyetlen ügyfélmegrendelésből származó alkatrészeket, közös anyagot
+és vastagságot megosztó alkatrészeket, hasonló szállítási határidőkkel
+rendelkező alkatrészeket, vagy ezek kombinációját a gyártási stratégiája alapján.
+A feladatok tárolót biztosítanak a tervezéshez, lehetővé teszik a kapcsolódó
+alkatrészek kötegelt feldolgozását, hatékony anyagfelhasználást tesznek lehetővé a
+táblásítás révén, és egyszerűsítik a követést és a jelentéskészítést. A feladatok
+létrehozhatók manuálisan alkatrészek kiválasztásával, vagy automatikusan
+előre meghatározott szabályok és szűrők alapján.</p>
+</div>
+<div class="paragraph">
+<p>További információért lásd: <a href="jobs/index.html">Feladatok</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/jobs.png" alt="Jobs" width="578">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_5_feladatok_tervezése_gyártógépekhez">5. Feladatok tervezése gyártógépekhez</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Miután egy feladat létrejött, rendelje hozzá egy megfelelő gyártógéphez. Vegye
+figyelembe a gép képességeit, beleértve a támogatott technológiákat (lézer,
+lyukasztás, revolverfej), az anyag- és vastagságkapacitást, az elérhető
+felszerszámozást és az aktuális munkaterhelést. Ha több megfelelő gép is létezik,
+válasszon a gyártási prioritás, a gép rendelkezésre állása, a beállítási
+követelmények vagy a költségoptimalizálás alapján. A hozzárendelés lehet manuális
+a rugalmasság érdekében, vagy automatikus előre konfigurált szabályok és
+gépütemezési algoritmusok alapján.</p>
+</div>
+<div class="paragraph">
+<p>További információért lásd: <a href="jobs/jobautoplan.html">Feladat tervezése</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/machineselect.png" alt="MachineSelect" width="695">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_6_nc_felszabadítása_a_feladatokhoz">6. NC felszabadítása a feladatokhoz</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Ebben a szakaszban a vágási elrendezések generálásra kerülnek. Az elrendezéseket
+még szerkesztheti, és vágási technológiákat adhat az elrendezéshez a JFY Core
+segítségével. Ezután exportálja az NC kimenetet és továbbítsa a gépvezérlőnek vagy
+egy kijelölt hálózati helyre. A feladat ezután zárolásra kerül a további
+módosítások megelőzése érdekében, és állapota „Felszabadítva” értékre változik a
+gyártáskövetéshez.</p>
+</div>
+<div class="paragraph">
+<p>További információért lásd: <a href="jobs/layoutcommands/layoutpanel.html#send-to-machine">NC küldése/visszahívása</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/production.png" alt="Gyártás" width="444">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_7_a_gyártás_befejezése_és_a_feladatok_lezárása">7. A gyártás befejezése és a feladatok lezárása</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Hajtsa végre a felszabadított feladatot a hozzárendelt gépen. A gyártás során a
+gépkezelő követi az NC programot, ellenőrzi az alkatrész minőségét a vágás
+közben, kezeli az anyag betöltését és kirakását, és kezeli a gép
+riasztásait vagy problémáit. A gyártás befejezése után jelölje meg az egyes
+alkatrészeket vagy a teljes feladatot készként a JFY Plus rendszerben. Ez az
+utolsó lépés frissíti a készletnyilvántartást, rögzíti a tényleges gyártási időt
+és anyagfelhasználást, archíválja a feladatadatokat jelentéskészítés és elemzés
+céljából, és befejezi a munkafolyamat-ciklust.</p>
+</div>
+<div class="paragraph">
+<p>További információért lásd: <a href="jobs/layoutcommands/layoutpanel.html#mark-complete">Mark
+complete</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/complete.png" alt="Kész" width="435">
+</div>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_1_a_rendszer_konfigurálása">1. A rendszer konfigurálása</a>
+  </li>
+  <li level="1">
+   <a href="#_2_alkatrészek_hozzáadása_a_könyvtárhoz">2. Alkatrészek hozzáadása a könyvtárhoz</a>
+  </li>
+  <li level="1">
+   <a href="#_3_alkatrészek_és_felszerszámozás_ellenőrzése">3. Alkatrészek és felszerszámozás ellenőrzése</a>
+  </li>
+  <li level="1">
+   <a href="#_4_alkatrészek_feladatokba_rendezése">4. Alkatrészek feladatokba rendezése</a>
+  </li>
+  <li level="1">
+   <a href="#_5_feladatok_tervezése_gyártógépekhez">5. Feladatok tervezése gyártógépekhez</a>
+  </li>
+  <li level="1">
+   <a href="#_6_nc_felszabadítása_a_feladatokhoz">6. NC felszabadítása a feladatokhoz</a>
+  </li>
+  <li level="1">
+   <a href="#_7_a_gyártás_befejezése_és_a_feladatok_lezárása">7. A gyártás befejezése és a feladatok lezárása</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="userinterface.html">A felhasználói felület</a></span>
+ <span class="next"><a href="library/index.html">Könyvtár</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="res/index.js"></script>
+    <script src="res/files.js"></script>
+    <script src="res/site.js"></script>
+
+    
+</body>
+</html>

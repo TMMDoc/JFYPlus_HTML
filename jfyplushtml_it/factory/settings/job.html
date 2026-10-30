@@ -1,0 +1,440 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Lavoro</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Benvenuti in JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Installazione</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Requisiti hardware</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Formati di file supportati</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Prerequisiti</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Cambio licenza</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Configurazione</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Aggiungi/Rimuovi macchina</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Configura attrezzaggio</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Configura utenti</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Lingua</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Materiale</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Aggiungi nuovo materiale e lamiera</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Esporta/Importa materiale</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Sostituisci materiale</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Mappa materiale</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">L'interfaccia utente</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Flusso di lavoro</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../library/index.html">Libreria</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/open/index.html">Apri</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/open/partimport.html">Importa componenti</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/orderimport.html">Importa ordini</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/jobimport.html">Importa lavori</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/assembliesimport.html">Importa assiemi</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/libraryview/index.html">Vista Libreria</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/libraryview/partview.html">Componenti</a></li>
+      <li><button class="tree blank"></button><a href="../../library/libraryview/assemblyview.html">Assieme</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/partstate/index.html">Stato componente</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/partstate/partvalidation.html">Validazione componente</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partpanel.html">Pannello componente</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partfilters.html">Filtri componente</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/toolingstatus/index.html">Stato attrezzaggio</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../library/toolingstatus/toolingvalidation/index.html">Validazione attrezzaggio</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/bendtooling.html">Validazione attrezzaggio di piegatura</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/cuttooling.html">Validazione attrezzaggio di taglio</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/foldtooling.html">Validazione attrezzaggio di pannellatura</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingpanel.html">Pannello attrezzaggio</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../library/savingfilters.html">Salvataggio dei filtri</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Ordini</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Vista ordini</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Lavori</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Crea lavoro</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Vista lavoro</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Pannello lavoro</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Pianificazione automatica</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Nesting interattivo</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Riorganizzazione</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Gestione nest</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Vista layout</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Pannello layout</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Invio report</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Gestione avanzi</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Avanzo automatico</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Avanzo manuale</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Nesting a doppia linea</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Scaduto</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Filtri lavoro</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Fabbrica</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="../routes.html">Percorsi</a></li>
+    <li><button class="tree blank"></button><a href="../sheets.html">Lamiere</a></li>
+    <li><button class="tree blank"></button><a href="../users.html">Utenti</a></li>
+    <li><button class="tree blank"></button><a href="../edit.html">Modifica</a></li>
+    <li><button class="tree blank"></button><a href="../customers.html">Clienti</a></li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Impostazioni</a>
+     <ul>
+      <li><button class="tree blank"></button><a href="environment.html">Ambiente</a></li>
+      <li><button class="tree blank"></button><a href="import.html">Importazione</a></li>
+      <li><button class="tree blank"></button><a href="bend.html">Piegatura</a></li>
+      <li><button class="tree blank"></button><a href="cut.html">Taglio</a></li>
+      <li><button class="tree blank"></button><a href="notification.html">Notifiche</a></li>
+      <li><button class="tree blank"></button><a href="watch.html">Monitoraggio</a></li>
+      <li><button class="tree blank"></button><a class="active" href="job.html">Lavoro</a></li>
+      <li><button class="tree blank"></button><a href="reports.html">Report</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Informazioni aziendali</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Fabbrica</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Impostazioni</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="job.html">Lavoro</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Lavoro</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/job.png" alt="Job settings" width="814">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_output_settings">Output settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Save layout NC and reports</strong> - Abilitare questa opzione
+affinché il programma NC del layout e i report vengano salvati.</p>
+</div>
+<div class="paragraph">
+<p><strong>Save layout file</strong> - Abilitare questa opzione affinché il
+file di layout venga salvato.</p>
+</div>
+<div class="paragraph">
+<p><strong>Output simulation preview in reports</strong> - Abilitare
+questa opzione per generare l&#8217;anteprima della simulazione dell&#8217;attrezzaggio
+insieme agli altri output. Si tratta di una breve animazione GIF per
+l&#8217;attrezzaggio laser/punzonatura.</p>
+</div>
+<div class="paragraph">
+<p><strong>Do not delete program outputs on layout/job completion</strong> - Abilitando questa opzione verrà saltata l&#8217;operazione di eliminazione
+degli output del programma quando un lavoro/layout viene contrassegnato come
+completato.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nest_settings">Nest settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Mix parts from multiple Jobs</strong> - Supporta il
+nesting in modalità mista. I componenti di più lavori dovrebbero essere annidati
+insieme per una migliore efficienza di riempimento.</p>
+</div>
+<div class="paragraph">
+<p><strong>Do not auto-release layouts</strong> - Impedirà che i layout
+siano disponibili per la produzione fino a quando tutti i layout non sono in
+stato rilasciato.</p>
+</div>
+<div class="paragraph">
+<p><strong>Re-nesting packing cut-off</strong> - Questo valore
+viene utilizzato per decidere se un layout annidato viene mantenuto nella coda di
+approvazione e viene rinnidato quando nuovi componenti vengono pianificati oppure
+vengono rilasciati per la produzione e i relativi output vengono esportati nella
+cartella di output.</p>
+</div>
+<div class="paragraph">
+<p><strong>Interactive sheet-name prefix</strong> - Questa
+sezione viene utilizzata per supportare il nesting interattivo, in cui l&#8217;utente
+ha un maggiore controllo sui componenti annidati e sul risultato del nesting.
+Utilizzare uno schema di denominazione, diverso dal nesting automatico, per i
+layout annidati in modo interattivo.</p>
+</div>
+<div class="paragraph">
+<p><strong>Update sheet inventory on nest (un)release</strong> - Se
+questa opzione è abilitata, l&#8217;inventario delle lamiere si aggiornerà quando si
+invia un nest a una macchina. Anche il richiamo del nest dalla macchina
+restituirà la lamiera all&#8217;inventario.</p>
+</div>
+<div class="paragraph">
+<p><strong>Automate remnant inventory management</strong> - Quando questo
+interruttore è selezionato, il software automatizza la gestione dell&#8217;inventario
+degli avanzi. Se non selezionato, la gestione degli avanzi diventa interattiva.</p>
+</div>
+<div class="paragraph">
+<p><strong>Auto-refresh Out-of-date layouts</strong> - Quando
+selezionato, il software aggiorna tutti i ui:EGTag.SelectOutOfDate[Out-of-date
+Layouts] collegati a un componente dopo che le sue soluzioni di taglio sono state
+calcolate.</p>
+</div>
+<div class="paragraph">
+<p><strong>Automate twin-line nesting</strong> - Selezionare questa opzione per
+abilitare l&#8217;automazione twin-line.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pull_workflow_settings">Pull workflow settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Use 'Pull workflow'</strong> - Questa opzione è utile per gli
+utenti che necessitano di un sistema di pianificazione e nesting altamente
+autonomo. Quando abilitata, JFY Plus pianifica il nesting su richiesta.</p>
+</div>
+<div class="paragraph">
+<p><strong>Nests per station</strong> - Questo valore serve a impostare
+quanti layout per stazione devono essere creati.</p>
+</div>
+<div class="paragraph">
+<p><strong>Maximum sheets per nest</strong> - Questo valore viene
+utilizzato per controllare il numero massimo di lamiere rispetto al nest univoco.
+Ad esempio, se c&#8217;è un ordine con un componente grande (che riempie l&#8217;intera
+lamiera), necessario in grandi quantità (ad esempio 500), JFY Plus non crea più
+un singolo nest con 500 copie in modalità pull. Crea invece 10 copie per nest,
+dove 10 è il massimo.</p>
+</div>
+<div class="paragraph">
+<p><strong>Bend programs per station</strong> - Questo valore serve a
+impostare quanti programmi di piegatura per stazione devono essere creati.</p>
+</div>
+<div class="paragraph">
+<p><strong>Mark the task completed, when the program outputs are removed</strong> -
+Abilitare questa opzione affinché un layout venga contrassegnato come Fatto quando
+gli output vengono rimossi dalla destinazione di output di destinazione.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_spreadsheet_import_settings">Spreadsheet import settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>CAD lookup directories</strong> - JFY Plus tenterà di
+caricare la voce del componente indicata nel CSV importato dalla libreria dei
+componenti. Tuttavia, se il componente non è disponibile nella libreria dei
+componenti, tenterà di recuperare i componenti dalle directory di ricerca in base
+all&#8217;ordine delle directory impostato in questa finestra di dialogo.</p>
+</div>
+<div class="paragraph">
+<p><strong>Use recursive CAD search</strong> - Abilitare questa opzione
+affinché la ricerca venga ripetuta per i risultati successivi.</p>
+</div>
+<div class="paragraph">
+<p><strong>Create a blank part for the missing CAD files</strong> - Se i
+componenti non esistono nella libreria di JFY Plus o nelle directory di ricerca,
+JFY Plus creerà un componente vuoto per quei componenti non disponibili.</p>
+</div>
+<div class="paragraph">
+<p><strong>Do not show New Job dialog if the spreadsheet has no error</strong> -
+Se le voci CSV sono corrette, ovvero non ci sono discrepanze di dati dal DB o
+tutti i campi sono elencati correttamente, JFY Plus non mostrerà la finestra di
+panoramica del lavoro ed elaborerà il lavoro non appena il CSV viene importato o
+rilasciato.</p>
+</div>
+<div class="paragraph">
+<p><strong>Prefer Raw-Material column over Material + Thickness</strong> -
+ Tipi di fogli di calcolo supportati:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Pattern 1: PartName, Quantity, DueDate, Priority, RawMaterial</p>
+</li>
+<li>
+<p>Pattern 2: PartName, Quantity, DueDate, Priority, Material, Thickness</p>
+</li>
+<li>
+<p>Pattern 3: PartName, Quantity, DueDate, Priority, Material, Thickness,
+RawMaterial</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Se questa opzione non è selezionata, il Pattern 1 sarà considerato il tipo di
+foglio di calcolo predefinito. Supportiamo anche il Pattern 3 nel caso in cui il
+formato CSV sia di tipo Pattern 3.</p>
+</div>
+<div class="paragraph">
+<p>Se questa opzione è selezionata e il CSV è di tipo Pattern 2, allora JFY Plus
+risolverà la Materia prima dai campi Materiale e Spessore del CSV.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_spreadsheet_output_settings">Spreadsheet output settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Export Job/Layout completion report (.csv)</strong> -
+Selezionare questa opzione per abilitare l&#8217;esportazione CSV quando un Layout o un
+Lavoro è completo. I report completati vengono salvati nella destinazione dei
+report specificata nelle impostazioni Factory &#8594; Settings &#8594; Reports.</p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_output_settings">Output settings</a>
+  </li>
+  <li level="1">
+   <a href="#_nest_settings">Nest settings</a>
+  </li>
+  <li level="1">
+   <a href="#_pull_workflow_settings">Pull workflow settings</a>
+  </li>
+  <li level="1">
+   <a href="#_spreadsheet_import_settings">Spreadsheet import settings</a>
+  </li>
+  <li level="1">
+   <a href="#_spreadsheet_output_settings">Spreadsheet output settings</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="watch.html">Monitoraggio</a></span>
+ <span class="next"><a href="reports.html">Report</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Rapports</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Bienvenue dans JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Installation</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Exigences matérielles</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Formats de fichiers pris en charge</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Prérequis</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Changer de licence</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Configuration</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Ajouter/Supprimer une machine</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Configurer l'outillage</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Configurer les utilisateurs</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Langue</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Matière</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Ajouter une nouvelle matière et une tôle</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Exporter/Importer une matière</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Remplacer une matière</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Cartographier la matière</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">L'interface utilisateur</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Flux de travail</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../library/index.html">Bibliothèque</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/open/index.html">Ouvrir</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/open/partimport.html">Importer des pièces</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/orderimport.html">Importer des ordres</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/jobimport.html">Importer des tâches</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/assembliesimport.html">Importer des modules</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/libraryview/index.html">Vue de la bibliothèque</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/libraryview/partview.html">Pièces</a></li>
+      <li><button class="tree blank"></button><a href="../../library/libraryview/assemblyview.html">Module</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/partstate/index.html">État de la pièce</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/partstate/partvalidation.html">Validation des pièces</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partpanel.html">Panneau de la pièce</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partfilters.html">Filtres de pièce</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/toolingstatus/index.html">État de l'outillage</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../library/toolingstatus/toolingvalidation/index.html">Validation de l'outillage</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/bendtooling.html">Validation de l'outillage de pliage</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/cuttooling.html">Validation de l'outillage de coupe</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/foldtooling.html">Validation de l'outillage de pliage</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingpanel.html">Panneau d'outillage</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../library/savingfilters.html">Enregistrement des filtres</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Ordres</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Vue des ordres</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Tâches</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Créer une tâche</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Vue des tâches</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Panneau des tâches</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Planification automatique</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Imbrication interactive</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Réempaquetage</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Gestion des imbrications</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Vue de configuration</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Panneau de configuration</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Envoi de rapports</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Gestion des chutes</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Gestion automatique des chutes</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Gestion manuelle des chutes</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Imbrication Twinline</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Obsolète</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Filtres de tâches</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Usine</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="../routes.html">Itinéraires</a></li>
+    <li><button class="tree blank"></button><a href="../sheets.html">Tôles</a></li>
+    <li><button class="tree blank"></button><a href="../users.html">Utilisateurs</a></li>
+    <li><button class="tree blank"></button><a href="../edit.html">Modifier</a></li>
+    <li><button class="tree blank"></button><a href="../customers.html">Clients</a></li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Réglages</a>
+     <ul>
+      <li><button class="tree blank"></button><a href="environment.html">Environnement</a></li>
+      <li><button class="tree blank"></button><a href="import.html">Importation</a></li>
+      <li><button class="tree blank"></button><a href="bend.html">Pliage</a></li>
+      <li><button class="tree blank"></button><a href="cut.html">Coupe</a></li>
+      <li><button class="tree blank"></button><a href="notification.html">Notifications</a></li>
+      <li><button class="tree blank"></button><a href="watch.html">Surveillance</a></li>
+      <li><button class="tree blank"></button><a href="job.html">Tâche</a></li>
+      <li><button class="tree blank"></button><a class="active" href="reports.html">Rapports</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Informations sur l'entreprise</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Usine</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Réglages</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="reports.html">Rapports</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Rapports</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/reports.png" alt="Reports settings" width="814">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_report_settings">Report settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Report destination</strong> - Utilisez cette option pour spécifier
+l&#8217;emplacement où enregistrer les rapports.</p>
+</div>
+<div class="paragraph">
+<p><strong>Report Output Format</strong> - Spécifie le format du rapport
+lors de l&#8217;exportation (PDF ou HTML).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_job_report_settings">Job report settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Include layout images in the report</strong> - Activez ce
+réglage pour inclure les images des configurations dans un rapport.</p>
+</div>
+<div class="paragraph">
+<p><strong>Include part images in the report</strong> - Activez ce réglage
+pour inclure les images des pièces dans un rapport.</p>
+</div>
+<div class="paragraph">
+<p><strong>Include layout reports in the job report</strong> - Activez ce
+réglage pour créer un lien vers les rapports de configuration à l&#8217;intérieur d&#8217;un rapport de tâche.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_label_report_settings">Label report settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Enable label reports</strong> - Activez ce réglage pour permettre
+la génération d&#8217;étiquettes soit à partir de la tâche, soit à partir d&#8217;une configuration où un clic droit
+et la sélection de Export Layouts ou Send to Machine respectivement présenteront une
+option pour afficher le rapport d&#8217;étiquettes.</p>
+</div>
+<div class="paragraph">
+<p><strong>Label size (W x H)</strong> - Spécifie la largeur et la hauteur de
+l&#8217;étiquette en millimètres. Ces valeurs définissent les dimensions physiques de
+l&#8217;étiquette générée.</p>
+</div>
+<div class="paragraph">
+<p><strong>QR code field</strong> - Définit le champ de données à encoder dans
+le code QR sur l&#8217;étiquette. La liste déroulante inclut Part Name, Part Order et
+None. La valeur du champ sélectionné est affichée sous forme de code QR.</p>
+</div>
+<div class="paragraph">
+<p><strong>Barcode field</strong> - Définit le champ de données à encoder
+dans le code-barres sur l&#8217;étiquette. La liste déroulante inclut Part Name, Part
+Order et None. La valeur du champ sélectionné est affichée sous forme de code-barres.</p>
+</div>
+<div class="paragraph">
+<p><strong>Show part image</strong> - Lorsqu&#8217;elle est activée, inclut l&#8217;image de la pièce
+dans le rapport d&#8217;étiquettes généré.</p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_report_settings">Report settings</a>
+  </li>
+  <li level="1">
+   <a href="#_job_report_settings">Job report settings</a>
+  </li>
+  <li level="1">
+   <a href="#_label_report_settings">Label report settings</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="job.html">Tâche</a></span>
+ <span class="next"><a href="../../impressum.html">Informations sur l'entreprise</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

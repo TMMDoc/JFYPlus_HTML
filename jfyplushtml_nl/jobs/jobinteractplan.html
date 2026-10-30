@@ -1,0 +1,386 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../img/praxis-icon.png">
+  <title>Interactief nesten</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">Welkom bij JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../installation/index.html">Installatie</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../installation/hardwarerequirement.html">Hardwarevereisten</a></li>
+    <li><button class="tree blank"></button><a href="../installation/importformats.html">Ondersteunde bestandsformaten</a></li>
+    <li><button class="tree blank"></button><a href="../installation/prerequisites.html">Vereisten</a></li>
+    <li><button class="tree blank"></button><a href="../installation/changelic.html">Licentie wijzigen</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../configuration/index.html">Configuratie</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../configuration/setupmachine.html">Machine toevoegen/verwijderen</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/setuptooling.html">Tooling instellen</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/configureusers.html">Gebruikers configureren</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/language.html">Taal</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../configuration/addmaterial/index.html">Materiaal</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/addnew.html">Nieuw materiaal en plaat toevoegen</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/exportimport.html">Materiaal exporteren/importeren</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/replacematerial.html">Materiaal vervangen</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../configuration/mapbendpages.html">Materiaal toewijzen</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../userinterface.html">De gebruikersinterface</a></li>
+  <li><button class="tree blank"></button><a href="../workflow.html">Workflow</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../library/index.html">Bibliotheek</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/open/index.html">Openen</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/open/partimport.html">Onderdelen importeren</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/orderimport.html">Orders importeren</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/jobimport.html">Jobs importeren</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/assembliesimport.html">Samenstellingen importeren</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/libraryview/index.html">Bibliotheekweergave</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/libraryview/partview.html">Onderdelen</a></li>
+      <li><button class="tree blank"></button><a href="../library/libraryview/assemblyview.html">Samenstelling</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/partstate/index.html">Onderdeelstatus</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/partstate/partvalidation.html">Onderdeelvalidatie</a></li>
+      <li><button class="tree blank"></button><a href="../library/partstate/partpanel.html">Onderdeelpaneel</a></li>
+      <li><button class="tree blank"></button><a href="../library/partstate/partfilters.html">Onderdeelfilters</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/toolingstatus/index.html">Toolingstatus</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../library/toolingstatus/toolingvalidation/index.html">Toolingvalidatie</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/bendtooling.html">Buigtoolingvalidatie</a></li>
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/cuttooling.html">Snijtoolingvalidatie</a></li>
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/foldtooling.html">Vouwtoolingvalidatie</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingpanel.html">Toolingpaneel</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../library/savingfilters.html">Filters opslaan</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../orders/index.html">Orders</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../orders/ordersview.html">Ordersweergave</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">Jobs</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="jobcreation.html">Job aanmaken</a></li>
+    <li><button class="tree blank"></button><a href="jobview.html">Jobweergave</a></li>
+    <li><button class="tree blank"></button><a href="jobpanel.html">Jobpaneel</a></li>
+    <li><button class="tree blank"></button><a href="jobautoplan.html">Automatisch plannen</a></li>
+    <li><button class="tree blank"></button><a class="active" href="jobinteractplan.html">Interactief nesten</a></li>
+    <li><button class="tree blank"></button><a href="repacking.html">Herverpakken</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="layoutcommands/index.html">Nestbeheer</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="layoutcommands/nestview.html">Lay-outweergave</a></li>
+      <li><button class="tree blank"></button><a href="layoutcommands/layoutpanel.html">Lay-outpaneel</a></li>
+      <li><button class="tree blank"></button><a href="layoutcommands/reportsender.html">Rapportverzender</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="remnantmanagement/index.html">Restantbeheer</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="remnantmanagement/autoremnant.html">Automatisch restantbeheer</a></li>
+      <li><button class="tree blank"></button><a href="remnantmanagement/manualremnant.html">Handmatig restantbeheer</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="twinlinenesting.html">Twinline nesten</a></li>
+    <li><button class="tree blank"></button><a href="outdate.html">Verouderd</a></li>
+    <li><button class="tree blank"></button><a href="jobfilters.html">Jobfilters</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../factory/index.html">Fabriek</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../factory/routes.html">Routes</a></li>
+    <li><button class="tree blank"></button><a href="../factory/sheets.html">Platen</a></li>
+    <li><button class="tree blank"></button><a href="../factory/users.html">Gebruikers</a></li>
+    <li><button class="tree blank"></button><a href="../factory/edit.html">Bewerken</a></li>
+    <li><button class="tree blank"></button><a href="../factory/customers.html">Klanten</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../factory/settings/index.html">Instellingen</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../factory/settings/environment.html">Omgeving</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/import.html">Importeren</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/bend.html">Buigen</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/cut.html">Snijden</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/notification.html">Meldingen</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/watch.html">Bewaken</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/job.html">Job</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/reports.html">Rapporten</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../impressum.html">Bedrijfsinformatie</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Jobs</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="jobinteractplan.html">Interactief nesten</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Interactief nesten</h1>
+<div class="paragraph">
+<p>Interactief nesten kan worden gebruikt om een nestplan te maken voor één
+onderdeel, enkele onderdelen uit een job, één job of meerdere jobs. Hiermee kunt
+u machines en materialen selecteren, plaatparameters instellen en de
+nestresultaten interactief beoordelen.</p>
+</div>
+<div class="paragraph">
+<p>Klik met de rechtermuisknop op een onderdeel of een job en selecteer
+<strong>Plan Part&#8230;&#8203;/Plan Job&#8230;&#8203;</strong> &#8594;
+<strong>Run Interactive Nesting&#8230;&#8203;</strong>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/interactive1.png" alt="Interactive nesting" width="1142">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Het venster <strong>Interactive Nesting</strong> wordt geopend.</p>
+</li>
+<li>
+<p>Standaard schakelt het venster voor interactief nesten over naar de pagina
+<strong>Select Machine &amp; Material</strong>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/interactive2.png" alt="Interactive nesting window" width="1908">
+</div>
+</div>
+</li>
+<li>
+<p>Machines worden weergegeven met kleurbalken die de beschikbare productiebelasting
+aangeven:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Groene balk: ingeplande uren</p>
+</li>
+<li>
+<p>Grijze balk: beschikbare uren (van een dienst van 8 uur)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Onder elke machine worden de geselecteerde onderdelen gegroepeerd met hun
+grondstof (onderdelen/totaalaantal).</p>
+</li>
+<li>
+<p>Als een onderdeel geen geldige toolingoplossing voor een machine heeft, worden
+dat onderdeel en materiaal voor verwerking op die machine genegeerd.</p>
+</li>
+<li>
+<p>Als een grondstof voor één machine wordt geselecteerd, is deze niet beschikbaar
+voor andere machines.</p>
+</li>
+<li>
+<p>Zodra het machinenestplan is ingesteld, selecteert u de gewenste plaat en
+overschrijft u plaatparameters zoals <strong>Priority</strong>,
+<strong>Quantity</strong>, <strong>Margins</strong> enz.</p>
+</li>
+<li>
+<p>U kunt platen filteren om <strong>All Sheets</strong>,
+<strong>Standard Sheets</strong> of
+<strong>Remnant Sheets</strong> weer te geven. Klik op
+<strong>Next</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+In dit stadium is het niet mogelijk om de aantallen te verhogen. U kunt
+het aantal gelijk houden aan de voorraad van de plaat of verlagen en de
+nestresultaten controleren.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Update Qty</strong> verschijnt in het venster van het interactieve
+nestplan.</p>
+</li>
+<li>
+<p>Standaard neemt <strong>Pick All (F5)</strong> alle onderdelen op voor het
+nesten, of u kunt handmatig prioriteitsonderdelen kiezen en onderdeelaantallen
+aanpassen. Klik op <strong>Next</strong>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/interactive3.png" alt="Update part quantity" width="1908">
+</div>
+</div>
+</li>
+<li>
+<p>Het nesten start en de op de plaat geneste onderdelen worden bijgewerkt met de
+blauwe kleurstatus.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/interactive4.png" alt="Review interactive nesting" width="1911">
+</div>
+</div>
+</li>
+<li>
+<p>De productiebelasting van de machine wordt bijgewerkt op basis van het
+nestresultaat.</p>
+</li>
+<li>
+<p>De geneste lay-outs worden op schaal getekend en weergegeven op het tabblad
+Nest Results.</p>
+</li>
+<li>
+<p>Als sommige onderdelen niet-genest blijven, verschijnt het bericht
+<strong>Some parts remain unnested</strong> — deze onderdelen blijven in
+de oorspronkelijke job.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>De reden voor het niet nesten kan zijn dat er geen plaat beschikbaar is om te
+nesten</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Interactieve nestresultaten worden voorafgegaan door een prefix: <strong>factory</strong> &#8594;
+<strong>settings</strong> &#8594; <strong>Job</strong>&#8594;
+<strong>Nest settings</strong>,
+<strong>Interactive sheet-name prefix</strong>.</p>
+</li>
+<li>
+<p>De interactieve nestlay-outs krijgen de letter <strong>L</strong> als prefix.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/interactive6.png" alt="Factory settings" width="754">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/interactive5.png" alt="Interactive nest layout" width="857">
+</div>
+</div>
+</li>
+</ul>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc"></aside>
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="jobautoplan.html">Automatisch plannen</a></span>
+ <span class="next"><a href="repacking.html">Herverpakken</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

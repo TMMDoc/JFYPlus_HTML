@@ -1,0 +1,581 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Rakitan</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Selamat Datang di JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Instalasi</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Persyaratan perangkat keras</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Format file yang didukung</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Prasyarat</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Ubah lisensi</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Konfigurasi</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Tambah/Hapus mesin</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Siapkan perkakas</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Konfigurasikan pengguna</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Bahasa</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Bahan</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Tambah material dan lembar baru</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Ekspor/Impor material</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Ganti material</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Petakan material</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">Antarmuka Pengguna</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Alur Kerja</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Pustaka</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../open/index.html">Buka</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../open/partimport.html">Impor komponen</a></li>
+      <li><button class="tree blank"></button><a href="../open/orderimport.html">Impor pesanan</a></li>
+      <li><button class="tree blank"></button><a href="../open/jobimport.html">Impor pekerjaan</a></li>
+      <li><button class="tree blank"></button><a href="../open/assembliesimport.html">Impor rakitan</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Tampilan Pustaka</a>
+     <ul>
+      <li><button class="tree blank"></button><a href="partview.html">Komponen</a></li>
+      <li><button class="tree blank"></button><a class="active" href="assemblyview.html">Rakitan</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../partstate/index.html">Status komponen</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../partstate/partvalidation.html">Validasi komponen</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partpanel.html">Panel komponen</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partfilters.html">Filter komponen</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../toolingstatus/index.html">Status perkakas</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../toolingstatus/toolingvalidation/index.html">Validasi perkakas</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/bendtooling.html">Validasi perkakas tekuk</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/cuttooling.html">Validasi perkakas potong</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/foldtooling.html">Validasi perkakas lipat</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../toolingstatus/toolingpanel.html">Panel perkakas</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../savingfilters.html">Menyimpan filter</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Pesanan</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Tampilan Pesanan</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Pekerjaan</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Buat pekerjaan</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Tampilan Pekerjaan</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Panel pekerjaan</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Rencana otomatis</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Nesting interaktif</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Pengemasan Ulang</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Manajemen Nest</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Tampilan Tata Letak</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Panel tata letak</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Pengirim laporan</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Manajemen Sisa</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Manajemen sisa otomatis</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Manajemen sisa manual</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Nesting Twin-line</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Kedaluwarsa</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Filter pekerjaan</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../factory/index.html">Pabrik</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">Rute</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/sheets.html">Lembar</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">Pengguna</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/edit.html">Sunting</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">Pelanggan</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">Pengaturan</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">Lingkungan</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">Impor</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">Tekuk</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">Potong</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">Notifikasi</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">Pantau</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">Pekerjaan</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">Laporan</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Informasi Perusahaan</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Pustaka</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Tampilan Pustaka</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="assemblyview.html">Rakitan</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Rakitan</h1>
+<div class="sect1">
+<h2 id="_buat_nest_statis_dari_rakitan">Buat nest statis dari rakitan</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Nest statis dapat dihasilkan untuk sebuah rakitan menggunakan wizard nesting
+Interaktif.
+Nest ini merupakan tata letak tetap yang hanya terkait dengan rakitan yang
+dipilih.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Beralih ke tampilan <strong>assys</strong>.</p>
+</li>
+<li>
+<p>Klik kanan rakitan yang diperlukan dan pilih
+<strong>Create Nests&#8230;&#8203;</strong>.</p>
+</li>
+<li>
+<p>Wizard Interactive Nesting terbuka.</p>
+</li>
+<li>
+<p>Secara default, wizard interactive nesting beralih ke halaman
+<strong>Select Machine &amp; Material</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/assemblyinteractive.png" alt="Machine and material" width="950">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Mesin ditampilkan dengan bilah warna yang menunjukkan beban produksi yang
+tersedia:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Bilah hijau: Jam terjadwal</p>
+</li>
+<li>
+<p>Bilah abu-abu: Jam tersedia (dari shift 8 jam)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Di bawah setiap mesin, Komponen yang dipilih dikelompokkan bersama
+Raw-Material-nya (Komponen/Total Kuantitas).</p>
+</li>
+<li>
+<p>Jika sebuah komponen tidak memiliki solusi perkakas yang valid untuk suatu
+mesin, komponen dan material tersebut diabaikan untuk diproses pada mesin
+tertentu.</p>
+</li>
+<li>
+<p>Jika suatu material mentah dipilih untuk satu mesin, material tersebut tidak
+akan tersedia untuk mesin lain.</p>
+</li>
+<li>
+<p>Setelah rencana nest mesin ditetapkan, pilih lembar yang diinginkan dan
+timpa parameter lembar seperti <strong>Priority</strong>,
+<strong>Quantity</strong>, <strong>Margins</strong>, dll.</p>
+</li>
+<li>
+<p>Anda dapat memfilter lembar untuk menampilkan <strong>All Sheets</strong>,
+<strong>Standard Sheets</strong>, atau
+<strong>Remnant Sheets</strong>. Klik <strong>next</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Tidak mungkin menambah kuantitas pada tahap ini. Anda dapat
+mempertahankannya sama dengan kuantitas inventaris lembar atau menguranginya dan
+memeriksa hasil nesting.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Update Qty</strong> muncul di jendela Interactive nesting plan.</p>
+</li>
+<li>
+<p>Secara default, <strong>Pick All (F5)</strong> menyertakan semua komponen
+untuk nesting, atau Anda dapat memilih komponen prioritas secara manual dan
+menyesuaikan kuantitas komponen. Klik <strong>next</strong>.</p>
+</li>
+<li>
+<p>Nesting dimulai dan komponen yang di-nest dalam lembar diperbarui dengan status
+berwarna biru.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/assemblyresult.png" alt="Nesting result">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Beban produksi mesin diperbarui berdasarkan hasil nest.</p>
+</li>
+<li>
+<p>Jika beberapa komponen tetap tidak ter-nest, pesan
+<strong>Some parts remain unnested</strong> muncul - komponen ini tetap
+berada di pekerjaan asli.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Sebuah komponen mungkin tetap tidak ter-nest jika tidak ada lembar yang sesuai
+tersedia.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Nest Statis dapat diedit untuk menyertakan komponen yang tidak ter-nest:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pilih tata letak tempat Anda ingin menyisipkan komponen yang tidak ter-nest
+dan check out untuk pengeditan.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/assemblylayout.png" alt="Selected layout">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>JFY Core terbuka. Klik <strong>Pick</strong> atau
+<strong>Pick All</strong> untuk memilih komponen yang tidak ter-nest dari
+rakitan induk.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/addnest.png" alt="Add unnested parts" width="864">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Atur komponen dalam tata letak sesuai kebutuhan.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/unnest.png" alt="Unnested part placement" width="715">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Nest yang dihasilkan secara otomatis dinamai sesuai rakitan induk untuk
+mempermudah identifikasi.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Nest statis tidak dapat berisi komponen dari rakitan lain. Mengizinkan
+nest rakitan campuran akan mencegah pelepasan satu rakitan tanpa melepaskan yang
+lainnya, sehingga pencampuran dilarang secara desain.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_komponen_non_pelat_logam">Komponen non-pelat logam</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Ketika sebuah rakitan diimpor, komponen pelat logam diekstrak dan ditambahkan
+ke rakitan di Pustaka Komponen.</p>
+</li>
+<li>
+<p>Komponen non-pelat logam dipisahkan dan ditambahkan ke
+<strong>Components</strong>.</p>
+</li>
+<li>
+<p>Rakitan ditambahkan ke Pustaka Rakitan dan BOM-nya
+(Bill of Materials) berisi baik komponen (part) maupun komponen (component).</p>
+</li>
+<li>
+<p>Jika sebuah komponen telah diimpor sebagai komponen pelat logam, sistem
+memperbarui entri yang ada dan menghapus duplikat dari Pustaka Komponen.</p>
+</li>
+<li>
+<p>Memilih sebuah rakitan menampilkan baik part maupun component, dengan kuantitas
+component ditampilkan di bawah gambar component (jumlah component rakitan yang
+dipilih dan total jumlah component).</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/components.png" alt="Assembly components" width="999">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Tooltip component menampilkan nama, material, dan ukuran.
+Component dikecualikan selama produksi - komponen tersebut tidak di-nest, dan
+tidak ada lembar yang dihasilkan untuk component.</p>
+</li>
+<li>
+<p>Contoh rakitan dan component tersedia di:
+yang dapat digunakan untuk menguji impor component dan alur kerja rakitan.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_membuat_pekerjaan_dari_rakitan">Membuat pekerjaan dari rakitan</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Klik kanan rakitan, klik <strong>New&#8230;&#8203;</strong>, lalu
+<strong>Job</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/newassemblyjob.png" alt="Create new job" width="760">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Di dialog New Job, tetapkan jumlah rakitan, klik <strong>OK</strong>,
+lalu perbarui detail pekerjaan (seperti tanggal jatuh tempo dan prioritas) sesuai
+kebutuhan.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/riegelwindow.png" alt="New job dialog" width="369">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Sistem membuat pekerjaan dari rakitan dan menyalin nest statis sebagai
+nest pekerjaan, memperbarui jumlah lembar. Nest yang disalin diberi awalan
+ID pekerjaan.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/assemblycreated.png" alt="Assembly job created" width="999">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Nest pekerjaan dapat diedit atau dihapus tanpa memengaruhi nest statis asli.</p>
+</li>
+<li>
+<p>Nest pekerjaan dapat dikemas ulang menggunakan <strong>Adapt/Compact&#8230;&#8203;</strong>
+atau <strong>Add parts&#8230;&#8203;</strong>.</p>
+</li>
+<li>
+<p>Untuk langkah terperinci, lihat
+<a href="../../jobs/layoutcommands/layoutpanel.html#adapt-compact">Sesuaikan/Ringkas</a> dan
+<a href="../../jobs/layoutcommands/layoutpanel.html#add-parts">Tambahkan komponen</a>.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Jika sebuah komponen tidak muncul dalam nest, periksa dialog edit nest - Anda
+dapat menyisipkan komponen yang tidak ter-nest secara manual.</p>
+</div>
+<div class="paragraph">
+<p>Gunakan pencarian dan filter tersimpan untuk dengan cepat menemukan komponen di
+berbagai rakitan.</p>
+</div>
+<div class="paragraph">
+<p>Gunakan nama rakitan dan nest yang jelas dan deskriptif untuk menghindari
+kebingungan saat menyalin nest ke dalam pekerjaan.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_buat_nest_statis_dari_rakitan">Buat nest statis dari rakitan</a>
+  </li>
+  <li level="1">
+   <a href="#_komponen_non_pelat_logam">Komponen non-pelat logam</a>
+  </li>
+  <li level="1">
+   <a href="#_membuat_pekerjaan_dari_rakitan">Membuat pekerjaan dari rakitan</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="partview.html">Komponen</a></span>
+ <span class="next"><a href="../partstate/index.html">Status komponen</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>
