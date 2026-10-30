@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../img/praxis-icon.png">
+  <title>Job 筛选器</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">欢迎使用 JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../installation/index.html">安装</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../installation/hardwarerequirement.html">硬件要求</a></li>
+    <li><button class="tree blank"></button><a href="../installation/importformats.html">支持的文件格式</a></li>
+    <li><button class="tree blank"></button><a href="../installation/prerequisites.html">先决条件</a></li>
+    <li><button class="tree blank"></button><a href="../installation/changelic.html">更改许可证</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../configuration/index.html">配置</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../configuration/setupmachine.html">添加/移除机床</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/setuptooling.html">设置 tooling</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/configureusers.html">配置用户</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/language.html">语言</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../configuration/addmaterial/index.html">材料</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/addnew.html">添加新材料和板材</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/exportimport.html">导出/导入材料</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/replacematerial.html">替换材料</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../configuration/mapbendpages.html">映射材料</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../userinterface.html">用户界面</a></li>
+  <li><button class="tree blank"></button><a href="../workflow.html">工作流</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../library/index.html">库</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/open/index.html">打开</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/open/partimport.html">导入零件</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/orderimport.html">导入订单</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/jobimport.html">导入 job</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/assembliesimport.html">导入装配体</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/libraryview/index.html">库视图</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/libraryview/partview.html">零件</a></li>
+      <li><button class="tree blank"></button><a href="../library/libraryview/assemblyview.html">装配体</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/partstate/index.html">零件状态</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/partstate/partvalidation.html">零件验证</a></li>
+      <li><button class="tree blank"></button><a href="../library/partstate/partpanel.html">零件面板</a></li>
+      <li><button class="tree blank"></button><a href="../library/partstate/partfilters.html">零件筛选器</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/toolingstatus/index.html">tooling 状态</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../library/toolingstatus/toolingvalidation/index.html">tooling 验证</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/bendtooling.html">折弯 tooling 验证</a></li>
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/cuttooling.html">切割 tooling 验证</a></li>
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/foldtooling.html">折叠 tooling 验证</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingpanel.html">tooling 面板</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../library/savingfilters.html">保存筛选器</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../orders/index.html">订单</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../orders/ordersview.html">订单视图</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">Jobs</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="jobcreation.html">创建job</a></li>
+    <li><button class="tree blank"></button><a href="jobview.html">Job 视图</a></li>
+    <li><button class="tree blank"></button><a href="jobpanel.html">Job 面板</a></li>
+    <li><button class="tree blank"></button><a href="jobautoplan.html">自动规划</a></li>
+    <li><button class="tree blank"></button><a href="jobinteractplan.html">交互式 nesting</a></li>
+    <li><button class="tree blank"></button><a href="repacking.html">重新排料</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="layoutcommands/index.html">Nest 管理</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="layoutcommands/nestview.html">Layout 视图</a></li>
+      <li><button class="tree blank"></button><a href="layoutcommands/layoutpanel.html">Layout 面板</a></li>
+      <li><button class="tree blank"></button><a href="layoutcommands/reportsender.html">报告发送器</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="remnantmanagement/index.html">余料管理</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="remnantmanagement/autoremnant.html">自动余料管理</a></li>
+      <li><button class="tree blank"></button><a href="remnantmanagement/manualremnant.html">手动余料管理</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="twinlinenesting.html">Twinline nesting</a></li>
+    <li><button class="tree blank"></button><a href="outdate.html">过期</a></li>
+    <li><button class="tree blank"></button><a class="active" href="jobfilters.html">Job 筛选器</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../factory/index.html">工厂</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../factory/routes.html">路线</a></li>
+    <li><button class="tree blank"></button><a href="../factory/sheets.html">板材</a></li>
+    <li><button class="tree blank"></button><a href="../factory/users.html">用户</a></li>
+    <li><button class="tree blank"></button><a href="../factory/edit.html">编辑</a></li>
+    <li><button class="tree blank"></button><a href="../factory/customers.html">客户</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../factory/settings/index.html">设置</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../factory/settings/environment.html">环境</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/import.html">导入</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/bend.html">折弯</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/cut.html">切割</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/notification.html">通知</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/watch.html">监视</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/job.html">Job</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/reports.html">报告</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../impressum.html">企业信息</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Jobs</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="jobfilters.html">Job 筛选器</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Job 筛选器</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Job 页面筛选器通过仅显示与所选条件匹配的项目，帮助您定位 Job、活动零件和 Nest。它们简化了查找、排序和管理 job 或零件的操作，提高了工作流的整体效率。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_可用筛选器示例">可用筛选器示例</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_priority_和_due_on">Priority 和 Due on</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Priority</strong> 筛选器允许您根据零件或 job 分配的优先级（<strong>Urgent</strong>、<strong>High</strong>、<strong>Low</strong>、<strong>Normal</strong>）搜索并显示它们。</p>
+</li>
+<li>
+<p>当您选择特定的优先级级别时，只有具有该特定优先级的零件才会在结果中突出显示或显示。</p>
+</li>
+<li>
+<p>例如，如果您选择 <strong>High</strong> 优先级，系统将筛选并仅突出显示 nest 上标记为 High 优先级的零件。</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/priority.png" alt="Priority" width="1307">
+</div>
+</div>
+</li>
+<li>
+<p><strong>Due on</strong> 筛选器允许您根据零件或 job 分配的日期搜索并显示它们。</p>
+</li>
+<li>
+<p>当您选择特定的交付日期时，只有具有该特定交付日期的零件才会在结果中突出显示或显示。</p>
+</li>
+<li>
+<p>除了预定义的交付日期筛选器（如 <strong>Today</strong>、
+<strong>Yesterday</strong>、<strong>Tomorrow</strong> 等）之外，您还可以在搜索文本框中以 <strong>yymmdd</strong> 格式键入自定义日期值/范围。</p>
+</li>
+<li>
+<p>您还可以使用带不等运算符（&lt;、&lt;=、&gt;、&gt;=、=）后跟日期值的表达式。例如：&gt;=250901 将搜索所有在 2025 年 9 月 1 日或之后到期的项目。</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+如果筛选器列表遮挡了搜索内容，您可以使用 <strong>Toggle opacity</strong>
+<span class="image"><img src="img/toggleopacity.png" alt="Toggle Opacity" width="15"></span> 命令使其透明。
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_part_name_layout_name">Part name/ Layout name</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Part name</strong> 筛选器将在 job 和 nest 页面中可用。</p>
+</li>
+<li>
+<p>当您键入零件名称时，会显示一个建议列表，以帮助快速选择正确的零件。</p>
+</li>
+<li>
+<p>从建议列表中选择一个或多个项目会将搜索结果缩小到仅选定的零件。</p>
+</li>
+<li>
+<p>在 Jobs 页面上，此行为扩展为包括 layout 名称，允许用户按零件名称或 layout 名称进行搜索。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_remnant">Remnant</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>使用 <strong>Remnant</strong> 筛选器根据余料可用性搜索 layout。</p>
+</li>
+<li>
+<p>下拉列表显示以下选项：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>No Remnant</strong> - 列出未创建余料的 layout。</p>
+</li>
+<li>
+<p><strong>Exists</strong> - 列出已存在余料的 layout。</p>
+</li>
+<li>
+<p><strong>Added</strong> - 列出添加了新余料的 layout。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>帮助高效地识别和管理剩余的板材材料。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_可用筛选器示例">可用筛选器示例</a>
+  </li>
+  <li level="2">
+   <a href="#_priority_和_due_on">Priority 和 Due on</a>
+  </li>
+  <li level="2">
+   <a href="#_part_name_layout_name">Part name/ Layout name</a>
+  </li>
+  <li level="2">
+   <a href="#_remnant">Remnant</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="outdate.html">过期</a></span>
+ <span class="next"><a href="../factory/index.html">工厂</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

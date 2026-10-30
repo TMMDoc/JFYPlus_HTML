@@ -1,0 +1,575 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Konstrukční skupina</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Vítejte v JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Instalace</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Hardwarové požadavky</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Podporované formáty souborů</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Předpoklady</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Změna licence</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Konfigurace</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Přidat/odebrat stroj</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Nastavení nastrojení</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Konfigurace uživatelů</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Jazyk</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Materiál</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Přidat nový materiál a plech</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Export/Import materiálu</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Nahradit materiál</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Mapování materiálu</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">Uživatelské rozhraní</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Pracovní postup</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Knihovna</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../open/index.html">Otevřít</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../open/partimport.html">Import dílů</a></li>
+      <li><button class="tree blank"></button><a href="../open/orderimport.html">Import zakázek</a></li>
+      <li><button class="tree blank"></button><a href="../open/jobimport.html">Import úloh</a></li>
+      <li><button class="tree blank"></button><a href="../open/assembliesimport.html">Import konstrukčních skupin</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Zobrazení knihovny</a>
+     <ul>
+      <li><button class="tree blank"></button><a href="partview.html">Díly</a></li>
+      <li><button class="tree blank"></button><a class="active" href="assemblyview.html">Konstrukční skupina</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../partstate/index.html">Stav dílu</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../partstate/partvalidation.html">Validace dílu</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partpanel.html">Panel dílu</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partfilters.html">Filtry dílů</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../toolingstatus/index.html">Stav nastrojení</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../toolingstatus/toolingvalidation/index.html">Validace nastrojení</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/bendtooling.html">Validace nastrojení ohybu</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/cuttooling.html">Validace nastrojení řezání</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/foldtooling.html">Validace nastrojení ohnutí</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../toolingstatus/toolingpanel.html">Panel nastrojení</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../savingfilters.html">Ukládání filtrů</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Zakázky</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Zobrazení zakázek</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Úlohy</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Vytvořit úlohu</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Zobrazení úlohy</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Panel úlohy</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Automatické plánování</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Interaktivní rozmístění</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Znovu rozvinutí</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Správa layoutů</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Zobrazení layoutu</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Panel layoutu</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Odesílání zpráv</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Správa zbytků</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Automatická správa zbytků</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Ruční správa zbytků</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Rozmístění Twinline</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Zastaralé</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Filtry úloh</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../factory/index.html">Závod</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">Trasy</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/sheets.html">Plechy</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">Uživatelé</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/edit.html">Editovat</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">Zákazníci</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">Nastavení</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">Prostředí</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">Import</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">Ohýbání</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">Řezání</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">Oznámení</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">Sledování</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">Úloha</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">Zprávy</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Informace o společnosti</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Knihovna</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Zobrazení knihovny</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="assemblyview.html">Konstrukční skupina</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Konstrukční skupina</h1>
+<div class="sect1">
+<h2 id="_vytvoření_statických_rozmístění_z_konstrukční_skupiny">Vytvoření statických rozmístění z konstrukční skupiny</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Statická rozmístění lze pro konstrukční skupinu generovat pomocí průvodce
+interaktivním rozmísťováním.
+Tato rozmístění jsou pevná uspořádání přidružená pouze k vybrané konstrukční skupině.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Přepněte na zobrazení <strong>assys</strong>.</p>
+</li>
+<li>
+<p>Klikněte pravým tlačítkem na požadovanou konstrukční skupinu a vyberte
+<strong>Create Nests&#8230;&#8203;</strong>.</p>
+</li>
+<li>
+<p>Otevře se průvodce Interactive Nesting.</p>
+</li>
+<li>
+<p>Výchozí průvodce interaktivním rozmísťováním přepne na stránku
+<strong>Select Machine &amp; Material</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/assemblyinteractive.png" alt="Machine and material" width="950">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Stroje jsou zobrazeny s barevnými pruhy označujícími dostupné výrobní zatížení:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Zelený pruh: Naplánované hodiny</p>
+</li>
+<li>
+<p>Šedý pruh: Dostupné hodiny (z 8hodinové směny)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Pod každým strojem jsou vybrané díly seskupeny se svým surovým materiálem
+(díly/celkové množství).</p>
+</li>
+<li>
+<p>Pokud díl nemá platné řešení nástrojů pro daný stroj, je tento díl a
+materiál pro zpracování na daném stroji ignorován.</p>
+</li>
+<li>
+<p>Pokud je surový materiál vybrán pro jeden stroj, nebude dostupný pro ostatní
+stroje.</p>
+</li>
+<li>
+<p>Jakmile je plán rozmístění stroje nastaven, vyberte preferovaný plech a
+přepište parametry plechu jako <strong>Priority</strong>,
+<strong>Quantity</strong>, <strong>Margins</strong> atd.</p>
+</li>
+<li>
+<p>Plechy můžete filtrovat pro zobrazení <strong>All Sheets</strong>,
+<strong>Standard Sheets</strong> nebo
+<strong>Remnant Sheets</strong>. Klikněte na <strong>next</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+V této fázi není možné zvyšovat množství. Můžete buď ponechat stejné jako
+množství zásoby plechů, nebo je snížit a zkontrolovat výsledky rozmístění.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>V okně interaktivního plánu rozmístění se zobrazí <strong>Update Qty</strong>.</p>
+</li>
+<li>
+<p>Ve výchozím nastavení <strong>Pick All (F5)</strong> zahrnuje všechny díly pro
+rozmístění, nebo můžete ručně vybrat prioritní díly a upravit množství dílů.
+Klikněte na <strong>next</strong>.</p>
+</li>
+<li>
+<p>Rozmísťování začne a díly rozmístěné na plechu jsou aktualizovány modrým stavem barvy.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/assemblyresult.png" alt="Nesting result">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Výrobní zatížení stroje se aktualizuje na základě výsledku rozmístění.</p>
+</li>
+<li>
+<p>Pokud některé díly zůstanou nerozmístěné, zobrazí se zpráva
+<strong>Some parts remain unnested</strong> — tyto díly zůstávají
+v původní úloze.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Díl může zůstat nerozmístěný, pokud není dostupný vhodný plech.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Statická rozmístění lze upravit tak, aby zahrnovala nerozmístěné díly:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Vyberte layout, do kterého chcete vložit nerozmístěné díly, a rezervujte jej
+pro úpravu.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/assemblylayout.png" alt="Selected layout">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Otevře se JFY Core. Klikněte na <strong>Pick</strong> nebo
+<strong>Pick All</strong> pro výběr nerozmístěných dílů z
+nadřazené konstrukční skupiny.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/addnest.png" alt="Add unnested parts" width="864">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Uspořádejte díl v layoutu podle potřeby.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/unnest.png" alt="Unnested part placement" width="715">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Vygenerovaná rozmístění jsou automaticky pojmenována podle nadřazené konstrukční
+skupiny pro snadnou identifikaci.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Statická rozmístění nemohou obsahovat díly z jiných konstrukčních skupin.
+Povolení smíšených rozmístění konstrukčních skupin by zabránilo uvolnění jedné
+konstrukční skupiny bez uvolnění ostatních, proto je míchání z principu zakázáno.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_komponenty_které_nejsou_z_plechu">Komponenty, které nejsou z plechu</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Když je konstrukční skupina importována, díly z plechu jsou extrahovány a
+přidány do konstrukčních skupin v knihovně dílů.</p>
+</li>
+<li>
+<p>Komponenty, které nejsou z plechu, jsou odděleny a přidány do
+<strong>Components</strong>.</p>
+</li>
+<li>
+<p>Konstrukční skupina je přidána do knihovny konstrukčních skupin a její BOM
+(kusovník) obsahuje jak díly, tak komponenty.</p>
+</li>
+<li>
+<p>Pokud byl díl již importován jako díl z plechu, systém aktualizuje
+stávající záznam a odstraní duplicity z knihovny dílů.</p>
+</li>
+<li>
+<p>Výběr konstrukční skupiny zobrazí jak díly, tak komponenty, přičemž množství
+komponent je zobrazeno pod obrázkem komponenty (počet komponent vybrané
+konstrukční skupiny a celkový počet komponent).</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/components.png" alt="Assembly components" width="999">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Popisky komponent zobrazují název, materiál a velikost.
+Komponenty jsou při výrobě vyloučeny — nejsou rozmísťovány a nejsou pro ně
+generovány plechy.</p>
+</li>
+<li>
+<p>Ukázkové konstrukční skupiny a komponenty jsou dostupné v:
+které lze použít k testování importu komponent a pracovních postupů konstrukčních skupin.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_vytvoření_úlohy_z_konstrukční_skupiny">Vytvoření úlohy z konstrukční skupiny</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Klikněte pravým tlačítkem na konstrukční skupinu, klikněte na <strong>New&#8230;&#8203;</strong> a poté
+<strong>Job</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/newassemblyjob.png" alt="Create new job" width="760">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>V dialogu New Job nastavte počet konstrukčních skupin, klikněte na <strong>OK</strong>
+a poté podle potřeby aktualizujte podrobnosti úlohy (jako termín dodání a prioritu).</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/riegelwindow.png" alt="New job dialog" width="369">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Systém vytvoří úlohu z konstrukční skupiny a zkopíruje statická rozmístění jako
+rozmístění úlohy, přičemž aktualizuje počty plechů. Zkopírovaná rozmístění mají
+předponu ID úlohy.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/assemblycreated.png" alt="Assembly job created" width="999">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Rozmístění úlohy lze upravovat nebo mazat, aniž by to ovlivnilo původní
+statická rozmístění.</p>
+</li>
+<li>
+<p>Rozmístění úlohy lze znovu zabalit pomocí <strong>Adapt/Compact&#8230;&#8203;</strong> nebo
+<strong>Add parts&#8230;&#8203;</strong>.</p>
+</li>
+<li>
+<p>Podrobné kroky naleznete v části
+<a href="../../jobs/layoutcommands/layoutpanel.html#adapt-compact">Přizpůsobit/Zhutnit</a> a
+<a href="../../jobs/layoutcommands/layoutpanel.html#add-parts">Přidat díly</a>.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Pokud se díl v rozmístění neobjeví, zkontrolujte dialog úpravy rozmístění —
+nerozmístěné díly můžete vložit ručně.</p>
+</div>
+<div class="paragraph">
+<p>Používejte uložená vyhledávání a filtry pro rychlé nalezení dílů napříč více
+konstrukčními skupinami.</p>
+</div>
+<div class="paragraph">
+<p>Používejte jasné, popisné názvy konstrukčních skupin a rozmístění, abyste předešli
+záměně při kopírování rozmístění do úloh.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_vytvoření_statických_rozmístění_z_konstrukční_skupiny">Vytvoření statických rozmístění z konstrukční skupiny</a>
+  </li>
+  <li level="1">
+   <a href="#_komponenty_které_nejsou_z_plechu">Komponenty, které nejsou z plechu</a>
+  </li>
+  <li level="1">
+   <a href="#_vytvoření_úlohy_z_konstrukční_skupiny">Vytvoření úlohy z konstrukční skupiny</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="partview.html">Díly</a></span>
+ <span class="next"><a href="../partstate/index.html">Stav dílu</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

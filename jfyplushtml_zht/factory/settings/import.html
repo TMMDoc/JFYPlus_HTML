@@ -1,0 +1,402 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>匯入</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">歡迎使用 JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">安裝</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">硬體需求</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">支援的檔案格式</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">先決條件</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">變更授權</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">組態</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">新增/移除機床</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">設定 tooling</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">設定使用者</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">語言</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">材料</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">新增材料和板材</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">匯出/匯入材料</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">取代材料</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">對應材料</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">使用者介面</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">工作流程</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../library/index.html">庫</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/open/index.html">開啟</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/open/partimport.html">匯入零件</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/orderimport.html">匯入訂單</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/jobimport.html">匯入 job</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/assembliesimport.html">匯入組件</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/libraryview/index.html">庫檢視</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/libraryview/partview.html">零件</a></li>
+      <li><button class="tree blank"></button><a href="../../library/libraryview/assemblyview.html">組件</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/partstate/index.html">零件狀態</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/partstate/partvalidation.html">零件驗證</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partpanel.html">零件面板</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partfilters.html">零件篩選器</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/toolingstatus/index.html">tooling 狀態</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../library/toolingstatus/toolingvalidation/index.html">tooling 驗證</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/bendtooling.html">折彎 tooling 驗證</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/cuttooling.html">切割 tooling 驗證</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/foldtooling.html">折疊 tooling 驗證</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingpanel.html">Tooling 面板</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../library/savingfilters.html">儲存篩選器</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">訂單</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">訂單檢視</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Jobs</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">建立 job</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Job 檢視</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Job 面板</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">自動規劃</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">互動式 nesting</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">重新排料</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Nest 管理</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Layout 檢視</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Layout 面板</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">報告傳送器</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">餘料管理</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">自動餘料管理</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">手動餘料管理</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Twinline nesting</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">過期</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Job 篩選器</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">工廠</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="../routes.html">路線</a></li>
+    <li><button class="tree blank"></button><a href="../sheets.html">板材</a></li>
+    <li><button class="tree blank"></button><a href="../users.html">使用者</a></li>
+    <li><button class="tree blank"></button><a href="../edit.html">編輯</a></li>
+    <li><button class="tree blank"></button><a href="../customers.html">客戶</a></li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">設定</a>
+     <ul>
+      <li><button class="tree blank"></button><a href="environment.html">環境</a></li>
+      <li><button class="tree blank"></button><a class="active" href="import.html">匯入</a></li>
+      <li><button class="tree blank"></button><a href="bend.html">折彎</a></li>
+      <li><button class="tree blank"></button><a href="cut.html">切割</a></li>
+      <li><button class="tree blank"></button><a href="notification.html">通知</a></li>
+      <li><button class="tree blank"></button><a href="watch.html">監視</a></li>
+      <li><button class="tree blank"></button><a href="job.html">Job</a></li>
+      <li><button class="tree blank"></button><a href="reports.html">報告</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">公司資訊</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">工廠</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">設定</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="import.html">匯入</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>匯入</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/import.png" alt="Import settings" width="814">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_output_settings">Output settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Save flat pattern</strong> - 啟用此選項以儲存所匯入零件的展開圖。</p>
+</div>
+<div class="paragraph">
+<p><strong>Format for flat pattern</strong> - 此選項用於選擇 DXF 或 GEO 檔案格式。</p>
+</div>
+<div class="paragraph">
+<p><strong>Flat pattern destination</strong> - 這是展開圖將被儲存的位置。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_import_settings">Import settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Units for DXF files</strong> - 這是匯入 DXF 檔案時所使用的量測單位，使用者可以在 mm 或 inch 之間選擇。</p>
+</div>
+<div class="paragraph">
+<p><strong>Material lookup keys</strong> - 可以使用逗號分隔符指定多個查找項目。匯入零件時，JFY Plus
+會使用這些鍵來搜尋材料值。搜尋到的值隨後用於解析原材料。原始值則儲存在零件的
+Misc Properties 中。</p>
+</div>
+<div class="paragraph">
+<p><strong>Revision lookup keys</strong> - 匯入零件時，會將原始零件檔案（正在匯入的零件檔案）中的修訂值與資料庫中現有的修訂值進行比較。若修訂相同，則放棄匯入。現在 DXF 檔案也支援自訂欄位對應。對於 DXF 檔案，自訂欄位資料會從圖面中的文字圖層或 PPI 附件中擷取。</p>
+</div>
+<div class="paragraph">
+<p><strong>Use geometry comparison on same CAD revision</strong> -
+在匯入具有相同 CAD 修訂的零件時比較幾何圖形，並在偵測到差異時提示使用者取代或跳過匯入，詳見
+<a href="../../library/open/partimport.html#import-configuration">Import configuration</a>
+以了解更多詳情。</p>
+</div>
+<div class="paragraph">
+<p><strong>Part name keys</strong> - 此選項的運作方式與材料及
+Revision lookup keys 類似。設定一個或多個
+Part name keys，以使用 PPI 的 Part name
+而非檔名作為零件名稱。</p>
+</div>
+<div class="paragraph">
+<p><strong>Thickness lookup keys</strong> - 可以使用逗號分隔符指定多個查找項目。匯入零件時，JFY Plus
+會使用這些鍵來搜尋厚度值。搜尋到的值隨後用於解析厚度。原始值則儲存在零件的 Misc
+Properties 中。</p>
+</div>
+<div class="paragraph">
+<p><strong>Thickness comparison fudge</strong> - 這用於匯入零件時查找原材料。在解析出材料名稱和厚度後，JFY Plus 會嘗試解析原材料。更多資訊請參閱下方的 <a href="#_thickness_fudge">Thickness fudge</a> 主題。</p>
+</div>
+<div class="paragraph">
+<p><strong>Identify shapes after a flat is imported</strong> - 匯入零件時，可以自動識別並確認零件內部的形狀。</p>
+</div>
+<div class="paragraph">
+<p><strong>Shape identification fudge</strong> - 形狀識別 fudge 值可在以下層級設定：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Global level</strong> - 此值作為所有形狀的預設值。</p>
+</li>
+<li>
+<p><strong>Individual Shape Level</strong> - 可以在個別形狀層級設定 fudge 值來覆寫預設值。在 Shape
+Library 對話方塊中選取形狀時會顯示 fudge 值。預設情況下，此值設為 0，這類形狀將使用預設的全域值。</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Rotate flat horizontally</strong> - 一般來說，切割機台面為矩形且較寬。為了提升 tooling 可行性，在零件匯入後沿零件寬度旋轉零件。</p>
+</div>
+<div class="paragraph">
+<p><strong>Part rotation threshold</strong> - 將此設為允許旋轉的最小數值。任何小於所設值的零件都不會被旋轉。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_misc_settings">Misc settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Enable pre-import external tools</strong> - 啟用匯入前外部工具匯入選項以啟用 Creo Reader。JFY Plus 會上傳所拖放零件的預先擷取家族實例。請注意，實例擷取是在零件上傳期間執行（作為匯入前作業），因此上傳零件的電腦上必須安裝 Creo 軟體。</p>
+</div>
+<div class="paragraph">
+<p><strong>Ignore drawing colors in Flat thumbnails for clarity</strong> -
+啟用此選項以產生灰階更锐利的縮圖。為了圖像清晰度，會忽略圖層顏色和文字實體。</p>
+</div>
+<div class="paragraph">
+<p><strong>Use only one Engine for all import tasks</strong> -
+啟用後，所有匯入作業僅使用一個引擎核心。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_thickness_fudge">Thickness fudge</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Thickness comparison fudge</strong> 會在庫存中沒有所需的板材厚度時，藉由比較庫存中板材的厚度值來選擇最接近的板材厚度值。</p>
+</div>
+<div class="paragraph">
+<p>例如，假設如下：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>我們有一個板材厚度為 1.6 mm、材料為 steel 的零件。</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/importsheet.png" alt="ImportSheet" width="310">
+</div>
+</div>
+</li>
+<li>
+<p><strong>Thickness comparison fudge</strong> 值為 0.1 mm。</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/thickcomfudge.png" alt="Thickness comparison fudge" width="821">
+</div>
+</div>
+</li>
+<li>
+<p>庫存中有厚度為 1.5 mm、1.55 mm 和 1.7 mm 的 steel 板材。</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/sheetthickness.png" alt="Sheet inventory" width="621">
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>JFY Plus 會在比較 <strong>Thickness comparison fudge</strong> 值（0.1 mm）與所匯入項目（量測為 1.6 mm）後，選擇厚度值最接近的板材。在此情況下，會選擇 1.55 mm。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/fudgeimport.png" alt="Import part" width="347">
+</div>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_output_settings">Output settings</a>
+  </li>
+  <li level="1">
+   <a href="#_import_settings">Import settings</a>
+  </li>
+  <li level="1">
+   <a href="#_misc_settings">Misc settings</a>
+  </li>
+  <li level="1">
+   <a href="#_thickness_fudge">Thickness fudge</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="environment.html">環境</a></span>
+ <span class="next"><a href="bend.html">折彎</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

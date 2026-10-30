@@ -1,0 +1,390 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Sledování</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Vítejte v JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Instalace</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Hardwarové požadavky</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Podporované formáty souborů</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Předpoklady</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Změna licence</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Konfigurace</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Přidat/odebrat stroj</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Nastavení nastrojení</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Konfigurace uživatelů</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Jazyk</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Materiál</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Přidat nový materiál a plech</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Export/Import materiálu</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Nahradit materiál</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Mapování materiálu</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">Uživatelské rozhraní</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Pracovní postup</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../library/index.html">Knihovna</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/open/index.html">Otevřít</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/open/partimport.html">Import dílů</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/orderimport.html">Import zakázek</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/jobimport.html">Import úloh</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/assembliesimport.html">Import konstrukčních skupin</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/libraryview/index.html">Zobrazení knihovny</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/libraryview/partview.html">Díly</a></li>
+      <li><button class="tree blank"></button><a href="../../library/libraryview/assemblyview.html">Konstrukční skupina</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/partstate/index.html">Stav dílu</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/partstate/partvalidation.html">Validace dílu</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partpanel.html">Panel dílu</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partfilters.html">Filtry dílů</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/toolingstatus/index.html">Stav nastrojení</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../library/toolingstatus/toolingvalidation/index.html">Validace nastrojení</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/bendtooling.html">Validace nastrojení ohybu</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/cuttooling.html">Validace nastrojení řezání</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/foldtooling.html">Validace nastrojení ohnutí</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingpanel.html">Panel nastrojení</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../library/savingfilters.html">Ukládání filtrů</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Zakázky</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Zobrazení zakázek</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Úlohy</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Vytvořit úlohu</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Zobrazení úlohy</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Panel úlohy</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Automatické plánování</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Interaktivní rozmístění</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Znovu rozvinutí</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Správa layoutů</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Zobrazení layoutu</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Panel layoutu</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Odesílání zpráv</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Správa zbytků</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Automatická správa zbytků</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Ruční správa zbytků</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Rozmístění Twinline</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Zastaralé</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Filtry úloh</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Závod</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="../routes.html">Trasy</a></li>
+    <li><button class="tree blank"></button><a href="../sheets.html">Plechy</a></li>
+    <li><button class="tree blank"></button><a href="../users.html">Uživatelé</a></li>
+    <li><button class="tree blank"></button><a href="../edit.html">Editovat</a></li>
+    <li><button class="tree blank"></button><a href="../customers.html">Zákazníci</a></li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Nastavení</a>
+     <ul>
+      <li><button class="tree blank"></button><a href="environment.html">Prostředí</a></li>
+      <li><button class="tree blank"></button><a href="import.html">Import</a></li>
+      <li><button class="tree blank"></button><a href="bend.html">Ohýbání</a></li>
+      <li><button class="tree blank"></button><a href="cut.html">Řezání</a></li>
+      <li><button class="tree blank"></button><a href="notification.html">Oznámení</a></li>
+      <li><button class="tree blank"></button><a class="active" href="watch.html">Sledování</a></li>
+      <li><button class="tree blank"></button><a href="job.html">Úloha</a></li>
+      <li><button class="tree blank"></button><a href="reports.html">Zprávy</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Informace o společnosti</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Závod</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Nastavení</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="watch.html">Sledování</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Sledování</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Watch Settings umožňují JFY Plus monitorovat určenou složku a automaticky
+importovat soubory do systému. To pomáhá automatizovat import dílů, úloh,
+konstrukčních skupin a zakázek bez ručního zásahu.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/watch.png" alt="Watch settings" width="814">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_watch_settings">Watch settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Enable 'Live Folder'</strong> - Umožňuje automatické monitorování
+zadané složky.</p>
+</div>
+<div class="paragraph">
+<p><strong>Watch this folder</strong> - Určuje složku, která má být monitorována
+pro příchozí soubory.</p>
+</div>
+<div class="paragraph">
+<p><strong>Watch sub-folders also</strong> - Zahrnuje všechny podsložky do
+procesu monitorování.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_after_file_import">After file import</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>After import</strong> - Po importu souboru má uživatel dvě
+možnosti. Soubor lze z umístění smazat nebo přesunout do jiného
+umístění.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Delete imported file</strong> - Odstraní zdrojový soubor po
+úspěšném importu.</p>
+</li>
+<li>
+<p><strong>Move imported file</strong> - Přesune zdrojový soubor do
+složky zadané v <strong>Move files to this folder</strong> po úspěšném importu.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Move files to this folder</strong> - Určuje cílovou složku,
+kam mají být přesunuty úspěšně importované soubory, když je <strong>After import</strong> nastaveno na
+<strong>Move imported file</strong>.</p>
+</div>
+<div class="paragraph">
+<p><strong>Move spreadsheets with errors to this folder</strong> - Přesune
+neúspěšné importy do zadané složky chyb.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_spreadsheet_import_settings">Spreadsheet import settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Import spreadsheet from 'Live Folder'</strong> -
+Automaticky importuje soubory tabulek zjištěné ve složce watch.</p>
+</div>
+<div class="paragraph">
+<p><strong>Do not import spreadsheet with errors</strong> - Zabraňuje
+importu souborů obsahujících chyby validace.</p>
+</div>
+<div class="paragraph">
+<p><strong>Spreadsheet import option</strong> - Vybere typ
+dat k importu z rozevíracího seznamu. Podporované formáty tabulek mohou zahrnovat
+CSV, XLSX nebo XML. Dostupné možnosti jsou:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Import Jobs</strong> - Importuje data úloh z tabulky.</p>
+</li>
+<li>
+<p><strong>Import Orders</strong> - Importuje data zakázek z
+tabulky.</p>
+</li>
+<li>
+<p><strong>Import Assemblies</strong> - Importuje data konstrukčních skupin z
+tabulky.</p>
+</li>
+<li>
+<p><strong>Import Parts</strong> - Importuje data dílů z
+tabulky.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_další_informace">Další informace</h2>
+<div class="sectionbody">
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Při konfiguraci složky watch použijte cestu UNC <code>(\\ServerName\FolderPath)</code> nebo mapovanou jednotku <code>(M:\FolderPath)</code>.
+Nepoužívejte místní cesty jako <code>C:\FolderPath</code>.</p>
+</li>
+<li>
+<p>Počítač, na kterém běží služba JFY Plus Engine, musí mít oprávnění ke čtení a zápisu
+do nakonfigurované složky watch. Bez dostatečných oprávnění nemusí být soubory
+úspěšně zjištěny, importovány, přesunuty nebo smazány.</p>
+</li>
+<li>
+<p>Mapování tabulek musí být nakonfigurováno před povolením Watch Settings.
+Jinak JFY Plus nebude schopen zpracovat soubory tabulek zjištěné ve
+složce watch.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_watch_settings">Watch settings</a>
+  </li>
+  <li level="1">
+   <a href="#_after_file_import">After file import</a>
+  </li>
+  <li level="1">
+   <a href="#_spreadsheet_import_settings">Spreadsheet import settings</a>
+  </li>
+  <li level="1">
+   <a href="#_další_informace">Další informace</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="notification.html">Oznámení</a></span>
+ <span class="next"><a href="job.html">Úloha</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

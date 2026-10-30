@@ -1,0 +1,154 @@
+Version=58
+APPNAME=JFY Plus
+BENDAPP=JFY Bend
+BRAND=JFY
+CUTAPP=JFY Cut
+FLAVOR=JFY
+FOLDDAPP=Flux Fold
+JFY=
+LANGUAGE=EN
+TECNOAPP=JFY Core
+TECNOAPP1=MetaCAM
+Folders=16
+Pages=73
+UIXlate=False, DebugUIXlate=False, Language=EN
+
+contents.txt • 265803.125808
+Impressum.adoc • 会社情報
+impressum.JFY.adoc • 会社情報
+Index.adoc • {APPNAME} へようこそ
+Index.JFY.adoc • {APPNAME} へようこそ
+manifest.txt • 262129.122153
+UserInterface.adoc • ユーザーインターフェイス
+Workflow.adoc • ワークフロー
+cadextensions\contents.txt • 265821.065841
+cadextensions\Index.adoc • CAD 拡張機能
+configuration\CADMapFields.adoc • CAD からのフィールドのマッピング（検索キー）
+configuration\configureUsers.adoc • ユーザーの構成
+configuration\contents.txt • 265821.065841
+configuration\Index.adoc • 構成
+configuration\Language.adoc • 言語
+configuration\MapBendPages.adoc • 材料のマッピング
+configuration\MapCAMPages.adoc • CAM ページのマッピング
+configuration\SetupMachine.adoc • マシンの追加/削除
+configuration\SetupTooling.adoc • ツーリングのセットアップ
+factory\contents.txt • 265821.065841
+factory\Customers.adoc • 顧客
+factory\edit.adoc • 編集
+factory\Index.adoc • ファクトリー
+factory\routes.adoc • ルート
+factory\sheets.adoc • シート
+factory\Users.adoc • ユーザー
+installation\changelic.adoc • ライセンスの変更
+installation\ClientInstallation.adoc • クライアントのインストール
+installation\contents.txt • 265821.065841
+installation\HardwareRequirement.adoc • ハードウェア要件
+installation\importformats.adoc • サポートされているファイル形式
+installation\index.adoc • インストール
+installation\Prerequisites.adoc • 前提条件
+installation\ServerInstallation.adoc • サーバーのインストール
+jobs\contents.txt • 265821.065842
+jobs\Index.adoc • ジョブ
+jobs\JOBAutoPlan.adoc • 自動計画
+jobs\JOBCreation.adoc • ジョブの作成
+jobs\JobFilters.adoc • ジョブフィルター
+jobs\JOBInteractPlan.adoc • インタラクティブネスティング
+jobs\JobPanel.adoc • ジョブパネル
+jobs\JOBView.adoc • ジョブビュー
+jobs\OutDate.adoc • 古くなった
+jobs\Repacking.adoc • 再パッキング
+jobs\TwinlineNesting.adoc • TwinLineネスティング
+library\contents.txt • 265821.065843
+library\Index.adoc • ライブラリ
+library\SavingFilters.adoc • フィルターの保存
+orders\Contents.txt
+orders\Index.adoc • オーダー
+orders\OrdersView.adoc • オーダービュー
+UIXlate\BR.txt
+UIXlate\CHS.txt
+UIXlate\CHT.txt
+UIXlate\CS.txt
+UIXlate\DA.txt
+UIXlate\DE.txt
+UIXlate\EN.txt
+UIXlate\ES.txt
+UIXlate\FI.txt
+UIXlate\FR.txt
+UIXlate\GR.txt
+UIXlate\HU.txt
+UIXlate\ID.txt
+UIXlate\IT.txt
+UIXlate\JP.txt
+UIXlate\KO.txt
+UIXlate\NL.txt
+UIXlate\PL.txt
+UIXlate\Prefixes.txt
+UIXlate\RO.txt
+UIXlate\RU.txt
+UIXlate\SK.txt
+UIXlate\SV.txt
+UIXlate\TH.txt
+UIXlate\TR.txt
+_jfybuild\build_docbook.log
+_jfybuild\build_docx.log
+_jfybuild\build_jfy.rb
+_jfybuild\build_pdf.log
+_jfybuild\JFY_Plus_Reference_Manual.docx
+_jfybuild\JFY_Plus_Reference_Manual.pdf
+_jfybuild\master.adoc • JFY Plus Reference Manual
+_jfybuild\master.xml
+cadextensions\solidworksaddin\contents.txt • 265821.065841
+cadextensions\solidworksaddin\FactorySettings.adoc • ファクトリー設定
+cadextensions\solidworksaddin\Index.adoc • SolidWorks アドイン
+cadextensions\solidworksaddin\InstallationSteps.adoc • インストール
+cadextensions\solidworksaddin\MiscEnhancements.adoc • その他の改善
+cadextensions\solidworksaddin\PartFeasibility.adoc • 製造可能性の確認
+cadextensions\solidworksaddin\SaveAssembly.adoc • アセンブリの保存
+cadextensions\solidworksaddin\SaveToPraxis.adoc • 部品の保存
+configuration\addmaterial\AddNew.adoc • 新しい材料とシートの追加
+configuration\addmaterial\contents.txt • 265821.065841
+configuration\addmaterial\ExportImport.adoc • 材料のエクスポート/インポート
+configuration\addmaterial\Index.adoc • 材料
+configuration\addmaterial\ReplaceMaterial.adoc • 材料の置換
+factory\settings\Bend.adoc • 曲げ加工
+factory\settings\contents.txt • 265821.065841
+factory\settings\Cut.adoc • 切断
+factory\settings\Environment.adoc • 環境
+factory\settings\Import.adoc • インポート
+factory\settings\Index.adoc • 設定
+factory\settings\Job.adoc • ジョブ
+factory\settings\Notification.adoc • 通知
+factory\settings\Reports.adoc • レポート
+factory\settings\Watch.adoc • 監視
+jobs\layoutcommands\contents.txt • 265821.065842
+jobs\layoutcommands\Index.adoc • ネスト管理
+jobs\layoutcommands\LayoutPanel.adoc • レイアウトパネル
+jobs\layoutcommands\NestView.adoc • レイアウトビュー
+jobs\layoutcommands\ReportSender.adoc • レポート送信
+jobs\remnantmanagement\AutoRemnant.adoc • 自動残材管理
+jobs\remnantmanagement\contents.txt • 265821.065842
+jobs\remnantmanagement\Index.adoc • 残材管理
+jobs\remnantmanagement\ManualRemnant.adoc • 手動残材管理
+library\libraryview\AssemblyView.adoc • アセンブリ
+library\libraryview\Contents.txt
+library\libraryview\Index.adoc • ライブラリビュー
+library\libraryview\PartView.adoc • 部品
+library\open\AssembliesImport.adoc • アセンブリのインポート
+library\open\Contents.txt
+library\open\Index.adoc • 開く
+library\open\JobImport.adoc • ジョブのインポート
+library\open\OrderImport.adoc • オーダーのインポート
+library\open\PartImport.adoc • 部品のインポート
+library\partstate\contents.txt • 265821.065842
+library\partstate\Index.adoc • 部品ステータス
+library\partstate\PartFilters.adoc • 部品フィルター
+library\partstate\PartPanel.adoc • 部品パネル
+library\partstate\PartValidation.adoc • 部品の検証
+library\toolingstatus\contents.txt • 265821.065842
+library\toolingstatus\Index.adoc • ツーリングステータス
+library\toolingstatus\ToolingPanel.adoc • ツーリングパネル
+library\toolingstatus\toolingvalidation\BendTooling.adoc • 曲げツーリングの検証
+library\toolingstatus\toolingvalidation\contents.txt • 265821.065842
+library\toolingstatus\toolingvalidation\CutTooling.adoc • 切断ツーリングの検証
+library\toolingstatus\toolingvalidation\FoldTooling.adoc • 折り曲げツーリングの検証
+library\toolingstatus\toolingvalidation\Index.adoc • ツーリングの検証

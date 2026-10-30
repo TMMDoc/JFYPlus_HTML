@@ -1,0 +1,438 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Import</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Vítejte v JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Instalace</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Hardwarové požadavky</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Podporované formáty souborů</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Předpoklady</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Změna licence</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Konfigurace</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Přidat/odebrat stroj</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Nastavení nastrojení</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Konfigurace uživatelů</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Jazyk</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Materiál</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Přidat nový materiál a plech</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Export/Import materiálu</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Nahradit materiál</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Mapování materiálu</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">Uživatelské rozhraní</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Pracovní postup</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../library/index.html">Knihovna</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/open/index.html">Otevřít</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/open/partimport.html">Import dílů</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/orderimport.html">Import zakázek</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/jobimport.html">Import úloh</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/assembliesimport.html">Import konstrukčních skupin</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/libraryview/index.html">Zobrazení knihovny</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/libraryview/partview.html">Díly</a></li>
+      <li><button class="tree blank"></button><a href="../../library/libraryview/assemblyview.html">Konstrukční skupina</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/partstate/index.html">Stav dílu</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/partstate/partvalidation.html">Validace dílu</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partpanel.html">Panel dílu</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partfilters.html">Filtry dílů</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/toolingstatus/index.html">Stav nastrojení</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../library/toolingstatus/toolingvalidation/index.html">Validace nastrojení</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/bendtooling.html">Validace nastrojení ohybu</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/cuttooling.html">Validace nastrojení řezání</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/foldtooling.html">Validace nastrojení ohnutí</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingpanel.html">Panel nastrojení</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../library/savingfilters.html">Ukládání filtrů</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Zakázky</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Zobrazení zakázek</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Úlohy</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Vytvořit úlohu</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Zobrazení úlohy</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Panel úlohy</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Automatické plánování</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Interaktivní rozmístění</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Znovu rozvinutí</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Správa layoutů</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Zobrazení layoutu</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Panel layoutu</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Odesílání zpráv</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Správa zbytků</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Automatická správa zbytků</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Ruční správa zbytků</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Rozmístění Twinline</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Zastaralé</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Filtry úloh</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Závod</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="../routes.html">Trasy</a></li>
+    <li><button class="tree blank"></button><a href="../sheets.html">Plechy</a></li>
+    <li><button class="tree blank"></button><a href="../users.html">Uživatelé</a></li>
+    <li><button class="tree blank"></button><a href="../edit.html">Editovat</a></li>
+    <li><button class="tree blank"></button><a href="../customers.html">Zákazníci</a></li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Nastavení</a>
+     <ul>
+      <li><button class="tree blank"></button><a href="environment.html">Prostředí</a></li>
+      <li><button class="tree blank"></button><a class="active" href="import.html">Import</a></li>
+      <li><button class="tree blank"></button><a href="bend.html">Ohýbání</a></li>
+      <li><button class="tree blank"></button><a href="cut.html">Řezání</a></li>
+      <li><button class="tree blank"></button><a href="notification.html">Oznámení</a></li>
+      <li><button class="tree blank"></button><a href="watch.html">Sledování</a></li>
+      <li><button class="tree blank"></button><a href="job.html">Úloha</a></li>
+      <li><button class="tree blank"></button><a href="reports.html">Zprávy</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Informace o společnosti</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Závod</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Nastavení</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="import.html">Import</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Import</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/import.png" alt="Import settings" width="814">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_output_settings">Output settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Save flat pattern</strong> - Povolte tuto možnost pro uložení rozvinutého
+tvaru importovaného dílu.</p>
+</div>
+<div class="paragraph">
+<p><strong>Format for flat pattern</strong> - Tato možnost se používá k výběru
+formátu souboru DXF nebo GEO.</p>
+</div>
+<div class="paragraph">
+<p><strong>Flat pattern destination</strong> - Toto je umístění, kam se
+rozvinutý tvar uloží.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_import_settings">Import settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Units for DXF files</strong> - Toto je měrná jednotka, se kterou bude soubor DXF
+importován, uživatel si může vybrat mezi mm nebo palcem.</p>
+</div>
+<div class="paragraph">
+<p><strong>Material lookup keys</strong> - Pomocí oddělovače čárkou lze přiřadit více
+vyhledávacích záznamů. Když je díl importován, JFY Plus
+používá tyto klíče k vyhledání hodnot materiálu. Vyhledané hodnoty se poté
+použijí k rozlišení surového materiálu. Původní hodnoty jsou uloženy ve
+Misc Properties dílu.</p>
+</div>
+<div class="paragraph">
+<p><strong>Revision lookup keys</strong> - Když je díl importován,
+hodnota revize ze souboru surového dílu (importovaný soubor dílu) je
+porovnána se stávající hodnotou revize v repozitáři. Import je
+zrušen, pokud je revize stejná. Vlastní mapování polí je nyní také
+podporováno pro soubory DXF. U souborů DXF jsou data vlastního pole
+extrahována z textové vrstvy ve výkresu nebo z přílohy PPI.</p>
+</div>
+<div class="paragraph">
+<p><strong>Use geometry comparison on same CAD revision</strong> -
+Porovnává geometrii při importu dílu se stejnou CAD revizí a vyzývá
+uživatele k nahrazení nebo přeskočení importu, pokud jsou zjištěny rozdíly, viz
+<a href="../../library/open/partimport.html#import-configuration">Konfigurace importu</a>
+pro více podrobností.</p>
+</div>
+<div class="paragraph">
+<p><strong>Part name keys</strong> - Tato možnost funguje podobně jako
+materiál a Revision lookup keys. Nastavte jeden nebo více
+Part name keys pro použití PPI Part name
+místo názvu souboru jako názvu dílu.</p>
+</div>
+<div class="paragraph">
+<p><strong>Thickness lookup keys</strong> - Pomocí oddělovače čárkou lze přiřadit více
+vyhledávacích záznamů. Když je díl importován, JFY Plus
+používá tyto klíče k vyhledání hodnot tloušťky. Vyhledané hodnoty se poté
+použijí k rozlišení tloušťky. Původní hodnoty jsou uloženy ve Misc
+Properties dílu.</p>
+</div>
+<div class="paragraph">
+<p><strong>Thickness comparison fudge</strong> - Toto se používá při vyhledávání
+surového materiálu při importu dílu. JFY Plus se pokouší rozlišit surový
+materiál po analyzování názvu materiálu a tloušťky. Pro více
+informací viz téma <a href="#_tolerance_tloušťky">Tolerance tloušťky</a> níže.</p>
+</div>
+<div class="paragraph">
+<p><strong>Identify shapes after a flat is imported</strong> - Když je
+díl importován, vnitřní tvary uvnitř dílu mohou být automaticky rozpoznány
+a identifikovány.</p>
+</div>
+<div class="paragraph">
+<p><strong>Shape identification fudge</strong> - Hodnotu fudge
+identifikace tvaru lze nastavit na:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Globální úrovni</strong> - Tato hodnota se používá jako výchozí pro všechny tvary.</p>
+</li>
+<li>
+<p><strong>Úrovni jednotlivého tvaru</strong> - Výchozí hodnotu lze přepsat nastavením
+hodnoty fudge na úrovni jednotlivého tvaru. Výběr tvaru v dialogu Shape
+Library zobrazí hodnotu fudge. Ve výchozím nastavení je nastavena na 0 a
+pro takové tvary se použije výchozí globální hodnota.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>Rotate flat horizontally</strong> - Obecně jsou stoly řezácích
+strojů obdélníkové a širší. Pro zlepšení proveditelnosti nástrojení otočte
+díl podél šířky dílu po importu dílu.</p>
+</div>
+<div class="paragraph">
+<p><strong>Part rotation threshold</strong> - Nastavte toto jako
+minimální číslo pro povolení rotace. Jakýkoli díl menší než nastavená hodnota nebude
+otočen.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_misc_settings">Misc settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Enable pre-import external tools</strong> - Povolte možnost
+importu externích nástrojů před importem pro povolení Creo Reader. JFY Plus nahraje
+předem extrahované instance rodiny přetáhnutého dílu. Upozorňujeme, že
+extrakce instancí se provádí během nahrávání dílu (jako operace před importem),
+takže software Creo musí být nainstalován na počítači, ze kterého
+se díl nahrává.</p>
+</div>
+<div class="paragraph">
+<p><strong>Ignore drawing colors in Flat thumbnails for clarity</strong> -
+Povolte tuto možnost pro generování ostřejších miniátur ve stupních šedi.
+Barvy vrstev a textové entity jsou ignorovány kvůli přehlednosti obrazu.</p>
+</div>
+<div class="paragraph">
+<p><strong>Use only one Engine for all import tasks</strong> -
+Když je povoleno, pro důležité úkoly se používá pouze jedno jádro enginu.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tolerance_tloušťky">Tolerance tloušťky</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Thickness comparison fudge</strong> vybírá nejbližší
+hodnotu tloušťky plechu, když požadovaná tloušťka plechu není dostupná ve
+skladu, porovnáním hodnoty tloušťky plechů ve skladu.</p>
+</div>
+<div class="paragraph">
+<p>Například předpokládejme následující:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Máme díl s tloušťkou plechu 1,6 mm a materiálem ocel.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/importsheet.png" alt="ImportSheet" width="310">
+</div>
+</div>
+</li>
+<li>
+<p>Hodnota <strong>Thickness comparison fudge</strong> je 0,1 mm.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/thickcomfudge.png" alt="Thickness comparison fudge" width="821">
+</div>
+</div>
+</li>
+<li>
+<p>Sklad má ocelové plechy s tloušťkou 1,5 mm, 1,55 mm a 1,7 mm.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/sheetthickness.png" alt="Sheet inventory" width="621">
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>JFY Plus vybírá plech s nejbližší hodnotou tloušťky po porovnání
+hodnoty <strong>Thickness comparison fudge</strong> (0,1 mm) s
+importovanou položkou (měřící 1,6 mm). V tomto případě bude výběrem 1,55 mm.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/fudgeimport.png" alt="Import part" width="347">
+</div>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_output_settings">Output settings</a>
+  </li>
+  <li level="1">
+   <a href="#_import_settings">Import settings</a>
+  </li>
+  <li level="1">
+   <a href="#_misc_settings">Misc settings</a>
+  </li>
+  <li level="1">
+   <a href="#_tolerance_tloušťky">Tolerance tloušťky</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="environment.html">Prostředí</a></span>
+ <span class="next"><a href="bend.html">Ohýbání</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

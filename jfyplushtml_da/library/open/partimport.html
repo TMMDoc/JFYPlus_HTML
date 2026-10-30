@@ -1,0 +1,460 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Importer dele</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Velkommen til JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Installation</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Hardwarekrav</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Understøttede filformater</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Forudsætninger</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Skift licens</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Konfiguration</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Tilføj/fjern maskine</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Opsætning af klargøring</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Konfigurer brugere</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Sprog</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Materiale</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Tilføj nyt materiale og plade</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Eksporter/importer materiale</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Erstat materiale</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Tilknyt materiale</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">Brugergrænsefladen</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Arbejdsgang</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Bibliotek</a>
+   <ul>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Åbn</a>
+     <ul>
+      <li><button class="tree blank"></button><a class="active" href="partimport.html">Importer dele</a></li>
+      <li><button class="tree blank"></button><a href="orderimport.html">Importer opgaver</a></li>
+      <li><button class="tree blank"></button><a href="jobimport.html">Importer job</a></li>
+      <li><button class="tree blank"></button><a href="assembliesimport.html">Importer monteringer</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../libraryview/index.html">Biblioteksvisning</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../libraryview/partview.html">Dele</a></li>
+      <li><button class="tree blank"></button><a href="../libraryview/assemblyview.html">Montering</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../partstate/index.html">Delstatus</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../partstate/partvalidation.html">Delvalidering</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partpanel.html">Delpanel</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partfilters.html">Delfiltre</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../toolingstatus/index.html">Klargøringsstatus</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../toolingstatus/toolingvalidation/index.html">Klargøringsvalidering</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/bendtooling.html">Validering af bukkeklargøring</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/cuttooling.html">Validering af skæreklargøring</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/foldtooling.html">Validering af falsklargøring</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../toolingstatus/toolingpanel.html">Klargøringspanel</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../savingfilters.html">Gemning af filtre</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Opgaver</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Opgavevisning</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Jobs</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Opret job</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Jobvisning</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Jobpanel</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Automatisk planlægning</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Interaktiv indlejring</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Ompakning</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Indlejringshåndtering</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Layoutvisning</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Layoutpanel</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Rapportafsender</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Resthåndtering</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Automatisk resthåndtering</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Manuel resthåndtering</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Twin-line indlejring</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Forældet</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Jobfiltre</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../factory/index.html">Fabrik</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">Ruter</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/sheets.html">Plader</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">Brugere</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/edit.html">Redigér</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">Kunder</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">Indstillinger</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">Omgivelser</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">Import</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">Bukning</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">Skær</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">Notifikationer</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">Overvågning</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">Job</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">Rapporter</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Virksomhedsoplysninger</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Bibliotek</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Åbn</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="partimport.html">Importer dele</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Importer dele</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Før du importerer dele, skal du sikre dig, at filformaterne er kompatible med JFY Plus.
+Se <a href="../../installation/importformats.html">understøttede filformater</a> for flere
+detaljer.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Hvis materiale og tykkelse ikke er tilknyttet delen efter import, tildel
+materiale ved hjælp af delpanelet.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_importmetoder">Importmetoder</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Der er tre metoder til at importere dele til Part Library:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Importer via fil</p>
+</li>
+<li>
+<p>Træk og slip</p>
+</li>
+<li>
+<p>Overvågningsmappe</p>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="_importer_via_fil">Importer via fil</h3>
+<div class="paragraph">
+<p>En 2D- eller 3D-delfil kan importeres til Part Library ved hjælp af
+<strong>Import parts&#8230;&#8203;</strong>-muligheden.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Klik på <strong>open</strong>-ikonerne fra kommandolinjen og vælg
+<strong>Import parts&#8230;&#8203;</strong>-muligheden.</p>
+</li>
+<li>
+<p><strong>Open</strong>-dialogen vises — vælg en vilkårlig CAD-fil (2D eller 3D).</p>
+</li>
+<li>
+<p>Et eksempel på den valgte CAD-fil vises.</p>
+</li>
+<li>
+<p>Vælg den ønskede del og klik på <strong>Open</strong>.</p>
+</li>
+<li>
+<p>Systemet auto-klargør delen for alle tilgængelige maskiner med opdateret klargørings-
+status.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_træk_og_slip">Træk og slip</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Træk og slip en delfil direkte ind i JFY Plus Part Library.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_overvågningsmappe">Overvågningsmappe</h3>
+<div class="paragraph">
+<p>Overvågningsindstillinger giver dig mulighed for at overvåge en mappe for nye filer og automatisk importere
+dem til Part Library.</p>
+</div>
+<div class="paragraph">
+<p>For at konfigurere, se <a href="../../factory/settings/watch.html">Overvågningsindstillinger</a>-siden.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Brug UNC-sti (Universal Naming Convention) <code>\\192.168.1.11\&lt;Folder path&gt;</code> eller et
+tilknyttet drev <code>M:\&lt;Folder Path&gt;</code>.</p>
+</li>
+<li>
+<p>Den Engine-kørende pc skal have læse-/skriveadgang til denne mappe.</p>
+</li>
+<li>
+<p>Brug ikke en lokal sti som <code>C:\&lt;Folder Path&gt;</code>, fordi Watch-tjenesten
+leder efter filer på Engine-pc&#8217;en — ikke den lokale pc.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/watch.png" alt="Watch settings" width="744">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="import-configuration">Importkonfiguration</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_use_geometry_comparison_on_same_cad_revision">Use geometry comparison on same CAD revision</h3>
+<div class="paragraph">
+<p>Ved import af en del med samme CAD-revision kan JFY Plus sammenligne
+geometrien af CAD-filen med den eksisterende del.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>For at aktivere dette, konfigurer <strong>Revision lookup keys</strong> (for
+eksempel REV) i <strong>factory</strong> → <strong>settings</strong>
+→<strong>Import</strong>. Aktiver derefter
+<strong>Use geometry comparison on same CAD revision</strong>-muligheden.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/rev.png" alt="Revision" width="755"></span></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Geometrisammenligning på samme CAD-revision fungerer kun, når
+<strong>Revision lookup keys</strong> er konfigureret.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Importer nu en del til delbiblioteket med en bestemt revision (for
+eksempel Revision 1).</p>
+</li>
+<li>
+<p>Den samme del importeres igen med samme revisionsværdi.</p>
+</li>
+<li>
+<p>JFY Plus sammenligner geometrien af den nyligt importerede CAD-fil med den eksisterende
+del.</p>
+</li>
+<li>
+<p>Hvis der registreres en geometriforskel, viser JFY Plus en prompt, der spørger, om der skal:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Replace</strong> den eksisterende del med den nye geometri, mens den samme revisions-
+værdi bevares.</p>
+</li>
+<li>
+<p><strong>Skip</strong> importen og bevare den eksisterende del og dens geometri.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Dette giver brugere mulighed for at opdatere delgeometri uden at ændre revisionsværdien,
+mens de stadig bevarer kontrol over, hvorvidt eksisterende dele erstattes.</p>
+</div>
+<div class="paragraph">
+<p>Importerede dele tilføjes automatisk til biblioteket til yderligere brug. For mere information,
+se <a href="../../library/index.html">Bibliotek</a>.</p>
+</div>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_importmetoder">Importmetoder</a>
+  </li>
+  <li level="2">
+   <a href="#_importer_via_fil">Importer via fil</a>
+  </li>
+  <li level="2">
+   <a href="#_træk_og_slip">Træk og slip</a>
+  </li>
+  <li level="2">
+   <a href="#_overvågningsmappe">Overvågningsmappe</a>
+  </li>
+  <li level="1">
+   <a href="#import-configuration">Importkonfiguration</a>
+  </li>
+  <li level="2">
+   <a href="#_use_geometry_comparison_on_same_cad_revision">Use geometry comparison on same CAD revision</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="index.html">Åbn</a></span>
+ <span class="next"><a href="orderimport.html">Importer opgaver</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

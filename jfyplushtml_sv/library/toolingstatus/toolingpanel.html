@@ -1,0 +1,711 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Tooling-panel</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Välkommen till JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Installation</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Hårdvarukrav</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Filformat som stöds</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Förutsättningar</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Ändra licens</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Konfiguration</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Lägg till/ta bort maskin</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Konfigurera tooling</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Konfigurera användare</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Språk</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Material</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Lägg till nytt material och plåt</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Exportera/importera material</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Ersätt material</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Mappa material</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">Användargränssnittet</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Workflow</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Bibliotek</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../open/index.html">Öppna</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../open/partimport.html">Importera detaljer</a></li>
+      <li><button class="tree blank"></button><a href="../open/orderimport.html">Importera order</a></li>
+      <li><button class="tree blank"></button><a href="../open/jobimport.html">Importera job</a></li>
+      <li><button class="tree blank"></button><a href="../open/assembliesimport.html">Importera sammanställningar</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../libraryview/index.html">Biblioteksvy</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../libraryview/partview.html">Detaljer</a></li>
+      <li><button class="tree blank"></button><a href="../libraryview/assemblyview.html">Sammanställning</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../partstate/index.html">Detaljstatus</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../partstate/partvalidation.html">Detaljvalidering</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partpanel.html">Detaljpanel</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partfilters.html">Detaljfilter</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Tooling-status</a>
+     <ul>
+      <li>
+       <button class="tree closed"></button>
+       <a href="toolingvalidation/index.html">Tooling-validering</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="toolingvalidation/bendtooling.html">Validering av bocknings-tooling</a></li>
+        <li><button class="tree blank"></button><a href="toolingvalidation/cuttooling.html">Validering av skärnings-tooling</a></li>
+        <li><button class="tree blank"></button><a href="toolingvalidation/foldtooling.html">Validering av viknings-tooling</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a class="active" href="toolingpanel.html">Tooling-panel</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../savingfilters.html">Spara filter</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Order</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Ordervy</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Job</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Skapa job</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Job-vy</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Job-panel</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Autoplanering</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Interaktiv nesting</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Ompackning</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Nesthantering</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Layout-vy</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Layout-panel</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Rapportavsändare</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Hantering av restbitar</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Hantering av automatiska restbitar</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Hantering av manuella restbitar</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Twinline nesting</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Föråldrad</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Job-filter</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../factory/index.html">Fabrik</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">Rutter</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/sheets.html">Plåtar</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">Användare</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/edit.html">Redigera</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">Kunder</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">Inställningar</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">Miljö</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">Import</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">Bockning</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">Skärning</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">Aviseringar</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">Bevaka</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">Job</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">Rapporter</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Företagsinformation</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Bibliotek</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Tooling-status</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="toolingpanel.html">Tooling-panel</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Tooling-panel</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Detta avsnitt beskriver tooling-relaterade åtgärder såsom
+<strong>Export outputs</strong>,
+<strong>Check Tooling</strong>, <strong>Suppress Tooling</strong>,
+<strong>Set as Base-Flat&#8230;&#8203;</strong>, <strong>Copy Tooling</strong>,
+och andra alternativ som används för att hantera tooling-instanser.</p>
+</div>
+<table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="img/toolingpanel.png" alt="Tooling panel" width="150">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/document.png" alt="Read-only" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Open in read-only mode for viewing</strong><br>
+Öppnar den valda toolingen i skrivskyddat läge.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/editicon.png" alt="Edit" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Check-out the document for editing</strong><br>
+Aktiverar redigering av den valda toolingen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Export Outputs</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Exporterar den valda tooling-utdatan till den konfigurerade destinationen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Check Tooling</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Validerar den befintliga toolingen utan att göra några ändringar och uppdaterar
+dess status om valideringen misslyckas.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Copy Tooling&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kopierar uppsättningen för stans, sekvens och bakanslag från den valda
+referens-toolingen och tillämpar den på andra lösningar där det är genomförbart.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Set as Base-Flat&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Markerar den valda bocknings- eller viknings-toolingen som referensutbredd för
+att generera skärlösningar.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Re-tool&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bearbetar den valda toolingen för detaljen på nytt utan att påverka andra
+toolingar.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Suppress Tooling</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Undertrycker den valda toolingen så att den utesluts från vidare bearbetning
+och utdatagenerering.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Prev</strong> / <strong>Next</strong> / <strong>Part</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Navigerar till föregående eller nästa tooling, eller tillbaka till
+föräldradetaljen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Sort and filter</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Visar andra toolingar som har liknande egenskaper som den valda toolingen för
+snabb referens.</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_export_outputs">Export Outputs</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Detta alternativ exporterar detaljutdatan till den destination som
+konfigurerats i <strong>Factory Settings</strong>. (Se
+<a href="../../factory/settings/bend.html">Bend Settings</a> och
+<a href="../../factory/settings/cut.html">Cut Settings</a>)</p>
+</div>
+<div class="paragraph">
+<p>Endast de toolingar som är associerade med den valda tooling-operationen
+exporteras, inte hela detaljen.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+De exporterade filerna beror på operationstypen. För bocknings- och
+vikningsoperationer genereras NC-filer och rapporter. För skär- och
+stansoperationer exporteras endast detaljfilerna.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_check_tooling">Check Tooling</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Om det sker en ändring i CAM Settings eller ett bockningsverktyg går förlorat
+behöver du inte toola om detaljen.</p>
+</li>
+<li>
+<p>Använd i stället Check Tooling för att validera den befintliga toolingen utan
+att göra några ändringar.</p>
+</li>
+<li>
+<p>Om valideringen misslyckas uppdateras tooling-statusen för den instansen, och
+de relaterade utdatafilerna tas bort.</p>
+</li>
+<li>
+<p>Check Tooling upptäcker även detaljer där fel tidigare åsidosatts manuellt med
+<strong>Ignore Errors</strong>, och uppdaterar deras status till fel
+om det behövs.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_copy_tooling">Copy tooling</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Copy tooling låter dig snabbt tillämpa bockningstooling från en lösning till
+andra, vilket sparar tid och arbete.</p>
+</div>
+<div class="paragraph">
+<p>Detta kopierar uppsättningen för stans, sekvens och bakanslag från en vald
+referens-tooling (lösning) och försöker tillämpa samma inställningar på alla
+andra lösningar.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Om den kopierade uppsättningen är genomförbar för en målmaskin sparas och
+används den.</p>
+</li>
+<li>
+<p>Om uppsättningen inte är genomförbar förblir den ursprungliga toolingen för
+den maskinen oförändrad.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Du kan till exempel ha olika tooling för olika maskiner:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/check3.png" alt="Before tooling" width="724">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/check4.png" alt="Copy tooling" width="664">
+</div>
+</div>
+<div class="paragraph">
+<p>Samma inställningar för stans, sekvens och bakanslag tillämpas där det är
+möjligt. Om den kopierade uppsättningen inte kan användas förblir den
+ursprungliga toolingen oförändrad.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/copytooling3.png" alt="After tooling" width="700">
+</div>
+</div>
+<div class="paragraph">
+<p>Efter att copy tooling tillämpats har Gooseneck-uppsättningen framgångsrikt
+tillämpats på alla andra maskiner där det är genomförbart.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_set_as_base_flat">Set as Base-Flat&#8230;&#8203;</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Funktionen <strong>Set as Base-Flat&#8230;&#8203;</strong> definierar vilken bocknings-
+eller viknings-tooling som används som referensutbredd för att generera
+skärlösningar. När en tooling markeras som Base-Flat uppdaterar JFY Plus
+detaljens utbredda storlek baserat på den maskinen och regenererar
+skärlösningarna därefter. Base-Flat-toolingar visas med en blå ram i
+användargränssnittet.</p>
+</div>
+<div class="paragraph">
+<p>Olika bockningsmaskiner kan ge små variationer i utbredd storlek för samma
+detalj. När du sätter en tooling som Base-Flat använder JFY Plus den maskinens
+utbredda storlek som huvudreferens och räknar automatiskt om skärlösningarna.</p>
+</div>
+<div class="paragraph">
+<p>Här kan vi se olika utbredda storlekar för samma detalj för olika maskiner:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/baseflat1.png" alt="Base flat1" width="800">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/baseflat2.png" alt="Base flat2" width="663">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_automatic_base_flat_selection">Automatic base flat selection</h3>
+<div class="paragraph">
+<p>När fabriksinställningen
+<strong>Apply flat correction during bending</strong> är aktiverad:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/autobase.png" alt="Auto Base" width="806">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>JFY Plus sätter automatiskt bockningstoolingen (som innehåller tabellen för
+max bockningslängd) som Base-Flat under detaljimporten.</p>
+</li>
+<li>
+<p>Om den valda bockningstoolingen stöter på ett fel eller inte är genomförbar
+växlar JFY Plus intelligent och sätter en annan giltig bockningstooling som
+Base-Flat. Detta säkerställer att referensen för utbredd storlek och
+skärlösningarna alltid förblir konsekventa och giltiga utan manuellt ingripande.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_enhanced_base_flat_management">Enhanced base flat management</h3>
+<div class="paragraph">
+<p>JFY Plus tillhandahåller Base-Flat-alternativ i dialogrutan
+<strong>Save to Praxis</strong> när du sparar redigeringar av bocknings- eller
+viknings-tooling. Dessa alternativ visas endast för toolingar i OK-tillstånd och
+säkerställer att utbredd storlek och skärlösningar förblir korrekta.</p>
+</div>
+<div class="sect3">
+<h4 id="_set_as_base_flat_and_calculate_cutting_solution">Set as Base-Flat and calculate cutting solution</h4>
+<div class="paragraph">
+<p>Detta alternativ används för att markera en tooling som Base-Flat för första
+gången och automatiskt generera motsvarande skärlösning.</p>
+</div>
+<div class="paragraph">
+<p>Visas när:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Toolingen är för närvarande inte markerad som Base-Flat.</p>
+</li>
+<li>
+<p>Användaren har checkat ut toolingen för redigering och sparar ändringarna.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/setbase.png" alt="Set Base" width="432">
+</div>
+</div>
+<div class="paragraph">
+<p>För att använda detta alternativ, checka ut bocknings- eller viknings-toolingen
+och gör de nödvändiga ändringarna, såsom ändringar av bockningsparametrar eller
+utbredd storlek. Tryck på <span class="keyseq"><kbd>Ctrl</kbd>+<kbd>S</kbd></span> för att spara ändringarna. I dialogrutan
+<strong>Save to Praxis</strong>, välj
+<strong>Set as Base-Flat and calculate cutting solution</strong> och
+klicka på
+<strong>OK</strong>. JFY Plus sätter toolingen som Base-Flat och genererar
+skärlösningen med den uppdaterade utbredda storleken.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_update_the_base_flat_and_re_calculate_cutting_solution">Update the base-flat and re-calculate cutting solution</h4>
+<div class="paragraph">
+<p>Detta alternativ används när toolingen redan är markerad som Base-Flat och har
+redigerats, vilket kräver att utbredd storlek och skärlösningar regenereras.</p>
+</div>
+<div class="paragraph">
+<p>Visas när:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Toolingen är redan markerad som Base-Flat.</p>
+</li>
+<li>
+<p>Användaren har checkat ut den, redigerat den och sparar ändringarna.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/updatebase.png" alt="Update Base" width="432">
+</div>
+</div>
+<div class="paragraph">
+<p>När du redigerar den befintliga Base-Flat-toolingen, uppdatera
+bockningsparametrarna eller geometrin för utbredd storlek efter behov. I
+dialogrutan <strong>Save to Praxis</strong>, välj
+<strong>Update the base-flat and re-calculate cutting solution</strong>.
+JFY Plus uppdaterar sedan Base-Flat-toolingen och regenererar alla relaterade
+skärlösningar för att återspegla de senaste ändringarna.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Endast en bockningstooling kan vara satt som Base-Flat åt gången.</p>
+</div>
+<div class="paragraph">
+<p>När Base-Flat ändras bearbetas befintliga skärlösningar automatiskt på nytt.</p>
+</div>
+<div class="paragraph">
+<p>Denna funktion är tillgänglig för både bocknings- och viknings-toolingar inom
+JFY Plus.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_re_tool">Re-tool</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Detta alternativ bearbetar den valda toolingen för detaljen på nytt.</p>
+</div>
+<div class="paragraph">
+<p>Högerklicka på den önskade toolingen i Tooling-panelen och klicka på
+<strong>Re-tool&#8230;&#8203;</strong></p>
+</div>
+<div class="paragraph">
+<p>En bekräftelsedialog visas innan du fortsätter.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/toolingconfirm.png" alt="ToolingConfirm" width="431">
+</div>
+</div>
+<div class="paragraph">
+<p>Klicka på <strong>Yes</strong> för att fortsätta med omtoolning, eller <strong>No</strong>
+för att avbryta åtgärden.</p>
+</div>
+<div class="paragraph">
+<p>Endast den valda toolingen toolas om. Andra toolingar som är associerade med
+detaljen påverkas inte. De befintliga utdata som är relaterade till den valda
+toolingen tas bort och regenereras under omtoolningsprocessen.</p>
+</div>
+<div class="paragraph">
+<p>Använd detta alternativ när tooling-data är inaktuell, felaktig, eller när
+ändringar görs i maskin- eller tooling-konfigurationer.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ignore_errors">Ignore errors</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Om en toolad instans visar en varning och du ändå vill fortsätta med den, kan
+du åsidosätta varningen genom att klicka på
+<strong>Ignore errors</strong>.</p>
+</li>
+<li>
+<p>Detta gör att systemet kan exportera utdatafiler för den instansen, även om
+det fanns tooling-problem.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Använd <strong>Ignore Errors</strong> endast när du är säker på att varningen kan
+ignoreras säkert. Att åsidosätta faktiska fel kan leda till maskinskador eller
+säkerhetsrisker.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_undertryckåterställ_tooling">Undertryck/återställ tooling</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>När en maskin är inaktiv eller när du inte vill att en specifik detalj ska
+bearbetas av en viss maskin, använd <strong>Suppress Tooling</strong> för
+att utesluta den detaljen från nesting på den maskinen.</p>
+</li>
+<li>
+<p>Efter undertryckning visas ett meddelande när du håller muspekaren över den
+toolade instansen, t.ex.: “Tooling suppressed by &lt;User name&gt; on &lt;Date Time&gt;”.</p>
+</li>
+<li>
+<p>Suppress tooling tar bort utdatafilen för den maskinen och detaljen.</p>
+</li>
+<li>
+<p>Använd <strong>Unsuppress tooling</strong> för att återställa
+tooling-statusen för detaljen på den maskinen.</p>
+</li>
+<li>
+<p>När undertryckningen hävs genereras respektive utdatafil igen.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_export_outputs">Export Outputs</a>
+  </li>
+  <li level="1">
+   <a href="#_check_tooling">Check Tooling</a>
+  </li>
+  <li level="1">
+   <a href="#_copy_tooling">Copy tooling</a>
+  </li>
+  <li level="1">
+   <a href="#_set_as_base_flat">Set as Base-Flat&#8230;&#8203;</a>
+  </li>
+  <li level="2">
+   <a href="#_automatic_base_flat_selection">Automatic base flat selection</a>
+  </li>
+  <li level="2">
+   <a href="#_enhanced_base_flat_management">Enhanced base flat management</a>
+  </li>
+  <li level="1">
+   <a href="#_re_tool">Re-tool</a>
+  </li>
+  <li level="1">
+   <a href="#_ignore_errors">Ignore errors</a>
+  </li>
+  <li level="1">
+   <a href="#_undertryckåterställ_tooling">Undertryck/återställ tooling</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="toolingvalidation/foldtooling.html">Validering av viknings-tooling</a></span>
+ <span class="next"><a href="../savingfilters.html">Spara filter</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

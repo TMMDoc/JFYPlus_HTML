@@ -1,0 +1,632 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../img/praxis-icon.png">
+  <title>Feladatok nézet</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">Üdvözli a JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../installation/index.html">Telepítés</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../installation/hardwarerequirement.html">Hardverkövetelmények</a></li>
+    <li><button class="tree blank"></button><a href="../installation/importformats.html">Támogatott fájlformátumok</a></li>
+    <li><button class="tree blank"></button><a href="../installation/prerequisites.html">Előfeltételek</a></li>
+    <li><button class="tree blank"></button><a href="../installation/changelic.html">Licenc módosítása</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../configuration/index.html">Konfiguráció</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../configuration/setupmachine.html">Gép hozzáadása/eltávolítása</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/setuptooling.html">Felszerszámozás konfigurálása</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/configureusers.html">Felhasználók konfigurálása</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/language.html">Nyelv</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../configuration/addmaterial/index.html">Anyag</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/addnew.html">Új anyag és lemeztábla hozzáadása</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/exportimport.html">Anyag exportálása/importálása</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/replacematerial.html">Anyag cseréje</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../configuration/mapbendpages.html">Anyag leképezése</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../userinterface.html">A felhasználói felület</a></li>
+  <li><button class="tree blank"></button><a href="../workflow.html">Munkafolyamat</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../library/index.html">Könyvtár</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/open/index.html">Megnyitás</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/open/partimport.html">Alkatrészek importálása</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/orderimport.html">Megrendelések importálása</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/jobimport.html">Feladatok importálása</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/assembliesimport.html">Részegységek importálása</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/libraryview/index.html">Könyvtár nézet</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/libraryview/partview.html">Alkatrészek</a></li>
+      <li><button class="tree blank"></button><a href="../library/libraryview/assemblyview.html">Részegység</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/partstate/index.html">Alkatrész állapota</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/partstate/partvalidation.html">Alkatrész ellenőrzése</a></li>
+      <li><button class="tree blank"></button><a href="../library/partstate/partpanel.html">Alkatrész panel</a></li>
+      <li><button class="tree blank"></button><a href="../library/partstate/partfilters.html">Alkatrészszűrők</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/toolingstatus/index.html">Felszerszámozás állapota</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../library/toolingstatus/toolingvalidation/index.html">Felszerszámozás ellenőrzése</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/bendtooling.html">Hajlítási felszerszámozás ellenőrzése</a></li>
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/cuttooling.html">Vágási felszerszámozás ellenőrzése</a></li>
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/foldtooling.html">Falcolási felszerszámozás ellenőrzése</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingpanel.html">Felszerszámozási panel</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../library/savingfilters.html">Szűrők mentése</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../orders/index.html">Megrendelések</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../orders/ordersview.html">Megrendelések nézet</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">Feladatok</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="jobcreation.html">Feladat létrehozása</a></li>
+    <li><button class="tree blank"></button><a class="active" href="jobview.html">Feladatok nézet</a></li>
+    <li><button class="tree blank"></button><a href="jobpanel.html">Feladat panel</a></li>
+    <li><button class="tree blank"></button><a href="jobautoplan.html">Automatikus tervezés</a></li>
+    <li><button class="tree blank"></button><a href="jobinteractplan.html">Interaktív táblásítás</a></li>
+    <li><button class="tree blank"></button><a href="repacking.html">Újracsomagolás</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="layoutcommands/index.html">Táblaterv-kezelés</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="layoutcommands/nestview.html">Elrendezés nézet</a></li>
+      <li><button class="tree blank"></button><a href="layoutcommands/layoutpanel.html">Elrendezés panel</a></li>
+      <li><button class="tree blank"></button><a href="layoutcommands/reportsender.html">Jelentésküldő</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="remnantmanagement/index.html">Maradékkezelés</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="remnantmanagement/autoremnant.html">Automatikus maradékkezelés</a></li>
+      <li><button class="tree blank"></button><a href="remnantmanagement/manualremnant.html">Kézi maradékkezelés</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="twinlinenesting.html">Twin-line táblásítás</a></li>
+    <li><button class="tree blank"></button><a href="outdate.html">Elavult</a></li>
+    <li><button class="tree blank"></button><a href="jobfilters.html">Feladatszűrők</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../factory/index.html">Gyár</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../factory/routes.html">Útvonalak</a></li>
+    <li><button class="tree blank"></button><a href="../factory/sheets.html">Lemeztáblák</a></li>
+    <li><button class="tree blank"></button><a href="../factory/users.html">Felhasználók</a></li>
+    <li><button class="tree blank"></button><a href="../factory/edit.html">Szerkesztés</a></li>
+    <li><button class="tree blank"></button><a href="../factory/customers.html">Ügyfelek</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../factory/settings/index.html">Beállítások</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../factory/settings/environment.html">Környezet</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/import.html">Importálás</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/bend.html">Hajlítás</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/cut.html">Vágás</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/notification.html">Értesítések</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/watch.html">Megtekintés</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/job.html">Feladat</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/reports.html">Jelentések</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../impressum.html">Céginformáció</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Feladatok</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="jobview.html">Feladatok nézet</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Feladatok nézet</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Ez a szakasz a Feladatok nézetben elérhető különböző nézeteket ismerteti,
+beleértve a Feladatok, Alkatrészek, Táblatervek, Szerkesztés, Szimuláció és
+Exportálás nézeteket.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_feladatok">Feladatok</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A <strong>jobs</strong> lehetőség kiválasztása megjeleníti a szoftverben
+jelenleg beállított összes feladat listáját. Egy feladatra duplán kattintva
+megtekintheti annak részleteit, vagy a jobb egérgombbal kattintva további
+lehetőségeket érhet el.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A feladatok csempés nézetben jelennek meg, ahol minden feladat alapvető
+tulajdonságokkal jelenik meg, mint például Feladat azonosító, Feladat
+hivatkozás, Ügyfél neve, Összes alkatrész, Esedékesség napja, Feladat
+állapotsáv stb.</p>
+</li>
+<li>
+<p>Minden feladatcsempe egymásra helyezett kártya formátumban is megjeleníti az
+alkatrészképeket. Az egérgörgővel végiggörgethet egy feladat összes
+alkatrészén.<br></p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/jobview1.png" alt="Feladatok oldal" width="1489">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_feladat_részletei">Feladat részletei</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Egy csempére duplán kattintva vagy a csempe kiválasztása után a <kbd>Enter</kbd>
+billentyűt lenyomva a nézet Részletes módra vált.</p>
+</li>
+<li>
+<p>A részletek oldal megjeleníti az alkatrészlistát a táblásított
+lemeztáblákkal (elrendezésekkel) együtt, ha vannak.</p>
+</li>
+<li>
+<p>A Fel/Le nyílbillentyűkkel válthat a feladatok között a részletek oldalon.</p>
+</li>
+<li>
+<p>Az egérgörgőt az alkatrészhalmaz fölött görgetve kiemeli az alkatrészt mind az
+alkatrészlistában, mind az elrendezésekben.</p>
+</li>
+<li>
+<p>Egy elrendezés kiválasztása kiemeli az elrendezést és az összes rajta
+táblásított alkatrészt az alkatrészlistában. A kiemelések egy perc után
+automatikusan kikapcsolnak.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/jobview2.png" alt="Feladat részletei" width="1908">
+</div>
+</div>
+</li>
+<li>
+<p><strong>Nest summary</strong>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Parts</strong>: Megjeleníti a megrendelési tételek teljes számát és
+a feladat teljes mennyiségét.</p>
+</li>
+<li>
+<p><strong>Sheets</strong>: Megjeleníti a táblásított lemeztáblák teljes
+számát a teljes lemeztábla-mennyiséggel együtt.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Work Steps</strong>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Bending</strong>: Megjeleníti a hozzárendelt gépet és a feldolgozandó
+megrendelési mennyiséget.</p>
+</li>
+<li>
+<p><strong>Cutting</strong>: Megjeleníti a hozzárendelt gépet és a feldolgozandó
+megrendelési mennyiséget.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_prioritás">Prioritás</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Először kattintson a képernyő bal oldalán a <strong>Feladatok</strong> ikonra, válassza ki a
+szerkeszteni kívánt feladatot, majd kattintson a képernyő jobb oldalán a
+<strong>szerkesztés</strong> elemre (győződjön meg róla, hogy a Feladatok lehetőség ki van
+választva).</p>
+</li>
+<li>
+<p>Alternatívaként kattintson a jobb egérgombbal a kiválasztott feladatra, majd
+kattintson a <strong>Check-out the document for editing</strong> ikonra.</p>
+</li>
+<li>
+<p>Amikor a <strong>szerkesztés</strong> elemre kattint, megjelenik a feladat szerkesztése
+ablak. Ebben az ablakban beállíthatja vagy módosíthatja a feladat prioritását.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/priority1.png" alt="Priority1" width="1207">
+</div>
+</div>
+</li>
+<li>
+<p>A feladat alkatrészének prioritása alapján a feladatcsempében lévő feladat
+hivatkozás ennek megfelelően színnel árnyékolódik.</p>
+</li>
+<li>
+<p>A feladat alkatrészei először prioritás, majd esedékesség szerint vannak
+rendezve. Prioritásuknak megfelelően is színnel árnyékolódnak.</p>
+</li>
+<li>
+<p>Táblásításkor először az <strong>Urgent</strong> (sürgős) alkatrészek kerülnek figyelembe
+vételre, ezt követik a <strong>High</strong> (magas), majd a <strong>Normal</strong> (normál), végül a <strong>Low</strong>
+(alacsony) prioritású alkatrészek kerülnek elhelyezésre a lemeztáblák
+fennmaradó helyén.</p>
+</li>
+<li>
+<p>A táblatervek is prioritás szerint vannak rendezve és színnel árnyékolva.</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Feladat prioritása</th>
+<th class="tableblock halign-left valign-top">Szín leírása</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/urgent.png" alt="Sürgős" width="50"></span> (Narancssárga)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sürgős</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/normal1.png" alt="Normál" width="50"></span> (Nincs szín)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Normál</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/high.png" alt="Magas" width="50"></span> (Sárga)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Magas</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/low.png" alt="Alacsony" width="50"></span> (Sötétszürke)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alacsony</p></td>
+</tr>
+</tbody>
+</table>
+<div class="imageblock">
+<div class="content">
+<img src="img/priority2.png" alt="Priority2" width="1158">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_állapot">Állapot</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>A Feladat állapotsáv színkódokat használ a feladat előrehaladásának vagy
+állapotának jelzésére a feldolgozott vagy fennmaradó mennyiség alapján.</p>
+</li>
+<li>
+<p>A feladaton belüli alkatrészek és a táblatervek is megfelelő színekkel vannak
+kiemelve, hogy tükrözzék az egyedi állapotukat a teljes feladaton belül.</p>
+</li>
+<li>
+<p>A színkódolás javítja a nyomon követhetőséget, és biztosítja, hogy a
+kezelők egy pillantással láthassák a gyártási állapotot.</p>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Feladat állapota</th>
+<th class="tableblock halign-left valign-top">Leírás</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/notready.png" alt="Nem kész" width="100"></span> (Világosszürke)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Not ready</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/nesting.png" alt="Táblásítás" width="100"></span> (Bíbor)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nesting</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/ready.png" alt="Kész" width="100"></span> (Fehér)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ready</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/cuttingqueue.png" alt="Hajlítás tervezve" width="100"></span> (Világossárga)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hajlítás tervezve</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/sheetmissing.png" alt="Lemeztábla hiányzik" width="100"></span> (Sötétszürke)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sheet missing</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/bendingqueue.png" alt="Hajlítási sor" width="100"></span> (Sötétsárga)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bending queue</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/bendplanned.png" alt="Hajlítás tervezve" width="100"></span> (Sárga)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cutting Queue</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/completed.png" alt="Befejezve" width="100"></span> (Sötétzöld)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Done(Completed)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_alkatrészek">Alkatrészek</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Az Aktív alkatrészek nézet megjeleníti az összes olyan alkatrészt, amely
+jelenleg feldolgozás alatt áll az aktív feladatokban.</p>
+</div>
+<div class="paragraph">
+<p>Minden alkatrész csempeként jelenik meg, amely olyan kulcsfontosságú
+részleteket mutat, mint az alkatrész neve, méretei, anyaga, vastagsága,
+mennyisége és esedékessége. Az alkatrész vizuális előnézete is megjelenik.</p>
+</div>
+<div class="paragraph">
+<p>Ez a nézet segít a felhasználóknak nyomon követni az egyes alkatrészek
+feldolgozási állapotát és a folyamatban lévő feladatokban való előrehaladásukat.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_táblatervek">Táblatervek</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Az Aktív táblatervek nézet megjeleníti az összes olyan táblatervet, amely
+jelenleg feldolgozás alatt áll az aktív feladatokban.</p>
+</div>
+<div class="paragraph">
+<p>Minden táblaterv releváns részletekkel jelenik meg, mint például az
+alkatrészek száma és a feldolgozási állapot. A táblásított alkatrészek vizuális
+elrendezése is megjelenik.</p>
+</div>
+<div class="paragraph">
+<p>Ez a nézet segít a felhasználóknak nyomon követni a táblásítás előrehaladását,
+és azt, hogyan vannak elrendezve és feldolgozva az alkatrészek a lemeztáblákon.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_szerkesztés">Szerkesztés</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A Szerkesztés lehetőség lehetővé teszi a kiválasztott elem módosítását.</p>
+</div>
+<div class="paragraph">
+<p>A jelenlegi nézettől függően a kiválasztott példány szerkesztésre nyílik meg:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A Feladatok nézetben a kiválasztott feladat nyílik meg szerkesztésre.</p>
+</li>
+<li>
+<p>Az Aktív alkatrészek nézetben a kiválasztott alkatrész nyílik meg
+szerkesztésre.</p>
+</li>
+<li>
+<p>Az Aktív táblatervek nézetben a kiválasztott táblaterv nyílik meg
+szerkesztésre.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_csv_exportálása">CSV exportálása</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Az Exportálás lehetőség lehetővé teszi a feladatinformációk kiválasztását és
+CSV-fájlba exportálását.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Kattintson a <strong>feladatok</strong> ikonra.</p>
+</li>
+<li>
+<p>Kattintson az <strong>exportálás</strong> lehetőségre a képernyő jobb oldalán.</p>
+</li>
+<li>
+<p>Megjelenik egy párbeszédablak, amely az elérhető mezőket mutatja:</p>
+</li>
+<li>
+<p>Jelölje be az exportálni kívánt mezők jelölőnégyzeteit.</p>
+</li>
+<li>
+<p>Használja a <strong>Group By</strong> lehetőséget, ha az adatokat egy
+kiválasztott mező szerint szeretné csoportosítani.</p>
+</li>
+<li>
+<p>Kattintson az Exportálás gombra a CSV-fájl létrehozásához.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_további_információk">További információk</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A képernyő jobb oldalán további három ikon is található, ezek a
+<strong>Simulate</strong>, <strong>Goto</strong> és <strong>Back</strong>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A Szimuláció megnyitja a kiválasztott elemet részletesebb megtekintésre.</p>
+</li>
+<li>
+<p>A Goto átváltja a fókuszt és a megjelenítést a kiválasztott alkatrészre vagy
+táblatervre.</p>
+</li>
+<li>
+<p>A Back egy szinttel visszalép onnan, ahol jelenleg tartózkodik, például a
+<strong>Back</strong> elemre kattintva szimuláció közben visszavezet a fő
+feladathoz, egy feladatból pedig visszavezet a fő feladatok megjelenítéséhez.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_feladatok">Feladatok</a>
+  </li>
+  <li level="2">
+   <a href="#_feladat_részletei">Feladat részletei</a>
+  </li>
+  <li level="2">
+   <a href="#_prioritás">Prioritás</a>
+  </li>
+  <li level="2">
+   <a href="#_állapot">Állapot</a>
+  </li>
+  <li level="1">
+   <a href="#_alkatrészek">Alkatrészek</a>
+  </li>
+  <li level="1">
+   <a href="#_táblatervek">Táblatervek</a>
+  </li>
+  <li level="1">
+   <a href="#_szerkesztés">Szerkesztés</a>
+  </li>
+  <li level="1">
+   <a href="#_csv_exportálása">CSV exportálása</a>
+  </li>
+  <li level="1">
+   <a href="#_további_információk">További információk</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="jobcreation.html">Feladat létrehozása</a></span>
+ <span class="next"><a href="jobpanel.html">Feladat panel</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

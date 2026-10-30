@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="../res/sibling.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/x-icon" href="../img/praxis-icon.png">
-  <title>Mapear material</title>
+  <title>Asignar material</title>
 </head>
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
@@ -25,94 +25,123 @@
   <li><button class="tree blank"></button><a href="../index.html">Bienvenido a JFY Plus</a></li>
   <li>
    <button class="tree closed"></button>
-   <a href="../installation/index.html">Introducción</a>
+   <a href="../installation/index.html">Instalación</a>
    <ul class="hide">
     <li><button class="tree blank"></button><a href="../installation/hardwarerequirement.html">Requisitos de hardware</a></li>
-    <li><button class="tree blank"></button><a href="../installation/importformats.html">Formatos compatibles con CAD</a></li>
+    <li><button class="tree blank"></button><a href="../installation/importformats.html">Formatos de archivo compatibles</a></li>
     <li><button class="tree blank"></button><a href="../installation/prerequisites.html">Requisitos previos</a></li>
-    <li><button class="tree blank"></button><a href="../installation/workflow.html">Flujo de trabajo</a></li>
+    <li><button class="tree blank"></button><a href="../installation/changelic.html">Cambiar licencia</a></li>
    </ul>
   </li>
   <li>
    <button class="tree open"></button>
    <a href="index.html">Configuración</a>
    <ul>
-    <li><button class="tree blank"></button><a href="setupmachine.html">Añadir/quitar máquina</a></li>
+    <li><button class="tree blank"></button><a href="setupmachine.html">Añadir/eliminar máquina</a></li>
     <li><button class="tree blank"></button><a href="setuptooling.html">Configurar utillaje</a></li>
     <li><button class="tree blank"></button><a href="configureusers.html">Configurar usuarios</a></li>
+    <li><button class="tree blank"></button><a href="language.html">Idioma</a></li>
     <li>
      <button class="tree closed"></button>
      <a href="addmaterial/index.html">Material</a>
      <ul class="hide">
-      <li><button class="tree blank"></button><a href="addmaterial/addnew.html">Añadir nuevo</a></li>
-      <li><button class="tree blank"></button><a href="addmaterial/exportimport.html">Exportar/Importar material</a></li>
+      <li><button class="tree blank"></button><a href="addmaterial/addnew.html">Añadir nuevo material y chapa</a></li>
+      <li><button class="tree blank"></button><a href="addmaterial/exportimport.html">Exportar/importar material</a></li>
       <li><button class="tree blank"></button><a href="addmaterial/replacematerial.html">Reemplazar material</a></li>
      </ul>
     </li>
-    <li><button class="tree blank"></button><a class="active" href="mapbendpages.html">Mapear material</a></li>
+    <li><button class="tree blank"></button><a class="active" href="mapbendpages.html">Asignar material</a></li>
    </ul>
   </li>
+  <li><button class="tree blank"></button><a href="../userinterface.html">La interfaz de usuario</a></li>
+  <li><button class="tree blank"></button><a href="../workflow.html">Flujo de trabajo</a></li>
   <li>
    <button class="tree closed"></button>
-   <a href="../partpreparation/index.html">Biblioteca de piezas</a>
+   <a href="../library/index.html">Biblioteca</a>
    <ul class="hide">
-    <li><button class="tree blank"></button><a href="../partpreparation/partlibrarytour.html">Biblioteca de piezas</a></li>
-    <li><button class="tree blank"></button><a href="../partpreparation/partstatus.html">Estado de equipamiento</a></li>
-    <li><button class="tree blank"></button><a href="../partpreparation/partimportmethod.html">Métodos de importación de piezas</a></li>
-    <li><button class="tree blank"></button><a href="../partpreparation/partassignmaterial.html">Asignar Material</a></li>
-    <li><button class="tree blank"></button><a href="../partpreparation/partvalidation.html">Validación de piezas</a></li>
-    <li><button class="tree blank"></button><a href="../partpreparation/edittooling.html">Editar utillaje</a></li>
-    <li><button class="tree blank"></button><a href="../partpreparation/toolingcheck.html">Comprobación de útiles</a></li>
-    <li><button class="tree blank"></button><a href="../partpreparation/rename.html">Renombrar</a></li>
-    <li><button class="tree blank"></button><a href="../partpreparation/rollingdirection.html">Dirección de laminación</a></li>
-   </ul>
-  </li>
-  <li>
-   <button class="tree closed"></button>
-   <a href="../jobpreparation/index.html">Flujo de trabajo de tarea</a>
-   <ul class="hide">
-    <li><button class="tree blank"></button><a href="../jobpreparation/jobcreation.html">Crear tarea</a></li>
-    <li><button class="tree blank"></button><a href="../jobpreparation/jobview.html">Vista de tarea</a></li>
-    <li><button class="tree blank"></button><a href="../jobpreparation/edit.html">Editar</a></li>
-    <li><button class="tree blank"></button><a href="../jobpreparation/jobautoplan.html">Plan automático</a></li>
-    <li><button class="tree blank"></button><a href="../jobpreparation/jobinteractplan.html">Nesting interactivo</a></li>
-    <li><button class="tree blank"></button><a href="../jobpreparation/jobpriority.html">Prioridad</a></li>
-    <li><button class="tree blank"></button><a href="../jobpreparation/jobstatus.html">Estado</a></li>
     <li>
      <button class="tree closed"></button>
-     <a href="../jobpreparation/layoutcommands/index.html">Gestión de nestings</a>
+     <a href="../library/open/index.html">Abrir</a>
      <ul class="hide">
-      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/nestview.html">Vista de diseño</a></li>
-      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/nccodesend.html">Envío de código CN</a></li>
-      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/delete.html">Eliminar</a></li>
-      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/addparts.html">Añadir piezas</a></li>
-      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/adaptcompact.html">Adaptar Compactar</a></li>
-      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/exportoutputs.html">Exportar salidas</a></li>
-      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/markcomplete.html">Marcar completo</a></li>
-      <li><button class="tree blank"></button><a href="../jobpreparation/layoutcommands/reportsender.html">Remitente del informe</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/partimport.html">Importar piezas</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/orderimport.html">Importar pedidos</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/jobimport.html">Importar tareas</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/assembliesimport.html">Importar montajes</a></li>
      </ul>
     </li>
     <li>
      <button class="tree closed"></button>
-     <a href="../jobpreparation/remnantmanagement/index.html">Gestión de remanentes</a>
+     <a href="../library/libraryview/index.html">Vista de biblioteca</a>
      <ul class="hide">
-      <li><button class="tree blank"></button><a href="../jobpreparation/remnantmanagement/autoremnant.html">Gestión automática de remanentes</a></li>
-      <li><button class="tree blank"></button><a href="../jobpreparation/remnantmanagement/manualremnant.html">Gestión manual de chapas remanentes</a></li>
+      <li><button class="tree blank"></button><a href="../library/libraryview/partview.html">Piezas</a></li>
+      <li><button class="tree blank"></button><a href="../library/libraryview/assemblyview.html">Montaje</a></li>
      </ul>
     </li>
-    <li><button class="tree blank"></button><a href="../jobpreparation/importexport.html">Importar / Exportar</a></li>
-    <li><button class="tree blank"></button><a href="../jobpreparation/resetpartjob.html">Reiniciar tarea parcial</a></li>
-    <li><button class="tree blank"></button><a href="../jobpreparation/outdate.html">Obsoleto</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/partstate/index.html">Estado de pieza</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/partstate/partvalidation.html">Validación de piezas</a></li>
+      <li><button class="tree blank"></button><a href="../library/partstate/partpanel.html">Panel de piezas</a></li>
+      <li><button class="tree blank"></button><a href="../library/partstate/partfilters.html">Filtros de piezas</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/toolingstatus/index.html">Estado de utillaje</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../library/toolingstatus/toolingvalidation/index.html">Validación de utillaje</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/bendtooling.html">Validación del utillaje de plegado</a></li>
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/cuttooling.html">Validación del utillaje de corte</a></li>
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/foldtooling.html">Validación del utillaje de plegado con paneladora</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingpanel.html">Panel de utillaje</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../library/savingfilters.html">Guardar filtros</a></li>
    </ul>
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../filters/index.html">Filtros</a>
+   <a href="../orders/index.html">Pedidos</a>
    <ul class="hide">
-    <li><button class="tree blank"></button><a href="../filters/filtertour.html">Filtrar recorrido</a></li>
-    <li><button class="tree blank"></button><a href="../filters/savedfilters.html">Filtros guardados</a></li>
-    <li><button class="tree blank"></button><a href="../filters/partlibraryfilter.html">Filtro de biblioteca de piezas</a></li>
-    <li><button class="tree blank"></button><a href="../filters/jobpagefilter.html">Filtro de página de tareas</a></li>
+    <li><button class="tree blank"></button><a href="../orders/ordersview.html">Vista de pedidos</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../jobs/index.html">Tareas</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../jobs/jobcreation.html">Crear tarea</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobview.html">Vista de tareas</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobpanel.html">Panel de tareas</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobautoplan.html">Planificación automática</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobinteractplan.html">Anidamiento interactivo</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/repacking.html">Reempaquetado</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../jobs/layoutcommands/index.html">Gestión de anidamientos</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../jobs/layoutcommands/nestview.html">Vista de diseño</a></li>
+      <li><button class="tree blank"></button><a href="../jobs/layoutcommands/layoutpanel.html">Panel de diseño</a></li>
+      <li><button class="tree blank"></button><a href="../jobs/layoutcommands/reportsender.html">Envío de informes</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../jobs/remnantmanagement/index.html">Gestión de restos</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../jobs/remnantmanagement/autoremnant.html">Gestión automática de restos</a></li>
+      <li><button class="tree blank"></button><a href="../jobs/remnantmanagement/manualremnant.html">Gestión manual de restos</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../jobs/twinlinenesting.html">Anidamiento TwinLine</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/outdate.html">Obsoleto</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobfilters.html">Filtros de tareas</a></li>
    </ul>
   </li>
   <li>
@@ -121,25 +150,26 @@
    <ul class="hide">
     <li><button class="tree blank"></button><a href="../factory/routes.html">Rutas</a></li>
     <li><button class="tree blank"></button><a href="../factory/sheets.html">Chapas</a></li>
-    <li><button class="tree blank"></button><a href="../factory/customers.html">Clientes</a></li>
+    <li><button class="tree blank"></button><a href="../factory/users.html">Usuarios</a></li>
     <li><button class="tree blank"></button><a href="../factory/edit.html">Editar</a></li>
+    <li><button class="tree blank"></button><a href="../factory/customers.html">Clientes</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../factory/settings/index.html">Ajustes</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../factory/settings/environment.html">Entorno</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/import.html">Import</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/bend.html">Plegado</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/cut.html">Corte</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/notification.html">Notificaciones</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/watch.html">Visualización</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/job.html">Job</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/reports.html">Informes</a></li>
+     </ul>
+    </li>
    </ul>
   </li>
-  <li>
-   <button class="tree closed"></button>
-   <a href="../settings/index.html">Ajustes</a>
-   <ul class="hide">
-    <li><button class="tree blank"></button><a href="../settings/environment.html">Entorno</a></li>
-    <li><button class="tree blank"></button><a href="../settings/import.html">Importar</a></li>
-    <li><button class="tree blank"></button><a href="../settings/bend.html">Plegar</a></li>
-    <li><button class="tree blank"></button><a href="../settings/cut.html">Cortar</a></li>
-    <li><button class="tree blank"></button><a href="../settings/notification.html">Notificaciones</a></li>
-    <li><button class="tree blank"></button><a href="../settings/watch.html">Visualizar</a></li>
-    <li><button class="tree blank"></button><a href="../settings/job.html">Tarea</a></li>
-    <li><button class="tree blank"></button><a href="../settings/reports.html">Informes</a></li>
-   </ul>
-  </li>
-  <li><button class="tree blank"></button><a href="../impressum.html">Aviso legal</a></li>
+  <li><button class="tree blank"></button><a href="../impressum.html">Información corporativa</a></li>
  </ul>
 </div>
 
@@ -156,94 +186,53 @@
  </div>
  <div>/</div>
  <div>
-  <a href="mapbendpages.html">Mapear material</a>
+  <a href="mapbendpages.html">Asignar material</a>
  </div>
 </nav>
 
             <div id="site-crumb-below">
                 <div id="site-toc-left">
                     <article id="article">
-                        <h1>Mapear material</h1>
-<div id="preamble">
-<div class="sectionbody">
+                        <h1>Asignar material</h1>
 <div class="paragraph">
-<p>Alternativamente, puede mapear directamente el material desde el JFY Core.
-Aliases podría usarse para utilizar los nombres de los materiales que se utilizan habitualmente en su fábrica.</p>
+<p>Como alternativa, podría mapear directamente el material desde JFY Core. Los
+Aliases se pueden utilizar para los nombres de material que se
+usan habitualmente en su fábrica.</p>
 </div>
+<div class="paragraph">
+<p><strong>Factory</strong> &#8594; <strong>Sheets</strong> &#8594; <strong>Map&#8230;&#8203;</strong> &#8594;
+<strong>Materials</strong>, aparece la página <strong>Edit Materials</strong>.
+Los materiales y las <strong>Raw materials</strong> se enumeran a la
+izquierda para mapearlos con el material de plegado (1.0036, 1.4301, AlMg3,&#8230;&#8203;)
+y/o para indicar los Aliases.</p>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_añadir_material_de_plegado_desde_jfy_core">Añadir material de plegado desde JFY Core</h2>
-<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>Abra Flux. Haga clic en Base de datos y Materiales.</p>
+<p>Haga clic en el material Copper y seleccione Cu. El material se asigna a todas
+las materias primas de cobre (Copper-15, Copper-20, Copper-25, Copper-30,
+Copper-40).</p>
 </li>
 <li>
-<p>Añada Material y sus parámetros. Cierre Flux.</p>
-</li>
-<li>
-<p>Haga clic con el botón derecho en Pmonitor en la bandeja del sistema, haga clic en <strong>PushFlux Config</strong>.</p>
-</li>
-<li>
-<p>Haga clic en <strong>Yes</strong> para confirmar el envío de la configuración de Flux al Repositorio.</p>
+<p>Haga clic en la materia prima Copper-40 y seleccione CuZn.</p>
 </li>
 </ul>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="img/03pushconfig.png" alt="Push Flux Config Bend Material Add">
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_mapear_nombre_del_material">Mapear nombre del material</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>factory &#8594; sheets &#8594; Map&#8230;&#8203; &#8594;
-Materials, aparece la página Edit Materials.
-Materials y Raw Materials se enumeran a la izquierda para asignarlos al material de plegado (1.0036, 1.4301, AlMg3,&#8230;&#8203;) y/o para mencionar el Aliases.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Haga clic en el Material cobre y seleccione Cu. El material se asigna a todas las materias primas de cobre (Cobre-15, Cobre-20, Cobre-25, Cobre-30, Cobre-40).</p>
-</li>
-<li>
-<p>Haga clic en Materia prima Cobre-40 Click y seleccione CuZn. Se puede hacer un mapeo de Material de plegado contra Material o Materia prima.</p>
-</li>
-</ul>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="img/01bendmaterialmap.png" alt="Bend Material Map">
-</div>
-</div>
+<img src="img/mapmaterial.png" alt="Material" width="636">
 </div>
 </div>
 
                     </article>
                 </div>
                 <div id="site-toc-holder">
-                    <aside id="site-toc">
- <h3>Contents</h3>
- <ul>
-  <li level="1">
-   <a href="#_añadir_material_de_plegado_desde_jfy_core">Añadir material de plegado desde JFY Core</a>
-  </li>
-  <li level="1">
-   <a href="#_mapear_nombre_del_material">Mapear nombre del material</a>
-  </li>
- </ul>
-</aside>
-
+                    <aside id="site-toc"></aside>
                 </div>
             </div>
             <nav class="pagination">
  <span class="prev"><a href="addmaterial/replacematerial.html">Reemplazar material</a></span>
- <span class="next"><a href="../partpreparation/index.html">Biblioteca de piezas</a></span>
+ <span class="next"><a href="../userinterface.html">La interfaz de usuario</a></span>
 </nav>
 
         </div>
@@ -254,7 +243,7 @@ Materials y Raw Materials se enumeran a la izquierda para asignarlos al material
     </div>
     <footer id="site-footer">
         <div class="left">
-            <p>&nbsp;&nbsp;Copyright &copy; 2025 JFY International. All rights reserved.</p>
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
         </div>
         <div class="middle"></div>
         <div class="right">

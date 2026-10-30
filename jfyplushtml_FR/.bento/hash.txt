@@ -4,99 +4,151 @@ BENDAPP=JFY Bend
 BRAND=JFY
 CUTAPP=JFY Cut
 FLAVOR=JFY
+FOLDDAPP=Flux Fold
 JFY=
 LANGUAGE=EN
-TECHNOAPP=JFY Core
-Folders=11
-Pages=68
+TECNOAPP=JFY Core
+TECNOAPP1=MetaCAM
+Folders=16
+Pages=73
 UIXlate=False, DebugUIXlate=False, Language=EN
 
-contents.txt • 255624.025618
-Features.adoc • Fonctions
-Impressum.adoc • Impressum
+contents.txt • 265803.125808
+Impressum.adoc • Informations sur l'entreprise
+impressum.JFY.adoc • Informations sur l'entreprise
 Index.adoc • Bienvenue dans {APPNAME}
 Index.JFY.adoc • Bienvenue dans {APPNAME}
-manifest.txt • 252106.042143
-Configuration\CADMapFields.adoc • Mapper les champs à partir de la CAO (clés de recherche)
-Configuration\configureUsers.adoc • Configurer les utilisateurs
-Configuration\contents.txt • 255624.025618
-Configuration\Index.adoc • Configuration
-Configuration\MapBendPages.adoc • Mapper la matière
-Configuration\MapCAMPages.adoc • Mapper les pages FAO
-Configuration\SetupMachine.adoc • Ajouter / Supprimer une machine
-Configuration\SetupTooling.adoc • Configurer le montage
-Factory\contents.txt • 255624.025618
-Factory\Customers.adoc • Clients
-Factory\edit.adoc • Modifier
-Factory\Index.adoc • Usine
-Factory\routes.adoc • Trajectoires
-Factory\sheets.adoc • Tôles
-Filters\contents.txt • 255624.025618
-Filters\FilterTour.adoc • Tour des filtres
-Filters\Index.adoc • Filtres
-Filters\JOBPageFilter.adoc • Filtre page de tâche
-Filters\PartLibraryFilter.adoc • Filtre de bibliothèque de pièces
-Filters\SavedFilters.adoc • Filtres enregistrés
-Installation\changelic.adoc • Modifier la licence
-Installation\ClientInstallation.adoc • Installation du client
-Installation\contents.txt • 255624.025618
-Installation\HardwareRequirement.adoc • Condition requise pour le matériel
-Installation\importformats.adoc • Formats pris en charge par la CAO
-Installation\index.adoc • Introduction
-Installation\Prerequisites.adoc • Conditions requises
-Installation\ServerInstallation.adoc • Installation du serveur
-Installation\Workflow.adoc • Flux de travail
-JOBPreparation\contents.txt • 255624.025618
-JOBPreparation\Edit.adoc • Modifier
-JOBPreparation\importexport.adoc • Importer / Exporter
-JOBPreparation\Index.adoc • Flux de travail de la tâche
-JOBPreparation\JOBAutoPlan.adoc • Plan auto
-JOBPreparation\JOBCreation.adoc • Créer une tâche
-JOBPreparation\JOBInteractPlan.adoc • Imbrication interactive
-JOBPreparation\JOBPriority.adoc • Priorité
-JOBPreparation\JOBStatus.adoc • Etat
-JOBPreparation\JOBView.adoc • Affichage des tâches
-JOBPreparation\OutDate.adoc • Obsolète
-JOBPreparation\ResetPartJob.adoc • Tâche Réinitialiser la pièce
-PartPreparation\contents.txt • 255624.025618
-PartPreparation\EditTooling.adoc • Modifier le montage
-PartPreparation\Index.adoc • Bibliothèque de pièces
-PartPreparation\PartAssignMaterial.adoc • Attribuer une matière à la pièce
-PartPreparation\PartImportMethod.adoc • Méthodes d'importation de pièce
-PartPreparation\PartLibraryTour.adoc • Bibliothèque de pièces
-PartPreparation\PartStatus.adoc • Etat de montage
-PartPreparation\PartTour.adoc • Bibliothèque de pièces
-PartPreparation\PartValidation.adoc • Validation de la pièce
-PartPreparation\Rename.adoc • Renommer
-PartPreparation\RollingDirection.adoc • Sens de laminage
-PartPreparation\ToolingCheck.adoc • Vérification du montage
-Settings\Bend.adoc • Pliage
-Settings\contents.txt • 255624.025618
-Settings\Cut.adoc • Coupe
-Settings\Environment.adoc • Environnement
-Settings\Import.adoc • Importer
-Settings\Index.adoc • Réglages
-Settings\Job.adoc • Tâche
-Settings\Notification.adoc • Notifications
-Settings\Reports.adoc • Rapports
-Settings\Watch.adoc • Surveillance
+manifest.txt • 262228.032250
+UserInterface.adoc • L'interface utilisateur
+Workflow.adoc • Flux de travail
+cadextensions\contents.txt • 265821.065841
+cadextensions\Index.adoc • Extensions CAO
+configuration\CADMapFields.adoc • Cartographier les champs depuis CAD (clés de recherche)
+configuration\configureUsers.adoc • Configurer les utilisateurs
+configuration\contents.txt • 265821.065841
+configuration\Index.adoc • Configuration
+configuration\Language.adoc • Langue
+configuration\MapBendPages.adoc • Cartographier la matière
+configuration\MapCAMPages.adoc • Cartographier les pages CAM
+configuration\SetupMachine.adoc • Ajouter/Supprimer une machine
+configuration\SetupTooling.adoc • Configurer l'outillage
+factory\contents.txt • 265821.065841
+factory\Customers.adoc • Clients
+factory\edit.adoc • Modifier
+factory\Index.adoc • Usine
+factory\routes.adoc • Itinéraires
+factory\sheets.adoc • Tôles
+factory\Users.adoc • Utilisateurs
+installation\changelic.adoc • Changer de licence
+installation\ClientInstallation.adoc • Installation du client
+installation\contents.txt • 265821.065841
+installation\HardwareRequirement.adoc • Exigences matérielles
+installation\importformats.adoc • Formats de fichiers pris en charge
+installation\index.adoc • Installation
+installation\Prerequisites.adoc • Prérequis
+installation\ServerInstallation.adoc • Installation du serveur
+jobs\contents.txt • 265821.065842
+jobs\Index.adoc • Tâches
+jobs\JOBAutoPlan.adoc • Planification automatique
+jobs\JOBCreation.adoc • Créer une tâche
+jobs\JobFilters.adoc • Filtres de tâches
+jobs\JOBInteractPlan.adoc • Imbrication interactive
+jobs\JobPanel.adoc • Panneau des tâches
+jobs\JOBView.adoc • Vue des tâches
+jobs\OutDate.adoc • Obsolète
+jobs\Repacking.adoc • Réempaquetage
+jobs\TwinlineNesting.adoc • Imbrication Twinline
+library\contents.txt • 265821.065843
+library\Index.adoc • Bibliothèque
+library\SavingFilters.adoc • Enregistrement des filtres
+orders\Contents.txt
+orders\Index.adoc • Ordres
+orders\OrdersView.adoc • Vue des ordres
+UIXlate\BR.txt
+UIXlate\CHS.txt
+UIXlate\CHT.txt
+UIXlate\CS.txt
+UIXlate\DA.txt
+UIXlate\DE.txt
 UIXlate\EN.txt
-Configuration\AddMaterial\AddNew.adoc • Ajouter nouveau
-Configuration\AddMaterial\contents.txt • 255624.025618
-Configuration\AddMaterial\ExportImport.adoc • Exporter/importer une matière
-Configuration\AddMaterial\Index.adoc • Matière
-Configuration\AddMaterial\ReplaceMaterial.adoc • Remplacer la matière
-JOBPreparation\LayoutCommands\AdaptCompact.adoc • Adapter / Compacter
-JOBPreparation\LayoutCommands\AddParts.adoc • Ajouter des pièces
-JOBPreparation\LayoutCommands\contents.txt • 255624.025618
-JOBPreparation\LayoutCommands\Delete.adoc • Supprimer
-JOBPreparation\LayoutCommands\ExportOutputs.adoc • Exporter les sorties
-JOBPreparation\LayoutCommands\Index.adoc • Gestion des imbrications
-JOBPreparation\LayoutCommands\MarkComplete.adoc • Marquer comme terminé
-JOBPreparation\LayoutCommands\NCCodeSend.adoc • Programme CN envoyé
-JOBPreparation\LayoutCommands\NestView.adoc • Affichage de layout
-JOBPreparation\LayoutCommands\ReportSender.adoc • Expéditeur du rapport
-JOBPreparation\RemnantManagement\AutoRemnant.adoc • Gestion automatique des restes
-JOBPreparation\RemnantManagement\contents.txt • 255624.025618
-JOBPreparation\RemnantManagement\Index.adoc • Gestion des restes
-JOBPreparation\RemnantManagement\ManualRemnant.adoc • Gestion manuelle des tôles restantes
+UIXlate\ES.txt
+UIXlate\FI.txt
+UIXlate\FR.txt
+UIXlate\GR.txt
+UIXlate\HU.txt
+UIXlate\ID.txt
+UIXlate\IT.txt
+UIXlate\JP.txt
+UIXlate\KO.txt
+UIXlate\NL.txt
+UIXlate\PL.txt
+UIXlate\Prefixes.txt
+UIXlate\RO.txt
+UIXlate\RU.txt
+UIXlate\SK.txt
+UIXlate\SV.txt
+UIXlate\TH.txt
+UIXlate\TR.txt
+_jfybuild\build_docbook.log
+_jfybuild\build_docx.log
+_jfybuild\build_jfy.rb
+_jfybuild\build_pdf.log
+_jfybuild\JFY_Plus_Reference_Manual.docx
+_jfybuild\JFY_Plus_Reference_Manual.pdf
+_jfybuild\master.adoc • JFY Plus Reference Manual
+_jfybuild\master.xml
+cadextensions\solidworksaddin\contents.txt • 265821.065841
+cadextensions\solidworksaddin\FactorySettings.adoc • Paramètres de l'usine
+cadextensions\solidworksaddin\Index.adoc • Complément SolidWorks
+cadextensions\solidworksaddin\InstallationSteps.adoc • Installation
+cadextensions\solidworksaddin\MiscEnhancements.adoc • Améliorations diverses
+cadextensions\solidworksaddin\PartFeasibility.adoc • Vérifier la fabricabilité
+cadextensions\solidworksaddin\SaveAssembly.adoc • Enregistrer un module
+cadextensions\solidworksaddin\SaveToPraxis.adoc • Enregistrer les pièces
+configuration\addmaterial\AddNew.adoc • Ajouter une nouvelle matière et une tôle
+configuration\addmaterial\contents.txt • 265821.065841
+configuration\addmaterial\ExportImport.adoc • Exporter/Importer une matière
+configuration\addmaterial\Index.adoc • Matière
+configuration\addmaterial\ReplaceMaterial.adoc • Remplacer une matière
+factory\settings\Bend.adoc • Pliage
+factory\settings\contents.txt • 265821.065841
+factory\settings\Cut.adoc • Coupe
+factory\settings\Environment.adoc • Environnement
+factory\settings\Import.adoc • Importation
+factory\settings\Index.adoc • Réglages
+factory\settings\Job.adoc • Tâche
+factory\settings\Notification.adoc • Notifications
+factory\settings\Reports.adoc • Rapports
+factory\settings\Watch.adoc • Surveillance
+jobs\layoutcommands\contents.txt • 265821.065842
+jobs\layoutcommands\Index.adoc • Gestion des imbrications
+jobs\layoutcommands\LayoutPanel.adoc • Panneau de configuration
+jobs\layoutcommands\NestView.adoc • Vue de configuration
+jobs\layoutcommands\ReportSender.adoc • Envoi de rapports
+jobs\remnantmanagement\AutoRemnant.adoc • Gestion automatique des chutes
+jobs\remnantmanagement\contents.txt • 265821.065842
+jobs\remnantmanagement\Index.adoc • Gestion des chutes
+jobs\remnantmanagement\ManualRemnant.adoc • Gestion manuelle des chutes
+library\libraryview\AssemblyView.adoc • Module
+library\libraryview\Contents.txt
+library\libraryview\Index.adoc • Vue de la bibliothèque
+library\libraryview\PartView.adoc • Pièces
+library\open\AssembliesImport.adoc • Importer des modules
+library\open\Contents.txt
+library\open\Index.adoc • Ouvrir
+library\open\JobImport.adoc • Importer des tâches
+library\open\OrderImport.adoc • Importer des ordres
+library\open\PartImport.adoc • Importer des pièces
+library\partstate\contents.txt • 265821.065842
+library\partstate\Index.adoc • État de la pièce
+library\partstate\PartFilters.adoc • Filtres de pièce
+library\partstate\PartPanel.adoc • Panneau de la pièce
+library\partstate\PartValidation.adoc • Validation des pièces
+library\toolingstatus\contents.txt • 265821.065842
+library\toolingstatus\Index.adoc • État de l'outillage
+library\toolingstatus\ToolingPanel.adoc • Panneau d'outillage
+library\toolingstatus\toolingvalidation\BendTooling.adoc • Validation de l'outillage de pliage
+library\toolingstatus\toolingvalidation\contents.txt • 265821.065842
+library\toolingstatus\toolingvalidation\CutTooling.adoc • Validation de l'outillage de coupe
+library\toolingstatus\toolingvalidation\FoldTooling.adoc • Validation de l'outillage de pliage
+library\toolingstatus\toolingvalidation\Index.adoc • Validation de l'outillage

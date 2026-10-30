@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="res/sibling.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/x-icon" href="img/praxis-icon.png">
-  <title>Informazioni redazionali</title>
+  <title>Informazioni aziendali</title>
 </head>
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
@@ -22,15 +22,15 @@
         <nav id="site-nav">
             <div class="treesite">
  <ul>
-  <li><button class="tree blank"></button><a href="index.html">Benvenuto in JFY Plus</a></li>
+  <li><button class="tree blank"></button><a href="index.html">Benvenuti in JFY Plus</a></li>
   <li>
    <button class="tree closed"></button>
-   <a href="installation/index.html">Introduzione</a>
+   <a href="installation/index.html">Installazione</a>
    <ul class="hide">
     <li><button class="tree blank"></button><a href="installation/hardwarerequirement.html">Requisiti hardware</a></li>
-    <li><button class="tree blank"></button><a href="installation/importformats.html">Formati CAD supportati</a></li>
+    <li><button class="tree blank"></button><a href="installation/importformats.html">Formati di file supportati</a></li>
     <li><button class="tree blank"></button><a href="installation/prerequisites.html">Prerequisiti</a></li>
-    <li><button class="tree blank"></button><a href="installation/workflow.html">Workflow</a></li>
+    <li><button class="tree blank"></button><a href="installation/changelic.html">Cambio licenza</a></li>
    </ul>
   </li>
   <li>
@@ -38,13 +38,14 @@
    <a href="configuration/index.html">Configurazione</a>
    <ul class="hide">
     <li><button class="tree blank"></button><a href="configuration/setupmachine.html">Aggiungi/Rimuovi macchina</a></li>
-    <li><button class="tree blank"></button><a href="configuration/setuptooling.html">Setup attrezzaggio</a></li>
+    <li><button class="tree blank"></button><a href="configuration/setuptooling.html">Configura attrezzaggio</a></li>
     <li><button class="tree blank"></button><a href="configuration/configureusers.html">Configura utenti</a></li>
+    <li><button class="tree blank"></button><a href="configuration/language.html">Lingua</a></li>
     <li>
      <button class="tree closed"></button>
      <a href="configuration/addmaterial/index.html">Materiale</a>
      <ul class="hide">
-      <li><button class="tree blank"></button><a href="configuration/addmaterial/addnew.html">Aggiungi nuovo</a></li>
+      <li><button class="tree blank"></button><a href="configuration/addmaterial/addnew.html">Aggiungi nuovo materiale e lamiera</a></li>
       <li><button class="tree blank"></button><a href="configuration/addmaterial/exportimport.html">Esporta/Importa materiale</a></li>
       <li><button class="tree blank"></button><a href="configuration/addmaterial/replacematerial.html">Sostituisci materiale</a></li>
      </ul>
@@ -52,67 +53,95 @@
     <li><button class="tree blank"></button><a href="configuration/mapbendpages.html">Mappa materiale</a></li>
    </ul>
   </li>
+  <li><button class="tree blank"></button><a href="userinterface.html">L'interfaccia utente</a></li>
+  <li><button class="tree blank"></button><a href="workflow.html">Flusso di lavoro</a></li>
   <li>
    <button class="tree closed"></button>
-   <a href="partpreparation/index.html">Libreria pezzi</a>
+   <a href="library/index.html">Libreria</a>
    <ul class="hide">
-    <li><button class="tree blank"></button><a href="partpreparation/partlibrarytour.html">Libreria pezzi</a></li>
-    <li><button class="tree blank"></button><a href="partpreparation/partstatus.html">Stato di attrezzaggio</a></li>
-    <li><button class="tree blank"></button><a href="partpreparation/partimportmethod.html">Metodi di importazione dei pezzi</a></li>
-    <li><button class="tree blank"></button><a href="partpreparation/partassignmaterial.html">Assegna materiale pezzo</a></li>
-    <li><button class="tree blank"></button><a href="partpreparation/partvalidation.html">Convalida dei pezzi</a></li>
-    <li><button class="tree blank"></button><a href="partpreparation/edittooling.html">Modifica attrezzaggio</a></li>
-    <li><button class="tree blank"></button><a href="partpreparation/toolingcheck.html">Controllo attrezzaggio</a></li>
-    <li><button class="tree blank"></button><a href="partpreparation/rename.html">Rinomina</a></li>
-    <li><button class="tree blank"></button><a href="partpreparation/rollingdirection.html">Direzione di laminazione</a></li>
-   </ul>
-  </li>
-  <li>
-   <button class="tree closed"></button>
-   <a href="jobpreparation/index.html">Workflow job</a>
-   <ul class="hide">
-    <li><button class="tree blank"></button><a href="jobpreparation/jobcreation.html">Crea job</a></li>
-    <li><button class="tree blank"></button><a href="jobpreparation/jobview.html">Visualizzazione job</a></li>
-    <li><button class="tree blank"></button><a href="jobpreparation/edit.html">Modifica</a></li>
-    <li><button class="tree blank"></button><a href="jobpreparation/jobautoplan.html">Piano automatico</a></li>
-    <li><button class="tree blank"></button><a href="jobpreparation/jobinteractplan.html">Nesting interattivo</a></li>
-    <li><button class="tree blank"></button><a href="jobpreparation/jobpriority.html">Priorità</a></li>
-    <li><button class="tree blank"></button><a href="jobpreparation/jobstatus.html">Stato</a></li>
     <li>
      <button class="tree closed"></button>
-     <a href="jobpreparation/layoutcommands/index.html">Gestione del nesting</a>
+     <a href="library/open/index.html">Apri</a>
      <ul class="hide">
-      <li><button class="tree blank"></button><a href="jobpreparation/layoutcommands/nestview.html">Visualizza layout</a></li>
-      <li><button class="tree blank"></button><a href="jobpreparation/layoutcommands/nccodesend.html">Invio programma NC</a></li>
-      <li><button class="tree blank"></button><a href="jobpreparation/layoutcommands/delete.html">Cancella</a></li>
-      <li><button class="tree blank"></button><a href="jobpreparation/layoutcommands/addparts.html">Aggiungi pezzi</a></li>
-      <li><button class="tree blank"></button><a href="jobpreparation/layoutcommands/adaptcompact.html">Adatta/Compatta</a></li>
-      <li><button class="tree blank"></button><a href="jobpreparation/layoutcommands/exportoutputs.html">Esporta output</a></li>
-      <li><button class="tree blank"></button><a href="jobpreparation/layoutcommands/markcomplete.html">Contrassegna come completo</a></li>
-      <li><button class="tree blank"></button><a href="jobpreparation/layoutcommands/reportsender.html">Trasmettitore report</a></li>
+      <li><button class="tree blank"></button><a href="library/open/partimport.html">Importa componenti</a></li>
+      <li><button class="tree blank"></button><a href="library/open/orderimport.html">Importa ordini</a></li>
+      <li><button class="tree blank"></button><a href="library/open/jobimport.html">Importa lavori</a></li>
+      <li><button class="tree blank"></button><a href="library/open/assembliesimport.html">Importa assiemi</a></li>
      </ul>
     </li>
     <li>
      <button class="tree closed"></button>
-     <a href="jobpreparation/remnantmanagement/index.html">Gestione residui</a>
+     <a href="library/libraryview/index.html">Vista Libreria</a>
      <ul class="hide">
-      <li><button class="tree blank"></button><a href="jobpreparation/remnantmanagement/autoremnant.html">Gestione residui automatici</a></li>
-      <li><button class="tree blank"></button><a href="jobpreparation/remnantmanagement/manualremnant.html">Gestione lamiere residue manuali</a></li>
+      <li><button class="tree blank"></button><a href="library/libraryview/partview.html">Componenti</a></li>
+      <li><button class="tree blank"></button><a href="library/libraryview/assemblyview.html">Assieme</a></li>
      </ul>
     </li>
-    <li><button class="tree blank"></button><a href="jobpreparation/importexport.html">Importare / esportare</a></li>
-    <li><button class="tree blank"></button><a href="jobpreparation/resetpartjob.html">Reset job pezzo</a></li>
-    <li><button class="tree blank"></button><a href="jobpreparation/outdate.html">Non aggiornato</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="library/partstate/index.html">Stato componente</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="library/partstate/partvalidation.html">Validazione componente</a></li>
+      <li><button class="tree blank"></button><a href="library/partstate/partpanel.html">Pannello componente</a></li>
+      <li><button class="tree blank"></button><a href="library/partstate/partfilters.html">Filtri componente</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="library/toolingstatus/index.html">Stato attrezzaggio</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="library/toolingstatus/toolingvalidation/index.html">Validazione attrezzaggio</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="library/toolingstatus/toolingvalidation/bendtooling.html">Validazione attrezzaggio di piegatura</a></li>
+        <li><button class="tree blank"></button><a href="library/toolingstatus/toolingvalidation/cuttooling.html">Validazione attrezzaggio di taglio</a></li>
+        <li><button class="tree blank"></button><a href="library/toolingstatus/toolingvalidation/foldtooling.html">Validazione attrezzaggio di pannellatura</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="library/toolingstatus/toolingpanel.html">Pannello attrezzaggio</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="library/savingfilters.html">Salvataggio dei filtri</a></li>
    </ul>
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="filters/index.html">Filtri</a>
+   <a href="orders/index.html">Ordini</a>
    <ul class="hide">
-    <li><button class="tree blank"></button><a href="filters/filtertour.html">Panoramica filtri</a></li>
-    <li><button class="tree blank"></button><a href="filters/savedfilters.html">Filtri salvati</a></li>
-    <li><button class="tree blank"></button><a href="filters/partlibraryfilter.html">Filtro Libreria pezzi</a></li>
-    <li><button class="tree blank"></button><a href="filters/jobpagefilter.html">Filtro pagina JOB</a></li>
+    <li><button class="tree blank"></button><a href="orders/ordersview.html">Vista ordini</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="jobs/index.html">Lavori</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="jobs/jobcreation.html">Crea lavoro</a></li>
+    <li><button class="tree blank"></button><a href="jobs/jobview.html">Vista lavoro</a></li>
+    <li><button class="tree blank"></button><a href="jobs/jobpanel.html">Pannello lavoro</a></li>
+    <li><button class="tree blank"></button><a href="jobs/jobautoplan.html">Pianificazione automatica</a></li>
+    <li><button class="tree blank"></button><a href="jobs/jobinteractplan.html">Nesting interattivo</a></li>
+    <li><button class="tree blank"></button><a href="jobs/repacking.html">Riorganizzazione</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="jobs/layoutcommands/index.html">Gestione nest</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="jobs/layoutcommands/nestview.html">Vista layout</a></li>
+      <li><button class="tree blank"></button><a href="jobs/layoutcommands/layoutpanel.html">Pannello layout</a></li>
+      <li><button class="tree blank"></button><a href="jobs/layoutcommands/reportsender.html">Invio report</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="jobs/remnantmanagement/index.html">Gestione avanzi</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="jobs/remnantmanagement/autoremnant.html">Avanzo automatico</a></li>
+      <li><button class="tree blank"></button><a href="jobs/remnantmanagement/manualremnant.html">Avanzo manuale</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="jobs/twinlinenesting.html">Nesting a doppia linea</a></li>
+    <li><button class="tree blank"></button><a href="jobs/outdate.html">Scaduto</a></li>
+    <li><button class="tree blank"></button><a href="jobs/jobfilters.html">Filtri lavoro</a></li>
    </ul>
   </li>
   <li>
@@ -121,25 +150,26 @@
    <ul class="hide">
     <li><button class="tree blank"></button><a href="factory/routes.html">Percorsi</a></li>
     <li><button class="tree blank"></button><a href="factory/sheets.html">Lamiere</a></li>
-    <li><button class="tree blank"></button><a href="factory/customers.html">Clienti</a></li>
+    <li><button class="tree blank"></button><a href="factory/users.html">Utenti</a></li>
     <li><button class="tree blank"></button><a href="factory/edit.html">Modifica</a></li>
+    <li><button class="tree blank"></button><a href="factory/customers.html">Clienti</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="factory/settings/index.html">Impostazioni</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="factory/settings/environment.html">Ambiente</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/import.html">Importazione</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/bend.html">Piegatura</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/cut.html">Taglio</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/notification.html">Notifiche</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/watch.html">Monitoraggio</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/job.html">Lavoro</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/reports.html">Report</a></li>
+     </ul>
+    </li>
    </ul>
   </li>
-  <li>
-   <button class="tree closed"></button>
-   <a href="settings/index.html">Impostazioni</a>
-   <ul class="hide">
-    <li><button class="tree blank"></button><a href="settings/environment.html">Ambiente</a></li>
-    <li><button class="tree blank"></button><a href="settings/import.html">Importa</a></li>
-    <li><button class="tree blank"></button><a href="settings/bend.html">Piega</a></li>
-    <li><button class="tree blank"></button><a href="settings/cut.html">Taglio</a></li>
-    <li><button class="tree blank"></button><a href="settings/notification.html">Notifiche</a></li>
-    <li><button class="tree blank"></button><a href="settings/watch.html">Guarda</a></li>
-    <li><button class="tree blank"></button><a href="settings/job.html">Job</a></li>
-    <li><button class="tree blank"></button><a href="settings/reports.html">Report</a></li>
-   </ul>
-  </li>
-  <li><button class="tree blank"></button><a class="active" href="impressum.html">Informazioni redazionali</a></li>
+  <li><button class="tree blank"></button><a class="active" href="impressum.html">Informazioni aziendali</a></li>
  </ul>
 </div>
 
@@ -152,98 +182,58 @@
   </button>
  </div>
  <div>
-  <a href="impressum.html">Informazioni redazionali</a>
+  <a href="impressum.html">Informazioni aziendali</a>
  </div>
 </nav>
 
             <div id="site-crumb-below">
                 <div id="site-toc-left">
                     <article id="article">
-                        <h1>Informazioni redazionali</h1>
+                        <h1>Informazioni aziendali</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>TRUMPF Metamation Private Limited</strong></p>
+<p>JFY International GmbH Schulze-Delitzsch-Straße 41 70565 Stuttgart, Germania</p>
 </div>
 <div class="paragraph">
-<p>SIPCOT IT Park</p>
+<p>Telefono: +49 7156 303 30576 Email: <a href="mailto:sales@jfy-international.com">sales@jfy-international.com</a></p>
 </div>
 <div class="paragraph">
-<p>603 103 Siruseri</p>
+<p>Responsabilità editoriale: Florian Schaede</p>
 </div>
 <div class="paragraph">
-<p>Tamil Nadu</p>
+<p>Amministratore delegato: Dr. Andreas Aschenbrücker</p>
 </div>
 <div class="paragraph">
-<p>India</p>
+<p>HRB (numero di registro delle imprese): 206070 presso il Tribunale distrettuale di Stuttgart</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_filiale_di">Filiale di:</h2>
+<h2 id="_responsabile_della_protezione_dei_dati">Responsabile della protezione dei dati</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>TRUMPF SE + Co. KG (Holding)</strong></p>
+<p>Il Responsabile della protezione dei dati nominato è:</p>
 </div>
 <div class="paragraph">
-<p>Johann-Maus-Strasse 2</p>
+<p>Kevin Koch Email: <a href="mailto:data-protection@jfy-international.com">data-protection@jfy-international.com</a></p>
 </div>
 <div class="paragraph">
-<p>71254 Ditzingen</p>
+<p>Il sostituto del Responsabile della protezione dei dati in caso di assenza è:</p>
 </div>
 <div class="paragraph">
-<p>Germany</p>
-</div>
-<div class="paragraph">
-<p>Telefono +49 7156 303-0</p>
-</div>
-<div class="paragraph">
-<p>Fax +49 7156 303-930309</p>
-</div>
-<div class="paragraph">
-<p>E-mail <a href="mailto:info@trumpf.com">info@trumpf.com</a></p>
-</div>
-<div class="paragraph">
-<p>Vedere ulteriori dettagli alla pagina: <a href="https://www.trumpf.com/en_us/meta/corporate-information/" class="bare">https://www.trumpf.com/en_US/meta/corporate-information/</a>.</p>
+<p>Florian Schaede E-Mail: <a href="mailto:data-protection@jfy-international.com">data-protection@jfy-international.com</a></p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_informativa_sulla_privacy">Informativa sulla privacy</h2>
+<h2 id="_copyright_e_marchi_commerciali">Copyright e marchi commerciali</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>L&#8217;informativa ai sensi dell&#8217;art. 13 RGPD su come vengono trattati i dati
-nella nostra azienda è disponibile sulla nostra homepage
-<a href="https://www.trumpf.com/en_int/meta/dataprivacynotice" class="bare">https://www.trumpf.com/en_INT/meta/dataprivacynotice</a>.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_dichiarazione_sulla_tutela_dei_dati">Dichiarazione sulla tutela dei dati</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Trumpf SE + Co. KG e le sue società affiliate, di seguito denominate
-TRUMPF Group, ringraziano per l&#8217;interesse dimostrato nei confronti della nostra azienda e dei nostri
-prodotti e servizi. La tutela dei dati personali durante il trattamento
-nel corso dell&#8217;intero processo aziendale è importante per noi.</p>
+<p>Tutti i testi, le immagini, la grafica, le animazioni, i video, i suoni e qualsiasi altro contenuto di questo sito web, nonché il loro layout, sono protetti da copyright e da altre leggi a tutela. I suddetti contenuti non possono essere duplicati, modificati o utilizzati in altre pubblicazioni elettroniche o stampate senza il previo consenso di JFY International GmbH.</p>
 </div>
 <div class="paragraph">
-<p>Vedere ulteriori dettagli alla pagina <a href="https://www.trumpf.com/en_us/meta/data-protection/" class="bare">https://www.trumpf.com/en_US/meta/data-protection/</a>.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_copyright_e_marchi_registrati">Copyright e marchi registrati</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Tutti i testi, le immagini, le grafiche, le animazioni, i video i suoni e qualsiasi altro contenuto
-del presente sito web e il relativo layout sono coperti da copyright e altre leggi in materia di
-tutela. I contenuti indicati sopra non possono essere copiati, modificati né usati in
-altre pubblicazioni in formato elettronico o cartaceo senza il previo consenso di
-TRUMPF SE + Co. KG.</p>
-</div>
-<div class="paragraph">
-<p>Vedere ulteriori informazioni alla pagina <a href="https://www.trumpf.com/en_us/meta/copyright/" class="bare">https://www.trumpf.com/en_US/meta/copyright/</a>.</p>
+<p>Tutti i brevetti, i marchi e le opere protette da copyright presenti su questo sito web sono proprietà intellettuale di JFY International GmbH, salvo diversa indicazione. Ciò vale in particolare per i marchi, i logo, gli emblemi e le targhette JFY.</p>
 </div>
 </div>
 </div>
@@ -255,16 +245,10 @@ TRUMPF SE + Co. KG.</p>
  <h3>Contents</h3>
  <ul>
   <li level="1">
-   <a href="#_filiale_di">Filiale di:</a>
+   <a href="#_responsabile_della_protezione_dei_dati">Responsabile della protezione dei dati</a>
   </li>
   <li level="1">
-   <a href="#_informativa_sulla_privacy">Informativa sulla privacy</a>
-  </li>
-  <li level="1">
-   <a href="#_dichiarazione_sulla_tutela_dei_dati">Dichiarazione sulla tutela dei dati</a>
-  </li>
-  <li level="1">
-   <a href="#_copyright_e_marchi_registrati">Copyright e marchi registrati</a>
+   <a href="#_copyright_e_marchi_commerciali">Copyright e marchi commerciali</a>
   </li>
  </ul>
 </aside>
@@ -272,7 +256,7 @@ TRUMPF SE + Co. KG.</p>
                 </div>
             </div>
             <nav class="pagination">
- <span class="prev"><a href="settings/reports.html">Report</a></span>
+ <span class="prev"><a href="factory/settings/reports.html">Report</a></span>
 </nav>
 
         </div>
@@ -283,7 +267,7 @@ TRUMPF SE + Co. KG.</p>
     </div>
     <footer id="site-footer">
         <div class="left">
-            <p>&nbsp;&nbsp;Copyright &copy; 2025 JFY International. All rights reserved.</p>
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
         </div>
         <div class="middle"></div>
         <div class="right">

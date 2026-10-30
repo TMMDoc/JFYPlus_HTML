@@ -1,0 +1,330 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../img/praxis-icon.png">
+  <title>Konfigurácia používateľov</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">Vitajte v JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../installation/index.html">Inštalácia</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../installation/hardwarerequirement.html">Hardvérové požiadavky</a></li>
+    <li><button class="tree blank"></button><a href="../installation/importformats.html">Podporované formáty súborov</a></li>
+    <li><button class="tree blank"></button><a href="../installation/prerequisites.html">Predpoklady</a></li>
+    <li><button class="tree blank"></button><a href="../installation/changelic.html">Zmena licencie</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">Konfigurácia</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="setupmachine.html">Pridanie/odstránenie stroja</a></li>
+    <li><button class="tree blank"></button><a href="setuptooling.html">Nastavenie tooling</a></li>
+    <li><button class="tree blank"></button><a class="active" href="configureusers.html">Konfigurácia používateľov</a></li>
+    <li><button class="tree blank"></button><a href="language.html">Jazyk</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="addmaterial/index.html">Materiál</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="addmaterial/addnew.html">Pridanie nového materiálu a tabule</a></li>
+      <li><button class="tree blank"></button><a href="addmaterial/exportimport.html">Export/import materiálu</a></li>
+      <li><button class="tree blank"></button><a href="addmaterial/replacematerial.html">Nahradenie materiálu</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="mapbendpages.html">Mapovanie materiálu</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../userinterface.html">PoužívateĻské rozhranie</a></li>
+  <li><button class="tree blank"></button><a href="../workflow.html">Workflow</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../library/index.html">Knižnica</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/open/index.html">Otvorenie</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/open/partimport.html">Import dielov</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/orderimport.html">Import objednávok</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/jobimport.html">Import úloh job</a></li>
+      <li><button class="tree blank"></button><a href="../library/open/assembliesimport.html">Import zostáv</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/libraryview/index.html">Zobrazenie knižnice</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/libraryview/partview.html">Diely</a></li>
+      <li><button class="tree blank"></button><a href="../library/libraryview/assemblyview.html">Zostava</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/partstate/index.html">Stav dielu</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../library/partstate/partvalidation.html">Validácia dielu</a></li>
+      <li><button class="tree blank"></button><a href="../library/partstate/partpanel.html">Panel dielu</a></li>
+      <li><button class="tree blank"></button><a href="../library/partstate/partfilters.html">Filtre dielov</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../library/toolingstatus/index.html">Stav tooling</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../library/toolingstatus/toolingvalidation/index.html">Validácia tooling</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/bendtooling.html">Validácia tooling ohýbania</a></li>
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/cuttooling.html">Validácia tooling rezania</a></li>
+        <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingvalidation/foldtooling.html">Validácia tooling skladania</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../library/toolingstatus/toolingpanel.html">Panel tooling</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../library/savingfilters.html">Ukladanie filtrov</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../orders/index.html">Objednávky</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../orders/ordersview.html">Zobrazenie objednávok</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../jobs/index.html">Úlohy job</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../jobs/jobcreation.html">Vytvorenie úlohy job</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobview.html">Zobrazenie úloh job</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobpanel.html">Panel úlohy job</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobautoplan.html">Automatické plánovanie</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobinteractplan.html">Interaktívny nesting</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/repacking.html">Prebaľovanie</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../jobs/layoutcommands/index.html">Správa nestov</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../jobs/layoutcommands/nestview.html">Zobrazenie rozloženia</a></li>
+      <li><button class="tree blank"></button><a href="../jobs/layoutcommands/layoutpanel.html">Panel rozloženia</a></li>
+      <li><button class="tree blank"></button><a href="../jobs/layoutcommands/reportsender.html">Odosielanie reportov</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../jobs/remnantmanagement/index.html">Správa zvyškov</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../jobs/remnantmanagement/autoremnant.html">Automatické zvyšky</a></li>
+      <li><button class="tree blank"></button><a href="../jobs/remnantmanagement/manualremnant.html">Manuálne zvyšky</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../jobs/twinlinenesting.html">Nesting Twinline</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/outdate.html">Neaktuálne</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobfilters.html">Filtre úloh job</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../factory/index.html">Továreň</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../factory/routes.html">Trasy</a></li>
+    <li><button class="tree blank"></button><a href="../factory/sheets.html">Tabule</a></li>
+    <li><button class="tree blank"></button><a href="../factory/users.html">Používatelia</a></li>
+    <li><button class="tree blank"></button><a href="../factory/edit.html">Úprava</a></li>
+    <li><button class="tree blank"></button><a href="../factory/customers.html">Zákazníci</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../factory/settings/index.html">Nastavenia</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../factory/settings/environment.html">Nastavenia prostredia</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/import.html">Nastavenia importu</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/bend.html">Nastavenia ohýbania</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/cut.html">Nastavenia rezania</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/notification.html">Oznámenia</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/watch.html">Nastavenia sledovania</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/job.html">Nastavenia úloh job</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/reports.html">Nastavenia reportov</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../impressum.html">Firemné informácie</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">Konfigurácia</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="configureusers.html">Konfigurácia používateľov</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Konfigurácia používateľov</h1>
+<div class="ulist">
+<ul>
+<li>
+<p>Klienti JFY Plus s rôznymi rolami sa používajú na riadenie konfigurácie
+factory.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pridávanie nových strojov, materiálov a tabúľ.</p>
+</li>
+<li>
+<p>Úprava konfigurácií strojov.</p>
+</li>
+<li>
+<p>Úprava dielov, jobov a zostáv.</p>
+</li>
+<li>
+<p>Pridanie/úprava nest tabúľ, plánovanie jobu.</p>
+</li>
+<li>
+<p>Pridanie/úprava používateľov.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>PC, na ktorom je nainštalovaný Pserver, sa považuje za prvého používateľa
+JFY Plus.</p>
+</li>
+<li>
+<p>JFY Plus používa poverenia systému Windows ako meno používateľa JFY Plus,
+ktorým je <strong>Site Admin</strong>.</p>
+</li>
+<li>
+<p>Nasledujúca inštalácia, t. j. meno používateľa počítača s inštaláciou klienta
+JFY Plus, sa považuje za <strong>Programmer</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/userroles.png" alt="User roles">
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Iba <strong>Site Admin</strong> môže upravovať informácie iných
+používateľov a meniť heslo.
+</td>
+</tr>
+</table>
+</div>
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Rola</th>
+<th class="tableblock halign-left valign-top">Oprávnenie</th>
+<th class="tableblock halign-left valign-top">Zamietnuté</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Site Admin</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Všetky oprávnenia</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Admin</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Všetky úlohy programátora, úprava konfigurácie factory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Úprava používateľov</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Programmer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nahrávanie a úprava dielov/jobov/zostáv, úprava tooling dielov, inventár tabúľ,
+plánovanie jobu</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Úprava konfigurácie factory, úprava používateľov</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Operator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dokončenie rozloženia/jobu, pridanie novej tabule, príkazy rozloženia</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Všetko ostatné zamietnuté.</p></td>
+</tr>
+</tbody>
+</table>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc"></aside>
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="setuptooling.html">Nastavenie tooling</a></span>
+ <span class="next"><a href="language.html">Jazyk</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

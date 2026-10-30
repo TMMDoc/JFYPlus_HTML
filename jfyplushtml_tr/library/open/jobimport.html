@@ -1,0 +1,487 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Job'ları içe aktarma</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">JFY Plus uygulamasına hoş geldiniz</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Kurulum</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Donanım gereksinimi</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Desteklenen dosya biçimleri</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Ön koşullar</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Lisansı değiştirme</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Yapılandırma</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Makine ekleme/kaldırma</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Tooling kurulumu</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Kullanıcıları yapılandırma</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Dil</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Malzeme</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Yeni malzeme ve sac ekleme</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Malzemeyi dışa/içe aktarma</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Malzeme değiştirme</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Malzeme eşleme</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">Kullanıcı arayüzü</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">İş akışı</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Kitaplık</a>
+   <ul>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Aç</a>
+     <ul>
+      <li><button class="tree blank"></button><a href="partimport.html">Parçaları içe aktarma</a></li>
+      <li><button class="tree blank"></button><a href="orderimport.html">Siparişleri içe aktarma</a></li>
+      <li><button class="tree blank"></button><a class="active" href="jobimport.html">Job'ları içe aktarma</a></li>
+      <li><button class="tree blank"></button><a href="assembliesimport.html">Montajları içe aktarma</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../libraryview/index.html">Kitaplık görünümü</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../libraryview/partview.html">Parçalar</a></li>
+      <li><button class="tree blank"></button><a href="../libraryview/assemblyview.html">Montaj</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../partstate/index.html">Parça durumu</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../partstate/partvalidation.html">Parça doğrulama</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partpanel.html">Parça paneli</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partfilters.html">Parça filtreleri</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../toolingstatus/index.html">Tooling durumu</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../toolingstatus/toolingvalidation/index.html">Tooling doğrulama</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/bendtooling.html">Büküm tooling doğrulama</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/cuttooling.html">Kesme tooling doğrulama</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/foldtooling.html">Katlama tooling doğrulama</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../toolingstatus/toolingpanel.html">Tooling paneli</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../savingfilters.html">Filtreleri kaydetme</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Siparişler</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Siparişler görünümü</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Jobs</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Job oluşturma</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Job görünümü</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Job paneli</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Otomatik planlama</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Etkileşimli nesting</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Yeniden paketleme</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Nest yönetimi</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Layout görünümü</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Layout paneli</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Rapor gönderici</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Artık yönetimi</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Otomatik artık yönetimi</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Manuel artık yönetimi</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Twinline nesting</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Güncelliğini yitirmiş</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Job filtreleri</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../factory/index.html">Fabrika</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">Rotalar</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/sheets.html">Saclar</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">Kullanıcılar</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/edit.html">Düzenle</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">Müşteriler</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">Ayarlar</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">Ortam</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">İçe Aktarma</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">Büküm</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">Kesme</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">Bildirimler</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">İzleme</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">Job</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">Raporlar</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Kurumsal Bilgiler</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Kitaplık</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Aç</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="jobimport.html">Job'ları içe aktarma</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Job'ları içe aktarma</h1>
+<div class="sect1">
+<h2 id="_csv_veya_xlsxten_içe_aktarma">CSV veya XLSX&#8217;ten içe aktarma</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Job&#8217;ları yaygın metin biçimlerinde de içe aktarabilirsiniz</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>File &#8594; Open &#8594; Import Jobs</strong> öğesine tıklayın, Klasör Aç
+iletişim kutusu görünür.</p>
+</li>
+<li>
+<p>Tüm Parçalar csv konumunda veya arama klasörü dizinlerinde mevcutsa,
+csv alanlarıyla eşleşen tüm parçaları listeleyerek <strong>new job</strong>
+penceresi görünür.</p>
+</li>
+<li>
+<p>Eksik parçalar yok sayılır ve <strong>new job</strong> penceresinde görünmez.</p>
+</li>
+<li>
+<p>Başlangıçta Parça durumu Nascent&#8217;tir.</p>
+</li>
+<li>
+<p><strong>OK</strong> öğesine tıklayın, artık parçalar Parça Kitaplığı&#8217;na içe
+aktarılır.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_create_a_blank_part_for_the_missing_cad_files">Create a blank part for the missing CAD files</h3>
+<div class="paragraph">
+<p>Bir elektronik tablo (.csv veya .xlsx) kullanarak job&#8217;ları içe aktarırken, bazen
+sistemde mevcut olmayan CAD dosyalarına başvuran satırlarınız olabilir.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Bunu ele almak için <strong>Factory</strong>
+ &#8594; <strong>Settings</strong> &#8594; <strong>Job</strong> yolunu izleyin,
+ <strong>Spreadsheet import settings</strong> altında
+<strong>Create a blank part for the missing CAD files</strong> seçeneğini
+etkinleştirin.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/csv6.png" alt="Spreadsheet import" width="801">
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Bu seçenek belirlendiğinde:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Job içe aktarma sırasında herhangi bir satır için bir CAD dosyası eksikse, sistem
+eksik CAD dosyasının yerine otomatik olarak boş bir parça oluşturur.</p>
+</li>
+<li>
+<p><strong>new job</strong> penceresinde, bu eksik parçalar ilişkili CAD dosyasının
+eksik olduğunu belirtmek için sarı renkle vurgulanır.</p>
+</li>
+<li>
+<p>Eksik parça, CSV&#8217;den eşlenen alanlarını (parça adı, malzeme, kalınlık, miktar vb.
+gibi) yine de koruyacaktır. Ancak parça durumu Nascent olarak gösterilir; yani
+henüz gerçek geometrisi olmayan boş bir yer tutucudur.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Bu, eksik CAD dosyaları nedeniyle hata oluşmadan job içe aktarmanın devam
+edebilmesini sağlar — boş parçayı daha sonra doğru CAD dosyası kullanılabilir
+olduğunda güncelleyebilir veya değiştirebilirsiniz.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_do_not_show_the_new_job_dialog_if_the_spreadsheet_has_no_error">Do not show the new job dialog if the spreadsheet has no error</h3>
+<div class="paragraph">
+<p><strong>factory</strong> &#8594; <strong>Settings</strong> &#8594;
+<strong>Job</strong> → <strong>Spreadsheet import settings</strong>→
+<strong>Do not show the New Job dialog if the spreadsheet has no error</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Bu onay kutusu seçildiğinde, elektronik tabloda hata yoksa (eksik parça, eksik
+tarih veya geçersiz veri yoksa) sistem, Yeni Job iletişim kutusunu göstermeden yeni
+job&#8217;u otomatik olarak oluşturur.</p>
+</li>
+<li>
+<p>Bu onay kutusu temizlendiğinde, elektronik tabloda hata olmasa bile kullanıcı
+incelemesi ve onayı için Yeni Job iletişim kutusu her zaman görünür.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_prefer_raw_material_column_over_material_thickness">Prefer raw-material column over material + thickness</h3>
+<div class="paragraph">
+<p><strong>factory</strong> &#8594; <strong>Settings</strong> &#8594;
+<strong>Job</strong>→<strong>Prefer Raw-Material column over Material + Thickness</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Bu onay kutusu seçildiğinde, sistem elektronik tablonun Raw-Material sütununu
+(örneğin Steel-20) kullanmasını bekler. Bu, malzeme türü ve kalınlığın tek bir
+sütunda tek bir değerde birleştirilmesi gerektiği anlamına gelir.</p>
+</li>
+<li>
+<p>Bu onay kutusu temizlendiğinde, sistem elektronik tablonun Malzeme ve Kalınlık
+için ayrı sütunlara sahip olmasını bekler (örneğin Steel ve 2.00). Sistem, içe
+aktarma sırasında bunları dahili olarak birleştirir.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/csvmaterial.png" alt="CSV Raw Material and Material+Thickness">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_csvxlsx_kullanarak_izleme_klasörü">CSV/XLSX kullanarak izleme klasörü</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><strong>factory</strong> &#8594; <strong>Settings</strong> &#8594;
+<strong>Watch settings</strong> içinde <strong>Enable 'Live Folder'</strong>
+ve <strong>Watch sub-folders also</strong> seçeneklerini işaretleyin.</p>
+</li>
+<li>
+<p>İzleme klasörü yolunu (UNC veya eşlenmiş sürücü) ayarlayın.</p>
+</li>
+<li>
+<p><strong>Spreadsheet import settings</strong> içinde
+<strong>Import spreadsheet from 'Live Folder'</strong> seçeneğini
+işaretleyin.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/watchfolder.png" alt="Watch folder" width="702">
+</div>
+</div>
+</li>
+<li>
+<p>Elektronik Tablo Içe Aktarma seçeneklerinden <strong>Import Jobs</strong>
+öğesini seçin.</p>
+</li>
+<li>
+<p>Kopyalayın
+ve İzleme Klasörü&#8217;ne yapıştırın.</p>
+</li>
+<li>
+<p>Sistem CSV&#8217;yi kontrol eder ve job&#8217;u otomatik olarak oluşturmaya çalışır.</p>
+</li>
+<li>
+<p>CAD dosyası eksikse, gerekli CAD verileri bulunamadığı için job oluşturulmaz.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_cad_arama_dizini_ve_özyinelemeli_cad_arama_yapılandırılmamış">CAD arama dizini ve özyinelemeli CAD arama - yapılandırılmamış</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>factory</strong> &#8594; <strong>Settings</strong> &#8594;
+<strong>Job</strong> &#8594; <strong>Spreadsheet import settings</strong> içinde,
+herhangi bir <strong>CAD lookup directories</strong> ayarlanmamışsa
+ve <strong>Use recursive CAD search</strong> kullanılmıyorsa, sistem
+CAD dosyalarını otomatik olarak aramaz.</p>
+</li>
+<li>
+<p><strong>Create a blank part for the missing CAD files</strong> onay kutusu
+seçiliyse, CAD dosyaları eksik olsa bile job yine de oluşturulur.</p>
+</li>
+<li>
+<p>Bu durumda, job&#8217;daki tüm parçalar nascent (boş) parçalar olarak oluşturulur —
+yani CAD dosyaları bulunamadığı için geometrileri yoktur.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/notconfigured.png" alt="Create blank parts" width="867">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cad_arama_dizini_ve_özyinelemeli_cad_arama_yapılandırılmış">CAD arama dizini ve özyinelemeli CAD arama - yapılandırılmış</h3>
+<div class="paragraph">
+<p><strong>CAD lookup directories</strong>
+olarak ayarlandığında ve <strong>factory</strong> &#8594; <strong>Settings</strong> &#8594;
+<strong>Job</strong> &#8594; <strong>Spreadsheet import settings</strong> altında
+<strong>Use recursive CAD search</strong> etkinleştirildiğinde:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Sistem, elektronik tabloda belirtilen gerekli CAD dosyaları için belirtilen
+klasörü ve tüm alt klasörlerini otomatik olarak arar.</p>
+</li>
+<li>
+<p><strong>Create a blank part for the missing CAD files</strong> de etkin
+olduğundan, herhangi bir CAD dosyası hala bulunamazsa sistem yer tutucu olarak boş
+bir parça oluşturur.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/configured.png" alt="Create blank parts" width="861">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_csv_veya_xlsxten_içe_aktarma">CSV veya XLSX&#8217;ten içe aktarma</a>
+  </li>
+  <li level="2">
+   <a href="#_create_a_blank_part_for_the_missing_cad_files">Create a blank part for the missing CAD files</a>
+  </li>
+  <li level="2">
+   <a href="#_do_not_show_the_new_job_dialog_if_the_spreadsheet_has_no_error">Do not show the new job dialog if the spreadsheet has no error</a>
+  </li>
+  <li level="2">
+   <a href="#_prefer_raw_material_column_over_material_thickness">Prefer raw-material column over material + thickness</a>
+  </li>
+  <li level="1">
+   <a href="#_csvxlsx_kullanarak_izleme_klasörü">CSV/XLSX kullanarak izleme klasörü</a>
+  </li>
+  <li level="2">
+   <a href="#_cad_arama_dizini_ve_özyinelemeli_cad_arama_yapılandırılmamış">CAD arama dizini ve özyinelemeli CAD arama - yapılandırılmamış</a>
+  </li>
+  <li level="2">
+   <a href="#_cad_arama_dizini_ve_özyinelemeli_cad_arama_yapılandırılmış">CAD arama dizini ve özyinelemeli CAD arama - yapılandırılmış</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="orderimport.html">Siparişleri içe aktarma</a></span>
+ <span class="next"><a href="assembliesimport.html">Montajları içe aktarma</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

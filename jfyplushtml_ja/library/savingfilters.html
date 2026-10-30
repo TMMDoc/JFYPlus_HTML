@@ -1,0 +1,381 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../img/praxis-icon.png">
+  <title>フィルターの保存</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../index.html">JFY Plus へようこそ</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../installation/index.html">インストール</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../installation/hardwarerequirement.html">ハードウェア要件</a></li>
+    <li><button class="tree blank"></button><a href="../installation/importformats.html">サポートされているファイル形式</a></li>
+    <li><button class="tree blank"></button><a href="../installation/prerequisites.html">前提条件</a></li>
+    <li><button class="tree blank"></button><a href="../installation/changelic.html">ライセンスの変更</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../configuration/index.html">構成</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../configuration/setupmachine.html">マシンの追加/削除</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/setuptooling.html">ツーリングのセットアップ</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/configureusers.html">ユーザーの構成</a></li>
+    <li><button class="tree blank"></button><a href="../configuration/language.html">言語</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../configuration/addmaterial/index.html">材料</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/addnew.html">新しい材料とシートの追加</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/exportimport.html">材料のエクスポート/インポート</a></li>
+      <li><button class="tree blank"></button><a href="../configuration/addmaterial/replacematerial.html">材料の置換</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../configuration/mapbendpages.html">材料のマッピング</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../userinterface.html">ユーザーインターフェイス</a></li>
+  <li><button class="tree blank"></button><a href="../workflow.html">ワークフロー</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="index.html">ライブラリ</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="open/index.html">開く</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="open/partimport.html">部品のインポート</a></li>
+      <li><button class="tree blank"></button><a href="open/orderimport.html">オーダーのインポート</a></li>
+      <li><button class="tree blank"></button><a href="open/jobimport.html">ジョブのインポート</a></li>
+      <li><button class="tree blank"></button><a href="open/assembliesimport.html">アセンブリのインポート</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="libraryview/index.html">ライブラリビュー</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="libraryview/partview.html">部品</a></li>
+      <li><button class="tree blank"></button><a href="libraryview/assemblyview.html">アセンブリ</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="partstate/index.html">部品ステータス</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="partstate/partvalidation.html">部品の検証</a></li>
+      <li><button class="tree blank"></button><a href="partstate/partpanel.html">部品パネル</a></li>
+      <li><button class="tree blank"></button><a href="partstate/partfilters.html">部品フィルター</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="toolingstatus/index.html">ツーリングステータス</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="toolingstatus/toolingvalidation/index.html">ツーリングの検証</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="toolingstatus/toolingvalidation/bendtooling.html">曲げツーリングの検証</a></li>
+        <li><button class="tree blank"></button><a href="toolingstatus/toolingvalidation/cuttooling.html">切断ツーリングの検証</a></li>
+        <li><button class="tree blank"></button><a href="toolingstatus/toolingvalidation/foldtooling.html">折り曲げツーリングの検証</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="toolingstatus/toolingpanel.html">ツーリングパネル</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a class="active" href="savingfilters.html">フィルターの保存</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../orders/index.html">オーダー</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../orders/ordersview.html">オーダービュー</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../jobs/index.html">ジョブ</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../jobs/jobcreation.html">ジョブの作成</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobview.html">ジョブビュー</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobpanel.html">ジョブパネル</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobautoplan.html">自動計画</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobinteractplan.html">インタラクティブネスティング</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/repacking.html">再パッキング</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../jobs/layoutcommands/index.html">ネスト管理</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../jobs/layoutcommands/nestview.html">レイアウトビュー</a></li>
+      <li><button class="tree blank"></button><a href="../jobs/layoutcommands/layoutpanel.html">レイアウトパネル</a></li>
+      <li><button class="tree blank"></button><a href="../jobs/layoutcommands/reportsender.html">レポート送信</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../jobs/remnantmanagement/index.html">残材管理</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../jobs/remnantmanagement/autoremnant.html">自動残材管理</a></li>
+      <li><button class="tree blank"></button><a href="../jobs/remnantmanagement/manualremnant.html">手動残材管理</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../jobs/twinlinenesting.html">TwinLineネスティング</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/outdate.html">古くなった</a></li>
+    <li><button class="tree blank"></button><a href="../jobs/jobfilters.html">ジョブフィルター</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../factory/index.html">ファクトリー</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../factory/routes.html">ルート</a></li>
+    <li><button class="tree blank"></button><a href="../factory/sheets.html">シート</a></li>
+    <li><button class="tree blank"></button><a href="../factory/users.html">ユーザー</a></li>
+    <li><button class="tree blank"></button><a href="../factory/edit.html">編集</a></li>
+    <li><button class="tree blank"></button><a href="../factory/customers.html">顧客</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../factory/settings/index.html">設定</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../factory/settings/environment.html">環境</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/import.html">インポート</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/bend.html">曲げ加工</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/cut.html">切断</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/notification.html">通知</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/watch.html">監視</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/job.html">ジョブ</a></li>
+      <li><button class="tree blank"></button><a href="../factory/settings/reports.html">レポート</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../impressum.html">会社情報</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="index.html">ライブラリ</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="savingfilters.html">フィルターの保存</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>フィルターの保存</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>保存されたフィルターを使用すると、部品、ジョブ、レイアウトで頻繁に適用する条件を再利用でき、ワークフローを効率化できます。各モジュールにはデフォルトのフィルターが用意されていますが、必要に応じて Site Admin または Programmer が追加のフィルターリストを作成できます。保存されたフィルターを再利用することで時間を節約し、検索全体で一貫性を保つのに役立ちます。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="img/menu.png" alt="menu" width="20"></span> アイコンをクリックして、デフォルトのフィルターを表示します。</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/before.png" alt="Before" width="215">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_フィルターを保存する手順">フィルターを保存する手順</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><span class="image"><img src="img/ficon.png" alt="ficon" width="20"></span> アイコンをクリックし、任意のフィルター項目を選択します。</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/selectfilter.png" alt="Select Filter" width="431">
+</div>
+</div>
+</li>
+<li>
+<p>選択したフィルター項目のドロップダウンメニューから、オプションを選択します。選択した条件の横にチェックマークが表示されます。</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/selectoption.png" alt="Select Option" width="415">
+</div>
+</div>
+</li>
+<li>
+<p>条件を適用するには、<span class="image"><img src="img/ficon.png" alt="ficon" width="20"></span> アイコンをクリックしてから <strong>Add Condition <span class="keyseq"><kbd>Ctrl</kbd>+<kbd>+</kbd></span></strong> を選択します。この手順を繰り返して複数の条件を追加できます。</p>
+</li>
+<li>
+<p>条件付きで選択したフィルターを保存するには、<strong>Save Filter&#8230;&#8203; <span class="keyseq"><kbd>Ctrl</kbd>+<kbd>S</kbd></span></strong> をクリックします。</p>
+</li>
+<li>
+<p>名前を入力してから <strong>Save</strong> をクリックします。</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/savedialoge.png" alt="Save Dialog" width="300">
+</div>
+</div>
+</li>
+<li>
+<p><strong>Save Filter</strong> ダイアログから、以前に保存したフィルターを削除することもできます。</p>
+</li>
+<li>
+<p>これらのフィルターはデフォルトのフィルターリストに保存されます。ここでは <strong>Material</strong> がデフォルトリストに保存されます。</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/after.png" alt="After" width="179">
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+SiteAdmin と Admin が作成したフィルターは、すべてのユーザー間で共有されます。Programmer と Operator が作成したフィルターは、Programmer と Operator のユーザーロールにのみ共有されます。
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_フィルターコマンド">フィルターコマンド</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all fit-content">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">コマンド</th>
+<th class="tableblock halign-left valign-top">アイコン</th>
+<th class="tableblock halign-left valign-top">ショートカット</th>
+<th class="tableblock halign-left valign-top">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Clear Selection</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/clear.png" alt="Clear" width="16"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>X</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">選択したすべての選択肢を解除し、フィルター項目ビューを更新します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Select Highlighted</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/checked.png" alt="Highlighted" width="16"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>A</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">強調表示されたすべての選択肢を選択します。選択したフィールドで項目の強調表示が適用できない場合、このコマンドは無効のままになります。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Match All</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/and.png" alt="Match All" width="16"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><kbd>&amp;</kbd></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">選択したすべての条件を満たす項目のみを表示します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Pin In/Out Menu</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/pin-out.png" alt="Pin out" width="16"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>Down/Up</kbd></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ピン留めすると、現在のフォーカスが別のウィンドウに移動しても、ドロップダウンメニューは開いたままになります。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Close Menu</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="image"><img src="img/close.png" alt="close" width="16"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><kbd>Esc</kbd></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ドロップダウンメニューを閉じます。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_フィルターを保存する手順">フィルターを保存する手順</a>
+  </li>
+  <li level="1">
+   <a href="#_フィルターコマンド">フィルターコマンド</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="toolingstatus/toolingpanel.html">ツーリングパネル</a></span>
+ <span class="next"><a href="../orders/index.html">オーダー</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

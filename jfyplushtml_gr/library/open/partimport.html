@@ -1,0 +1,461 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Εισαγωγή εξαρτημάτων</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Καλώς ορίσατε στο JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Εγκατάσταση</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Απαιτήσεις υλικού</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Υποστηριζόμενες μορφές αρχείων</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Προϋποθέσεις</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Αλλαγή άδειας χρήσης</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Διαμόρφωση</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Προσθήκη/Αφαίρεση μηχανής</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Διαμόρφωση εξοπλισμού</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Διαμόρφωση χρηστών</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Γλώσσα</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Υλικό</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Προσθήκη νέου υλικού και μεταλλικής πλάκας</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Εξαγωγή/Εισαγωγή υλικού</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Αντικατάσταση υλικού</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Χαρτογράφηση υλικού</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">Η διεπαφή χρήστη</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Ροή εργασίας</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Βιβλιοθήκη</a>
+   <ul>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Άνοιγμα</a>
+     <ul>
+      <li><button class="tree blank"></button><a class="active" href="partimport.html">Εισαγωγή εξαρτημάτων</a></li>
+      <li><button class="tree blank"></button><a href="orderimport.html">Εισαγωγή παραγγελιών</a></li>
+      <li><button class="tree blank"></button><a href="jobimport.html">Εισαγωγή εργασιών</a></li>
+      <li><button class="tree blank"></button><a href="assembliesimport.html">Εισαγωγή συγκροτημάτων</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../libraryview/index.html">Προβολή βιβλιοθήκης</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../libraryview/partview.html">Εξαρτήματα</a></li>
+      <li><button class="tree blank"></button><a href="../libraryview/assemblyview.html">Συγκρότημα</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../partstate/index.html">Κατάσταση εξαρτήματος</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../partstate/partvalidation.html">Επικύρωση εξαρτήματος</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partpanel.html">Πίνακας εξαρτήματος</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partfilters.html">Φίλτρα εξαρτημάτων</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../toolingstatus/index.html">Κατάσταση εξοπλισμού</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../toolingstatus/toolingvalidation/index.html">Επικύρωση εξοπλισμού</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/bendtooling.html">Επικύρωση εξοπλισμού κάμψης</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/cuttooling.html">Επικύρωση εξοπλισμού κοπής</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/foldtooling.html">Επικύρωση εξοπλισμού δίπλωσης</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../toolingstatus/toolingpanel.html">Πίνακας εξοπλισμού</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../savingfilters.html">Αποθήκευση φίλτρων</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Παραγγελίες</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Προβολή παραγγελιών</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Εργασίες</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Δημιουργία εργασίας</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Προβολή εργασιών</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Πίνακας εργασιών</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Αυτόματος σχεδιασμός</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Διαδραστική κατανομή</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Επανασυσκευασία</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Διαχείριση κατανομών</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Προβολή διάταξης</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Πίνακας διάταξης</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Αποστολή αναφορών</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Διαχείριση υπολειμμάτων</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Αυτόματη διαχείριση υπολειμμάτων</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Χειροκίνητη διαχείριση υπολειμμάτων</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Κατανομή διπλής γραμμής</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Παρωχημένο</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Φίλτρα εργασιών</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../factory/index.html">Εργοστάσιο</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">Διαδρομές</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/sheets.html">Μεταλλικές πλάκες</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">Χρήστες</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/edit.html">Επεξεργασία</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">Πελάτες</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">Ρυθμίσεις</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">Περιβάλλον</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">Εισαγωγή</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">Κάμψη</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">Κοπή</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">Ειδοποιήσεις</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">Επιτήρηση</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">Εργασία</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">Αναφορές</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Πληροφορίες εταιρείας</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Βιβλιοθήκη</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Άνοιγμα</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="partimport.html">Εισαγωγή εξαρτημάτων</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Εισαγωγή εξαρτημάτων</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Πριν από την εισαγωγή εξαρτημάτων, βεβαιωθείτε ότι οι μορφές αρχείων είναι συμβατές με το JFY Plus.
+Βλέπε <a href="../../installation/importformats.html">υποστηριζόμενες μορφές αρχείων</a> για περισσότερες
+λεπτομέρειες.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Αν το υλικό και το πάχος δεν χαρτογραφηθούν στο εξάρτημα μετά την εισαγωγή,
+αναθέστε υλικό χρησιμοποιώντας τον πίνακα εξαρτήματος.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_μέθοδοι_εισαγωγής">Μέθοδοι εισαγωγής</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Υπάρχουν τρεις μέθοδοι για την εισαγωγή εξαρτημάτων στη Βιβλιοθήκη Εξαρτημάτων:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Εισαγωγή μέσω αρχείου</p>
+</li>
+<li>
+<p>Μεταφορά και απόθεση</p>
+</li>
+<li>
+<p>Φάκελος επιτήρησης</p>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="_εισαγωγή_μέσω_αρχείου">Εισαγωγή μέσω αρχείου</h3>
+<div class="paragraph">
+<p>Ένα αρχείο εξαρτήματος 2D ή 3D μπορεί να εισαχθεί στη Βιβλιοθήκη Εξαρτημάτων
+χρησιμοποιώντας την επιλογή <strong>Import parts&#8230;&#8203;</strong>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Κάντε κλικ στα εικονίδια <strong>open</strong> από τη γραμμή εντολών και επιλέξτε
+την επιλογή <strong>Import parts&#8230;&#8203;</strong>.</p>
+</li>
+<li>
+<p>Εμφανίζεται το παράθυρο διαλόγου <strong>Open</strong> — επιλέξτε οποιοδήποτε αρχείο CAD (2D ή 3D).</p>
+</li>
+<li>
+<p>Εμφανίζεται μια προεπισκόπηση του επιλεγμένου αρχείου CAD.</p>
+</li>
+<li>
+<p>Επιλέξτε το απαιτούμενο εξάρτημα και κάντε κλικ στο <strong>Open</strong>.</p>
+</li>
+<li>
+<p>Το σύστημα εφαρμόζει αυτόματα εξοπλισμό στο εξάρτημα για όλες τις διαθέσιμες μηχανές
+με ενημερωμένη κατάσταση εξοπλισμού.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_μεταφορά_και_απόθεση">Μεταφορά και απόθεση</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Μεταφέρετε και αποθέστε ένα αρχείο εξαρτήματος απευθείας στη Βιβλιοθήκη Εξαρτημάτων του JFY Plus.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_φάκελος_επιτήρησης">Φάκελος επιτήρησης</h3>
+<div class="paragraph">
+<p>Οι ρυθμίσεις επιτήρησης σας επιτρέπουν να παρακολουθείτε έναν φάκελο για νέα αρχεία και να τα εισάγετε αυτόματα
+στη Βιβλιοθήκη Εξαρτημάτων.</p>
+</div>
+<div class="paragraph">
+<p>Για τη διαμόρφωση, βλέπε τη σελίδα <a href="../../factory/settings/watch.html">Ρυθμίσεις επιτήρησης</a>.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Χρησιμοποιήστε διαδρομή UNC (Universal Naming Convention) <code>\\192.168.1.11\&lt;Folder path&gt;</code> ή
+μια αντιστοιχισμένη μονάδα δίσκου <code>M:\&lt;Folder Path&gt;</code>.</p>
+</li>
+<li>
+<p>Ο υπολογιστής στον οποίο εκτελείται το Engine πρέπει να έχει πρόσβαση ανάγνωσης/εγγραφής σε αυτόν τον φάκελο.</p>
+</li>
+<li>
+<p>Μη χρησιμοποιείτε τοπική διαδρομή όπως <code>C:\&lt;Folder Path&gt;</code>, διότι η υπηρεσία Watch
+αναζητά αρχεία στον υπολογιστή του Engine — όχι στον τοπικό υπολογιστή.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/watch.png" alt="Watch settings" width="744">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="import-configuration">Διαμόρφωση εισαγωγής</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_use_geometry_comparison_on_same_cad_revision">Use geometry comparison on same CAD revision</h3>
+<div class="paragraph">
+<p>Κατά την εισαγωγή ενός εξαρτήματος με την ίδια αναθεώρηση CAD, το JFY Plus μπορεί να συγκρίνει τη
+γεωμετρία του αρχείου CAD με το υπάρχον εξάρτημα.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Για να το ενεργοποιήσετε, διαμορφώστε τα <strong>Revision lookup keys</strong> (για
+παράδειγμα, REV) στο <strong>factory</strong> → <strong>settings</strong>
+→<strong>Import</strong>. Στη συνέχεια, ενεργοποιήστε την επιλογή
+<strong>Use geometry comparison on same CAD revision</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/rev.png" alt="Revision" width="755"></span></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Η σύγκριση γεωμετρίας στην ίδια αναθεώρηση CAD λειτουργεί μόνο όταν
+είναι διαμορφωμένα τα <strong>Revision lookup keys</strong>.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Τώρα, εισαγάγετε ένα εξάρτημα στη βιβλιοθήκη εξαρτημάτων με συγκεκριμένη
+αναθεώρηση (για παράδειγμα, Revision 1).</p>
+</li>
+<li>
+<p>Το ίδιο εξάρτημα εισάγεται ξανά με την ίδια τιμή αναθεώρησης.</p>
+</li>
+<li>
+<p>Το JFY Plus συγκρίνει τη γεωμετρία του νεοεισαχθέντος αρχείου CAD με το υπάρχον
+εξάρτημα.</p>
+</li>
+<li>
+<p>Αν εντοπιστεί διαφορά γεωμετρίας, το JFY Plus εμφανίζει μια προτροπή ρωτώντας αν
+θα:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Replace</strong> το υπάρχον εξάρτημα με τη νέα γεωμετρία, διατηρώντας την ίδια τιμή
+αναθεώρησης.</p>
+</li>
+<li>
+<p><strong>Skip</strong> την εισαγωγή, διατηρώντας το υπάρχον εξάρτημα και τη γεωμετρία του.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Αυτό επιτρέπει στους χρήστες να ενημερώνουν τη γεωμετρία εξαρτήματος χωρίς να αλλάζουν την τιμή
+αναθεώρησης, διατηρώντας ταυτόχρονα τον έλεγχο για το αν τα υπάρχοντα εξαρτήματα αντικαθίστανται.</p>
+</div>
+<div class="paragraph">
+<p>Τα εισαγόμενα εξαρτήματα προστίθενται αυτόματα στη βιβλιοθήκη για περαιτέρω χρήση. Για περισσότερες πληροφορίες,
+βλέπε <a href="../../library/index.html">Βιβλιοθήκη</a>.</p>
+</div>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_μέθοδοι_εισαγωγής">Μέθοδοι εισαγωγής</a>
+  </li>
+  <li level="2">
+   <a href="#_εισαγωγή_μέσω_αρχείου">Εισαγωγή μέσω αρχείου</a>
+  </li>
+  <li level="2">
+   <a href="#_μεταφορά_και_απόθεση">Μεταφορά και απόθεση</a>
+  </li>
+  <li level="2">
+   <a href="#_φάκελος_επιτήρησης">Φάκελος επιτήρησης</a>
+  </li>
+  <li level="1">
+   <a href="#import-configuration">Διαμόρφωση εισαγωγής</a>
+  </li>
+  <li level="2">
+   <a href="#_use_geometry_comparison_on_same_cad_revision">Use geometry comparison on same CAD revision</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="index.html">Άνοιγμα</a></span>
+ <span class="next"><a href="orderimport.html">Εισαγωγή παραγγελιών</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

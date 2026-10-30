@@ -1,0 +1,433 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Εργασία</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Καλώς ορίσατε στο JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Εγκατάσταση</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Απαιτήσεις υλικού</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Υποστηριζόμενες μορφές αρχείων</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Προϋποθέσεις</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Αλλαγή άδειας χρήσης</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Διαμόρφωση</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Προσθήκη/Αφαίρεση μηχανής</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Διαμόρφωση εξοπλισμού</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Διαμόρφωση χρηστών</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Γλώσσα</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Υλικό</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Προσθήκη νέου υλικού και μεταλλικής πλάκας</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Εξαγωγή/Εισαγωγή υλικού</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Αντικατάσταση υλικού</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Χαρτογράφηση υλικού</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">Η διεπαφή χρήστη</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Ροή εργασίας</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../library/index.html">Βιβλιοθήκη</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/open/index.html">Άνοιγμα</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/open/partimport.html">Εισαγωγή εξαρτημάτων</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/orderimport.html">Εισαγωγή παραγγελιών</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/jobimport.html">Εισαγωγή εργασιών</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/assembliesimport.html">Εισαγωγή συγκροτημάτων</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/libraryview/index.html">Προβολή βιβλιοθήκης</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/libraryview/partview.html">Εξαρτήματα</a></li>
+      <li><button class="tree blank"></button><a href="../../library/libraryview/assemblyview.html">Συγκρότημα</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/partstate/index.html">Κατάσταση εξαρτήματος</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/partstate/partvalidation.html">Επικύρωση εξαρτήματος</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partpanel.html">Πίνακας εξαρτήματος</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partfilters.html">Φίλτρα εξαρτημάτων</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/toolingstatus/index.html">Κατάσταση εξοπλισμού</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../library/toolingstatus/toolingvalidation/index.html">Επικύρωση εξοπλισμού</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/bendtooling.html">Επικύρωση εξοπλισμού κάμψης</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/cuttooling.html">Επικύρωση εξοπλισμού κοπής</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/foldtooling.html">Επικύρωση εξοπλισμού δίπλωσης</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingpanel.html">Πίνακας εξοπλισμού</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../library/savingfilters.html">Αποθήκευση φίλτρων</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Παραγγελίες</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Προβολή παραγγελιών</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Εργασίες</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Δημιουργία εργασίας</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Προβολή εργασιών</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Πίνακας εργασιών</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Αυτόματος σχεδιασμός</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Διαδραστική κατανομή</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Επανασυσκευασία</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Διαχείριση κατανομών</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Προβολή διάταξης</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Πίνακας διάταξης</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Αποστολή αναφορών</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Διαχείριση υπολειμμάτων</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Αυτόματη διαχείριση υπολειμμάτων</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Χειροκίνητη διαχείριση υπολειμμάτων</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Κατανομή διπλής γραμμής</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Παρωχημένο</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Φίλτρα εργασιών</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Εργοστάσιο</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="../routes.html">Διαδρομές</a></li>
+    <li><button class="tree blank"></button><a href="../sheets.html">Μεταλλικές πλάκες</a></li>
+    <li><button class="tree blank"></button><a href="../users.html">Χρήστες</a></li>
+    <li><button class="tree blank"></button><a href="../edit.html">Επεξεργασία</a></li>
+    <li><button class="tree blank"></button><a href="../customers.html">Πελάτες</a></li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Ρυθμίσεις</a>
+     <ul>
+      <li><button class="tree blank"></button><a href="environment.html">Περιβάλλον</a></li>
+      <li><button class="tree blank"></button><a href="import.html">Εισαγωγή</a></li>
+      <li><button class="tree blank"></button><a href="bend.html">Κάμψη</a></li>
+      <li><button class="tree blank"></button><a href="cut.html">Κοπή</a></li>
+      <li><button class="tree blank"></button><a href="notification.html">Ειδοποιήσεις</a></li>
+      <li><button class="tree blank"></button><a href="watch.html">Επιτήρηση</a></li>
+      <li><button class="tree blank"></button><a class="active" href="job.html">Εργασία</a></li>
+      <li><button class="tree blank"></button><a href="reports.html">Αναφορές</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Πληροφορίες εταιρείας</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Εργοστάσιο</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Ρυθμίσεις</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="job.html">Εργασία</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Εργασία</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/job.png" alt="Ρυθμίσεις εργασίας" width="814">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_output_settings">Output settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Save layout NC and reports</strong> - Ενεργοποιήστε αυτήν την
+επιλογή για να αποθηκευτούν το NC διάταξης και οι αναφορές.</p>
+</div>
+<div class="paragraph">
+<p><strong>Save layout file</strong> - Ενεργοποιήστε αυτήν την επιλογή για να αποθηκευτεί το αρχείο διάταξης.</p>
+</div>
+<div class="paragraph">
+<p><strong>Output simulation preview in reports</strong> - Ενεργοποιήστε
+αυτήν την επιλογή για να δημιουργηθεί η προεπισκόπηση προσομοίωσης εξοπλισμού μαζί με τα άλλα
+αποτελέσματα. Πρόκειται για μια σύντομη κινούμενη εικόνα GIF για τον εξοπλισμό λέιζερ/διάτρησης.</p>
+</div>
+<div class="paragraph">
+<p><strong>Do not delete program outputs on layout/job completion</strong> - Η ενεργοποίηση αυτής της επιλογής θα παραλείψει τη λειτουργία διαγραφής για τα
+αποτελέσματα του προγράμματος όταν μια εργασία/διάταξη επισημανθεί ως ολοκληρωμένη.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nest_settings">Nest settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Mix parts from multiple Jobs</strong> - Υποστηρίζει τη
+μικτή κατανομή. Τα εξαρτήματα από πολλαπλές εργασίες θα πρέπει να κατανέμονται μαζί
+για καλύτερη αποδοτικότητα συσκευασίας.</p>
+</div>
+<div class="paragraph">
+<p><strong>Do not auto-release layouts</strong> - Αυτό θα αποτρέψει
+τη διαθεσιμότητα των διατάξεων για παραγωγή μέχρι όλες οι διατάξεις να βρίσκονται σε
+κατάσταση αποδέσμευσης.</p>
+</div>
+<div class="paragraph">
+<p><strong>Re-nesting packing cut-off</strong> - Αυτή η τιμή
+χρησιμοποιείται για να αποφασιστεί αν μια κατανεμημένη διάταξη διατηρείται στην ουρά
+έγκρισης και κατανέμεται εκ νέου όταν σχεδιάζονται νέα εξαρτήματα ή αποδεσμεύονται για
+παραγωγή και τα σχετικά αποτελέσματα εξάγονται στον φάκελο αποτελεσμάτων.</p>
+</div>
+<div class="paragraph">
+<p><strong>Interactive sheet-name prefix</strong> - Αυτή η
+ενότητα χρησιμοποιείται για την υποστήριξη διαδραστικής κατανομής όπου ο χρήστης
+έχει περισσότερο έλεγχο στα εξαρτήματα που κατανέμονται και στο αποτέλεσμα της
+κατανομής. Χρησιμοποιήστε ένα σχήμα ονοματοδοσίας, διαφορετικό από την αυτόματη
+κατανομή, για τις διαδραστικά κατανεμημένες διατάξεις.</p>
+</div>
+<div class="paragraph">
+<p><strong>Update sheet inventory on nest (un)release</strong> - Εάν
+αυτή η επιλογή είναι ενεργοποιημένη, το απόθεμα μεταλλικών πλακών θα ενημερώνεται όταν
+αποστέλλεται μια κατανομή σε μια μηχανή. Επίσης, η ανάκληση της κατανομής από τη
+μηχανή θα επιστρέψει την πλάκα στο απόθεμα.</p>
+</div>
+<div class="paragraph">
+<p><strong>Automate remnant inventory management</strong> - Οταν επιλεγεί
+αυτός ο διακόπτης, το λογισμικό αυτοματοποιεί τη διαχείριση αποθέματος υπολειμμάτων. Εάν δεν
+επιλεγεί, η διαχείριση υπολειμμάτων γίνεται διαδραστική.</p>
+</div>
+<div class="paragraph">
+<p><strong>Auto-refresh Out-of-date layouts</strong> - Οταν
+είναι επιλεγμένο, το λογισμικό ανανεώνει όλες τις ui:EGTag.SelectOutOfDate[Out-of-date
+Layouts] που συνδέονται με ένα εξάρτημα μετά τον υπολογισμό των λύσεων κοπής του.</p>
+</div>
+<div class="paragraph">
+<p><strong>Automate twin-line nesting</strong> - Επιλέξτε αυτήν την επιλογή για να
+ενεργοποιήσετε την αυτοματοποίηση διπλής γραμμής.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pull_workflow_settings">Pull workflow settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Use 'Pull workflow'</strong> - Αυτή η επιλογή είναι χρήσιμη για
+χρήστες που χρειάζονται ένα ιδιαίτερα αυτόνομο σύστημα σχεδιασμού και κατανομής. Οταν είναι ενεργοποιημένη,
+το JFY Plus σχεδιάζει την κατανομή κατά απαίτηση.</p>
+</div>
+<div class="paragraph">
+<p><strong>Nests per station</strong> - Αυτή η τιμή ορίζει πόσες
+διατάξεις ανά σταθμό θα δημιουργούνται.</p>
+</div>
+<div class="paragraph">
+<p><strong>Maximum sheets per nest</strong> - Αυτή η τιμή
+χρησιμοποιείται για τον έλεγχο του μέγιστου αριθμού πλακών για μια μοναδική κατανομή. Έτσι, για
+παράδειγμα, αν υπάρχει μια παραγγελία με ένα μεγάλο εξάρτημα (που γεμίζει ολόκληρη την πλάκα),
+που χρειάζεται σε μεγάλες ποσότητες (έστω 500) - το JFY Plus δεν δημιουργεί πλέον μια μοναδική κατανομή με 500
+αντίγραφα σε λειτουργία pull. Αντ' αυτού, δημιουργεί 10 αντίγραφα ανά κατανομή, όπου 10 είναι το
+μέγιστο.</p>
+</div>
+<div class="paragraph">
+<p><strong>Bend programs per station</strong> - Αυτή η τιμή ορίζει
+πόσα προγράμματα κάμψης ανά σταθμό θα δημιουργούνται.</p>
+</div>
+<div class="paragraph">
+<p><strong>Mark the task completed, when the program outputs are removed</strong> -
+Ενεργοποιήστε αυτήν την επιλογή για μια διάταξη να επισημαίνεται ως Ολοκληρωμένη όταν
+τα αποτελέσματα αφαιρούνται από τον προορισμό αποτελεσμάτων.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_spreadsheet_import_settings">Spreadsheet import settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>CAD lookup directories</strong> - Το JFY Plus θα προσπαθήσει να
+φορτώσει την καταχώρηση εξαρτήματος που αναφέρεται στο εισαγόμενο CSV από τη βιβλιοθήκη εξαρτημάτων.
+Ωστόσο, εάν το εξάρτημα δεν είναι διαθέσιμο στη βιβλιοθήκη εξαρτημάτων, τότε θα προσπαθήσει
+να ανακτήσει τα εξαρτήματα από τους καταλόγους αναζήτησης με βάση τη σειρά των καταλόγων που ορίζονται σε αυτό το παράθυρο.</p>
+</div>
+<div class="paragraph">
+<p><strong>Use recursive CAD search</strong> - Ενεργοποιήστε αυτήν την
+επιλογή για να επαναλαμβάνεται η αναζήτηση για διαδοχικά αποτελέσματα.</p>
+</div>
+<div class="paragraph">
+<p><strong>Create a blank part for the missing CAD files</strong> - Εάν
+τα εξαρτήματα δεν υπάρχουν στη βιβλιοθήκη JFY Plus ή στους καταλόγους αναζήτησης, το JFY Plus θα
+δημιουργήσει ένα κενό εξάρτημα για αυτά τα μη διαθέσιμα εξαρτήματα.</p>
+</div>
+<div class="paragraph">
+<p><strong>Do not show New Job dialog if the spreadsheet has no error</strong> -
+Εάν οι καταχωρήσεις CSV είναι καθαρές, δηλαδή δεν υπάρχει ασυμφωνία δεδομένων
+από τη ΒΔ ή όλα τα πεδία αναφέρονται σωστά, το JFY Plus δεν θα εμφανίσει το παράθυρο
+επισκόπησης εργασίας και θα επεξεργαστεί την εργασία μόλις εισαχθεί ή εναποτεθεί το CSV.</p>
+</div>
+<div class="paragraph">
+<p><strong>Prefer Raw-Material column over Material + Thickness</strong> -
+ Υποστηριζόμενοι τύποι λογιστικών φύλλων:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Μοτίβο 1: PartName, Quantity, DueDate, Priority, RawMaterial</p>
+</li>
+<li>
+<p>Μοτίβο 2: PartName, Quantity, DueDate, Priority, Material, Thickness</p>
+</li>
+<li>
+<p>Μοτίβο 3: PartName, Quantity, DueDate, Priority, Material, Thickness,
+RawMaterial</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Εάν αυτή η επιλογή δεν είναι επιλεγμένη, το Μοτίβο 1 θα θεωρηθεί ο
+προεπιλεγμένος τύπος λογιστικού φύλλου. Υποστηρίζουμε επίσης το Μοτίβο 3 σε περίπτωση
+που η μορφή CSV είναι τύπου Μοτίβο 3.</p>
+</div>
+<div class="paragraph">
+<p>Εάν αυτή η επιλογή είναι επιλεγμένη και το CSV είναι τύπου Μοτίβο 2, τότε το JFY Plus θα
+επιλύσει την πρώτη ύλη από τα πεδία Material και Thickness του CSV.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_spreadsheet_output_settings">Spreadsheet output settings</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Export Job/Layout completion report (.csv)</strong> -
+Επιλέξτε αυτήν την επιλογή για να ενεργοποιήσετε την εξαγωγή CSV όταν μια διάταξη ή εργασία
+ολοκληρωθεί. Οι ολοκληρωμένες αναφορές αποθηκεύονται στον προορισμό Αναφορών που
+καθορίζεται στις ρυθμίσεις Factory &#8594; Settings &#8594; Reports.</p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_output_settings">Output settings</a>
+  </li>
+  <li level="1">
+   <a href="#_nest_settings">Nest settings</a>
+  </li>
+  <li level="1">
+   <a href="#_pull_workflow_settings">Pull workflow settings</a>
+  </li>
+  <li level="1">
+   <a href="#_spreadsheet_import_settings">Spreadsheet import settings</a>
+  </li>
+  <li level="1">
+   <a href="#_spreadsheet_output_settings">Spreadsheet output settings</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="watch.html">Επιτήρηση</a></span>
+ <span class="next"><a href="reports.html">Αναφορές</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

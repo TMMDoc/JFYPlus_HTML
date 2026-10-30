@@ -1,0 +1,594 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>แผงชิ้นงาน</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">ยินดีต้อนรับสู่ JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">การติดตั้ง</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">ข้อกำหนดด้านฮาร์ดแวร์</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">รูปแบบไฟล์ที่รองรับ</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">สิ่งที่ต้องมีก่อน</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">เปลี่ยนไลเซนส์</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">การกำหนดค่า</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">เพิ่ม/ลบเครื่องจักร</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">ตั้งค่า tooling</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">กำหนดค่าผู้ใช้</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">ภาษา</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">วัสดุ</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">เพิ่มวัสดุและแผ่นใหม่</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">ส่งออก/นำเข้าวัสดุ</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">แทนที่วัสดุ</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">แมปวัสดุ</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">อินเทอร์เฟซผู้ใช้</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Workflow</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">ไลบรารี</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../open/index.html">เปิด</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../open/partimport.html">นำเข้าชิ้นงาน</a></li>
+      <li><button class="tree blank"></button><a href="../open/orderimport.html">นำเข้าออเดอร์</a></li>
+      <li><button class="tree blank"></button><a href="../open/jobimport.html">นำเข้า job</a></li>
+      <li><button class="tree blank"></button><a href="../open/assembliesimport.html">นำเข้าชุดประกอบ</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../libraryview/index.html">มุมมองไลบรารี</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../libraryview/partview.html">ชิ้นงาน</a></li>
+      <li><button class="tree blank"></button><a href="../libraryview/assemblyview.html">ชุดประกอบ</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">สถานะชิ้นงาน</a>
+     <ul>
+      <li><button class="tree blank"></button><a href="partvalidation.html">การตรวจสอบความถูกต้องชิ้นงาน</a></li>
+      <li><button class="tree blank"></button><a class="active" href="partpanel.html">แผงชิ้นงาน</a></li>
+      <li><button class="tree blank"></button><a href="partfilters.html">ตัวกรองชิ้นงาน</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../toolingstatus/index.html">สถานะ tooling</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../toolingstatus/toolingvalidation/index.html">การตรวจสอบความถูกต้อง tooling</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/bendtooling.html">การตรวจสอบความถูกต้อง tooling การดัด</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/cuttooling.html">การตรวจสอบความถูกต้อง tooling การตัด</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/foldtooling.html">การตรวจสอบความถูกต้อง tooling การพับ</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../toolingstatus/toolingpanel.html">แผง tooling</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../savingfilters.html">การบันทึกตัวกรอง</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">ออเดอร์</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">มุมมองออเดอร์</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Jobs</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">สร้าง job</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">มุมมอง job</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">แผง job</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">วางแผนอัตโนมัติ</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">nesting แบบโต้ตอบ</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">การจัดเรียงใหม่</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">การจัดการ nest</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">มุมมอง layout</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">แผง layout</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">ตัวส่งรายงาน</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">การจัดการเศษวัสดุ</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">การจัดการเศษวัสดุอัตโนมัติ</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">การจัดการเศษวัสดุด้วยตนเอง</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Twinline nesting</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">เกินกำหนด</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">ตัวกรอง job</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../factory/index.html">โรงงาน</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">เส้นทาง</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/sheets.html">แผ่น</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">ผู้ใช้</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/edit.html">แก้ไข</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">ลูกค้า</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">การตั้งค่า</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">สภาพแวดล้อม</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">นำเข้า</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">การดัด</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">การตัด</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">การแจ้งเตือน</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">เฝ้าดู</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">Job</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">รายงาน</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">ข้อมูลบริษัท</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">ไลบรารี</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">สถานะชิ้นงาน</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="partpanel.html">แผงชิ้นงาน</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>แผงชิ้นงาน</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>ส่วนนี้อธิบายการดำเนินการที่เกี่ยวข้องกับชิ้นงาน เช่น
+<strong>Re-import</strong>, <strong>Re-tool</strong>,
+<strong>Rename</strong>, <strong>Export outputs</strong> เป็นต้น
+ที่ใช้จัดการอินสแทนซ์ชิ้นงาน</p>
+</div>
+<table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="img/partpanel.png" alt="Part panel" width="150">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/document.png" alt="Read-only" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Open in read-only mode for viewing</strong><br>
+เปิดชิ้นงานที่เลือกในโหมดอ่านอย่างเดียว</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/editicon.png" alt="Edit" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Check-out the document for editing</strong><br>
+เปิดให้แก้ไขชิ้นงานที่เลือก</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/trash.png" alt="Delete" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Delete</strong><br>
+ลบชิ้นงานที่เลือก</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>New&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ชิ้นงานที่เลือกสามารถแปลงเป็นออเดอร์ job หรือชุดประกอบใหม่</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Export Outputs</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ส่งออกเอาต์พุตของชิ้นงานไปยังปลายทางที่กำหนดไว้</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Re-import&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">อนุญาตให้นำเข้าชิ้นงานที่เลือกอีกครั้ง</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Re-tool&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">อนุญาตให้ประมวลผลชิ้นงานที่เลือกใหม่</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Rename&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">เพื่อเปลี่ยนชื่อของชิ้นงานที่เลือก</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Assign Material&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ระบุวัสดุที่เกี่ยวข้องกับชิ้นงานที่เลือก</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Assign Customer&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ระบุลูกค้าที่เกี่ยวข้องกับชิ้นงานที่เลือก</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Rolling direction</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">กำหนดทิศทางการวางแนวที่วัสดุถูกรีด ตัวเลือกที่มีคือ <strong>None</strong>, <strong>Horizontal</strong> และ <strong>Vertical</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Prev</strong> / <strong>Next</strong> / <strong>Toolings</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ไปยังชิ้นงานหรือ tooling ก่อนหน้าหรือถัดไป</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Sort and filter</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ใช้ตัวกรองเหล่านี้เพื่อดูชิ้นงานอื่น ๆ ที่มีแอตทริบิวต์เดียวกับชิ้นงานที่เลือก: <strong>Same Material</strong>, <strong>Same Customer</strong>, <strong>Same Bend count</strong> หรือ <strong>Same State</strong></p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_re_import">Re-import</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>คลิกขวาที่ชิ้นงานใด ๆ และคลิก <strong>Re-import&#8230;&#8203;</strong></p>
+</li>
+<li>
+<p>อินสแทนซ์ tooling ของชิ้นงานที่เลือกทั้งหมดในทุกเครื่องจักรจะถูกล้าง รวมถึง
+อินสแทนซ์ที่ทำ tooling อัตโนมัติและที่ทำด้วยตนเอง</p>
+</li>
+<li>
+<p>ไฟล์เอาต์พุตที่มีอยู่ (CAD, Bend และ Cut) จะถูกลบ</p>
+</li>
+<li>
+<p>ชิ้นงานจะถูกนำเข้าใหม่ และมีการตรวจสอบ CAD และทำ tooling ใหม่สำหรับ
+ทุกเครื่องจักร</p>
+</li>
+<li>
+<p>ไฟล์เอาต์พุตใหม่จะถูกสร้างขึ้นตามผลการทำ tooling ที่อัปเดต</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_re_tool">Re-tool</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>คลิกขวาที่ชิ้นงานใด ๆ และคลิก <strong>Re-tool&#8230;&#8203;</strong></p>
+</li>
+<li>
+<p>เครื่องจักรทั้งหมดจะถูกเลือกไว้โดยค่าเริ่มต้น และจัดกลุ่มเป็น Laser, Punch, Panel
+และ Press brake</p>
+</li>
+<li>
+<p>คลิก <strong>OK</strong> เพื่อดำเนินการต่อ การดำเนินการนี้จะลบอินสแทนซ์ทั้งที่
+ทำ tooling อัตโนมัติและที่ทำด้วยตนเองสำหรับเครื่องจักรที่เลือก และลบไฟล์เอาต์พุตที่เกี่ยวข้อง</p>
+</li>
+<li>
+<p>เมื่อเลือกช่องทำเครื่องหมาย <strong>Retain existing outputs</strong> จะมีเฉพาะชิ้นงานที่เอาต์พุตถูกลบไปก่อนหน้าเท่านั้นที่จะถูกทำ tooling ใหม่
+เอาต์พุตอื่นจะไม่ถูกแตะต้อง หากไม่เลือกช่องนี้ ไฟล์เอาต์พุตทั้งหมดของเครื่องจักรที่เลือก
+จะถูกลบและสร้างใหม่ระหว่างการทำ tooling ใหม่</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>หากการตั้งค่า CAM ของเครื่องจักรใด ๆ เปลี่ยนไป ให้เลือกเครื่องจักรนั้นและทำ
+Re-tool ชิ้นงานใหม่</p>
+</li>
+<li>
+<p>หากเครื่องมือ (LTT, punch หรือ bend) ถูกเปลี่ยนหรือขาดหาย ให้อัปเดตเครื่องจักรและ
+Re-tool เฉพาะชิ้นงานที่ได้รับผลกระทบ</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rename">Rename</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ส่วนนี้อธิบายวิธีเปลี่ยนชื่อชิ้นงานหนึ่งหรือหลายชิ้นใน JFY Plus</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>คลิกขวาที่ชิ้นงานและคลิก <strong>Rename&#8230;&#8203;</strong></p>
+</li>
+<li>
+<p>กล่องโต้ตอบยืนยันการเปลี่ยนชื่อจะปรากฏขึ้นโดยแสดงชื่อชิ้นงานปัจจุบัน</p>
+</li>
+<li>
+<p>ป้อนชื่อใหม่และคลิกไอคอนเครื่องหมายถูก <strong>✓</strong> เพื่อยืนยัน หรือคลิกไอคอน
+กากบาท <strong>✗</strong> เพื่อยกเลิกการเปลี่ยนชื่อ</p>
+</li>
+<li>
+<p>หากต้องการเปลี่ยนชื่อชิ้นงานหลายชิ้น ให้เลือกชิ้นงานทั้งหมดที่ต้องการ จากนั้น
+คลิกขวาที่ชิ้นใดชิ้นหนึ่งและคลิก <strong>Rename&#8230;&#8203;</strong></p>
+</li>
+<li>
+<p>กล่องโต้ตอบยืนยันจะปรากฏขึ้นพร้อมจำนวนชิ้นงานทั้งหมดที่เลือก</p>
+</li>
+<li>
+<p>สำหรับแต่ละชิ้นงาน ให้ป้อนชื่อใหม่และคลิกไอคอนเครื่องหมายถูก <strong>✓</strong> เพื่อ
+ยืนยันทีละชิ้น</p>
+</li>
+<li>
+<p>หากเลือกชิ้นงานผิดโดยไม่ตั้งใจ ให้คลิกไอคอนกากบาท <strong>✗</strong> เพื่อยกเลิก
+หรือคลิกขวาที่ชิ้นงานและคลิก
+<strong>Cancel Rename</strong> เพื่อข้ามการเปลี่ยนชื่อ</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_export_outputs">Export outputs</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ตัวเลือกนี้จะส่งออกเอาต์พุตของชิ้นงานไปยังปลายทางที่กำหนดไว้ใน
+<strong>Factory Settings</strong> (ดู
+ <a href="../../factory/settings/bend.html">Bend Settings</a> และ
+ <a href="../../factory/settings/cut.html">Cut Settings</a>)</p>
+</div>
+<div class="paragraph">
+<p>ตำแหน่งเอาต์พุตจะกำหนดแยกกันสำหรับ Bend, Fold และ Cut ใน
+การตั้งค่าเอาต์พุตของแต่ละรายการ tooling ทั้งหมดที่เกี่ยวข้องกับ
+การดัด การพับ และการตัดจะถูกส่งออกสำหรับชิ้นงานทั้งชิ้น</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+ไฟล์ที่ส่งออกขึ้นอยู่กับประเภทการทำงาน สำหรับการดัดและ
+การพับ จะสร้างไฟล์ NC และรายงาน สำหรับการตัดและการเจาะ
+จะส่งออกเฉพาะไฟล์ชิ้นงานเท่านั้น
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_กำหนดวัสดุให้ชิ้นงาน">กำหนดวัสดุให้ชิ้นงาน</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ชิ้นงานที่มีสถานะ <strong>Material not assigned</strong> จำเป็นต้อง
+ได้รับการอัปเดตก่อนการประมวลผลต่อไป ขั้นตอนด้านล่างอธิบายวิธีการระบุวัสดุ</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>คลิกขวาที่ชิ้นงานที่แสดงสถานะ
+<strong>Material not assigned</strong> และเลือก
+<strong>Assign Material&#8230;&#8203;</strong></p>
+</li>
+<li>
+<p>หน้าต่าง <strong>Assign Material</strong> จะเปิดขึ้น</p>
+</li>
+<li>
+<p>กล่องโต้ตอบมีสี่ส่วน:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Suggestions</strong> - แนะนำวัสดุดิบโดยอัตโนมัติ
+ตามความหนาของชิ้นงานที่นำเข้า</p>
+</li>
+<li>
+<p><strong>All Materials</strong> - แสดงรายการประเภทวัสดุทั้งหมดที่กำหนดไว้ใน
+JFY Plus</p>
+</li>
+<li>
+<p><strong>All Raw-Materials</strong> - แสดงวัสดุดิบทั้งหมด
+ที่มีอยู่ในระบบ</p>
+</li>
+<li>
+<p><strong>Used Raw-Materials</strong> - แสดงวัสดุดิบ
+ที่ใช้งานล่าสุดเพื่อการเข้าถึงที่รวดเร็ว</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>คุณสามารถใช้ช่อง <strong>Search</strong> ด้านบนเพื่อค้นหาวัสดุได้อย่าง
+รวดเร็ว ตัวอย่างเช่น พิมพ์ "steel" เพื่อแสดงวัสดุที่ตรงกันทั้งหมดในสามส่วน</p>
+</li>
+<li>
+<p>จากรายการที่กรองไว้ เลือกวัสดุที่ต้องการ (เช่น Steel-25) จากรายการ
+Raw-Material</p>
+</li>
+<li>
+<p>วัสดุที่เลือกจะถูกกำหนดให้กับชิ้นงาน</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rolling_direction">Rolling direction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Rolling direction</strong> หมายถึงทิศทางของเกรน
+(grain) ในชิ้นงาน ซึ่งส่งผลต่อวิธีการตัดและการประมวลผลชิ้นงาน ตัวเลือกนี้
+ช่วยให้คุณกำหนด
+<strong>Rolling direction</strong> สำหรับชิ้นงานในไลบรารีชิ้นงาน ตาม
+ทิศทางที่เลือก ชิ้นงานจะถูกจัดวางในทิศทางที่ถูกต้องสำหรับการตัดบนเครื่องจักรที่มีอยู่</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>คลิกขวาที่ไทล์ชิ้นงานใด ๆ ในไลบรารีชิ้นงานหรือหน้าต่าง job</p>
+</li>
+<li>
+<p>เลือกทิศทางการรีดที่ต้องการ:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>None</strong></p>
+</li>
+<li>
+<p><strong>Horizontal</strong></p>
+</li>
+<li>
+<p><strong>Vertical</strong></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>ชิ้นงานจะถูกทำ tooling ใหม่โดยอัตโนมัติสำหรับเครื่องตัดที่มีอยู่ทั้งหมดตาม
+ทิศทางการรีดที่เลือก</p>
+</li>
+<li>
+<p>ไทล์ชิ้นงานจะแสดงทิศทางการรีดที่เลือกตามที่แสดงด้านล่าง:</p>
+<div class="paragraph">
+<p><span class="image"><img src="img/none.png" alt="None" width="270"></span> <span class="image"><img src="img/horizontal.png" alt="Horizontal" width="270"></span>
+<span class="image"><img src="img/vertical.png" alt="Vertical" width="270"></span></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_re_import">Re-import</a>
+  </li>
+  <li level="1">
+   <a href="#_re_tool">Re-tool</a>
+  </li>
+  <li level="1">
+   <a href="#_rename">Rename</a>
+  </li>
+  <li level="1">
+   <a href="#_export_outputs">Export outputs</a>
+  </li>
+  <li level="1">
+   <a href="#_กำหนดวัสดุให้ชิ้นงาน">กำหนดวัสดุให้ชิ้นงาน</a>
+  </li>
+  <li level="1">
+   <a href="#_rolling_direction">Rolling direction</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="partvalidation.html">การตรวจสอบความถูกต้องชิ้นงาน</a></span>
+ <span class="next"><a href="partfilters.html">ตัวกรองชิ้นงาน</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

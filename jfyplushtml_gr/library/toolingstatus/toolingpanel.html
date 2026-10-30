@@ -1,0 +1,708 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Πίνακας εξοπλισμού</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Καλώς ορίσατε στο JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Εγκατάσταση</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Απαιτήσεις υλικού</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Υποστηριζόμενες μορφές αρχείων</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Προϋποθέσεις</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Αλλαγή άδειας χρήσης</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Διαμόρφωση</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Προσθήκη/Αφαίρεση μηχανής</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Διαμόρφωση εξοπλισμού</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Διαμόρφωση χρηστών</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Γλώσσα</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Υλικό</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Προσθήκη νέου υλικού και μεταλλικής πλάκας</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Εξαγωγή/Εισαγωγή υλικού</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Αντικατάσταση υλικού</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Χαρτογράφηση υλικού</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">Η διεπαφή χρήστη</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Ροή εργασίας</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Βιβλιοθήκη</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../open/index.html">Άνοιγμα</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../open/partimport.html">Εισαγωγή εξαρτημάτων</a></li>
+      <li><button class="tree blank"></button><a href="../open/orderimport.html">Εισαγωγή παραγγελιών</a></li>
+      <li><button class="tree blank"></button><a href="../open/jobimport.html">Εισαγωγή εργασιών</a></li>
+      <li><button class="tree blank"></button><a href="../open/assembliesimport.html">Εισαγωγή συγκροτημάτων</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../libraryview/index.html">Προβολή βιβλιοθήκης</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../libraryview/partview.html">Εξαρτήματα</a></li>
+      <li><button class="tree blank"></button><a href="../libraryview/assemblyview.html">Συγκρότημα</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../partstate/index.html">Κατάσταση εξαρτήματος</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../partstate/partvalidation.html">Επικύρωση εξαρτήματος</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partpanel.html">Πίνακας εξαρτήματος</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partfilters.html">Φίλτρα εξαρτημάτων</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Κατάσταση εξοπλισμού</a>
+     <ul>
+      <li>
+       <button class="tree closed"></button>
+       <a href="toolingvalidation/index.html">Επικύρωση εξοπλισμού</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="toolingvalidation/bendtooling.html">Επικύρωση εξοπλισμού κάμψης</a></li>
+        <li><button class="tree blank"></button><a href="toolingvalidation/cuttooling.html">Επικύρωση εξοπλισμού κοπής</a></li>
+        <li><button class="tree blank"></button><a href="toolingvalidation/foldtooling.html">Επικύρωση εξοπλισμού δίπλωσης</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a class="active" href="toolingpanel.html">Πίνακας εξοπλισμού</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../savingfilters.html">Αποθήκευση φίλτρων</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Παραγγελίες</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Προβολή παραγγελιών</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Εργασίες</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Δημιουργία εργασίας</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Προβολή εργασιών</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Πίνακας εργασιών</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Αυτόματος σχεδιασμός</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Διαδραστική κατανομή</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Επανασυσκευασία</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Διαχείριση κατανομών</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Προβολή διάταξης</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Πίνακας διάταξης</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Αποστολή αναφορών</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Διαχείριση υπολειμμάτων</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Αυτόματη διαχείριση υπολειμμάτων</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Χειροκίνητη διαχείριση υπολειμμάτων</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Κατανομή διπλής γραμμής</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Παρωχημένο</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Φίλτρα εργασιών</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../factory/index.html">Εργοστάσιο</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">Διαδρομές</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/sheets.html">Μεταλλικές πλάκες</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">Χρήστες</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/edit.html">Επεξεργασία</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">Πελάτες</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">Ρυθμίσεις</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">Περιβάλλον</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">Εισαγωγή</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">Κάμψη</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">Κοπή</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">Ειδοποιήσεις</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">Επιτήρηση</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">Εργασία</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">Αναφορές</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Πληροφορίες εταιρείας</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Βιβλιοθήκη</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Κατάσταση εξοπλισμού</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="toolingpanel.html">Πίνακας εξοπλισμού</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Πίνακας εξοπλισμού</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Αυτή η ενότητα εξηγεί ενέργειες που σχετίζονται με τον εξοπλισμό, όπως
+<strong>Export outputs</strong>,
+<strong>Check Tooling</strong>, <strong>Suppress Tooling</strong>,
+<strong>Set as Base-Flat&#8230;&#8203;</strong>, <strong>Copy Tooling</strong>,
+και άλλες επιλογές που χρησιμοποιούνται για τη διαχείριση περιπτώσεων εξοπλισμού.</p>
+</div>
+<table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="img/toolingpanel.png" alt="Tooling panel" width="150">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/document.png" alt="Read-only" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Open in read-only mode for viewing</strong><br>
+Ανοίγει τον επιλεγμένο εξοπλισμό σε λειτουργία μόνο για ανάγνωση.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/editicon.png" alt="Edit" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Check-out the document for editing</strong><br>
+Ενεργοποιεί την επεξεργασία του επιλεγμένου εξοπλισμού.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Export Outputs</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Εξάγει το αποτέλεσμα του επιλεγμένου εξοπλισμού στον διαμορφωμένο προορισμό.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Check Tooling</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Επικυρώνει τον υπάρχοντα εξοπλισμό χωρίς να κάνει αλλαγές και ενημερώνει
+την κατάστασή του αν η επικύρωση αποτύχει.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Copy Tooling&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Αντιγράφει τη διάταξη εμβόλου, ακολουθίας και οπίσθιου οδηγού από τον επιλεγμένο
+εξοπλισμό αναφοράς και την εφαρμόζει σε άλλες λύσεις όπου είναι εφικτό.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Set as Base-Flat&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Σημειώνει τον επιλεγμένο εξοπλισμό κάμψης ή δίπλωσης ως το μέγεθος επίπεδης αναφοράς για τη
+δημιουργία λύσεων κοπής.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Re-tool&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Επανεπεξεργάζεται τον επιλεγμένο εξοπλισμό για το εξάρτημα χωρίς να επηρεάζει άλλους
+εξοπλισμούς.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Suppress Tooling</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Καταστέλλει τον επιλεγμένο εξοπλισμό ώστε να εξαιρείται από περαιτέρω
+επεξεργασία και δημιουργία εξόδου.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Prev</strong> / <strong>Next</strong> / <strong>Part</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Μεταβαίνει στον προηγούμενο ή επόμενο εξοπλισμό, ή πίσω στο γονικό εξάρτημα.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Sort and filter</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Εμφανίζει άλλους εξοπλισμούς που μοιράζονται παρόμοια χαρακτηριστικά με τον
+επιλεγμένο εξοπλισμό για γρήγορη αναφορά.</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_export_outputs">Export Outputs</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Αυτή η επιλογή εξάγει το αποτέλεσμα του εξαρτήματος στον προορισμό που έχει διαμορφωθεί στο
+<strong>Factory Settings</strong>. (Βλέπε
+<a href="../../factory/settings/bend.html">Ρυθμίσεις κάμψης</a> και
+<a href="../../factory/settings/cut.html">Ρυθμίσεις κοπής</a>)</p>
+</div>
+<div class="paragraph">
+<p>Εξάγεται μόνο ο εξοπλισμός που σχετίζεται με την επιλεγμένη λειτουργία εξοπλισμού,
+όχι ολόκληρο το εξάρτημα.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Τα εξαγόμενα αρχεία εξαρτώνται από τον τύπο λειτουργίας. Για λειτουργίες Bend και
+Fold, δημιουργούνται αρχεία NC και αναφορές. Για λειτουργίες Cut και Punch,
+εξάγονται μόνο τα αρχεία εξαρτήματος.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_check_tooling">Check Tooling</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Αν υπάρχει αλλαγή στις ρυθμίσεις CAM ή χαθεί ένα εργαλείο κάμψης, δεν χρειάζεται
+να εξοπλίσετε εκ νέου το εξάρτημα.</p>
+</li>
+<li>
+<p>Αντ' αυτού, χρησιμοποιήστε το Check Tooling για να επικυρώσετε τον υπάρχοντα εξοπλισμό χωρίς να κάνετε
+οποιεσδήποτε αλλαγές.</p>
+</li>
+<li>
+<p>Αν η επικύρωση αποτύχει, η κατάσταση εξοπλισμού αυτής της περίπτωσης ενημερώνεται και
+τα σχετικά αρχεία εξόδου αφαιρούνται.</p>
+</li>
+<li>
+<p>Το Check Tooling εντοπίζει επίσης εξαρτήματα όπου τα σφάλματα είχαν προηγουμένως παρακαμφθεί χειροκίνητα
+χρησιμοποιώντας το <strong>Ignore Errors</strong> και ενημερώνει την
+κατάστασή τους σε σφάλμα αν χρειάζεται.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_copy_tooling">Copy tooling</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Το copy tooling σας επιτρέπει να εφαρμόζετε γρήγορα εξοπλισμό κάμψης από μία λύση σε
+άλλες, εξοικονομώντας χρόνο και προσπάθεια.</p>
+</div>
+<div class="paragraph">
+<p>Αυτό αντιγράφει τη διάταξη εμβόλου, ακολουθίας και οπίσθιου οδηγού από έναν επιλεγμένο εξοπλισμό
+αναφοράς (λύση) και προσπαθεί να εφαρμόσει τις ίδιες ρυθμίσεις σε όλες τις άλλες λύσεις.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Αν η αντιγραμμένη διάταξη είναι εφικτή για μια μηχανή-στόχο, αποθηκεύεται και χρησιμοποιείται.</p>
+</li>
+<li>
+<p>Αν η διάταξη δεν είναι εφικτή, ο αρχικός εξοπλισμός για αυτή τη μηχανή παραμένει
+αμετάβλητος.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Για παράδειγμα, μπορεί να έχετε διαφορετικό εξοπλισμό για διαφορετικές μηχανές:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/check3.png" alt="Before tooling" width="724">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/check4.png" alt="Copy tooling" width="664">
+</div>
+</div>
+<div class="paragraph">
+<p>Οι ίδιες ρυθμίσεις εμβόλου, ακολουθίας και οπίσθιου οδηγού εφαρμόζονται όπου είναι
+δυνατόν. Αν η αντιγραμμένη διάταξη δεν μπορεί να χρησιμοποιηθεί, ο αρχικός εξοπλισμός παραμένει
+αμετάβλητος.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/copytooling3.png" alt="After tooling" width="700">
+</div>
+</div>
+<div class="paragraph">
+<p>Μετά την εφαρμογή του copy tooling, η διάταξη Gooseneck έχει εφαρμοστεί επιτυχώς
+σε όλες τις άλλες μηχανές όπου είναι εφικτό.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_set_as_base_flat">Set as Base-Flat&#8230;&#8203;</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Η λειτουργία <strong>Set as Base-Flat&#8230;&#8203;</strong> καθορίζει ποιος εξοπλισμός κάμψης ή δίπλωσης
+χρησιμοποιείται ως το μέγεθος επίπεδης αναφοράς για τη δημιουργία λύσεων κοπής.
+Όταν ένας εξοπλισμός σημειώνεται ως Base-Flat, το JFY Plus ενημερώνει το επίπεδο μέγεθος του εξαρτήματος
+με βάση αυτή τη μηχανή και αναδημιουργεί τις λύσεις κοπής ανάλογα. Οι εξοπλισμοί
+Base-Flat εμφανίζονται με μπλε περίγραμμα στο περιβάλλον χρήστη.</p>
+</div>
+<div class="paragraph">
+<p>Διαφορετικές μηχανές κάμψης μπορεί να παράγουν ελαφρές διακυμάνσεις στο επίπεδο μέγεθος για το ίδιο
+εξάρτημα. Όταν ορίζετε έναν εξοπλισμό ως Base-Flat, το JFY Plus χρησιμοποιεί το επίπεδο μέγεθος
+αυτής της μηχανής ως την κύρια αναφορά και υπολογίζει αυτόματα εκ νέου τις λύσεις
+κοπής.</p>
+</div>
+<div class="paragraph">
+<p>Εδώ, μπορούμε να δούμε διαφορετικά επίπεδα μεγέθη για το ίδιο εξάρτημα σε διάφορες
+μηχανές:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/baseflat1.png" alt="Base flat1" width="800">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/baseflat2.png" alt="Base flat2" width="663">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_αυτόματη_επιλογή_base_flat">Αυτόματη επιλογή base flat</h3>
+<div class="paragraph">
+<p>Όταν είναι ενεργοποιημένη η εργοστασιακή ρύθμιση
+<strong>Apply flat correction during bending</strong>:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/autobase.png" alt="Auto Base" width="806">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Το JFY Plus ορίζει αυτόματα τον εξοπλισμό κάμψης (που περιέχει τον πίνακα μέγιστου μήκους
+κάμψης) ως Base-Flat κατά την εισαγωγή του εξαρτήματος.</p>
+</li>
+<li>
+<p>Αν ο επιλεγμένος εξοπλισμός κάμψης παρουσιάσει σφάλμα ή δεν είναι εφικτός,
+το JFY Plus μεταβαίνει έξυπνα και ορίζει έναν άλλο έγκυρο εξοπλισμό κάμψης ως
+Base-Flat. Αυτό διασφαλίζει ότι η αναφορά επίπεδου μεγέθους και οι λύσεις κοπής παραμένουν πάντα
+συνεπείς και έγκυρες χωρίς χειροκίνητη παρέμβαση.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_βελτιωμένη_διαχείριση_base_flat">Βελτιωμένη διαχείριση base flat</h3>
+<div class="paragraph">
+<p>Το JFY Plus παρέχει επιλογές Base-Flat στο παράθυρο διαλόγου <strong>Save to Praxis</strong>
+κατά την αποθήκευση επεξεργασιών εξοπλισμού κάμψης ή δίπλωσης. Αυτές οι επιλογές εμφανίζονται μόνο για
+εξοπλισμούς σε κατάσταση OK και διασφαλίζουν ότι το επίπεδο μέγεθος και οι λύσεις κοπής παραμένουν
+ακριβή.</p>
+</div>
+<div class="sect3">
+<h4 id="_set_as_base_flat_and_calculate_cutting_solution">Set as Base-Flat and calculate cutting solution</h4>
+<div class="paragraph">
+<p>Αυτή η επιλογή χρησιμοποιείται για να σημειώσετε έναν εξοπλισμό ως Base-Flat για πρώτη φορά και
+να δημιουργήσετε αυτόματα την αντίστοιχη λύση κοπής.</p>
+</div>
+<div class="paragraph">
+<p>Εμφανίζεται όταν:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Ο εξοπλισμός δεν έχει επί του παρόντος σημειωθεί ως Base-Flat.</p>
+</li>
+<li>
+<p>Ο χρήστης έχει κάνει checkout τον εξοπλισμό για επεξεργασία και αποθηκεύει τις αλλαγές.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/setbase.png" alt="Set Base" width="432">
+</div>
+</div>
+<div class="paragraph">
+<p>Για να χρησιμοποιήσετε αυτή την επιλογή, κάντε checkout τον εξοπλισμό κάμψης ή δίπλωσης και κάντε τις απαιτούμενες
+τροποποιήσεις, όπως αλλαγές στις παραμέτρους κάμψης ή στο επίπεδο μέγεθος. Πατήστε
+<span class="keyseq"><kbd>Ctrl</kbd>+<kbd>S</kbd></span> για να αποθηκεύσετε τις αλλαγές. Στο παράθυρο διαλόγου <strong>Save to Praxis</strong>,
+επιλέξτε
+<strong>Set as Base-Flat and calculate cutting solution</strong> και
+κάντε κλικ στο
+<strong>OK</strong>. Το JFY Plus θα ορίσει τον εξοπλισμό ως Base-Flat και θα δημιουργήσει τη
+λύση κοπής χρησιμοποιώντας το ενημερωμένο επίπεδο μέγεθος.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_update_the_base_flat_and_re_calculate_cutting_solution">Update the base-flat and re-calculate cutting solution</h4>
+<div class="paragraph">
+<p>Αυτή η επιλογή χρησιμοποιείται όταν ο εξοπλισμός έχει ήδη σημειωθεί ως Base-Flat και έχει
+επεξεργαστεί, απαιτώντας την αναδημιουργία του επίπεδου μεγέθους και των λύσεων κοπής.</p>
+</div>
+<div class="paragraph">
+<p>Εμφανίζεται όταν:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Ο εξοπλισμός έχει ήδη σημειωθεί ως Base-Flat.</p>
+</li>
+<li>
+<p>Ο χρήστης τον έχει κάνει checkout, επεξεργαστεί και αποθηκεύει τις αλλαγές.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/updatebase.png" alt="Update Base" width="432">
+</div>
+</div>
+<div class="paragraph">
+<p>Κατά την επεξεργασία του υπάρχοντος εξοπλισμού Base-Flat, ενημερώστε τις παραμέτρους κάμψης ή τη
+γεωμετρία επίπεδου μεγέθους όπως χρειάζεται. Στο παράθυρο διαλόγου <strong>Save to Praxis</strong>,
+επιλέξτε
+<strong>Update the base-flat and re-calculate cutting solution</strong>.
+Το JFY Plus θα ενημερώσει τότε τον εξοπλισμό Base-Flat και θα αναδημιουργήσει όλες τις σχετικές
+λύσεις κοπής ώστε να αντικατοπτρίζουν τις πιο πρόσφατες αλλαγές.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Μόνο ένας εξοπλισμός κάμψης μπορεί να οριστεί ως Base-Flat κάθε φορά.</p>
+</div>
+<div class="paragraph">
+<p>Όταν αλλάζει το Base-Flat, οι υπάρχουσες λύσεις κοπής επανεπεξεργάζονται αυτόματα.</p>
+</div>
+<div class="paragraph">
+<p>Αυτή η λειτουργία είναι διαθέσιμη τόσο για εξοπλισμούς κάμψης όσο και δίπλωσης εντός του JFY Plus.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_re_tool">Re-tool</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Αυτή η επιλογή επανεπεξεργάζεται τον επιλεγμένο εξοπλισμό για το εξάρτημα.</p>
+</div>
+<div class="paragraph">
+<p>Κάντε δεξί κλικ στον απαιτούμενο εξοπλισμό στον Πίνακα εξοπλισμού και κάντε κλικ στο
+<strong>Re-tool&#8230;&#8203;</strong></p>
+</div>
+<div class="paragraph">
+<p>Εμφανίζεται ένα παράθυρο διαλόγου επιβεβαίωσης πριν προχωρήσετε.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/toolingconfirm.png" alt="ToolingConfirm" width="431">
+</div>
+</div>
+<div class="paragraph">
+<p>Κάντε κλικ στο <strong>Yes</strong> για να συνεχίσετε με τον επανεξοπλισμό, ή στο <strong>No</strong> για
+ακύρωση της λειτουργίας.</p>
+</div>
+<div class="paragraph">
+<p>Μόνο ο επιλεγμένος εξοπλισμός εξοπλίζεται εκ νέου. Άλλοι εξοπλισμοί που σχετίζονται με
+το εξάρτημα δεν επηρεάζονται. Τα υπάρχοντα αποτελέσματα που σχετίζονται με τον επιλεγμένο
+εξοπλισμό αφαιρούνται και αναδημιουργούνται κατά τη διαδικασία επανεξοπλισμού.</p>
+</div>
+<div class="paragraph">
+<p>Χρησιμοποιήστε αυτή την επιλογή όταν τα δεδομένα εξοπλισμού είναι παρωχημένα, εσφαλμένα ή όταν
+γίνονται αλλαγές στις διαμορφώσεις μηχανής ή εξοπλισμού.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ignore_errors">Ignore errors</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Αν μια εξοπλισμένη περίπτωση εμφανίζει προειδοποίηση και θέλετε παρόλα αυτά να προχωρήσετε με αυτήν,
+μπορείτε να παρακάμψετε την προειδοποίηση κάνοντας κλικ στο
+<strong>Ignore errors</strong>.</p>
+</li>
+<li>
+<p>Αυτό θα επιτρέψει στο σύστημα να εξάγει αρχεία εξόδου για αυτή την
+περίπτωση, ακόμα και αν υπήρχαν ζητήματα εξοπλισμού.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Χρησιμοποιήστε το <strong>Ignore Errors</strong> μόνο όταν είστε βέβαιοι ότι η προειδοποίηση μπορεί να αγνοηθεί
+με ασφάλεια. Η παράκαμψη πραγματικών σφαλμάτων μπορεί να οδηγήσει σε ζημιά μηχανής ή κινδύνους ασφαλείας.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_καταστολήάρση_καταστολής_εξοπλισμού">Καταστολή/Άρση καταστολής εξοπλισμού</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Όταν μια μηχανή είναι ανενεργή ή δεν θέλετε ένα συγκεκριμένο εξάρτημα να
+επεξεργαστεί από μια
+συγκεκριμένη μηχανή, χρησιμοποιήστε το <strong>Suppress Tooling</strong> για να εξαιρέσετε
+αυτό το εξάρτημα από την κατανομή σε αυτή τη μηχανή.</p>
+</li>
+<li>
+<p>Μετά την καταστολή, τοποθετώντας το ποντίκι πάνω από την εξοπλισμένη περίπτωση εμφανίζεται ένα
+μήνυμα όπως: "Tooling suppressed by &lt;User name&gt; on &lt;Date Time&gt;".</p>
+</li>
+<li>
+<p>Η καταστολή εξοπλισμού αφαιρεί το αρχείο εξόδου για αυτή τη μηχανή και το εξάρτημα.</p>
+</li>
+<li>
+<p>Χρησιμοποιήστε το <strong>Unsuppress tooling</strong> για να επαναφέρετε την κατάσταση
+εξοπλισμού για το εξάρτημα σε αυτή τη μηχανή.</p>
+</li>
+<li>
+<p>Όταν αρθεί η καταστολή, το αντίστοιχο αρχείο εξόδου δημιουργείται ξανά.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_export_outputs">Export Outputs</a>
+  </li>
+  <li level="1">
+   <a href="#_check_tooling">Check Tooling</a>
+  </li>
+  <li level="1">
+   <a href="#_copy_tooling">Copy tooling</a>
+  </li>
+  <li level="1">
+   <a href="#_set_as_base_flat">Set as Base-Flat&#8230;&#8203;</a>
+  </li>
+  <li level="2">
+   <a href="#_αυτόματη_επιλογή_base_flat">Αυτόματη επιλογή base flat</a>
+  </li>
+  <li level="2">
+   <a href="#_βελτιωμένη_διαχείριση_base_flat">Βελτιωμένη διαχείριση base flat</a>
+  </li>
+  <li level="1">
+   <a href="#_re_tool">Re-tool</a>
+  </li>
+  <li level="1">
+   <a href="#_ignore_errors">Ignore errors</a>
+  </li>
+  <li level="1">
+   <a href="#_καταστολήάρση_καταστολής_εξοπλισμού">Καταστολή/Άρση καταστολής εξοπλισμού</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="toolingvalidation/foldtooling.html">Επικύρωση εξοπλισμού δίπλωσης</a></span>
+ <span class="next"><a href="../savingfilters.html">Αποθήκευση φίλτρων</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

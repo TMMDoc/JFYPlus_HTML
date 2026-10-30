@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="../../res/sibling.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
-  <title>Ajouter nouveau</title>
+  <title>Ajouter une nouvelle matière et une tôle</title>
 </head>
 <body id="site-body" onload="sLoaded()">
     <header id="site-header">
@@ -25,121 +25,151 @@
   <li><button class="tree blank"></button><a href="../../index.html">Bienvenue dans JFY Plus</a></li>
   <li>
    <button class="tree closed"></button>
-   <a href="../../installation/index.html">Introduction</a>
+   <a href="../../installation/index.html">Installation</a>
    <ul class="hide">
-    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Condition requise pour le matériel</a></li>
-    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Formats pris en charge par la CAO</a></li>
-    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Conditions requises</a></li>
-    <li><button class="tree blank"></button><a href="../../installation/workflow.html">Flux de travail</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Exigences matérielles</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Formats de fichiers pris en charge</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Prérequis</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Changer de licence</a></li>
    </ul>
   </li>
   <li>
    <button class="tree open"></button>
    <a href="../index.html">Configuration</a>
    <ul>
-    <li><button class="tree blank"></button><a href="../setupmachine.html">Ajouter / Supprimer une machine</a></li>
-    <li><button class="tree blank"></button><a href="../setuptooling.html">Configurer le montage</a></li>
+    <li><button class="tree blank"></button><a href="../setupmachine.html">Ajouter/Supprimer une machine</a></li>
+    <li><button class="tree blank"></button><a href="../setuptooling.html">Configurer l'outillage</a></li>
     <li><button class="tree blank"></button><a href="../configureusers.html">Configurer les utilisateurs</a></li>
+    <li><button class="tree blank"></button><a href="../language.html">Langue</a></li>
     <li>
      <button class="tree open"></button>
      <a href="index.html">Matière</a>
      <ul>
-      <li><button class="tree blank"></button><a class="active" href="addnew.html">Ajouter nouveau</a></li>
-      <li><button class="tree blank"></button><a href="exportimport.html">Exporter/importer une matière</a></li>
-      <li><button class="tree blank"></button><a href="replacematerial.html">Remplacer la matière</a></li>
+      <li><button class="tree blank"></button><a class="active" href="addnew.html">Ajouter une nouvelle matière et une tôle</a></li>
+      <li><button class="tree blank"></button><a href="exportimport.html">Exporter/Importer une matière</a></li>
+      <li><button class="tree blank"></button><a href="replacematerial.html">Remplacer une matière</a></li>
      </ul>
     </li>
-    <li><button class="tree blank"></button><a href="../mapbendpages.html">Mapper la matière</a></li>
+    <li><button class="tree blank"></button><a href="../mapbendpages.html">Cartographier la matière</a></li>
    </ul>
   </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">L'interface utilisateur</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Flux de travail</a></li>
   <li>
    <button class="tree closed"></button>
-   <a href="../../partpreparation/index.html">Bibliothèque de pièces</a>
+   <a href="../../library/index.html">Bibliothèque</a>
    <ul class="hide">
-    <li><button class="tree blank"></button><a href="../../partpreparation/partlibrarytour.html">Bibliothèque de pièces</a></li>
-    <li><button class="tree blank"></button><a href="../../partpreparation/partstatus.html">Etat de montage</a></li>
-    <li><button class="tree blank"></button><a href="../../partpreparation/partimportmethod.html">Méthodes d'importation de pièce</a></li>
-    <li><button class="tree blank"></button><a href="../../partpreparation/partassignmaterial.html">Attribuer une matière à la pièce</a></li>
-    <li><button class="tree blank"></button><a href="../../partpreparation/partvalidation.html">Validation de la pièce</a></li>
-    <li><button class="tree blank"></button><a href="../../partpreparation/edittooling.html">Modifier le montage</a></li>
-    <li><button class="tree blank"></button><a href="../../partpreparation/toolingcheck.html">Vérification du montage</a></li>
-    <li><button class="tree blank"></button><a href="../../partpreparation/rename.html">Renommer</a></li>
-    <li><button class="tree blank"></button><a href="../../partpreparation/rollingdirection.html">Sens de laminage</a></li>
-   </ul>
-  </li>
-  <li>
-   <button class="tree closed"></button>
-   <a href="../../jobpreparation/index.html">Flux de travail de la tâche</a>
-   <ul class="hide">
-    <li><button class="tree blank"></button><a href="../../jobpreparation/jobcreation.html">Créer une tâche</a></li>
-    <li><button class="tree blank"></button><a href="../../jobpreparation/jobview.html">Affichage des tâches</a></li>
-    <li><button class="tree blank"></button><a href="../../jobpreparation/edit.html">Modifier</a></li>
-    <li><button class="tree blank"></button><a href="../../jobpreparation/jobautoplan.html">Plan auto</a></li>
-    <li><button class="tree blank"></button><a href="../../jobpreparation/jobinteractplan.html">Imbrication interactive</a></li>
-    <li><button class="tree blank"></button><a href="../../jobpreparation/jobpriority.html">Priorité</a></li>
-    <li><button class="tree blank"></button><a href="../../jobpreparation/jobstatus.html">Etat</a></li>
     <li>
      <button class="tree closed"></button>
-     <a href="../../jobpreparation/layoutcommands/index.html">Gestion des imbrications</a>
+     <a href="../../library/open/index.html">Ouvrir</a>
      <ul class="hide">
-      <li><button class="tree blank"></button><a href="../../jobpreparation/layoutcommands/nestview.html">Affichage de layout</a></li>
-      <li><button class="tree blank"></button><a href="../../jobpreparation/layoutcommands/nccodesend.html">Programme CN envoyé</a></li>
-      <li><button class="tree blank"></button><a href="../../jobpreparation/layoutcommands/delete.html">Supprimer</a></li>
-      <li><button class="tree blank"></button><a href="../../jobpreparation/layoutcommands/addparts.html">Ajouter des pièces</a></li>
-      <li><button class="tree blank"></button><a href="../../jobpreparation/layoutcommands/adaptcompact.html">Adapter / Compacter</a></li>
-      <li><button class="tree blank"></button><a href="../../jobpreparation/layoutcommands/exportoutputs.html">Exporter les sorties</a></li>
-      <li><button class="tree blank"></button><a href="../../jobpreparation/layoutcommands/markcomplete.html">Marquer comme terminé</a></li>
-      <li><button class="tree blank"></button><a href="../../jobpreparation/layoutcommands/reportsender.html">Expéditeur du rapport</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/partimport.html">Importer des pièces</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/orderimport.html">Importer des ordres</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/jobimport.html">Importer des tâches</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/assembliesimport.html">Importer des modules</a></li>
      </ul>
     </li>
     <li>
      <button class="tree closed"></button>
-     <a href="../../jobpreparation/remnantmanagement/index.html">Gestion des restes</a>
+     <a href="../../library/libraryview/index.html">Vue de la bibliothèque</a>
      <ul class="hide">
-      <li><button class="tree blank"></button><a href="../../jobpreparation/remnantmanagement/autoremnant.html">Gestion automatique des restes</a></li>
-      <li><button class="tree blank"></button><a href="../../jobpreparation/remnantmanagement/manualremnant.html">Gestion manuelle des tôles restantes</a></li>
+      <li><button class="tree blank"></button><a href="../../library/libraryview/partview.html">Pièces</a></li>
+      <li><button class="tree blank"></button><a href="../../library/libraryview/assemblyview.html">Module</a></li>
      </ul>
     </li>
-    <li><button class="tree blank"></button><a href="../../jobpreparation/importexport.html">Importer / Exporter</a></li>
-    <li><button class="tree blank"></button><a href="../../jobpreparation/resetpartjob.html">Tâche Réinitialiser la pièce</a></li>
-    <li><button class="tree blank"></button><a href="../../jobpreparation/outdate.html">Obsolète</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/partstate/index.html">État de la pièce</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/partstate/partvalidation.html">Validation des pièces</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partpanel.html">Panneau de la pièce</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partfilters.html">Filtres de pièce</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/toolingstatus/index.html">État de l'outillage</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../library/toolingstatus/toolingvalidation/index.html">Validation de l'outillage</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/bendtooling.html">Validation de l'outillage de pliage</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/cuttooling.html">Validation de l'outillage de coupe</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/foldtooling.html">Validation de l'outillage de pliage</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingpanel.html">Panneau d'outillage</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../library/savingfilters.html">Enregistrement des filtres</a></li>
    </ul>
   </li>
   <li>
    <button class="tree closed"></button>
-   <a href="../../filters/index.html">Filtres</a>
+   <a href="../../orders/index.html">Ordres</a>
    <ul class="hide">
-    <li><button class="tree blank"></button><a href="../../filters/filtertour.html">Tour des filtres</a></li>
-    <li><button class="tree blank"></button><a href="../../filters/savedfilters.html">Filtres enregistrés</a></li>
-    <li><button class="tree blank"></button><a href="../../filters/partlibraryfilter.html">Filtre de bibliothèque de pièces</a></li>
-    <li><button class="tree blank"></button><a href="../../filters/jobpagefilter.html">Filtre page de tâche</a></li>
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Vue des ordres</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Tâches</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Créer une tâche</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Vue des tâches</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Panneau des tâches</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Planification automatique</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Imbrication interactive</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Réempaquetage</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Gestion des imbrications</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Vue de configuration</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Panneau de configuration</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Envoi de rapports</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Gestion des chutes</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Gestion automatique des chutes</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Gestion manuelle des chutes</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Imbrication Twinline</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Obsolète</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Filtres de tâches</a></li>
    </ul>
   </li>
   <li>
    <button class="tree closed"></button>
    <a href="../../factory/index.html">Usine</a>
    <ul class="hide">
-    <li><button class="tree blank"></button><a href="../../factory/routes.html">Trajectoires</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">Itinéraires</a></li>
     <li><button class="tree blank"></button><a href="../../factory/sheets.html">Tôles</a></li>
-    <li><button class="tree blank"></button><a href="../../factory/customers.html">Clients</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">Utilisateurs</a></li>
     <li><button class="tree blank"></button><a href="../../factory/edit.html">Modifier</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">Clients</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">Réglages</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">Environnement</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">Importation</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">Pliage</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">Coupe</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">Notifications</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">Surveillance</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">Tâche</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">Rapports</a></li>
+     </ul>
+    </li>
    </ul>
   </li>
-  <li>
-   <button class="tree closed"></button>
-   <a href="../../settings/index.html">Réglages</a>
-   <ul class="hide">
-    <li><button class="tree blank"></button><a href="../../settings/environment.html">Environnement</a></li>
-    <li><button class="tree blank"></button><a href="../../settings/import.html">Importer</a></li>
-    <li><button class="tree blank"></button><a href="../../settings/bend.html">Pliage</a></li>
-    <li><button class="tree blank"></button><a href="../../settings/cut.html">Coupe</a></li>
-    <li><button class="tree blank"></button><a href="../../settings/notification.html">Notifications</a></li>
-    <li><button class="tree blank"></button><a href="../../settings/watch.html">Surveillance</a></li>
-    <li><button class="tree blank"></button><a href="../../settings/job.html">Tâche</a></li>
-    <li><button class="tree blank"></button><a href="../../settings/reports.html">Rapports</a></li>
-   </ul>
-  </li>
-  <li><button class="tree blank"></button><a href="../../impressum.html">Impressum</a></li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Informations sur l'entreprise</a></li>
  </ul>
 </div>
 
@@ -160,56 +190,67 @@
  </div>
  <div>/</div>
  <div>
-  <a href="addnew.html">Ajouter nouveau</a>
+  <a href="addnew.html">Ajouter une nouvelle matière et une tôle</a>
  </div>
 </nav>
 
             <div id="site-crumb-below">
                 <div id="site-toc-left">
                     <article id="article">
-                        <h1>Ajouter nouveau</h1>
+                        <h1>Ajouter une nouvelle matière et une tôle</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>La gestion des tôles est accessible en cliquant sur le bouton <strong>factory</strong>. La sélection de <strong>Sheets</strong> vous donnera un aperçu des matières qui sont réglées. En cliquant sur l&#8217;une des matières mentionnées sur la gauche vous montrera les tôles, l&#8217;épaisseur, les tailles et les quantités qui sont disponibles.</p>
+<p>La gestion des tôles est accessible en cliquant sur l&#8217;icône
+<strong>Factory</strong> et en sélectionnant <strong>sheets</strong>. Cela
+fournit un aperçu des matières configurées. La sélection d&#8217;une matière listée à
+gauche affiche les tôles, épaisseurs, tailles et quantités disponibles.</p>
 </div>
 <div class="paragraph">
-<p>Pour ajouter une nouvelle matière, cliquez sur <strong>Add new</strong> &#8594;*New Material&#8230;&#8203;* à partir de la page Tôles dans Usine.</p>
+<p>Pour ajouter une nouvelle matière, cliquez sur <strong>Add new</strong> &#8594;
+<strong>New Material&#8230;&#8203;</strong> depuis la page <strong>sheets</strong>
+dans <strong>factory</strong>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="img/01addmaterial.png" alt="New Material ADD new">
+<img src="img/addmaterial.png" alt="AddMaterial" width="999">
 </div>
 </div>
 <div class="paragraph">
-<p>Saisissez les paramètres Material, Raw Material, Thickness et matière. Cliquez sur OK.</p>
+<p>Saisissez <strong>Material</strong>, <strong>Raw Material</strong>,
+<strong>Thickness</strong> et les paramètres de la matière. Cliquez sur <strong>OK</strong>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="img/02addmaterial.png" alt="Material ADD Window" width="375">
+<img src="img/newmaterial.png" alt="NewMaterial" width="412">
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_voir_la_matière">Voir la matière</h2>
+<h2 id="_afficher_la_matière">Afficher la matière</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Les options d&#8217;affichage dans <strong>factory</strong> &#8594; <strong>Sheets</strong> sont les suivantes :</p>
+<p>L&#8217;option <strong>View&#8230;&#8203;</strong> dans <strong>factory</strong> &#8594;
+<strong>Sheets</strong> comporte les options suivantes :</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Expand All</strong>: Développe toutes les catégories de matière.</p>
+<p><strong>Expand All</strong> : développe toutes les catégories de
+matières.</p>
 </li>
 <li>
-<p><strong>Collapse All</strong>: Réduit toutes les catégories de matière.</p>
+<p><strong>Collapse All</strong> : réduit toutes les catégories de
+matières.</p>
 </li>
 <li>
-<p><strong>Show All Materials</strong>: Liste toutes les matières premières, quel que soit l&#8217;inventaire de tôles.</p>
+<p><strong>Show All Materials</strong> : liste toutes les matières
+brutes indépendamment de l&#8217;inventaire des tôles.</p>
 </li>
 <li>
-<p><strong>Show Inventory Materials</strong>: Liste uniquement les matières premières qui ont un stock de tôles.</p>
+<p><strong>Show Inventory Materials</strong> : liste uniquement
+les matières brutes disposant d&#8217;un inventaire de tôles.</p>
 </li>
 </ul>
 </div>
@@ -220,15 +261,10 @@
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-L&#8217;épaisseur de la matière première indiquée en gras représente la disponibilité de tôle.
+L&#8217;épaisseur de la matière brute affichée en gras indique la disponibilité de tôles.
 </td>
 </tr>
 </table>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="img/03showinventoryallmaterials.png" alt="Show Material Options">
-</div>
 </div>
 </div>
 </div>
@@ -236,12 +272,37 @@ L&#8217;épaisseur de la matière première indiquée en gras représente la dis
 <h2 id="_ajouter_une_tôle">Ajouter une tôle</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Pour ajouter une nouvelle tôle, cliquez sur <strong>Add new</strong> &#8594; <strong>New Sheet</strong> à la page Tôle, dans Usine. Modifiez les paramètres de tôle.</p>
+<p>Pour ajouter une nouvelle tôle, cliquez sur <strong>Add new</strong> &#8594;
+<strong>New Sheet</strong> depuis la page Sheets dans <strong>factory</strong>.
+Modifiez les paramètres de la tôle.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="img/04addsheet.png" alt="Add Sheet">
+<img src="img/newsheet.png" alt="NewSheet" width="999">
 </div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/newsheet1.png" alt="NewSheet1" width="999">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Search Sheets (Ctrl + F)&#8230;&#8203;</strong> : filtre les tôles selon la
+taille, le roulement, les commentaires, le numéro de coulée, la chute et la
+vaporisation.</p>
+</li>
+<li>
+<p><strong>Slider (+ / –)</strong> : ajuste le niveau de zoom de l&#8217;aperçu de la tôle.</p>
+</li>
+<li>
+<p><strong>Filter by</strong> : contrôle l&#8217;aperçu de la tôle en fonction de l&#8217;option
+sélectionnée (<strong>Width</strong>, <strong>Height</strong>,
+<strong>Area</strong>, <strong>Quantity</strong>,
+<strong>Grain</strong>, ou <strong>Type</strong>).</p>
+</li>
+</ul>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -250,19 +311,12 @@ L&#8217;épaisseur de la matière première indiquée en gras représente la dis
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-La modification ou la suppression de matière/tôle peut être effectuée avant qu&#8217;une pièce ne soit affectée à cette matière ou que le layout ne soit imbriqué dans cette tôle.
-</td>
-</tr>
-</table>
+<div class="paragraph">
+<p>La modification ou la suppression d&#8217;une matière ou d&#8217;une tôle n&#8217;est possible qu&#8217;avant qu&#8217;une pièce ne soit attribuée à cette matière ou qu&#8217;une configuration ne soit imbriquée sur cette tôle.</p>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-Il n&#8217;est pas possible de changer le nom de la matière à ce stade. Par conséquent, vous devez en créer une nouvelle.
+<div class="paragraph">
+<p>Le changement du nom de la matière n&#8217;est pas possible à ce stade. Une nouvelle matière doit donc être créée.</p>
+</div>
 </td>
 </tr>
 </table>
@@ -277,7 +331,7 @@ Il n&#8217;est pas possible de changer le nom de la matière à ce stade. Par co
  <h3>Contents</h3>
  <ul>
   <li level="1">
-   <a href="#_voir_la_matière">Voir la matière</a>
+   <a href="#_afficher_la_matière">Afficher la matière</a>
   </li>
   <li level="1">
    <a href="#_ajouter_une_tôle">Ajouter une tôle</a>
@@ -289,7 +343,7 @@ Il n&#8217;est pas possible de changer le nom de la matière à ce stade. Par co
             </div>
             <nav class="pagination">
  <span class="prev"><a href="index.html">Matière</a></span>
- <span class="next"><a href="exportimport.html">Exporter/importer une matière</a></span>
+ <span class="next"><a href="exportimport.html">Exporter/Importer une matière</a></span>
 </nav>
 
         </div>
@@ -300,7 +354,7 @@ Il n&#8217;est pas possible de changer le nom de la matière à ce stade. Par co
     </div>
     <footer id="site-footer">
         <div class="left">
-            <p>&nbsp;&nbsp;Copyright &copy; 2025 JFY International. All rights reserved.</p>
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
         </div>
         <div class="middle"></div>
         <div class="right">

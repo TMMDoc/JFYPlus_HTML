@@ -1,0 +1,688 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Elrendezés panel</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Üdvözli a JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Telepítés</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Hardverkövetelmények</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Támogatott fájlformátumok</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Előfeltételek</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Licenc módosítása</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Konfiguráció</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Gép hozzáadása/eltávolítása</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Felszerszámozás konfigurálása</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Felhasználók konfigurálása</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Nyelv</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Anyag</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Új anyag és lemeztábla hozzáadása</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Anyag exportálása/importálása</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Anyag cseréje</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Anyag leképezése</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">A felhasználói felület</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Munkafolyamat</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../library/index.html">Könyvtár</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/open/index.html">Megnyitás</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/open/partimport.html">Alkatrészek importálása</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/orderimport.html">Megrendelések importálása</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/jobimport.html">Feladatok importálása</a></li>
+      <li><button class="tree blank"></button><a href="../../library/open/assembliesimport.html">Részegységek importálása</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/libraryview/index.html">Könyvtár nézet</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/libraryview/partview.html">Alkatrészek</a></li>
+      <li><button class="tree blank"></button><a href="../../library/libraryview/assemblyview.html">Részegység</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/partstate/index.html">Alkatrész állapota</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../library/partstate/partvalidation.html">Alkatrész ellenőrzése</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partpanel.html">Alkatrész panel</a></li>
+      <li><button class="tree blank"></button><a href="../../library/partstate/partfilters.html">Alkatrészszűrők</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../library/toolingstatus/index.html">Felszerszámozás állapota</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../../library/toolingstatus/toolingvalidation/index.html">Felszerszámozás ellenőrzése</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/bendtooling.html">Hajlítási felszerszámozás ellenőrzése</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/cuttooling.html">Vágási felszerszámozás ellenőrzése</a></li>
+        <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingvalidation/foldtooling.html">Falcolási felszerszámozás ellenőrzése</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../../library/toolingstatus/toolingpanel.html">Felszerszámozási panel</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../library/savingfilters.html">Szűrők mentése</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Megrendelések</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Megrendelések nézet</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Feladatok</a>
+   <ul>
+    <li><button class="tree blank"></button><a href="../jobcreation.html">Feladat létrehozása</a></li>
+    <li><button class="tree blank"></button><a href="../jobview.html">Feladatok nézet</a></li>
+    <li><button class="tree blank"></button><a href="../jobpanel.html">Feladat panel</a></li>
+    <li><button class="tree blank"></button><a href="../jobautoplan.html">Automatikus tervezés</a></li>
+    <li><button class="tree blank"></button><a href="../jobinteractplan.html">Interaktív táblásítás</a></li>
+    <li><button class="tree blank"></button><a href="../repacking.html">Újracsomagolás</a></li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Táblaterv-kezelés</a>
+     <ul>
+      <li><button class="tree blank"></button><a href="nestview.html">Elrendezés nézet</a></li>
+      <li><button class="tree blank"></button><a class="active" href="layoutpanel.html">Elrendezés panel</a></li>
+      <li><button class="tree blank"></button><a href="reportsender.html">Jelentésküldő</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../remnantmanagement/index.html">Maradékkezelés</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../remnantmanagement/autoremnant.html">Automatikus maradékkezelés</a></li>
+      <li><button class="tree blank"></button><a href="../remnantmanagement/manualremnant.html">Kézi maradékkezelés</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../twinlinenesting.html">Twin-line táblásítás</a></li>
+    <li><button class="tree blank"></button><a href="../outdate.html">Elavult</a></li>
+    <li><button class="tree blank"></button><a href="../jobfilters.html">Feladatszűrők</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../factory/index.html">Gyár</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">Útvonalak</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/sheets.html">Lemeztáblák</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">Felhasználók</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/edit.html">Szerkesztés</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">Ügyfelek</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">Beállítások</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">Környezet</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">Importálás</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">Hajlítás</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">Vágás</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">Értesítések</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">Megtekintés</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">Feladat</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">Jelentések</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Céginformáció</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Feladatok</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Táblaterv-kezelés</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="layoutpanel.html">Elrendezés panel</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Elrendezés panel</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Ez a szakasz az elrendezéssel kapcsolatos műveleteket ismerteti, mint például
+<strong>Send to machine</strong>,
+<strong>Recall from machine</strong>,
+<strong>Export outputs</strong>,
+<strong>Mark complete</strong>, <strong>Add parts&#8230;&#8203;</strong>,
+<strong>Adapt/Compact&#8230;&#8203;</strong>,
+<strong>Split layout</strong> és az elrendezéspéldányok kezelésére használt
+egyéb lehetőségek.</p>
+</div>
+<table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="img/layout.png" alt="Elrendezés panel" width="181">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/document.png" alt="Csak olvasható" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Open in read-only mode for viewing</strong><br>
+Megnyitja a kiválasztott elrendezést csak olvasható módban.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/editicon.png" alt="Szerkesztés" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Check-out the document for editing</strong><br>
+Engedélyezi a kiválasztott elrendezés szerkesztését.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/trash.png" alt="Törlés" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Delete</strong><br>
+Törli a kiválasztott elrendezést.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/openreport.png" alt="Jelentés" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>View Report</strong><br>
+Megnyitja a kiválasztott elrendezés standard elrendezésjelentését és
+címkespecifikus jelentését.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Send to Machine&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Elküldi a kiválasztott elrendezést a gépnek, és exportálja a kimeneti
+fájlokat (fxlyt, NC, jelentés, csv) a feladat kimeneti helyére.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Add Parts&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">További alkatrészeket ad hozzá egy rosszul csomagolt elrendezéshez az
+elrendezés-újracsomagoló varázsló segítségével.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Adapt/Compact&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Újratáblásítja a kiválasztott elrendezést az alkatrészek tömörítése és a
+felhasználható terület felszabadítása érdekében.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Change LTT&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Megváltoztatja a kiválasztott elrendezéshez rendelt lemeztáblát.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Split Layouts&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A kiválasztott elrendezést két vagy több külön elrendezésre osztja.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Rename&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Átnevezi a kiválasztott elrendezést.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Job</strong> / <strong>Prev</strong> / <strong>Next</strong> / <strong>Parts</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Felfelé navigál a szülő feladathoz, a kiválasztott feladaton belül az előző
+vagy következő elrendezéshez, vagy lefelé az elrendezésben lévő
+alkatrészekhez.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Rendezés és szűrés</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Használja ezeket a szűrőket olyan további elrendezések megtekintéséhez,
+amelyek azonos tulajdonsággal rendelkeznek, mint a kiválasztott elrendezés:
+<strong>Same Machine</strong>, <strong>Same Material</strong>,
+<strong>Same LTT</strong>, <strong>Same Priority</strong>,
+<strong>Same State</strong>, <strong>Same Sheet</strong>, <strong>Same Part</strong>, <strong>Same Remnant State</strong>, vagy <strong>Same Rolling Direction</strong>.</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="send-to-machine">Send to machine</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Amikor egy táblaterv kész (megtelt vagy sürgősen szükséges), elküldheti a
+gépnek.</p>
+</li>
+<li>
+<p>Kattintson a jobb egérgombbal a táblatervre, és válassza a
+<strong>Send to machine&#8230;&#8203;</strong> elemet.</p>
+</li>
+<li>
+<p>Automatikusan létrejön egy mappa, a táblatervről elnevezve.</p>
+</li>
+<li>
+<p>A kimeneti fájlok (fxlyt, NC, jelentés, csv) a feladat kimeneti helyére
+kerülnek exportálásra.</p>
+</li>
+<li>
+<p>A gépnek elküldött táblatervek kék pipával jelennek meg.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+A felszabadítás után ezeket a táblaterveket a rendszer már nem próbálja
+meg újra újracsomagolni.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_recall_from_machine">Recall from machine</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Ha a kimenet ellenőrzést vagy frissítést igényel (például további
+alkatrészek hozzáadása):</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Kattintson a jobb egérgombbal az exportált elrendezésre.</p>
+</li>
+<li>
+<p>Válassza a <strong>Recall from machine&#8230;&#8203;</strong> elemet.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>A kimeneti fájlok és a mappa (fxlyt, NC, jelentés, csv) törlődnek.</p>
+</li>
+<li>
+<p>A táblaterv újra szerkeszthetővé válik.</p>
+</li>
+<li>
+<p>Módosításokat végezhet, és újra elküldheti a gépnek.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_export_outputs">Export outputs</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Kattintson a jobb egérgombbal bármely táblatervre (elrendezésre), amelyet
+elküldtek a gépnek, és kattintson a
+<strong>Export outputs</strong> elemre.</p>
+</li>
+<li>
+<p>Az Exportálás lehetőség az NC-, jelentés- és elrendezésfájlokat exportálja a
+megfelelő gépi kimeneti mappákba.</p>
+</li>
+<li>
+<p>Ez a lehetőség újragenerálja az NC-fájlt az elrendezés aktuális
+egységbeállításaival.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Az Exportálás nem érhető el a Befejezett elrendezésekhez, valamint az
+újracsomagolásra sorban várakozó elrendezésekhez.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="mark-complete">Befejezettként jelölés</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Miután a táblatervet feldolgozták a gépen, kattintson a jobb egérgombbal a
+táblatervre, és válassza a <strong>Mark complete&#8230;&#8203;</strong> elemet.</p>
+</li>
+<li>
+<p>Több táblatervet is kiválaszthat, és egyszerre jelölheti meg őket
+befejezettként.</p>
+</li>
+<li>
+<p>Amikor egy táblatervet befejezettként jelöl meg:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Kiszürkül, a lista végére kerül, és zöld pipával jelenik meg.</p>
+</li>
+<li>
+<p>Az elrendezés eltávolításra kerül az aktív elrendezések listájáról.</p>
+</li>
+<li>
+<p>Az alkatrész- és feladatállapotok frissülnek, és a feldolgozott
+mennyiségek befejezett állapotba kerülnek.</p>
+</li>
+<li>
+<p>Az adott elrendezés kimeneti fájljai eltávolításra kerülnek a gépi
+kimeneti helyről a kétszeres felhasználás elkerülése érdekében.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="add-parts">Add parts&#8230;&#8203;</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="img/addpart1.png" alt="Alkatrészek hozzáadása" width="997">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Használja ezt a lehetőséget további alkatrészek hozzáadásához egy viszonylag
+rosszul csomagolt elrendezéshez. Az interaktív táblásításhoz hasonlóan ez is
+varázslóvezérelt lehetőség, amely egy vagy több elrendezésen egyszerre
+használható.</p>
+</li>
+<li>
+<p>A JFY Plus ennek a lehetőségnek a használatakor az elrendezés-újracsomagoló
+varázslót helyezi el a fő munkaterületen. Tartsa lenyomva a <kbd>Ctrl</kbd>
+billentyűt, és válasszon ki egy vagy több, az elrendezés(ek)re csomagolandó
+alkatrészt, majd nyomja meg a <strong>Next</strong> elemet.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/addpart2.png" alt="Alkatrész kiválasztása" width="2200">
+</div>
+</div>
+</li>
+<li>
+<p>A kiválasztott alkatrészek a következő lépésben egy szerkeszthető
+mennyiségoszloppal jelennek meg. Ha szükséges, frissítse az
+alkatrészmennyiségeket az <strong>Update Qty</strong> mezőben. Kattintson a
+<strong>Next</strong> elemre a táblásításhoz. Vegye figyelembe, hogy a
+mennyiségek csak növelhetők, nem csökkenthetők.</p>
+</li>
+<li>
+<p>Minden elrendezés külön kerül táblásításra, és a táblásított eredmények az
+újonnan rájuk helyezett alkatrészekkel jelennek meg. Az elrendezés
+kiválasztása megjeleníti az összes meglévő elrendezésalkatrészt. Az eredmény
+automatikusan elvetésre kerül, ha az újracsomagolás során nem kerül új
+alkatrész elhelyezésre. A több példányt tartalmazó elrendezés az
+újracsomagolás után eltérő mintázatokat eredményezhet.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="adapt-compact">Adapt/Compact&#8230;&#8203;</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Ez a varázsló alapú parancs egy elrendezés egyik gépről a másikra való
+adaptálására használható, amikor az eredeti gép leáll, vagy amikor a
+gépterhelést ki kell egyensúlyozni.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/adapt1.png" alt="Adaptálás tömörítés" width="737">
+</div>
+</div>
+</li>
+<li>
+<p>Használható, ha a tervezett lemeztábla elfogyott, és az elrendezést egy másik
+elérhető lemeztáblára kell újratervezni.</p>
+</li>
+<li>
+<p>Az anyag hatékonyabb felhasználása érdekében a kisebb lemeztáblákra
+csomagolt elrendezéseket nagyobb lemeztáblákra egyesítheti.</p>
+</li>
+<li>
+<p>A nagyobb lemeztáblákra csomagolt elrendezéseket kisebb lemeztáblákra
+oszthatja, ha nagy lemeztábla-készlet nem áll rendelkezésre.</p>
+</li>
+<li>
+<p>Több elrendezés csomagolási hatékonyságát javíthatja (akár különböző
+gépekről is) azok egyesítésével.</p>
+</li>
+<li>
+<p>A használatához válasszon ki egy vagy több elrendezést, és kattintson a
+<strong>Adapt/Compact&#8230;&#8203;</strong> elemre a varázsló megnyitásához a
+munkaterületen.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/adapt2.png" alt="Elrendezések ablak" width="1902">
+</div>
+</div>
+</li>
+<li>
+<p>A bal oldali panel megjeleníti az összes kiválasztott elrendezést, az
+Alkatrészek panel pedig az elrendezésalkatrészeket.</p>
+</li>
+<li>
+<p>Válassza ki a célgépet és a lemeztábla-anyagot, majd kattintson a
+<strong>next</strong> elemre az újratáblásítás elvégzéséhez.</p>
+</li>
+<li>
+<p>Az új táblásítási eredmények az eredmények panelen jelennek meg.</p>
+</li>
+<li>
+<p>Kattintson a <strong>next</strong> elemre az adaptált vagy tömörített
+elrendezés mentéséhez.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/adapt5.png" alt="Elrendezések ablak" width="1902">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_elrendezés_felosztása">Elrendezés felosztása</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A <strong>Split layouts&#8230;&#8203;</strong> lehetőség lehetővé teszi egy meglévő
+elrendezés több elrendezésre osztását a mennyiségek módosításával, anélkül,
+hogy a felszerszámozást vagy táblásítást újra kellene végezni.</p>
+</div>
+<div class="paragraph">
+<p>Ez a funkció különösen hasznos a következő esetekben:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Amikor a teljes mennyiség egy részét azonnal kell gyártania, miközben a
+fennmaradó mennyiséget későbbi gyártásra ütemezi.</p>
+</li>
+<li>
+<p>Amikor a gyártási követelményeket több műszakra vagy napra kell elosztani a
+munkafolyamat és az erőforrás-kihasználtság optimalizálása érdekében.</p>
+</li>
+<li>
+<p>Amikor egy adott gép átmenetileg nem elérhető vagy foglalt, és az
+elrendezést a jelenlegi gyártási korlátokhoz kell igazítania.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Egy elrendezés felosztásához hajtsa végre a következő lépéseket:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Az Elrendezések nézetben válassza ki a kívánt elrendezést.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/splitlayout.png" alt="Elrendezés felosztása" width="264">
+</div>
+</div>
+</li>
+<li>
+<p>Kattintson a <strong>Split layouts&#8230;&#8203;</strong> elemre.</p>
+</li>
+<li>
+<p>Adja meg a kívánt értéket a <strong>New Copies</strong> mezőben.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/newcopies.png" alt="Új példányok" width="389">
+</div>
+</div>
+</li>
+<li>
+<p>Kattintson az <strong>OK</strong> gombra.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/twolayout.png" alt="Két elrendezés" width="547">
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>A kiválasztott elrendezés most két elrendezésre van felosztva, módosított
+mennyiségekkel.</p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#send-to-machine">Send to machine</a>
+  </li>
+  <li level="1">
+   <a href="#_recall_from_machine">Recall from machine</a>
+  </li>
+  <li level="1">
+   <a href="#_export_outputs">Export outputs</a>
+  </li>
+  <li level="1">
+   <a href="#mark-complete">Befejezettként jelölés</a>
+  </li>
+  <li level="1">
+   <a href="#add-parts">Add parts&#8230;&#8203;</a>
+  </li>
+  <li level="1">
+   <a href="#adapt-compact">Adapt/Compact&#8230;&#8203;</a>
+  </li>
+  <li level="1">
+   <a href="#_elrendezés_felosztása">Elrendezés felosztása</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="nestview.html">Elrendezés nézet</a></span>
+ <span class="next"><a href="reportsender.html">Jelentésküldő</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

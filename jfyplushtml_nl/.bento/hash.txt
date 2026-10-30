@@ -1,0 +1,154 @@
+Version=58
+APPNAME=JFY Plus
+BENDAPP=JFY Bend
+BRAND=JFY
+CUTAPP=JFY Cut
+FLAVOR=JFY
+FOLDDAPP=Flux Fold
+JFY=
+LANGUAGE=EN
+TECNOAPP=JFY Core
+TECNOAPP1=MetaCAM
+Folders=16
+Pages=73
+UIXlate=False, DebugUIXlate=False, Language=EN
+
+contents.txt • 265803.125808
+Impressum.adoc • Bedrijfsinformatie
+impressum.JFY.adoc • Bedrijfsinformatie
+Index.adoc • Welkom bij {APPNAME}
+Index.JFY.adoc • Welkom bij {APPNAME}
+manifest.txt • 265129.035103
+UserInterface.adoc • De gebruikersinterface
+Workflow.adoc • Workflow
+cadextensions\contents.txt • 265821.065841
+cadextensions\Index.adoc • CAD extensions
+configuration\CADMapFields.adoc • Velden toewijzen vanuit CAD (opzoeksleutels)
+configuration\configureUsers.adoc • Gebruikers configureren
+configuration\contents.txt • 265821.065841
+configuration\Index.adoc • Configuratie
+configuration\Language.adoc • Taal
+configuration\MapBendPages.adoc • Materiaal toewijzen
+configuration\MapCAMPages.adoc • CAM-pagina's toewijzen
+configuration\SetupMachine.adoc • Machine toevoegen/verwijderen
+configuration\SetupTooling.adoc • Tooling instellen
+factory\contents.txt • 265821.065841
+factory\Customers.adoc • Klanten
+factory\edit.adoc • Bewerken
+factory\Index.adoc • Fabriek
+factory\routes.adoc • Routes
+factory\sheets.adoc • Platen
+factory\Users.adoc • Gebruikers
+installation\changelic.adoc • Licentie wijzigen
+installation\ClientInstallation.adoc • Clientinstallatie
+installation\contents.txt • 265821.065841
+installation\HardwareRequirement.adoc • Hardwarevereisten
+installation\importformats.adoc • Ondersteunde bestandsformaten
+installation\index.adoc • Installatie
+installation\Prerequisites.adoc • Vereisten
+installation\ServerInstallation.adoc • Serverinstallatie
+jobs\contents.txt • 265821.065842
+jobs\Index.adoc • Jobs
+jobs\JOBAutoPlan.adoc • Automatisch plannen
+jobs\JOBCreation.adoc • Job aanmaken
+jobs\JobFilters.adoc • Jobfilters
+jobs\JOBInteractPlan.adoc • Interactief nesten
+jobs\JobPanel.adoc • Jobpaneel
+jobs\JOBView.adoc • Jobweergave
+jobs\OutDate.adoc • Verouderd
+jobs\Repacking.adoc • Herverpakken
+jobs\TwinlineNesting.adoc • Twinline nesten
+library\contents.txt • 265821.065843
+library\Index.adoc • Bibliotheek
+library\SavingFilters.adoc • Filters opslaan
+orders\Contents.txt
+orders\Index.adoc • Orders
+orders\OrdersView.adoc • Ordersweergave
+UIXlate\BR.txt
+UIXlate\CHS.txt
+UIXlate\CHT.txt
+UIXlate\CS.txt
+UIXlate\DA.txt
+UIXlate\DE.txt
+UIXlate\EN.txt
+UIXlate\ES.txt
+UIXlate\FI.txt
+UIXlate\FR.txt
+UIXlate\GR.txt
+UIXlate\HU.txt
+UIXlate\ID.txt
+UIXlate\IT.txt
+UIXlate\JP.txt
+UIXlate\KO.txt
+UIXlate\NL.txt
+UIXlate\PL.txt
+UIXlate\Prefixes.txt
+UIXlate\RO.txt
+UIXlate\RU.txt
+UIXlate\SK.txt
+UIXlate\SV.txt
+UIXlate\TH.txt
+UIXlate\TR.txt
+_jfybuild\build_docbook.log
+_jfybuild\build_docx.log
+_jfybuild\build_jfy.rb
+_jfybuild\build_pdf.log
+_jfybuild\JFY_Plus_Reference_Manual.docx
+_jfybuild\JFY_Plus_Reference_Manual.pdf
+_jfybuild\master.adoc • JFY Plus Reference Manual
+_jfybuild\master.xml
+cadextensions\solidworksaddin\contents.txt • 265821.065841
+cadextensions\solidworksaddin\FactorySettings.adoc • Factory settings
+cadextensions\solidworksaddin\Index.adoc • SolidWorks addin
+cadextensions\solidworksaddin\InstallationSteps.adoc • Installation
+cadextensions\solidworksaddin\MiscEnhancements.adoc • Misc enhancements
+cadextensions\solidworksaddin\PartFeasibility.adoc • Check feasibility
+cadextensions\solidworksaddin\SaveAssembly.adoc • Save assembly
+cadextensions\solidworksaddin\SaveToPraxis.adoc • Save parts
+configuration\addmaterial\AddNew.adoc • Nieuw materiaal en plaat toevoegen
+configuration\addmaterial\contents.txt • 265821.065841
+configuration\addmaterial\ExportImport.adoc • Materiaal exporteren/importeren
+configuration\addmaterial\Index.adoc • Materiaal
+configuration\addmaterial\ReplaceMaterial.adoc • Materiaal vervangen
+factory\settings\Bend.adoc • Buigen
+factory\settings\contents.txt • 265821.065841
+factory\settings\Cut.adoc • Snijden
+factory\settings\Environment.adoc • Omgeving
+factory\settings\Import.adoc • Importeren
+factory\settings\Index.adoc • Instellingen
+factory\settings\Job.adoc • Job
+factory\settings\Notification.adoc • Meldingen
+factory\settings\Reports.adoc • Rapporten
+factory\settings\Watch.adoc • Bewaken
+jobs\layoutcommands\contents.txt • 265821.065842
+jobs\layoutcommands\Index.adoc • Nestbeheer
+jobs\layoutcommands\LayoutPanel.adoc • Lay-outpaneel
+jobs\layoutcommands\NestView.adoc • Lay-outweergave
+jobs\layoutcommands\ReportSender.adoc • Rapportverzender
+jobs\remnantmanagement\AutoRemnant.adoc • Automatisch restantbeheer
+jobs\remnantmanagement\contents.txt • 265821.065842
+jobs\remnantmanagement\Index.adoc • Restantbeheer
+jobs\remnantmanagement\ManualRemnant.adoc • Handmatig restantbeheer
+library\libraryview\AssemblyView.adoc • Samenstelling
+library\libraryview\Contents.txt
+library\libraryview\Index.adoc • Bibliotheekweergave
+library\libraryview\PartView.adoc • Onderdelen
+library\open\AssembliesImport.adoc • Samenstellingen importeren
+library\open\Contents.txt
+library\open\Index.adoc • Openen
+library\open\JobImport.adoc • Jobs importeren
+library\open\OrderImport.adoc • Orders importeren
+library\open\PartImport.adoc • Onderdelen importeren
+library\partstate\contents.txt • 265821.065842
+library\partstate\Index.adoc • Onderdeelstatus
+library\partstate\PartFilters.adoc • Onderdeelfilters
+library\partstate\PartPanel.adoc • Onderdeelpaneel
+library\partstate\PartValidation.adoc • Onderdeelvalidatie
+library\toolingstatus\contents.txt • 265821.065842
+library\toolingstatus\Index.adoc • Toolingstatus
+library\toolingstatus\ToolingPanel.adoc • Toolingpaneel
+library\toolingstatus\toolingvalidation\BendTooling.adoc • Buigtoolingvalidatie
+library\toolingstatus\toolingvalidation\contents.txt • 265821.065842
+library\toolingstatus\toolingvalidation\CutTooling.adoc • Snijtoolingvalidatie
+library\toolingstatus\toolingvalidation\FoldTooling.adoc • Vouwtoolingvalidatie
+library\toolingstatus\toolingvalidation\Index.adoc • Toolingvalidatie

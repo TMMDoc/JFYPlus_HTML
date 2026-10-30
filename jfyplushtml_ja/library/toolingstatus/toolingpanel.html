@@ -1,0 +1,637 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>ツーリングパネル</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">JFY Plus へようこそ</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">インストール</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">ハードウェア要件</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">サポートされているファイル形式</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">前提条件</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">ライセンスの変更</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">構成</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">マシンの追加/削除</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">ツーリングのセットアップ</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">ユーザーの構成</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">言語</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">材料</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">新しい材料とシートの追加</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">材料のエクスポート/インポート</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">材料の置換</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">材料のマッピング</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">ユーザーインターフェイス</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">ワークフロー</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">ライブラリ</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../open/index.html">開く</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../open/partimport.html">部品のインポート</a></li>
+      <li><button class="tree blank"></button><a href="../open/orderimport.html">オーダーのインポート</a></li>
+      <li><button class="tree blank"></button><a href="../open/jobimport.html">ジョブのインポート</a></li>
+      <li><button class="tree blank"></button><a href="../open/assembliesimport.html">アセンブリのインポート</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../libraryview/index.html">ライブラリビュー</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../libraryview/partview.html">部品</a></li>
+      <li><button class="tree blank"></button><a href="../libraryview/assemblyview.html">アセンブリ</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../partstate/index.html">部品ステータス</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../partstate/partvalidation.html">部品の検証</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partpanel.html">部品パネル</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partfilters.html">部品フィルター</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">ツーリングステータス</a>
+     <ul>
+      <li>
+       <button class="tree closed"></button>
+       <a href="toolingvalidation/index.html">ツーリングの検証</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="toolingvalidation/bendtooling.html">曲げツーリングの検証</a></li>
+        <li><button class="tree blank"></button><a href="toolingvalidation/cuttooling.html">切断ツーリングの検証</a></li>
+        <li><button class="tree blank"></button><a href="toolingvalidation/foldtooling.html">折り曲げツーリングの検証</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a class="active" href="toolingpanel.html">ツーリングパネル</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../savingfilters.html">フィルターの保存</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">オーダー</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">オーダービュー</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">ジョブ</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">ジョブの作成</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">ジョブビュー</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">ジョブパネル</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">自動計画</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">インタラクティブネスティング</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">再パッキング</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">ネスト管理</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">レイアウトビュー</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">レイアウトパネル</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">レポート送信</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">残材管理</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">自動残材管理</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">手動残材管理</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">TwinLineネスティング</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">古くなった</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">ジョブフィルター</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../factory/index.html">ファクトリー</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">ルート</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/sheets.html">シート</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">ユーザー</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/edit.html">編集</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">顧客</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">設定</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">環境</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">インポート</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">曲げ加工</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">切断</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">通知</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">監視</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">ジョブ</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">レポート</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">会社情報</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">ライブラリ</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">ツーリングステータス</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="toolingpanel.html">ツーリングパネル</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>ツーリングパネル</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>このセクションでは、ツーリングインスタンスを管理するために使用する <strong>Export outputs</strong>、<strong>Check Tooling</strong>、<strong>Suppress Tooling</strong>、<strong>Set as Base-Flat&#8230;&#8203;</strong>、<strong>Copy Tooling</strong> などのツーリング関連のアクションについて説明します。</p>
+</div>
+<table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="img/toolingpanel.png" alt="Tooling panel" width="150">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/document.png" alt="Read-only" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Open in read-only mode for viewing</strong><br>
+選択したツーリングを読み取り専用モードで開きます。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/editicon.png" alt="Edit" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Check-out the document for editing</strong><br>
+選択したツーリングの編集を有効にします。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Export Outputs</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">選択したツーリングの出力を構成された宛先にエクスポートします。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Check Tooling</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">変更を加えずに既存のツーリングを検証し、検証が失敗した場合はステータスを更新します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Copy Tooling&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">選択した参照ツーリングから punch、シーケンス、back gauge のセットアップをコピーし、可能な限り他のソリューションに適用します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Set as Base-Flat&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">選択した曲げまたは折り曲げツーリングを、切断ソリューションを生成するための参照フラットサイズとしてマークします。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Re-tool&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">他のツーリングに影響を与えずに、部品の選択したツーリングを再処理します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Suppress Tooling</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">選択したツーリングを抑制して、さらなる処理と出力生成から除外します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Prev</strong> / <strong>Next</strong> / <strong>Part</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">前または次のツーリングに移動するか、親部品に戻ります。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>並べ替えとフィルター</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">すばやく参照できるように、選択したツーリングと類似の特性を共有する他のツーリングを表示します。</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_export_outputs">Export Outputs</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>このオプションは、<strong>Factory Settings</strong> で構成された宛先に部品の出力をエクスポートします。（<a href="../../factory/settings/bend.html">曲げ設定</a> および <a href="../../factory/settings/cut.html">切断設定</a> を参照）</p>
+</div>
+<div class="paragraph">
+<p>部品全体ではなく、選択したツーリング操作に関連付けられたツーリングのみがエクスポートされます。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+エクスポートされるファイルは操作のタイプに依存します。曲げと折り曲げの操作では、NC ファイルとレポートが生成されます。切断とパンチの操作では、部品ファイルのみがエクスポートされます。
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_check_tooling">Check Tooling</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>CAM 設定に変更があった場合や曲げ工具が失われた場合でも、部品を Re-tool する必要はありません。</p>
+</li>
+<li>
+<p>代わりに、Check Tooling を使用して、変更を加えずに既存のツーリングを検証します。</p>
+</li>
+<li>
+<p>検証が失敗した場合、そのインスタンスのツーリングステータスが更新され、関連する出力ファイルが削除されます。</p>
+</li>
+<li>
+<p>Check Tooling は、以前に <strong>Ignore Errors</strong> を使用して手動で上書きされたエラーがある部品も検出し、必要に応じてそのステータスをエラーに更新します。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_copy_tooling">Copy tooling</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Copy tooling を使用すると、あるソリューションの曲げツーリングを他のソリューションにすばやく適用でき、時間と手間を節約できます。</p>
+</div>
+<div class="paragraph">
+<p>これは、選択した参照ツーリング（ソリューション）から punch、シーケンス、back gauge のセットアップをコピーし、同じ設定を他のすべてのソリューションに適用しようとします。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>コピーしたセットアップがターゲットマシンで実行可能な場合、保存されて使用されます。</p>
+</li>
+<li>
+<p>セットアップが実行不可能な場合、そのマシンの元のツーリングは変更されません。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>たとえば、マシンごとに異なるツーリングがある場合があります:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/check3.png" alt="Before tooling" width="724">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/check4.png" alt="Copy tooling" width="664">
+</div>
+</div>
+<div class="paragraph">
+<p>同じ punch、シーケンス、back gauge の設定が可能な限り適用されます。コピーしたセットアップが使用できない場合、元のツーリングは変更されません。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/copytooling3.png" alt="After tooling" width="700">
+</div>
+</div>
+<div class="paragraph">
+<p>Copy tooling を適用すると、Gooseneck のセットアップが、実行可能な他のすべてのマシンに正常に適用されました。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_set_as_base_flat">Set as Base-Flat&#8230;&#8203;</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Set as Base-Flat&#8230;&#8203;</strong> 機能は、切断ソリューションを生成するための参照フラットサイズとして、どの曲げまたは折り曲げツーリングを使用するかを定義します。ツーリングが Base-Flat としてマークされると、JFY Plus はそのマシンに基づいて部品のフラットサイズを更新し、それに応じて切断ソリューションを再生成します。Base-Flat ツーリングは、UI で青い枠線で表示されます。</p>
+</div>
+<div class="paragraph">
+<p>異なる曲げマシンは、同じ部品に対してフラットサイズにわずかな違いを生じる場合があります。ツーリングを Base-Flat として設定すると、JFY Plus はそのマシンのフラットサイズをマスター参照として使用し、切断ソリューションを自動的に再計算します。</p>
+</div>
+<div class="paragraph">
+<p>ここでは、さまざまなマシンにわたって同じ部品の異なるフラットサイズを確認できます:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/baseflat1.png" alt="Base flat1" width="800">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/baseflat2.png" alt="Base flat2" width="663">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_自動_base_flat_選択">自動 Base-Flat 選択</h3>
+<div class="paragraph">
+<p>ファクトリー設定 <strong>Apply flat correction during bending</strong> が有効になっている場合:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/autobase.png" alt="Auto Base" width="806">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>JFY Plus は、部品のインポート時に、（最大曲げ長テーブルを含む）曲げツーリングを Base-Flat として自動的に設定します。</p>
+</li>
+<li>
+<p>選択した曲げツーリングでエラーが発生した場合や実行不可能な場合、JFY Plus はインテリジェントに切り替えて、別の有効な曲げツーリングを Base-Flat として設定します。これにより、フラットサイズの参照と切断ソリューションが、手動の介入なしに常に一貫性を保ち有効なままになります。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_拡張された_base_flat_管理">拡張された Base-Flat 管理</h3>
+<div class="paragraph">
+<p>JFY Plus は、曲げまたは折り曲げツーリングの編集を保存するときに、<strong>Save to Praxis</strong> ダイアログで Base-Flat オプションを提供します。これらのオプションは、OK 状態のツーリングにのみ表示され、フラットサイズと切断ソリューションが正確なままになるようにします。</p>
+</div>
+<div class="sect3">
+<h4 id="_set_as_base_flat_and_calculate_cutting_solution">Set as Base-Flat and calculate cutting solution</h4>
+<div class="paragraph">
+<p>このオプションは、ツーリングを初めて Base-Flat としてマークし、対応する切断ソリューションを自動的に生成するために使用されます。</p>
+</div>
+<div class="paragraph">
+<p>次の場合に表示されます:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ツーリングが現在 Base-Flat としてマークされていない。</p>
+</li>
+<li>
+<p>ユーザーが編集のためにツーリングをチェックアウトし、変更を保存している。</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/setbase.png" alt="Set Base" width="432">
+</div>
+</div>
+<div class="paragraph">
+<p>このオプションを使用するには、曲げまたは折り曲げツーリングをチェックアウトし、曲げパラメーターやフラットサイズの変更など、必要な変更を加えます。<span class="keyseq"><kbd>Ctrl</kbd>+<kbd>S</kbd></span> を押して変更を保存します。<strong>Save to Praxis</strong> ダイアログで <strong>Set as Base-Flat and calculate cutting solution</strong> を選択し、<strong>OK</strong> をクリックします。JFY Plus はツーリングを Base-Flat として設定し、更新されたフラットサイズを使用して切断ソリューションを生成します。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_update_the_base_flat_and_re_calculate_cutting_solution">Update the base-flat and re-calculate cutting solution</h4>
+<div class="paragraph">
+<p>このオプションは、ツーリングがすでに Base-Flat としてマークされていて編集されており、フラットサイズと切断ソリューションを再生成する必要がある場合に使用されます。</p>
+</div>
+<div class="paragraph">
+<p>次の場合に表示されます:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>ツーリングがすでに Base-Flat としてマークされている。</p>
+</li>
+<li>
+<p>ユーザーがチェックアウトし、編集し、変更を保存している。</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/updatebase.png" alt="Update Base" width="432">
+</div>
+</div>
+<div class="paragraph">
+<p>既存の Base-Flat ツーリングを編集するときは、必要に応じて曲げパラメーターまたはフラットサイズのジオメトリを更新します。<strong>Save to Praxis</strong> ダイアログで <strong>Update the base-flat and re-calculate cutting solution</strong> を選択します。その後、JFY Plus は Base-Flat ツーリングを更新し、最新の変更を反映するために関連するすべての切断ソリューションを再生成します。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>一度に Base-Flat として設定できる曲げツーリングは 1 つだけです。</p>
+</div>
+<div class="paragraph">
+<p>Base-Flat が変更されると、既存の切断ソリューションが自動的に再処理されます。</p>
+</div>
+<div class="paragraph">
+<p>この機能は、JFY Plus 内の曲げツーリングと折り曲げツーリングの両方で利用できます。</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_re_tool">Re-tool</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>このオプションは、部品の選択したツーリングを再処理します。</p>
+</div>
+<div class="paragraph">
+<p>ツーリングパネルで必要なツーリングを右クリックし、<strong>Re-tool&#8230;&#8203;</strong> をクリックします。</p>
+</div>
+<div class="paragraph">
+<p>続行する前に確認ダイアログが表示されます。</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/toolingconfirm.png" alt="ToolingConfirm" width="431">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Yes</strong> をクリックして再ツーリングを続行するか、<strong>No</strong> をクリックして操作をキャンセルします。</p>
+</div>
+<div class="paragraph">
+<p>選択したツーリングのみが再ツーリングされます。部品に関連付けられた他のツーリングは影響を受けません。選択したツーリングに関連する既存の出力は、再ツーリングプロセス中に削除されて再生成されます。</p>
+</div>
+<div class="paragraph">
+<p>ツーリングデータが古い、または不正確な場合、あるいはマシンやツーリングの構成に変更が加えられた場合に、このオプションを使用します。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ignore_errors">Ignore errors</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>ツーリングされたインスタンスに警告が表示されても、それを続行したい場合は、<strong>Ignore errors</strong> をクリックして警告を上書きできます。</p>
+</li>
+<li>
+<p>これにより、ツーリングに問題があった場合でも、システムはそのインスタンスの出力ファイルをエクスポートできます。</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<strong>Ignore Errors</strong> は、警告を安全に無視できることが確実な場合にのみ使用してください。実際のエラーを上書きすると、マシンの損傷や安全上のリスクにつながる可能性があります。
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ツーリングの抑制抑制解除">ツーリングの抑制/抑制解除</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>マシンが非アクティブな場合や、特定の部品を特定のマシンで処理したくない場合は、<strong>Suppress Tooling</strong> を使用して、そのマシンでのネスティングからその部品を除外します。</p>
+</li>
+<li>
+<p>抑制後、ツーリングされたインスタンスにマウスを合わせると、「Tooling suppressed by &lt;User name&gt; on &lt;Date Time&gt;」のようなメッセージが表示されます。</p>
+</li>
+<li>
+<p>Suppress tooling は、そのマシンと部品の出力ファイルを削除します。</p>
+</li>
+<li>
+<p><strong>Unsuppress tooling</strong> を使用して、そのマシンでの部品のツーリングステータスを復元します。</p>
+</li>
+<li>
+<p>抑制が解除されると、それぞれの出力ファイルが再度生成されます。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_export_outputs">Export Outputs</a>
+  </li>
+  <li level="1">
+   <a href="#_check_tooling">Check Tooling</a>
+  </li>
+  <li level="1">
+   <a href="#_copy_tooling">Copy tooling</a>
+  </li>
+  <li level="1">
+   <a href="#_set_as_base_flat">Set as Base-Flat&#8230;&#8203;</a>
+  </li>
+  <li level="2">
+   <a href="#_自動_base_flat_選択">自動 Base-Flat 選択</a>
+  </li>
+  <li level="2">
+   <a href="#_拡張された_base_flat_管理">拡張された Base-Flat 管理</a>
+  </li>
+  <li level="1">
+   <a href="#_re_tool">Re-tool</a>
+  </li>
+  <li level="1">
+   <a href="#_ignore_errors">Ignore errors</a>
+  </li>
+  <li level="1">
+   <a href="#_ツーリングの抑制抑制解除">ツーリングの抑制/抑制解除</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="toolingvalidation/foldtooling.html">折り曲げツーリングの検証</a></span>
+ <span class="next"><a href="../savingfilters.html">フィルターの保存</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

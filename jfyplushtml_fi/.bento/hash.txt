@@ -1,0 +1,154 @@
+Version=58
+APPNAME=JFY Plus
+BENDAPP=JFY Bend
+BRAND=JFY
+CUTAPP=JFY Cut
+FLAVOR=JFY
+FOLDDAPP=Flux Fold
+JFY=
+LANGUAGE=EN
+TECNOAPP=JFY Core
+TECNOAPP1=MetaCAM
+Folders=16
+Pages=73
+UIXlate=False, DebugUIXlate=False, Language=EN
+
+contents.txt • 265803.125808
+Impressum.adoc • Yritystiedot
+impressum.JFY.adoc • Yritystiedot
+Index.adoc • Tervetuloa {APPNAME}-ohjelmaan
+Index.JFY.adoc • Tervetuloa {APPNAME}-ohjelmaan
+manifest.txt • 261628.011655
+UserInterface.adoc • Käyttöliittymä
+Workflow.adoc • Työnkulku
+cadextensions\contents.txt • 265821.065841
+cadextensions\Index.adoc • CAD-laajennukset
+configuration\CADMapFields.adoc • Yhdistä CAD-kentät (hakusanat)
+configuration\configureUsers.adoc • Määritä käyttäjät
+configuration\contents.txt • 265821.065841
+configuration\Index.adoc • Määritykset
+configuration\Language.adoc • Kieli
+configuration\MapBendPages.adoc • Yhdistä työaine
+configuration\MapCAMPages.adoc • Yhdistä CAM-sivut
+configuration\SetupMachine.adoc • Lisää/poista kone
+configuration\SetupTooling.adoc • Työstöasetukset
+factory\contents.txt • 265821.065841
+factory\Customers.adoc • Asiakkaat
+factory\edit.adoc • Muokkaa
+factory\Index.adoc • Tehdas
+factory\routes.adoc • Reitit
+factory\sheets.adoc • Levyt
+factory\Users.adoc • Käyttäjät
+installation\changelic.adoc • Lisenssin vaihtaminen
+installation\ClientInstallation.adoc • Asiakasohjelman asennus
+installation\contents.txt • 265821.065841
+installation\HardwareRequirement.adoc • Laitteistovaatimukset
+installation\importformats.adoc • Tuetut tiedostomuodot
+installation\index.adoc • Asennus
+installation\Prerequisites.adoc • Esivaatimukset
+installation\ServerInstallation.adoc • Palvelimen asennus
+jobs\contents.txt • 265821.065842
+jobs\Index.adoc • Työt
+jobs\JOBAutoPlan.adoc • Automaattinen suunnittelu
+jobs\JOBCreation.adoc • Luo työ
+jobs\JobFilters.adoc • Työn suodattimet
+jobs\JOBInteractPlan.adoc • Interaktiivinen nestaus
+jobs\JobPanel.adoc • Työpaneeli
+jobs\JOBView.adoc • Työnäkymä
+jobs\OutDate.adoc • Vanhentunut
+jobs\Repacking.adoc • Uudelleenpakkaus
+jobs\TwinlineNesting.adoc • TwinLine-nestaus
+library\contents.txt • 265821.065843
+library\Index.adoc • Kirjasto
+library\SavingFilters.adoc • Suodattimien tallentaminen
+orders\Contents.txt
+orders\Index.adoc • Työtehtävät
+orders\OrdersView.adoc • Työtehtävänäkymä
+UIXlate\BR.txt
+UIXlate\CHS.txt
+UIXlate\CHT.txt
+UIXlate\CS.txt
+UIXlate\DA.txt
+UIXlate\DE.txt
+UIXlate\EN.txt
+UIXlate\ES.txt
+UIXlate\FI.txt
+UIXlate\FR.txt
+UIXlate\GR.txt
+UIXlate\HU.txt
+UIXlate\ID.txt
+UIXlate\IT.txt
+UIXlate\JP.txt
+UIXlate\KO.txt
+UIXlate\NL.txt
+UIXlate\PL.txt
+UIXlate\Prefixes.txt
+UIXlate\RO.txt
+UIXlate\RU.txt
+UIXlate\SK.txt
+UIXlate\SV.txt
+UIXlate\TH.txt
+UIXlate\TR.txt
+_jfybuild\build_docbook.log
+_jfybuild\build_docx.log
+_jfybuild\build_jfy.rb
+_jfybuild\build_pdf.log
+_jfybuild\JFY_Plus_Reference_Manual.docx
+_jfybuild\JFY_Plus_Reference_Manual.pdf
+_jfybuild\master.adoc • JFY Plus Reference Manual
+_jfybuild\master.xml
+cadextensions\solidworksaddin\contents.txt • 265821.065841
+cadextensions\solidworksaddin\FactorySettings.adoc • Tehdasasetukset
+cadextensions\solidworksaddin\Index.adoc • SolidWorks-lisäosa
+cadextensions\solidworksaddin\InstallationSteps.adoc • Asennus
+cadextensions\solidworksaddin\MiscEnhancements.adoc • Muut parannukset
+cadextensions\solidworksaddin\PartFeasibility.adoc • Tarkista valmistettavuus
+cadextensions\solidworksaddin\SaveAssembly.adoc • Tallenna rakenneryhmä
+cadextensions\solidworksaddin\SaveToPraxis.adoc • Tallenna osat
+configuration\addmaterial\AddNew.adoc • Lisää uusi työaine ja levy
+configuration\addmaterial\contents.txt • 265821.065841
+configuration\addmaterial\ExportImport.adoc • Vie/tuo työaine
+configuration\addmaterial\Index.adoc • Työaine
+configuration\addmaterial\ReplaceMaterial.adoc • Korvaa työaine
+factory\settings\Bend.adoc • Taivutus
+factory\settings\contents.txt • 265821.065841
+factory\settings\Cut.adoc • Leikkaus
+factory\settings\Environment.adoc • Ympäristö
+factory\settings\Import.adoc • Tuonti
+factory\settings\Index.adoc • Asetukset
+factory\settings\Job.adoc • Työ
+factory\settings\Notification.adoc • Ilmoitukset
+factory\settings\Reports.adoc • Raportit
+factory\settings\Watch.adoc • Valvontatoiminto
+jobs\layoutcommands\contents.txt • 265821.065842
+jobs\layoutcommands\Index.adoc • Nestauksen hallinta
+jobs\layoutcommands\LayoutPanel.adoc • Sijoittelupaneeli
+jobs\layoutcommands\NestView.adoc • Sijoittelunäkymä
+jobs\layoutcommands\ReportSender.adoc • Raporttien lähettäminen
+jobs\remnantmanagement\AutoRemnant.adoc • Automaattinen jäännöslevyjen hallinta
+jobs\remnantmanagement\contents.txt • 265821.065842
+jobs\remnantmanagement\Index.adoc • Jäännöslevyjen hallinta
+jobs\remnantmanagement\ManualRemnant.adoc • Manuaalinen jäännöslevyjen hallinta
+library\libraryview\AssemblyView.adoc • Rakenneryhmä
+library\libraryview\Contents.txt
+library\libraryview\Index.adoc • Kirjastonäkymä
+library\libraryview\PartView.adoc • Osat
+library\open\AssembliesImport.adoc • Rakenneryhmien tuonti
+library\open\Contents.txt
+library\open\Index.adoc • Avaaminen
+library\open\JobImport.adoc • Töiden tuonti
+library\open\OrderImport.adoc • Työtehtävien tuonti
+library\open\PartImport.adoc • Osien tuonti
+library\partstate\contents.txt • 265821.065842
+library\partstate\Index.adoc • Osan tila
+library\partstate\PartFilters.adoc • Osasuodattimet
+library\partstate\PartPanel.adoc • Osapaneeli
+library\partstate\PartValidation.adoc • Osan validointi
+library\toolingstatus\contents.txt • 265821.065842
+library\toolingstatus\Index.adoc • Työstön tila
+library\toolingstatus\ToolingPanel.adoc • Työstöpaneeli
+library\toolingstatus\toolingvalidation\BendTooling.adoc • Taivutustyöstöjen validointi
+library\toolingstatus\toolingvalidation\contents.txt • 265821.065842
+library\toolingstatus\toolingvalidation\CutTooling.adoc • Leikkaustyöstöjen validointi
+library\toolingstatus\toolingvalidation\FoldTooling.adoc • Taittotyöstöjen validointi
+library\toolingstatus\toolingvalidation\Index.adoc • Työstön validointi

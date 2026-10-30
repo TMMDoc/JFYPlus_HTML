@@ -1,0 +1,602 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Pannello componente</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Benvenuti in JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Installazione</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Requisiti hardware</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Formati di file supportati</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Prerequisiti</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Cambio licenza</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Configurazione</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Aggiungi/Rimuovi macchina</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Configura attrezzaggio</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Configura utenti</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Lingua</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Materiale</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Aggiungi nuovo materiale e lamiera</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Esporta/Importa materiale</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Sostituisci materiale</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Mappa materiale</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">L'interfaccia utente</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Flusso di lavoro</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Libreria</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../open/index.html">Apri</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../open/partimport.html">Importa componenti</a></li>
+      <li><button class="tree blank"></button><a href="../open/orderimport.html">Importa ordini</a></li>
+      <li><button class="tree blank"></button><a href="../open/jobimport.html">Importa lavori</a></li>
+      <li><button class="tree blank"></button><a href="../open/assembliesimport.html">Importa assiemi</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../libraryview/index.html">Vista Libreria</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../libraryview/partview.html">Componenti</a></li>
+      <li><button class="tree blank"></button><a href="../libraryview/assemblyview.html">Assieme</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Stato componente</a>
+     <ul>
+      <li><button class="tree blank"></button><a href="partvalidation.html">Validazione componente</a></li>
+      <li><button class="tree blank"></button><a class="active" href="partpanel.html">Pannello componente</a></li>
+      <li><button class="tree blank"></button><a href="partfilters.html">Filtri componente</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../toolingstatus/index.html">Stato attrezzaggio</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../toolingstatus/toolingvalidation/index.html">Validazione attrezzaggio</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/bendtooling.html">Validazione attrezzaggio di piegatura</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/cuttooling.html">Validazione attrezzaggio di taglio</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/foldtooling.html">Validazione attrezzaggio di pannellatura</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../toolingstatus/toolingpanel.html">Pannello attrezzaggio</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../savingfilters.html">Salvataggio dei filtri</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Ordini</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Vista ordini</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Lavori</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Crea lavoro</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Vista lavoro</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Pannello lavoro</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Pianificazione automatica</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Nesting interattivo</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Riorganizzazione</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Gestione nest</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Vista layout</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Pannello layout</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Invio report</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Gestione avanzi</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Avanzo automatico</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Avanzo manuale</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Nesting a doppia linea</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Scaduto</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Filtri lavoro</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../factory/index.html">Fabbrica</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">Percorsi</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/sheets.html">Lamiere</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">Utenti</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/edit.html">Modifica</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">Clienti</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">Impostazioni</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">Ambiente</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">Importazione</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">Piegatura</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">Taglio</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">Notifiche</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">Monitoraggio</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">Lavoro</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">Report</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Informazioni aziendali</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Libreria</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Stato componente</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="partpanel.html">Pannello componente</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Pannello componente</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Questa sezione illustra le azioni relative al componente come
+<strong>Re-import</strong>, <strong>Re-tool</strong>,
+<strong>Rename</strong>, <strong>Export outputs</strong>, ecc.,
+utilizzate per gestire le istanze del componente.</p>
+</div>
+<table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="img/partpanel.png" alt="Part panel" width="150">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/document.png" alt="Read-only" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Open in read-only mode for viewing</strong><br>
+Apre il componente selezionato in modalità di sola lettura.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/editicon.png" alt="Edit" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Check-out the document for editing</strong><br>
+Abilita la modifica del componente selezionato.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/trash.png" alt="Delete" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Delete</strong><br>
+Elimina il componente selezionato.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>New&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Il componente selezionato può essere convertito in un nuovo ordine, lavoro o assieme.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Export Outputs</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Esporta l&#8217;output del componente nella destinazione configurata.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Re-import&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Consente di importare nuovamente il componente selezionato.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Re-tool&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Consente di rielaborare il componente selezionato.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Rename&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Per cambiare il nome del componente selezionato.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Assign Material&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifica il materiale associato al componente selezionato.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Assign Customer&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Specifica il cliente associato al componente selezionato.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Rolling direction</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definisce l&#8217;orientamento lungo il quale viene laminato il materiale. Le opzioni disponibili sono <strong>None</strong>, <strong>Horizontal</strong> e <strong>Vertical</strong>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Prev</strong> / <strong>Next</strong> / <strong>Toolings</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Naviga al componente o all&#8217;attrezzaggio precedente o successivo.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Sort and filter</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Utilizzare questi filtri per visualizzare altri componenti che condividono lo stesso attributo del componente selezionato: <strong>Same Material</strong>, <strong>Same Customer</strong>, <strong>Same Bend count</strong> o <strong>Same State</strong>.</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_re_import">Re-import</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Fare clic con il pulsante destro del mouse su un componente qualsiasi e fare clic su <strong>Re-import&#8230;&#8203;</strong>.</p>
+</li>
+<li>
+<p>Tutte le istanze di attrezzaggio del componente selezionato su tutte le
+macchine vengono cancellate, incluse le istanze attrezzate automaticamente e
+quelle attrezzate manualmente.</p>
+</li>
+<li>
+<p>I file di output esistenti (CAD, Bend e Cut) vengono rimossi.</p>
+</li>
+<li>
+<p>I componenti vengono importati nuovamente e viene applicata una nuova
+validazione CAD e attrezzaggio per tutte le macchine.</p>
+</li>
+<li>
+<p>Nuovi file di output vengono creati in base al risultato dell&#8217;attrezzaggio aggiornato.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_re_tool">Re-tool</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Fare clic con il pulsante destro del mouse su un componente qualsiasi e fare clic su <strong>Re-tool&#8230;&#8203;</strong>.</p>
+</li>
+<li>
+<p>Tutte le macchine sono selezionate per impostazione predefinita e raggruppate
+come Laser, Punch, Panel e Press brake.</p>
+</li>
+<li>
+<p>Fare clic su <strong>OK</strong> per procedere. Questa operazione rimuove sia le
+istanze attrezzate automaticamente sia quelle attrezzate manualmente per le
+macchine selezionate ed elimina i file di output correlati.</p>
+</li>
+<li>
+<p>Quando la casella di controllo <strong>Retain existing outputs</strong> è
+selezionata, solo i componenti i cui output sono stati rimossi in precedenza
+verranno riattrezzati, gli altri output rimangono intatti. Se deselezionata,
+tutti i file di output per le macchine selezionate vengono rimossi e rigenerati
+durante il riattrezzaggio.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Se le impostazioni CAM sono cambiate per una macchina qualsiasi, selezionare
+quella macchina e riattrezzare i componenti.</p>
+</li>
+<li>
+<p>Se un utensile (LTT, punzone o piega) viene cambiato o è mancante, aggiornare
+la macchina e riattrezzare solo i componenti interessati.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rename">Rename</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Questa sezione spiega come rinominare uno o più componenti in JFY Plus.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Fare clic con il pulsante destro del mouse sul componente e fare clic su <strong>Rename&#8230;&#8203;</strong>.</p>
+</li>
+<li>
+<p>Viene visualizzata una finestra di dialogo di conferma della ridenominazione
+che mostra il nome corrente del componente.</p>
+</li>
+<li>
+<p>Immettere il nuovo nome e fare clic sull&#8217;icona di spunta <strong>✓</strong> per confermare, oppure fare clic sull&#8217;icona
+della croce <strong>✗</strong> per annullare l&#8217;operazione di ridenominazione.</p>
+</li>
+<li>
+<p>Per rinominare più componenti, selezionare tutti i componenti richiesti, quindi fare clic con il pulsante destro del mouse su
+uno qualsiasi di essi e fare clic su <strong>Rename&#8230;&#8203;</strong>.</p>
+</li>
+<li>
+<p>Viene visualizzata una finestra di dialogo di conferma con il numero totale di componenti selezionati.</p>
+</li>
+<li>
+<p>Per ogni componente, immettere il nuovo nome e fare clic sull&#8217;icona di spunta <strong>✓</strong> per
+confermare uno alla volta.</p>
+</li>
+<li>
+<p>Se un componente è stato selezionato per errore, fare clic sull&#8217;icona della croce <strong>✗</strong> per annullare.
+In alternativa, è possibile fare clic con il pulsante destro del mouse sul componente e fare clic su
+<strong>Cancel Rename</strong> per saltare la ridenominazione.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_export_outputs">Export outputs</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Questa opzione esporta l&#8217;output del componente nella destinazione configurata in
+<strong>Factory Settings</strong>. (Vedere
+<a href="../../factory/settings/bend.html">Impostazioni di piegatura</a> e
+<a href="../../factory/settings/cut.html">Impostazioni di taglio</a>)</p>
+</div>
+<div class="paragraph">
+<p>La posizione di output è definita separatamente per Bend, Fold e Cut nelle
+rispettive impostazioni di output. Tutti gli attrezzaggi associati alle
+operazioni di piegatura, pannellatura e taglio vengono esportati per l&#8217;intero componente.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+I file esportati dipendono dal tipo di operazione. Per le operazioni di
+Bend e Fold, vengono generati file NC e report. Per le operazioni di Cut e
+Punch, vengono esportati solo i file del componente.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_assegnazione_del_materiale_al_componente">Assegnazione del materiale al componente</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I componenti con lo stato <strong>Material not assigned</strong>
+devono essere aggiornati prima di un&#8217;ulteriore elaborazione. I passaggi seguenti
+spiegano come assegnare il materiale.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Fare clic con il pulsante destro del mouse sul componente che visualizza lo stato
+<strong>Material not assigned</strong> e selezionare
+<strong>Assign Material&#8230;&#8203;</strong>.</p>
+</li>
+<li>
+<p>Si apre la finestra <strong>Assign Material</strong>.</p>
+</li>
+<li>
+<p>La finestra di dialogo presenta quattro sezioni:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Suggestions</strong> - Suggerisce automaticamente le
+materie prime in base allo spessore del componente importato.</p>
+</li>
+<li>
+<p><strong>All Materials</strong> - Elenca tutti i tipi di materiale definiti in
+JFY Plus.</p>
+</li>
+<li>
+<p><strong>All Raw-Materials</strong> - Visualizza tutte le materie prime
+disponibili nel sistema.</p>
+</li>
+<li>
+<p><strong>Used Raw-Materials</strong> - Visualizza le materie prime
+utilizzate più di recente per un accesso rapido.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>È possibile utilizzare il campo <strong>Search</strong> in alto per trovare
+rapidamente i materiali. Ad esempio, digitare "steel" per visualizzare tutti i
+materiali corrispondenti nelle tre sezioni.</p>
+</li>
+<li>
+<p>Dall&#8217;elenco filtrato, selezionare il materiale richiesto (ad esempio, Steel-25) dall&#8217;elenco
+delle Materie prime.</p>
+</li>
+<li>
+<p>Il materiale selezionato verrà assegnato al componente.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rolling_direction">Rolling direction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Rolling direction</strong> si riferisce all&#8217;orientamento della
+venatura in un componente, che può influire sul modo in cui il componente viene
+tagliato ed elaborato. Questa opzione consente di specificare la
+<strong>Rolling direction</strong> per un componente nella Libreria componenti.
+In base alla direzione selezionata, il componente verrà posizionato
+nell&#8217;orientamento corretto per il taglio sulle macchine disponibili.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Fare clic con il pulsante destro del mouse su un riquadro di componente qualsiasi nella Libreria componenti o nella finestra del lavoro.</p>
+</li>
+<li>
+<p>Selezionare la direzione di laminazione preferita:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>None</strong></p>
+</li>
+<li>
+<p><strong>Horizontal</strong></p>
+</li>
+<li>
+<p><strong>Vertical</strong></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Il componente viene riattrezzato automaticamente per tutte le macchine di
+taglio disponibili in base alla direzione di laminazione selezionata.</p>
+</li>
+<li>
+<p>Il riquadro del componente visualizzerà la direzione di laminazione selezionata come mostrato di seguito:</p>
+<div class="paragraph">
+<p><span class="image"><img src="img/none.png" alt="None" width="270"></span> <span class="image"><img src="img/horizontal.png" alt="Horizontal" width="270"></span>
+<span class="image"><img src="img/vertical.png" alt="Vertical" width="270"></span></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_re_import">Re-import</a>
+  </li>
+  <li level="1">
+   <a href="#_re_tool">Re-tool</a>
+  </li>
+  <li level="1">
+   <a href="#_rename">Rename</a>
+  </li>
+  <li level="1">
+   <a href="#_export_outputs">Export outputs</a>
+  </li>
+  <li level="1">
+   <a href="#_assegnazione_del_materiale_al_componente">Assegnazione del materiale al componente</a>
+  </li>
+  <li level="1">
+   <a href="#_rolling_direction">Rolling direction</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="partvalidation.html">Validazione componente</a></span>
+ <span class="next"><a href="partfilters.html">Filtri componente</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

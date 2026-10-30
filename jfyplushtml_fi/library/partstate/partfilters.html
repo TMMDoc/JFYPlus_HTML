@@ -1,0 +1,402 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Osasuodattimet</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Tervetuloa JFY Plus-ohjelmaan</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Asennus</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Laitteistovaatimukset</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Tuetut tiedostomuodot</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Esivaatimukset</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Lisenssin vaihtaminen</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Määritykset</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Lisää/poista kone</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Työstöasetukset</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Määritä käyttäjät</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Kieli</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Työaine</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Lisää uusi työaine ja levy</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Vie/tuo työaine</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Korvaa työaine</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Yhdistä työaine</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">Käyttöliittymä</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Työnkulku</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Kirjasto</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../open/index.html">Avaaminen</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../open/partimport.html">Osien tuonti</a></li>
+      <li><button class="tree blank"></button><a href="../open/orderimport.html">Työtehtävien tuonti</a></li>
+      <li><button class="tree blank"></button><a href="../open/jobimport.html">Töiden tuonti</a></li>
+      <li><button class="tree blank"></button><a href="../open/assembliesimport.html">Rakenneryhmien tuonti</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../libraryview/index.html">Kirjastonäkymä</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../libraryview/partview.html">Osat</a></li>
+      <li><button class="tree blank"></button><a href="../libraryview/assemblyview.html">Rakenneryhmä</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Osan tila</a>
+     <ul>
+      <li><button class="tree blank"></button><a href="partvalidation.html">Osan validointi</a></li>
+      <li><button class="tree blank"></button><a href="partpanel.html">Osapaneeli</a></li>
+      <li><button class="tree blank"></button><a class="active" href="partfilters.html">Osasuodattimet</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../toolingstatus/index.html">Työstön tila</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../toolingstatus/toolingvalidation/index.html">Työstön validointi</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/bendtooling.html">Taivutustyöstöjen validointi</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/cuttooling.html">Leikkaustyöstöjen validointi</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/foldtooling.html">Taittotyöstöjen validointi</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../toolingstatus/toolingpanel.html">Työstöpaneeli</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../savingfilters.html">Suodattimien tallentaminen</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Työtehtävät</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Työtehtävänäkymä</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Työt</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Luo työ</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Työnäkymä</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Työpaneeli</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Automaattinen suunnittelu</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Interaktiivinen nestaus</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Uudelleenpakkaus</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Nestauksen hallinta</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Sijoittelunäkymä</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Sijoittelupaneeli</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Raporttien lähettäminen</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Jäännöslevyjen hallinta</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Automaattinen jäännöslevyjen hallinta</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Manuaalinen jäännöslevyjen hallinta</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">TwinLine-nestaus</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Vanhentunut</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Työn suodattimet</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../factory/index.html">Tehdas</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">Reitit</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/sheets.html">Levyt</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">Käyttäjät</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/edit.html">Muokkaa</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">Asiakkaat</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">Asetukset</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">Ympäristö</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">Tuonti</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">Taivutus</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">Leikkaus</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">Ilmoitukset</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">Valvontatoiminto</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">Työ</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">Raportit</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Yritystiedot</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Kirjasto</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Osan tila</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="partfilters.html">Osasuodattimet</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Osasuodattimet</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Osakirjaston suodattimien avulla voit nopeasti hakea ja paikantaa osia
+kirjastossa soveltamalla tiettyj\u00e4 ehtoja. Rajaamalla tulokset vain osiin, jotka
+t\u00e4ytt\u00e4v\u00e4t ehtosi, n\u00e4m\u00e4 suodattimet helpottavat olennaisten osien hallintaa ja
+k\u00e4ytt\u00f6\u00e4 tehokkaasti.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/partlibrary.png" alt="Part Library" width="170">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_state">State</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>K\u00e4yt\u00e4 <strong>State</strong> -suodatinta hakeaksesi osia niiden nykyisen tilan
+perusteella.</p>
+</li>
+<li>
+<p>Avattava valikko n\u00e4ytt\u00e4\u00e4 kaikki soveltuvat tilat riippuen k\u00e4ytett\u00e4viss\u00e4
+olevista kirjaston osista.</p>
+</li>
+<li>
+<p>Tilaluettelo muuttuu dynaamisesti valittujen osien ja niiden tilan mukaan.</p>
+</li>
+<li>
+<p>Valitse esimerkiksi <strong>Material Missing</strong> n\u00e4hd\u00e4ksesi osat, joiden materiaalitila
+on ratkaisematta.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/state.png" alt="State" width="990">
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_status">Status</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>K\u00e4yt\u00e4 <strong>Status</strong> -suodatinta hakeaksesi osia
+ty\u00f6st\u00f6jen tilan perusteella.</p>
+</li>
+<li>
+<p>Avattava valikko n\u00e4ytt\u00e4\u00e4 ty\u00f6st\u00f6jen tilat v\u00e4rillisin\u00e4 laatikoina sek\u00e4 kaikki
+k\u00e4ytett\u00e4viss\u00e4 olevat koneet ja niihin soveltuvat virheet.</p>
+</li>
+<li>
+<p>V\u00e4rilliset laatikot edustavat seuraavia tiloja:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Valkoinen: Ty\u00f6st\u00f6t OK</p>
+</li>
+<li>
+<p>Oranssi: Ty\u00f6st\u00f6iss\u00e4 on virhe</p>
+</li>
+<li>
+<p>Keltainen: Ty\u00f6st\u00f6iss\u00e4 on varoitus</p>
+</li>
+<li>
+<p>Harmaa: Ty\u00f6st\u00f6t vaimennettu</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Jos osalla on kapea laippa- tai ty\u00f6st\u00f6\u00e4 ei m\u00e4\u00e4ritetty -virheit\u00e4, n\u00e4iden
+valitseminen n\u00e4ytt\u00e4\u00e4 kyseiset osat.</p>
+<div class="imageblock">
+<div class="content">
+<img src="img/status2.png" alt="Status" width="1233">
+</div>
+</div>
+</li>
+<li>
+<p>Osat, joiden ty\u00f6st\u00f6t on vaimennettu valitulla koneella, n\u00e4ytet\u00e4\u00e4n
+napsauttamalla harmaata laatikkoa.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bend_mounts">Bend mounts</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>K\u00e4yt\u00e4 <strong>Bend mounts</strong> -suodatinta hakeaksesi osia k\u00e4ytetyn
+taivutusty\u00f6kalun perusteella.</p>
+</li>
+<li>
+<p>Avattava valikko n\u00e4ytt\u00e4\u00e4 kaikki k\u00e4ytett\u00e4viss\u00e4 olevat taivutusty\u00f6kalut, ja
+niit\u00e4 voi suodattaa ty\u00f6kalun nimen, tyypin (st\u00e4mppi, hanhenkaula, s\u00e4de jne.)
+tai kuvauksen mukaan.</p>
+</li>
+<li>
+<p>Valitse useita ty\u00f6kaluja ja napsauta <strong>Match all</strong>
+lajitellaksesi ty\u00f6kalut, jotka k\u00e4ytt\u00e4v\u00e4t molempia valittuja ty\u00f6kaluja.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_used_tools">Used tools</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Suodatus <strong>Used tools</strong> -kohdan mukaan toimii samalla tavalla
+kuin suodatus <strong>Bend mounts</strong> -kohdan mukaan.</p>
+</li>
+<li>
+<p>Ty\u00f6kalukuvakkeet n\u00e4ytet\u00e4\u00e4n suhteellisissa kokoissa (ei tarkkoja, vaan
+suhteellisia).</p>
+</li>
+<li>
+<p>Kun ty\u00f6st\u00f6jen esikatselu on avoinna, hiiren vieminen ty\u00f6kalun p\u00e4\u00e4lle
+suodatinluettelossa korostaa kyseisen ty\u00f6kalun esikatseluruudussa.</p>
+</li>
+<li>
+<p>Useita ty\u00f6kaluja voidaan valita ja soveltaa k\u00e4ytt\u00e4m\u00e4ll\u00e4
+<strong>Match all</strong>.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/usedtool.png" alt="Used Tool" width="912">
+</div>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_state">State</a>
+  </li>
+  <li level="1">
+   <a href="#_status">Status</a>
+  </li>
+  <li level="1">
+   <a href="#_bend_mounts">Bend mounts</a>
+  </li>
+  <li level="1">
+   <a href="#_used_tools">Used tools</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="partpanel.html">Osapaneeli</a></span>
+ <span class="next"><a href="../toolingstatus/index.html">Työstön tila</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

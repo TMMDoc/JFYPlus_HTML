@@ -1,0 +1,321 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="res/bento.css">
+  <link rel="stylesheet" href="res/site.css">
+  <link rel="stylesheet" href="res/tree.css">
+  <link rel="stylesheet" href="res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="img/praxis-icon.png">
+  <title>使用者介面</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="index.html">歡迎使用 JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="installation/index.html">安裝</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="installation/hardwarerequirement.html">硬體需求</a></li>
+    <li><button class="tree blank"></button><a href="installation/importformats.html">支援的檔案格式</a></li>
+    <li><button class="tree blank"></button><a href="installation/prerequisites.html">先決條件</a></li>
+    <li><button class="tree blank"></button><a href="installation/changelic.html">變更授權</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="configuration/index.html">組態</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="configuration/setupmachine.html">新增/移除機床</a></li>
+    <li><button class="tree blank"></button><a href="configuration/setuptooling.html">設定 tooling</a></li>
+    <li><button class="tree blank"></button><a href="configuration/configureusers.html">設定使用者</a></li>
+    <li><button class="tree blank"></button><a href="configuration/language.html">語言</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="configuration/addmaterial/index.html">材料</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="configuration/addmaterial/addnew.html">新增材料和板材</a></li>
+      <li><button class="tree blank"></button><a href="configuration/addmaterial/exportimport.html">匯出/匯入材料</a></li>
+      <li><button class="tree blank"></button><a href="configuration/addmaterial/replacematerial.html">取代材料</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="configuration/mapbendpages.html">對應材料</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a class="active" href="userinterface.html">使用者介面</a></li>
+  <li><button class="tree blank"></button><a href="workflow.html">工作流程</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="library/index.html">庫</a>
+   <ul class="hide">
+    <li>
+     <button class="tree closed"></button>
+     <a href="library/open/index.html">開啟</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="library/open/partimport.html">匯入零件</a></li>
+      <li><button class="tree blank"></button><a href="library/open/orderimport.html">匯入訂單</a></li>
+      <li><button class="tree blank"></button><a href="library/open/jobimport.html">匯入 job</a></li>
+      <li><button class="tree blank"></button><a href="library/open/assembliesimport.html">匯入組件</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="library/libraryview/index.html">庫檢視</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="library/libraryview/partview.html">零件</a></li>
+      <li><button class="tree blank"></button><a href="library/libraryview/assemblyview.html">組件</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="library/partstate/index.html">零件狀態</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="library/partstate/partvalidation.html">零件驗證</a></li>
+      <li><button class="tree blank"></button><a href="library/partstate/partpanel.html">零件面板</a></li>
+      <li><button class="tree blank"></button><a href="library/partstate/partfilters.html">零件篩選器</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="library/toolingstatus/index.html">tooling 狀態</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="library/toolingstatus/toolingvalidation/index.html">tooling 驗證</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="library/toolingstatus/toolingvalidation/bendtooling.html">折彎 tooling 驗證</a></li>
+        <li><button class="tree blank"></button><a href="library/toolingstatus/toolingvalidation/cuttooling.html">切割 tooling 驗證</a></li>
+        <li><button class="tree blank"></button><a href="library/toolingstatus/toolingvalidation/foldtooling.html">折疊 tooling 驗證</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="library/toolingstatus/toolingpanel.html">Tooling 面板</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="library/savingfilters.html">儲存篩選器</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="orders/index.html">訂單</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="orders/ordersview.html">訂單檢視</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="jobs/index.html">Jobs</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="jobs/jobcreation.html">建立 job</a></li>
+    <li><button class="tree blank"></button><a href="jobs/jobview.html">Job 檢視</a></li>
+    <li><button class="tree blank"></button><a href="jobs/jobpanel.html">Job 面板</a></li>
+    <li><button class="tree blank"></button><a href="jobs/jobautoplan.html">自動規劃</a></li>
+    <li><button class="tree blank"></button><a href="jobs/jobinteractplan.html">互動式 nesting</a></li>
+    <li><button class="tree blank"></button><a href="jobs/repacking.html">重新排料</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="jobs/layoutcommands/index.html">Nest 管理</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="jobs/layoutcommands/nestview.html">Layout 檢視</a></li>
+      <li><button class="tree blank"></button><a href="jobs/layoutcommands/layoutpanel.html">Layout 面板</a></li>
+      <li><button class="tree blank"></button><a href="jobs/layoutcommands/reportsender.html">報告傳送器</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="jobs/remnantmanagement/index.html">餘料管理</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="jobs/remnantmanagement/autoremnant.html">自動餘料管理</a></li>
+      <li><button class="tree blank"></button><a href="jobs/remnantmanagement/manualremnant.html">手動餘料管理</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="jobs/twinlinenesting.html">Twinline nesting</a></li>
+    <li><button class="tree blank"></button><a href="jobs/outdate.html">過期</a></li>
+    <li><button class="tree blank"></button><a href="jobs/jobfilters.html">Job 篩選器</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="factory/index.html">工廠</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="factory/routes.html">路線</a></li>
+    <li><button class="tree blank"></button><a href="factory/sheets.html">板材</a></li>
+    <li><button class="tree blank"></button><a href="factory/users.html">使用者</a></li>
+    <li><button class="tree blank"></button><a href="factory/edit.html">編輯</a></li>
+    <li><button class="tree blank"></button><a href="factory/customers.html">客戶</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="factory/settings/index.html">設定</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="factory/settings/environment.html">環境</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/import.html">匯入</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/bend.html">折彎</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/cut.html">切割</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/notification.html">通知</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/watch.html">監視</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/job.html">Job</a></li>
+      <li><button class="tree blank"></button><a href="factory/settings/reports.html">報告</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="impressum.html">公司資訊</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="userinterface.html">使用者介面</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>使用者介面</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>JFY Plus 使用者介面透過命令列和選單列提供對所有主要功能的存取，從而實現
+高效的導覽和操作。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/userinterface.png" alt="Interface" width="990"></span></p>
+</div>
+<div class="paragraph">
+<p>① 命令列<br>
+② 選單列<br>
+③ 子命令</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_命令列">命令列</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Open</strong> - 將零件、job、訂單和組件匯入庫中。有關詳細資訊，
+請參閱 <a href="library/open/index.html">Open</a>。</p>
+</div>
+<div class="paragraph">
+<p><strong>Language</strong> - 變更使用者介面語言。有關詳細資訊，
+請參閱 <a href="configuration/language.html">Language</a>。</p>
+</div>
+<div class="paragraph">
+<p><strong>Library</strong> - 開啟庫主頁，其中分別顯示零件和組件。有關詳細
+資訊，請參閱 <a href="library/index.html">Library</a>。</p>
+</div>
+<div class="paragraph">
+<p><strong>Jobs</strong> - 顯示匯入或建立的 job。有關詳細資訊，請參閱
+<a href="jobs/index.html">Jobs</a>。</p>
+</div>
+<div class="paragraph">
+<p><strong>Factory</strong> - 開啟用於組態和管理生產設定的路線、材料、使用者
+和客戶資料的中心位置。有關詳細資訊，請參閱 <a href="factory/index.html">Factory</a>。</p>
+</div>
+<div class="paragraph">
+<p><strong>Info</strong> - 顯示有關軟體的資訊。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_選單列">選單列</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>File</strong> - 提供開啟零件、job、訂單和組件以及退出應用程式的選項。</p>
+</div>
+<div class="paragraph">
+<p><strong>View</strong> - 允許在螢幕之間切換並存取不同的檢視。</p>
+</div>
+<div class="paragraph">
+<p><strong>Help</strong> - 提供對說明手冊和軟體更新選項的存取。</p>
+</div>
+<div class="paragraph">
+<p><strong>Admin</strong> - 包含管理設定和組態選項。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_子命令">子命令</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Parts</strong> - 顯示零件庫項目。</p>
+</div>
+<div class="paragraph">
+<p><strong>Assys</strong> - 在庫檢視中切換到組件項目。</p>
+</div>
+<div class="paragraph">
+<p><strong>Export</strong> - 將當前零件或 tooling 報告匯出為 CSV。</p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_命令列">命令列</a>
+  </li>
+  <li level="1">
+   <a href="#_選單列">選單列</a>
+  </li>
+  <li level="1">
+   <a href="#_子命令">子命令</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="configuration/mapbendpages.html">對應材料</a></span>
+ <span class="next"><a href="workflow.html">工作流程</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="res/index.js"></script>
+    <script src="res/files.js"></script>
+    <script src="res/site.js"></script>
+
+    
+</body>
+</html>

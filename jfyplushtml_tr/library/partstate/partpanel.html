@@ -1,0 +1,608 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Parça paneli</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">JFY Plus uygulamasına hoş geldiniz</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Kurulum</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Donanım gereksinimi</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Desteklenen dosya biçimleri</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Ön koşullar</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Lisansı değiştirme</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Yapılandırma</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Makine ekleme/kaldırma</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Tooling kurulumu</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Kullanıcıları yapılandırma</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Dil</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Malzeme</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Yeni malzeme ve sac ekleme</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Malzemeyi dışa/içe aktarma</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Malzeme değiştirme</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Malzeme eşleme</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">Kullanıcı arayüzü</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">İş akışı</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Kitaplık</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../open/index.html">Aç</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../open/partimport.html">Parçaları içe aktarma</a></li>
+      <li><button class="tree blank"></button><a href="../open/orderimport.html">Siparişleri içe aktarma</a></li>
+      <li><button class="tree blank"></button><a href="../open/jobimport.html">Job'ları içe aktarma</a></li>
+      <li><button class="tree blank"></button><a href="../open/assembliesimport.html">Montajları içe aktarma</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../libraryview/index.html">Kitaplık görünümü</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../libraryview/partview.html">Parçalar</a></li>
+      <li><button class="tree blank"></button><a href="../libraryview/assemblyview.html">Montaj</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Parça durumu</a>
+     <ul>
+      <li><button class="tree blank"></button><a href="partvalidation.html">Parça doğrulama</a></li>
+      <li><button class="tree blank"></button><a class="active" href="partpanel.html">Parça paneli</a></li>
+      <li><button class="tree blank"></button><a href="partfilters.html">Parça filtreleri</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../toolingstatus/index.html">Tooling durumu</a>
+     <ul class="hide">
+      <li>
+       <button class="tree closed"></button>
+       <a href="../toolingstatus/toolingvalidation/index.html">Tooling doğrulama</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/bendtooling.html">Büküm tooling doğrulama</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/cuttooling.html">Kesme tooling doğrulama</a></li>
+        <li><button class="tree blank"></button><a href="../toolingstatus/toolingvalidation/foldtooling.html">Katlama tooling doğrulama</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a href="../toolingstatus/toolingpanel.html">Tooling paneli</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../savingfilters.html">Filtreleri kaydetme</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Siparişler</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Siparişler görünümü</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Jobs</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Job oluşturma</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Job görünümü</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Job paneli</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Otomatik planlama</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Etkileşimli nesting</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Yeniden paketleme</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Nest yönetimi</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Layout görünümü</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Layout paneli</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Rapor gönderici</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Artık yönetimi</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Otomatik artık yönetimi</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Manuel artık yönetimi</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Twinline nesting</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Güncelliğini yitirmiş</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Job filtreleri</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../factory/index.html">Fabrika</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">Rotalar</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/sheets.html">Saclar</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">Kullanıcılar</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/edit.html">Düzenle</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">Müşteriler</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">Ayarlar</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">Ortam</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">İçe Aktarma</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">Büküm</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">Kesme</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">Bildirimler</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">İzleme</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">Job</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">Raporlar</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Kurumsal Bilgiler</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Kitaplık</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Parça durumu</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="partpanel.html">Parça paneli</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Parça paneli</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Bu bölüm, parça örneklerini yönetmek için kullanılan
+<strong>Re-import</strong>, <strong>Re-tool</strong>,
+<strong>Rename</strong>, <strong>Export outputs</strong> vb. parçayla
+ilgili eylemleri açıklar.</p>
+</div>
+<table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="img/partpanel.png" alt="Part panel" width="150">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/document.png" alt="Read-only" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Open in read-only mode for viewing</strong><br>
+Seçilen parçayı salt okunur modda açar.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/editicon.png" alt="Edit" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Check-out the document for editing</strong><br>
+Seçilen parçanın düzenlenmesini etkinleştirir.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/trash.png" alt="Delete" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Delete</strong><br>
+Seçilen parçayı siler.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>New&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Seçilen parça yeni bir siparişe, job&#8217;a veya montaja dönüştürülebilir.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Export Outputs</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Parça çıktısını yapılandırılan hedefe aktarır.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Re-import&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Seçilen parçanın yeniden içe aktarılmasına olanak tanır.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Re-tool&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Seçilen parçanın yeniden işlenmesine olanak tanır.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Rename&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Seçilen parçanın adını değiştirmek için.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Assign Material&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Seçilen parçayla ilişkili malzemeyi belirtir.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Assign Customer&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Seçilen parçayla ilişkili müşteriyi belirtir.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Rolling direction</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Malzemenin haddelendiği yönelimi tanımlar. Kullanılabilir seçenekler
+<strong>None</strong>, <strong>Horizontal</strong> ve
+<strong>Vertical</strong> şeklindedir.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Prev</strong> / <strong>Next</strong> / <strong>Toolings</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Önceki veya sonraki parçaya ya da tooling&#8217;e gider.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Sort and filter</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Seçilen parçayla aynı öznitelikleri paylaşan diğer parçaları görüntülemek için bu
+filtreleri kullanın: <strong>Same Material</strong>,
+<strong>Same Customer</strong>,
+<strong>Same Bend count</strong> veya
+<strong>Same State</strong>.</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_re_import">Re-import</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Herhangi bir parçaya sağ tıklayın ve <strong>Re-import&#8230;&#8203;</strong> öğesine
+tıklayın.</p>
+</li>
+<li>
+<p>Otomatik tooling yapılmış ve manuel tooling yapılmış örnekler dahil olmak üzere,
+tüm makinelerdeki seçilen parça tooling örnekleri temizlenir.</p>
+</li>
+<li>
+<p>Mevcut çıktı dosyaları (CAD, Bend ve Cut) kaldırılır.</p>
+</li>
+<li>
+<p>Parçalar yeniden içe aktarılır ve tüm makineler için yeni CAD doğrulaması ve
+tooling uygulanır.</p>
+</li>
+<li>
+<p>Güncellenen tooling sonucuna göre yeni çıktı dosyaları oluşturulur.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_re_tool">Re-tool</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Herhangi bir parçaya sağ tıklayın ve <strong>Re-tool&#8230;&#8203;</strong> öğesine
+tıklayın.</p>
+</li>
+<li>
+<p>Tüm makineler varsayılan olarak işaretlenir ve Laser, Punch, Panel ve
+Press brake olarak gruplanır.</p>
+</li>
+<li>
+<p>Devam etmek için <strong>OK</strong> öğesine tıklayın. Bu, seçilen makineler için hem
+otomatik tooling yapılmış hem de manuel tooling yapılmış örnekleri kaldırır ve
+ilişkili çıktı dosyalarını siler.</p>
+</li>
+<li>
+<p><strong>Retain existing outputs</strong> onay kutusu
+seçildiğinde, yalnızca çıktıları daha önce kaldırılan parçalar yeniden tooling
+yapılır, diğer çıktılar dokunulmadan kalır. İşaretlenmezse, seçilen makineler için
+tüm çıktı dosyaları kaldırılır ve yeniden tooling sırasında yeniden oluşturulur.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Herhangi bir makine için CAM ayarları değiştiyse, o makineyi seçin ve
+parçaları Re-tool yapın.</p>
+</li>
+<li>
+<p>Bir takım (LTT, zımba veya büküm) değiştiyse veya eksikse, makineyi güncelleyin
+ve yalnızca etkilenen parçaları Re-tool yapın.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rename">Rename</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Bu bölüm, JFY Plus içinde bir veya birden fazla parçanın nasıl yeniden
+adlandırılacağını açıklar.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Parçaya sağ tıklayın ve <strong>Rename&#8230;&#8203;</strong> öğesine tıklayın.</p>
+</li>
+<li>
+<p>Güncel parça adını gösteren bir yeniden adlandırma onay iletişim kutusu görünür.</p>
+</li>
+<li>
+<p>Yeni adı girin ve onaylamak için onay <strong>✓</strong> simgesine tıklayın ya da yeniden
+adlandırma işlemini iptal etmek için çarpı <strong>✗</strong> simgesine tıklayın.</p>
+</li>
+<li>
+<p>Birden fazla parçayı yeniden adlandırmak için gerekli tüm parçaları seçin,
+ardından herhangi birine sağ tıklayın ve <strong>Rename&#8230;&#8203;</strong> öğesine
+tıklayın.</p>
+</li>
+<li>
+<p>Seçilen parçaların toplam sayısıyla birlikte bir onay iletişim kutusu görünür.</p>
+</li>
+<li>
+<p>Her parça için yeni adı girin ve teker teker onaylamak için onay <strong>✓</strong> simgesine
+tıklayın.</p>
+</li>
+<li>
+<p>Herhangi bir parça yanlışlıkla seçildiyse, iptal etmek için çarpı <strong>✗</strong> simgesine
+tıklayın. Alternatif olarak, parçaya sağ tıklayıp yeniden adlandırmayı atlamak
+için <strong>Cancel Rename</strong> öğesine tıklayabilirsiniz.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_export_outputs">Export outputs</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Bu seçenek, parça çıktısını <strong>Factory Settings</strong> içinde
+yapılandırılan hedefe aktarır. (Bkz.
+<a href="../../factory/settings/bend.html">Bend Settings</a> ve
+<a href="../../factory/settings/cut.html">Cut Settings</a>)</p>
+</div>
+<div class="paragraph">
+<p>Çıktı konumu; Bend, Fold ve Cut için kendi çıktı ayarlarında ayrı ayrı
+tanımlanır. Bükme, katlama ve kesme işlemleriyle ilişkili tüm tooling&#8217;ler tüm
+parça için dışa aktarılır.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Dışa aktarılan dosyalar işlem türüne bağlıdır. Bend ve Fold işlemleri için NC
+dosyaları ve raporlar oluşturulur. Cut ve Punch işlemleri için yalnızca parça
+dosyaları dışa aktarılır.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_parçaya_malzeme_atama">Parçaya malzeme atama</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Material not assigned</strong> durumundaki parçaların daha
+ileri işlemeden önce güncellenmesi gerekir. Aşağıdaki adımlar malzemenin nasıl
+atanacağını açıklar.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Material not assigned</strong> durumunu gösteren parçaya sağ
+tıklayın ve <strong>Assign Material&#8230;&#8203;</strong> öğesini seçin.</p>
+</li>
+<li>
+<p><strong>Assign Material</strong> penceresi açılır.</p>
+</li>
+<li>
+<p>İletişim kutusunun dört bölümü vardır:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Suggestions</strong> - İçe aktarılan parçanın
+kalınlığına göre otomatik olarak ham malzemeler önerir.</p>
+</li>
+<li>
+<p><strong>All Materials</strong> - JFY Plus içinde tanımlanan tüm malzeme
+türlerini listeler.</p>
+</li>
+<li>
+<p><strong>All Raw-Materials</strong> - Sistemde kullanılabilir tüm ham
+malzemeleri görüntüler.</p>
+</li>
+<li>
+<p><strong>Used Raw-Materials</strong> - Hızlı erişim için en son
+kullanılan ham malzemeleri görüntüler.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Malzemeleri hızlıca bulmak için üstteki <strong>Search</strong> alanını
+kullanabilirsiniz. Örneğin, üç bölümdeki tüm eşleşen malzemeleri görüntülemek
+için "steel" yazın.</p>
+</li>
+<li>
+<p>Filtrelenen listeden gerekli malzemeyi (örneğin, Steel-25) Ham Malzeme
+listesinden seçin.</p>
+</li>
+<li>
+<p>Seçilen malzeme parçaya atanır.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rolling_direction">Rolling direction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Rolling direction</strong>, bir parçadaki haddeleme yönelimini ifade
+eder ve bu, parçanın nasıl kesildiğini ve işlendiğini etkileyebilir. Bu seçenek,
+Parça Kitaplığındaki bir parça için <strong>Rolling direction</strong> değerini
+belirtmenize olanak tanır. Seçilen yöne göre, parça kullanılabilir makinelerde
+kesim için doğru yönelime yerleştirilir.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Parça Kitaplığındaki veya Job penceresindeki herhangi bir parça karosuna sağ
+tıklayın.</p>
+</li>
+<li>
+<p>Tercih edilen haddeleme yönünü seçin:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>None</strong></p>
+</li>
+<li>
+<p><strong>Horizontal</strong></p>
+</li>
+<li>
+<p><strong>Vertical</strong></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Parça, seçilen haddeleme yönüne göre tüm kullanılabilir kesme makineleri için
+otomatik olarak yeniden tooling yapılır.</p>
+</li>
+<li>
+<p>Parça karosu, seçilen haddeleme yönünü aşağıda gösterildiği gibi görüntüler:</p>
+<div class="paragraph">
+<p><span class="image"><img src="img/none.png" alt="None" width="270"></span> <span class="image"><img src="img/horizontal.png" alt="Horizontal" width="270"></span>
+<span class="image"><img src="img/vertical.png" alt="Vertical" width="270"></span></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_re_import">Re-import</a>
+  </li>
+  <li level="1">
+   <a href="#_re_tool">Re-tool</a>
+  </li>
+  <li level="1">
+   <a href="#_rename">Rename</a>
+  </li>
+  <li level="1">
+   <a href="#_export_outputs">Export outputs</a>
+  </li>
+  <li level="1">
+   <a href="#_parçaya_malzeme_atama">Parçaya malzeme atama</a>
+  </li>
+  <li level="1">
+   <a href="#_rolling_direction">Rolling direction</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="partvalidation.html">Parça doğrulama</a></span>
+ <span class="next"><a href="partfilters.html">Parça filtreleri</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,707 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../res/bento.css">
+  <link rel="stylesheet" href="../../res/site.css">
+  <link rel="stylesheet" href="../../res/tree.css">
+  <link rel="stylesheet" href="../../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="../../img/praxis-icon.png">
+  <title>Klargøringspanel</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../../img/logo.png" width="120" height="34" /></div>
+        <div><p>JFY Plus Reference Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+ <ul>
+  <li><button class="tree blank"></button><a href="../../index.html">Velkommen til JFY Plus</a></li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../installation/index.html">Installation</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../installation/hardwarerequirement.html">Hardwarekrav</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/importformats.html">Understøttede filformater</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/prerequisites.html">Forudsætninger</a></li>
+    <li><button class="tree blank"></button><a href="../../installation/changelic.html">Skift licens</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../configuration/index.html">Konfiguration</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../configuration/setupmachine.html">Tilføj/fjern maskine</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/setuptooling.html">Opsætning af klargøring</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/configureusers.html">Konfigurer brugere</a></li>
+    <li><button class="tree blank"></button><a href="../../configuration/language.html">Sprog</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../configuration/addmaterial/index.html">Materiale</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/addnew.html">Tilføj nyt materiale og plade</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/exportimport.html">Eksporter/importer materiale</a></li>
+      <li><button class="tree blank"></button><a href="../../configuration/addmaterial/replacematerial.html">Erstat materiale</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../configuration/mapbendpages.html">Tilknyt materiale</a></li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../userinterface.html">Brugergrænsefladen</a></li>
+  <li><button class="tree blank"></button><a href="../../workflow.html">Arbejdsgang</a></li>
+  <li>
+   <button class="tree open"></button>
+   <a href="../index.html">Bibliotek</a>
+   <ul>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../open/index.html">Åbn</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../open/partimport.html">Importer dele</a></li>
+      <li><button class="tree blank"></button><a href="../open/orderimport.html">Importer opgaver</a></li>
+      <li><button class="tree blank"></button><a href="../open/jobimport.html">Importer job</a></li>
+      <li><button class="tree blank"></button><a href="../open/assembliesimport.html">Importer monteringer</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../libraryview/index.html">Biblioteksvisning</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../libraryview/partview.html">Dele</a></li>
+      <li><button class="tree blank"></button><a href="../libraryview/assemblyview.html">Montering</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../partstate/index.html">Delstatus</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../partstate/partvalidation.html">Delvalidering</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partpanel.html">Delpanel</a></li>
+      <li><button class="tree blank"></button><a href="../partstate/partfilters.html">Delfiltre</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree open"></button>
+     <a href="index.html">Klargøringsstatus</a>
+     <ul>
+      <li>
+       <button class="tree closed"></button>
+       <a href="toolingvalidation/index.html">Klargøringsvalidering</a>
+       <ul class="hide">
+        <li><button class="tree blank"></button><a href="toolingvalidation/bendtooling.html">Validering af bukkeklargøring</a></li>
+        <li><button class="tree blank"></button><a href="toolingvalidation/cuttooling.html">Validering af skæreklargøring</a></li>
+        <li><button class="tree blank"></button><a href="toolingvalidation/foldtooling.html">Validering af falsklargøring</a></li>
+       </ul>
+      </li>
+      <li><button class="tree blank"></button><a class="active" href="toolingpanel.html">Klargøringspanel</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../savingfilters.html">Gemning af filtre</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../orders/index.html">Opgaver</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../orders/ordersview.html">Opgavevisning</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../jobs/index.html">Jobs</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../jobs/jobcreation.html">Opret job</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobview.html">Jobvisning</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobpanel.html">Jobpanel</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobautoplan.html">Automatisk planlægning</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobinteractplan.html">Interaktiv indlejring</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/repacking.html">Ompakning</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/layoutcommands/index.html">Indlejringshåndtering</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/nestview.html">Layoutvisning</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/layoutpanel.html">Layoutpanel</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/layoutcommands/reportsender.html">Rapportafsender</a></li>
+     </ul>
+    </li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../jobs/remnantmanagement/index.html">Resthåndtering</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/autoremnant.html">Automatisk resthåndtering</a></li>
+      <li><button class="tree blank"></button><a href="../../jobs/remnantmanagement/manualremnant.html">Manuel resthåndtering</a></li>
+     </ul>
+    </li>
+    <li><button class="tree blank"></button><a href="../../jobs/twinlinenesting.html">Twin-line indlejring</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/outdate.html">Forældet</a></li>
+    <li><button class="tree blank"></button><a href="../../jobs/jobfilters.html">Jobfiltre</a></li>
+   </ul>
+  </li>
+  <li>
+   <button class="tree closed"></button>
+   <a href="../../factory/index.html">Fabrik</a>
+   <ul class="hide">
+    <li><button class="tree blank"></button><a href="../../factory/routes.html">Ruter</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/sheets.html">Plader</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/users.html">Brugere</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/edit.html">Redigér</a></li>
+    <li><button class="tree blank"></button><a href="../../factory/customers.html">Kunder</a></li>
+    <li>
+     <button class="tree closed"></button>
+     <a href="../../factory/settings/index.html">Indstillinger</a>
+     <ul class="hide">
+      <li><button class="tree blank"></button><a href="../../factory/settings/environment.html">Omgivelser</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/import.html">Import</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/bend.html">Bukning</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/cut.html">Skær</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/notification.html">Notifikationer</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/watch.html">Overvågning</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/job.html">Job</a></li>
+      <li><button class="tree blank"></button><a href="../../factory/settings/reports.html">Rapporter</a></li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li><button class="tree blank"></button><a href="../../impressum.html">Virksomhedsoplysninger</a></li>
+ </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+ <div>
+  <button>
+   <img src="../../res/home.png">
+  </button>
+ </div>
+ <div>
+  <a href="../index.html">Bibliotek</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="index.html">Klargøringsstatus</a>
+ </div>
+ <div>/</div>
+ <div>
+  <a href="toolingpanel.html">Klargøringspanel</a>
+ </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Klargøringspanel</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Dette afsnit forklarer klargøringsrelaterede handlinger såsom
+<strong>Export outputs</strong>,
+<strong>Check Tooling</strong>, <strong>Suppress Tooling</strong>,
+<strong>Set as Base-Flat&#8230;&#8203;</strong>, <strong>Copy Tooling</strong>
+og andre muligheder, der bruges til at håndtere klargøringsinstanser.</p>
+</div>
+<table class="tableblock frame-none grid-none stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="imageblock">
+<div class="content">
+<img src="img/toolingpanel.png" alt="Tooling panel" width="150">
+</div>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/document.png" alt="Read-only" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Open in read-only mode for viewing</strong><br>
+Åbner den valgte klargøring i skrivebeskyttet tilstand.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><span class="image"><img src="img/editicon.png" alt="Edit" width="24"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Check-out the document for editing</strong><br>
+Aktiverer redigering af den valgte klargøring.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Export Outputs</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eksporterer det valgte klargøringsoutput til den konfigurerede destination.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Check Tooling</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Validerer den eksisterende klargøring uden at foretage ændringer og opdaterer
+dens status, hvis valideringen mislykkes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Copy Tooling&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kopierer stempel-, sekvens- og baganslåsopsætningen fra den valgte
+referenceklargøring og anvender den på andre løsninger, hvor det er muligt.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Set as Base-Flat&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Markerer den valgte buk- eller falsklargøring som reference-fladstørrelse til
+generering af skæreløsninger.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Re-tool&#8230;&#8203;</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Genbehandler den valgte klargøring for delen uden at påvirke andre
+klargøringer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Suppress Tooling</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Undertrykker den valgte klargøring, så den udelukkes fra yderligere
+behandling og outputgenerering.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Prev</strong> / <strong>Next</strong> / <strong>Part</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Navigerer til den forrige eller næste klargøring eller tilbage til den overordnede del.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong>Sortér og filtrér</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Viser andre klargøringer, der deler lignende karakteristika med den
+valgte klargøring til hurtig reference.</p></td>
+</tr>
+</tbody>
+</table></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_export_outputs">Export Outputs</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Denne mulighed eksporterer deloutputtet til den destination, der er konfigureret i
+<strong>Factory Settings</strong>. (Se
+<a href="../../factory/settings/bend.html">Bukkeindstillinger</a> og
+<a href="../../factory/settings/cut.html">Skæreindstillinger</a>)</p>
+</div>
+<div class="paragraph">
+<p>Kun de klargøringer, der er tilknyttet den valgte klargøringsoperation,
+eksporteres, ikke hele delen.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+De eksporterede filer afhænger af operationstypen. For Bend- og
+Fold-operationer genereres NC-filer og rapporter. For Cut- og Punch-
+operationer eksporteres kun delfilerne.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_check_tooling">Check Tooling</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Hvis der er en ændring i CAM Settings, eller et bukkeværktøj mistes, behøver du ikke
+at genklargøre delen.</p>
+</li>
+<li>
+<p>Brug i stedet Check Tooling til at validere den eksisterende klargøring uden at foretage
+ændringer.</p>
+</li>
+<li>
+<p>Hvis valideringen mislykkes, opdateres klargøringsstatussen for den instans, og
+de relaterede outputfiler fjernes.</p>
+</li>
+<li>
+<p>Check Tooling registrerer også dele, hvor fejl tidligere blev manuelt
+tilsidesat ved hjælp af <strong>Ignore Errors</strong>, og opdaterer deres
+status til fejl om nødvendigt.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_copy_tooling">Copy tooling</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Kopier klargøring giver dig mulighed for hurtigt at anvende bukkeklargøring fra én løsning på
+andre, hvilket sparer tid og indsats.</p>
+</div>
+<div class="paragraph">
+<p>Dette kopierer stempel-, sekvens- og baganslåsopsætningen fra en valgt reference-
+klargøring (løsning) og forsøger at anvende de samme indstillinger på alle andre løsninger.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Hvis den kopierede opsætning er mulig for en målmaskine, gemmes og bruges den.</p>
+</li>
+<li>
+<p>Hvis opsætningen ikke er mulig, forbliver den oprindelige klargøring for den maskine
+uændret.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For eksempel kan du have forskellig klargøring for forskellige maskiner:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/check3.png" alt="Before tooling" width="724">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/check4.png" alt="Copy tooling" width="664">
+</div>
+</div>
+<div class="paragraph">
+<p>De samme stempel-, sekvens- og baganslåsindstillinger anvendes, hvor det er
+muligt. Hvis den kopierede opsætning ikke kan bruges, forbliver den oprindelige klargøring
+uændret.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/copytooling3.png" alt="After tooling" width="700">
+</div>
+</div>
+<div class="paragraph">
+<p>Efter anvendelse af kopier klargøring er Gåsehals-opsætningen blevet anvendt
+med succes på alle andre maskiner, hvor det er muligt.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_set_as_base_flat">Set as Base-Flat&#8230;&#8203;</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Set as Base-Flat&#8230;&#8203;</strong>-funktionen definerer, hvilken buk- eller fals-
+klargøring der bruges som reference-fladstørrelse til generering af skæreløsninger.
+Når en klargøring markeres som Base-Flat, opdaterer JFY Plus delens fladstørrelse
+baseret på den maskine og regenererer skæreløsninger i overensstemmelse hermed. Base-Flat-
+klargøringer vises med en blå kant i brugergrænsefladen.</p>
+</div>
+<div class="paragraph">
+<p>Forskellige bukkemaskiner kan producere små variationer i fladstørrelse for den samme
+del. Når du indstiller en klargøring som Base-Flat, bruger JFY Plus den maskines
+fladstørrelse som masterreference og genberegner automatisk skære-
+løsningerne.</p>
+</div>
+<div class="paragraph">
+<p>Her kan vi se forskellige fladstørrelser for den samme del på tværs af forskellige
+maskiner:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/baseflat1.png" alt="Base flat1" width="800">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/baseflat2.png" alt="Base flat2" width="663">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_automatisk_base_flat_valg">Automatisk base-flat-valg</h3>
+<div class="paragraph">
+<p>Når fabriksindstillingen
+<strong>Apply flat correction during bending</strong> er aktiveret:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/autobase.png" alt="Auto Base" width="806">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>JFY Plus indstiller automatisk bukkeklargøringen (der indeholder tabellen for maks.
+bukkelængde) som Base-Flat under delimport.</p>
+</li>
+<li>
+<p>Hvis den valgte bukkeklargøring støder på en fejl eller ikke er mulig,
+skifter JFY Plus intelligent og indstiller en anden gyldig bukkeklargøring som
+Base-Flat. Dette sikrer, at fladstørrelsesreferencen og skæreløsningerne altid
+forbliver konsistente og gyldige uden manuel indgriben.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_forbedret_base_flat_håndtering">Forbedret base-flat-håndtering</h3>
+<div class="paragraph">
+<p>JFY Plus tilbyder Base-Flat-muligheder i <strong>Save to Praxis</strong>-
+dialogen ved gemning af buk- eller falsklargøringsredigeringer. Disse muligheder vises kun for
+klargøringer i OK-status og sikrer, at fladstørrelse og skæreløsninger forbliver
+nøjagtige.</p>
+</div>
+<div class="sect3">
+<h4 id="_set_as_base_flat_and_calculate_cutting_solution">Set as Base-Flat and calculate cutting solution</h4>
+<div class="paragraph">
+<p>Denne mulighed bruges til at markere en klargøring som Base-Flat for første gang og
+automatisk generere den tilsvarende skæreløsning.</p>
+</div>
+<div class="paragraph">
+<p>Vises, når:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Klargøringen er ikke aktuelt markeret som Base-Flat.</p>
+</li>
+<li>
+<p>Brugeren har tjekket klargøringen ud til redigering og gemmer ændringerne.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/setbase.png" alt="Set Base" width="432">
+</div>
+</div>
+<div class="paragraph">
+<p>For at bruge denne mulighed skal du tjekke buk- eller falsklargøringen ud og foretage de nødvendige
+ændringer, såsom ændringer af bukkeparametre eller fladstørrelse. Tryk på
+<span class="keyseq"><kbd>Ctrl</kbd>+<kbd>S</kbd></span> for at gemme ændringerne. I <strong>Save to Praxis</strong>-
+dialogen, vælg
+<strong>Set as Base-Flat and calculate cutting solution</strong> og
+klik på
+<strong>OK</strong>. JFY Plus vil indstille klargøringen som Base-Flat og generere
+skæreløsningen ved hjælp af den opdaterede fladstørrelse.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_update_the_base_flat_and_re_calculate_cutting_solution">Update the base-flat and re-calculate cutting solution</h4>
+<div class="paragraph">
+<p>Denne mulighed bruges, når klargøringen allerede er markeret som Base-Flat og er
+blevet redigeret, hvilket kræver, at fladstørrelsen og skæreløsningerne regenereres.</p>
+</div>
+<div class="paragraph">
+<p>Vises, når:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Klargøringen er allerede markeret som Base-Flat.</p>
+</li>
+<li>
+<p>Brugeren har tjekket den ud, redigeret den og gemmer ændringerne.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/updatebase.png" alt="Update Base" width="432">
+</div>
+</div>
+<div class="paragraph">
+<p>Ved redigering af den eksisterende Base-Flat-klargøring, opdater bukkeparametrene eller
+fladstørrelsesgeometrien efter behov. I <strong>Save to Praxis</strong>-dialogen,
+vælg
+<strong>Update the base-flat and re-calculate cutting solution</strong>.
+JFY Plus vil derefter opdatere Base-Flat-klargøringen og regenerere alle relaterede
+skæreløsninger for at afspejle de seneste ændringer.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Kun én bukkeklargøring kan indstilles som Base-Flat ad gangen.</p>
+</div>
+<div class="paragraph">
+<p>Når Base-Flat ændres, genbehandles eksisterende skæreløsninger automatisk.</p>
+</div>
+<div class="paragraph">
+<p>Denne funktion er tilgængelig for både buk- og falsklargøringer i JFY Plus.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_re_tool">Re-tool</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Denne mulighed genbehandler den valgte klargøring for delen.</p>
+</div>
+<div class="paragraph">
+<p>Højreklik på den ønskede klargøring i Tooling-panelet og klik på
+<strong>Re-tool&#8230;&#8203;</strong></p>
+</div>
+<div class="paragraph">
+<p>En bekræftelsesdialog vises, før der fortsættes.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/toolingconfirm.png" alt="ToolingConfirm" width="431">
+</div>
+</div>
+<div class="paragraph">
+<p>Klik på <strong>Yes</strong> for at fortsætte med genklargøring, eller <strong>No</strong> for at
+annullere operationen.</p>
+</div>
+<div class="paragraph">
+<p>Kun den valgte klargøring genklargøres. Andre klargøringer tilknyttet
+delen påvirkes ikke. De eksisterende outputs relateret til den valgte
+klargøring fjernes og regenereres under genklargøringsprocessen.</p>
+</div>
+<div class="paragraph">
+<p>Brug denne mulighed, når klargøringsdata er forældede, forkerte, eller når der
+foretages ændringer i maskin- eller klargøringskonfigurationer.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ignore_errors">Ignore errors</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Hvis en klargjort instans viser en advarsel, og du stadig vil fortsætte med den,
+kan du tilsidesætte advarslen ved at klikke på
+<strong>Ignore errors</strong>.</p>
+</li>
+<li>
+<p>Dette vil give systemet mulighed for at eksportere outputfiler for den
+instans, selv hvis der var klargøringsproblemer.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Brug <strong>Ignore Errors</strong> kun, når du er sikker på, at advarslen sikkert kan
+ignoreres. Tilsidesættelse af faktiske fejl kan føre til maskinskade eller sikkerhedsrisici.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_undertrykophæv_undertrykkelse_af_klargøring">Undertryk/Ophæv undertrykkelse af klargøring</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Når en maskine er inaktiv, eller du ikke vil have en bestemt del behandlet af en
+bestemt maskine, brug <strong>Suppress Tooling</strong> til at udelukke
+den del fra indlejring på den maskine.</p>
+</li>
+<li>
+<p>Efter undertrykkelse viser musen over den klargjorte instans en
+meddelelse som: “Tooling suppressed by &lt;User name&gt; on &lt;Date Time&gt;”.</p>
+</li>
+<li>
+<p>Undertryk klargøring fjerner outputfilen for den maskine og del.</p>
+</li>
+<li>
+<p>Brug <strong>Unsuppress tooling</strong> til at gendanne klargørings-
+statussen for delen på den maskine.</p>
+</li>
+<li>
+<p>Når undertrykkelsen ophæves, genereres den respektive outputfil igen.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+ <h3>Contents</h3>
+ <ul>
+  <li level="1">
+   <a href="#_export_outputs">Export Outputs</a>
+  </li>
+  <li level="1">
+   <a href="#_check_tooling">Check Tooling</a>
+  </li>
+  <li level="1">
+   <a href="#_copy_tooling">Copy tooling</a>
+  </li>
+  <li level="1">
+   <a href="#_set_as_base_flat">Set as Base-Flat&#8230;&#8203;</a>
+  </li>
+  <li level="2">
+   <a href="#_automatisk_base_flat_valg">Automatisk base-flat-valg</a>
+  </li>
+  <li level="2">
+   <a href="#_forbedret_base_flat_håndtering">Forbedret base-flat-håndtering</a>
+  </li>
+  <li level="1">
+   <a href="#_re_tool">Re-tool</a>
+  </li>
+  <li level="1">
+   <a href="#_ignore_errors">Ignore errors</a>
+  </li>
+  <li level="1">
+   <a href="#_undertrykophæv_undertrykkelse_af_klargøring">Undertryk/Ophæv undertrykkelse af klargøring</a>
+  </li>
+ </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+ <span class="prev"><a href="toolingvalidation/foldtooling.html">Validering af falsklargøring</a></span>
+ <span class="next"><a href="../savingfilters.html">Gemning af filtre</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2026 JFY International. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../../res/index.js"></script>
+    <script src="../../res/files.js"></script>
+    <script src="../../res/site.js"></script>
+
+    
+</body>
+</html>
